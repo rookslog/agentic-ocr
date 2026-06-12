@@ -1,0 +1,33 @@
+# ── Reference material (READ-ONLY clone, never committed) ──────────────
+scholardoc/
+
+# ── Acquired corpus & derived GT artifacts — NEVER pushed (PLAN §11.5) ──
+corpus/
+data/
+gt-b/
+*.pdf
+*.epub
+
+# ── Python ─────────────────────────────────────────────────────────────
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# ── Job/run artifacts (runner) ─────────────────────────────────────────
+runner/jobs/
+*.log
+
+# ── OS / editor ────────────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.swp
