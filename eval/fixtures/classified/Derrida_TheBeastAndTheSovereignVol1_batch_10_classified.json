@@ -1,0 +1,58 @@
+[
+  {
+    "page_number": 356,
+    "classification": "GOOD",
+    "confidence": 0.95,
+    "evidence": "Text is readable with proper paragraph breaks, clear formatting of indented quotes, and proper handling of special characters (ligatures like ﬁ, ñ, ‑). French words and Latin references (zo̅a̅fon) are correctly preserved. Proper handling of footnote markers and edge cases.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 357,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Clear text with proper formatting of long quotes and citations. Footnote brackets and explanatory interpolations are correctly preserved (e.g., '[Translator's note]'). Greek and French terms handled well. Minor OCR artifacts in unknown_words sample do not impede readability.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 359,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "Text is clearly readable despite error rate of 8.6%. Philosophical terminology and French vocabulary preserved correctly. Proper handling of complex academic content with embedded citations and footnotes. Special characters and ligatures properly rendered.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 360,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Readable philosophical discourse with correct preservation of Greek terms (zo̅a̅fon logon ekhon, koino̅̅nia, kurio̅s) and European language references. Proper citation formatting with footnote numbers. Overall text flow is clear despite some OCR artifacts in unknown_words list.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 363,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Academic text with proper preservation of Greek terminology (zo̅a̅fon logon ekhon, weltarm, weltlos, weltbildend) and German references. Footnotes and citations are correctly formatted. Readable despite 8.1% error rate with complex philosophical argumentation intact.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 364,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Text is generally readable but contains approximately 10.2% error rate with some fragmented or unclear passages. Greek terminology is preserved (phusei, tukhe, ekhon, monon) but occasional OCR artifacts may cause reading difficulty in complex philosophical sections. One primary readability concern in longer passages.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 365,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Clear readable text with proper handling of Greek terminology (phone, logos, agathon, dikaion/adikon) and French philosophical discourse. Proper parenthetical citations and footnote references. Text flow is logical and comprehensible despite 8.0% error rate.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 368,
+    "classification": "BAD",
+    "confidence": 0.88,
+    "evidence": "Severely garbled biographical section with 26.9% error rate. Text shows fragmentation ('michaud', 'coll', 'scienti' - truncated words), formatting collapse (bio entries missing line breaks), and major OCR failures making author information difficult to parse. Multiple words are incomplete or incorrectly split.",
+    "footnote_artifacts": false
+  }
+]

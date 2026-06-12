@@ -1,0 +1,199 @@
+{
+  "batch_id": 6,
+  "document": "Heidegger_BeingAndTime",
+  "classifications": [
+    {
+      "page_number": 187,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 188,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "ofbeing"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 190,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 191,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "'merelj' (merely)",
+        "'srud' (gibberish)"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 193,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "'Ttme' (Time)"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 194,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": [],
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 195,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 196,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 198,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 200,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 201,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 202,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 204,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 205,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": [],
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 206,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 207,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 209,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 212,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 214,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 216,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": [],
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 218,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 219,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 221,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 224,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 227,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [],
+      "footnote_artifacts": []
+    }
+  ]
+}

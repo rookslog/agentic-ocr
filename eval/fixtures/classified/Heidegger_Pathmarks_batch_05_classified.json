@@ -1,0 +1,678 @@
+{
+  "document": "Heidegger_Pathmarks",
+  "batch_number": 5,
+  "classification_date": "2025-12-21",
+  "classifier": "OCR Quality Classification System",
+  "classifications": [
+    {
+      "page_number": 183,
+      "classification": "BAD",
+      "confidence": 0.8,
+      "error_rate_percent": 5.3,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 6 instances",
+        "Error rate: 5.3%",
+        "Philosophical terms intact: 6/13",
+        "Unknown words: 10 (severe: 5, minor: 5)",
+        "Multiple significant garbling (5 severe errors) impacts comprehension"
+      ],
+      "footnote_artifacts": [
+        "1ta\u01078",
+        "125",
+        "\u0109liAA0",
+        "16",
+        "d1"
+      ],
+      "unknown_words_sample": [
+        "iof",
+        "taltao",
+        "detennination",
+        "lia",
+        "rei"
+      ]
+    },
+    {
+      "page_number": 185,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 7.5,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 5 instances",
+        "Error rate: 7.5%",
+        "Philosophical terms intact: 7/13",
+        "Unknown words: 10 (severe: 1, minor: 5)",
+        "OCR errors present but meaning is recoverable (1 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "16",
+        "484",
+        "wr1",
+        "128",
+        "11"
+      ],
+      "unknown_words_sample": [
+        "rks",
+        "rela",
+        "dlir",
+        "twv",
+        "eyo"
+      ]
+    },
+    {
+      "page_number": 186,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 5.1,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 2 instances",
+        "Error rate: 5.1%",
+        "Philosophical terms intact: 6/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "29",
+        "lr1"
+      ],
+      "unknown_words_sample": [
+        "truthb",
+        "leraclitus",
+        "oel",
+        "veritas",
+        "possibil"
+      ]
+    },
+    {
+      "page_number": 188,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "error_rate_percent": 10.6,
+      "bucket": "E (10%+)",
+      "evidence": [
+        "Footnote markers found (not errors): 3 instances",
+        "Error rate: 10.6%",
+        "Philosophical terms intact: 8/13",
+        "Unknown words: 10 (severe: 0, minor: 1)",
+        "Multiple significant garbling (0 severe errors) impacts comprehension"
+      ],
+      "footnote_artifacts": [
+        "a1",
+        "so8",
+        "73"
+      ],
+      "unknown_words_sample": [
+        "tlj",
+        "tctv",
+        "sichtsamkeit",
+        "aweh",
+        "ehmung"
+      ],
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 189,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 4.5,
+      "bucket": "C (3-5%)",
+      "evidence": [
+        "Footnote markers found (not errors): 3 instances",
+        "Error rate: 4.5%",
+        "Philosophical terms intact: 4/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "b8",
+        "94",
+        "174"
+      ],
+      "unknown_words_sample": [
+        "xat",
+        "aya",
+        "ista",
+        "tol",
+        "fjoy"
+      ]
+    },
+    {
+      "page_number": 191,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "error_rate_percent": 7.2,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 4 instances",
+        "Error rate: 7.2%",
+        "Philosophical terms intact: 8/13",
+        "Unknown words: 10 (severe: 0, minor: 1)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "A5",
+        "36",
+        "a1",
+        "176"
+      ],
+      "unknown_words_sample": [
+        "eflrppovwc",
+        "capaoxoflevyj",
+        "sache",
+        "elv",
+        "elav"
+      ]
+    },
+    {
+      "page_number": 193,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "error_rate_percent": 11.8,
+      "bucket": "E (10%+)",
+      "evidence": [
+        "Footnote markers found (not errors): 6 instances",
+        "Error rate: 11.8%",
+        "Philosophical terms intact: 4/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "Multiple significant garbling (0 severe errors) impacts comprehension"
+      ],
+      "footnote_artifacts": [
+        "38",
+        "10",
+        "1051",
+        "pilyflCXO2",
+        "102"
+      ],
+      "unknown_words_sample": [
+        "tellcctu",
+        "opoa",
+        "pilyflcxo",
+        "regula",
+        "avtot"
+      ],
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 194,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 4.7,
+      "bucket": "C (3-5%)",
+      "evidence": [
+        "Footnote markers found (not errors): 11 instances",
+        "Error rate: 4.7%",
+        "Philosophical terms intact: 7/13",
+        "Unknown words: 10 (severe: 1, minor: 0)",
+        "OCR errors present but meaning is recoverable (1 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "rtbm1111",
+        "396",
+        "493",
+        "i8",
+        "A5"
+      ],
+      "unknown_words_sample": [
+        "incorrecmess",
+        "oelil",
+        "tion",
+        "rtbm",
+        "unhiddenness"
+      ]
+    },
+    {
+      "page_number": 195,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 3.8,
+      "bucket": "C (3-5%)",
+      "evidence": [
+        "Footnote markers found (not errors): 7 instances",
+        "Error rate: 3.8%",
+        "Philosophical terms intact: 6/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "16",
+        "C5",
+        "141",
+        "16",
+        "16"
+      ],
+      "unknown_words_sample": [
+        "nonsensuous",
+        "tauta",
+        "perdures",
+        "suprasensuous",
+        "ooo"
+      ]
+    },
+    {
+      "page_number": 198,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 5.2,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 2 instances",
+        "Error rate: 5.2%",
+        "Philosophical terms intact: 2/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "309",
+        "10"
+      ],
+      "unknown_words_sample": [
+        "vinue",
+        "humo",
+        "ignates",
+        "huw",
+        "aristotles"
+      ]
+    },
+    {
+      "page_number": 201,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 8.0,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 9 instances",
+        "Error rate: 8.0%",
+        "Philosophical terms intact: 2/13",
+        "Unknown words: 10 (severe: 0, minor: 1)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "296",
+        "192",
+        "191",
+        "192",
+        "93"
+      ],
+      "unknown_words_sample": [
+        "rks",
+        "neo",
+        "lljmc",
+        "luch",
+        "ioow"
+      ]
+    },
+    {
+      "page_number": 203,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 7.8,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 9 instances",
+        "Error rate: 7.8%",
+        "Philosophical terms intact: 1/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "191",
+        "316",
+        "191",
+        "b11",
+        "ov1"
+      ],
+      "unknown_words_sample": [
+        "sache",
+        "sponsible",
+        "stindigej",
+        "lation",
+        "matically"
+      ]
+    },
+    {
+      "page_number": 204,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 5.1,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 3 instances",
+        "Error rate: 5.1%",
+        "Philosophical terms intact: 2/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "apxJ1",
+        "192",
+        "15"
+      ],
+      "unknown_words_sample": [
+        "ically",
+        "tltuolc",
+        "begining",
+        "apxf",
+        "movedness"
+      ]
+    },
+    {
+      "page_number": 206,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 6.2,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 3 instances",
+        "Error rate: 6.2%",
+        "Philosophical terms intact: 3/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "cp6",
+        "192",
+        "16"
+      ],
+      "unknown_words_sample": [
+        "jevcl",
+        "wolc",
+        "nvoc",
+        "insoftjt",
+        "umschlag"
+      ]
+    },
+    {
+      "page_number": 209,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 6.7,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 3 instances",
+        "Error rate: 6.7%",
+        "Philosophical terms intact: 4/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "324",
+        "appe01",
+        "194"
+      ],
+      "unknown_words_sample": [
+        "oyoc",
+        "xlvf",
+        "collvn",
+        "appe",
+        "lipx"
+      ]
+    },
+    {
+      "page_number": 213,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 5.4,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 3 instances",
+        "Error rate: 5.4%",
+        "Philosophical terms intact: 3/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "329",
+        "191",
+        "193"
+      ],
+      "unknown_words_sample": [
+        "ual",
+        "movedness",
+        "llvta",
+        "auflpep",
+        "cpvae"
+      ]
+    },
+    {
+      "page_number": 214,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 7.7,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 2 instances",
+        "Error rate: 7.7%",
+        "Philosophical terms intact: 2/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "330",
+        "199"
+      ],
+      "unknown_words_sample": [
+        "vorliegmdes",
+        "vov",
+        "pua",
+        "ltlivta",
+        "jijl"
+      ]
+    },
+    {
+      "page_number": 215,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 7.1,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 6 instances",
+        "Error rate: 7.1%",
+        "Philosophical terms intact: 2/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "191",
+        "b1",
+        "193",
+        "a36",
+        "332"
+      ],
+      "unknown_words_sample": [
+        "xwo",
+        "tpvalc",
+        "subjectum",
+        "vov",
+        "ovta"
+      ]
+    },
+    {
+      "page_number": 219,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 4.2,
+      "bucket": "C (3-5%)",
+      "evidence": [
+        "Footnote markers found (not errors): 3 instances",
+        "Error rate: 4.2%",
+        "Philosophical terms intact: 3/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "33",
+        "J6",
+        "pu6"
+      ],
+      "unknown_words_sample": [
+        "presencing",
+        "ouo",
+        "impon",
+        "tpwtov",
+        "shon"
+      ]
+    },
+    {
+      "page_number": 222,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "error_rate_percent": 12.4,
+      "bucket": "E (10%+)",
+      "evidence": [
+        "Footnote markers found (not errors): 11 instances",
+        "Error rate: 12.4%",
+        "Philosophical terms intact: 2/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "Multiple significant garbling (0 severe errors) impacts comprehension"
+      ],
+      "footnote_artifacts": [
+        "341",
+        "apx3",
+        "l3",
+        "l0",
+        "8Cl4"
+      ],
+      "unknown_words_sample": [
+        "iae",
+        "ive",
+        "tpuoic",
+        "mtl",
+        "oic"
+      ],
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 223,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 7.0,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 3 instances",
+        "Error rate: 7.0%",
+        "Philosophical terms intact: 3/13",
+        "Unknown words: 10 (severe: 0, minor: 1)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "343",
+        "193",
+        "zo8"
+      ],
+      "unknown_words_sample": [
+        "tov",
+        "movedness",
+        "ject",
+        "anwesenheit",
+        "vjjo"
+      ]
+    },
+    {
+      "page_number": 224,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "error_rate_percent": 9.0,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 5 instances",
+        "Error rate: 9.0%",
+        "Philosophical terms intact: 2/13",
+        "Unknown words: 10 (severe: 0, minor: 1)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "1p1",
+        "tp6",
+        "J6",
+        "344",
+        "66"
+      ],
+      "unknown_words_sample": [
+        "flopip",
+        "ter",
+        "loprp",
+        "tpw",
+        "detenninable"
+      ]
+    },
+    {
+      "page_number": 226,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 6.3,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 3 instances",
+        "Error rate: 6.3%",
+        "Philosophical terms intact: 3/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "346",
+        "347",
+        "193"
+      ],
+      "unknown_words_sample": [
+        "oyoc",
+        "encing",
+        "xtvr",
+        "denaken",
+        "poprpf"
+      ]
+    },
+    {
+      "page_number": 228,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 7.1,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 4 instances",
+        "Error rate: 7.1%",
+        "Philosophical terms intact: 2/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "349",
+        "93",
+        "L6",
+        "350"
+      ],
+      "unknown_words_sample": [
+        "llnconceal",
+        "oyoc",
+        "ofatym",
+        "cpavolc",
+        "ofa"
+      ]
+    },
+    {
+      "page_number": 229,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate_percent": 6.0,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Footnote markers found (not errors): 1 instances",
+        "Error rate: 6.0%",
+        "Philosophical terms intact: 3/13",
+        "Unknown words: 10 (severe: 0, minor: 0)",
+        "OCR errors present but meaning is recoverable (0 severe errors)"
+      ],
+      "footnote_artifacts": [
+        "35"
+      ],
+      "unknown_words_sample": [
+        "ofa",
+        "tppearance",
+        "movedness",
+        "jvlifl",
+        "ppuf"
+      ]
+    }
+  ]
+}

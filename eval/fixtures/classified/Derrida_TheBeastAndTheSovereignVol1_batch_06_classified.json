@@ -1,0 +1,245 @@
+{
+  "document": "Derrida_TheBeastAndTheSovereignVol1",
+  "batch_number": 6,
+  "total_batches": 10,
+  "classification_timestamp": "2025-12-21",
+  "classification_rules": {
+    "GOOD": "Readable text, minimal OCR errors (<3%) or low error rate (3-5%) with no significant garbling",
+    "MARGINAL": "Error rate 5-10% with 1-2 apparent OCR errors per page, still readable",
+    "BAD": "Error rate >10% or heavily garbled text, difficult to read",
+    "excluded_from_errors": [
+      "French words",
+      "German words",
+      "Greek/Latin",
+      "Footnote markers (word+numbers)"
+    ]
+  },
+  "pages": [
+    {
+      "page_number": 207,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 5.3,
+      "evidence": "Error rate 5.3% (5-8% range). 2 detected OCR errors.",
+      "detected_ocr_errors": 2,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 208,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 5.5,
+      "evidence": "Error rate 5.5% (5-8% range). 1 detected OCR errors.",
+      "detected_ocr_errors": 1,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 212,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 7.8,
+      "evidence": "Error rate 7.8% (5-8% range). 0 detected OCR errors.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 213,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 6.8,
+      "evidence": "Error rate 6.8% (5-8% range). 1 detected OCR errors.",
+      "detected_ocr_errors": 1,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 215,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate": 4.0,
+      "evidence": "Error rate 4.0% (3-5% range). Readable with minimal issues.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 217,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 6.0,
+      "evidence": "Error rate 6.0% (5-8% range). 0 detected OCR errors.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 218,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate": 4.3,
+      "evidence": "Error rate 4.3% (3-5% range). Readable with minimal issues.",
+      "detected_ocr_errors": 1,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 219,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate": 3.7,
+      "evidence": "Error rate 3.7% (3-5% range). Readable with minimal issues.",
+      "detected_ocr_errors": 2,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 222,
+      "classification": "GOOD",
+      "confidence": 0.75,
+      "error_rate": 11.9,
+      "evidence": "High error rate: 11.9%. Significant garbling.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": [],
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 223,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate": 3.8,
+      "evidence": "Error rate 3.8% (3-5% range). Readable with minimal issues.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 224,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 5.2,
+      "evidence": "Error rate 5.2% (5-8% range). 2 detected OCR errors.",
+      "detected_ocr_errors": 2,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 226,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 5.8,
+      "evidence": "Error rate 5.8% (5-8% range). 0 detected OCR errors.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 228,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 6.0,
+      "evidence": "Error rate 6.0% (5-8% range). 0 detected OCR errors.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 229,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate": 4.5,
+      "evidence": "Error rate 4.5% (3-5% range). Readable with minimal issues.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 231,
+      "classification": "MARGINAL",
+      "confidence": 0.7,
+      "error_rate": 8.8,
+      "evidence": "Error rate 8.8% (8-10% range). Multiple OCR artifacts.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 236,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 7.3,
+      "evidence": "Error rate 7.3% (5-8% range). 0 detected OCR errors.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 237,
+      "classification": "MARGINAL",
+      "confidence": 0.7,
+      "error_rate": 9.8,
+      "evidence": "Error rate 9.8% (8-10% range). Multiple OCR artifacts.",
+      "detected_ocr_errors": 1,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 238,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate": 4.9,
+      "evidence": "Error rate 4.9% (3-5% range). Readable with minimal issues.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 240,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 5.0,
+      "evidence": "Error rate 5.0% (5-8% range). 0 detected OCR errors.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 241,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 7.4,
+      "evidence": "Error rate 7.4% (5-8% range). 1 detected OCR errors.",
+      "detected_ocr_errors": 1,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 242,
+      "classification": "MARGINAL",
+      "confidence": 0.7,
+      "error_rate": 8.4,
+      "evidence": "Error rate 8.4% (8-10% range). Multiple OCR artifacts.",
+      "detected_ocr_errors": 2,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 243,
+      "classification": "MARGINAL",
+      "confidence": 0.7,
+      "error_rate": 8.6,
+      "evidence": "Error rate 8.6% (8-10% range). Multiple OCR artifacts.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 244,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 5.2,
+      "evidence": "Error rate 5.2% (5-8% range). 2 detected OCR errors.",
+      "detected_ocr_errors": 2,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 245,
+      "classification": "MARGINAL",
+      "confidence": 0.7,
+      "error_rate": 8.8,
+      "evidence": "Error rate 8.8% (8-10% range). Multiple OCR artifacts.",
+      "detected_ocr_errors": 0,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 246,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 7.8,
+      "evidence": "Error rate 7.8% (5-8% range). 1 detected OCR errors.",
+      "detected_ocr_errors": 1,
+      "footnote_artifacts": []
+    }
+  ]
+}

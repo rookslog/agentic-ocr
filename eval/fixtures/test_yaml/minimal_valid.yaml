@@ -1,0 +1,181 @@
+schema_version: "1.1.0"
+
+source:
+  pdf: "test_document.pdf"
+  page_range: [0, 2]
+  document_type: monograph
+  title: "Test Document"
+  author: "Test Author"
+
+annotation_status:
+  footnotes:
+    state: verified
+    count: 2
+    annotator: human
+    verified_by: human
+  citations:
+    state: verified
+    count: 1
+    annotator: human
+    verified_by: human
+  marginal_refs:
+    state: verified
+    count: 0
+    annotator: human
+    verified_by: human
+  sous_rature:
+    state: pending
+    count: null
+    annotator: null
+
+pages:
+  - index: 0
+    label: "1"
+    dimensions:
+      width: 612
+      height: 792
+    tags: []
+    quality:
+      scan_quality: high
+      difficulty: easy
+    regions:
+      - id: header_1
+        type: header
+        bbox: [0.10, 0.02, 0.90, 0.05]
+        text: "TEST DOCUMENT"
+      - id: body_1
+        type: body
+        bbox: [0.10, 0.08, 0.90, 0.70]
+        text: |
+          This is the first paragraph of the test document.¹ It contains
+          a footnote reference and some regular text. The second sentence
+          has a citation (Author 2024, 42).
+      - id: fn_region_1
+        type: footnote_region
+        bbox: [0.10, 0.85, 0.90, 0.95]
+        text: |
+          1. This is the first footnote explaining something important.
+      - id: page_num_1
+        type: page_number
+        bbox: [0.48, 0.96, 0.52, 0.98]
+        text: "1"
+
+  - index: 1
+    label: "2"
+    dimensions:
+      width: 612
+      height: 792
+    tags: []
+    quality:
+      scan_quality: high
+      difficulty: easy
+    regions:
+      - id: header_2
+        type: header
+        bbox: [0.10, 0.02, 0.90, 0.05]
+        text: "TEST DOCUMENT"
+      - id: body_2
+        type: body
+        bbox: [0.10, 0.08, 0.90, 0.70]
+        text: |
+          This is the second page with another footnote.² More text follows.
+      - id: fn_region_2
+        type: footnote_region
+        bbox: [0.10, 0.85, 0.90, 0.95]
+        text: |
+          2. This is the second footnote on page 2.
+      - id: page_num_2
+        type: page_number
+        bbox: [0.48, 0.96, 0.52, 0.98]
+        text: "2"
+
+elements:
+  footnotes:
+    - id: fn_1
+      marker:
+        text: "1"
+        page: 0
+        region_id: body_1
+        char_offset: 52
+      content:
+        - page: 0
+          region_id: fn_region_1
+          text: "This is the first footnote explaining something important."
+          char_range: [3, 61]
+          is_continuation: false
+      pages: [0]
+      note_type: author
+      tags: []
+
+    - id: fn_2
+      marker:
+        text: "2"
+        page: 1
+        region_id: body_2
+        char_offset: 47
+      content:
+        - page: 1
+          region_id: fn_region_2
+          text: "This is the second footnote on page 2."
+          char_range: [3, 41]
+          is_continuation: false
+      pages: [1]
+      note_type: author
+      tags: []
+
+  citations:
+    - id: cite_1
+      raw: "(Author 2024, 42)"
+      page: 0
+      region_id: body_1
+      char_offset: 145
+      parsed:
+        style: author_date
+        authors: ["Author"]
+        year: 2024
+        pages: "42"
+      bib_entry_id: null
+      tags: []
+
+  marginal_refs: []
+
+  page_numbers:
+    - page: 0
+      displayed: "1"
+      normalized: 1
+      format: arabic
+      position: footer
+
+    - page: 1
+      displayed: "2"
+      normalized: 2
+      format: arabic
+      position: footer
+
+  sous_rature: []
+
+  bib_entries: []
+
+  sections: []
+
+  endnotes: []
+
+relationships:
+  footnote_links: []
+  citation_bib_links: []
+  cross_refs: []
+
+structure:
+  toc: []
+  front_matter:
+    pages: []
+    elements: []
+  back_matter:
+    pages: []
+    elements: []
+
+metadata:
+  tags: [test, minimal]
+  created: "2026-01-08"
+  last_modified: "2026-01-08"
+  notes: "Minimal test fixture for unit tests"

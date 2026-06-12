@@ -1,0 +1,58 @@
+[project]
+name = "agentic-ocr"
+version = "0.0.0"
+description = "Agentic OCR + semantic segmentation pipeline, eval harness, and experiment programme for humanities libraries"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Logan Rooks", email = "logan.rooks@mail.utoronto.ca" }]
+dependencies = [
+    # eval/lib scoring core (ported from scholardoc ground_truth/lib)
+    "rapidfuzz>=3.0.0",
+    "tabulate>=0.9.0",
+    "pyyaml>=6.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.6.0",
+    "mypy>=1.11.0",
+    "types-pyyaml>=6.0.0",
+    "types-tabulate>=0.9.0",
+]
+
+# Flat layout: `eval` and `tests` are top-level packages imported from the repo
+# root. We don't build/install a wheel in Phase 0 — uv runs against the source
+# tree. Tell hatchling which packages exist so `uv sync` doesn't try to guess.
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["eval"]
+
+[tool.pytest.ini_options]
+# Run from the repo root so `import eval.lib...` resolves against ./eval.
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "W"]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests use assert and may shadow builtins in helpers.
+"tests/**" = ["B011"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["eval", "tests", "runner"]
+ignore_missing_imports = true
+# rapidfuzz/tabulate are 3rd-party; eval/lib is ported code typed loosely.
+disallow_untyped_defs = false
+warn_unused_ignores = false

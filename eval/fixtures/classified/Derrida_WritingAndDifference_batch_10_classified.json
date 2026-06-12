@@ -1,0 +1,506 @@
+{
+  "document": "Derrida_WritingAndDifference",
+  "batch_number": 10,
+  "total_batches": 11,
+  "classified_pages": [
+    {
+      "page_number": 417,
+      "classification": "GOOD",
+      "confidence": 0.92,
+      "evidence": "Error rate: 4.8% | Bucket: C (3-5%) | Potential errors: scienti, dif, melan",
+      "footnote_artifacts": [
+        "16",
+        "14",
+        "20",
+        "147",
+        "17",
+        "13",
+        "146",
+        "44",
+        "145",
+        "56"
+      ],
+      "error_rate": 4.8,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 419,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Error rate: 6.4% | Bucket: D (5-10%) | Potential errors: ical, sophical, historico",
+      "footnote_artifacts": [
+        "70",
+        "28",
+        "394",
+        "71"
+      ],
+      "error_rate": 6.4,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 420,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Error rate: 7.4% | Bucket: D (5-10%) | Potential errors: des, blanchot, nal",
+      "footnote_artifacts": [
+        "171",
+        "395",
+        "10",
+        "1963",
+        "1966",
+        "71",
+        "1959",
+        "1964",
+        "199",
+        "29"
+      ],
+      "error_rate": 7.4,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 421,
+      "classification": "GOOD",
+      "confidence": 0.75,
+      "evidence": "Error rate: 17.2% | Bucket: E (10%+) | Potential errors: cile, nity, judaisme",
+      "footnote_artifacts": [
+        "1947",
+        "99",
+        "10",
+        "11",
+        "1963",
+        "1930",
+        "1961",
+        "25",
+        "1964",
+        "1969"
+      ],
+      "error_rate": 17.2,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 422,
+      "classification": "GOOD",
+      "confidence": 0.75,
+      "evidence": "Error rate: 10.6% | Bucket: E (10%+) | Potential errors: sacri, gure, philosophia",
+      "footnote_artifacts": [
+        "1967",
+        "24",
+        "31",
+        "397",
+        "147",
+        "100",
+        "29",
+        "1958"
+      ],
+      "error_rate": 10.6,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 424,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Error rate: 6.3% | Bucket: D (5-10%) | Potential errors: lished, nity, esp",
+      "footnote_artifacts": [
+        "16",
+        "49",
+        "11",
+        "1940",
+        "17",
+        "99",
+        "107",
+        "1930",
+        "399",
+        "18"
+      ],
+      "error_rate": 6.3,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 425,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Error rate: 5.5% | Bucket: D (5-10%) | Potential errors: heideggerean, sacri, dif",
+      "footnote_artifacts": [
+        "23",
+        "24",
+        "26",
+        "20",
+        "25",
+        "276",
+        "111",
+        "19",
+        "400",
+        "22"
+      ],
+      "error_rate": 5.5,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 426,
+      "classification": "GOOD",
+      "confidence": 0.75,
+      "evidence": "Error rate: 15.7% | Bucket: E (10%+) | Potential errors: kierkegaardiennes, ontologie, priori",
+      "footnote_artifacts": [
+        "1951",
+        "191",
+        "1961",
+        "308",
+        "37",
+        "1950",
+        "35",
+        "31",
+        "34",
+        "341"
+      ],
+      "error_rate": 15.7,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 427,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Error rate: 5.2% | Bucket: D (5-10%) | Potential errors: lled, eclaircissement, indefatiguable",
+      "footnote_artifacts": [
+        "36",
+        "233",
+        "40",
+        "41",
+        "131",
+        "1958",
+        "402",
+        "38",
+        "39",
+        "33"
+      ],
+      "error_rate": 5.2,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 428,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Error rate: 5.7% | Bucket: D (5-10%) | Potential errors: ontologie, bataille, cours",
+      "footnote_artifacts": [
+        "10",
+        "136",
+        "54",
+        "42",
+        "44",
+        "403",
+        "43"
+      ],
+      "error_rate": 5.7,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 429,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Error rate: 5.0% | Bucket: D (5-10%) | Potential errors: dif, oppos, bewusstseinleistung",
+      "footnote_artifacts": [
+        "404",
+        "61",
+        "45",
+        "154",
+        "46"
+      ],
+      "error_rate": 5.0,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 430,
+      "classification": "GOOD",
+      "confidence": 0.75,
+      "evidence": "Error rate: 16.2% | Bucket: E (10%+) | Potential errors: des, nglich, ontologie",
+      "footnote_artifacts": [
+        "209",
+        "49",
+        "1929",
+        "405",
+        "222",
+        "54",
+        "1968",
+        "124",
+        "58",
+        "10"
+      ],
+      "error_rate": 16.2,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 431,
+      "classification": "GOOD",
+      "confidence": 0.75,
+      "evidence": "Error rate: 11.7% | Bucket: E (10%+) | Potential errors: sorge, des, benveniste",
+      "footnote_artifacts": [
+        "63",
+        "170",
+        "233",
+        "75",
+        "26",
+        "20",
+        "406",
+        "188",
+        "67",
+        "66"
+      ],
+      "error_rate": 11.7,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 432,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Error rate: 8.0% | Bucket: D (5-10%) | Potential errors: commandement, des, physik",
+      "footnote_artifacts": [
+        "36",
+        "77",
+        "68",
+        "1953",
+        "70",
+        "407",
+        "1960",
+        "52",
+        "150",
+        "72"
+      ],
+      "error_rate": 8.0,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 433,
+      "classification": "GOOD",
+      "confidence": 0.75,
+      "evidence": "Error rate: 10.4% | Bucket: E (10%+) | Potential errors: germain, routledge, nist",
+      "footnote_artifacts": [
+        "77",
+        "75",
+        "74",
+        "73",
+        "79",
+        "1954",
+        "78",
+        "133",
+        "81",
+        "76"
+      ],
+      "error_rate": 10.4,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 434,
+      "classification": "GOOD",
+      "confidence": 0.75,
+      "evidence": "Error rate: 12.0% | Bucket: E (10%+) | Potential errors: homme, lderlins, des",
+      "footnote_artifacts": [
+        "181",
+        "14",
+        "1963",
+        "82",
+        "83",
+        "27",
+        "409",
+        "81",
+        "80",
+        "84"
+      ],
+      "error_rate": 12.0,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 435,
+      "classification": "GOOD",
+      "confidence": 0.92,
+      "evidence": "Error rate: 4.2% | Bucket: C (3-5%) | Potential errors: thomist, ses, existentiales",
+      "footnote_artifacts": [
+        "182",
+        "89",
+        "87",
+        "86",
+        "85",
+        "410",
+        "115",
+        "104",
+        "84"
+      ],
+      "error_rate": 4.2,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 436,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Error rate: 9.4% | Bucket: D (5-10%) | Potential errors: ference, uncircumventable, radin",
+      "footnote_artifacts": [
+        "1650",
+        "16",
+        "186",
+        "89",
+        "1940",
+        "1963",
+        "91",
+        "88",
+        "1921",
+        "1959"
+      ],
+      "error_rate": 9.4,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 438,
+      "classification": "GOOD",
+      "confidence": 0.75,
+      "evidence": "Error rate: 14.8% | Bucket: E (10%+) | Potential errors: vii, elementaren, husserliana",
+      "footnote_artifacts": [
+        "12",
+        "1970",
+        "1929",
+        "101",
+        "187",
+        "53",
+        "1968",
+        "1894",
+        "195",
+        "413"
+      ],
+      "error_rate": 14.8,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 439,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Error rate: 8.1% | Bucket: D (5-10%) | Potential errors: serl, clari, psychologie",
+      "footnote_artifacts": [
+        "12",
+        "58",
+        "10",
+        "11",
+        "14",
+        "13",
+        "54",
+        "59",
+        "25",
+        "1931"
+      ],
+      "error_rate": 8.1,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 440,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Error rate: 6.7% | Bucket: D (5-10%) | Potential errors: ciple, urteil, ical",
+      "footnote_artifacts": [
+        "415",
+        "16",
+        "236",
+        "85",
+        "204",
+        "246",
+        "203",
+        "15",
+        "72",
+        "17"
+      ],
+      "error_rate": 6.7,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 441,
+      "classification": "GOOD",
+      "confidence": 0.75,
+      "evidence": "Error rate: 11.5% | Bucket: E (10%+) | Potential errors: logische, der, medi",
+      "footnote_artifacts": [
+        "416",
+        "68",
+        "91",
+        "1887",
+        "20",
+        "18",
+        "1960",
+        "37",
+        "66",
+        "61"
+      ],
+      "error_rate": 11.5,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 442,
+      "classification": "GOOD",
+      "confidence": 0.92,
+      "evidence": "Error rate: 3.8% | Bucket: C (3-5%) | Potential errors: nom, telos, aristotelean",
+      "footnote_artifacts": [
+        "1970",
+        "37",
+        "156",
+        "24",
+        "378",
+        "25",
+        "417",
+        "1967",
+        "75",
+        "60"
+      ],
+      "error_rate": 3.8,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 443,
+      "classification": "GOOD",
+      "confidence": 0.75,
+      "evidence": "Error rate: 13.3% | Bucket: E (10%+) | Potential errors: gure, blanchot, cruaut",
+      "footnote_artifacts": [
+        "209",
+        "207",
+        "1948",
+        "1970",
+        "1961",
+        "418",
+        "1954",
+        "1959",
+        "57",
+        "15"
+      ],
+      "error_rate": 13.3,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 444,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Error rate: 9.5% | Bucket: D (5-10%) | Potential errors: lacan, blanchot, tique",
+      "footnote_artifacts": [
+        "16",
+        "11",
+        "14",
+        "419",
+        "17",
+        "13",
+        "1953",
+        "99",
+        "10",
+        "25"
+      ],
+      "error_rate": 9.5,
+      "bucket": "D (5-10%)"
+    }
+  ],
+  "summary": {
+    "total_pages": 25,
+    "good_count": 3,
+    "marginal_count": 12,
+    "bad_count": 10
+  }
+}

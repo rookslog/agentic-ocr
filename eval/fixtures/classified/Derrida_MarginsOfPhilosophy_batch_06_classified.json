@@ -1,0 +1,202 @@
+[
+  {
+    "page_number": 209,
+    "classification": "GOOD",
+    "confidence": 0.95,
+    "evidence": "Text is highly readable. Only 3.3% error rate. Key terms correct: Benveniste, Saussure, Aristotle, fundamenta'l (ca.tegories shows minor split), philosophe, aporias. Foreign terms accurate: 'language', 'unconscious', 'distinctive'. No meaningful garbling.",
+    "footnote_artifacts": false,
+    "notes": "Minor spacing issue with 'ca.tegories' appears to be a hyphenation artifact rather than OCR error."
+  },
+  {
+    "page_number": 212,
+    "classification": "MARGINAL",
+    "confidence": 0.70,
+    "evidence": "8.9% error rate with scattered errors. 'beypnd' should be 'beyond', 'kategorias' should be 'categories'. Greek terms present (kata, skh, pou, tois, tropon) are correctly transcribed. Core philosophical argument is followable despite errors. Names accurate: Benveniste, Aristotle.",
+    "footnote_artifacts": true,
+    "notes": "Text remains semantically coherent. Errors are distributed across vocabulary but don't destroy meaning. Greek philosophical terminology preserved accurately."
+  },
+  {
+    "page_number": 216,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "evidence": "8.4% error rate. Some misspellings: 'taphysics' for 'Metaphysics', 'soulev' (likely abbreviation of 'soulevés'). Names preserved: Benveniste, Trendelenburg, Brunschvicg, Aubenque, Roughier, Cassirer. Core discourse on categories and language remains readable.",
+    "footnote_artifacts": true,
+    "notes": "French word 'soulevés' appears truncated ('soulev') - may be footnote marker artifact. Overall semantic content preserved."
+  },
+  {
+    "page_number": 218,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "evidence": "8.4% error rate. Greek terms correctly preserved (paskhein, poiein, keisthai, ekhein, pou, pote). 'config-uration' shows hyphenation split. Key terms intact: Benveniste, 'transposition', 'projection', 'categories'. Meaning recoverable.",
+    "footnote_artifacts": true,
+    "notes": "Hyphenation artifact with 'config-uration'. Greek philosophical vocabulary correctly rendered despite scattered Latin/Greek characters."
+  },
+  {
+    "page_number": 221,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "7.2% error rate but many 'errors' are technical terms or fragments. 'nenf' likely footnote marker. Core text highly readable. Correct: Benveniste, empiricity, Leibniz, Heidegger, Aristotle. French terms: 'empirique', 'signifier', 'langage'.",
+    "footnote_artifacts": true,
+    "notes": "References accurately preserved. Philosophical argument clear and followable."
+  },
+  {
+    "page_number": 222,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "evidence": "5.3% error rate. Greek terms accurate: paskhein, pote, hote, poion, poson, poiein, ekhein, gegona, hosos. Names correct: Benveniste, Vuillemin. Minor issue: 'jectives' (likely 'adjectives' with footnote marker). Meaning fully recoverable.",
+    "footnote_artifacts": true,
+    "notes": "Text is generally good with excellent preservation of Greek philosophical terminology. Footnote markers appear merged with English words."
+  },
+  {
+    "page_number": 224,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "3.5% error rate. 'someihing' appears to be 'something'. German terms correct: 'Wesen', 'Dasein', 'das', 'sein'. French: 'différance'. Technical terms preserved: transcategorial, transcendental, predicates. Names: Benveniste, Heidegger, Kant, Plato.",
+    "footnote_artifacts": false,
+    "notes": "Single OCR error 'someihing' easily recognized as typo. Otherwise excellent text quality with proper preservation of foreign language philosophical vocabulary."
+  },
+  {
+    "page_number": 232,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "3.8% error rate. German terms correct: Wesen des Seins, Dasein, geschichtliches. French: 'supplément'. 'somehQw' should be 'somehow' (minor). Key terms preserved: copula, infinitive, infinitif, predicate. Heidegger quote accurately rendered.",
+    "footnote_artifacts": false,
+    "notes": "Minor typographic error with 'somehQw'. Overall excellent preservation of philosophical discourse on being and language."
+  },
+  {
+    "page_number": 239,
+    "classification": "BAD",
+    "confidence": 0.65,
+    "evidence": "5.8% error rate but with critical word corruptions. 'revene' for 'reverie', 'nteclals' for 'metals', 'figur ement' garbled as 'figur emen', 'efficacity' appears mangled, 'aristos' unclear (should reference Aristos/Ariste). Meaning severely compromised in key sections of Polyphilos dialogue.",
+    "footnote_artifacts": true,
+    "notes": "This page contains the philosophical dialogue on metaphor. Corrupted words obscure the argument. 'Epicuru?' incomplete. Multiple errors stack to create semantic confusion despite recognizable key names (France, Anatole)."
+  },
+  {
+    "page_number": 241,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "3.9% error rate. Key philosophers named: Hegel, Lachelier, Eleatics. French terms correct: 'Phénoménologie' (shown as 'Phenoinenology' - variant). Minor: 'lyphios' for 'Polyphilos' appears to be footnote artifact. Argument on negativity and metaphor clear and followable.",
+    "footnote_artifacts": true,
+    "notes": "German/Greek philosophical references accurate. Derrida's analysis of Hegel's negativity preserved. Footnote markers evident in 'lyphios'."
+  },
+  {
+    "page_number": 242,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "3.4% error rate. 'reducedj' for 'reduced' (minor), 'naivet' for 'naïveté' (French, understandable), 'metaphy' for 'metaphysical' (abbreviation artifact), 'ofihe' for 'of the'. Core philosophical argument intact. Names: Anatole France, Aristos/Ariste correctly rendered.",
+    "footnote_artifacts": true,
+    "notes": "Despite scattered errors, text is semantically sound. The exergue's key themes on white mythology and sensory images of metaphysics are clearly communicated."
+  },
+  {
+    "page_number": 243,
+    "classification": "MARGINAL",
+    "confidence": 0.70,
+    "evidence": "11.5% error rate - highest in batch. Multiple issues: 'aithusser' for 'Althusser' (appears twice, may be OCR of 'Althusser'), 'mouvant' intact but unclear reference context. Key names present: Renan, Nietzsche, Freud, Bergson, Lenin, Jakobson. Despite errors, configuration of theoretical network remains traceable.",
+    "footnote_artifacts": true,
+    "notes": "This page discusses the philosophical tradition discussing metaphor. While errors are numerous, the scaffolding of argument (listing theorists and their contributions) remains evident. Error density is highest but not catastrophic to meaning."
+  },
+  {
+    "page_number": 244,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "4.3% error rate. 'uninterriijted' should be 'uninterrupted' (clear typo), 'zfals' appears to be 'false' garbled. Key terms accurate: diachrony, nonsystactic, nonsyntactic, metaphorical, Jakobson, Polyphios. French diacritics preserved: 'métonymique'. Argument on symbolism vs system clear.",
+    "footnote_artifacts": true,
+    "notes": "Despite a few typos, this dense theoretical passage remains readable. Derrida's distinction between symbolism and system is preserved."
+  },
+  {
+    "page_number": 245,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "evidence": "4.3% error rate but with some curious words: 'dedaring' for 'declaring', 'dutton' (appears to be publisher name - correct), 'gions' likely footnote artifact, 'destutt' appears to be correct (Destutt de Tracy). Etymology analysis preserved. Marx citations intact.",
+    "footnote_artifacts": true,
+    "notes": "Text discusses metaphor in economic and political philosophy. Some OCR oddities but philosophical content on metaphor as linguistic and economic effect is followable."
+  },
+  {
+    "page_number": 246,
+    "classification": "MARGINAL",
+    "confidence": 0.73,
+    "evidence": "5.5% error rate. German appears: 'geworden', 'ijltramoral' for 'Ultramoral', 'siunlich' should be 'sinnlich' (German 'sensual'), 'Austausch' correct. Nietzsche quote on truth and metaphor mostly legible. Names: Saussure, Marx, Nietzsche preserved. Economic-linguistic analogy clear.",
+    "footnote_artifacts": true,
+    "notes": "Discussion of Nietzsche's worn coins metaphor. Despite scattered errors in German transliteration, the philosophical point is recoverable. Error density moderate."
+  },
+  {
+    "page_number": 249,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "4.5% error rate. 'thetaphor' for 'the metaphor', 'ammg' likely footnote artifact, 'histor' likely 'historical' truncated. Key terms: topologic, supplementarity, taxonomy, botanical, tropology all preserved. Philosophical vocabulary intact: metaphorics, philosophical discourse on metaphor classification.",
+    "footnote_artifacts": true,
+    "notes": "This complex passage on the general system of philosophical metaphors remains largely coherent. Scientific classification terminology (biological, mechanical, economic, mathematical, geometric) all readable."
+  },
+  {
+    "page_number": 252,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "4.4% error rate. 'stil' for 'style', 'phors' for 'phors' (appears correct in context), names: Pindar, Dornseiff, Goldschmidt, Guéroult all correct. Method discussion on metaphor classification clear. French terms: 'paradigme', 'métaphor', 'dialectique' preserved.",
+    "footnote_artifacts": false,
+    "notes": "Academic discussion of metaphor classification methods is clearly presented. Minor OCR artifact with 'stil' but easily recoverable."
+  },
+  {
+    "page_number": 253,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "evidence": "6.2% error rate with some philosophical terminology affected: 'ubertragung' (German 'transfer' - correct), 'theoria' correct, 'hypotyposis' correct, 'physisltechn' should be 'physis/tekhnē' (slight OCR split). Key philosophical concepts preserved: transcategorial, metaphorics. Kant and Hegel discussion clear.",
+    "footnote_artifacts": true,
+    "notes": "Text discusses Kant's theory of hypotyposis and metaphor's role in philosophical concepts. Errors are scattered and don't fundamentally obscure the dense theoretical argument on ground (Grund) as metaphor."
+  },
+  {
+    "page_number": 254,
+    "classification": "MARGINAL",
+    "confidence": 0.71,
+    "evidence": "11.3% error rate - second highest. Hegel passage with Germanic errors: 'wird', 'iche', 'nur', 'etwas', 'cken', 'ganz' appear as OCR artifacts of German text. 'relevf' for 'relevant' or 'relevé' (French). Key concept preserved: Aufhebung (via 'relevé'). Philosophical argument on metaphor's erosion follows logical structure despite errors.",
+    "footnote_artifacts": true,
+    "notes": "Extended quotation from Hegel on metaphor's sensory-spiritual transition. Despite high error rate in German sections, the relève/Aufhebung concept (memory, idealization) comes through. This is a difficult multilingual passage."
+  },
+  {
+    "page_number": 255,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "evidence": "9.9% error rate. 'tant' for 'tant', 'ubertragung' correct (German), 'spoern' for proper name, 'traite' correct (French), 'relez' possibly OCR of 'relève', 'theborders' merged words. Key philosophical framework intact: physis/nature, idealization, Aufhebung, tropology, metaphorics.",
+    "footnote_artifacts": true,
+    "notes": "Text analyzes metaphor within Hegelian framework. Multiple language mixing (German, French, English) creates OCR challenges. Core argument on idealization and sensory-spiritual transition remains followable."
+  },
+  {
+    "page_number": 257,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "5.4% error rate. 'nonspatial' correct, 'physis' correct, 'philosopheme' correct, minor: 'cept' likely 'concept' artifact, 'ductions' possibly 'productions' truncated. Greek terms intact: nomos. Key philosophical argument on logos, meaning, and metaphor's role clear and coherent.",
+    "footnote_artifacts": true,
+    "notes": "Derrida's complex argument on the impossibility of a general metaphorology remains clear. The paradox that philosophy cannot dominate its own metaphoricity comes through despite minor errors."
+  },
+  {
+    "page_number": 258,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "4.6% error rate. 'grnnmgs' for 'beginnings', 'struc' artifact, 'supplementaritj' for 'supplementarity', 'choanalysis' for 'psychoanalysis' (footnote marker artifact). Names: Bachelard correct. Key terms: proper/nonproper, tropic, prephilosophical all preserved and legible.",
+    "footnote_artifacts": true,
+    "notes": "Conclusion of metaphorology section. Discussion of history of beginnings and supplementarity is clear. Derrida's argument on prephilosophical tropes remains accessible."
+  },
+  {
+    "page_number": 259,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "evidence": "7.9% error rate. Greek citations: 'tois', 'mutheumatos', 'alogon', 'sophodes' for 'Sophocles', 'dunata', 'bubset' for 'subset'. Key philosophical terms: rhetoric, metaphor, concepts preserved. Aristotle's Poetics cited. Despite scattered errors, the discussion of probability and tragedy remains followable.",
+    "footnote_artifacts": true,
+    "notes": "Lengthy Aristotle quotation on tragedy and probability. Greek terminology mostly preserved despite some OCR artifacts. Derrida's framing argument on rhetoric vs metaphilosophy is clear."
+  },
+  {
+    "page_number": 260,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "8.1% error rate but many 'errors' are Greek technical terms correctly preserved: 'allotriou', 'pherein', 'genos', 'eidos', 'atos', 'kata'. 'nonzine' appears to be OCR of Greek. Aristotle's metaphor definition in Greek and English both legible. Key argument on genus-to-species metaphor transfer clear.",
+    "footnote_artifacts": true,
+    "notes": "Core page presenting Aristotle's Poetics definition of metaphor. Despite high technical term density and Greek script challenges, the logical structure of metaphor (genus to species, species to genus, analogy) remains intact."
+  },
+  {
+    "page_number": 264,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "3.3% error rate. 'trans' appears as abbreviation, 'parisons' for 'comparisons' (minor), 'nominalized' correct, 'asfigures' merged but readable. French names: Fontanier, Condillac correct. Philosophical terminology intact: metaphor, metonymy, synecdoche, catachresis, tropes. Fontanier's systematic distinctions preserved.",
+    "footnote_artifacts": true,
+    "notes": "Final page discussing Fontanier's classification of metaphor and tropes. Despite one merged word, the theoretical framework on words as ideas and relationships remains clear. Overall excellent quality."
+  }
+]

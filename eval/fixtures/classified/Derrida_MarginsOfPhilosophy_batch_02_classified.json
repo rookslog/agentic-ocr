@@ -1,0 +1,149 @@
+[
+  {
+    "page_number": 41,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Text is mostly readable with philosophical terminology intact (différance, semiological, Saussure). Minor errors: 'iead' (should be 'lead'), 'rwhich' (should be 'which'). Footnote artifacts present but not destructive. Foreign words (French, German) and proper nouns correct.",
+    "footnote_artifacts": ["rwhich", "text merged with numbers at footnote positions"]
+  },
+  {
+    "page_number": 42,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Readable text with correct French (différance), German (Beziehung, Hegel), and philosophical terminology intact. Minor OCR error: 'aifferance' (should be 'différance'). Some hyphenation artifacts but meaning recoverable.",
+    "footnote_artifacts": ["thatis", "thoughron appears to be artifact from line breaks"]
+  },
+  {
+    "page_number": 43,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": "Significant OCR corruption throughout. Multiple garbled terms: 'Aifferance' (wrong), 'realized' context broken. Heavy German text corrupted: 'anderes bezoge' appears corrupted. French/German philosophical terms damaged. Text requires significant correction to be usable.",
+    "footnote_artifacts": ["?nargc-?narque-marChe corrupted", "Dissesnination should be Dissemination"]
+  },
+  {
+    "page_number": 44,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clean, readable text. Key philosophical terms correct (différance, semiological, semiotic). Proper nouns intact (Saussure). Foreign language text accurate. Footnote references present and clear. Minor formatting artifacts do not affect comprehension.",
+    "footnote_artifacts": ["forrnation appears to be footnote merge artifact"]
+  },
+  {
+    "page_number": 45,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Generally readable philosophical text with correct terminology. One significant error: 'titself' (should be 'itself'). French/German terms mostly correct (solliciter, ousia, Husserl). Minor hyphenation issues but meaning recoverable throughout.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 46,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Readable text with correct philosophical vocabulary (Nietzsche, différance, physis, tekhne, nomos). Minor error: 'Difl' (should be 'Diff'). German and Greek terms correctly preserved. Text content recoverable despite minor artifacts.",
+    "footnote_artifacts": ["symp appears to be truncated symptomatology"]
+  },
+  {
+    "page_number": 47,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clean philosophical text with accurate foreign language terms (Vorrat, Niederschrift, Bahnung, frayage). Key concepts correct (différance, trace, Freud). Proper nouns and technical vocabulary intact. Highly readable with only minor formatting variations.",
+    "footnote_artifacts": ["Demda footnote reference clear"]
+  },
+  {
+    "page_number": 50,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Mostly readable text with correct philosophical terminology and author names (Levinas, Freud, Nietzsche). One significant error: 'aiterity' (should be 'alterity'). German term 'Nachtraglichkeit' correct. Text meaning is recoverable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 51,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Readable philosophical text with complex terminology intact. Minor errors: 'oogical' (should be 'ontological'), 'thotight' (should be 'thought'), 'bein' (should be 'being'). Greek terms and proper nouns (Heidegger, heautoi) correct. Content recoverable.",
+    "footnote_artifacts": ["diapherein preserved correctly"]
+  },
+  {
+    "page_number": 54,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": "Significant OCR corruption in extended German quotations. Multiple errors: 'lileibt' (should be 'bleibt'), 'verh' (corrupted), German philosophical text fragmented. While some English content is readable, the extensive German quotations are severely degraded, making portions unusable for scholarly work.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 56,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Generally readable with correct philosophical terminology and proper nouns (Heidegger, Nietzsche). Minor errors present: 'heideggerian' context, 'fruhe' German term intact. Text is semantically recoverable despite some artifacts.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 58,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clean title page/header material. Technical terms correct (Ousia, Grammè). Very short text with minimal errors. Proper nouns intact (Beaufret, Plon). High quality OCR for this minimal content.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 60,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Mixed quality with readable English portions and heavily corrupted German epigraph. German quote contains errors: 'steigertes' (should be 'gesteigertes'). English philosophical content mostly correct. German section severely degraded but English remains usable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 61,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clean, readable text with correct philosophical and historical terminology (Parmenides, Hegel, Aristotle). German terms intact and properly handled. Proper nouns all correct. Minor formatting artifacts do not affect comprehension. Scholarly content preserved.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 62,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Readable philosophical text with correct major terminology. Complex German philosophical discourse preserved. One clear error: 'gegenwartigkeit' formatting. Extended German quotations mostly legible. Content recoverable for scholarly use despite some minor degradation.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 64,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Readable philosophical analysis with correct key terms (Heidegger, Aristotle, Being and Time). Minor errors: 'wcrke' (should be 'Werke'). Complex discussion of ontology and temporality preserved. Text is semantically useful despite minor OCR artifacts.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 65,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clean, well-formatted philosophical text. Foreign language terms correct (Vorhandenheit, automanifestation, ousia). Proper nouns intact (Hegel, Aristotle). Complex philosophical argument clearly expressed. High-quality OCR with minimal errors.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 66,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Readable philosophical and historical analysis. Complex Greek and German terminology mostly preserved (khronos, arithmos, imm(immediate)). Minor formatting: 'totle' (Aristotle), 'durationj' (duration with footnote marker). Content recoverable for scholarly work.",
+    "footnote_artifacts": ["durationj footnote artifact"]
+  },
+  {
+    "page_number": 67,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": "Significant OCR corruption in critical philosophical passages. Multiple severe errors: 'Jisplaceinent' (displacement corrupted), 'foir' (for), 'xetained' (retained), 'tresenhe' (presence?). Text becomes garbled in key passages. While some sections readable, passages of philosophical argument are compromised.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 68,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Readable philosophical text with correct Greek terminology (ouk, gegone, tis, dia, estjn). Key concepts and proper nouns intact (Aristotle, metaphysics, physis). Minor OCR artifact: 'losophy' (philosophy). Content recoverable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 69,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clean, readable philosophical and historical analysis. Complex terminology preserved (temporalization, nonbeingness, ousia). Proper nouns correct (Hegel, Aristotle). Greek and philosophical discourse intact. Minor formatting does not impede comprehension.",
+    "footnote_artifacts": []
+  }
+]

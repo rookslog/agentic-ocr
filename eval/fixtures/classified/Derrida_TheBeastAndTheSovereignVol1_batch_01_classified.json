@@ -1,0 +1,177 @@
+[
+  {
+    "page_number": 4,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Title page with straightforward layout. Minor issues: 'v o l u m e' has spacing artifacts (typical of simple headers). French proper names (Lisse, Michaud) and publisher info readable.",
+    "footnote_artifacts": "None detected"
+  },
+  {
+    "page_number": 5,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Copyright/biographical page. Text flows clearly. Sample 'unknown words' are actually valid French terms (minaire=séminaire abbreviated?, directeur, sociales, ditions=éditions). Standard publishing metadata is complete and readable. ISBN and publication details accurate.",
+    "footnote_artifacts": "None"
+  },
+  {
+    "page_number": 6,
+    "classification": "MARGINAL",
+    "confidence": 0.88,
+    "evidence": "Table of contents with session dates. Minor issue: 'glish' is 'English' with prefix cut off ('En glish' split). Rest of layout and numbering intact. 'vii', 'xiii' are Roman numerals, not errors.",
+    "footnote_artifacts": "None"
+  },
+  {
+    "page_number": 8,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Foreword text is highly readable. Complex philosophical language preserved accurately. Sample 'unknown words' include valid terms and abbreviations (glish='English' with spacing, modi='modified'). French terms (étudiant) and footnote references intact. Professional translation quality maintained.",
+    "footnote_artifacts": "None"
+  },
+  {
+    "page_number": 9,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Continuation of foreword. Translator names and affiliations clear (Pascale-Anne Brault, Michael Naas, Elizabeth Rottenberg). Date '2009' correct. Minor: 'glish' for 'English'. Overall text structure and meaning completely preserved.",
+    "footnote_artifacts": "None"
+  },
+  {
+    "page_number": 11,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "General introduction with dense academic content. German/French terms present (Agrégation, EHESS) marked as 'unknown' but are proper nouns. Historical dates accurate (1960-2003). Complex seminar descriptions readable. '15' footnote marker intact.",
+    "footnote_artifacts": "'15' footnote marker present but not marked as artifact - this is correct editorial notation"
+  },
+  {
+    "page_number": 14,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Editorial note describing seminar content. Scholarly discourse on sovereignty and animals preserved. Sample terms like 'Aristotle', 'Foucault', 'Agamben' are correctly OCR'd. Paragraph structure maintained. References to La Fontaine's Fables and Hobbes/Rousseau intact.",
+    "footnote_artifacts": "None"
+  },
+  {
+    "page_number": 16,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Editorial methodology page discussing transcription and editing practices. Complex discussion of technical decisions clearly readable. Quotation marks, brackets, and scholarly annotations preserved. Reference to Cerisy conferences and Helen's practices documented accurately.",
+    "footnote_artifacts": "None"
+  },
+  {
+    "page_number": 17,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Continued editorial notes with editor signatures. Greek transliteration guidelines mentioned (ISO 843 standard reference). Multiple editors named (Michel Lisse, Marie-Louise Mallet, Ginette Michaud). Foreign language references (Hebrew, German, Greek) marked as expected.",
+    "footnote_artifacts": "Footnote marker '10' present and correctly formatted"
+  },
+  {
+    "page_number": 18,
+    "classification": "MARGINAL",
+    "confidence": 0.83,
+    "evidence": "First session content begins. Main text readable but contains heavier artifact loads: 'souverainet' (should be 'souveraineté'), 'mal' segmentation issues. Complex footnote with journal citations and dates (2001-2004). Still legible overall with ~1-2 OCR errors per paragraph.",
+    "footnote_artifacts": "Extensive footnote content with multiple citations, page numbers, and bilingual publication info. Marker '1' visible. Some segmentation: 'venir' (part of phrase), 'politique' clear"
+  },
+  {
+    "page_number": 19,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Seminar discourse on gender grammar (la bête/le souverain). French quotations preserved with diacritics (à, è, ê). Literary reference to La Fontaine's Fables with proper formatting. Phrase 'à pas de loup' (stealthily) clearly readable. Translator's note in brackets marked.",
+    "footnote_artifacts": "Footnote marker '2' visible with translator's note explaining French temporal reference"
+  },
+  {
+    "page_number": 20,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "Dense philosophical text with multiple languages (French, German, Greek). High error rate (13.6%) shows in samples: 'taubenf' (should be 'Taubenfüsse' - German), 'meiner' partial. Kant reference and Nietzsche's Zarathustra passage contain German text with moderate OCR issues. Still intellectually recoverable.",
+    "footnote_artifacts": "Multiple footnotes with references to Kant's Critique of Pure Reason and Nietzsche's German text. Footnote markers 3, 4, 5 present with complex citations"
+  },
+  {
+    "page_number": 22,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Philosophical discourse on the wolf (pas de loup). French proverbs and their meanings clearly explained. Logical argumentation preserved. Sample 'unknown words' include technical terms (syntagm) and proper nouns (Brunschvicg). Pascal reference intact. Footnote 8 marker present.",
+    "footnote_artifacts": "Footnote 8 references Pascal's Pensées with correct edition and page number"
+  },
+  {
+    "page_number": 23,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Continued analysis of wolf metaphor and mask ('loup' as velvet mask). Philosophical arguments on power and sovereignty readable. French terms correctly rendered (visor effect, visage). Complex ideas on the ungraspable nature of political power conveyed clearly.",
+    "footnote_artifacts": "Footnote marker 9 visible referencing Derrida's Spectres of Marx with publication details"
+  },
+  {
+    "page_number": 25,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Scholarly discussion of La Fontaine, Pascal, and Marin. French publication info preserved (Méridiens/Klincksieck). Pascal's famous Pensée on justice and force quoted in full with proper formatting. ISBN and page citations accurate. Footnotes 11-14 structured correctly.",
+    "footnote_artifacts": "Multiple footnotes with precise publishing data (pages, edition years). Brunschvicg classification number (298) and Lafuma classification (103) both preserved"
+  },
+  {
+    "page_number": 26,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Mythological and literary references (Hobbes, Ojibwa legends, Romulus and Remus). Complex narrative about wolves and sovereignty. Proper names (Manabozho, Genghis Khan) correct. Footnote 15 marker clear. Translator's note on English/French terminology integrated.",
+    "footnote_artifacts": "Footnote marker 15 provides English translation guidance for the word 'twins' (jumeaux)"
+  },
+  {
+    "page_number": 30,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Rousseau's Social Contract analysis with embedded quotation (Caligula fragment). Argument structure on sovereignty and animal nature preserved. References to Aristotle, Grotius coherent. Sample 'unknown words' include standard French (avoir, raison, syntagm). Footnote 19 intact.",
+    "footnote_artifacts": "Footnote 19 references Rousseau's text with exact page number and completion of truncated quote"
+  },
+  {
+    "page_number": 32,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "Complex discussion of animal societies and incest avoidance. Higher error rate (11.5%) evident in samples. Text still conveys main argument about nature/culture boundary. References to Derrida's other works (Of Spirit, 'Eating Well', 'The Animal That Therefore I Am') mostly readable but with segmentation issues. ~2-3 errors.",
+    "footnote_artifacts": "Extensive footnote 20 with multiple publication references and translations. Some title segmentation but citations recoverable"
+  },
+  {
+    "page_number": 33,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Refined philosophical argument distinguishing 'social' from 'political' animals. Low error rate (2.1%). Complex terminology (hierarchized, analogism, Schmitt) preserved. Discussion of sovereignty's exceptional character clearly articulated. Footnote 21-22 intact with reference notes.",
+    "footnote_artifacts": "Footnotes 21-22 present with translator's note on 'droit' (French legal term dual meaning)"
+  },
+  {
+    "page_number": 34,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Theoretical discussion of sovereignty and beast as 'being-outside-the-law'. Complex nested ideas on heterogeneous modes preserved. German term 'unheimlich' (uncanny) correctly included. Reference to Mustapha Kemal Atatürk and grey wolf symbolism accurate. Footnote 23 on English word in text.",
+    "footnote_artifacts": "Footnote 23 notes 'Uncanny' appears in English in original text"
+  },
+  {
+    "page_number": 37,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Historical analysis of USA-Iraq relations and Saddam Hussein. Complex political argument legible. Chomsky reference and unicef statistics clear. Transition to discussion of September 11 analogy prepared. Philosophical concepts (analogy, obscurity) articulated clearly.",
+    "footnote_artifacts": "Footnote 29 references Chomsky source with page number and translator's note on English quotation"
+  },
+  {
+    "page_number": 38,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Detailed engagement with Aristotle's definition of man as political animal (zoon politikon). Hobbes' Leviathan and De Cive referenced. Plutarch's 'That Brute Beasts Have Reason' discussed with proper attribution. Philosophical argument on animal reason coherent and readable.",
+    "footnote_artifacts": "Footnote 30 references Plutarch collection with editor (Fontenay) and multiple publication formats preserved"
+  },
+  {
+    "page_number": 39,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Extended Plutarch quotation on animal virtue, pride, and refusal of slavery. Extensive textual analysis of animal behavior contrasted with human cowardice. Rousseau's Émile discussion integrated. Translator's note on corrections to English references (butchers/surgeons right).",
+    "footnote_artifacts": "Footnote 32 with page references to Garnier-Flammarion edition and translator's note. Footnote 33 notes possible OCR correction ('cruauté et sans' possibly 'cruauté et sang')"
+  },
+  {
+    "page_number": 40,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Carnivorous culture discussion and devouring metaphor. Complex semiotics of mouth, teeth, speech, and sovereignty clearly articulated. King Midas reference (ass's ears) and Tristan/Yseult mythology integrated smoothly. Wordplay on 'porte-voix' (megaphone/voice-carrier) preserved.",
+    "footnote_artifacts": "Footnote 35 explains French word 'figure' (both figure and face meaning) - important for understanding wordplay"
+  },
+  {
+    "page_number": 43,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Theory of political animal figuration through Hobbes' Leviathan. Complex nested arguments on sovereignty as both above and as bestiality preserved. Technical terms (prosthetic/prostatic logic) clear. Reference to Book of Job's dragon and Hobbes' Leviathan (1651) accurate. Philosophical coherence maintained.",
+    "footnote_artifacts": "Footnote 38 cites Norton edition of Leviathan with editors and page number intact"
+  }
+]

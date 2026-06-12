@@ -1,0 +1,189 @@
+[
+  {
+    "page_number": 134,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Text reads smoothly with proper formatting. The only questionable items in unknown_words sample appear to be Latin/German terms (spiritus, schwindsucht) and legitimate OCR artifacts (ents, ited, polyneices from compound words). No obvious garbling or missing words.",
+    "footnote_artifacts": [
+      "word73"
+    ]
+  },
+  {
+    "page_number": 135,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Multiple OCR artifacts detected: 'unelaborated' (should be 'unelaborated'), 'unworked', 'machina' (likely 'deus ex machina'), 'ciability' (should be 'sociability'), 'enlight' (should be 'Enlightenment'). These are 1-2 letter fragments that interrupt readability, though the paragraph structure remains clear.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 136,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "Similar pattern to page 135: 'tingency' (contingency), 'linquishes' (relinquishes), 'deemable' (irredeemable), 'motiva' (motivations), 'criture' (écriture), 'blanchot' (proper name - acceptable). About 1-2 errors per 1000 words. Text remains comprehensible overall.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 139,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "evidence": "Notable errors: 'lence' (violence?), 'opportun' (opportunity), 'duced' (produced?), 'raderie' (camaraderie). Mixed with German 'quoque' and legitimate French citations. Error rate estimated at 1-2 per page affecting comprehension slightly.",
+    "footnote_artifacts": [
+      "word4"
+    ]
+  },
+  {
+    "page_number": 140,
+    "classification": "MARGINAL",
+    "confidence": 0.80,
+    "evidence": "German words like 'Entsagung', 'Abwerfen', 'Wegwerfung', 'Verwerfung' are legitimate but may appear in OCR sample as artifacts. Clear OCR errors: 'drigung' (Erniedrigung), 'affirma' (affirmation), 'jection' (rejection). Overall comprehensible with ~1-2 substantial errors.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 144,
+    "classification": "MARGINAL",
+    "confidence": 0.76,
+    "evidence": "Errors noted: 'metry' (asymmetry), 'gering' (differing?), 'bersichten' (Übersichten), 'ber' (über), 'tation' (substantiation). Error rate ~5-6% but text remains mostly readable. Philosophy jargon and cross-references to PhG maintain coherence.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 145,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "Minor errors detected: 'sch' (part of 'schöne'), 'hav' (having), 'verschwinden' and 'Schwindsucht' are legitimate German terms. The presence of proper names like 'Lacanian', 'Adorno' explains some unknown_words sample entries. ~2-3 actual OCR errors observed.",
+    "footnote_artifacts": [
+      "word10"
+    ]
+  },
+  {
+    "page_number": 146,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "Mixed quality: 'shouldn' (shouldn't with apostrophe missing), 'onciliation' (reconciliation), 'sha' (shamanistic?), 'extrava' (extravaganza). German proper names 'Amfortas', 'Parzifal' are legitimate. Error count ~3-4 per page affecting readability.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 147,
+    "classification": "MARGINAL",
+    "confidence": 0.80,
+    "evidence": "Errors include: 'pletely' (completely), 'edness' (suffix fragment), German names 'Slavoj' (proper), 'Kraus', 'Adorno' are correct. 'Penelopean' is a literary reference. ~2-3 clear OCR errors but context remains recoverable.",
+    "footnote_artifacts": [
+      "word11"
+    ]
+  },
+  {
+    "page_number": 148,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "Quality degradation noted: 'onciling' (reconciling), 'ent' (a fragment), 'haps' (perhaps?), 'erung' (Entäußerung - legitimate), 'jakobson' name is correct. German citation 'Entäußerung' explains artifacts. ~2-3 errors with mostly readable prose.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 149,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "Errors observed: 'stitutional' (institutional), 'contin' (contingency), 'cedent' (precedent?), 'fession' (confession fragment), 'ther' (other?). Latin terms 'peccatum' legitimate. ~2-3 OCR failures per page, text remains coherent.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 151,
+    "classification": "MARGINAL",
+    "confidence": 0.77,
+    "evidence": "Notable errors: 'lenged' (challenged), 'tasy' (fantasy), 'eryone' (everyone), 'sult' (result?), 'aneconomic' (unusual but possibly hyphenated term). Mix of proper names (Arendt, Agamben, Badiou, Levinas) that are correct. Error rate 5-6%.",
+    "footnote_artifacts": [
+      "word17"
+    ]
+  },
+  {
+    "page_number": 153,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "evidence": "Errors: 'hnende' (part of German), 'defi' (deficiency?), 'pling' (coupling?). German term 'Sollen' and French 'Kojève' (Koj\u00e8ve) are legitimate. ~3-4 OCR artifacts noted. Historical philosophy citations remain identifiable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 154,
+    "classification": "MARGINAL",
+    "confidence": 0.84,
+    "evidence": "Relatively clean compared to others: 'losophy' (philosophy), 'privi' (privileges), 'reorgani' (reorganization), 'judg' (judge), 'giveness' (forgiveness). Mixed German/French philosophy text. ~2-3 errors per page, still readable.",
+    "footnote_artifacts": [
+      "word23"
+    ]
+  },
+  {
+    "page_number": 155,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "Errors detected: 'phenome' (phenomenology), 'nology' (part of phenomenology), 'manu' (manuscript), 'abor' (labor?), 'situ' (situation?), 'ously' (obviously?). Error rate 6-7%. Core philosophical arguments remain traceable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 157,
+    "classification": "MARGINAL",
+    "confidence": 0.76,
+    "evidence": "Notable degradation: 'phr' (prefix artifact), 'celerating' (accelerating), 'pauperization', 'ization' (suffix), 'calam' (calamity), 'stituted' (constituted), 'lems' (problems). Error rate 6%+ but still comprehensible.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 158,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "evidence": "Degraded quality: 'phr' (prefix), 'realphilosophie' (legitimate German compound), 'shlomo' (proper name Shlomo), 'jus' (justification?), 'avineri' (proper name), 'gottes' (German 'Gottes'), 'infa' (infamous). Error rate 6-7%.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 159,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "evidence": "Quality concerns: 'mortale' (mortale - Latin in 'salto mortale'), 'overpaints', 'begeistung' (German term), 'verschwinden' (German), 'bling' (tumbling?), 'rhodus' (Rhodes), 'punctua' (punctuation). Error rate approaching 7%. Philosophical content recoverable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 161,
+    "classification": "MARGINAL",
+    "confidence": 0.71,
+    "evidence": "Higher error density: 'avant' (avant-garde), 'ronism' (anachronism), 'underscor' (underscoring), 'oblitera' (obliteration), 'malism' (formalism), 'portunity' (opportunity), 'ogy' (suffix). Error rate ~7%. Text remains interpretable but effort required.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 162,
+    "classification": "MARGINAL",
+    "confidence": 0.71,
+    "evidence": "Degraded: 'subver' (subversion), 'deactiva' (deactivation), 'sity' (versity - university), 'virtualization', 'verwirklichung' (German), 'neces' (necessary), 'postrevolutionary' fragments. Error rate 9.1% reported, 2-3 per sentence typical.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 163,
+    "classification": "MARGINAL",
+    "confidence": 0.73,
+    "evidence": "Notable errors: 'nonhappening', 'ungeschichte' (German), 'unbeautiful', 'creatio' (creatio ex nihilo), 'ungeschehen' (German), 'untat' (German), 'wirklichkeit' (German). Mix of legitimate philosophical German and OCR fragments. ~7-8% error rate.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 164,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "evidence": "Errors include: 'vorhergehende' (German: preceding), 'gelernt' (German: learned), 'innerung' (German: remembrance), 'nichts' (German: nothing), 'preme' (supreme), 'erfahrung' (German: experience). ~7% error rate with mix of German terms and OCR artifacts.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 166,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Relatively clean: 'thage' (Carthage misspelled?), 'ment' (fragment), 'istent' (consistent?), 'ambigu' (ambiguous), 'perioden' (German: periods), 'gegensatzes' (German: oppositions) are mostly legitimate. Error rate only 3.8%. Philosophical argument clear.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 167,
+    "classification": "MARGINAL",
+    "confidence": 0.77,
+    "evidence": "Errors: 'phr' (prefix), 'tachment' (attachment), 'gor' (gorge/gorgeous), 'bellion' (rebellion), 'ponty' (Merleau-Ponty name, acceptable), 'contamina' (contamination), 'cally' (typically). Error rate ~7%. Proper names generally correct.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 169,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "evidence": "Acceptable quality: 'trated' (illustrated?), 'tasm' (phantom?), 'jamin' (Benjamin), 'illus' (illustrates), 'thermidorian' (proper historical term), 'sittlichkeit' (German), 'tion' (suffix). Error rate ~6%. Historical analysis remains coherent.",
+    "footnote_artifacts": []
+  }
+]

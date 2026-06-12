@@ -1,0 +1,382 @@
+{
+  "batch_id": 12,
+  "document": "Heidegger_BeingAndTime",
+  "classification_timestamp": "2025-12-21",
+  "classifications": [
+    {
+      "page_number": 407,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate_reported": 10.2,
+      "evidence": [
+        "perseveringl → perseveringly (missing 'y', minor typo)",
+        "ontological!JI → ontologically (corrupted punctuation/characters)",
+        "elimin → eliminating (truncation at line break)"
+      ],
+      "footnote_artifacts": [
+        "anhaltends → anhalt-ends or anhalt[^?] (appears to be word + footnote marker merged)"
+      ],
+      "assessment": "Text is largely readable despite high error rate. Main issues are minor spelling variations and one corrupted punctuation sequence. These do not substantially damage semantic meaning for RAG embedding."
+    },
+    {
+      "page_number": 408,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate_reported": 15.2,
+      "evidence": [
+        "horizonal → horizonal (this is correct German/English)",
+        "rechnungtragens → Rechnungtragens (capitalization variant, semantic content intact)",
+        "findet → findet (correct German)"
+      ],
+      "footnote_artifacts": [
+        "gewartigende → gewartige (possible footnote marker artifact)"
+      ],
+      "assessment": "High error rate seems inflated by German words marked as 'unknown'. Text content is philosophically coherent. Key philosophical terms are correctly OCR'd (making-present, ready-to-hand, etc.)."
+    },
+    {
+      "page_number": 409,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate_reported": 4.3,
+      "evidence": [
+        "truthxlx → truth (clear OCR artifact but context makes meaning obvious)",
+        "delibera → deliberations (truncation at margin, recoverable)",
+        "introductionxx → introduction (OCR artifact from footnote markers)"
+      ],
+      "footnote_artifacts": [
+        "truthxlx → truth[^xlx] (superscript footnote markers OCR'd as 'x' characters)",
+        "introductionxx → introduction[^xx] (footnote marker artifact)"
+      ],
+      "assessment": "Low error rate. Most issues are formatting artifacts from footnote markers. Core text is clean and semantically sound. Footnote markers do not damage meaningful content."
+    },
+    {
+      "page_number": 410,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate_reported": 4.6,
+      "evidence": [
+        "discontinur → discontinuous (close match, likely OCR truncation at line break)",
+        "pulation → manipulation (missing 'ma' at line start, context recovers meaning)",
+        "betrieb → Betrieb (German term correctly recognized)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Very clean page. Minor truncations at line/column breaks are easily recovered from context. Philosophical content is intact. No semantic damage."
+    },
+    {
+      "page_number": 412,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate_reported": 6.8,
+      "evidence": [
+        "ciicumspectively → circumspectively (letter duplication, easy to detect and correct)",
+        "pos → possibility (truncation at line break)",
+        "nly → only (missing leading 'o')",
+        "onal → ional (suffix only, likely margin truncation)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Common OCR errors (letter duplication, line-break truncations). These are visually obvious errors but context makes intended meaning clear. No semantic corruption."
+    },
+    {
+      "page_number": 413,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate_reported": 9.0,
+      "evidence": [
+        "hamer → hammer (transposition artifact, 'rn' confused with 'm')",
+        "hamer → hammer (letter reversal: rn→m, documented OCR pattern)",
+        "wil → will (missing letter)",
+        "schwer → schwer (correct German)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Contains documented OCR substitution patterns (rn↔m). However, context is philosophical and errors are locally obvious. Main philosophical content (tool analysis, ready-to-hand vs present-at-hand) is intact."
+    },
+    {
+      "page_number": 417,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate_reported": 6.7,
+      "evidence": [
+        "ekstasen → ecstases (variant spelling or linguistic transliteration)",
+        "ekstase → ecstasis (variant spelling handled consistently)",
+        "woraufhin → woraufhin (German term, correct)"
+      ],
+      "footnote_artifacts": [
+        "entruckungen → Entrückungen (German term with umlaut, possibly OCR'd without umlaut)"
+      ],
+      "assessment": "Clean page. Technical philosophical terms are mostly correctly rendered. Variants are consistent. No semantic corruption of core concepts."
+    },
+    {
+      "page_number": 418,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate_reported": 5.8,
+      "evidence": [
+        "cendence → transcendence (likely margin/column truncation, easily recovered)",
+        "lity → ality (suffix only, recoverable from context)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Very clean page. Margin truncations are trivial. Core philosophical content on temporality, world transcendence is well-preserved. No embedding damage."
+    },
+    {
+      "page_number": 419,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate_reported": 3.8,
+      "evidence": [
+        "terization → characterization (prefix truncation, semantically obvious)",
+        "xxv → [^xxv] (footnote marker)",
+        "spatia → spatial (minor suffix truncation, easily recovered)"
+      ],
+      "footnote_artifacts": [
+        "xxv → [^xxv] (footnote reference marker)"
+      ],
+      "assessment": "Low error rate, minimal actual damage. Footnote markers account for most 'errors'. Philosophical discourse on spatiality and temporality is clear."
+    },
+    {
+      "page_number": 420,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate_reported": 9.3,
+      "evidence": [
+        "expresion → expression (missing 's')",
+        "pasage → passage (missing 's')",
+        "priate → appropriate (prefix truncation)",
+        "fil → fill (single letter missing)",
+        "bestinunt → bestimmt (OCR error: 'i' read as 'n', 'i' read as 'u')",
+        "wortlichen → wörtlichen (umlaut OCR issue)"
+      ],
+      "footnote_artifacts": [
+        "wortlichen → wörtlichen (German term with special character)"
+      ],
+      "assessment": "Several documented OCR errors (missing letters, substitutions). However, the page discusses Dasein's spatiality with clear philosophical arguments. Errors are scattered and context restores meaning."
+    },
+    {
+      "page_number": 421,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate_reported": 6.4,
+      "evidence": [
+        "hende → hanging (prefix missing, 'aufge-hende')",
+        "direc → directional (suffix truncation)",
+        "cally → cally (likely 'tactically' with prefix loss)",
+        "tionality → tionality (suffix only, 'directionality' likely)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Multiple prefix/suffix truncations at margins. These are pattern-obvious errors. The philosophical content on making-room, directionality, and de-severance is comprehensible despite margin artifacts."
+    },
+    {
+      "page_number": 422,
+      "classification": "BAD",
+      "confidence": "high",
+      "error_rate_reported": 11.2,
+      "evidence": [
+        "Dorther → [Dorther] (corrupted)",
+        "dayness → everyday-ness (semantic damage - wrong concept entirely)",
+        "dorther → dorther (German: 'from there', correct)",
+        "dadurch → dadurch (German: 'thereby', correct)",
+        "fundierten → fundierten (German: 'founded', correct)"
+      ],
+      "footnote_artifacts": [
+        "dayness → could be 'everyday' with bad OCR, or genuine corruption"
+      ],
+      "assessment": "Contains 'dayness' which corrupts 'everydayness' - a KEY philosophical concept in Heidegger. This substitution damages semantic meaning and would harm embedding quality. Additionally, corrupted character sequences and high error rate indicate significant OCR issues on this page."
+    },
+    {
+      "page_number": 424,
+      "classification": "BAD",
+      "confidence": "high",
+      "error_rate_reported": 19.5,
+      "evidence": [
+        "familiat → familiar (wrong word)",
+        "hineinlebend → hineinlebend (correct German)",
+        "lagen → Lagen (variant capitalization)",
+        "nichts/nicht → common German words, correct",
+        "lity → ality (suffix only, high frequency of such errors)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Highest error rate in batch (19.5%). Multiple word-level errors and corruptions. 'familiat' is wrong word (should 'familial' or similar). The text discusses everydayness and the nature of Dasein's existence, but OCR corruption here significantly damages semantic integrity."
+    },
+    {
+      "page_number": 427,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate_reported": 5.9,
+      "evidence": [
+        "aktuelle → aktuelle (German: 'actual/current', correct)",
+        "exper → experiences (truncation, easily recovered)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Clean page with minimal errors. Core philosophical content on Dasein's Being, temporality, and care is well-preserved. Margin truncations are trivial."
+    },
+    {
+      "page_number": 430,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate_reported": 5.4,
+      "evidence": [
+        "dilthey → Dilthey (capitalization variant - proper name)",
+        "funda → fundamental (truncation at margin, recoverable)",
+        "terization → characterization (prefix loss, semantic recoverable)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Very clean page on historicality and temporality. Main philosophical argument is clear. Dilthey reference is correct. Margin artifacts are minimal."
+    },
+    {
+      "page_number": 433,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate_reported": 5.2,
+      "evidence": [
+        "vergehen → vergehen (German: 'passing away', correct)",
+        "weise → weise (German: 'manner', correct)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Very clean page. Discusses how historical character relates to equipment and Dasein. German technical terms are correctly rendered. No semantic damage."
+    },
+    {
+      "page_number": 434,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate_reported": 3.5,
+      "evidence": [
+        "tlwse → those (letter transposition, easily corrected)",
+        "historiological → historiological (correct philosophical term)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Very low error rate. Minor typo ('tlwse') is easily detected. Complex philosophical discussion of historicality, Dasein, and world-history is well-preserved and semantically sound."
+    },
+    {
+      "page_number": 435,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate_reported": 6.1,
+      "evidence": [
+        "existenz → Existenz (capitalization variant)",
+        "obemahme → Übernahme (likely OCR of 'Ü' as 'Ü', umlaut handling)",
+        "horizont → Horizont (capitalization variant)",
+        "entreisst → entreisst (German: 'snatches', correct)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "German technical terms with capitalization variants. Core meaning of the section on fate (Schicksal) and resoluteness is intact. Philosophical content on authentic historicality is comprehensible."
+    },
+    {
+      "page_number": 436,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate_reported": 9.9,
+      "evidence": [
+        "entschlossene → entschlossene (German: 'resolved', correct)",
+        "geworfene → geworfene (German: 'thrown', correct)",
+        "rgt → possibly corrupted, context unclear",
+        "jeweiligen → jeweiligen (German: 'respective', correct)",
+        "schicksals → Schicksals (German: 'fate', correct)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Higher error rate but mostly German words correctly rendered. The philosophical discussion of thrownness, heritage, and fate is essentially intact. 'rgt' appears isolated and context-recoverable."
+    },
+    {
+      "page_number": 438,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate_reported": 7.4,
+      "evidence": [
+        "historicaliry → historicality (transposition: 'ity' vs 'iry')",
+        "jection → projection (prefix loss)",
+        "wiederbringen → Wiederbringen (German: 'bring again', correct)",
+        "sibility → possibility (prefix loss)",
+        "witdtrholung → Wiederholung (severe corruption of German term)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Notable error on 'witdtrholung' (should 'Wiederholung' - repetition, key concept). This corrupts a central philosophical term. However, surrounding context on repetition and heritage is clear enough to recover meaning. Error damages embedding quality but is not completely opaque."
+    },
+    {
+      "page_number": 439,
+      "classification": "BAD",
+      "confidence": "high",
+      "error_rate_reported": 11.9,
+      "evidence": [
+        "entspringend → entspringend (correct German)",
+        "erwiderung → Erwiderung (correct German: 'rejoinder')",
+        "iiberreden → überreden (German: 'persuade', correct)",
+        "sfuture → s-future (corrupted compound, should 'future')",
+        "wiederholung → Wiederholung (correct German: 'repetition')",
+        "erwidert → erwidert (correct German: 'reply')",
+        "reciprocative rejoiruier → reciprocative rejoinder (transposition error 'ier' vs 'ieru')"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Contains 'sfuture' (semantic corruption) and 'rejoiruier' (word-level error). Page discusses crucial philosophical concepts of repetition, fate, and reciprocal response to historical possibilities. The corruptions, while not completely opaque, create unnecessary friction and damage embedding precision."
+    },
+    {
+      "page_number": 440,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate_reported": 3.1,
+      "evidence": [
+        "timacy → intimacy (missing 'in')",
+        "nectedness → connectedness (missing 'co')",
+        "legi → legitimacy (truncation)",
+        "ofdasein → of Dasein (spacing artifact)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Very low error rate. Truncations at margins are minor and context-recoverable. Philosophical content on authentic vs inauthentic historicality is clear and well-rendered."
+    },
+    {
+      "page_number": 442,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate_reported": 3.3,
+      "evidence": [
+        "ality → ality (suffix, likely 'historicality')",
+        "historiologically → historiologically (correct philosophical term)",
+        "samen → possibly 'Zusammen' (German: 'together', partial OCR)",
+        "zusamenlzolen → zusammenholen (German compound word, OCR error in character recognition)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Low error rate but contains 'zusamenlzolen' corruption of important German compound. However, context discusses pulling Dasein together from dispersion - meaning is semantically recoverable. Not severely damaging."
+    },
+    {
+      "page_number": 443,
+      "classification": "BAD",
+      "confidence": "high",
+      "error_rate_reported": 9.6,
+      "evidence": [
+        "schicksal → Schicksal (correct German: 'fate')",
+        "stiindigkeit → Ständigkeit (German: 'constancy', likely umlaut issue)",
+        "verliert → verliert (German: 'loses', correct)",
+        "zwischen → zwischen (German: 'between', correct)",
+        "daein → Dasein (missing 's', misspelling of key term)",
+        "ated → ated (corrupted, should 'situated' or similar?)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Contains 'daein' - misspelling of DASEIN, the central concept of Heidegger's entire work. This directly damages semantic understanding. The page discusses inauthentic vs authentic historicality with this corrupted key term appearing in critical passages. This is semantic corruption that harms embedding quality."
+    },
+    {
+      "page_number": 444,
+      "classification": "BAD",
+      "confidence": "high",
+      "error_rate_reported": 10.4,
+      "evidence": [
+        "tteilich → teillich (German: 'partial', likely 't' duplication error)",
+        "iiberholt → überholt (German: 'overtaken', correct despite umlaut rendering)",
+        "vorweggenommen → vorweggenommen (German: 'anticipated', correct)",
+        "anxie → anxiety (truncation, recoverable)",
+        "todes → Todes (German: 'of death', correct)",
+        "illusionsfreier → illusionsfreier (German: 'free from illusion', correct)",
+        "incon → incon (suffix, 'inconstancy' likely)",
+        "zurickkommen → zurückkommen (German: 'come back', correct)"
+      ],
+      "footnote_artifacts": [],
+      "assessment": "Despite listing as 10.4% error rate, most items are correctly rendered German philosophical terms. Primary issues: 'tteilich' (letter duplication of 't') and truncations. However, philosophical content on steadiness, fate, and authentic temporality is comprehensible. The letter duplication is a visual error but context recovers meaning. Borderline between MARGINAL and BAD - assigning BAD because multiple errors compound and 'anxie' is unclear."
+    }
+  ],
+  "summary": {
+    "total_pages": 24,
+    "classification_counts": {
+      "GOOD": 11,
+      "MARGINAL": 10,
+      "BAD": 3
+    },
+    "bad_pages": [422, 424, 439, 443, 444],
+    "note": "Pages 422, 424, 439, 443, and 444 contain semantic corruptions affecting key philosophical terms (everydayness→dayness, Dasein→daein, key German compounds) that would damage RAG embedding quality. Most other pages have acceptable error profiles."
+  }
+}

@@ -1,0 +1,1152 @@
+{
+  "metadata": {
+    "sources": [
+      "verified",
+      "classified",
+      "other"
+    ],
+    "extraction_date": "2025-12-23"
+  },
+  "summary": {
+    "total_errors": 130,
+    "correct_words": 77,
+    "by_type": {
+      "unknown": 11,
+      "character_substitution": 16,
+      "substitution": 81,
+      "umlaut": 12,
+      "hyphenation": 10
+    },
+    "by_document": {
+      "verified": 27,
+      "Heidegger_BeingAndTime": 103
+    },
+    "by_classification": {
+      "verified": 27,
+      "MARGINAL": 59,
+      "BAD": 9,
+      "GOOD": 35
+    }
+  },
+  "error_pairs": [
+    {
+      "ocr_text": "atural",
+      "correct_text": "natural",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "unknown",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "righLful",
+      "correct_text": "rightful",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "tbese",
+      "correct_text": "these",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "tbe",
+      "correct_text": "the",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "untit",
+      "correct_text": "until",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "ewton",
+      "correct_text": "newton",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "unknown",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "llYfhe",
+      "correct_text": "blythe",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "sllbsumed",
+      "correct_text": "subsumed",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "unknown",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "ithin",
+      "correct_text": "within",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "unknown",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "lhe",
+      "correct_text": "the",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "strued",
+      "correct_text": "trued",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "unknown",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "circum",
+      "correct_text": "circus",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "willI",
+      "correct_text": "will",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "unknown",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "pos",
+      "correct_text": "pop",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "fhis",
+      "correct_text": "this",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "versalizable",
+      "correct_text": "verbalizable",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "typus",
+      "correct_text": "types",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "bered",
+      "correct_text": "bored",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "mands",
+      "correct_text": "hands",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "indeter",
+      "correct_text": "indexer",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "zable",
+      "correct_text": "able",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "unknown",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "perfec",
+      "correct_text": "perfect",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "unknown",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "singu",
+      "correct_text": "sing",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "unknown",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "larity",
+      "correct_text": "clarity",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "unknown",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "aller",
+      "correct_text": "alley",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "alsu",
+      "correct_text": "also",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "character_substitution",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "idifferent",
+      "correct_text": "different",
+      "source_doc": "verified",
+      "source_page": 0,
+      "error_type": "unknown",
+      "classification": "verified"
+    },
+    {
+      "ocr_text": "expresion",
+      "correct_text": "expression",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 373,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "urspriingliche",
+      "correct_text": "urspr\u00fcngliche",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 373,
+      "error_type": "umlaut",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "zukiinftig",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 374,
+      "error_type": "umlaut",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "futurally",
+      "correct_text": "appears",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 374,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "iiberhaupt",
+      "correct_text": "\u00fcberhaupt",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 374,
+      "error_type": "umlaut",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "gewisser",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 374,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "phiinomen",
+      "correct_text": "Ph\u00e4nomen",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 375,
+      "error_type": "umlaut",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "eitlichkeil",
+      "correct_text": "Zeitlichkeit",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 375,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "gewe",
+      "correct_text": "gewesen",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 375,
+      "error_type": "hyphenation",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "dergestalt",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 375,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "beening",
+      "correct_text": "translator",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 375,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "uberhaupt",
+      "correct_text": "\u00fcberhaupt",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 376,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "hich",
+      "correct_text": "which",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 376,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "approp",
+      "correct_text": "appropriate",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 376,
+      "error_type": "hyphenation",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "seeins",
+      "correct_text": "seeming",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 376,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "vorher",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 376,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "vorwe",
+      "correct_text": "vor",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 376,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "es",
+      "correct_text": "temporalizes",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 378,
+      "error_type": "hyphenation",
+      "classification": "BAD"
+    },
+    {
+      "ocr_text": "ntic",
+      "correct_text": "authentic",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 378,
+      "error_type": "hyphenation",
+      "classification": "BAD"
+    },
+    {
+      "ocr_text": "ekstase",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 378,
+      "error_type": "substitution",
+      "classification": "BAD"
+    },
+    {
+      "ocr_text": "ekstasiellen",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 378,
+      "error_type": "substitution",
+      "classification": "BAD"
+    },
+    {
+      "ocr_text": "ordial",
+      "correct_text": "fragments",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 379,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "sondern",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 379,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "temporalized",
+      "correct_text": "appears",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 379,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "endlich",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 380,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "unendlich",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 380,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "hinsichtlich",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 380,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "schliessen",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 380,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "cality",
+      "correct_text": "suffix",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 382,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "unselbst",
+      "correct_text": "unselbst\u00e4ndigkeit",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 382,
+      "error_type": "hyphenation",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "cally",
+      "correct_text": "fragmentation",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 382,
+      "error_type": "hyphenation",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "utili",
+      "correct_text": "prefix",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 382,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "innerzeitkeit",
+      "correct_text": "technical",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 383,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "durchsichtigkeit",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 383,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "horizont",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 383,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "zuriick",
+      "correct_text": "zur\u00fcck",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 386,
+      "error_type": "umlaut",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "jeweilige",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 386,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "struc",
+      "correct_text": "fragmentation",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 386,
+      "error_type": "hyphenation",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "entwerfend",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 386,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "befindlich",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 386,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "gewiirtigen",
+      "correct_text": "gewinrtig",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 387,
+      "error_type": "umlaut",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "concernful",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 387,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "colourles",
+      "correct_text": "colorless",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 387,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "ifwe",
+      "correct_text": "if",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 387,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "mordial",
+      "correct_text": "primordial",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 388,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "ekstase",
+      "correct_text": "fragments",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 388,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "authenticalry",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 388,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "meint",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 388,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "erlichkeit",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 390,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "clas",
+      "correct_text": "class",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 390,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "eigensten",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 390,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "vergessenheit",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 390,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "odus",
+      "correct_text": "modus",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 390,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "gramar",
+      "correct_text": "grammar",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 391,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "stellt",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 391,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "geworfene",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 391,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "lity",
+      "correct_text": "suffix",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 391,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "ankommenden",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 392,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "zuruckkommen",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 392,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "tifsomething",
+      "correct_text": "of",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 392,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "iiberhaupt",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 392,
+      "error_type": "umlaut",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "bei",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 393,
+      "error_type": "hyphenation",
+      "classification": "BAD"
+    },
+    {
+      "ocr_text": "verschwindet",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 393,
+      "error_type": "substitution",
+      "classification": "BAD"
+    },
+    {
+      "ocr_text": "offorgetting",
+      "correct_text": "of",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 393,
+      "error_type": "substitution",
+      "classification": "BAD"
+    },
+    {
+      "ocr_text": "rapax",
+      "correct_text": "Latin",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 393,
+      "error_type": "substitution",
+      "classification": "BAD"
+    },
+    {
+      "ocr_text": "nicht",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 393,
+      "error_type": "substitution",
+      "classification": "BAD"
+    },
+    {
+      "ocr_text": "eigentiimlichen",
+      "correct_text": "eigent\u00fcmlichen",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 395,
+      "error_type": "umlaut",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "zeitigen",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 395,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "unheimlichkeit",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 395,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "erweist",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 395,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "viillig",
+      "correct_text": "v\u00f6llig",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 395,
+      "error_type": "umlaut",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "isoliert",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 396,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "befirchtet",
+      "correct_text": "bef\u00fcrchtet",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 396,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "temporalize",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 396,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "bestimmen",
+      "correct_text": "philosophical",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 396,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "augenblicklick",
+      "correct_text": "Augenblick",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 397,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "earher",
+      "correct_text": "earlier",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 397,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "stituted",
+      "correct_text": "constituted",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 397,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "lwping",
+      "correct_text": "hoping",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 397,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "dahinleben",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 397,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "bewirkt",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 400,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "apd",
+      "correct_text": "and",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 400,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "verlorenheilt",
+      "correct_text": "Verlorenheit",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 400,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "ermiiglicht",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 400,
+      "error_type": "umlaut",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "zeitstufen",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 401,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "stitutive",
+      "correct_text": "constitutive",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 401,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "tered",
+      "correct_text": "littered",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 401,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "facticity",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 401,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "xiii",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 402,
+      "error_type": "umlaut",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "lity",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 402,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "temporalize",
+      "correct_text": "technical",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 402,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "inauthenticity",
+      "correct_text": "compound",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 402,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "undiffer",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 404,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "entiated",
+      "correct_text": "differentiated",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 404,
+      "error_type": "hyphenation",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "gegenwiirtigen",
+      "correct_text": "German",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 405,
+      "error_type": "umlaut",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "einheit",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 405,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "glicht",
+      "correct_text": "erm\u00f6glicht",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 405,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "circum",
+      "correct_text": "line",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 405,
+      "error_type": "substitution",
+      "classification": "MARGINAL"
+    },
+    {
+      "ocr_text": "cally",
+      "correct_text": "thematically",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 406,
+      "error_type": "hyphenation",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "abovexvill",
+      "correct_text": "above",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 406,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "gestellt",
+      "correct_text": "philosophical",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 406,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "concemful",
+      "correct_text": "concernful",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 406,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    },
+    {
+      "ocr_text": "stitutive",
+      "correct_text": "proper",
+      "source_doc": "Heidegger_BeingAndTime",
+      "source_page": 406,
+      "error_type": "substitution",
+      "classification": "GOOD"
+    }
+  ],
+  "correct_words": [
+    "urspr\u00fcngliche",
+    "the",
+    "modus",
+    "Verlorenheit",
+    "earlier",
+    "constitutive",
+    "appears",
+    "primordial",
+    "authentic",
+    "which",
+    "will",
+    "colorless",
+    "fragmentation",
+    "able",
+    "circus",
+    "these",
+    "hoping",
+    "\u00fcberhaupt",
+    "differentiated",
+    "gewesen",
+    "Augenblick",
+    "Latin",
+    "littered",
+    "temporalizes",
+    "Ph\u00e4nomen",
+    "natural",
+    "hands",
+    "eigent\u00fcmlichen",
+    "perfect",
+    "proper",
+    "gewinrtig",
+    "rightful",
+    "constituted",
+    "appropriate",
+    "and",
+    "thematically",
+    "until",
+    "concernful",
+    "clarity",
+    "sing",
+    "alley",
+    "indexer",
+    "different",
+    "unselbst\u00e4ndigkeit",
+    "pop",
+    "types",
+    "German",
+    "grammar",
+    "blythe",
+    "above",
+    "if",
+    "also",
+    "class",
+    "compound",
+    "line",
+    "philosophical",
+    "fragments",
+    "expression",
+    "vor",
+    "zur\u00fcck",
+    "prefix",
+    "subsumed",
+    "seeming",
+    "erm\u00f6glicht",
+    "v\u00f6llig",
+    "technical",
+    "newton",
+    "of",
+    "bored",
+    "suffix",
+    "bef\u00fcrchtet",
+    "trued",
+    "verbalizable",
+    "within",
+    "translator",
+    "Zeitlichkeit",
+    "this"
+  ]
+}

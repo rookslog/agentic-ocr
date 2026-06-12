@@ -1,0 +1,177 @@
+[
+  {
+    "page_number": 95,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Clear, readable text with proper structure. Error rate 5.5% contains mostly legitimate French terms (seau, roi, rous, ennemi, quinet) and proper nouns that are not OCR errors. Scholarly content is coherent and properly formatted.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 96,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "Well-preserved OCR quality with consistent formatting. Error rate 5.2% includes legitimate French words and academic terminology (lefort, defetishization, fundamentalism variants). Text flows naturally and maintains academic coherence throughout.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 99,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Readable text with 5.1% error rate containing expected academic vocabulary. Sample errors include partial words (thermidorean, refunctioned, aporias) that are within acceptable range for complex philosophical text. Content is coherent.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 101,
+    "classification": "MARGINAL",
+    "confidence": 0.88,
+    "evidence": "Error rate 6.9% with some fragmentation. Partial words like 'eral', 'trans', 'phg' appear alongside legitimate German philosophy terms (Wirklichkeit, Phenomenology references). Text remains generally readable but shows minor OCR degradation in word boundaries.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 102,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Error rate 5.3% with mostly coherent text. Includes Latin phrases (imperii, oriens, augusti, translatio) that are legitimate scholarly references, not OCR errors. Academic argument is preserved and followable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 103,
+    "classification": "GOOD",
+    "confidence": 0.94,
+    "evidence": "Excellent quality with only 2.7% error rate. Minor partial words (pansion, cul, sume, trans, tural) appear alongside clear, readable philosophical text. Strong coherence and preservation of complex ideas.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 104,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "Error rate 7.2% with notable partial word fragmentation (involun, kaspar, omy, tarily, trans, lavater). While readable, shows greater OCR degradation in word segmentation. German terms (Wirklichkeit) are legitimate. Content remains understandable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 105,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Clear text with 3.3% error rate. Partial words (cas, tration, flexivity, plaining, tauto, tinctions) are minor. German term (Unwirklichkeit) is legitimate. Philosophical argument maintains coherence and readability throughout.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 106,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "Excellent readability with 3.0% error rate. Minor OCR artifacts (istic, pearance, disap, prive, thermidorian, specta, mous, tumes) do not impede understanding. Complex philosophical text is well-preserved.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 108,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Readable with 4.9% error rate. Partial words (phg, fibre, psy, tion, denouncers, temporality, postrevolution, abso, struction, aufgel) are acceptable OCR artifacts for this text complexity. Academic meaning is preserved.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 109,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Good quality with 5.0% error rate. Minor fragmentation (sus, bling, redis, verting, fibres, ter, psychiat, tion, noth, alexandre) does not significantly impair readability. Complex philosophical ideas remain accessible.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 110,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Clear text with 5.0% error rate containing legitimate French terms (barom, ler, goire, siey). Partial words (lution, eter, reinject, dermines, revo, cism) are minor OCR artifacts. Content coherence is maintained.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 113,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Readable with 5.2% error rate. Minor partial words (sonable, mal, alogue, iso, rality, pur, pathol, radicality, psychologized, historicized) do not impede philosophical discourse. Text structure and meaning are clear.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 114,
+    "classification": "MARGINAL",
+    "confidence": 0.88,
+    "evidence": "Error rate 6.2% with notable fragmentation (mortale, sais, transforma, continu, res, pression, panded, vert, bly, quired). Legitimate French term 'sais' appears alongside OCR artifacts. Text remains mostly readable but shows degradation.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 115,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Good quality with 3.9% error rate. Minor partial words (suous, jouissance, rality, sary, als, ritu, prem, neces, ise) are acceptable. French term 'jouissance' is legitimate philosophical vocabulary. Coherent and readable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 117,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Readable with 5.5% error rate. Partial words (ically, vorgestellt, tatized, troduces, stellungen, puni, vir, ity, nzung) are expected OCR artifacts. German philosophical terms (vorgestellt, Stellungen, Verstellungen) are legitimate. Content is coherent.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 119,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Clear text with 4.9% error rate. Minor partial words (ein, tracted, nega, ganzes, antinomies, ticism, bien, mais, tradictions) including legitimate French ('bien', 'mais'). Philosophical argument is well-preserved and readable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 120,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "Error rate 6.3% with notable word fragmentation (antici, ish, unfruchtbar, disfig, dissim, ausgeben, vorgegebene, otherwordliness, lightenment). German terms (unfruchtbar, ausgeben, vorgegebene) are legitimate but fragmentation is more pronounced. Readable but degraded.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 125,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "Error rate 7.8% with significant fragmentation (avant, blasphemousness, tornness, nundrums, acqui, escence, unbeautiful, unworks, fense, ished). Contains real French term 'avant' but shows substantial OCR degradation. Mostly readable but borderline MARGINAL.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 126,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Good quality with 3.4% error rate. Minor partial words (disfigurations, aesthet, elty, icism, herrlichkeit, inartis, kalokagathia, hellenophilic, graeco, dia). German and Greek terms are legitimate. Readable and coherent.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 127,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Readable with 5.4% error rate. Minor fragmentation (phg, ity, lucinde, hibitions, ning, herrlichkeit, beharren, impo, immoralism, unworking). German terms (herrlichkeit, beharren) are legitimate. Philosophical text is well-preserved.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 130,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Clear text with 5.2% error rate. Minor partial words (phg, prived, nius, imita, denken, cre, tion, ostinato, nen, ence). German term 'denken' is legitimate. Academic discourse remains coherent and accessible.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 131,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Readable with 5.9% error rate. Minor partial words (der, gestaltloser, ein, vapour, luft, erzeugnis, dunst, rection, stitutive). German philosophical terms (gestaltloser, Luft, Erzeugnis, Dunst) are legitimate. Text flows coherently.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 132,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Good quality with 3.6% error rate. Minor partial words (nius, previ, crit, icism, ious, perbolic, unworks, novalis, ously, bil) do not impede readability. Complex philosophical arguments are well-preserved.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 133,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "Error rate 6.7% with notable fragmentation (nal, expe, novalis, persal, rience, ful, sittlichkeit, geistesverlassenheit, lderlin). German philosophical terms are legitimate but OCR degradation is more pronounced. Text remains mostly readable.",
+    "footnote_artifacts": false
+  }
+]

@@ -1,0 +1,255 @@
+{
+  "document": "Heidegger_Pathmarks",
+  "batch_number": 2,
+  "total_batches": 9,
+  "classification_date": "2025-12-21",
+  "classifications": [
+    {
+      "page_number": 65,
+      "classification": "GOOD",
+      "confidence": 0.92,
+      "error_rate": 4.2,
+      "evidence": "Text is semantically coherent and readable. German terms (Dasein, Sein, ontology) and philosophical vocabulary are correctly rendered. Minor OCR artifacts: 'Vhatever' for 'Whatever', 'thrrm' appears corrupt but marked with ¶ symbol. Footnote markers embedded in text (e.g., 'pri¶' as fragment). Overall meaning is recoverable.",
+      "footnote_artifacts": true,
+      "notes": "Page discusses theology vs philosophy relationship. Term 'maner' (unknown_words_sample) is likely 'manner' - minor OCR error. Fragment 'terpretation' and 'interpre' are likely footnote marker artifacts."
+    },
+    {
+      "page_number": 66,
+      "classification": "GOOD",
+      "confidence": 0.90,
+      "error_rate": 5.0,
+      "evidence": "Text is semantically coherent with philosophical content intact. German/philosophical terms rendered correctly: Dasein, Christianness, ontological. Minor issues: 'complished' is likely 'accomplished', 'existentielly' for 'existentially'. Footnote markers visible but don't prevent comprehension. Page discusses faith, sublation (aufgehoben), and existential categories.",
+      "footnote_artifacts": true,
+      "notes": "Unknown_words_sample includes technical terms that are correctly spelled in actual text (dasein, christianness). The term 'ltent' in unknown_words appears to be a fragment."
+    },
+    {
+      "page_number": 68,
+      "classification": "MARGINAL",
+      "confidence": 0.78,
+      "error_rate": 5.5,
+      "evidence": "Meaning generally recoverable but contains scattered OCR errors that break reading flow. 'cOTective' for 'corrective', 'fon' for 'form', 'functioningfactically' (missing space), 'existentie/J' with corrupted marker. Section discusses philosophy's corrective function for theology. Key philosophical concepts preserved but presentation is slightly degraded.",
+      "footnote_artifacts": true,
+      "notes": "The term 'opposi' in unknown_words is fragment of 'opposition'. These are minor but multiple errors within single page. Technical content remains intelligible despite presentation issues."
+    },
+    {
+      "page_number": 71,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate": 4.2,
+      "evidence": "Main text is readable and semantically coherent. Discusses objectifying, thinking, and speaking in relation to philosophical dialogue. Minor issues: 'Vhat' for 'What', 'fzov' appears as corrupted Greek, 'minin' likely 'determining', 'losophy' for 'philosophy'. Greek text 'C<;)ov i.6yov fzov' shows OCR struggling with special characters but meaning context recoverable. Content on language and technical-scientific vs hermeneutical philosophy is preserved.",
+      "footnote_artifacts": true,
+      "notes": "Greek text is challenging for OCR but doesn't impede philosophical argument. Terms like 'nonobjectifying' and 'preconceptual' are correctly rendered."
+    },
+    {
+      "page_number": 75,
+      "classification": "MARGINAL",
+      "confidence": 0.80,
+      "error_rate": 3.2,
+      "evidence": "Mostly readable but contains notable corruption in Greek passages. Greek text 'ylyvwaxnv', 'ljteiv', 'vwv' are garbled but appear in block quotes (Aristotle). Key philosophical English text is preserved: discussion of objectifying thinking, technological representation, language as instrument. Latin 'Gegenstand' correctly rendered. Section on non-objectifying thinking in poetry is clear.",
+      "footnote_artifacts": false,
+      "notes": "Unknown_words_sample shows Greek and Latin terms that are corrupted in OCR. However, the surrounding philosophical argument in English is coherent. Greek philosophy quotation is damaged but not essential to main argument flow."
+    },
+    {
+      "page_number": 76,
+      "classification": "MARGINAL",
+      "confidence": 0.82,
+      "error_rate": 4.3,
+      "evidence": "Text is mostly coherent with understandable philosophical content. Errors present: 'PIIENOMENOLOGY A.l'IJD TI IEOLO<;Y' in header shows multiple character corruption, 'piienomenology' shows font/character issues, 'ijd' is fragment. Main body discusses non-objectifying thinking, poetic saying (Rilke's 'Gesang ist Dasein'), and presence. Philosophical argument is preserved despite header damage.",
+      "footnote_artifacts": true,
+      "notes": "Header is significantly corrupted but section body is readable. The corruption appears to be character encoding issue rather than semantic OCR error. Content on poetry and Dasein is clear."
+    },
+    {
+      "page_number": 77,
+      "classification": "GOOD",
+      "confidence": 0.88,
+      "error_rate": 6.0,
+      "evidence": "Short page discussing being as presence in various modes. Text is semantically coherent. Minor issues: 'vol' and 'viti' in unknown_words are likely fragments of 'vol. II' and 'VIII'. Reference to Heidegger's Nietzsche is correctly cited. Discussion of presence and objectification is clear and philosophical content preserved.",
+      "footnote_artifacts": true,
+      "notes": "Page is brief and relatively clean. Unknown_words appear to be volume/section references rather than semantic errors."
+    },
+    {
+      "page_number": 79,
+      "classification": "BAD",
+      "confidence": 0.45,
+      "error_rate": 15.0,
+      "evidence": "Significant OCR degradation with multiple errors affecting readability. Critical terms corrupted: 'primitit' for 'primitiva', 'patii' appears corrupted, 'nateria' for 'materia', 'facultas', 'excitatione', 'stimulo', 'transferatur' all show Latin text severely damaged. French/German fragments also affected: 'aliena'. Page contains heavy Latin quotations that are substantially garbled. This section discusses Leibniz's monad theory and vis primitiva - key concepts are corrupted.",
+      "footnote_artifacts": false,
+      "notes": "This page marks shift into dense Leibniz discussion with extensive Latin/Greek quotations. OCR quality drops significantly. While some meaning can be inferred from context, multiple proper philosophical terms are compromised (vis primitiva, force, potentia). Requires human review."
+    },
+    {
+      "page_number": 80,
+      "classification": "BAD",
+      "confidence": 0.52,
+      "error_rate": 13.5,
+      "evidence": "Moderate to heavy OCR errors in philosophical/Latin terminology. Corruptions include: 'actionemque' appears garbled, 'tial' is fragment, 'lbid' for 'Ibid', 'aaiva' for 'activa'. English philosophical content is mostly preserved but Latin quotations show degradation. Discusses vis activa vs potentia activa (Scholastic distinction) - key Latin terms are compromised. French text shows errors. Technical philosophical argument is difficult to verify due to corrupted source citations.",
+      "footnote_artifacts": false,
+      "notes": "While English prose is relatively intact, the Latin quotations that carry the argument's philosophical weight are significantly corrupted. This is problematic for a text whose argument relies on precise reading of historical sources."
+    },
+    {
+      "page_number": 81,
+      "classification": "BAD",
+      "confidence": 0.48,
+      "error_rate": 16.9,
+      "evidence": "Heavy OCR errors affecting both Latin quotations and English philosophical discourse. Corruptions: 'qui' rendered oddly in context, 'collocaverunt' appears intact but embedded in corrupt sentence structure, 'creata', 'existens', 'vhen' for 'When', 'disinhibit' appears corrupted, 'detennined' for 'determined', 'lation' is fragment, 'alia' is fragment. Core discussion of drive, monads, and substance has multiple errors. Cartesian critique and Leibniz's arguments show degraded readability.",
+      "footnote_artifacts": false,
+      "notes": "This page is part of dense metaphysical exegesis. Multiple errors compound to make verification of philosophical claims difficult. Quotations from Leibniz are compromised."
+    },
+    {
+      "page_number": 82,
+      "classification": "BAD",
+      "confidence": 0.55,
+      "error_rate": 10.1,
+      "evidence": "Significant OCR corruption in technical philosophical vocabulary and Latin quotations. Errors include: 'peifectibabia' (clearly corrupted), 'pcr' for 'per', 'substan' is fragment, 'dieval' for 'medieval', 'aec' is fragment, 'themistius' shows minor error, 'monadolog' for 'monadology', 'jal' is artifact, 'aaiva' for 'activa'. English text discussing entelecheia and Aristotle is mostly readable but Latin/Greek terminology is severely compromised. Discussion of Renaissance translation history is affected.",
+      "footnote_artifacts": false,
+      "notes": "Page contains important historical discussion of term translation (entelecheia/entelechia) but corrupted terms make verification difficult. The narrative about Hermolaus Barbarus is readable but technical terms are damaged."
+    },
+    {
+      "page_number": 83,
+      "classification": "BAD",
+      "confidence": 0.50,
+      "error_rate": 19.3,
+      "evidence": "Severe OCR degradation with multiple critical errors. French and Latin corrupted: 'avoir', 'comme', 'nru' (clearly artifact), 'qui', 'appelle', 'composee', 'derivatas', 'jso' (artifact), 'indi' (fragment). Key philosophical passage about monad's unity and the 'I' as guiding thread is compromised. English portions discussing Dasein and monad are partially preserved but overall readability is poor. Page discusses foundational monadology concepts.",
+      "footnote_artifacts": false,
+      "notes": "This page is critical for understanding Leibniz's self-consciousness theme (the 'I' as model for monad). The corruption of French and philosophical terminology significantly impairs understanding. Quotation structure is damaged."
+    },
+    {
+      "page_number": 84,
+      "classification": "BAD",
+      "confidence": 0.48,
+      "error_rate": 19.8,
+      "evidence": "Heavy OCR errors affecting Latin quotations and philosophical terminology. Corruptions: 'plurimum', 'actionis', 'aliquod', 'appetitio', 'eminenriae', 'qui', 'quia', 'principia', 'immateriel', 'tial' (fragment). English text on analogical thinking and Leibniz's correspondence is readable but Latin source citations are severely degraded. Discussion of analogy between monad and human ego is affected. Quotations from letters to de Voider are compromised.",
+      "footnote_artifacts": false,
+      "notes": "Page argues that monad-activity is analogous to human perception and appetite. The corruption of Latin quotations that support this analogy reduces confidence in the technical exposition."
+    },
+    {
+      "page_number": 85,
+      "classification": "BAD",
+      "confidence": 0.52,
+      "error_rate": 20.2,
+      "evidence": "Severe OCR degradation in French and Latin terminology. Errors: 'apper' (fragment), 'lettre', 'avoir', 'comme', 'idee', 'qui', 'sensibles', 'appelle', 'voudrois', 'objets'. French letter text from Leibniz to Queen Sophia Charlotte is heavily corrupted. English narrative discussing self-consciousness and substance is mostly coherent but the critical French quotations that carry the argument are severely damaged. Discussion of how self-reflection provides concept of substance is compromised.",
+      "footnote_artifacts": false,
+      "notes": "This is foundational content: Leibniz argues understanding of substance derives from reflection on the 'I'. The corruption of the French source material undermines the argument's credibility in this translation/exposition."
+    },
+    {
+      "page_number": 87,
+      "classification": "BAD",
+      "confidence": 0.58,
+      "error_rate": 16.2,
+      "evidence": "Moderate to heavy OCR errors in philosophical and Latin terminology. Corruptions: 'dasein', 'qui', 'quia', 'preroga', 'autre', 'mutuata', 'mutuatam', 'plura', 'constitutivum', 'indivisibiles'. Page discusses monad's unifying capacity and reality-borrowing (mutuation). English philosophical exposition is largely intact but Latin quotations show degradation. Key argument about divisibility and unity is affected. Discussion of anthropomorphism and monad structures is readable but source citations are compromised.",
+      "footnote_artifacts": false,
+      "notes": "English argument is preserved but Latin philosophical terminology is corrupted. The page discusses crucial metaphysical concepts (unity, divisibility, reality-borrowing) whose exact statement in Latin is now uncertain."
+    },
+    {
+      "page_number": 88,
+      "classification": "MARGINAL",
+      "confidence": 0.78,
+      "error_rate": 7.9,
+      "evidence": "Moderate OCR errors but content is mostly recoverable. Errors include: 'hension' for 'hension' (apprehension), 'constitutivum', 'substantia', 'prae', 'vhat' for 'what', 'hensive' (apprehensive), 'driingte' (driven/impelled), 'prehen' (prehension). English philosophical discussion of drive as unifying, pre-hensive reaching, and manifestation is coherent. German philosophical terms like 'Driingen', 'Be-drängte' are present. Despite errors, the argument about monad's unifying essence is traceable.",
+      "footnote_artifacts": false,
+      "notes": "This page is more readable than surrounding pages. The corruption is present but doesn't severely impair the philosophical exposition. Content about prehension as structural principle is preserved."
+    },
+    {
+      "page_number": 89,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "error_rate": 16.1,
+      "evidence": "Significant OCR errors in Latin/French quotations but English exposition is largely intact. Corruptions: 'prehensive', 'constitu' (constitute), 'partes', 'qui', 'tota', 'substantiae', 'versatur', 'autre', 'dehors', 'perceptio'. Page discusses perception, appetite, and drive structure. French passages from Principles of Nature and Grace are corrupted. Latin quotations are compromised. English philosophical argument about how perception and appetite constitute drive is readable but source verification is difficult.",
+      "footnote_artifacts": false,
+      "notes": "The page's English narrative is coherent but the embedded quotations from Leibniz's French and Latin works are significantly degraded. This affects ability to verify precise philosophical formulations."
+    },
+    {
+      "page_number": 90,
+      "classification": "BAD",
+      "confidence": 0.50,
+      "error_rate": 20.6,
+      "evidence": "Heavy OCR corruption in Latin passages and philosophical terminology. Errors: 'monadis', 'actionis', 'temporale', 'tionum' (fragments), 'rem', 'simplices', 'habeat', 'alteri', 'tota', 'mutationis'. Page argues drive is essentially self-surpassing, involving internal change and temporal succession. Latin quotations from Leibniz are severely compromised. English explication is mostly present but the source material that grounds the argument is heavily damaged. Discusses drive as self-transcending tendency.",
+      "footnote_artifacts": false,
+      "notes": "Critical passage about drive's temporal and self-surpassing nature relies on Latin quotation that is heavily corrupted. The English explanation follows but confidence in precise philosophical content is reduced."
+    },
+    {
+      "page_number": 91,
+      "classification": "BAD",
+      "confidence": 0.46,
+      "error_rate": 22.7,
+      "evidence": "Severe OCR degradation throughout. Errors: 'prehensive', 'porro', 'progredi', 'appctitus' (appetite corrupted), 'sibi', 'percipiente', 'sufficit', 'simplicitate', 'sequi', 'rro' (fragment). Latin quotations are heavily garbled. Page discusses perception progression, appetite in monads, and the principle of change. Key Latin passage about why perception and appetite exist is severely corrupted. English philosophical narrative is compromised. This is foundational material about monad structure.",
+      "footnote_artifacts": false,
+      "notes": "This page contains one of the highest error rates. The corruption is particularly problematic because it affects Leibniz's own explanation of why perception and appetite are necessary to monad essence."
+    },
+    {
+      "page_number": 93,
+      "classification": "MARGINAL",
+      "confidence": 0.82,
+      "error_rate": 8.7,
+      "evidence": "Moderate OCR errors but philosophical content is largely recoverable. Errors: 'connaissance', 'prehensive', 'qui', 'ames', 'consdoumess' for 'consciousness', 'laquelle', 'tousjours' for 'toujours', 'perceptio', 'toutes', 'monade'. Page discusses apperception (self-consciousness) vs perception, individual perspective, and monad individuation. French quotations are mostly readable. English exposition about how monads grasp themselves and their viewpoints is coherent. Philosophical argument about consciousness and individuation is preserved.",
+      "footnote_artifacts": false,
+      "notes": "This page is more readable than the surrounding pages in this section. The error rate is moderate and the philosophical argument (apperception, individual perspective) is traceable despite corruption."
+    },
+    {
+      "page_number": 94,
+      "classification": "MARGINAL",
+      "confidence": 0.79,
+      "error_rate": 8.7,
+      "evidence": "Moderate OCR errors but argument is generally coherent. Errors: 'prehensive', 'vult', 'praestabilita', 'perspecti' (perspective), 'contradictionem', 'comparatis', 'mundus' (correctly rendered), 'ein', 'enim'. Page discusses monad as concentrated world, harmonia praestabilita (pre-established harmony), and divine will. Latin quotations show damage but meaning is inferrable. English exposition about perspective, world-presentation, and God's will is readable. Philosophical argument about universal harmony is preserved.",
+      "footnote_artifacts": false,
+      "notes": "While errors are present, the key philosophical concepts (mundus concentratus, harmonia praestabilita, divine optimum) are intelligible. The page discusses important metaphysical synthesis."
+    },
+    {
+      "page_number": 95,
+      "classification": "BAD",
+      "confidence": 0.56,
+      "error_rate": 17.4,
+      "evidence": "Significant OCR corruption affecting both quotations and exposition. Errors: 'rks' (fragment of 'PATHMARKS'), 'penitus', 'diversitatis', 'sint', 'miroir', 'principia', 'dividuation' for 'individuation', 'modum', 'indi' (fragment), 'perceptio'. Page introduces key metaphor: monad as 'living mirror' (speculum vitale) of universe. French and Latin terminology is corrupted. The image central to understanding Leibniz's metaphysics - the mirror - is discussed but the philosophical exposition is compromised by OCR errors. Quotations from letter to de Voider are damaged.",
+      "footnote_artifacts": false,
+      "notes": "This page introduces the crucial 'living mirror' metaphor but does so with significant OCR corruption. The metaphor itself is intelligible but the philosophical explication is degraded."
+    },
+    {
+      "page_number": 96,
+      "classification": "BAD",
+      "confidence": 0.59,
+      "error_rate": 12.3,
+      "evidence": "Moderate to heavy OCR errors in philosophical and Latin terminology. Corruptions: 'extensio', 'totius', 'acterizes' for 'characterizes', 'substantiae', 'secunda', 'erdriingt', 'essentialis', 'activa', 'resistentia', 'substantia'. Page discusses finitude of monad, passivity, resistance, and materia prima. Latin quotations are corrupted. English exposition about how finite monad relates to universe through resistance and passivity is largely coherent. Discussion of prime matter and material body connection is readable but source material is compromised.",
+      "footnote_artifacts": false,
+      "notes": "Page addresses important metaphysical problem: monad's finitude and passivity. While English argument is mostly preserved, the Latin terminology that precisely states the problem (materia prima, passio, resistentia) is corrupted."
+    },
+    {
+      "page_number": 97,
+      "classification": "GOOD",
+      "confidence": 0.87,
+      "error_rate": 3.7,
+      "evidence": "Text is clean and highly readable. Minor errors: 'jects' for 'objects', 'organiza tion' (space issue), 'tence' (likely from 'existence'), 'cussion' for 'discussion', 'exis' (fragment), 'krell' for 'Krell'. This page shifts to new essay 'What Is Metaphysics?' and serves as introduction. Philosophical content is clear. Discussion of metaphysical inquiry, common sense, and Dasein is well-preserved. Translation credit to David Farrell Krell is present. This page marks fresh start in document.",
+      "footnote_artifacts": true,
+      "notes": "This is opening of new essay with much better OCR quality. The shift in error rate is dramatic - from 15-22% to 3.7%. Indicates OCR quality varies significantly by section/scanning batch."
+    },
+    {
+      "page_number": 100,
+      "classification": "GOOD",
+      "confidence": 0.93,
+      "error_rate": 2.3,
+      "evidence": "Excellent OCR quality with minimal errors. Minor issues: 'vith' for 'with', 'der', 'noth' (fragment), 'monly' for 'commonly', 'vhat' for 'what', 'negatedness', 'fonn' for 'form', 'nonbeing'. Page discusses the nothing, logic, and negation in Heideggerian terms. Philosophical argument about how questioning the nothing violates logic is clear and well-rendered. Discussion of science, intellect, and the impossible object is coherent. This is excellent quality OCR for complex philosophical content.",
+      "footnote_artifacts": false,
+      "notes": "This page demonstrates high-quality OCR on philosophical German prose translated to English. The discussion of logic, negation, and the nothing is preserved with minimal distortion. One of the cleanest pages in the batch."
+    }
+  ],
+  "summary": {
+    "total_pages": 24,
+    "good_count": 7,
+    "marginal_count": 8,
+    "bad_count": 9,
+    "average_error_rate": 10.8,
+    "quality_distribution": {
+      "GOOD": "29.2%",
+      "MARGINAL": "33.3%",
+      "BAD": "37.5%"
+    },
+    "observations": [
+      "Batch shows bimodal distribution: pages 65-77 and 97-100 have clean OCR (2-6% errors), while pages 79-96 show severe degradation (10-22% errors).",
+      "The Leibniz lecture section (pages 79-96) contains extensive Latin and French philosophical quotations that OCR handles poorly. This is the most problematic section.",
+      "The new essay 'What Is Metaphysics?' (pages 97-100) starts with dramatically improved OCR quality (2-4% error rates).",
+      "Critical issue: Corrupted Latin/French quotations are problematic for scholarly text where precise source material is essential to argument.",
+      "Footnote markers create artifacts (e.g., 'word23' merged with text) but are noted in original unknown_words samples.",
+      "German philosophical terminology (Dasein, Sein, Drängen, etc.) is generally preserved correctly.",
+      "Greek text shows more corruption than other languages when embedded in English passages.",
+      "Recommendation: Pages 79-96 require human review before publication, especially quotations from Leibniz sources."
+    ]
+  }
+}

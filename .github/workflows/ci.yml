@@ -1,0 +1,93 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  # ── T1 deterministic self-checks (PLAN §11.3): lint, types, tests ──────────
+  quality:
+    name: lint · typecheck · test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Sync (incl. dev group)
+        run: uv sync --group dev
+
+      - name: Lint (ruff)
+        run: uv run ruff check .
+
+      - name: Typecheck (mypy)
+        run: uv run mypy
+
+      - name: Test (pytest)
+        run: uv run pytest
+
+  # ── No-corpus-blob guard (PLAN §11.5): never commit PDFs or >1MB files ─────
+  guard:
+    name: no-pdf / no-large-blob guard
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Reject *.pdf and files > 1MB
+        run: |
+          set -euo pipefail
+          fail=0
+
+          # 1. No PDFs (acquired corpus must never be pushed).
+          pdfs=$(git ls-files '*.pdf' '*.PDF' || true)
+          if [[ -n "$pdfs" ]]; then
+            echo "::error::PDF files are not allowed in this repo (PLAN §11.5):"
+            echo "$pdfs"
+            fail=1
+          fi
+
+          # 2. No tracked file larger than 1MB.
+          while IFS= read -r f; do
+            [[ -z "$f" ]] && continue
+            sz=$(wc -c < "$f")
+            if [[ "$sz" -gt 1048576 ]]; then
+              echo "::error::$f is ${sz} bytes (> 1MB limit)."
+              fail=1
+            fi
+          done < <(git ls-files)
+
+          if [[ "$fail" -ne 0 ]]; then
+            echo "guard: FAILED."
+            exit 1
+          fi
+          echo "guard: PASSED — no PDFs, no files over 1MB."
+
+  # ── Prereg-gate (PLAN §11.2): results cannot merge before their prereg ─────
+  prereg-gate:
+    name: prereg-gate (PRs only)
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Need full history + the base branch to compute the merge-base.
+          fetch-depth: 0
+
+      - name: Enforce prereg-before-results
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin "$BASE_REF"
+          BASE_SHA=$(git merge-base "origin/$BASE_REF" "$HEAD_SHA")
+          export BASE_SHA HEAD_SHA
+          echo "merge-base with $BASE_REF: $BASE_SHA"
+          bash .github/scripts/prereg_gate.sh

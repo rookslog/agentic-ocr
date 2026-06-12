@@ -1,0 +1,177 @@
+[
+  {
+    "page_number": 139,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Greek text present with Unicode corruption (€Ottχ£LVa, o2•)o(ac;). Multiple footnote markers merged into words (ivloc, tpo). Word 'originary' is philosophical term, not error. Some corruption in Greek: 'zfj' appears to be fragment. Key philosophical terms readable (Dasein, ayaOov, aya06v).",
+    "footnote_artifacts": "Footnote markers causing 'ivloc', 'tpo', 'toptoc' artifacts. Special characters (€, •) embedded in Greek."
+  },
+  {
+    "page_number": 140,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "evidence": "Text is primarily readable with coherent philosophical discussion. Unknown words list includes valid terms: 'dasein', 'recollective', 'equioriginarily' (legitimate Heidegger term). Minor OCR artifacts in Greek (€;;\u00a3x\u00a3Lvcr), but translation and English text clear. Proper names preserved.",
+    "footnote_artifacts": "None significant; Greek characters with embedded special characters"
+  },
+  {
+    "page_number": 141,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Text highly readable. 'freedum' is likely typo for 'freedom' (1 error in extensive passage). 'tuward' for 'toward' (1 error). 'heing' for 'being' (1 error). Key terms intact: 'Dasein', 'Willen', 'surpassing', 'transcendence'. Meaning fully recoverable from context.",
+    "footnote_artifacts": "Minimal; English text dominates with occasional special character artifacts"
+  },
+  {
+    "page_number": 146,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Primary text readable. Artifact 'cordance' in 'accordance' is minor. Greek text 'pwwv' looks like corruption but surrounded by readable text. Key philosophical apparatus clear: 'transcendence', 'Dasein', 'ontological', 'grounding'. Meanings extractable.",
+    "footnote_artifacts": "Greek corruption (pwwv) but context preserved"
+  },
+  {
+    "page_number": 147,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "Multiple word corruptions: 'ontorogical' for 'ontological', 'scendental' for 'transcendental', 'binhplace' for 'birthplace' (or similar). But meaning remains recoverable. Philosophical core intact: 'grounding', 'freedom', 'temporality'. Corruptions are single-letter or minor errors.",
+    "footnote_artifacts": "Some Greek text fragmentation; mostly English text with isolated errors"
+  },
+  {
+    "page_number": 148,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "evidence": "Latin phrases present and partially readable: 'potil4S' (potius), 'ratio est cur' readable. Some corruptions: 'existit' is correct, 'facticaUy' is readable. Greek/Latin mixed text preserved despite some character issues. Key argument structure clear.",
+    "footnote_artifacts": "Latin text with some character corruption; footnote markers embedded in words"
+  },
+  {
+    "page_number": 149,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Philosophical text coherent. Minor artifacts: 'thrrum' appears to be corruption of 'thrown' or 'thrummed'. 'strewal' is readable variant. 'selthood' for 'selfhood'. 'vasively' for 'pervasively'. Overall meaning preserved; Heidegger terminology intact.",
+    "footnote_artifacts": "Minimal; mostly English prose with isolated character errors"
+  },
+  {
+    "page_number": 152,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "evidence": "German text annotations present with significant OCR challenges: 'Wabr-btit' (Wahr-heit?), 'Htittr', 'Htittmdt', 'Lirbtmdt' show systematic character corruption in German. English sections readable. 'makesb' is minor. Footnotes heavily corrupted with special characters embedded.",
+    "footnote_artifacts": "Heavy corruption in German annotations. Footnote text at bottom severely degraded with character substitutions"
+  },
+  {
+    "page_number": 153,
+    "classification": "BAD",
+    "confidence": 0.75,
+    "evidence": "Multiple compound word corruptions affecting meaning: 'stimmt 11icht' (stimmt nicht), 'pr-oposition' (proposition), 'odaequntio' (adaequatio), 'intellectziS' (intellectus). Latin philosophical terms crucial to argument are partially corrupted. 'divinus' readable, but 'intellectzis' is concerning. Meaning recoverable but key technical terms degraded.",
+    "footnote_artifacts": "Extensive corruption in Latin terms and special characters throughout"
+  },
+  {
+    "page_number": 154,
+    "classification": "BAD",
+    "confidence": 0.72,
+    "evidence": "Technical Latin terms severely corrupted: 'adoeq11atio' (adaequatio), 'vn\"itas' (veritas), 'Weltvenunft' corrupted, 'intellectlS' (intellectus), 'adoeqllltio' (adaequatio). Critical philosophical terminology damaged. 'nongenuineness', 'nonaccord' readable, but Latin core is compromised. Meaning requires significant interpretation.",
+    "footnote_artifacts": "Systematic corruption in Latin phrases; special characters embedded throughout"
+  },
+  {
+    "page_number": 156,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "German text with some corruption: 'entgegro' (entgegen?), 'verhalmis' (Verhältnis?), 'aujbalrm' (aufbewahren?). English sections readable. 'vor-stellt' preserves hyphen. Key philosophical terms present: 'comportment', 'openness', 'being'. Meaning extractable with effort.",
+    "footnote_artifacts": "German words partially corrupted; some compound word degradation"
+  },
+  {
+    "page_number": 157,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Primarily readable English text. Minor errors: 'comporonent' for 'component', 'componment' for 'comportment'. 'anrectness' for 'correctness'. Errors isolated, not systematic. Philosophical argument clear: 'openness', 'standard', 'correctness', 'freedom'.",
+    "footnote_artifacts": "Minimal; isolated character substitutions"
+  },
+  {
+    "page_number": 158,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "Mixed readability: 'esence' for 'essence', 'correcmess' for 'correctness', 'seffi' for compound (seems cut off). German annotation present: 'shehering' (sheltering?). Meaning generally preserved but technical terms compromised. 'trutilb' shows significant corruption.",
+    "footnote_artifacts": "Systematic 'm' for 'ct' substitution in 'correctness' → 'correcmess'"
+  },
+  {
+    "page_number": 159,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "evidence": "Greek text heavily corrupted: 'ta a\"Ar,Ota' (ta aletheia?), special Unicode characters scattered (㈈, ㉈). English sections readable. 'disclosedness', 'beLn' (being), 'beyng' (being?). Philosophical terms recoverable but Greek passages degraded.",
+    "footnote_artifacts": "Extensive Greek corruption with Unicode substitutions; special characters (㈈, ㉈) embedded"
+  },
+  {
+    "page_number": 162,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Coherent English text. Minor errors: 'hwnans' for 'humans', 'swn' for 'sum' or similar, 'incide' for 'coincide'. 'correcmess' again appears (systematic error). Philosophical concepts clear: 'attunement', 'comportment', 'beings', 'disclosure'.",
+    "footnote_artifacts": "Minimal; systematic 'correcmess' error recurring"
+  },
+  {
+    "page_number": 163,
+    "classification": "BAD",
+    "confidence": 0.65,
+    "evidence": "Extensive corruption in critical Greek/philosophical terms: 'xolvov' (koinon), 'conc' (concealment?), 'ncealment' (concealment), Unicode characters scattered (㉌, ㉍, ㉎, ㉏). Text is fragmentary at bottom with severe degradation. Key passage: 'a concealing of beings as a whole' is corrupted. Meaning requires reconstruction.",
+    "footnote_artifacts": "Heavy Unicode substitution system; multiple special characters (㉌-㉏) replacing text"
+  },
+  {
+    "page_number": 164,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "evidence": "Readable philosophical text with isolated errors: 'ceals' in 'conceals', 'Hwnans' for 'Humans', 'verhiilt' for German term (Verhalten?). English sections clear. 'forgottenness', 'comportment', 'mystery' preserved. Meaning recoverable despite minor corruptions.",
+    "footnote_artifacts": "Minimal; isolated character errors"
+  },
+  {
+    "page_number": 166,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "Readable English with recurring issues: 'hwnan' for 'human', 'ossenheit' for German compound, 'mulwicity' for 'multiplicity'. 'needfol' for 'needful'. Core text: 'errancy', 'freedom', 'beings' intact. Meaning extractable.",
+    "footnote_artifacts": "Isolated errors; some German text partially corrupted"
+  },
+  {
+    "page_number": 168,
+    "classification": "MARGINAL",
+    "confidence": 0.83,
+    "evidence": "Philosophical text readable. Errors: 'becom' for 'become', 'quidditns' for 'quidditas', 'begining' for 'beginning', 'culrure' for 'culture', 'mdes' unclear, 'destirute' for 'destitute', 'philos' for 'philosophical'. Meaning generally recoverable despite name/term corruptions.",
+    "footnote_artifacts": "Latin/philosophical terms partially corrupted; isolated character errors"
+  },
+  {
+    "page_number": 170,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Highly readable English text. Only minor artifacts: 'erly' (early?), 'glaucon' is valid name (Glaucon), 'sheehan' is valid translator name, 'vhat' for 'what'. Text discusses Plato's allegory clearly. Names preserved.",
+    "footnote_artifacts": "Minimal; isolated single-letter substitutions"
+  },
+  {
+    "page_number": 171,
+    "classification": "BAD",
+    "confidence": 0.2,
+    "evidence": "Entirely Greek text with systematic character corruption. Examples: 'pav', 'flw', 'otov', 'xtrpai' show OCR failure on Greek. Special characters and Unicode substitutions throughout. This appears to be Greek original text that the OCR engine failed to process. Not recoverable without re-OCR.",
+    "footnote_artifacts": "Complete Unicode/character substitution system; Greek completely unreadable"
+  },
+  {
+    "page_number": 173,
+    "classification": "BAD",
+    "confidence": 0.25,
+    "evidence": "Greek text heavily corrupted: 'upov', 'qltoo', 'lic', 'livayxacol', 'xpij', 'atlte'. Systematic character replacement throughout. 'ltv', 'ltope', 'jvao', 'apa' show fragmentation. This is OCR of extended Greek passage that has failed. Requires re-OCR.",
+    "footnote_artifacts": "Complete systematic corruption of Greek; Unicode substitutions throughout"
+  },
+  {
+    "page_number": 175,
+    "classification": "BAD",
+    "confidence": 0.3,
+    "evidence": "Extended Greek passage with severe OCR failure: 'oqe', 'ltaptxw', 'otl', 'outoc', 'ltta', 'aoaooal', 'mtpolte', 'etjtog', 'tpwtljc', 'tjxlerc'. Systematic Unicode character replacements. Key philosophical content (allegory dialogue) unrecoverable.",
+    "footnote_artifacts": "Complete failure on Greek text; systematic Unicode substitution throughout"
+  },
+  {
+    "page_number": 177,
+    "classification": "BAD",
+    "confidence": 0.25,
+    "evidence": "Extended Greek dialogue completely corrupted: 'jaacx', 'pcj', 'iaeafjcx', 'cxj', 'cxp', 'xwv', 'xcxt', 'gijvljfjelct', 'laxov', 'oxtelv'. Systematic failure on Greek character recognition. This represents Plato's original dialogue - critical content lost.",
+    "footnote_artifacts": "Complete corruption; Unicode substitution system; unrecoverable"
+  },
+  {
+    "page_number": 182,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Readable English philosophical text on Plato's allegory. Minor errors: 'taloda' (paideía?), 'rpuolv' appears to be Greek artifact, 'ebtov', 'remov' for 'removing'. Key terms preserved: 'paradigm', 'education', 'formation', 'essence'. Meaning recoverable.",
+    "footnote_artifacts": "Some Greek text corruption; mostly English sections clear"
+  }
+]

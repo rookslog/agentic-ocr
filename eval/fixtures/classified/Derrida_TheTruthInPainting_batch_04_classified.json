@@ -1,0 +1,203 @@
+[
+  {
+    "page_number": 125,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "error_rate": 2.2,
+    "evidence": "Text is highly readable. Technical vocabulary (parergon, dissymmetrical, decentered, priori) present but correctly OCR'd. Some hyphenation artifacts (os-cillation, ad-herence) are normal PDF extraction behavior. No significant garbling.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 127,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "error_rate": 5.5,
+    "evidence": "Mostly readable but with noticeable corruption: 'knowl' (likely 'knowledge'), 'ade' (likely 'adequate'), 'imagina' (likely 'imagination'). German/French text (selbst, Zusammentreffen, gewiss) correctly preserved. Hyphenation artifacts present but expected.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 128,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "error_rate": 3.9,
+    "evidence": "Generally readable with minor corruption: 'urbild' (German Urbild - correctly OCR'd), 'individ' (likely 'individual'), 'resorbs' (likely 'resorbs' or 'absorbs'), 'expressivist' and 'interiority' readable. Foreign text (Sittlichen, sichtbare) preserved. Flow is coherent.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 129,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "error_rate": 8.6,
+    "evidence": "Readable but error-prone: 'anthro' (anthropology), 'verbindung' (German Verbindung - correct), 'ausserung' (German \u00c4u\u00dferung - correct), 'reptitiously' (surreptitiously), 'korperlicher' (German k\u00f6rperlich - correct). German/French correctly preserved. Main errors are English word truncation.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 130,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "error_rate": 6.9,
+    "evidence": "Readable overall with corruption patterns: 'munity' (community), 'hervorbringen' (German - correct), 'asmuch' (as much), 'empfindungenjj' (unusual character duplication but text recoverable). Complex Kant/philosophy text preserved. Foreign language elements intact.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 131,
+    "classification": "MARGINAL",
+    "confidence": 0.7,
+    "error_rate": 6.1,
+    "evidence": "Readable but with scattered errors: 'anthropo' (anthropological), 'nality' (likely modality/nationality), 'vaga' (Latin - correctly preserved), 'pulchritudo' (Latin - correctly preserved), 'solutely' (absolutely), 'reheads' (rehears or rereads). Argument coherent despite errors.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 133,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "error_rate": 5.5,
+    "evidence": "Readable with minor errors: 'nounj' (noun with extra character), 'economimesis' correctly OCR'd (unusual term), French preserved (faire, laisser, vOir). Endnote markers present (29, 30) - expected annotation. Main coherence maintained.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 134,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "error_rate": 7.9,
+    "evidence": "Readable but error-heavy: 'columna' (correct Latin), 'pensee' (correct French pens\u00e9e), 'dispropor' (disproportionate), 'columen' (correct Latin), 'demesurante' (French - correct), 'odera' (likely 'order'), 'indissociable' readable. Complex theoretical text mostly preserved.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 135,
+    "classification": "MARGINAL",
+    "confidence": 0.7,
+    "error_rate": 7.6,
+    "evidence": "Readable but scattered errors: 'archeolo' (archaeological), 'entame' (French correct), 'kolossai' (Greek plural - correct), 'detaille' (detail), 'demesure' (French - correct). Philosophical argument traceable. Foreign language elements preserved.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 138,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "error_rate": 4.5,
+    "evidence": "Short, coherent passage with minimal errors. 'tonishing' (astonishing), 'ungeheuer' (German - correct), 'gious' (religious), 'prodi' (prodigious). Despite some truncation, text is highly readable and semantic meaning preserved.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 139,
+    "classification": "MARGINAL",
+    "confidence": 0.73,
+    "error_rate": 5.4,
+    "evidence": "Readable with corruption: 'darstellung' (German - correct), 'ble' (terrible/able fragment), 'vernichtet' (German - correct), 'beinahe' (German - correct), 'kolossalisch' (German - correct), 'unpresenta' (unpresentable). Complex German/English mix mostly coherent.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 140,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "error_rate": 7.6,
+    "evidence": "Readable but error-prone: 'distin' (distinguished), 'zusammenfassung' (German - correct), 'hypotyposis' (correct - philosophical term), 'comprehensio' (correct - Latin term), 'auffassungsvermogen' (German - correct). Theoretical content preserved despite errors.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 142,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "error_rate": 6.6,
+    "evidence": "Readable but errors present: 'genblicklich' (Augenblicklich - blink of eye), 'isfaction' (satisfaction), 'reiz' (German Reiz - correct), 'celeration' (acceleration), 'inhi' (inhibition), 'ziehen' (German - correct). Dense philosophical text mostly traceable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 143,
+    "classification": "MARGINAL",
+    "confidence": 0.65,
+    "error_rate": 8.4,
+    "evidence": "Readable but heavily corrupted: 'zweckwidrig' (German - correct), 'inap' (inappropriate), 'expecially' (especially), 'nality' (modality), 'abstossen' (German - correct), 'unterwegs' (German - correct), 'anziehenl' (anziehen). Argument remains followable despite errors.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 144,
+    "classification": "GOOD",
+    "confidence": 0.52,
+    "error_rate": 13.1,
+    "evidence": "Significantly corrupted: 'counterinterest' (reasonable but unusual), 'ohne' (German - correct), 'occu' (occupation), 'negativ' (negative truncated), 'widerstand' (German - correct), 'ijo' (unclear), 'interesse' (German - correct), 'ailes' (wings/ails - unclear context), 'pation' (pation fragment). Too many errors to maintain full readability despite some recoverable passages.",
+    "footnote_artifacts": false,
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 146,
+    "classification": "MARGINAL",
+    "confidence": 0.7,
+    "error_rate": 5.8,
+    "evidence": "Readable with errors: 'aes' (aesthetics truncated), 'anhang' (German Anhang - correct), 'incom' (incomparable), 'beurteilung' (German - correct), 'inadequation' readable, 'sible' (possible fragment), 'saus' (likely 'sans'). Philosophical argument traceable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 147,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "error_rate": 7.6,
+    "evidence": "Readable but error-heavy: 'iaufhe' (Aufhebung likely), 'entaille' (French - correct), 'representer' (French - correct), 'asmuch' (as much), 'lals' (als with extra character), 'inhalt' (German - correct), 'darstellung' (German - correct). Dense Hegelian critique mostly comprehensible.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 148,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "error_rate": 2.8,
+    "evidence": "Highly readable despite minor errors: 'bildnis' (German - correct), 'gleichnis' (German - correct), 'mathe' (mathematical truncated), 'matical' (mathematical continuation). Kant/theology content preserved. Argument clearly traceable. Strong overall OCR quality.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 149,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "error_rate": 6.9,
+    "evidence": "Readable but scattered errors: 'nominalizable' (nominalized/nominalizable), 'solutely' (absolutely), 'absolutum' (Latin - correct), 'magnitudo' (Latin - correct), 'schlechthin' (German - correct), 'nitude' (magnitude fragment), 'unmeasure' readable. Complex Kant analysis mostly recoverable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 150,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "error_rate": 3.8,
+    "evidence": "Generally readable with minor errors: 'phenomenalization' correct, 'dimen' (dimension truncated), 'formlos' (German - correct), 'incomparables' correct, 'parison' (comparison). Philosophical argument well-preserved. Foreign language elements intact.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 151,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "error_rate": 5.1,
+    "evidence": "Readable with errors: 'aes' (aesthetics truncated), 'cogitari' (Latin - correct), 'quan' (quantum), 'thetically' (aesthetically), 'aliquid' (Latin - correct). Complex Anselm/Kant philosophical comparison mostly comprehensible.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 154,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "error_rate": 5.8,
+    "evidence": "Readable but errors present: 'grundmassj' (Grundmass with extra character), 'lebendigkeit' (German - correct), 'zusammen' (German - correct), 'intuitus' (Latin - correct), 'rivatus' (likely derivatus), 'lebendig' (German - correct). Mathematical sublime discussion mostly traceable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 156,
+    "classification": "MARGINAL",
+    "confidence": 0.7,
+    "error_rate": 5.2,
+    "evidence": "Readable with errors: 'versetzt' (German - correct), 'sinkt' (German - correct), 'meduse' (medusa), 'wohlgefallen' (German Wohlgefallen - correct), 'riihrendes' (r\u00fchrendes with diacritic loss), 'whh' (unclear artifact). Saint Peter passage and aesthetic narrative preserved.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 158,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "error_rate": 6.8,
+    "evidence": "Readable but scattered errors: 'formedy' (formed or formedly), 'devant' (French - correct), 'unlimits' (unlimits or un-limits), 'pre' (presentation truncated), 'kolossos' (Greek - correct), 'autre' (French - correct). Complex colossal/column philosophical distinction mostly traceable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 159,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "error_rate": 8.0,
+    "evidence": "Readable but error-prone: 'scenity' (obscenity), 'perelevates' (superelerates), 'originary' (originary - philosophical term), 'hav' (having), 'res' (resonance fragment), 'priori' (a priori - correct French/Latin), 'onance' (resonance fragment). Concluding philosophical passage mostly recoverable.",
+    "footnote_artifacts": false
+  }
+]

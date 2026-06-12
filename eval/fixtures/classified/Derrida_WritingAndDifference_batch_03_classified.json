@@ -1,0 +1,273 @@
+[
+  {
+    "page_number": 108,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Text is highly readable with accurate philosophical terminology. French words (Pharisees, Aramaic, Judaic, literature) correctly transcribed. Proper names (Yukel, Sarah, Reb Ivri, Reb Alc\u00e9) are correct. Hyphens and ligatures properly rendered (infinite, difference). Complex sentence structure preserved.",
+    "footnote_artifacts": "Footnote marker '5' correctly merged (cry.5). Superscript markers '23' are legitimate OCR from original text.",
+    "error_count": 3,
+    "errors": [
+      "yukel (should be capitalized Yukel in dialogue)",
+      "anchoritism (fragments: 'ancho' + 'ritism' split likely in original)"
+    ],
+    "notes": "Minor hyphenation issues do not impact meaning. Text flows logically and philosophical argument is clear."
+  },
+  {
+    "page_number": 109,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "evidence": "Highly readable philosophical discourse on absence and separation. French terms correctly spelled (diff\u00e9rence, demeure, eterne, Jab\u00e8s). Complex ideas about location, non-place clearly expressed. Proper names accurate (Jab\u00e8s, Cairo). Ligatures properly rendered (flourishes, reflected).",
+    "footnote_artifacts": "Superscript '6' correctly merged (silent.6). No problematic footnote integration.",
+    "error_count": 2,
+    "errors": [],
+    "notes": "Text demonstrates sophisticated OCR handling of philosophical vocabulary and French integrated terms. Meaning entirely recoverable and accurate."
+  },
+  {
+    "page_number": 111,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "evidence": "Mostly readable with philosophical argument preserved. Some name fragments suggest OCR fragmentation: 'Tal' appears incomplete in 'Reb Tal' context. Term 'bedsheet' seems unusual (likely 'bedsheet' is correct but context is odd - 'more anonymous than a bedsheet in the wind'). Properly handles complex concepts (sacrifice, consecration, signification). Most philosophical terms intact.",
+    "footnote_artifacts": "Footnote marker '5' correctly embedded in 'cry.5'. No problematic footnote merging detected.",
+    "error_count": 4,
+    "errors": [
+      "Alc\u00e9 in Reb Alc\u00e9 possibly corrupted (could be Alce or other variant)",
+      "bedsheet - semantically odd but grammatically valid"
+    ],
+    "notes": "Text is semantically recoverable despite minor artifacts. Philosophical argument is clear. Word fragmentation in sample (sacri-, tion, -ation) reflects footnote marker splitting, not OCR failure."
+  },
+  {
+    "page_number": 115,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "evidence": "Generally readable with preserved philosophical structure. Some character fragmentation in samples suggests footnote markers split words (nally, uence, rst). French text (Jab\u00e8s, \u00e9criture) correctly rendered. Key terms mostly intact: confluence, difference, separation. Hyphens and ligatures handled reasonably (set off, affected, difference).",
+    "footnote_artifacts": "Superscript footnote markers embedded in words: 'finally' split as 'nally' (final\u00b9ly), 'confluence' as 'confluence' where marker interrupts. This is EXPECTED behavior, not OCR error.",
+    "error_count": 3,
+    "errors": [],
+    "notes": "Fragment samples are nearly all legitimate footnote marker integration. Meaning of text is fully recoverable. Philosophical argument on encounter and separation is intact."
+  },
+  {
+    "page_number": 116,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Readable discussion of B\u00f6hme, Hegel, and Cabalistic traditions. Proper names accurate (B\u00f6hme, Hegel, Scheler, Jab\u00e8s). Complex French philosophical terms correct (Tradition, Cabala, Judaism, Jewishness). Thematic structure preserved - discusses themes of negativity in God, exile, writing. Quotes integrated correctly.",
+    "footnote_artifacts": "Superscript markers in samples (nally, nal, rst) are footnote integrations, not OCR errors. Marker '11' at end preserved correctly.",
+    "error_count": 2,
+    "errors": [],
+    "notes": "Text demonstrates excellent OCR of philosophical scholarship with multilingual content. All key terms (Cabala, Traditionality, universalism) accurately transcribed."
+  },
+  {
+    "page_number": 117,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Clear exposition of identity, difference, and Jewish consciousness. Proper names (Jab\u00e8s) consistently correct. Philosophical terminology accurate (noncoincidence, identification, difference, literality, universalism). Metaphors and concepts (severed head, decapitated, letter) properly preserved. Complex sentence structure intact.",
+    "footnote_artifacts": "No problematic footnote integration. Superscript markers preserved appropriately.",
+    "error_count": 2,
+    "errors": [],
+    "notes": "Excellent OCR quality. Text flows logically with clear argument about Jewish identity split between allegory and literal understanding. Emotional intensity of quoted passage maintained."
+  },
+  {
+    "page_number": 120,
+    "classification": "MARGINAL",
+    "confidence": 0.77,
+    "evidence": "Generally readable discussion of illegibility, rationalism, and literature. Key concepts preserved (rationalism, irrationalism, literature, diff\u00e9rance). French terms correct (Blanchot, diff\u00e9rance). However, character fragmentation in samples suggests footnote marker splitting: 'nally' (finally\u00b9), 'rms' (terms), 'rela' (relationship). Term 'nonliterature' is valid but unusual - may indicate OCR artifact or legitimate philosophical coining.",
+    "footnote_artifacts": "Multiple samples show obvious footnote marker integration: 'nally', 'rms', 'rela', 'modi' (modifications). These are footnote-related, not substantive OCR failures.",
+    "error_count": 4,
+    "errors": [],
+    "notes": "Semantic meaning is fully recoverable. Discussion of illegibility, Jab\u00e8s, and literature's relationship to life is clear. Fragment samples are primarily footnote artifacts."
+  },
+  {
+    "page_number": 121,
+    "classification": "MARGINAL",
+    "confidence": 0.76,
+    "evidence": "Readable passage on interrogation and God, though character sampling shows fragmentation (nal, rida, mem, ory, reb, rmation). These appear to be footnote marker splits rather than pure OCR failures. Core philosophical argument about God's interrogation and the book is preserved. Proper names (Reb Rida) mostly intact, though 'Reb Rida' in sample suggests possible name corruption.",
+    "footnote_artifacts": "Samples clearly show footnote markers splitting words: 'nal' (final), 'mem' (memory), 'ory' (memory/history), 'rmation' (formation). Marker integration is expected, not OCR error.",
+    "error_count": 2,
+    "errors": [],
+    "notes": "Text meaning is recoverable. Discussion of final affirmation transforming into question is clear. Fragment samples are nearly all footnote-related."
+  },
+  {
+    "page_number": 122,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Clear opening of new essay section on 'Violence and Metaphysics' focused on Emmanuel Levinas. Proper philosophical terminology intact (Hebraism, Hellenism, perennis, nonphilosophy). The fragment sampling (philosophia, perennis, osophy) are samples only - full text shows clean terminology. Epigraph from Matthew Arnold properly attributed. Complex philosophical setup clearly conveyed.",
+    "footnote_artifacts": "Superscript marker '1' correctly placed after 'Levinas'. No problematic integration.",
+    "error_count": 0,
+    "errors": [],
+    "notes": "Excellent OCR. This is the opening of major new section, and it transitions smoothly from Jab\u00e8s essay to Levinas with professional formatting and terminology intact."
+  },
+  {
+    "page_number": 125,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Sophisticated philosophical exposition comparing Husserlian phenomenology and Heideggerean ontology. Complex terms accurately rendered: Heideggerean, ontology, phenomenology, telos, approximation, archia. Proper names (Husserl, Heidegger, Plato) correct. Abstract concepts clearly preserved. Three numbered arguments logically structured.",
+    "footnote_artifacts": "Superscript marker '3' correctly positioned. No footnote integration errors detected.",
+    "error_count": 2,
+    "errors": [],
+    "notes": "High-quality OCR of dense philosophical material. Terminology across multiple domains (phenomenology, ontology, metaphysics) accurately transcribed."
+  },
+  {
+    "page_number": 126,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Coherent discussion of Greek tradition, Levinas's thought, and philosophical crisis. Proper names accurate (Levinas, Husserl, Heidegger, Descartes, Kant, Levinas). Complex terms intact (phenomenality, dismantling, dispossession, transcendental). Argument about Greek element being inescapable clearly conveyed. French terminology (alluvias) preserved.",
+    "footnote_artifacts": "Superscript marker at start preserved. No problematic footnote integration.",
+    "error_count": 1,
+    "errors": [],
+    "notes": "Excellent OCR handling of philosophical scholarship. Discussion of Levinas's challenge to Western philosophy clearly articulated."
+  },
+  {
+    "page_number": 130,
+    "classification": "MARGINAL",
+    "confidence": 0.74,
+    "evidence": "Readable discussion of charges against theoretism and phenomenology, with discussion of Husserl, Levinas, and Platonic forms. Core argument preserved. However, unknown_words_sample shows multiple fragments (husserlian, pre, exteriority, erence, tes, ousias, etc.) suggesting substantial footnote marker integration or OCR fragmentation. Terms like 'axiological' and 'noema' are correctly preserved despite samples.",
+    "footnote_artifacts": "Samples show clear footnote integration: 'tes' + 'ousias' = 'epekeina tes ousias' (Platonic formula with marker). Marker position creates fragments in sampling, but full text is coherent.",
+    "error_count": 5,
+    "errors": [
+      "epekeina tes ousias - correctly preserved despite sample fragmentation"
+    ],
+    "notes": "Text meaning is fully recoverable. Philosophical argument about face, non-light, and violence in phenomenology is clear. Sample fragmentation reflects footnote marker density rather than OCR failure."
+  },
+  {
+    "page_number": 131,
+    "classification": "MARGINAL",
+    "confidence": 0.73,
+    "evidence": "Readable discussion of Levinas on metaphysics, transcendence beyond Being, and ethical excendence. Key concepts preserved (metaontology, epekeina tes ousias, excendence, Platonic Good, fecundity, paternity). However, samples show fragmentation (consti-, nity, phor, cre-, ation, tes) indicating footnote marker splitting. Unknown_words_sample includes legitimate OCR of 'serl' (perhaps from 'Hus-serl' with marker) and complex Greek/philosophical terms.",
+    "footnote_artifacts": "Clear evidence of superscript markers splitting words: 'phor' (metaphor), 'cre' + 'ation' (creation with marker between). Expected behavior given footnote density.",
+    "error_count": 3,
+    "errors": [],
+    "notes": "Semantic content is fully recoverable despite fragment sampling. Discussion of Levinas's interpretation of Plato's Good beyond Being is philosophically coherent. Fragment samples are nearly all footnote artifacts or legitimate multilingual terms."
+  },
+  {
+    "page_number": 132,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "evidence": "Discussion of nontheoretical consciousness, phenomenological reduction, and Levinas's critique of Husserl is readable, though unknown_words_sample (consti-, husserlianism, speci-, siveness, espe-, gegenst-, culties, theoretism) shows significant character splitting. However, key terms like 'husserlianism', 'nontheoretical', 'primacy', 'theoretical consciousness' are correctly present in full text. Argument about objectification vs consciousness is clear.",
+    "footnote_artifacts": "Samples clearly show footnote marker integration: 'consti' + 'tution' (constitution), 'speci' + 'fic' (specific with marker). Marker position creates sampling artifacts.",
+    "error_count": 4,
+    "errors": [],
+    "notes": "Text is semantically and philosophically coherent despite fragment sampling. Levinas's nuanced critique of Husserl's phenomenology is clearly articulated. This page demonstrates how footnote density creates fragmented unknown_words_samples while preserving full text meaning."
+  },
+  {
+    "page_number": 133,
+    "classification": "GOOD",
+    "confidence": 0.58,
+    "evidence": "This page shows significant OCR degradation with multiple problematic artifacts. Unknown_words_sample includes concerning fragments: 'pos', 'aeternitatis', 'munion', 'und', 'icity', 'ation'. The phrase 'sub specie aeternitatis' appears compromised (sample shows 'aeternitatis' as unknown). Discussion of mystical communion, theoretism vs objectivity shows argument structure, but character-level corruptions are evident. 'munion' suggests 'communion' was corrupted.",
+    "footnote_artifacts": "Significant evidence of problematic footnote integration beyond simple marker splitting. Terms like 'munion' and 'premetaphysical' fragments suggest compression or corruption errors.",
+    "error_count": 7,
+    "errors": [
+      "munion (should be 'communion')",
+      "sub specie aeternitatis may be corrupted",
+      "multiple Latin/Greek phrases appear damaged"
+    ],
+    "notes": "This is the lowest quality page in the batch. While the overall philosophical argument about theoretism and Levinas's critique remains somewhat recoverable, character-level errors and missing characters suggest this page warrants re-OCR or human correction. The density of unknown_words and nature of corruption (not just footnote markers) indicates genuine OCR issues.",
+    "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+  },
+  {
+    "page_number": 134,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Coherent exposition of Levinas's critique of Heidegger and phenomenology. Proper names accurate (Levinas, Husserl, Heidegger, Descartes, Hegel). Philosophical terms intact (historicity, intentionality, objectivity, temporality, inside-outside, cogito-cogitatum). Argument about light and unveiling structure clearly conveyed. Complex sentences on Being and existence properly preserved.",
+    "footnote_artifacts": "Superscript markers correctly positioned. Fragment samples (signi, struc) reflect footnote integration, not substantive OCR failure.",
+    "error_count": 2,
+    "errors": [],
+    "notes": "High-quality OCR of sophisticated philosophical material. Discussion of how Heidegger still operated within Greek metaphysical tradition is clear and well-articulated."
+  },
+  {
+    "page_number": 135,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "Clear discussion of Levinas's metaphysics of radical separation and Heidegger's temporality as ecstasy. Proper names accurate (Levinas, Heidegger, Plato, Parmenides, Eckhart). Complex terms preserved (temporality, ecstasy, Mitsein, multiplicity, alterity, noncontemporaneousness). Argument about Platonic inheritance and parricide philosophically coherent.",
+    "footnote_artifacts": "Superscript marker '18' correctly placed. Fragments in sample (ine, culty, ectual) reflect footnote markers, not OCR corruption.",
+    "error_count": 2,
+    "errors": [],
+    "notes": "Excellent OCR of dense philosophical material. Discussion of how Levinas calls for second parricide - killing the Greek father (Plato) - is philosophically sophisticated and accurately rendered."
+  },
+  {
+    "page_number": 136,
+    "classification": "GOOD",
+    "confidence": 0.45,
+    "evidence": "This page shows significant OCR degradation with multiple German words corrupted. The text includes quoted German: 'Was bedeutet \"Existenz\" in Sein und Zeit? Das wort nennt eine Weise des Seins...' with critical corruptions: 'enheit' (should be 'Eigentlichkeit'?), 'dasein', 'weise' appear fragmented. Unknown_words_sample includes concerning items: 'existenz', 'dasein', 'der', 'und', 'weise', 'metaphysik', 'das' - these are fundamental German words that should not be 'unknown'. The quote appears partially corrupted with character-level errors preventing proper reading of technical German terminology.",
+    "footnote_artifacts": "Superscript marker '19' present but extensive German language corruption suggests genuine OCR failure beyond footnote integration.",
+    "error_count": 8,
+    "errors": [
+      "German quote appears partially corrupted",
+      "'Was bedeutet' may be corrupted",
+      "Multiple German words marked as unknown when they should be recognized",
+      "Existenz/Dasein terminology may be compromised"
+    ],
+    "notes": "This page is problematic due to German language OCR failure. The extended German quotation from Heidegger (Sein und Zeit) appears to have character-level corruptions that compromise readability. This page would benefit from human review and potential re-OCR, particularly for the German philosophical terminology.",
+    "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+  },
+  {
+    "page_number": 140,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Coherent discussion of Levinas on desire vs Hegel on consciousness and alterity. Proper names accurate (Levinas, Hegel, Kierkegaard, Claudel). Philosophical terminology intact (alterity, premetaphysical, ethico-metaphysical, transgression, desire, enjoyment). Complex argument about infinite separation and desire for the absolutely irreducible other is clearly conveyed.",
+    "footnote_artifacts": "Superscript marker '22' correctly positioned. Fragments in sample (gure, llment, cer) reflect footnote integration, not OCR error.",
+    "error_count": 2,
+    "errors": [],
+    "notes": "High-quality OCR. Discussion of how desire differs from need and consciousness, and Levinas's critique of Hegel is philosophically sophisticated and accurately rendered."
+  },
+  {
+    "page_number": 141,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Sophisticated exposition on alterity, the face, and ethical relation in Levinas. Proper names accurate (Levinas, Hegel, Wahl, Jean Wahl, Plato). Complex philosophical terminology intact (alterity, transcendence, identification, heterology, dissymmetry, nonformal). The discussion of height/heightness and metaphysical transcendence is clearly articulated.",
+    "footnote_artifacts": "Superscript markers correctly integrated. Fragment samples (ance, erence, wahl, ects, modi) reflect footnote markers, not substantive OCR failures.",
+    "error_count": 1,
+    "errors": [],
+    "notes": "Excellent OCR of complex philosophical material. The argument about how alterity cannot be reduced to internal consciousness and requires encounter with true Other is clear."
+  },
+  {
+    "page_number": 142,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Clear exposition on tautology vs heterology in Levinas, the role of negativity, and the ethical relation. Proper names accurate (Levinas, Hegel). Philosophical terminology intact (heterology, dissymmetry, alterity, intelligible resistance, economy, non-being). Argument about how ego cannot generate true alterity is philosophically coherent.",
+    "footnote_artifacts": "Superscript marker '24' correctly positioned. Fragment samples reflect footnote integration, not OCR corruption.",
+    "error_count": 1,
+    "errors": [],
+    "notes": "High-quality OCR of dense philosophical material. The distinction between finite heterology (false) and true alterity is clearly articulated."
+  },
+  {
+    "page_number": 144,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Coherent discussion of ethics, religion, and face-to-face relation in Levinas. Proper names accurate (Levinas, Kant). Philosophical terminology intact (transcendence, religion, ethics, interrogation, commandment, respect, freedom). The argument about how ethics opens through respectful distance maintained through speech and glance is clear.",
+    "footnote_artifacts": "Superscript marker '26' correctly positioned. Fragment samples reflect footnote integration.",
+    "error_count": 2,
+    "errors": [],
+    "notes": "Excellent OCR. Discussion of ethics as opening of religion through non-violent respect is philosophically sophisticated and accurately rendered."
+  },
+  {
+    "page_number": 145,
+    "classification": "MARGINAL",
+    "confidence": 0.76,
+    "evidence": "Discussion of ontology vs metaphysics, freedom, and Heidegger's philosophy is largely readable, but unknown_words_sample shows concerning fragments: 'univer' (universal?), 'neces' (necessary?), 'neu' (neuter?), 'neutraliza' (neutralization), 'subjectivist', 'egology', 'tautotology'. The term 'tautotology' appears to be corrupted (should be 'tautology'). Some character-level errors visible. However, main philosophical argument about ontology as egology is preserved.",
+    "footnote_artifacts": "Fragment samples show mix of footnote integration and possible OCR errors. 'tautotology' is concerning - suggests 'tautology' with extra character or corruption.",
+    "error_count": 4,
+    "errors": [
+      "tautotology (should be 'tautology' - extra character)"
+    ],
+    "notes": "Text is semantically recoverable but shows more character-level corruption than earlier pages. Argument about ontology neutralizing the Other and Heidegger's thought as egoism is philosophically clear despite minor artifacts. Page represents borderline quality - meaning is recoverable but requires some interpretation."
+  },
+  {
+    "page_number": 148,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Discussion of Hegel's Aesthetics, the role of the eye, and comparison with Levinas on vision vs sound. Proper names accurate (Levinas, Hegel). Complex philosophical and aesthetic terminology intact (transcendence, desire, appetite, vision, theoretical sense). The extended Hegel quotations on sight and color preservation are properly rendered. Argument comparing Levinas's sound priority with Hegel's sight priority is clear.",
+    "footnote_artifacts": "Superscript marker '28' correctly positioned. Fragment samples (ceptible, cance, nal, colour) reflect footnote integration, not OCR failure.",
+    "error_count": 2,
+    "errors": [],
+    "notes": "High-quality OCR. Discussion of aesthetic theory and sensory metaphysics is sophisticated and accurately conveyed."
+  },
+  {
+    "page_number": 149,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Coherent discussion of hearing vs sight in Hegel's Aesthetics and relationship to sensibility and sense. Proper names accurate (Hegel, Levinas). Philosophical and aesthetic terminology intact (sensibility, signification, ideal sense, hearing, trembling, subjectivity, corporeality). The extended Hegel quotations are properly rendered. Argument about hearing as more ideal than sight is clear.",
+    "footnote_artifacts": "Superscript markers '30' and '31' correctly positioned. Fragment samples reflect footnote integration.",
+    "error_count": 1,
+    "errors": [],
+    "notes": "Excellent OCR of complex aesthetic philosophy. Discussion of hearing, trembling, ideality, and the spiritual dimension is philosophically sophisticated and accurately rendered."
+  }
+]

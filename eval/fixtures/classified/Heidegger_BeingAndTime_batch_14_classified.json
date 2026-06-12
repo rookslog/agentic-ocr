@@ -1,0 +1,352 @@
+{
+  "batch_id": 14,
+  "document": "Heidegger_BeingAndTime",
+  "classified_pages": [
+    {
+      "page_number": 483,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 3.5
+    },
+    {
+      "page_number": 484,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "Word concatenation: 'dasjetzt' (should be 'das jetzt')"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 9.4
+    },
+    {
+      "page_number": 485,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [
+        "xx111"
+      ],
+      "error_rate": 9.2
+    },
+    {
+      "page_number": 486,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 3.9
+    },
+    {
+      "page_number": 487,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 7.5
+    },
+    {
+      "page_number": 488,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 3.3
+    },
+    {
+      "page_number": 489,
+      "classification": "GOOD",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 8 samples"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 5.5
+    },
+    {
+      "page_number": 490,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "Suspected OCR of 'ph\u00e4nomenologisch' - umlaut handling"
+      ],
+      "footnote_artifacts": [
+        "1001",
+        "1912",
+        "1910",
+        "1913"
+      ],
+      "error_rate": 20.3,
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 491,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "Suspected OCR of 'ph\u00e4nomenologisch' - umlaut handling"
+      ],
+      "footnote_artifacts": [
+        "1g16",
+        "Ig25",
+        "1g23"
+      ],
+      "error_rate": 12.2
+    },
+    {
+      "page_number": 492,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [
+        "1580",
+        "1786",
+        "1923",
+        "1913",
+        "1923",
+        "1829"
+      ],
+      "error_rate": 15.7
+    },
+    {
+      "page_number": 493,
+      "classification": "GOOD",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [
+        "1382",
+        "I383",
+        "1844",
+        "1923",
+        "1886"
+      ],
+      "error_rate": 19.1,
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 494,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [
+        "1g25",
+        "1g24",
+        "1g25",
+        "1g26"
+      ],
+      "error_rate": 15.8
+    },
+    {
+      "page_number": 495,
+      "classification": "GOOD",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [
+        "1912",
+        "1916",
+        "1924"
+      ],
+      "error_rate": 16.1,
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 496,
+      "classification": "BAD",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [
+        "1918",
+        "1922",
+        "1924",
+        "1924",
+        "1878",
+        "18g6",
+        "1925"
+      ],
+      "error_rate": 18.7
+    },
+    {
+      "page_number": 497,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [
+        "1g16",
+        "1g54",
+        "1g25",
+        "1g51"
+      ],
+      "error_rate": 13.6
+    },
+    {
+      "page_number": 498,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [
+        "1924",
+        "1924",
+        "1916",
+        "1954",
+        "1925"
+      ],
+      "error_rate": 13.5
+    },
+    {
+      "page_number": 499,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [
+        "1920",
+        "IndogertTI1Jisch6",
+        "1896",
+        "Logisch6",
+        "1901",
+        "1875",
+        "1924",
+        "1904",
+        "1918",
+        "r877",
+        "1B97",
+        "1923",
+        "1924"
+      ],
+      "error_rate": 22.0
+    },
+    {
+      "page_number": 500,
+      "classification": "BAD",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [
+        "1915",
+        "1916",
+        "1916",
+        "1583",
+        "1627",
+        "1888",
+        "I888",
+        "1920",
+        "1897",
+        "I9I7",
+        "1920",
+        "1906"
+      ],
+      "error_rate": 19.4
+    },
+    {
+      "page_number": 501,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [
+        "1949",
+        "1923",
+        "1923"
+      ],
+      "error_rate": 14.0
+    },
+    {
+      "page_number": 502,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [
+        "1923",
+        "1923",
+        "1917"
+      ],
+      "error_rate": 15.3
+    },
+    {
+      "page_number": 506,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 37.1
+    },
+    {
+      "page_number": 507,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 28.0
+    },
+    {
+      "page_number": 508,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 24.0
+    },
+    {
+      "page_number": 509,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 23.9
+    },
+    {
+      "page_number": 510,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "High unknown word count: 10 samples"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 32.3
+    }
+  ],
+  "summary": {
+    "total_pages": 25,
+    "good_count": 1,
+    "marginal_count": 13,
+    "bad_count": 11
+  }
+}

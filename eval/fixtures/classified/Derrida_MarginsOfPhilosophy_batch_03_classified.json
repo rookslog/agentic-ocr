@@ -1,0 +1,181 @@
+[
+  {
+    "page_number": 77,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clean, coherent philosophical text about Aristotle and Kant's concepts of time. Foreign terms (ousia, physis, aisthanometha, khronou) and proper nouns correctly spelled. No significant OCR errors detected.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 79,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": "Overall readable but contains several OCR errors: 'dedqyestion' (should be clearer), 'darifies' (should be 'clarifies'), 'ungegenstandtlich' appears garbled in some contexts. German and Greek philosophical terms mostly correct (Nacheinander, Jetztfolge, Jetzt, Soeben, Sogleich). Text meaning is recoverable despite errors.",
+    "footnote_artifacts": [
+      "jetzf (footnote artifact merged with 'Jetz')"
+    ]
+  },
+  {
+    "page_number": 80,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": "Multiple OCR errors but meaning recoverable: 'meanzngis' (meanings), 'etermined' (determined), 'determrnations' (determinations), 'ualif' (unclear). Greek terms have some corruption: 'gegone' is acceptable variant, 'ouk' correct, 'lambanomenos' correct. Philosophical content is understandable despite technical errors.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 86,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clear, well-OCR'd page on Gramme and Number. Foreign terms correct: einai, hama, ephexes, mathematikon, etc. Proper Greek and German philosophical vocabulary intact. No significant garbling detected.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 87,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Excellent OCR quality. Discusses Aristotle's categories of kinesis and metabole with correct terminology. German words (Aufhebung, energeia, entelekheia) properly rendered. No significant errors in technical philosophical vocabulary.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 88,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clean, coherent text on mathematics and time. Foreign terms intact: stigmei, grammatical structures sound. Minor artifacts like 'pernuts' appear to be footnote merges. Overall text is readable and semantically correct.",
+    "footnote_artifacts": [
+      "pernuts (apparent footnote artifact)"
+    ]
+  },
+  {
+    "page_number": 91,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": "Generally readable but contains: 'alrea4y' (already - digit artifact), 'lirnitation' (limitation). German and philosophical terms mostly correct. Text discusses Heideggerian concepts and is semantically recoverable despite technical errors.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 92,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": "Multiple OCR degradation: 'dlassical' (classical), 'lirnitation' (limitation), 'fallt' rendering issues. However, German philosophical terms (Verfallen, Heidegger, Dasein, Zeitlichkeit) are mostly correct. Meaning is recoverable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 93,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": "Text quality degraded with errors: 'ezng' (unclear), 'Gegenwartigkeit' appears but with rendering issues (gegenwartigkeit present). Heideggerian terminology correct (eigentlicli, anwesende, anwesen, Spruch). Content is semantically meaningful despite OCR problems.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 94,
+    "classification": "BAD",
+    "confidence": "medium",
+    "evidence": "Significant OCR degradation with corrupted text: 'withltrlhe' (corrupted word fragment), passages are heavily garbled with incomplete words and missing text ('nec-' incomplete, 'descri' incomplete, 'reeells' unclear). Multiple semantic ruptures make full comprehension difficult.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 95,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": "High error rate with severe corruptions: 'dii' (unclear), 'amorphou' vs 'amorphous', key passages corrupted ('bedeu' incomplete, 'taphysics' fragmented, 'bleibt' split). Major text fragments missing or garbled, making philosophical meaning partially inaccessible.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 98,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": "Severely degraded OCR with gibberish: 'hrst' (first), 'pcns' (pensée garbled), 'nuih' (unclear), 'rne' (incomplete), 'minaire' should be 'Séminaire'. Multiple proper nouns and title words corrupted beyond easy recovery. Very poor text quality.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 103,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Well-OCR'd philosophical text on Hegel and semiotics. German philosophical terminology correct: Besonderung, Notwendigkeit, Aufhebung, Ubergegen, etc. No significant errors detected. Clear and semantically sound throughout.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 104,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clean OCR of Hegelian semiology content. Greek and German terms correct: psukhes, pathemata, phonei, interpretatione (proper Latin). Proper nouns intact. No significant garbling detected.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 105,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": "Generally readable but with technical errors: German philosophical terms present (anschauend, selbst, vorstellung, einbildungskraft) are correct, but some words show corruption. Meaning is largely recoverable despite OCR artifacts.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 106,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": "Readable text with some OCR errors: 'nightlike' acceptable, German intact (beleidigt, bewusstlos, vorstellung, erinnert, aufbewahrt, Schacht). Minor artifacts but philosophical meaning is clear and recoverable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 108,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Well-presented philosophical analysis of imagination. German and Greek terminology intact: Einbildungskraft, schaffend, reproduktiven. Kant and Hegel discussion clear. No major OCR degradation.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 111,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clear, coherent philosophical text on Hegelian semiology. Greek and German terms correct: Bedeutung, Seele, oikesis, hermogenes, psukhei. Proper nouns (Plato, Cratylus) intact. No significant errors.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 112,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": "Readable with minor OCR artifacts: German terms mostly correct (selbstandiger, vorstellung, fremde, versetzten, vorstellen, bedeutung) but some show slight corruption. Philosophical meaning is comprehensible overall.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 113,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Well-OCR'd discussion of Hegelian semiology. German philosophical vocabulary intact: Verknupfung, willkurliche, aufbewahrt. Proper rendering of philosophical concepts. No major garbling.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 115,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clear text on symbolic versus designatory signs in Hegel. German terms correct: Gestalt, Lebendigkeit, Willkur, Herrschaft, bezeichnend, symbolisierend. Philosophical argument coherent and well-preserved.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 116,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Well-preserved philosophical text on signs and memory. German terms intact: Gedachtnis, Gedanke. Latin technical terms correct. Discussion of Hegelian psychology and semiology is clear.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 119,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": "Generally readable with some corruption: 'widerstnndslos' (widerstandslos), 'vorstellens' correct, some German philosophical terms intact. Content is semantically recoverable despite technical errors.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 121,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": "Readable philosophical text with minor OCR issues: 'inneren', 'aussereinander', 'klingen', 'seelenhaftigkeit' mostly correct despite minor renderings. German philosophical vocabulary preserved. Meaning is comprehensible.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 122,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clear philosophical discussion on Hegelian aesthetics and hearing. German and Greek terms intact: Erzittern, schwingende, Klang, etc. Technical philosophical vocabulary correctly preserved. No major errors.",
+    "footnote_artifacts": []
+  }
+]

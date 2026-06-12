@@ -1,0 +1,346 @@
+[
+  {
+    "page_number": 127,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "error_rate_percent": 3.6,
+    "evidence": [
+      "Error rate 3.6% - acceptable with minor issues",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (5 ligatures)",
+      "Page length: 3067 characters"
+    ],
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 128,
+    "classification": "GOOD",
+    "confidence": 0.825,
+    "error_rate_percent": 6.5,
+    "evidence": [
+      "Error rate 6.5% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (4 ligatures)",
+      "Page length: 3092 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 129,
+    "classification": "GOOD",
+    "confidence": 0.865,
+    "error_rate_percent": 5.7,
+    "evidence": [
+      "Error rate 5.7% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (7 ligatures)",
+      "Page length: 3133 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 131,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "error_rate_percent": 5.0,
+    "evidence": [
+      "Error rate 5.0% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (6 ligatures)",
+      "Page length: 2800 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 132,
+    "classification": "GOOD",
+    "confidence": 0.83,
+    "error_rate_percent": 6.4,
+    "evidence": [
+      "Error rate 6.4% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (4 ligatures)",
+      "Page length: 2747 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 133,
+    "classification": "GOOD",
+    "confidence": 0.83,
+    "error_rate_percent": 6.4,
+    "evidence": [
+      "Error rate 6.4% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (7 ligatures)",
+      "Page length: 3377 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 137,
+    "classification": "GOOD",
+    "confidence": 0.8049999999999999,
+    "error_rate_percent": 6.9,
+    "evidence": [
+      "Error rate 6.9% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (5 ligatures)",
+      "Page length: 2886 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 138,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "error_rate_percent": 5.0,
+    "evidence": [
+      "Error rate 5.0% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (4 ligatures)",
+      "Page length: 2823 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 139,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "error_rate_percent": 4.9,
+    "evidence": [
+      "Error rate 4.9% - acceptable with minor issues",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (4 ligatures)",
+      "Page length: 2887 characters"
+    ],
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 140,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "error_rate_percent": 5.6,
+    "evidence": [
+      "Error rate 5.6% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (5 ligatures)",
+      "Page length: 3209 characters"
+    ],
+    "footnote_artifacts": [
+      "track43"
+    ],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 144,
+    "classification": "GOOD",
+    "confidence": 0.8450000000000001,
+    "error_rate_percent": 6.1,
+    "evidence": [
+      "Error rate 6.1% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (5 ligatures)",
+      "Page length: 3047 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 146,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "error_rate_percent": 4.0,
+    "evidence": [
+      "Error rate 4.0% - acceptable with minor issues",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (3 ligatures)",
+      "Page length: 2769 characters"
+    ],
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 147,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "error_rate_percent": 4.0,
+    "evidence": [
+      "Error rate 4.0% - acceptable with minor issues",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (8 ligatures)",
+      "Page length: 3089 characters"
+    ],
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 149,
+    "classification": "GOOD",
+    "confidence": 0.8450000000000001,
+    "error_rate_percent": 6.1,
+    "evidence": [
+      "Error rate 6.1% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (10 ligatures)",
+      "Page length: 2675 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 151,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "error_rate_percent": 5.0,
+    "evidence": [
+      "Error rate 5.0% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (2 ligatures)",
+      "Page length: 2710 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 153,
+    "classification": "GOOD",
+    "confidence": 0.885,
+    "error_rate_percent": 5.3,
+    "evidence": [
+      "Error rate 5.3% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (2 ligatures)",
+      "Page length: 2111 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 159,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "error_rate_percent": 4.6,
+    "evidence": [
+      "Error rate 4.6% - acceptable with minor issues",
+      "10 potential OCR errors detected",
+      "Page length: 2983 characters"
+    ],
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 160,
+    "classification": "GOOD",
+    "confidence": 0.795,
+    "error_rate_percent": 7.1,
+    "evidence": [
+      "Error rate 7.1% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (6 ligatures)",
+      "Page length: 2919 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 161,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "error_rate_percent": 5.4,
+    "evidence": [
+      "Error rate 5.4% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (3 ligatures)",
+      "Page length: 2960 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 162,
+    "classification": "GOOD",
+    "confidence": 0.885,
+    "error_rate_percent": 5.3,
+    "evidence": [
+      "Error rate 5.3% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (5 ligatures)",
+      "Page length: 2940 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 166,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "error_rate_percent": 3.2,
+    "evidence": [
+      "Error rate 3.2% - acceptable with minor issues",
+      "10 potential OCR errors detected",
+      "Page length: 2931 characters"
+    ],
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 167,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "error_rate_percent": 4.4,
+    "evidence": [
+      "Error rate 4.4% - acceptable with minor issues",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (1 ligatures)",
+      "Page length: 2898 characters"
+    ],
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 168,
+    "classification": "GOOD",
+    "confidence": 0.6900000000000001,
+    "error_rate_percent": 9.2,
+    "evidence": [
+      "Error rate 9.2% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (8 ligatures)",
+      "Page length: 3014 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 169,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "error_rate_percent": 5.2,
+    "evidence": [
+      "Error rate 5.2% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (4 ligatures)",
+      "Page length: 2848 characters"
+    ],
+    "footnote_artifacts": [],
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 172,
+    "classification": "BAD",
+    "confidence": 0.51,
+    "error_rate_percent": 12.8,
+    "evidence": [
+      "Error rate 12.8% - significant OCR degradation",
+      "10 potential OCR errors detected",
+      "Proper ligature handling (6 ligatures)",
+      "Page length: 2702 characters"
+    ],
+    "footnote_artifacts": [
+      "stupidity26"
+    ]
+  }
+]

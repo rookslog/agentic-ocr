@@ -1,0 +1,344 @@
+[
+  {
+    "page_number": 118,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "shouls \u2192 should",
+      "contex \u2192 context",
+      "Merged characters: \"85\"",
+      "Unicode corruption/markers detected",
+      "Error rate: 12.7%"
+    ],
+    "footnote_artifacts": [
+      "8[^5]"
+    ]
+  },
+  {
+    "page_number": 120,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "contex \u2192 context",
+      "phiinomen \u2192 ph\u00e4nomen",
+      "Unicode corruption/markers detected",
+      "Error rate: 14.1%"
+    ],
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 121,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "contex \u2192 context",
+      "Merged characters: \"120\"",
+      "Merged characters: \"87\"",
+      "Error rate: 10.5%"
+    ],
+    "footnote_artifacts": [
+      "8[^7]"
+    ]
+  },
+  {
+    "page_number": 122,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": [
+      "contex \u2192 context",
+      "Merged characters: \"121\"",
+      "Merged characters: \"submitted1\"",
+      "Merged characters: \"submission1\"",
+      "Error rate: 3.8%"
+    ],
+    "footnote_artifacts": [
+      "12[^1]",
+      "submitted[^1]",
+      "submission[^1]"
+    ]
+  },
+  {
+    "page_number": 123,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": [
+      "jlo \u2192 no or other",
+      "anafysis \u2192 analysis",
+      "Merged characters: \"122\"",
+      "Error rate: 3.7%"
+    ],
+    "footnote_artifacts": [
+      "12[^2]"
+    ]
+  },
+  {
+    "page_number": 124,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "Merged characters: \"123\"",
+      "Merged characters: \"19\"",
+      "Merged characters: \"111\"",
+      "Error rate: 15.8%"
+    ],
+    "footnote_artifacts": [
+      "12[^3]",
+      "11[^1]"
+    ]
+  },
+  {
+    "page_number": 125,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "Merged characters: \"124\"",
+      "Merged characters: \"91\"",
+      "Merged characters: \"v111\"",
+      "Error rate: 23.5%"
+    ],
+    "footnote_artifacts": [
+      "12[^4]",
+      "9[^1]",
+      "v11[^1]"
+    ]
+  },
+  {
+    "page_number": 126,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "Merged characters: \"25\"",
+      "Merged characters: \"92\"",
+      "Merged characters: \"20\"",
+      "Error rate: 18.2%"
+    ],
+    "footnote_artifacts": [
+      "2[^5]",
+      "9[^2]"
+    ]
+  },
+  {
+    "page_number": 127,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Merged characters: \"126\"",
+      "Merged characters: \"93\"",
+      "Merged characters: \"94\"",
+      "Error rate: 10.7%"
+    ],
+    "footnote_artifacts": [
+      "12[^6]",
+      "9[^3]",
+      "9[^4]"
+    ]
+  },
+  {
+    "page_number": 128,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Merged characters: \"95\"",
+      "Error rate: 14.0%"
+    ],
+    "footnote_artifacts": [
+      "9[^5]"
+    ]
+  },
+  {
+    "page_number": 130,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "Merged characters: \"29\"",
+      "Merged characters: \"97\"",
+      "Error rate: 16.9%"
+    ],
+    "footnote_artifacts": [
+      "2[^9]",
+      "9[^7]"
+    ]
+  },
+  {
+    "page_number": 131,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Merged characters: \"g8\"",
+      "Error rate: 9.8%"
+    ],
+    "footnote_artifacts": [
+      "g[^8]"
+    ]
+  },
+  {
+    "page_number": 132,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Merged characters: \"99\"",
+      "Error rate: 9.9%"
+    ],
+    "footnote_artifacts": [
+      "9[^9]"
+    ]
+  },
+  {
+    "page_number": 133,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": [
+      "merery \u2192 merely",
+      "Merged characters: \"100\"",
+      "Error rate: 2.1%"
+    ],
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 134,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "phiinomen \u2192 ph\u00e4nomen",
+      "Merged characters: \"133\"",
+      "Merged characters: \"14\"",
+      "Merged characters: \"158\"",
+      "Error rate: 7.8%"
+    ],
+    "footnote_artifacts": [
+      "13[^3]",
+      "1[^4]",
+      "12[^2]"
+    ]
+  },
+  {
+    "page_number": 137,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "contex \u2192 context",
+      "Merged characters: \"103\"",
+      "Merged characters: \"remoteness2\"",
+      "Merged characters: \"23\"",
+      "Error rate: 5.1%"
+    ],
+    "footnote_artifacts": [
+      "10[^3]",
+      "remoteness[^2]",
+      "2[^3]"
+    ]
+  },
+  {
+    "page_number": 139,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "contex \u2192 context",
+      "Merged characters: \"23\"",
+      "Merged characters: \"105\"",
+      "Error rate: 8.5%"
+    ],
+    "footnote_artifacts": [
+      "10[^5]"
+    ]
+  },
+  {
+    "page_number": 140,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Merged characters: \"139\"",
+      "Merged characters: \"severing3\"",
+      "Merged characters: \"135\"",
+      "Error rate: 7.6%"
+    ],
+    "footnote_artifacts": [
+      "13[^9]",
+      "severing[^3]",
+      "10[^2]"
+    ]
+  },
+  {
+    "page_number": 142,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Merged characters: \"141\"",
+      "Merged characters: \"us1\"",
+      "Merged characters: \"I07\"",
+      "Error rate: 11.1%"
+    ],
+    "footnote_artifacts": [
+      "14[^1]",
+      "us[^1]",
+      "I0[^7]"
+    ]
+  },
+  {
+    "page_number": 143,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Merged characters: \"108\"",
+      "Error rate: 6.4%"
+    ],
+    "footnote_artifacts": [
+      "10[^8]"
+    ]
+  },
+  {
+    "page_number": 145,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "contex \u2192 context",
+      "Merged characters: \"144\"",
+      "Error rate: 6.0%"
+    ],
+    "footnote_artifacts": [
+      "14[^4]"
+    ]
+  },
+  {
+    "page_number": 146,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "contex \u2192 context",
+      "Merged characters: \"24\"",
+      "Merged characters: \"145\"",
+      "Error rate: 14.4%"
+    ],
+    "footnote_artifacts": [
+      "14[^5]"
+    ]
+  },
+  {
+    "page_number": 147,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Error rate: 7.4%"
+    ],
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 148,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "contex \u2192 context",
+      "Error rate: 7.8%"
+    ],
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 149,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Error rate: 10.4%"
+    ],
+    "footnote_artifacts": []
+  }
+]

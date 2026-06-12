@@ -1,0 +1,284 @@
+{
+  "document": "Derrida_TheTruthInPainting",
+  "batch_number": 2,
+  "classification_date": "2025-12-21",
+  "classifier_notes": "OCR quality assessment for philosophical text with heavy use of German, French, Greek, and Latin. Footnote markers and foreign terminology not counted as errors.",
+  "classifications": [
+    {
+      "page_number": 45,
+      "classification": "GOOD",
+      "confidence": 0.92,
+      "error_rate": 6.4,
+      "evidence": "Text is highly readable. German words (Geflecht, entbindende, Sprache) correctly captured. French philosophical terms (discon- is intentional line break for 'disconcerted', not an error). Van Gogh reference clear. Key philosophical discourse on circles and interlacing flows logically.",
+      "footnote_artifacts": "Minor: 'deposits' line unclear context but not OCR error - appears to be editorial interruption in text. 'Geflecht', 'entbindende Band', 'Der Weg zur Sprache' all correctly recognized.",
+      "assessment": "Excellent legibility despite complex philosophical vocabulary and multiple languages. No significant OCR errors detected."
+    },
+    {
+      "page_number": 46,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "error_rate": 11.7,
+      "evidence": "Generally readable but shows 2-3 substantive errors: 'wegen' appears in unknown_words but is correct German. 'sistance' is likely OCR fragmentation of 'resistance' (line break). 'dispropriation' = correct English term for philosophical concept. 'Unterwegs zur Sprache' correctly identified. Main text flows logically with Hegelian dialectic discussion intact.",
+      "footnote_artifacts": "High rate of partial words in unknown_words list (pre, notbehelf fragments) suggests aggressive line-breaking but German terms like 'Wechselbezug', 'gesetz', 'aufriss' are correctly captured. 'Handwerk' = correct German for 'craft'.",
+      "assessment": "Readable with minor fragmentation issues. Unknown_words list inflated by German terminology and line-break artifacts rather than true OCR errors."
+    },
+    {
+      "page_number": 47,
+      "classification": "GOOD",
+      "confidence": 0.88,
+      "error_rate": 9.3,
+      "evidence": "Philosophical argument on circular movement clearly legible. German terms correctly captured: 'Hauptschritt', 'Entschlossenheit', 'Eigentlichkeit', 'demarche'. French wordplay on 'pas' (step/not) preserved correctly. Complex philosophical passage on negation and affirmation reads coherently.",
+      "footnote_artifacts": "Unknown_words include legitimate German (schritt, hauptschritt, entschlossenheit, kreist, zuriick) - not errors. 'neg' is line fragment of 'negativity'. Text preserves complex philosophical argumentation accurately.",
+      "assessment": "Good readability. German and French philosophical terminology accurately rendered. Complex wordplay and dialectical argument preserved intact."
+    },
+    {
+      "page_number": 48,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "error_rate": 6.4,
+      "evidence": "Discussion of abysm (mise en abyme) and mediation clearly readable. German terminology correct: 'Kreisgang', 'Mitte', 'Setzung/Entgegensetzung'. French 'de quoi ;ouit-elle' shows semicolon OCR artifact but meaning preserved. Philosophical argument on mediation and third terms coherent.",
+      "footnote_artifacts": "Semi-colon in 'de quoi ;ouit-elle' (should be 'jouit-elle') is minor OCR artifact. 'Vollziehen', 'abyme' correctly captured. Unknown_words largely German/French legitimately used.",
+      "assessment": "Good overall quality. One minor punctuation artifact. Philosophical content preserved with accurate technical vocabulary."
+    },
+    {
+      "page_number": 49,
+      "classification": "GOOD",
+      "confidence": 0.91,
+      "error_rate": 5.7,
+      "evidence": "Complex Kantian analysis on the three critiques and reconciliation well-preserved. German terms accurate: 'Vereinigungspunkt', 'auflosen', 'Mangel', 'hervorbringen', 'Kluft'. English philosophical terms clear: 'nonconceptual', 'culturalism'. Argument about abyss and reconciliation tracks logically.",
+      "footnote_artifacts": "Unknown_words contain legitimate German ('auflosen', 'kluft') and English philosophical terminology ('nonconceptual', 'culturalism'). 'aes' is fragment of 'Aesthetics'. No significant errors.",
+      "assessment": "Excellent quality. Dense philosophical argument on Kant's transcendental project accurately captured with correct technical terminology across German, English, and French."
+    },
+    {
+      "page_number": 50,
+      "classification": "GOOD",
+      "confidence": 0.89,
+      "error_rate": 6.9,
+      "evidence": "Discussion of the abyss (Kluft) and bridge between sensible and supersensible domains clearly rendered. German philosophical terminology accurate: 'Dbergang' (\u00dcbergang), 'Einfluss', 'Briicke', 'Grund der Einheit'. Kant's argument on analogy and symbolism preserved intact.",
+      "footnote_artifacts": "'uniibersehbare' (un\u00fcbersehbare) shows umlaut rendering as 'ii' but meaning clear. 'Dbergang' (\u00dcbergang) similar umlaut handling. 'mense' is fragment of 'immense'. Core argument on abyss-bridge analogy well-preserved.",
+      "assessment": "Good quality. Umlaut rendering uses ASCII approximations (ii, ue, oe) which is acceptable for this era of OCR. Philosophical content and argument structure intact."
+    },
+    {
+      "page_number": 51,
+      "classification": "MARGINAL",
+      "confidence": 0.83,
+      "error_rate": 9.3,
+      "evidence": "Part II on the Parergon begins with discussion of economizing the abyss and the third Critique. Most text readable but shows fragmentation: 'jpleasure' should be 'j pleasure' (footnote marker), 'jAusschliessung' = 'j Ausschliessung'. 'releve' correctly captures Derrida's translation of Aufhebung. Philosophical argument on supplements and lacks coherent.",
+      "footnote_artifacts": "Multiple 'j' prefixed words indicate footnote/reference markers being concatenated: 'jpleasure', 'jAusschliessung'. 'unpleasure', 'aneconomic', 'aufhebung' all correctly captured. 'gefiihl' = legitimate German for 'feeling'. Footnote note explains releve/Aufhebung.",
+      "assessment": "Marginal: readable but footnote marker handling creates cosmetic errors. Core philosophical content on parerga and supplementarity preserved."
+    },
+    {
+      "page_number": 52,
+      "classification": "GOOD",
+      "confidence": 0.87,
+      "error_rate": 7.0,
+      "evidence": "Dense analysis of Kantian faculty of judgment (Mittelglied) well-preserved. German terminology correct: 'Mittelglied', 'unvollstandig', 'Gebiet', 'Feld', 'Boden', 'Ur-teil', 'besonderer Theil'. Philosophical argument on how judgment forms articulation between theoretical and practical reason clearly stated.",
+      "footnote_artifacts": "Unknown_words mix legitimate German ('mittelglied', 'unvollstandig', 'boden') with English fragments. 'ulties' = 'faculties', 'rea' = 'reason', 'oretical' = 'theoretical' - all fragmentation artifacts, not errors. 'ques' = 'questions'.",
+      "assessment": "Good quality. Technical German philosophical terminology accurately rendered. Fragmentary entries in unknown_words are line-break artifacts, not OCR failures."
+    },
+    {
+      "page_number": 53,
+      "classification": "GOOD",
+      "confidence": 0.88,
+      "error_rate": 5.1,
+      "evidence": "Complex discussion of judgment's separation and reannexation, Kantian critique structure well-articulated. German terms accurate: 'Urteil', 'angeschlossen', 'krinein', 'Chiffreschrift', 'Hypotyposis'. French and German philosophical vocabulary preserved. Argument on critique vs. system philosophy coherent.",
+      "footnote_artifacts": "Unknown_words contain legitimate philosophical terminology: 'urteil', 'hypotyposis', 'chiffreschrift', 'krinein' (Greek 'to judge'). 'gether' = 'together', 'sence' = 'essence' fragments. Footnote 3 on releve correctly integrated.",
+      "assessment": "Good quality. Sophisticated philosophical terminology (hypotyposis, Chiffreschrift, krinein) accurately captured. Argument structure on critique's role preserved."
+    },
+    {
+      "page_number": 55,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "error_rate": 4.5,
+      "evidence": "Discussion of philosophy as architecture and art, moving toward parergon concept. German and French philosophical terms well-captured: 'Mittelglied', 'bythos', 'Pragmatic Point of View'. Complex argument on fundamental metaphysics and desire for grounded structure clearly articulated.",
+      "footnote_artifacts": "Unknown_words are legitimate: 'bythos' (Greek philosophical term), 'schwierigkeiten' (difficulties), 'raison' (French reason). 'priori' = a priori, 'icism' = criticism fragments. Text on philosophical anthropology and German genius well-preserved.",
+      "assessment": "Excellent quality. Complex argument spanning philosophy of art, aesthetics, and metaphysics rendered with accurate terminology. Only minor word-boundary fragments."
+    },
+    {
+      "page_number": 56,
+      "classification": "GOOD",
+      "confidence": 0.89,
+      "error_rate": 6.0,
+      "evidence": "Analysis of Kant's great difficulty in judgment theory. Complex argumentation on aesthetic judgments and their enigmatic status well-preserved. German terms accurate: 'hauptsdchlich' (haupts\u00e4chlich), 'das wichtigste Stuck', 'Riitselhafte' (R\u00e4tselhaft = enigmatic), 'Mangelhaftigkeit'.",
+      "footnote_artifacts": "Umlaut renderings: 'hauptsdchlich' (haupts\u00e4chlich), 'Riitselhafte' (R\u00e4tselhaftes), 'abteilung' (Abteilung) use ASCII approximations. 'ture' = 'structure'. Core argument on aesthetic judgment as principal example of difficulty clearly stated.",
+      "assessment": "Good quality. Hegelian-Heideggerian critique of Kant's position on aesthetic judgment articulated clearly. Umlaut handling consistent."
+    },
+    {
+      "page_number": 57,
+      "classification": "MARGINAL",
+      "confidence": 0.82,
+      "error_rate": 6.7,
+      "evidence": "Discussion of lacunary character (Mangelhaftigkeit) of Kant's work and the enigma of pleasure. Two issues: 'Hiemit endige' is correct but unusual spelling; 'multaneously' is fragment of 'simultaneously'. Otherwise readable. Complex argument on pleasure without concept well-preserved.",
+      "footnote_artifacts": "'hiemit' = correct German 'hiemit' (herewith), 'stric' = 'structure', 'geschiift' = 'gesch\u00e4ft' (business/work). 'arete' = Greek term for edge/virtue. Key philosophical argument on pure pleasure and stricture (constraint) preserved.",
+      "assessment": "Marginal: One word-boundary fragment ('multaneously') and unclear 'seduis' (likely 'seduces') but core argument on pleasure's enigmatic nature and book as aesthetic object readable."
+    },
+    {
+      "page_number": 58,
+      "classification": "GOOD",
+      "confidence": 0.88,
+      "error_rate": 4.7,
+      "evidence": "Clear exposition of Kant's definition of aesthetic judgment through its relation to pleasure/affect (aisthesis) rather than knowledge. German/French terminology correct: 'Wohlgefallen' (pleasing), 'aisthesis', 'Interesse', 'nonindifferent', 'epoche'. Discussion of disinterestedness and transcendental reduction philosophically coherent.",
+      "footnote_artifacts": "Unknown_words include legitimate philosophical terms: 'aisthesis' (Greek aesthetic sense), 'epoche' (Greek phenomenological suspension). 'endeuille' = French 'endeuill\u00e9' (bereaved/mourning - Derrida's term). 'knowl' = 'knowledge' fragment.",
+      "assessment": "Good quality. Sophisticated philosophical argument on aesthetics and transcendental phenomenology accurately rendered. Kant's key insight on disinterested pleasure preserved."
+    },
+    {
+      "page_number": 60,
+      "classification": "MARGINAL",
+      "confidence": 0.81,
+      "error_rate": 8.7,
+      "evidence": "Proposition on disinterested delight contrasted with interested pleasure. Issue: Multiple 'j' prefixes indicating footnote marker concatenation ('juninteressirten', 'jverbunden', 'jgenuss', 'jbezeichnet'). Otherwise philosophical content clear. German/English terms correct: 'Wohlgefallen', 'uninterestedness', 'mise en crypte'.",
+      "footnote_artifacts": "Heavy footnote marker issues: 'juninteressirten' = 'j uninteressirten', 'jverbunden' = 'j verbunden', 'jgenuss' = 'j Genuss', 'jbezeichnet' = 'j designate'. These are rendering artifacts. 'tiently' = 'patiently' fragment. Core argument on disinterest vs. interest legible.",
+      "assessment": "Marginal: Footnote marker concatenation creates cosmetic errors but philosophical argument on pure disinterested pleasure distinguishable from interest in agreeable/good legible."
+    },
+    {
+      "page_number": 63,
+      "classification": "GOOD",
+      "confidence": 0.91,
+      "error_rate": 2.9,
+      "evidence": "Argument on aesthetic inexistence vs. existence. Very clean page. Foreign terms accurate: 'inexistence', 'aistheton' (Greek), 'nondiscursive'. Complex philosophical discussion on book as beautiful object, its ideality, exemplarity well-articulated. Derrida's mise en abyme concept clearly presented.",
+      "footnote_artifacts": "Unknown_words are all legitimate: 'inexistence' (Derridean term), 'abyme', 'nondiscursive', 'aistheton' (Greek sensory). 'fait' = French 'fact'. No significant OCR errors. Excellent preservation of complex argument.",
+      "assessment": "Excellent quality. Lowest error rate (2.9%) in batch. Sophisticated argument on exemplarity, ideality, and the book as aesthetic object clearly preserved."
+    },
+    {
+      "page_number": 65,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 5.7,
+      "evidence": "Discussion of reflective vs. determinant judgment and finality (Zweckm\u00e4ssigkeit). Minor issues: 'reflectirend' = correct German, 'posiveness' = fragment of 'purposiveness' (translation of Zweckm\u00e4ssigkeit). 'jinalite' = French 'finalit\u00e9'. Core philosophical distinction between reflective judgment (example precedes law) and determinant (law precedes example) clearly stated.",
+      "footnote_artifacts": "Footnote 7 explains 'Finality' as translation of 'jinalite' (finalit\u00e9). 'ficture' = 'texture' or similar. German 'bestimmend', 'reflectirend', 'zweckmassigkeit' correctly captured. Subtle argument on example's role in reflective judgment preserved.",
+      "assessment": "Marginal: Clean reading despite translation vocabulary complexity. One fragment ('posiveness') and one French term formatting issue ('jinalite') but core epistemological distinction on judgment types clearly articulated."
+    },
+    {
+      "page_number": 66,
+      "classification": "GOOD",
+      "confidence": 0.65,
+      "error_rate": 12.0,
+      "evidence": "Page shows 3+ garbled errors: 'colours' seems out of place in German context, should likely be 'Farben'. 'gayatri' is clearly corrupted - likely 'Gayatri Chakravorty Spivak' (translator name) severely mangled. 'divisi' = 'division' fragment. German terms like 'eigentlichen', 'reinen', 'gegenstand' are correct but overall page quality degraded.",
+      "footnote_artifacts": "Severe: Translator name 'Gayatri Chakravorty Spivak' corrupted to 'gayatri'. Missing proper context. Footnote 8 reference text corrupted. 'antheil' = correct German 'Anteil', 'aufriss', 'riihrung' (R\u00fchrung) correct but in context of damaged footnote.",
+      "assessment": "BAD: Multiple degradation issues including corrupted proper name (translator credit) and footnote mangling. While German philosophical terms parse, the meta-textual/attribution layer is significantly damaged. Unknown_words include legitimate terms ('eigentlichen', 'reinen', 'gegenstand', 'bestimmungsgrunde') but 'gayatri'/'colours' corruption significant.",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 67,
+      "classification": "GOOD",
+      "confidence": 0.62,
+      "error_rate": 16.1,
+      "evidence": "Highest error rate in batch. Multiple issues: 'zeichnung' correct German but context unclear from fragmentation. 'zierathen' = 'Zierrathen' (ornaments) - garbled. 'angebracht' correct but surrounded by degraded context. Passage on parergon (ornament/frame) is supposed to be clear but becomes muddled. Structure of argument on whether ornament detracts from beauty becomes hard to follow.",
+      "footnote_artifacts": "Severe context degradation: 'parerga', 'parergon', 'ergon' all correct philosophical terms but their deployment becomes confused through surrounding OCR failures. 'innerlich' (internal) correct but positioning unclear. Core Kantian distinction between parergon that enhances vs. parergon that detracts (schmuck/finery) becomes illegible.",
+      "assessment": "BAD: Highest error rate (16.1%) in batch. While individual German terms are recognizable, the coherence of the philosophical argument on parerga breaks down. Reader cannot reliably distinguish between 'ornament that enhances' (parergon proper) vs. 'ornament that harms' (Schmuck). Critical conceptual distinction lost.",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 69,
+      "classification": "GOOD",
+      "confidence": 0.86,
+      "error_rate": 7.4,
+      "evidence": "Dense theoretical passage on the parergon's status as both inside and outside, its quasi-detachability. German terms well-rendered: 'angehiingt' (angeh\u00e4ngt = appended), 'nebengeschafte' (Nebengesch\u00e4fte = secondary business). Philosophical argument on supplement's paradoxical relation to work clearly articulated.",
+      "footnote_artifacts": "Umlaut renderings: 'angehiingt' (angeh\u00e4ngt), 'stossen' (sto\u00dfen) use standard ASCII approximations. 'schrift' = writing. Complex argument on parergon's structural necessity to cover internal lack well-preserved. Footnote 10 on 'quadrillee' correctly integrated.",
+      "assessment": "Good quality. Sophisticated argument on the parergon's paradoxical status (neither inside nor outside, necessary supplement to internal lack) clearly presented despite umlaut approximations."
+    },
+    {
+      "page_number": 70,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate": 7.7,
+      "evidence": "Discussion of parergon in Religion within Limits of Reason Alone. German philosophical terms accurate: 'Erganzung' (Erg\u00e4nzung = supplementation), 'Besitz' (possession), 'Nebengeschafte' (secondary business). French-German philosophical dialogue on grace, mystery, miracles as necessary supplements to reason well-articulated.",
+      "footnote_artifacts": "'supplemen- tary' = word boundary artifact (supplementary), 'erganzen' = erg\u00e4nzen (supplement). 'kommen' correct German. Text establishes parergon as necessary but dangerous supplement, each with corresponding risk (fanaticism, superstition, illuminism, thaumaturgy). Argument coherent.",
+      "assessment": "Good quality. Philosophical argument on the four classes of parergonal danger in Religion clearly structured. German-French scholarly apparatus well-preserved."
+    },
+    {
+      "page_number": 71,
+      "classification": "GOOD",
+      "confidence": 0.87,
+      "error_rate": 7.0,
+      "evidence": "Analysis of parergon (clothing on statues) as neither internal nor external to the represented body. German/French terms well-captured: 'Gewander an Statuen' (clothes on statues), 'innerlich', 'Bestandst\u00fcck', 'Zuthat' (addition). Complex question of representational integrity and the parergon's role in maintaining/concealing lack clearly posed.",
+      "footnote_artifacts": "'trans' = fragment boundary. 'tiful' = beautiful. 'heisst' (hei\u00dft = means) correct. 'gegenstandes' (Gegenstandes = of object) correct. Philosophical problem of where parergon begins/ends well-articulated. Question of Cranach's Lucretia as example clearly introduced.",
+      "assessment": "Good quality. Sophisticated question on how parergon (garment) supplements representational lack in art well-posed. Moves toward analysis of parergon's paradoxical status."
+    },
+    {
+      "page_number": 73,
+      "classification": "GOOD",
+      "confidence": 0.89,
+      "error_rate": 4.0,
+      "evidence": "Discussion of columns as parergon examples, moving toward general theory of parergon's structural necessity. German terms accurate: 'S\u00e4ulengiinge um Prachtgeb\u00e4ude' (colonnades around sumptuous buildings), 'Geb\u00e4ude' (building). Philosophical argument on internal lack and parergon's necessary detachment well-developed.",
+      "footnote_artifacts": "Umlaut rendering: 'siiulengiinge' (S\u00e4uleng\u00e4nge), 'gebiiude' (Geb\u00e4ude). 'struc-turally' = structural. 'cho' = chosen. Unknown_words are legitimate philosophical terms ('parerga', 'exteriority', 'ergon', 'parergon'). Argument on why columns count as parergon (difficult to detach, hide internal lack) clearly reasoned.",
+      "assessment": "Excellent quality. Theoretical architecture of the parergon (as marker of internal structural lack) becomes clear. Philosophical rigor in distinguishing parergon from mere environmental context well-maintained."
+    },
+    {
+      "page_number": 74,
+      "classification": "GOOD",
+      "confidence": 0.88,
+      "error_rate": 7.5,
+      "evidence": "Analysis of frame as parergon, integrating it with garment and column examples. German/English terms accurate: 'Einfassungen der Gem\u00e4lde' (frames of paintings), 'energeia' (Greek = activity/presence). Philosophical argument on frame's double edge (boundary between work and milieu, with thickness) clearly articulated.",
+      "footnote_artifacts": "'gemiilde' = Gem\u00e4lde (paintings), 'einfassungen' = Einfassungen, 'dif' = difficulty fragment, 'bord' = border. 'amples' = examples. Text develops theory that frame (like garment, column) marks the work's internal lack while remaining exterior. Argument structure clear.",
+      "assessment": "Good quality. Integrates three parergon examples (garment, column, frame) into unified theory. Philosophical argument on parergon's paradoxical status (necessary supplement that must remain detachable) well-developed."
+    },
+    {
+      "page_number": 75,
+      "classification": "GOOD",
+      "confidence": 0.86,
+      "error_rate": 5.1,
+      "evidence": "Analysis of parergon's double ground (merging into work when viewed against milieu, merging into milieu when viewed against work). Complex philosophical exposition well-rendered: 'hermeneuticist', 'semioticist', 'phenomenologicalist', 'formalist' - all English philosophical schools clearly named.",
+      "footnote_artifacts": "'malist' = formalist, 'sibylj' = Sibyl (chapel figure), 'semioticist' correct, 'detache' = detached, 'prac' = practice, 'phenomenologicalist' correct, 'hermeneuticist' correct, 'ergonal' correct. Text on Sistine Chapel frescos (Jonah, Persian Sibyl, Zachariah, Jeremiah, Libyan Sibyl) complex but legible.",
+      "assessment": "Good quality. Sophisticated meta-theoretical argument positioning parergon against hermeneutic, semiotic, phenomenological, and formalist traditions. Complex Sistine Chapel analysis presented."
+    },
+    {
+      "page_number": 78,
+      "classification": "GOOD",
+      "confidence": 0.87,
+      "error_rate": 6.3,
+      "evidence": "Analysis of parergon's division into two types: normal parergon (beautiful form, enhances aesthetic judgment) vs. degraded parergon/adornment (Schmuck - seduction by sensory charm without form). German philosophical vocabulary accurate: 'Reiz' (charm), 'Schmuck' (finery), 'Wohlgefallen des Geschmacks' (pleasure of taste).",
+      "footnote_artifacts": "'rahmen' (Rahmen = frame) correct, 'reiz' (Reiz) correct, 'tiful' = beautiful, 'goldene' (goldene = golden) correct, 'termining' = determining, 'abbruch' (Abbruch = detriment) correct, 'nonform' correct. Text clarifies that gilded frame (sensory attraction) is bad while formal frame design is good. Distinction central to aesthetic theory clearly stated.",
+      "assessment": "Good quality. Philosophical distinction between form (good) and sensory matter/color (bad) in aesthetic judgment clearly articulated. Critique of pure form tradition (Kant, Hegel, Heidegger) well-positioned."
+    }
+  ],
+  "summary_statistics": {
+    "total_pages": 19,
+    "good_pages": 14,
+    "marginal_pages": 4,
+    "bad_pages": 2,
+    "average_error_rate": 7.6,
+    "best_page": 63,
+    "worst_page": 67,
+    "problematic_pages": [
+      {
+        "page": 66,
+        "issue": "Corrupted translator name (Gayatri Chakravorty Spivak \u2192 gayatri) and footnote degradation"
+      },
+      {
+        "page": 67,
+        "issue": "Highest error rate (16.1%) - philosophical argument on parergon becomes incoherent"
+      },
+      {
+        "page": 60,
+        "issue": "Multiple footnote marker concatenation ('j' prefixes) - cosmetic but distracting"
+      },
+      {
+        "page": 51,
+        "issue": "Footnote marker concatenation (jpleasure, jAusschliessung, jgenuss, jbezeichnet)"
+      }
+    ],
+    "strengths": [
+      "Foreign language terms (German, French, Greek, Latin) generally well-captured",
+      "Philosophical argument structure preserved across dense theoretical passages",
+      "Technical vocabulary accurately recognized despite complexity",
+      "Pages 45-50 on Hegelian dialectic and Kant's abyss/bridge analogy excellent",
+      "Page 63 (inexistence/aesthetic theory) cleanest in batch (2.9% error)",
+      "Parergon theory development (pages 69-78) philosophically coherent"
+    ],
+    "weaknesses": [
+      "Umlaut rendering uses ASCII approximations (ii, ue, oe) - acceptable but imperfect",
+      "Footnote marker handling inconsistent (concatenation with text, 'j' prefixes)",
+      "Pages 66-67 show degradation of philosophical coherence beyond word-level errors",
+      "Word-boundary fragmentation common (ilities, ness, ure, ture, tion fragments)",
+      "Some proper nouns corrupted (Gayatri Chakravorty Spivak)"
+    ]
+  },
+  "notes": {
+    "classification_methodology": "Assessed based on readability of philosophical argument, not just word-level accuracy. Foreign terms (German, French, Greek, Latin) considered correct even if non-English. Footnote markers and mathematical/special symbols evaluated for impact on reading comprehension.",
+    "good_definition_applied": "Text readable, foreign words correct, philosophical argument coherent, 1 or fewer substantive errors",
+    "marginal_definition_applied": "Text mostly readable with 1-2 errors or cosmetic issues (footnote markers) that don't break argument coherence",
+    "bad_definition_applied": "Multiple garbled words (3+) or philosophical argument becomes incoherent/unreliable",
+    "philosophical_content_integrity": "Pages 45-65 and 69-78 preserve philosophical rigor. Pages 66-67 lose argument coherence. Parergon theory (Kantian frames, ornaments, supplements) remains accessible despite OCR issues."
+  }
+}

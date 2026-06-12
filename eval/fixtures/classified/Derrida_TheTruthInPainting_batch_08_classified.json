@@ -1,0 +1,177 @@
+[
+  {
+    "page_number": 316,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Text mostly readable with proper discourse on shoes and Kantian aesthetics. Contains word fragments: 'uct' (product), 'mainder' (remainder). Foreign terms (ergon, parergon, auf, bloss, Dienlichkeit, hors-d'oeuvre) are correct and not errors.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 317,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Clear, readable text discussing Heidegger's interpretation. Minor artifact 'degger' is part of Heidegger name handling. German term 'desoeuvrementj' appears to have spurious 'j' but context is clear. Overall high quality OCR.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 318,
+    "classification": "MARGINAL",
+    "confidence": 0.88,
+    "evidence": "Readable discussion of painting and frame theory. Clear errors: 'nake' (should be naked), 'pierc' (piercing). Foreign terms pointure, chaussee correctly captured. Footnote marker '1nake' is expected.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 319,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "Generally readable text with discussion of peasant shoes and Schapiro's objection. Error: 'biiuerin' (should be Bäuerin, German peasant woman). French terms (inconnu, Balzac) correct. German phrases properly captured.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 321,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Well-preserved multilingual text with German and French passages. No clear OCR errors. Terms like 'Bauernschuhe' (peasant shoes), 'dinghafte' (thingness), correctly captured. Discussion is coherent and readable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 323,
+    "classification": "MARGINAL",
+    "confidence": 0.84,
+    "evidence": "Text discusses monoreferentialism and painting analysis. Several word fragments visible: 'ential' (referential), 'Veranschaulichung' partially preserved. German philosophical terms present. Readable with effort, ~3-4 minor errors across discussion.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 326,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "Text readable with philosophical discussion. Clear errors: 'ondary' (secondary), 'imi' fragments, 'pompes' seems out of context but appears intentional in original (slang for shoes). Overall structure preserved.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 328,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "High-quality OCR with clear, readable philosophical text. Technical terms preserved: 'detachables', 'citationality', 'usure' (wear/usury - French pun). Discussion of Magritte's 'Le Modèle rouge' is coherent and well-captured.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 329,
+    "classification": "BAD",
+    "confidence": 0.72,
+    "evidence": "Multiple significant OCR errors impair readability: 'vne' (one), 'jjty' (garbled), 'lnassive' (massive), 'deternlinable' (determinable). These are character-level errors, not foreign language or footnote markers. Text becomes difficult to parse without context.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 330,
+    "classification": "BAD",
+    "confidence": 0.70,
+    "evidence": "Significant OCR degradation: 'oiw' (corrupted Greek homoiosis), 'ible' fragments, 'sentative' (representative), 'repre' incomplete, 'mea' context unclear. Page appears to have OCR confidence issues. Multiple character substitutions and omissions.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 334,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Well-preserved philosophical text with clear discourse on shoes, propriety and belonging. Minor artifact 'identifi' but context fully recoverable. German words (dunkeln, Offnung, ausgetretenen) correctly preserved. Quotations intact.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 335,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Readable discussion of Schapiro's argument and framing debate. Minor artifact 'eilde' (Eilde/image) but recoverable from context. French term 'portees' (implications) correct. Overall high-quality capture of complex philosophical argument.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 337,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Clear philosophical text with proper handling of German terms: 'erkliirung' (explanation with umlaut), 'Gemiilde' (painting), 'Schuhzeuges' (shoe-product), 'brachten' (brought). Quotations and translations properly rendered.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 338,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Text readable with some OCR artifacts. German compound 'geziige' appears intentionally (traits/features). Footnote reference to lacet expected. Minor issues in technical terminology but overall discourse recoverable.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 339,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Readable philosophical discussion with clear argumentation. Minor fragment 'erration' recoverable from context. French terms 'peasanthood', philosophical vocabulary well-preserved. Argument structure intact and followable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 340,
+    "classification": "MARGINAL",
+    "confidence": 0.83,
+    "evidence": "Text readable but contains 2 clear errors: 'neyed' (honeyed), 'expli' (explications). Discussion of close reading and textual interpretation is coherent. French phrases present. Overall manageable despite errors.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 342,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "Mostly readable text with clear philosophical argument about uselessness and pictorial reference. Error: 'sehenn' (double-n, should be sehen). German terms like 'Aber', 'wir', 'schon' correctly preserved. Winding road metaphor intact.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 343,
+    "classification": "MARGINAL",
+    "confidence": 0.80,
+    "evidence": "Despite high reported error rate (11.8%), page remains largely readable due to multilingual content. Errors: 'schap' (Schapiro), 'eidung' (Kleidung-clothing). French 'paysans', German botanical terms present. Readable with knowledge of context.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 344,
+    "classification": "GOOD",
+    "confidence": 0.95,
+    "evidence": "Short caption page with minimal text: image titles for Van Gogh still life paintings. Only word present is 'etc' as abbreviation, which is correct. Perfect OCR for the limited content.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 350,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Readable discussion of painting and interpretation. German and French properly mixed: 'seinem' (his), 'Fussbekleidung' (foot clothing), 'entrouvert' (half-open). Multilingual handling is good. Quotations intact.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 356,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Clear philosophical text with complex discussion of marking and reattachment. French term 'abyme' (abyss) correct. German 'gibt' (gives) preserved. Overall readable with sophisticated argument structure intact.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 357,
+    "classification": "MARGINAL",
+    "confidence": 0.84,
+    "evidence": "Readable text with one clear error: 'itjt' character noise. French terms preserved: 'souliers' (shoes), 'parergon', 'stricturation'. Philosophical discourse on frame and shoes is coherent and mostly well-captured.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 359,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "Excellent OCR quality with sophisticated philosophical text on detachment and reattachment. Artifact 'iiread' is expected footnote marker (double 'i'). Terms like 'fetishization', 'interlacing' properly captured. High readability.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 362,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Clear discussion of painting requirement and Schapiro's views. French 'pensee' (thought) correct. German 'Verlasslichkeit' (reliability) well-preserved. Discourse on stepping back and shoes is coherent and readable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 363,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Well-preserved multilingual text with Latin 'fidem' and French 'revient' correctly captured. Discussion of fidelity and reliability is clear. References to Panofsky and Exodus properly handled. Philosophical argument intact.",
+    "footnote_artifacts": false
+  }
+]

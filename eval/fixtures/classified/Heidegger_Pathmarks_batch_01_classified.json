@@ -1,0 +1,222 @@
+[
+  {
+    "page_number": 2,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Text is highly readable with proper formatting and accurate rendering of key terms: 'Heidegger', 'Wegmarken', 'phenomenology', 'Weltanschauung'. Minor hyphenation artifacts ('estab-' split across lines) are standard typography, not OCR errors.",
+    "footnote_artifacts": [
+      "ofheidegger - 'of Heidegger' (word merge, acceptable)"
+    ]
+  },
+  {
+    "page_number": 5,
+    "classification": "BAD",
+    "confidence": 0.88,
+    "evidence": "Multiple severe OCR degradation: 'Wrgrt\u0452rkm' should be 'Wegmarken', 'Trumpington' correctly rendered but surrounded by severe corruption. 'Pres' instead of 'Press', 'Univtnity' instead of 'University', 'Dt' instead of 'De', 'ezception' instead of 'exception'. Character substitution is pervasive (0 for 'o', \u0452 corruption).",
+    "footnote_artifacts": [
+      "zoth - '20th' (numeric OCR failure)",
+      "ww.cup - truncation of 'http://www.cup' (acceptable formatting)"
+    ]
+  },
+  {
+    "page_number": 11,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Mostly readable with systematic errors that don't prevent understanding: 'dasSeieruk' should be 'dasSeines' (single character errors), 'vhat' should be 'what' (common OCR 'v'/'w' confusion). 'Psycholop;y' for 'Psychology' (semicolon/comma confusion). Core semantic meaning is recoverable.",
+    "footnote_artifacts": [
+      "dasseieruk - 'das Sein' (word merge with character substitution)"
+    ]
+  },
+  {
+    "page_number": 12,
+    "classification": "BAD",
+    "confidence": 0.90,
+    "evidence": "Author and institutional affiliation severely corrupted: 'WiJJiam McNtiJJ' should be 'William McNeill', 'DtPau/' should be 'DePaul', 'Univtnity' should be 'University'. These are critical metadata fields that are unrecoverable without domain knowledge. Multiple character substitutions and missing letters.",
+    "footnote_artifacts": [
+      "mcntijj - corrupted from 'McNeill' (proper name corruption)"
+    ]
+  },
+  {
+    "page_number": 18,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "Philosophical text rendered clearly with proper complex terminology: 'phenomenological', 'epistemological', 'Jaspers', 'Worldviews'. Footnote marker artifacts present but expected. Minor OCR issues ('appmpriated' for 'appropriated', 'rmrselves' for 'ourselves') do not impact comprehension.",
+    "footnote_artifacts": [
+      "appmpriated - should be 'appropriated' (double 'm' error)",
+      "rmrselves - should be 'ourselves' (substitution error with footnote marker)"
+    ]
+  },
+  {
+    "page_number": 19,
+    "classification": "GOOD",
+    "confidence": 0.94,
+    "evidence": "Sophisticated philosophical discourse clearly captured: 'phenomenological', 'primordiality', 'factical', 'presuppositions', 'syncretism' all correctly rendered. Complex German and philosophical terms intact. Minor hyphenation artifacts ('sophical' split across 'philo-' lines) are typographic, not OCR errors.",
+    "footnote_artifacts": [
+      "sophical - 'philosophical' split across line break (acceptable)",
+      "sential - 'essential' split across line (acceptable)"
+    ]
+  },
+  {
+    "page_number": 22,
+    "classification": "MARGINAL",
+    "confidence": 0.84,
+    "evidence": "Core text is readable but contains localized corruption: 'PSYCHOI.OGY' has errant period, 'contradirted' should be 'contradicted', 'asped' should be 'aspect', 'periority' should be 'superiority'. These errors affect comprehension but the overall argument remains recoverable with context.",
+    "footnote_artifacts": [
+      "psychoi.ogy - corruption of 'psychology' with period",
+      "contradirted - 'contradicted' (letter transposition or substitution)"
+    ]
+  },
+  {
+    "page_number": 24,
+    "classification": "EXCELLENT",
+    "confidence": 0.97,
+    "evidence": "Exceptional quality transcription with near-perfect accuracy. Complex German philosophical terminology perfectly preserved: 'Existenz', 'Dasein', formal indication concepts. Only 0.6% error rate. Minimal artifacts.",
+    "footnote_artifacts": [
+      "mal - likely footnote marker with 'formal'"
+    ]
+  },
+  {
+    "page_number": 28,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "Readable but contains multiple character-level errors affecting specific terms: 'shoncoming' should be 'shortcoming', 'festation' for 'manifestation', word breaks create fragmented terms ('prin-', 'interpreta-', 'lems', 'prob', 'phe'). Systematic errors suggest scanning or binarization issues but meaning is still recoverable.",
+    "footnote_artifacts": [
+      "shoncoming - 'shortcoming' (letter substitution)"
+    ]
+  },
+  {
+    "page_number": 34,
+    "classification": "MARGINAL",
+    "confidence": 0.83,
+    "evidence": "Generally readable philosophical text with scatter of errors: 'prestruction' should be 'prestructure' (word corruption), 'theoreticm' for 'theoretical', 'vhich' for 'which' (v/w confusion), 'manded' for 'demanded'. These errors are systematic but don't prevent semantic recovery with context.",
+    "footnote_artifacts": [
+      "theoreticm - 'theoretical' with character substitution"
+    ]
+  },
+  {
+    "page_number": 36,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Sophisticated philosophical text properly rendered: 'deformalized', 'antinomies', 'pregiven', 'phenomenological' all correct. Minor errors ('psychowgy' for 'psychology', 'obser-' fragmented) don't significantly impact readability of dense argumentation.",
+    "footnote_artifacts": [
+      "psychowgy - 'psychology' (character substitution)"
+    ]
+  },
+  {
+    "page_number": 38,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Philosophical discourse clearly transcribed with proper philosophical terminology: 'antinomies', 'epistemological', 'phenomenological', 'Kierkegaard'. Minor errors ('facti' fragment, 'undiscussed' correctly rendered despite seeming like error). Overall semantic integrity maintained.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 40,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "Text is comprehensible but exhibits character-level corruption: 'perristence' should be 'persistence', 'archontic' instead of 'archetypal' or similar, 'maner' for 'manner', 'vhat' for 'what'. Word fragmentation creates reading friction but argument structure is preserved.",
+    "footnote_artifacts": [
+      "perristence - 'persistence' (double 'r' error)"
+    ]
+  },
+  {
+    "page_number": 41,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "Substantial philosophical content readable despite systematic errors: 'tmd' (likely 'and'), 'enaconent' consistently appears (should be 'enactment'), 'cepts' for 'concepts'. German terms correctly preserved: 'Seinsinn', 'Dasein'. Consistent substitution errors but recoverable meaning.",
+    "footnote_artifacts": [
+      "enaconent - corrupted from 'enactment' (appears multiple times - systematic OCR error)"
+    ]
+  },
+  {
+    "page_number": 43,
+    "classification": "MARGINAL",
+    "confidence": 0.83,
+    "evidence": "Philosophical text readable with localized degradation: 'enaconent' is systematic corruption (should be 'enactment'), 'xious' for 'anxious', 'anx' fragments. Complex historical and phenomenological discussion recoverable despite these errors. German precision terms intact.",
+    "footnote_artifacts": [
+      "enaconent - 'enactment' (repeated systematic corruption)",
+      "xious - 'anxious' with missing 'an'"
+    ]
+  },
+  {
+    "page_number": 44,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "Dense philosophical text with character-level errors scattered throughout: 'psychoujgy' should be 'psychology', 'dvif' apparent corruption, 'objec-' and 'tion' fragmented. Central argumentative concepts like 'factical', 'historical' are correct. Errors are irritating but don't block understanding.",
+    "footnote_artifacts": [
+      "psychoujgy - 'psychology' (character corruption)"
+    ]
+  },
+  {
+    "page_number": 45,
+    "classification": "MARGINAL",
+    "confidence": 0.80,
+    "evidence": "Readable philosophical content with systematic fragmentation: word breaks create incomplete terms ('periences', 'ical', 'tion', 'philosoph', 'direc'). Core arguments recoverable. German philosophical terminology preserved ('Dasein', 'factical'). Errors are primarily word-boundary issues.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 47,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Philosophical discourse properly transcribed with correct key terms: 'phenomenology', 'preconception', 'Dasein', 'existence'. Minor reading artifacts ('obseroe' should be 'observe', 'vhat' for 'what'). Overall text quality high for complex philosophical material.",
+    "footnote_artifacts": [
+      "obseroe - 'observe' (character substitution)"
+    ]
+  },
+  {
+    "page_number": 51,
+    "classification": "EXCELLENT",
+    "confidence": 0.96,
+    "evidence": "Outstanding OCR quality with only 1.7% error rate. Complex philosophical and methodological discussions rendered accurately: 'phenomenological', 'Kierkegaard', 'philosophical rigor' all correct. Minimal artifacts. Professional philosophical journal quality.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 53,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Philosophical content clearly captured with technical terminology intact: 'constructive', 'understanding', 'psychology'. Minor artifacts don't impede reading. Some fragmentation expected with line breaks ('ema-', 'derstanding'). Error rate of 3.3% is acceptable.",
+    "footnote_artifacts": [
+      "constnjctive - 'constructive' (character substitution)"
+    ]
+  },
+  {
+    "page_number": 54,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Mostly readable with correct author/publication names and theological terminology: 'Phenomenology and Theology', 'Marburg', 'Nietzsche', 'Holderlin' rendered correctly. Some minor corruption ('acteristic' for 'characteristic', 'ibingen' for 'Tübingen') doesn't prevent understanding.",
+    "footnote_artifacts": [
+      "aprii - '9-11' (numeric rendering issue)"
+    ]
+  },
+  {
+    "page_number": 57,
+    "classification": "MARGINAL",
+    "confidence": 0.83,
+    "evidence": "Theological/philosophical text readable with character-level errors: 'concepruality' should be 'conceptuality', 'cenain' for 'certain', 'illwninated' for 'illuminated', 'nwnber' for 'number'. Errors are consistent pattern (likely font/threshold issue) but don't prevent semantic recovery.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 59,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "Philosophical/theological text readable despite scattered errors: 'th1' should be 'through', 'pan-take' proper hyphenation preserved, 'pan-taking' correct. Missing characters and fragments ('tical' for 'factical', 'pati' for 'path') create friction but argument structure clear.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 60,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "Theological discourse readable but with systematic corruption: 'PIIE:-.IOMENOLOGY' severely corrupted for 'PHENOMENOLOGY', 'belin!illg' for 'being', 'UIIderstanding' for 'understanding', 'Cnuified' for 'Crucified'. These are heading/key term corruptions that affect navigation but body text more readable.",
+    "footnote_artifacts": [
+      "belin!illg-UIIderstanding - 'being-understanding' (severe character corruption in key term)"
+    ]
+  },
+  {
+    "page_number": 63,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Theological/philosophical discourse well-rendered with correct technical terminology: 'systematic', 'practical', 'homiletical', 'exegesis', 'Dasein'. Minor errors ('systmlltic' for 'systematic', 'phimsophical' for 'philosophical', 'olo' fragment) don't substantially impede reading.",
+    "footnote_artifacts": [
+      "systmlltic - 'systematic' (character substitution)"
+    ]
+  }
+]

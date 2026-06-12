@@ -1,0 +1,190 @@
+{
+  "document": "Heidegger_Pathmarks",
+  "batch_number": 8,
+  "total_batches": 9,
+  "classifications": [
+    {
+      "page_number": 312,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "evidence": "Multiple OCR errors impacting readability: 'conswnmation' (consummation), 'Wor\u0126er' (Worker with corrupted character). Error rate 4.2% is moderate. Text meaning remains recoverable despite errors. Footnote markers (e.g., '[12 1)') properly detected.",
+      "footnote_artifacts": "present - '[12 1)' shows corrupted footnote number"
+    },
+    {
+      "page_number": 314,
+      "classification": "MARGINAL",
+      "confidence": 0.7,
+      "evidence": "Multiple errors: 'mbiectum' (subiectum), 'Gertalt' appears multiple times as corrupted 'Gestalt', 'theaetetu' (Theaetetus), 'vhat' (what). Error rate 5.6% is higher but semantic content remains recoverable. Foreign terms and German philosophy terminology largely preserved.",
+      "footnote_artifacts": "present - '[224)' and '[258)' footnote markers detected"
+    },
+    {
+      "page_number": 315,
+      "classification": "MARGINAL",
+      "confidence": 0.72,
+      "evidence": "Multiple errors impacting clarity: 'hwnan' (human), 'subiet' (subject), 'vhy' (why), 'planation' (explanation). Error rate 3.6% is moderate. Philosophical content largely intact but contains enough errors to reduce confidence. German terms preserved correctly (Wesen, Dasein).",
+      "footnote_artifacts": "present - '[225)' footnote marker detected"
+    },
+    {
+      "page_number": 324,
+      "classification": "MARGINAL",
+      "confidence": 0.73,
+      "evidence": "Multiple OCR errors: 'panicularly' (particularly), 'tablished' (established), 'e\u0963tablished' (established with corrupted character), 'i.n_dependently' (independently). Error rate 2.4% is relatively low but specific errors reduce text quality. Key terms like 'presencing' and 'nihilism' preserved correctly.",
+      "footnote_artifacts": "present - '[237)' and '[238)' footnote markers detected"
+    },
+    {
+      "page_number": 326,
+      "classification": "MARGINAL",
+      "confidence": 0.74,
+      "evidence": "Multiple errors: 'Gedichtnis' with Unicode corruption, 'dcscri' (described), 'tktg' (garbled), 'Vortriige' with special character issues, 'lineam' (transliterated Latin). Error rate 3.3% is moderate. Major philosophical argument preserved but several technical terms corrupted.",
+      "footnote_artifacts": "present - '[240)' footnote marker detected with Unicode character issues (¶)"
+    },
+    {
+      "page_number": 327,
+      "classification": "BAD",
+      "confidence": 0.65,
+      "evidence": "High error density and character corruption: 'zzff' (garbled page numbers), 'imarks' (pathmarks), 'ubernieg' (Ubermieg), 'gibtj' (gibt), 'scendens' (transcendens), 'tha' fragments, 'vhat' (what). Error rate 5.3% understates severity - Unicode corruption more problematic. Multiple character substitutions: 'tha\u0255' shows corrupted 'that', 'daft \"es\"' shows weird spacing.",
+      "footnote_artifacts": "present - 'zzff' suggests corrupted page number reference, '[141)' detected, heavy Unicode corruption throughout"
+    },
+    {
+      "page_number": 328,
+      "classification": "MARGINAL",
+      "confidence": 0.71,
+      "evidence": "Moderate OCR errors: 'totaliz' (totalizing), 'niness' (something-iness fragment), 'ofbeings' (of beings - spacing), 'tha' (that fragment), 'rncnt' (ment corruption), 'obliv' truncated. Error rate 4.1%. Philosophical argument recoverable but requires careful reading. Key terms 'nihilism', 'metaphysics', 'presencing' mostly correct.",
+      "footnote_artifacts": "present - '[242)' and '[243)' footnote markers, Unicode corruption in character display"
+    },
+    {
+      "page_number": 330,
+      "classification": "MARGINAL",
+      "confidence": 0.73,
+      "evidence": "Multiple errors: 'boever' (whoever), 'vhy' (why), 'urpassing' (surpassing), 'destruktion' preserved in quotes, 'tals' (tals corruption), 'wav' (way), 'perficial' (superficial). Error rate 4.4% is moderate. Meaning recoverable. Quoted German terms preserved: 'Abbau', 'Destruktion'.",
+      "footnote_artifacts": "present - '[245)' footnote marker, 'mor-1' shows line break corruption"
+    },
+    {
+      "page_number": 332,
+      "classification": "MARGINAL",
+      "confidence": 0.72,
+      "evidence": "Multiple OCR errors: 'tmd das es gleichwohl gibt' (correct German but challenging OCR), 'Tagebikher' (Tagebucher), 'liicke' (Lücke), 'tence' (tence fragment), 'gibt' corruption attempts, 'onceals' (conceals), 'obliv' truncated. Error rate 4.7%. Content meaning preserved. Greek and Latin terms preserved: 'Nichts', 'Metaphysik'.",
+      "footnote_artifacts": "present - footnote 8 referenced, '[z48)' shows page number with z instead of number"
+    },
+    {
+      "page_number": 333,
+      "classification": "MARGINAL",
+      "confidence": 0.76,
+      "evidence": "Multiple errors: 'apparendy' (apparently), 'equioriginarily' (equioriginally), 'ertheless' (nevertheless), 'losophy' (philosophy), 'explicidy' (explicitly). Error rate 3.4% is moderate. Philosophical argument well-preserved. Greek terms mostly correct. '[249)' footnote marker detected.",
+      "footnote_artifacts": "present - '[249)' footnote marker, character reference to Greek terms preserved"
+    },
+    {
+      "page_number": 335,
+      "classification": "MARGINAL",
+      "confidence": 0.72,
+      "evidence": "Multiple errors: 'originarily' (originarily preserved correctly), 'nurturance' (preserved), 'ful' (something-ful truncation), 'recollective' (preserved), 'holderlin' (Hölderlin), 'vhat' (what). Error rate 4.1%. Content meaning recoverable. Citation to Holderlin/Hölderlin preserved despite accent issues.",
+      "footnote_artifacts": "present - '[2 52)' footnote marker with spacing issue"
+    },
+    {
+      "page_number": 338,
+      "classification": "MARGINAL",
+      "confidence": 0.74,
+      "evidence": "Multiple errors: 'hori' (horizon), 'llt st\u008cke' (UTF corruption for 'stake'), 'auf dem Spiel' (preserved despite complexity), 'repre' (representation fragment), 'toriographical' (historiographical), 'metcalf' preserved (translator name). Error rate 4.8%. Meaning recoverable with effort.",
+      "footnote_artifacts": "present - '[255)' and '[256)' footnote markers with Unicode stress marks"
+    },
+    {
+      "page_number": 339,
+      "classification": "MARGINAL",
+      "confidence": 0.73,
+      "evidence": "Multiple errors: 'pbirosopbie' (Philosophie), 'damental' (fundamental), 'losophy' (philosophy), 'geschicbte' (Geschichte), 'vorlesungen' (Vorlesungen), 'erter' fragment. Error rate 3.8%. German terminology mostly preserved. Philosophical argument recoverable. '[257)' footnote marker detected.",
+      "footnote_artifacts": "present - '[257)' footnote marker, scholarly citations preserved despite OCR errors"
+    },
+    {
+      "page_number": 340,
+      "classification": "MARGINAL",
+      "confidence": 0.71,
+      "evidence": "Multiple errors: 'lha' (lha corrupted), 'cil' (cil corruption), 'lmowing' (knowing with wrong character), 'laaty' (possibly laity), 'losophy' (philosophy), 'vhat' (what). Error rate 4.0%. Greek terms preserved: 'fy\\u00a3Lv', 'lha'. German terms preserved: 'Holderlin'. Complex philosophical argument recoverable.",
+      "footnote_artifacts": "present - '[258)' footnote marker, Greek transliteration preserved"
+    },
+    {
+      "page_number": 341,
+      "classification": "MARGINAL",
+      "confidence": 0.72,
+      "evidence": "Multiple errors: 'ari' (ari fragment), 'criti' (critical), 'ject' (ject fragment), 'flecting' (flecting corruption), 'calculability' (preserved), 'specu' (speculative fragment), 'repre' (representation fragment). Error rate 4.3%. Complex philosophical terminology mostly preserved. Meaning recoverable with careful reading.",
+      "footnote_artifacts": "present - '[259)' and '[260)' footnote markers detected"
+    },
+    {
+      "page_number": 345,
+      "classification": "GOOD",
+      "confidence": 0.82,
+      "evidence": "Clean OCR with minimal errors: 'Theaetetus' preserved correctly, Greek terms preserved (A6yo<;), Latin terms preserved (actus). Error rate 2.6% is low. Text flows naturally. Philosophical argument clear and complete. Technical citations preserved accurately.",
+      "footnote_artifacts": "present - '[265)' footnote marker, Greek transliteration preserved, scholarly references intact"
+    },
+    {
+      "page_number": 346,
+      "classification": "BAD",
+      "confidence": 0.62,
+      "evidence": "Multiple severe errors significantly impacting readability: 'lcgcl' (Hegel), 'spective' (perspective), 'detennined' (determined), 'itsejr' (itself), 'nnines' (corrupted), 'ject' (corrupted). Error rate 6.1% with severe character corruption. Unicode issues: 'EvtpyeßDll', Greek character strings heavily corrupted. Key philosophical terms degraded.",
+      "footnote_artifacts": "present - '[z66)' shows page number with z, 'EvtpyeßDll' shows corrupted Greek transliteration"
+    },
+    {
+      "page_number": 348,
+      "classification": "BAD",
+      "confidence": 0.63,
+      "evidence": "High error density with critical term corruption: 'fjel', 'oyoc' (oyoc corruption), 'evtpyelct' (energeia corrupted), 'oela' (corrupted), 'fonh', 'tttr' (garbled), 'abso' (absolute fragment), 'dval' (corrupted). Error rate 5.7% but character corruption is severe. Greek philosophical terminology heavily damaged: proper rendering of 'ἐνέργεια' (energeia) is completely corrupted.",
+      "footnote_artifacts": "present - '[269)' footnote marker, Greek transliteration critically damaged (EvtpyelCt, oela)"
+    },
+    {
+      "page_number": 349,
+      "classification": "MARGINAL",
+      "confidence": 0.74,
+      "evidence": "Multiple OCR errors: 'verba' (preserved), 'dicendi' (preserved), 'unconcealment' (preserved), 'unconcealrnent' (inconsistent spelling), 'yoc' (yoc corruption), 'subjectivized' (preserved). Error rate 4.4%. Greek transliteration present but with some character issues. Philosophical meaning largely recoverable. '[2 7o)' footnote marker shows spacing issue.",
+      "footnote_artifacts": "present - '[2 7o)' footnote marker with spacing, 'verba dicendi' preserved, Greek terms preserved with character issues"
+    },
+    {
+      "page_number": 351,
+      "classification": "BAD",
+      "confidence": 0.58,
+      "evidence": "Severe OCR degradation with heavy character corruption: 'grtlu' (Grtlu corrupted), 'separarurn' (Separated), 'oftbt' (of the), 'pletion' (completion), 'prsm' (Prsm), 'tbt' (the), 'modrn' (modern), 'lci' (lci corruption). Error rate 9.3% is highest in batch. Critical terms are garbled making semantic recovery difficult. Footnote annotation corrupted.",
+      "footnote_artifacts": "present - Footnote 9 referenced but corrupted, 'Separarurn from Tbt Prsm oftbt Grtlu in Modrn Thought' shows severe corruption"
+    },
+    {
+      "page_number": 353,
+      "classification": "GOOD",
+      "confidence": 0.81,
+      "evidence": "Generally clean OCR with minimal errors: 'feuerbach' preserved correctly, 'horiwn' (horizon with slight corruption), 'euerbach' (Feuerbach - correctly recognized). Error rate 2.6% is low. Philosophical argument clear. Citations well-preserved: Marx reference, Feuerbach reference intact. German philosophical terminology preserved.",
+      "footnote_artifacts": "present - '[175)' footnote marker detected, scholarly citations intact"
+    },
+    {
+      "page_number": 356,
+      "classification": "MARGINAL",
+      "confidence": 0.74,
+      "evidence": "Multiple errors with moderate impact: 'positio' (preserved), 'existenz' (preserved), 'inates' (inates corruption), 'dasein' (preserved), 'ponrl' (ponr with corruption), 'gro' (gro corruption), 'dmumstration' (Demonstration), 'intro' (intro fragment). Error rate 3.5%. German terms preserved. Philosophical content recoverable. '[279)' footnote marker detected.",
+      "footnote_artifacts": "present - '[279)' footnote marker, German Dasein/Existenz terminology preserved"
+    },
+    {
+      "page_number": 357,
+      "classification": "GOOD",
+      "confidence": 0.83,
+      "evidence": "Clean OCR with very few errors: 'existenz', 'dasein', 'gegmstand' (Gegenstand with minor corruption), 'substantiality' preserved. Error rate 2.2% is very low. Text flows naturally. Philosophical terminology precise. German terms correctly rendered. '[z8o)' footnote marker shows page reference with z substitution only minor issue.",
+      "footnote_artifacts": "present - '[z8o)' footnote marker, critical philosophical terms preserved (Dasein, Existenz)"
+    },
+    {
+      "page_number": 358,
+      "classification": "MARGINAL",
+      "confidence": 0.72,
+      "evidence": "Multiple OCR errors: 'biguity' (ambiguity), 'senting' (presenting), 'percipere' (preserved), 'repraesentare' (preserved), 'logicus' (preserved), 'fpectus' (spectus corruption), 'setness' (Gesetztheit with corruption). Error rate 4.0%. Latin philosophical terminology mostly preserved. Meaning recoverable. German/Latin terms impacted but text remains understandable.",
+      "footnote_artifacts": "present - 'respetus logicus' (respectus) shows minor spelling variation"
+    },
+    {
+      "page_number": 361,
+      "classification": "MARGINAL",
+      "confidence": 0.71,
+      "evidence": "Multiple OCR errors: 'ations' (ations corruption), 'ategorial' (categorial), 'logicallnt' (logical intuition), 'gegenstand' (Gegenstand), 'husser' (Husserl), 'canot' (cannot), 'cated' (cated corruption). Error rate 5.3%. Philosophical argument recoverable despite technical terminology corruption. '[285)' footnote marker detected.",
+      "footnote_artifacts": "present - '[285)' footnote marker, multiple footnotes referenced (a, b, c labels preserved)"
+    }
+  ],
+  "summary": {
+    "total_pages": 24,
+    "good_count": 3,
+    "marginal_count": 18,
+    "bad_count": 3,
+    "average_error_rate": 4.16,
+    "notes": "Batch 08 shows mixed quality typical of scholarly philosophical texts. GOOD pages have error rates 2.2-2.6%. MARGINAL pages range 3.0-5.0% with recoverable meaning despite OCR artifacts. BAD pages (327, 346, 348, 351) show critical character corruption and Unicode issues affecting Greek/Latin terminology, particularly problematic for philosophy. Footnote markers consistently preserved but sometimes with spacing corruption (e.g., '[z48)', '[2 7o)'). German philosophical terms (Dasein, Sein, Wesen, Gestalt) generally well-preserved except in BAD pages. Most impactful errors are Unicode character corruptions in Greek transliterations and occasional word-level substitutions (vhat/what, hoever/whoever)."
+  }
+}

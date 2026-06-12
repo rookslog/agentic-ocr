@@ -1,0 +1,411 @@
+{
+  "batch_id": 1,
+  "document": "Heidegger_BeingAndTime",
+  "classification_date": "2025-12-21",
+  "classifications": [
+    {
+      "page_number": 2,
+      "classification": "BAD",
+      "confidence": "high",
+      "error_rate": 21.4,
+      "evidence": [
+        "BLACI<WELL should be BLACKWELL (angle bracket corruption)",
+        "CJ./on/ should be Oxford (severe character corruption)",
+        "Com\u0314\u2022i4r\u2022 should be Computer (Unicode combining marks, diacritic errors)",
+        "usa appears lowercase when context suggests USA",
+        "Multiple corruptions affecting title page legibility"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "HIGH - Publisher name and location severely corrupted, embedding would encode wrong entity information"
+    },
+    {
+      "page_number": 4,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate": 16.7,
+      "evidence": [
+        "Tiibingen should be Tübingen (umlaut OCR error)",
+        "CIP, IJF, MPG, pbk appear as abbreviations - likely correct OCR",
+        "und, verlag, zeit are German words - correct OCR",
+        "niemeyer appears as-is (proper name variant acceptable)",
+        "Most corruption appears in proper names and abbreviations; body text is readable"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "MEDIUM - Proper name variant won't damage semantic understanding of copyright/publication metadata"
+    },
+    {
+      "page_number": 6,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate": 18.2,
+      "evidence": [
+        "odtnauberg should be Todtnauberg (missing 'T' at start, 'o' for 'T')",
+        "boden should be Bodensee or Boden (capitalization varies, acceptable for dedication)",
+        "rg:z6 should be 1926 (OCR reading ':' for '9' and 'z' for '2' - substitution errors)",
+        "Text is sparse (dedication page) but core errors don't affect semantic meaning"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "LOW-MEDIUM - Location and date errors on dedication page; date is significant but still identifiable context"
+    },
+    {
+      "page_number": 8,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate": 4.5,
+      "evidence": [
+        "ihe should be the (single character substitution - easy to identify)",
+        "osition, exp, ior, ity appear to be word fragments from line breaks, not OCR errors",
+        "dasein, temporality are German/English technical terms - correct",
+        "Overall structure and formatting preserved well",
+        "Table of contents is legible and properly formatted"
+      ],
+      "footnote_artifacts": "None detected - 'H.' references are correct page number markers",
+      "semantic_impact": "LOW - Minor errors don't affect chunk meaning; table of contents remains functionally useful"
+    },
+    {
+      "page_number": 9,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 7.5,
+      "evidence": [
+        "vironment should be environment (missing 'en' prefix - possible but suspicious)",
+        "ofthe should be of the (space missing - minor)",
+        "anarysis should be analysis (transposition error 'rn'→'n', inserted 'a')",
+        "Suspected footnote artifact: 'ioi' - may be [^101] or similar footnote marker merged with text",
+        "thespatiality should be the spatiality (space missing)",
+        "extensa, environmentality, worldhood, aroundness are specialized terms - correct OCR"
+      ],
+      "footnote_artifacts": [
+        "ioi - likely footnote marker [^101] merged with preceding text"
+      ],
+      "semantic_impact": "MEDIUM - Footnote artifacts and space errors are recoverable; specialized terminology is correct"
+    },
+    {
+      "page_number": 12,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate": 8.9,
+      "evidence": [
+        "ntic should be ntic (suffix fragment from line break, not error)",
+        "everydayness, dasein, temporality are correct technical terms",
+        "authe should be authentic (suffix fragment from break)",
+        "stitution should be constitution (prefix fragment from break)",
+        "pote should be potential (fragment)",
+        "teristic should be characteristic (fragment)",
+        "ntiality should be ntiality (fragment)",
+        "Body text is readable despite formatting artifacts from line breaks"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "LOW - Fragments are clearly from line-breaking, not OCR corruption; content remains understandable"
+    },
+    {
+      "page_number": 15,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate": 5.4,
+      "evidence": [
+        "faktisch, interpretieren, sache, sorge, gliedern are correct German terms",
+        "duced, ialized, tatsiichlich appear to be line break fragments, not OCR errors",
+        "sions appears as fragment from 'expressions'",
+        "Main body text reads clearly with good semantic preservation",
+        "Technical terminology properly recognized"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "LOW - Content about Heidegger's translation choices is clear; technical terms preserved"
+    },
+    {
+      "page_number": 16,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate": 1.6,
+      "evidence": [
+        "Tiw should be Time (clear OCR substitution 'w' for 'm', but recognizable in context)",
+        "subtlbties should be subtleties (transposition 'tl'→'lb', common OCR error)",
+        "sistent, ings appear as fragments from line breaks",
+        "heideggerian, yorck are correct proper names",
+        "Most text reads cleanly with high accuracy"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "LOW - Main content about translation philosophy is clear; errors don't affect understanding"
+    },
+    {
+      "page_number": 18,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate": 10.6,
+      "evidence": [
+        "phiinomenologische should be phänomenologische (umlaut rendering issue 'ii' for 'ä')",
+        "niemeyer, tiibingen, jahrbuch, dasein are correctly OCR'd proper/technical terms",
+        "utho, rman appear to be fragments from 'Author' split across lines",
+        "forschung, husser are German/proper names - correct",
+        "manheim appears as variant of Manheim - acceptable proper name rendering"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "MEDIUM - Umlaut errors in German terms; fragments indicate formatting artifacts rather than content errors"
+    },
+    {
+      "page_number": 20,
+      "classification": "BAD",
+      "confidence": "high",
+      "error_rate": 10.4,
+      "evidence": [
+        "rpo appears corrupted (fragment or OCR error in Greek text section)",
+        "Greek text shows diacritical mark corruption with Unicode issues",
+        "bedeutung, seiendes, interpretieren, legung are correct German terms",
+        "schlick, husser are correct proper names",
+        "heissen should be heissen (correct German)",
+        "ductory should be introductory (missing 'intro' prefix - significant)",
+        "ime should be time (missing 't' - character substitution)",
+        "Issue: Mixed language content (Greek/German/English) with Unicode handling problems"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "HIGH - Greek text corruption and character loss (ime→time, ductory→introductory) will confuse embeddings despite technical terms being recognizable"
+    },
+    {
+      "page_number": 23,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 9.2,
+      "evidence": [
+        "includitur, apprehensione, transcendens, cadit are Latin terms - correctly OCR'd",
+        "seiendes, cuius are Latin/German - correct",
+        "univer should be universal (missing 'sal' suffix)",
+        "unitp should be unity (substitution 'y'→'p')",
+        "ceptually should be conceptually (missing 'con' prefix - fragment or OCR)",
+        "sality should be sality (fragment from 'universality')",
+        "Body text and Latin quotations remain mostly readable despite errors"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "MEDIUM - Latin passages somewhat corrupted but surrounding philosophical text is clear"
+    },
+    {
+      "page_number": 24,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate": 9.4,
+      "evidence": [
+        "ratsel should be Rätsel (umlaut 'ae' rendering as 'a' - German term)",
+        "additur should be additur (correct Latin)",
+        "behaviour should be behaviour (British spelling - correct)",
+        "finitio, proximum, vernunft, macht are Latin/German - correct",
+        "reframs should be reframes or refrain (word-level error - semantic impact)",
+        "enti should be enti (fragment from 'entity')",
+        "liegt is German - correct"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "MEDIUM - 'reframs' is unclear (refrain vs frames); mostly philosophical text is readable"
+    },
+    {
+      "page_number": 25,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate": 8.7,
+      "evidence": [
+        "gefragtes, bei, intendieren, durchsichtigkeit, sosein, husser are German terms - correct",
+        "behaviour is correct English",
+        "anfragen, erjragte, bedarf are German - correct",
+        "Philosophical content is clear and technical terminology properly recognized",
+        "Formatting fragments (wenn separated across lines) are expected"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "LOW - Technical discussion of German philosophical terminology is preserved"
+    },
+    {
+      "page_number": 27,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate": 5.2,
+      "evidence": [
+        "ent, flv, sosein, woraufhin, geltung, dasein, vorhandenheit are German - correct",
+        "liegt, dass are German - correct",
+        "Greek text sections present but recognized as such",
+        "Philosophical exposition is clear and readable",
+        "Technical terms properly OCR'd"
+      ],
+      "footnote_artifacts": "None detected - 'H.' page markers are correct",
+      "semantic_impact": "LOW - Philosophical argument is clear; technical vocabulary preserved"
+    },
+    {
+      "page_number": 29,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate": 7.4,
+      "evidence": [
+        "frage, begrundung, fassung, eigensten, beantwortung are German - correct",
+        "sondern, nicht, ver, dasein are German - correct",
+        "strated should be strated (fragment from 'demonstrated')",
+        "Philosophical argument flows logically despite minor fragments",
+        "Technical content properly rendered"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "LOW - Main philosophical argument about Being questioning is clear"
+    },
+    {
+      "page_number": 31,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate": 3.6,
+      "evidence": [
+        "historiology, historie, historisch, historiological, geschichtlich are technical terms - correct",
+        "fof should be for (obvious substitution, clear in context)",
+        "offaith should be of faith (space missing - recoverable)",
+        "relativities, strated, geistlswissenscluzften (German) are recognized",
+        "High-quality text with few errors; mostly fragments from line breaks"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "LOW - Discussion of historiology and scientific methodology is clear"
+    },
+    {
+      "page_number": 33,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate": 9.6,
+      "evidence": [
+        "ontologisch, wahrer, dieser, ganze, seinsverfassung, seinsverhaltnis are German - correct",
+        "pos should be pos (fragment, context unclear)",
+        "tence should be tence (fragment from 'existence')",
+        "sachhaltigen, seinsverfassung, begriindungszusammenhanges are complex German terms - correct",
+        "Core philosophical exposition is readable despite fragments"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "MEDIUM - Philosophical argument on Being and ontology is understandable"
+    },
+    {
+      "page_number": 34,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate": 6.6,
+      "evidence": [
+        "derwelt, reiner, innerweltlich, dasein, existenzial, existentiell are German - correct",
+        "dvance should be advance (missing 'a' - clear substitution error)",
+        "der, int are fragments",
+        "existentiality is correct English technical term",
+        "Philosophical content on existence and Being is clear"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "LOW - Discussion of Dasein's existence and ontological structure is understandable"
+    },
+    {
+      "page_number": 35,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate": 6.7,
+      "evidence": [
+        "natum, cum, transcendens, ontico, dasein, transcendentia are Latin/German - correct",
+        "lcmv appears to be corrupted Greek (should be Latin?)",
+        "subjectivizing, existentiell, ontologies are correct English/German",
+        "Philosophical argument on Being and entities is clear",
+        "Latin quotations and terminology properly rendered"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "LOW - Discussion of ontological priority and transcendentals is clear"
+    },
+    {
+      "page_number": 36,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate": 4.3,
+      "evidence": [
+        "ontico, dasein, trans, analysed, pre, int are mostly fragments or correct terms",
+        "analysed is British English spelling - correct",
+        "Philosophical content is clear and well-structured",
+        "Technical terminology properly recognized"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "LOW - Summary of ontological priority is clear"
+    },
+    {
+      "page_number": 37,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 5.0,
+      "evidence": [
+        "anafytic should be analytic (transposition 'al'→'al' error, reading as 'af')",
+        "explicidy should be explicitly (substitution 'tl'→'dy' or missing 't', 'l')",
+        "ontico, dasein, ownmost, inve, gation, bestimmung, ontologi are mostly correct/fragments",
+        "cally appears to be fragment from 'logically'",
+        "Philosophical section heading and introduction are readable"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "MEDIUM - Section title has visible errors (anafytic, explicidy) that may affect searchability"
+    },
+    {
+      "page_number": 38,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate": 6.3,
+      "evidence": [
+        "behaviour, tation, construc, writingof, situdes, ontico, dasein, interpre, ordiality, existentiell are mostly fragments",
+        "writingof should be writing of (space missing)",
+        "tation should be tation (fragment from 'interpretation')",
+        "Core philosophical argument about Dasein's Being is readable despite formatting"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "LOW - Discussion of interpretation and phenomenological method is clear"
+    },
+    {
+      "page_number": 39,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate": 6.2,
+      "evidence": [
+        "zunachst, alltaglichkeit, zeigen, niodes, zeitlich, seiende, umeist, durchschnittlichen are German - correct",
+        "umeist should be zumeist (substitution 'z'→'u')",
+        "niodes should be modes (unclear - may be fragment or OCR for 'ni' prefix)",
+        "temporality, dasein are correct",
+        "Philosophical content on everydayness and temporality is readable"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "MEDIUM - German terminology and philosophical argument on everyday Being is understandable"
+    },
+    {
+      "page_number": 40,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate": 5.0,
+      "evidence": [
+        "wie, verstehen, dasein, etwas, ist, temporality are correct German/English terms",
+        "tinguished should be distinguished (missing 'dis' prefix)",
+        "eans should be means (missing 'm')",
+        "distinc should be distinc (fragment from 'distinction')",
+        "weise should be weise (German, correct)",
+        "Content on temporal understanding of Being is clear"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "LOW - Philosophical exposition on Being and time is understandable"
+    },
+    {
+      "page_number": 44,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "error_rate": 5.6,
+      "evidence": [
+        "iibergibt, verfallt, iiberlieferten should have umlauts (ü not u) - minor rendering issue",
+        "syste should be systems or system (fragment)",
+        "scholastics, dasein, ownmost, physicae, matics, int are correct/fragments",
+        "Philosophical content on tradition and ontology is readable",
+        "German prefix 'über-' correctly recognized in various forms"
+      ],
+      "footnote_artifacts": "None detected",
+      "semantic_impact": "LOW - Discussion of philosophical tradition and Greek ontology is clear"
+    }
+  ],
+  "summary": {
+    "total_pages": 23,
+    "classification_breakdown": {
+      "GOOD": 12,
+      "MARGINAL": 10,
+      "BAD": 1
+    },
+    "quality_notes": [
+      "Page 2 is BAD due to severe title page corruption (BLACKWELL, Oxford, Computer)",
+      "Page 20 is BAD due to mixed-language content (Greek/German/English) with character loss",
+      "Pages 4-6 are MARGINAL primarily due to proper name variants and umlaut rendering",
+      "Most GOOD pages have error rates <6% with errors being recognizable character substitutions",
+      "Common patterns: line-break fragments appearing as 'unknown words', German/Latin terms correctly OCR'd, umlaut rendering issues",
+      "Footnote artifacts suspected on page 9 (ioi) but documented",
+      "Overall batch quality is acceptable for RAG (52% GOOD, 43% MARGINAL, 4% BAD)",
+      "Errors are concentrated in proper names, foreign language passages, and formatting artifacts"
+    ]
+  }
+}

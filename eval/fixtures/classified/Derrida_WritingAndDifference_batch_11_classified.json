@@ -1,0 +1,198 @@
+[
+  {
+    "page_number": 445,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Text is highly readable. Foreign language terms (Verwertung, Entwertung, etc.) are correctly preserved. Philosophical terminology intact. Footnote markers appropriately formatted (e.g., '20', '21'). Only minor OCR artifacts present (ligatures like 'fi' properly handled).",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 446,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Clear, readable text with proper French accents (é, è, ç). Philosophical terms and author names (Hölderlin, Frechtman) correctly rendered. No garbled passages. Footnote numbering consistent. Minor ligature artifacts (fi/fl) are standard OCR behavior.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 448,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Predominantly well-recognized text. German authors (Nietzsche, Heidegger) and French terminology preserved accurately. Quotations readable. Some minor fragmentation in unknown_words_sample (phorical, ished) appears to be partial words from concatenation, not OCR errors. Content recoverable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 449,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "evidence": "Mostly readable with one clear OCR artifact: 'buffaloes' appears as 'buffaloes' but was OCR'd inconsistently. Text meaning recoverable. Some word fragments ('mediaries' for 'mediaries', 'ated' fragments) indicate scanner quality issues. Proper names (Lacan, Nietzsche) correctly rendered. Philosophical meaning intact despite minor artifacts.",
+    "footnote_artifacts": [
+      {
+        "text": "buffaloes",
+        "issue": "Potential ligature/spacing artifact"
+      }
+    ]
+  },
+  {
+    "page_number": 451,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Text is well-recognized overall. German terminology (Bahnung, Bahn, frayage) correctly preserved. Technical philosophical language intact. Abbreviations (SE, TN) properly handled. Word fragments in unknown_words_sample (equiva, siders) appear to be partial words rather than corruptions. Document meaning preserved.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 452,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Highly readable text with accurate foreign language preservation (différance, Husserl, Fliess). Philosophical terminology correctly rendered. Greek terminology (krinein) accurate. Word fragments in sample (originary, tions) are artifacts of word-level analysis, not actual OCR errors. Comprehensible throughout.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 453,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "evidence": "Error rate 13.2% - higher than typical. Multiple word fragments visible (des, uence, nega, speci). French terminology present (Egyptiens, langage) but some phrases show fragmentation. Text meaning still recoverable through context. References to Warburton and Egyptian hieroglyphs maintain clarity despite OCR noise.",
+    "footnote_artifacts": [
+      {
+        "text": "hiéroglyphes des Egyptiens",
+        "issue": "Some fragmentation in unknown word analysis"
+      }
+    ]
+  },
+  {
+    "page_number": 454,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "Readable text with proper French accents (Hervey de Saint-Denys). Technical philosophical terms (Besetzung, cathexis) correctly preserved. Quotations from Freud rendered accurately. Word fragments (nds, rst, ation) are byproducts of unknown word detection, not actual OCR corruption. Overall comprehensibility high.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 455,
+    "classification": "MARGINAL",
+    "confidence": 0.70,
+    "evidence": "Error rate 11.5% indicates moderate OCR issues. German terminology (Denkaufschub, Aufschub, Umweg, Umwege) correctly preserved - crucial for meaning. Some word fragmentation (mination, pretation, zum) visible. Complex philosophical concepts remain intelligible. Text can be recovered with effort.",
+    "footnote_artifacts": [
+      {
+        "text": "Denkaufschub",
+        "issue": "Technical term present but surrounded by fragmentation"
+      }
+    ]
+  },
+  {
+    "page_number": 457,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Clear, readable text with accurate French (réves, moyens, grammatologie). Philosophical terminology intact (Artaud, Dionysean, psyche). Quotations properly formatted. Word fragments (cacious, panied, accom) appear to be tail-end artifacts of proper word recognition, not garbling. Meaning fully preserved.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 458,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Highly readable with correct French accents and terminology (répétition, pharmacie, Platon). Quotations from Nietzsche clear. Philosophical terms precisely preserved. Word fragments in analysis (mination, tition, osophy) are artifacts of word-level processing, not OCR failures. Text coherent.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 460,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "evidence": "Error rate 9.1% - elevated. Multiple word fragments present (trise, premi, accom, pany, ern). French text (L'expérience intérieure, Kojève) mostly accurate. Key names like 'Bataille' clearly rendered. Some fragmentation affects clarity but overall meaning recoverable. Philosophical argument traceable.",
+    "footnote_artifacts": [
+      {
+        "text": "Kojève",
+        "issue": "Name present but surrounded by fragmentation artifacts"
+      }
+    ]
+  },
+  {
+    "page_number": 462,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "evidence": "Error rate 10.9% indicates noticeable OCR challenges. Word fragmentation moderate (struction, spe, rences, supplice). French terminology (savoir) preserved. Key philosophical concept 'nonmeaning' readable. Some passages require context recovery. German term 'Knecht' correctly rendered. Comprehensibility challenged but achievable.",
+    "footnote_artifacts": [
+      {
+        "text": "nonmeaning",
+        "issue": "Key concept visible despite surrounding artifacts"
+      }
+    ]
+  },
+  {
+    "page_number": 463,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "Readable text with proper French terminology (sacrifier, Aufhebung, maudite). Philosophical concepts clear (sovereignty, servitude, Erinnerung). German terminology (Aufhebung) correctly preserved. Word fragments (sacri, nal, mination) are detection artifacts. Text meaning recoverable without significant effort.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 464,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Well-recognized text with correct French (langage, vieille). Philosophical terminology intact. Quotations readable. Word fragments (irr, gularit, entism, cative, quali) appear to be word-splitting artifacts rather than garbling. German terms properly preserved. Overall comprehensibility strong.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 466,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Readable with accurate French philosophical terminology (méthode, systematicity, bifurs). Text structure clear. Quotations from Bataille intact. Word fragments (signi, syst, orie, thode) are analytical artifacts. References properly formatted. Complex ideas preserved.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 467,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Clear text with proper German terminology (Dasein, Sein, Heidegger) and French (humanism). Philosophical concepts precisely rendered. Word fragments (unknowledge, ity, rst, ected) appear to be processing artifacts. Scholarly references intact. Meaning fully preserved.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 468,
+    "classification": "BAD",
+    "confidence": 0.82,
+    "evidence": "Error rate 12.3% with significant fragmentation. Multiple word fragments create noise (xlix, der, weidenfeld, econ, anthropologie). Key references to Mauss and Lévi-Strauss readable but surrounded by OCR artifacts. Section header '10: STRUCTURE, SIGN, AND PLAY' clear but reference quality compromised. Recovery requires substantial context inference.",
+    "footnote_artifacts": [
+      {
+        "text": "der",
+        "issue": "German article artifact"
+      },
+      {
+        "text": "econ",
+        "issue": "Truncated word - likely 'economy'"
+      }
+    ]
+  },
+  {
+    "page_number": 469,
+    "classification": "BAD",
+    "confidence": 0.80,
+    "evidence": "Error rate 13.3% with heavy fragmentation. Numerous unknown words create substantial noise (tristes, catesson, cardinaux, yukel, tropiques). Section title '11: ELLIPSIS' clear but references heavily corrupted. Author names partially recognizable (Jab`es, Mauss). Requires expert knowledge to reconstruct meaning.",
+    "footnote_artifacts": [
+      {
+        "text": "Tristes tropiques",
+        "issue": "Title fragmented"
+      },
+      {
+        "text": "catesson",
+        "issue": "Author name garbled or unknown"
+      }
+    ]
+  },
+  {
+    "page_number": 470,
+    "classification": "BAD",
+    "confidence": 0.78,
+    "evidence": "Error rate 29.8% - critically high. Severe fragmentation with numerous artifacts (criture, coll, salle, cerisy, taphysique, conomie). The page appears to be a bibliography/sources section, which explains some abbreviation artifacts. However, OCR quality is significantly degraded. Multiple proper names and references corrupted beyond quick recovery.",
+    "footnote_artifacts": [
+      {
+        "text": "criture",
+        "issue": "Likely 'écriture' - accent lost, letter lost"
+      },
+      {
+        "text": "taphysique",
+        "issue": "Likely 'métaphysique' - prefix truncated"
+      },
+      {
+        "text": "conomie",
+        "issue": "Likely 'économie' - accent and letter lost"
+      }
+    ]
+  }
+]

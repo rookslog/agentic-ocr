@@ -1,0 +1,246 @@
+{
+  "batch_name": "Heidegger_BeingAndTime_batch_08",
+  "total_pages": 25,
+  "classifications": [
+    {
+      "page_number": 267,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "critical: \"Titn\" (should be \"Time\") - word replacement",
+        "critical: diacritic corruption marks (2)"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 268,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 269,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 271,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean (1 footnote markers)"
+      ],
+      "footnote_artifacts": [
+        "truth11"
+      ]
+    },
+    {
+      "page_number": 272,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean (2 footnote markers)"
+      ],
+      "footnote_artifacts": [
+        "includes1",
+        "sceptic2"
+      ]
+    },
+    {
+      "page_number": 273,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 275,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean (1 footnote markers)"
+      ],
+      "footnote_artifacts": [
+        "TEMPORALITY1"
+      ]
+    },
+    {
+      "page_number": 278,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 279,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "note: minor footnote pattern artifacts"
+      ],
+      "footnote_artifacts": [
+        "this2"
+      ]
+    },
+    {
+      "page_number": 280,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 281,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 283,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 287,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 289,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 290,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 292,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 293,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 294,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 296,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 297,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 298,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 299,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 300,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 301,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "critical: diacritic corruption marks (2)"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 305,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "clean"
+      ],
+      "footnote_artifacts": []
+    }
+  ],
+  "summary": {
+    "GOOD": 23,
+    "MARGINAL": 0,
+    "BAD": 2
+  }
+}

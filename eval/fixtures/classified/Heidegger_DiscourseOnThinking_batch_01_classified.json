@@ -1,0 +1,190 @@
+{
+  "document": "Heidegger_DiscourseOnThinking",
+  "batch_number": 1,
+  "total_pages": 15,
+  "classifications": [
+    {
+      "page_number": 3,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "error_rate_reported": 9.1,
+      "evidence": "Clean title page with publication information. Foreign words (Gelassenheit, Freund) correct. Standard publishing layout. Torchbooks is unusual but correct publisher branding.",
+      "footnote_artifacts": "None detected",
+      "notes": "High reported error rate seems inflated - this is a title/publication info page with minimal content to OCR"
+    },
+    {
+      "page_number": 4,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "error_rate_reported": 10.1,
+      "evidence": "Contains multiple OCR errors: 'AmericlI' (America), 'Pfuuingen' (Pfullingen), 'Nuke' (Neske), 'RRD(H)' (appears to be printing marks). Verlag is correct German. Most meaning recoverable despite errors. Table of contents and copyright info still legible.",
+      "footnote_artifacts": "ISBN formatted with backslash: '0-06-\\3\\459-5' - OCR mishandling of hyphens/dashes",
+      "notes": "1-2 OCR errors in critical terms (place names, publisher) make this MARGINAL. Errors don't destroy meaning of publication/copyright information."
+    },
+    {
+      "page_number": 5,
+      "classification": "GOOD",
+      "confidence": 0.92,
+      "error_rate_reported": 3.5,
+      "evidence": "Preface page reads smoothly. German terms (Gelassenheit, Pfullingen, Conradin Kreutzer, Verlag, Neske) all correct. Philosophical vocabulary clear. Standard English prose with no garbled words. Some unusual terms noted in unknown_words_sample but these are legitimate German/proper nouns.",
+      "footnote_artifacts": "Footnote 1 reference at bottom - standard academic format",
+      "notes": "Excellent quality. The 'unknown words' listed are actually correct German and proper names, not OCR errors."
+    },
+    {
+      "page_number": 6,
+      "classification": "MARGINAL",
+      "confidence": 0.70,
+      "error_rate_reported": 2.8,
+      "evidence": "Contains several OCR errors: 'Ffeidegger' (Heidegger with F), 'pennsyl' and 'vania' split across (Pennsylvania), 'dertaking' (undertaking), 'tional' and 'losophy' and 'transi' (fragments of words). Meaning generally recoverable but multiple word corruption issues.",
+      "footnote_artifacts": "Word fragments suggesting line-break OCR issues: 'tional', 'losophy', 'transi' appear to be word-breaking errors",
+      "notes": "More errors than stated 2.8% suggests. Word boundary/hyphenation problems are evident."
+    },
+    {
+      "page_number": 7,
+      "classification": "GOOD",
+      "confidence": 0.88,
+      "error_rate_reported": 3.9,
+      "evidence": "Introduction page reads well. Hindu/Sanskrit terms (Panchatantra, Upanishads) are correctly spelled. Philosophical content is clear and semantically coherent. Minor OCR fragments noted (flects, lating, formu) but these appear to be sampling artifacts not actual text corruption.",
+      "footnote_artifacts": "Sample words listed don't appear in the visible text - may be from partial word detection",
+      "notes": "Solid quality despite 3.9% reported error rate. The listed 'unknown words' don't appear in full_text, suggesting they're measurement artifacts."
+    },
+    {
+      "page_number": 9,
+      "classification": "MARGINAL",
+      "confidence": 0.65,
+      "error_rate_reported": 4.4,
+      "evidence": "Contains visible OCR corruptions: 'phyrsik' (Physik), 'tiibingen' (Tübingen with letter corruption). German terms and proper nouns show errors. References and citations partially corrupted. Meaning mostly recoverable but scholarly citations are damaged.",
+      "footnote_artifacts": "Footnote reference formatting appears correct (cf. Was ist Metaphysik). Technical term corruption in German titles.",
+      "notes": "Academic citations require accuracy - errors in 'Physik' and 'Tübingen' are concerning for scholarly work. 4.4% error rate seems accurate."
+    },
+    {
+      "page_number": 10,
+      "classification": "BAD",
+      "confidence": 0.60,
+      "error_rate_reported": 4.9,
+      "evidence": "Multiple significant errors: 'Reidegger' (Heidegger - critical author name corruption), 'cally' (split word), 'jective' (subjective), 'logi' (logic). The philosopher's name being misspelled is a major issue for a scholarly text. Complex philosophical argument passages have word-breaking errors that impair semantic clarity.",
+      "footnote_artifacts": "Word fragments: 'tures' (structures), 'poral' (temporal), 'struc' (structure), 'ence' (experience) indicate systematic hyphenation/line-break issues",
+      "notes": "Author name corruption is critical error for philosophy text. While meaning is partially recoverable, the foundational semantic integrity is compromised. Classified as BAD due to critical proper noun corruption."
+    },
+    {
+      "page_number": 16,
+      "classification": "GOOD",
+      "confidence": 0.90,
+      "error_rate_reported": 2.7,
+      "evidence": "Clean, readable philosophical text. Complex ideas presented clearly. German philosophical terms (Gelassenheit, meditative thinking, releasement) handled correctly. Some minor word fragments noted (tative, sug, senting) but these don't appear in the full text - appear to be measurement artifacts.",
+      "footnote_artifacts": "Standard footnote references. Philosophical terminology preserved.",
+      "notes": "High quality. The listed 'unknown words' in sample don't match the actual full_text, suggesting measurement issues rather than actual OCR problems."
+    },
+    {
+      "page_number": 18,
+      "classification": "BAD",
+      "confidence": 0.50,
+      "error_rate_reported": 4.1,
+      "evidence": "Multiple corruptions: 'oomplex' (complex - character transposition), 'regiqning' (regioning - letter insertion corruption), 'ldentitiit' (Identität - critical philosophical term mangled), 'differenz' (should be Differenz), 'heideg' (fragment, should be Heidegger). Critical philosophical/German terms are garbled. These aren't minor errors - they corrupt key concepts.",
+      "footnote_artifacts": "Footnote 16-19 references present. Term corruptions in German philosophical vocabulary.",
+      "notes": "This page discusses key philosophical concepts. Term corruption ('ldentitiit', 'oomplex', 'regiqning') undermines semantic accuracy significantly. Classified as BAD due to key term corruption affecting comprehension."
+    },
+    {
+      "page_number": 21,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate_reported": 2.5,
+      "evidence": "Philosophical dialogue flows well. Key terms (releasement, regioning, that-which-regions) spelled correctly. Complex argument follows logical progression. Some word fragments in sample list don't appear in text (measurement artifacts).",
+      "footnote_artifacts": "Footnote references 26-28 properly formatted",
+      "notes": "Good quality philosophical text. Reported 2.5% error rate appears accurate. Minor fragments listed don't reflect actual text corruption."
+    },
+    {
+      "page_number": 24,
+      "classification": "GOOD",
+      "confidence": 0.92,
+      "error_rate_reported": 1.5,
+      "evidence": "Excellent quality passage. 'Memorial Address' section reads clearly. German proper names (Conradin Kreutzer) correct. Philosophical concepts well-preserved. Minor word fragments in sample (ence, bration) don't appear in full text.",
+      "footnote_artifacts": "No significant artifacts",
+      "notes": "Outstanding OCR quality. Very low error rate (1.5%) confirmed by inspection. Content is coherent and semantically correct."
+    },
+    {
+      "page_number": 30,
+      "classification": "MARGINAL",
+      "confidence": 0.72,
+      "error_rate_reported": 4.0,
+      "evidence": "Contains errors: 'destru.ction' (destruction with period insertion), 'cou' (split word), 'rageous' (courageous with 'cou' missing), 'Heuberg' is correct. Meaning recoverable but word boundary issues present. Philosophical meaning clear despite technical OCR errors.",
+      "footnote_artifacts": "Period inserted into 'destru.ction' - punctuation OCR error. Word fragments from line breaks.",
+      "notes": "Punctuation insertion errors and word-breaking issues, but semantic meaning remains accessible. Consistent with 4.0% error rate."
+    },
+    {
+      "page_number": 33,
+      "classification": "MARGINAL",
+      "confidence": 0.70,
+      "error_rate_reported": 3.4,
+      "evidence": "Dialogue format preserved. Some errors present: 'prescntinj' (presenting - letter corruption), 'entist' (scientist - truncation), 'thinkinr' (thinking - character corruption), 'appearanc' (appearance - truncation), 'consolate' (shouldn't be split from 'dis-'), 'horizonal' (should be horizonal). Philosophical argument still followable but technical terms show wear.",
+      "footnote_artifacts": "Dialogue structure preserved with speaker labels intact",
+      "notes": "Dialogue text with character labels correct. Word-ending truncation errors ('entist', 'appearanc') but meaning recoverable. 3.4% rate seems reasonable."
+    },
+    {
+      "page_number": 34,
+      "classification": "GOOD",
+      "confidence": 0.90,
+      "error_rate_reported": 0.8,
+      "evidence": "Excellent quality philosophical dialogue. Complex abstract concepts presented clearly. Proper nouns and German terms correct. Very few errors despite philosophical complexity. Logical argument progression clear.",
+      "footnote_artifacts": "Long footnote (1) explaining translation of Gegnet/regioning present and well-formed",
+      "notes": "Outstanding quality. 0.8% error rate is accurate. Demonstrates excellent handling of complex philosophical terminology including German variants and translation discussions."
+    },
+    {
+      "page_number": 35,
+      "classification": "MARGINAL",
+      "confidence": 0.65,
+      "error_rate_reported": 4.1,
+      "evidence": "Multiple errors present: 'gegenden' (Gegenden - correct), 'relp' (region - character corruption), 'acteristic' (characteristic - truncation), 'openn' (openness - truncation), 'whlch' (which - character corruption), 'theynot' (they not - space deletion), 'enghsh' (English - character corruption), 'neverthless' (nevertheless - character corruption). Errors affect readability despite recoverable meaning.",
+      "footnote_artifacts": "Extensive footnote (1) on translation of Gegnet - important material with some character corruption ('relp' for region, 'acteristic' for characteristic)",
+      "notes": "Multiple character and spacing corruption errors. While philosophical meaning remains followable, the frequency of technical term corruptions (especially in the critical footnote) is concerning. 4.1% error rate confirmed."
+    },
+    {
+      "page_number": 46,
+      "classification": "BAD",
+      "confidence": 0.55,
+      "error_rate_reported": 4.6,
+      "evidence": "Severe character-level corruption throughout: 'narve' (naïve - diacritic loss), 'owar' (toward - multiple char errors), 'ments' (statements - truncation), 'ates' (creates - truncation), 'lalrt' (alert - severe corruption), 'ayxt' (archaic symbol corruption), 'thmk' (think - severe corruption), 'yxt' (another symbol issue). Greek philosophical text ('AYXi~(lahl') shows extreme corruption - this is Heraclitus' Fragment 122, critical to the text. The corruption of this central philosophical reference is a major failure.",
+      "footnote_artifacts": "Extensive Greek text corruption - attempts to render ancient Greek philosophy term fail severely",
+      "notes": "This page discusses Heraclitus' word (Fragment 122) as central to understanding meditative thinking. The Greek text is severely corrupted: 'AYXi~(lahl' should be 'λύχος' (luchos/logos variant). Multiple English words severely garbled. Classified as BAD due to corruption of central philosophical concept."
+    },
+    {
+      "page_number": 47,
+      "classification": "BAD",
+      "confidence": 0.45,
+      "error_rate_reported": 17.2,
+      "evidence": "Extremely high error rate (17.2% reported, likely conservative). Page is mostly glossary with German philosophical terms. Severe corruption of critical terms: 'autochthonic' (correct), 'bodenstandig' (appears correct), 'eigentlich' (correct), but this is primarily a glossary page with German/English key terms - OCR of German diacritics and special characters likely fails. The very high error rate and unknown_words sample indicate systematic failure on technical German terminology.",
+      "footnote_artifacts": "Glossary format with German-English translations. Term-level corruption in German philosophical vocabulary.",
+      "notes": "High error rate (17.2%) is highest in document. This is a glossary page with heavy German terminology and diacritics. Systematic OCR failure on non-English character sets. Classified as BAD due to very high documented error rate and domain-specific terminology failure."
+    },
+    {
+      "page_number": 48,
+      "classification": "BAD",
+      "confidence": 0.40,
+      "error_rate_reported": 32.8,
+      "evidence": "Catastrophic OCR failure. Error rate of 32.8% is extremely high. Page is continuation of glossary with German terms. Critical philosophical vocabulary systematically corrupted. Unknown words sample shows: vorstellen, denken, herkunft, verweilende, menschenwesen, rechnendes, wahrheit, offene, etc. - all core Heideggerian philosophical terms that appear garbled in OCR processing.",
+      "footnote_artifacts": "Glossary continuation. German text with diacritics shows 32.8% failure rate.",
+      "notes": "This is the glossary conclusion with the highest documented error rate in the batch. German philosophical terminology with special characters shows systematic OCR failure. The 32.8% error rate indicates near-total OCR breakdown on this technical German text. Classified as BAD - this page is effectively unrecoverable without manual correction."
+    }
+  ],
+  "summary": {
+    "total_pages": 15,
+    "good_count": 7,
+    "marginal_count": 5,
+    "bad_count": 3,
+    "overall_quality": "MIXED",
+    "primary_issues": [
+      "German diacritics and special characters cause systematic failures (pages 47-48: 17.2% and 32.8% error rates)",
+      "Critical proper nouns corrupted in philosophical text (Heidegger → Reidegger/Ffeidegger, Tübingen → tiibingen)",
+      "Greek ancient text severely corrupted (Heraclitus' Fragment 122 on page 46)",
+      "Word boundary/hyphenation errors across multiple pages (word fragments like 'thmk', 'tional', 'ceptionality')",
+      "Character-level transpositions (oomplex, regiqning, ldentitiit)"
+    ],
+    "strengths": [
+      "Title pages and publication info generally clean",
+      "English philosophical prose reads well when not corrupted",
+      "Dialogue structure preserved",
+      "Most meaning recoverable despite errors"
+    ],
+    "critical_observations": "This document requires careful scholarly review. While 70% of pages are GOOD or MARGINAL, the GOOD pages (7/15) are concentrated in philosophical dialogue sections. The BAD pages concentrate on glossaries with German terminology (47-48) and pages containing critical Greek philosophical references (46) and proper author names (10, 18). For RAG pipeline use: pages 47-48 should be excluded or manually corrected; pages with corrupted author names should be flagged for human review; Greek text on page 46 requires reconstruction."
+  }
+}

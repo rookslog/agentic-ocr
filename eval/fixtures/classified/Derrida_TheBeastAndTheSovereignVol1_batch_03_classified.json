@@ -1,0 +1,252 @@
+{
+  "document": "Derrida_TheBeastAndTheSovereignVol1",
+  "batch_number": 3,
+  "total_batches": 10,
+  "classification_date": "2025-12-21",
+  "classifier_version": "1.0",
+  "classification_criteria": {
+    "GOOD": "Readable with 0-2% errors or <1 clear error per page",
+    "MARGINAL": "1-2 errors or errors in 2-5% of content",
+    "BAD": ">2 clear errors per page or >5% error rate causing readability issues"
+  },
+  "notes": [
+    "French, German, Greek, Latin words are NOT counted as errors",
+    "Footnote markers like 'word23' are NOT counted as errors",
+    "Proper nouns and author names are NOT counted as errors",
+    "Classification based on error_rate from OCR metadata + text analysis"
+  ],
+  "classified_pages": [
+    {
+      "page_number": 84,
+      "classification": "MARGINAL",
+      "confidence": 0.9,
+      "evidence": "error_rate=7.3%, 3011 chars, 10 unknown words; Moderate error rate: 7.3%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 7.3,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 85,
+      "classification": "MARGINAL",
+      "confidence": 0.9,
+      "evidence": "error_rate=8.3%, 2718 chars, 10 unknown words; Moderate error rate: 8.3%",
+      "footnote_artifacts": [
+        "plateaux9"
+      ],
+      "error_rate_percent": 8.3,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 86,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "error_rate=3.1%, 2961 chars, 10 unknown words; Low error rate: 3.1%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 3.1,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 88,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "error_rate=4.4%, 3007 chars, 10 unknown words; Low error rate: 4.4%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 4.4,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 89,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "error_rate=17.7%, 3178 chars, 10 unknown words; High error rate: 17.7%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 17.7,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 90,
+      "classification": "MARGINAL",
+      "confidence": 0.9,
+      "evidence": "error_rate=8.2%, 2592 chars, 10 unknown words; Moderate error rate: 8.2%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 8.2,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 92,
+      "classification": "MARGINAL",
+      "confidence": 0.9,
+      "evidence": "error_rate=6.0%, 3010 chars, 10 unknown words; Moderate error rate: 6.0%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 6.0,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 94,
+      "classification": "MARGINAL",
+      "confidence": 0.9,
+      "evidence": "error_rate=5.5%, 2999 chars, 10 unknown words; Moderate error rate: 5.5%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 5.5,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 96,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "error_rate=2.3%, 3094 chars, 9 unknown words; Low error rate: 2.3%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 2.3,
+      "bucket": "B (1-3%)"
+    },
+    {
+      "page_number": 97,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "error_rate=3.8%, 3092 chars, 10 unknown words; Low error rate: 3.8%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 3.8,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 99,
+      "classification": "MARGINAL",
+      "confidence": 0.9,
+      "evidence": "error_rate=6.8%, 2871 chars, 10 unknown words; Moderate error rate: 6.8%",
+      "footnote_artifacts": [
+        "Prince16"
+      ],
+      "error_rate_percent": 6.8,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 100,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "error_rate=3.1%, 2927 chars, 10 unknown words; Low error rate: 3.1%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 3.1,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 101,
+      "classification": "MARGINAL",
+      "confidence": 0.9,
+      "evidence": "error_rate=5.2%, 2978 chars, 10 unknown words; Moderate error rate: 5.2%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 5.2,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 102,
+      "classification": "MARGINAL",
+      "confidence": 0.9,
+      "evidence": "error_rate=8.4%, 2807 chars, 10 unknown words; Moderate error rate: 8.4%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 8.4,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 106,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "error_rate=3.5%, 2895 chars, 10 unknown words; Low error rate: 3.5%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 3.5,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 110,
+      "classification": "MARGINAL",
+      "confidence": 0.9,
+      "evidence": "error_rate=5.4%, 2848 chars, 10 unknown words; Moderate error rate: 5.4%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 5.4,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 111,
+      "classification": "MARGINAL",
+      "confidence": 0.9,
+      "evidence": "error_rate=6.8%, 2935 chars, 10 unknown words; Moderate error rate: 6.8%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 6.8,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 113,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "error_rate=5.0%, 1796 chars, 10 unknown words; Low error rate: 5.0%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 5.0,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 114,
+      "classification": "MARGINAL",
+      "confidence": 0.9,
+      "evidence": "error_rate=5.5%, 1917 chars, 10 unknown words; Moderate error rate: 5.5%",
+      "footnote_artifacts": [
+        "gender3"
+      ],
+      "error_rate_percent": 5.5,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 118,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "error_rate=3.3%, 2650 chars, 10 unknown words; Low error rate: 3.3%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 3.3,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 119,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "error_rate=4.5%, 2725 chars, 10 unknown words; Low error rate: 4.5%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 4.5,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 121,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "error_rate=3.7%, 2940 chars, 10 unknown words; Low error rate: 3.7%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 3.7,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 123,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "error_rate=4.6%, 2948 chars, 10 unknown words; Low error rate: 4.6%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 4.6,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 124,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "error_rate=4.2%, 2915 chars, 10 unknown words; Low error rate: 4.2%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 4.2,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 126,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "error_rate=4.9%, 2982 chars, 10 unknown words; Low error rate: 4.9%",
+      "footnote_artifacts": null,
+      "error_rate_percent": 4.9,
+      "bucket": "C (3-5%)"
+    }
+  ]
+}

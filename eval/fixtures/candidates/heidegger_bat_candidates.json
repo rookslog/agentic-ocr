@@ -1,0 +1,6015 @@
+[
+  {
+    "pdf_path": "spikes/sample_pdfs/Heidegger_BeingAndTime.pdf",
+    "total_pages": 590,
+    "body_font_size": 6.7,
+    "endnote_section": {
+      "start_page": 489,
+      "end_page": 503,
+      "start_label": "489"
+    },
+    "bibliography_section": null,
+    "footnote_candidates": [
+      {
+        "page_index": 1,
+        "page_label": "1",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 19,
+        "page_label": "19",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "8",
+          "o",
+          "1",
+          "3"
+        ]
+      },
+      {
+        "page_index": 21,
+        "page_label": "21",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 1 '. , \u2022 als thernatische Fragt wirklicher Unttrsuchung'. Wh...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "1"
+        ]
+      },
+      {
+        "page_index": 23,
+        "page_label": "23",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 'Sie macht offenbar, dass in jedem Verhalten und Sein zu S...",
+          "Footnote line: 3 '  \"die geheimen Urteile der gemeinen Vernunft\" '....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "page_index": 24,
+        "page_label": "24",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "5",
+          "1"
+        ]
+      },
+      {
+        "page_index": 25,
+        "page_label": "25",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "a"
+        ]
+      },
+      {
+        "page_index": 26,
+        "page_label": "26",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 'Sein liegt im Dass- und Sosein, in Realitiit, Vorhandenhe...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "7",
+          "1"
+        ]
+      },
+      {
+        "page_index": 28,
+        "page_label": "28",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "1"
+        ]
+      },
+      {
+        "page_index": 30,
+        "page_label": "30",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 1 'In den histcrischen Geistlswissenscluzften \u2022...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "1"
+        ]
+      },
+      {
+        "page_index": 31,
+        "page_label": "31",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 3 While the terms 'on tisch' ('ontical') and 'ontologisch' (...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "3"
+        ]
+      },
+      {
+        "page_index": 32,
+        "page_label": "32",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "32",
+          "3",
+          "a"
+        ]
+      },
+      {
+        "page_index": 33,
+        "page_label": "33",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "3"
+        ]
+      },
+      {
+        "page_index": 38,
+        "page_label": "38",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "3",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "page_index": 41,
+        "page_label": "41",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 3 'Historizitat'. Cf. note 2, p. 3 1 .  H. 10 above....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "3"
+        ]
+      },
+      {
+        "page_index": 43,
+        "page_label": "43",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 In this passage!Heidegger juxtaposes a number of words beg...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "3",
+          "1"
+        ]
+      },
+      {
+        "page_index": 44,
+        "page_label": "44",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 46,
+        "page_label": "46",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "o",
+          "c"
+        ]
+      },
+      {
+        "page_index": 47,
+        "page_label": "47",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 3 The phrase '<jiov ,\\&yov \u00a3xov is traditionally translated ...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "6",
+          "o",
+          "s",
+          "1",
+          "a",
+          "3"
+        ]
+      },
+      {
+        "page_index": 50,
+        "page_label": "50",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 The appeal to the 'Sachen selbst', which Heidegger present...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "o",
+          "1"
+        ]
+      },
+      {
+        "page_index": 51,
+        "page_label": "51",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 54,
+        "page_label": "54",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "54",
+          "3",
+          "I",
+          "2",
+          "o"
+        ]
+      },
+      {
+        "page_index": 55,
+        "page_label": "55",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 On .\\oyos, 'Rede', etc., see note 3, p. 47, H. 25 above....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "55",
+          "i",
+          "a",
+          "2"
+        ]
+      },
+      {
+        "page_index": 56,
+        "page_label": "56",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "33"
+        ]
+      },
+      {
+        "page_index": 59,
+        "page_label": "59",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "35"
+        ]
+      },
+      {
+        "page_index": 60,
+        "page_label": "60",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: a 'Wieviel Schein jedoch, soviel \"Sein\".'...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "3",
+          "6",
+          "2",
+          "a"
+        ]
+      },
+      {
+        "page_index": 67,
+        "page_label": "67",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: a See note 2, p. 28, H. 8 above....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "a"
+        ]
+      },
+      {
+        "page_index": 68,
+        "page_label": "68",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 3 'Und weil Dasein wesenhaft je seine Moglichkeit ist, kann ...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "43",
+          "4",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "page_index": 70,
+        "page_label": "70",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 4 'Dasje schon vorgiingige Ansprechen des Seins im Bespreche...",
+          "Footnote line: 6 'Das in solchem Sehen Gesichtete und Sichtbare ....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "a",
+          "4",
+          "45",
+          "1",
+          "6"
+        ]
+      },
+      {
+        "page_index": 72,
+        "page_label": "72",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "I"
+        ]
+      },
+      {
+        "page_index": 73,
+        "page_label": "73",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I"
+        ]
+      },
+      {
+        "page_index": 79,
+        "page_label": "79",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "54"
+        ]
+      },
+      {
+        "page_index": 81,
+        "page_label": "81",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "55",
+          "2"
+        ]
+      },
+      {
+        "page_index": 82,
+        "page_label": "82",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 'Die Tatsachlichkeit des Faktums Dasein, als welches jewei...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "i",
+          "1"
+        ]
+      },
+      {
+        "page_index": 83,
+        "page_label": "83",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "57",
+          "3",
+          "1"
+        ]
+      },
+      {
+        "page_index": 84,
+        "page_label": "84",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "1",
+          "2",
+          "5",
+          "8",
+          "a"
+        ]
+      },
+      {
+        "page_index": 85,
+        "page_label": "85",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "a",
+          "59"
+        ]
+      },
+      {
+        "page_index": 87,
+        "page_label": "87",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 88,
+        "page_label": "88",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 8 'Damit Erkennen als betrachtendes Bestimmen des Vorhandene...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "8"
+        ]
+      },
+      {
+        "page_index": 93,
+        "page_label": "93",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 95,
+        "page_label": "95",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: a See above, H. 57, n. 1, p. 83....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "g",
+          "67",
+          "a"
+        ]
+      },
+      {
+        "page_index": 98,
+        "page_label": "98",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "69"
+        ]
+      },
+      {
+        "page_index": 101,
+        "page_label": "101",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2"
+        ]
+      },
+      {
+        "page_index": 103,
+        "page_label": "103",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "1"
+        ]
+      },
+      {
+        "page_index": 105,
+        "page_label": "105",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: a conclusion from premisses. Heidegger is deliberately \u016bing....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "u",
+          "b",
+          "a"
+        ]
+      },
+      {
+        "page_index": 107,
+        "page_label": "107",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "\u00ec",
+          "77"
+        ]
+      },
+      {
+        "page_index": 108,
+        "page_label": "108",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "78"
+        ]
+      },
+      {
+        "page_index": 109,
+        "page_label": "109",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: e.g. 'serviceability for indicating . . .  ' Since the prepo...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "79",
+          "e"
+        ]
+      },
+      {
+        "page_index": 111,
+        "page_label": "111",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 ' \u2022 \u2022 \u2022  das \"was kommt\" ist solches, daraufwir uns gefass...",
+          "Footnote line: 8 See H. 75-76 above....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "a",
+          "1",
+          "8"
+        ]
+      },
+      {
+        "page_index": 113,
+        "page_label": "113",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "82"
+        ]
+      },
+      {
+        "page_index": 115,
+        "page_label": "115",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 3 'In Bewandtnis liegt: bewenden lasen mit etwas bei etwas. ...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "z",
+          "s",
+          "3"
+        ]
+      },
+      {
+        "page_index": 117,
+        "page_label": "117",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: a 'Das auf Bewandtnis hin...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "a",
+          "3"
+        ]
+      },
+      {
+        "page_index": 118,
+        "page_label": "118",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: a 'Worauf'. The older editions have 'woraufhin'....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "86",
+          "a"
+        ]
+      },
+      {
+        "page_index": 119,
+        "page_label": "119",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 ' \u2022 \u2022 .  wie das Dazu, als wobei es die Bewandtnis hat, da...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "3",
+          "1"
+        ]
+      },
+      {
+        "page_index": 120,
+        "page_label": "120",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 'Das Verstehen llisst sich in und von diesen Bezligen selb...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "120",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "page_index": 121,
+        "page_label": "121",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "H",
+          "D"
+        ]
+      },
+      {
+        "page_index": 123,
+        "page_label": "123",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: a state-of-Being constitutive for the entity we are talking ...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "123",
+          "111",
+          "a"
+        ]
+      },
+      {
+        "page_index": 127,
+        "page_label": "127",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: a ' . . .  a us einer seienden Beschaffenheit der Substanz.'...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "i",
+          "a"
+        ]
+      },
+      {
+        "page_index": 129,
+        "page_label": "129",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 130,
+        "page_label": "130",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 133,
+        "page_label": "133",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "14"
+        ]
+      },
+      {
+        "page_index": 134,
+        "page_label": "134",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 'Das Umhajte der Umwelt'. See our note 1, p. 93, H. 65 abo...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "101",
+          "1"
+        ]
+      },
+      {
+        "page_index": 136,
+        "page_label": "136",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 'Entferntheit'. For further discussion, see Section 23 and...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "103",
+          "2",
+          "u"
+        ]
+      },
+      {
+        "page_index": 137,
+        "page_label": "137",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 2 'Die vorgangige Zuhandenheit der jeweiligen Gegend hat in ...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "2"
+        ]
+      },
+      {
+        "page_index": 139,
+        "page_label": "139",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 'Entfernen* besagt ein Verschwindenmachen der Ferne, d. h....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "102",
+          "1"
+        ]
+      },
+      {
+        "page_index": 141,
+        "page_label": "141",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 'vorkommt' ; ' \"Vorkommen\" '. In general 'vorkommen' may b...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "141",
+          "1"
+        ]
+      },
+      {
+        "page_index": 144,
+        "page_label": "144",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 2 Here we follow the later editions in reading ' . . .  bede...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "2"
+        ]
+      },
+      {
+        "page_index": 145,
+        "page_label": "145",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 3 'Auf deren Grunde wird das Zuhandene nach Form und Rich tu...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "3"
+        ]
+      },
+      {
+        "page_index": 146,
+        "page_label": "146",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 Both 'Raum-geben' (our 'giving space') and 'Einriiumen' (o...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "1"
+        ]
+      },
+      {
+        "page_index": 147,
+        "page_label": "147",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 152,
+        "page_label": "152",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 'as such a clue' : here we read 'a Is solcher', following ...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "i",
+          "9",
+          "1"
+        ]
+      },
+      {
+        "page_index": 155,
+        "page_label": "155",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "155"
+        ]
+      },
+      {
+        "page_index": 158,
+        "page_label": "158",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 160,
+        "page_label": "160",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "4",
+          "2"
+        ]
+      },
+      {
+        "page_index": 161,
+        "page_label": "161",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "1",
+          "24",
+          "2"
+        ]
+      },
+      {
+        "page_index": 163,
+        "page_label": "163",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 ' \u2022 \u2022 \u2022  welche positive existenziale Bedingung rechtes Fr...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "\u00e3",
+          "1"
+        ]
+      },
+      {
+        "page_index": 164,
+        "page_label": "164",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "i",
+          "d",
+          "w"
+        ]
+      },
+      {
+        "page_index": 165,
+        "page_label": "165",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 1 'Das Man kan es sich gleichsam leisten, dass \"man\" sich st...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "1"
+        ]
+      },
+      {
+        "page_index": 167,
+        "page_label": "167",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "o",
+          "3"
+        ]
+      },
+      {
+        "page_index": 171,
+        "page_label": "171",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 'Da-sein'. See our note 1, p. 27, H. 7 above....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "133",
+          "a",
+          "1"
+        ]
+      },
+      {
+        "page_index": 172,
+        "page_label": "172",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "3",
+          "21"
+        ]
+      },
+      {
+        "page_index": 173,
+        "page_label": "173",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: z '. . . den phanomenalen Tatbestand der stimmungsmassigen E...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "135",
+          "z"
+        ]
+      },
+      {
+        "page_index": 174,
+        "page_label": "174",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 3 In this sentence there is a contrast between 'wahrnehmende...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "3"
+        ]
+      },
+      {
+        "page_index": 175,
+        "page_label": "175",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 176,
+        "page_label": "176",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 177,
+        "page_label": "177",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 2 In this sentence Heidegger has been calling attention to t...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "2"
+        ]
+      },
+      {
+        "page_index": 181,
+        "page_label": "181",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: a ' \"Befiirchtet\" ist dabei das Mitsein mit dem Anderen, der...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "3",
+          "a"
+        ]
+      },
+      {
+        "page_index": 183,
+        "page_label": "183",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: a ' \u2022 \u2022 \u2022  ergreift sie und vergreift sich.'...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "w",
+          "a"
+        ]
+      },
+      {
+        "page_index": 184,
+        "page_label": "184",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 'Ais solches Verstehen \"weiss\" es, woran es mit ihm selbst...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "page_index": 189,
+        "page_label": "189",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "149"
+        ]
+      },
+      {
+        "page_index": 192,
+        "page_label": "192",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "5"
+        ]
+      },
+      {
+        "page_index": 194,
+        "page_label": "194",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "153"
+        ]
+      },
+      {
+        "page_index": 195,
+        "page_label": "195",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "5",
+          "195",
+          "154"
+        ]
+      },
+      {
+        "page_index": 197,
+        "page_label": "197",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 3 'Zur Aussage als der so existenzial verstandenen Mit-teilu...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "\u0208",
+          "3"
+        ]
+      },
+      {
+        "page_index": 204,
+        "page_label": "204",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 2 'Dieses ist redend als zu- und absagen, auffordern, warnen...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "2"
+        ]
+      },
+      {
+        "page_index": 205,
+        "page_label": "205",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 1 Reading ' ....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "1"
+        ]
+      },
+      {
+        "page_index": 206,
+        "page_label": "206",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 3 ' \u2022 \u2022 \u2022  des Folgens . .  .' In the earlier editions there...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "5",
+          "1",
+          "l",
+          "s",
+          "2",
+          "i",
+          "g",
+          "h",
+          "e",
+          "n",
+          "3"
+        ]
+      },
+      {
+        "page_index": 211,
+        "page_label": "211",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 'Die Rede spricht sich zumeist aus und hat sich schon imme...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "o",
+          "2"
+        ]
+      },
+      {
+        "page_index": 212,
+        "page_label": "212",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 'Die Mitteilung \"teilt\" nicht den prim.iren Seinsbezug zum...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "w",
+          "169",
+          "1"
+        ]
+      },
+      {
+        "page_index": 213,
+        "page_label": "213",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 215,
+        "page_label": "215",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 While the sentence from Aristotle is usually translated, '...",
+          "Footnote line: 3 This sentence has been variously interpreted. The most usu...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "o",
+          "i",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "page_index": 217,
+        "page_label": "217",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 218,
+        "page_label": "218",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 220,
+        "page_label": "220",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 'Un- und nichteigentlich, bedeutet aber keineswegs \"eigent...",
+          "Footnote line: 3 'Die ontologisch-existenziale Struktur des Verfallens \u2022...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "220",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "page_index": 222,
+        "page_label": "222",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 227,
+        "page_label": "227",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "1"
+        ]
+      },
+      {
+        "page_index": 229,
+        "page_label": "229",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 232,
+        "page_label": "232",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: a 'Die Angst bringt das Dasein vor sein Freiseinfiir \u2022...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "a"
+        ]
+      },
+      {
+        "page_index": 238,
+        "page_label": "238",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 ' \u2022 \u2022 \u2022  besondere Akte oder Triebe wie Wollen und Wiinsch...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "a",
+          "1"
+        ]
+      },
+      {
+        "page_index": 239,
+        "page_label": "239",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 ' \u2022 \u2022 \u2022  (Welt als das Worin des Schon-seins) \u2022...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "a",
+          "1"
+        ]
+      },
+      {
+        "page_index": 240,
+        "page_label": "240",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "3",
+          "I"
+        ]
+      },
+      {
+        "page_index": 242,
+        "page_label": "242",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "242"
+        ]
+      },
+      {
+        "page_index": 246,
+        "page_label": "246",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 250,
+        "page_label": "250",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "250"
+        ]
+      },
+      {
+        "page_index": 260,
+        "page_label": "260",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 'Das Aussagen ist ein Sein zum seienden Ding selbst.'...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "18"
+        ]
+      },
+      {
+        "page_index": 261,
+        "page_label": "261",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 'Ausgewiesen wird das Entdeckend-sein der Aussage.' Here a...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "s",
+          "1"
+        ]
+      },
+      {
+        "page_index": 264,
+        "page_label": "264",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "j",
+          "o",
+          "2"
+        ]
+      },
+      {
+        "page_index": 266,
+        "page_label": "266",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 \"Auch im Nachsprechen kommt das nachsprechende Dasein in e...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "\u00da",
+          "224",
+          "\u00dc",
+          "2"
+        ]
+      },
+      {
+        "page_index": 268,
+        "page_label": "268",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 271,
+        "page_label": "271",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "s",
+          "A"
+        ]
+      },
+      {
+        "page_index": 279,
+        "page_label": "279",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 ' . . .  im Dasein immer noch etwas aussteht ....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "D",
+          "236",
+          "n",
+          "1"
+        ]
+      },
+      {
+        "page_index": 280,
+        "page_label": "280",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 'Was so gar nicht erst sein kann, wie ein Erfahren das Das...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "2"
+        ]
+      },
+      {
+        "page_index": 282,
+        "page_label": "282",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "2"
+        ]
+      },
+      {
+        "page_index": 283,
+        "page_label": "283",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 'Vertretbarkeit'. The verb 'vertreten' means 'to represent...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "2"
+        ]
+      },
+      {
+        "page_index": 286,
+        "page_label": "286",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 Ausstehen als Fehlen griindet in einer Zugehorigkeit.'...",
+          "Footnote line: 8 'Tilgung der \"Schuld\" als Behebung des Ausstandes bedeutet...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "e",
+          "2",
+          "3",
+          "8"
+        ]
+      },
+      {
+        "page_index": 287,
+        "page_label": "287",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "243"
+        ]
+      },
+      {
+        "page_index": 289,
+        "page_label": "289",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I"
+        ]
+      },
+      {
+        "page_index": 290,
+        "page_label": "290",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "A"
+        ]
+      },
+      {
+        "page_index": 294,
+        "page_label": "294",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 'Nicht-mehr-dasein-konnens.' Notice that the expressions '...",
+          "Footnote line: 3 'So sich bevorstehend sind in ihm aile Beziige zu anderem ...",
+          "Footnote line: 4. 'unbeziigliche'. This term appears frequently throughout ...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "3",
+          "2",
+          "4"
+        ]
+      },
+      {
+        "page_index": 295,
+        "page_label": "295",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I"
+        ]
+      },
+      {
+        "page_index": 296,
+        "page_label": "296",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 0 0 dann muss es auch-wenngleich zunachst uneigentlich-in de...",
+          "Footnote line: 3 'Die Offentlichkeit des alltaglichen Miteinander \"kennt\" d...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "\u0102",
+          "5",
+          "1",
+          "x",
+          "11",
+          "0",
+          "3"
+        ]
+      },
+      {
+        "page_index": 297,
+        "page_label": "297",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 2 'Die iiffentliche Daseinsauslegung sagt: \"man stirbt\", wei...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "2"
+        ]
+      },
+      {
+        "page_index": 299,
+        "page_label": "299",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "a"
+        ]
+      },
+      {
+        "page_index": 300,
+        "page_label": "300",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "2"
+        ]
+      },
+      {
+        "page_index": 303,
+        "page_label": "303",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "\u019f",
+          "g",
+          "\u01a1"
+        ]
+      },
+      {
+        "page_index": 306,
+        "page_label": "306",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 'Auch im Erwarten liegt ein Abspringen vom Moglichen und F...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "06",
+          "I",
+          "2",
+          "1"
+        ]
+      },
+      {
+        "page_index": 307,
+        "page_label": "307",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "1",
+          "0",
+          "263"
+        ]
+      },
+      {
+        "page_index": 310,
+        "page_label": "310",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "I",
+          "h",
+          "t",
+          "1",
+          "2"
+        ]
+      },
+      {
+        "page_index": 312,
+        "page_label": "312",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 316,
+        "page_label": "316",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "t",
+          "3",
+          "o"
+        ]
+      },
+      {
+        "page_index": 318,
+        "page_label": "318",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: z 'Der Ruf stellt, seiner Ruftendenz entsprechend, das anger...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "z"
+        ]
+      },
+      {
+        "page_index": 320,
+        "page_label": "320",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 ' \"Es\" ruft . .  .' Here the pronoun 'es' is used quite im...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "320",
+          "2",
+          "1"
+        ]
+      },
+      {
+        "page_index": 322,
+        "page_label": "322",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "v"
+        ]
+      },
+      {
+        "page_index": 327,
+        "page_label": "327",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "s",
+          "3",
+          "1"
+        ]
+      },
+      {
+        "page_index": 328,
+        "page_label": "328",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "9"
+        ]
+      },
+      {
+        "page_index": 329,
+        "page_label": "329",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "A"
+        ]
+      },
+      {
+        "page_index": 331,
+        "page_label": "331",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "1"
+        ]
+      },
+      {
+        "page_index": 332,
+        "page_label": "332",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "332"
+        ]
+      },
+      {
+        "page_index": 333,
+        "page_label": "333",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "8"
+        ]
+      },
+      {
+        "page_index": 339,
+        "page_label": "339",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 'Das warnende Gewissen hat die Funktion der momentweisen R...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "339",
+          "a",
+          "1"
+        ]
+      },
+      {
+        "page_index": 344,
+        "page_label": "344",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "344",
+          "2"
+        ]
+      },
+      {
+        "page_index": 346,
+        "page_label": "346",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 4. 'verschlossen'. Contrast 'erschlossen' ('disclosed') and ...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "4"
+        ]
+      },
+      {
+        "page_index": 347,
+        "page_label": "347",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "f",
+          "2",
+          "4",
+          "1",
+          "3"
+        ]
+      },
+      {
+        "page_index": 349,
+        "page_label": "349",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 8 ' \u2022 \u2022 \u2022  die allem faktischen Seinkonnen des Daseins vorge...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "8"
+        ]
+      },
+      {
+        "page_index": 352,
+        "page_label": "352",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 'Das existenziell eigentliche Ganzseinkonnen- des Daseins ...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2"
+        ]
+      },
+      {
+        "page_index": 354,
+        "page_label": "354",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 355,
+        "page_label": "355",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "3",
+          "1",
+          "326",
+          "2"
+        ]
+      },
+      {
+        "page_index": 361,
+        "page_label": "361",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 364,
+        "page_label": "364",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "1"
+        ]
+      },
+      {
+        "page_index": 373,
+        "page_label": "373",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "1",
+          "26",
+          "10"
+        ]
+      },
+      {
+        "page_index": 374,
+        "page_label": "374",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 On our expressions 'having presence', 'making present', an...",
+          "Footnote line: 2 'Die Gewesenheit entspringt der Zukunft, so zwar, dass die...",
+          "Footnote line: 3 'Dies dergestalt als gewesend-gegenwiirtigende Zukunft ein...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "74",
+          "2",
+          "1",
+          "3"
+        ]
+      },
+      {
+        "page_index": 375,
+        "page_label": "375",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "3",
+          "375",
+          "1",
+          "h"
+        ]
+      },
+      {
+        "page_index": 378,
+        "page_label": "378",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "3",
+          "33",
+          "0",
+          "6"
+        ]
+      },
+      {
+        "page_index": 379,
+        "page_label": "379",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 3 This word ('wie') is italicized only in the later editions...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "1",
+          "3"
+        ]
+      },
+      {
+        "page_index": 381,
+        "page_label": "381",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 386,
+        "page_label": "386",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 2 'Das uneigentliche Verstehen \u2022...",
+          "Footnote line: 4 '  \u2022 \u2022 \u2022  des Gtwiirtigens.' While the verb 'await' has ma...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "2",
+          "4"
+        ]
+      },
+      {
+        "page_index": 387,
+        "page_label": "387",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: a 'Er meint die entschlossene, aber in der Erschlossenheit g...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "38",
+          "2",
+          "a"
+        ]
+      },
+      {
+        "page_index": 390,
+        "page_label": "390",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: a 'Dieses stellt die Gewesenheit nicht erst her, sondem die ...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "0",
+          "a"
+        ]
+      },
+      {
+        "page_index": 392,
+        "page_label": "392",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 3 'Das selbstvergessene Gegenwartigen eines Gewirrs von schw...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "3",
+          "42",
+          "v",
+          "i"
+        ]
+      },
+      {
+        "page_index": 395,
+        "page_label": "395",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 396,
+        "page_label": "396",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "3",
+          "46"
+        ]
+      },
+      {
+        "page_index": 405,
+        "page_label": "405",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "A",
+          "b"
+        ]
+      },
+      {
+        "page_index": 406,
+        "page_label": "406",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 407,
+        "page_label": "407",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "6",
+          "a"
+        ]
+      },
+      {
+        "page_index": 408,
+        "page_label": "408",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 1 The italics in this and the following sentence appear only...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "1"
+        ]
+      },
+      {
+        "page_index": 409,
+        "page_label": "409",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "8"
+        ]
+      },
+      {
+        "page_index": 411,
+        "page_label": "411",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 412,
+        "page_label": "412",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 1 'Auch der Satz : der Hammer ist schwer, kann einer besorge...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "1"
+        ]
+      },
+      {
+        "page_index": 414,
+        "page_label": "414",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "a",
+          "3",
+          "6",
+          "1"
+        ]
+      },
+      {
+        "page_index": 426,
+        "page_label": "426",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "h"
+        ]
+      },
+      {
+        "page_index": 435,
+        "page_label": "435",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "8"
+        ]
+      },
+      {
+        "page_index": 437,
+        "page_label": "437",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "s"
+        ]
+      },
+      {
+        "page_index": 442,
+        "page_label": "442",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "44",
+          "2",
+          "5"
+        ]
+      },
+      {
+        "page_index": 447,
+        "page_label": "447",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "447"
+        ]
+      },
+      {
+        "page_index": 452,
+        "page_label": "452",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 2 Presumably the eccentricity of the planetary motions as de...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "452",
+          "5",
+          "I",
+          "2"
+        ]
+      },
+      {
+        "page_index": 458,
+        "page_label": "458",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "4",
+          "06",
+          "2"
+        ]
+      },
+      {
+        "page_index": 459,
+        "page_label": "459",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "4",
+          "0",
+          "7",
+          "\u011a"
+        ]
+      },
+      {
+        "page_index": 460,
+        "page_label": "460",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 'Das sich auslegende Gegenwiirtigen, das heisst das im \"je...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "4",
+          "08",
+          "1"
+        ]
+      },
+      {
+        "page_index": 461,
+        "page_label": "461",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 8 ' \u2022 \u2022 \u2022  jetzt, da--die Tiir schlagt; jetzt, da-mir das Bu...",
+          "Footnote line: 4. '  \"Heute, wo . .  .'', \"Spaterhin, wann . .  .'' und \"Fr...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "2",
+          "0",
+          "8",
+          "4"
+        ]
+      },
+      {
+        "page_index": 463,
+        "page_label": "463",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "6",
+          "a",
+          "S"
+        ]
+      },
+      {
+        "page_index": 464,
+        "page_label": "464",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "6",
+          "2"
+        ]
+      },
+      {
+        "page_index": 465,
+        "page_label": "465",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "6"
+        ]
+      },
+      {
+        "page_index": 467,
+        "page_label": "467",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "6",
+          "1"
+        ]
+      },
+      {
+        "page_index": 474,
+        "page_label": "474",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: 1 'Und diese zeigen sich \"in jedem Jetzt\" als \"sogleich-nich...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "r",
+          "1"
+        ]
+      },
+      {
+        "page_index": 475,
+        "page_label": "475",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "6",
+          "a"
+        ]
+      },
+      {
+        "page_index": 476,
+        "page_label": "476",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 1 ' \u2022 \u2022 \u2022  Stetigen ....",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "1"
+        ]
+      },
+      {
+        "page_index": 477,
+        "page_label": "477",
+        "feature_type": "footnote",
+        "confidence": 0.8999999999999999,
+        "evidence": [
+          "Footnote line: z 'Die nivellierte Jetztfolge bleibt vollig unkenntlich bezi...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "6",
+          "477",
+          "i",
+          "a",
+          "4",
+          "2",
+          "5",
+          "z"
+        ]
+      },
+      {
+        "page_index": 479,
+        "page_label": "479",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "6",
+          "7",
+          "427"
+        ]
+      },
+      {
+        "page_index": 481,
+        "page_label": "481",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "6",
+          "429",
+          "o"
+        ]
+      },
+      {
+        "page_index": 482,
+        "page_label": "482",
+        "feature_type": "footnote",
+        "confidence": 0.7,
+        "evidence": [
+          "Footnote line: 1 'Der Punkt \"spreizt sich auf\" gegenuber allen anderen Punk...",
+          "Has small text in bottom region",
+          "Has footnote markers at line starts"
+        ],
+        "markers_found": [
+          "1"
+        ]
+      },
+      {
+        "page_index": 484,
+        "page_label": "484",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "6",
+          "l"
+        ]
+      },
+      {
+        "page_index": 508,
+        "page_label": "508",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "08",
+          "63"
+        ]
+      },
+      {
+        "page_index": 521,
+        "page_label": "521",
+        "feature_type": "footnote",
+        "confidence": 0.3,
+        "evidence": [
+          "Has small text in bottom region"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 578,
+        "page_label": "578",
+        "feature_type": "footnote",
+        "confidence": 0.5,
+        "evidence": [
+          "Has small text in bottom region",
+          "Has superscript markers in body"
+        ],
+        "markers_found": [
+          "357",
+          "336",
+          "a",
+          "73",
+          "210",
+          "342",
+          "333",
+          "364",
+          "256",
+          "228"
+        ]
+      }
+    ],
+    "citation_candidates": [
+      {
+        "page_index": 17,
+        "page_label": "17",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 15']"
+        ],
+        "markers_found": [
+          "p. 15"
+        ]
+      },
+      {
+        "page_index": 26,
+        "page_label": "26",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 27', 'p. 48']"
+        ],
+        "markers_found": [
+          "p. 27",
+          "p. 48"
+        ]
+      },
+      {
+        "page_index": 38,
+        "page_label": "38",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 25']"
+        ],
+        "markers_found": [
+          "p. 25"
+        ]
+      },
+      {
+        "page_index": 41,
+        "page_label": "41",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 3']"
+        ],
+        "markers_found": [
+          "p. 3"
+        ]
+      },
+      {
+        "page_index": 48,
+        "page_label": "48",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 47']"
+        ],
+        "markers_found": [
+          "p. 47"
+        ]
+      },
+      {
+        "page_index": 50,
+        "page_label": "50",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 6', 'pp. 202-3']"
+        ],
+        "markers_found": [
+          "p. 6",
+          "pp. 202-3"
+        ]
+      },
+      {
+        "page_index": 52,
+        "page_label": "52",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 51']"
+        ],
+        "markers_found": [
+          "p. 51"
+        ]
+      },
+      {
+        "page_index": 54,
+        "page_label": "54",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 70', 'p. 97']"
+        ],
+        "markers_found": [
+          "p. 70",
+          "p. 97"
+        ]
+      },
+      {
+        "page_index": 55,
+        "page_label": "55",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 47', 'p. 34']"
+        ],
+        "markers_found": [
+          "p. 47",
+          "p. 34"
+        ]
+      },
+      {
+        "page_index": 57,
+        "page_label": "57",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 86']"
+        ],
+        "markers_found": [
+          "p. 86"
+        ]
+      },
+      {
+        "page_index": 58,
+        "page_label": "58",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p.1']"
+        ],
+        "markers_found": [
+          "p.1"
+        ]
+      },
+      {
+        "page_index": 62,
+        "page_label": "62",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['pp.7']"
+        ],
+        "markers_found": [
+          "pp.7"
+        ]
+      },
+      {
+        "page_index": 67,
+        "page_label": "67",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 28']"
+        ],
+        "markers_found": [
+          "p. 28"
+        ]
+      },
+      {
+        "page_index": 80,
+        "page_label": "80",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['pp. 247']"
+        ],
+        "markers_found": [
+          "pp. 247"
+        ]
+      },
+      {
+        "page_index": 82,
+        "page_label": "82",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 27']"
+        ],
+        "markers_found": [
+          "p. 27"
+        ]
+      },
+      {
+        "page_index": 86,
+        "page_label": "86",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 261', 'p. 297']"
+        ],
+        "markers_found": [
+          "p. 261",
+          "p. 297"
+        ]
+      },
+      {
+        "page_index": 95,
+        "page_label": "95",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 83']"
+        ],
+        "markers_found": [
+          "p. 83"
+        ]
+      },
+      {
+        "page_index": 104,
+        "page_label": "104",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 97']"
+        ],
+        "markers_found": [
+          "p. 97"
+        ]
+      },
+      {
+        "page_index": 111,
+        "page_label": "111",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 1']"
+        ],
+        "markers_found": [
+          "p. 1"
+        ]
+      },
+      {
+        "page_index": 116,
+        "page_label": "116",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 109']"
+        ],
+        "markers_found": [
+          "p. 109"
+        ]
+      },
+      {
+        "page_index": 133,
+        "page_label": "133",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 158']"
+        ],
+        "markers_found": [
+          "p. 158"
+        ]
+      },
+      {
+        "page_index": 134,
+        "page_label": "134",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 93']"
+        ],
+        "markers_found": [
+          "p. 93"
+        ]
+      },
+      {
+        "page_index": 136,
+        "page_label": "136",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 138']"
+        ],
+        "markers_found": [
+          "p. 138"
+        ]
+      },
+      {
+        "page_index": 139,
+        "page_label": "139",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 135']"
+        ],
+        "markers_found": [
+          "p. 135"
+        ]
+      },
+      {
+        "page_index": 158,
+        "page_label": "158",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 133']"
+        ],
+        "markers_found": [
+          "p. 133"
+        ]
+      },
+      {
+        "page_index": 161,
+        "page_label": "161",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 186']"
+        ],
+        "markers_found": [
+          "p. 186"
+        ]
+      },
+      {
+        "page_index": 166,
+        "page_label": "166",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 153']"
+        ],
+        "markers_found": [
+          "p. 153"
+        ]
+      },
+      {
+        "page_index": 171,
+        "page_label": "171",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 27']"
+        ],
+        "markers_found": [
+          "p. 27"
+        ]
+      },
+      {
+        "page_index": 172,
+        "page_label": "172",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 42']"
+        ],
+        "markers_found": [
+          "p. 42"
+        ]
+      },
+      {
+        "page_index": 180,
+        "page_label": "180",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 8', 'p. 93', 'p. 9']"
+        ],
+        "markers_found": [
+          "p. 8",
+          "p. 93",
+          "p. 9"
+        ]
+      },
+      {
+        "page_index": 188,
+        "page_label": "188",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 19']"
+        ],
+        "markers_found": [
+          "p. 19"
+        ]
+      },
+      {
+        "page_index": 203,
+        "page_label": "203",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 47']"
+        ],
+        "markers_found": [
+          "p. 47"
+        ]
+      },
+      {
+        "page_index": 211,
+        "page_label": "211",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 190']"
+        ],
+        "markers_found": [
+          "p. 190"
+        ]
+      },
+      {
+        "page_index": 219,
+        "page_label": "219",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 42', 'p. 172']"
+        ],
+        "markers_found": [
+          "p. 42",
+          "p. 172"
+        ]
+      },
+      {
+        "page_index": 243,
+        "page_label": "243",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 124']"
+        ],
+        "markers_found": [
+          "p. 124"
+        ]
+      },
+      {
+        "page_index": 255,
+        "page_label": "255",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 22']"
+        ],
+        "markers_found": [
+          "p. 22"
+        ]
+      },
+      {
+        "page_index": 286,
+        "page_label": "286",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 325']"
+        ],
+        "markers_found": [
+          "p. 325"
+        ]
+      },
+      {
+        "page_index": 288,
+        "page_label": "288",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. \\n1']"
+        ],
+        "markers_found": [
+          "p. \n1"
+        ]
+      },
+      {
+        "page_index": 327,
+        "page_label": "327",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 334']"
+        ],
+        "markers_found": [
+          "p. 334"
+        ]
+      },
+      {
+        "page_index": 334,
+        "page_label": "334",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 327']"
+        ],
+        "markers_found": [
+          "p. 327"
+        ]
+      },
+      {
+        "page_index": 350,
+        "page_label": "350",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 306']"
+        ],
+        "markers_found": [
+          "p. 306"
+        ]
+      },
+      {
+        "page_index": 362,
+        "page_label": "362",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 105']"
+        ],
+        "markers_found": [
+          "p. 105"
+        ]
+      },
+      {
+        "page_index": 374,
+        "page_label": "374",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 47', 'p. 48']"
+        ],
+        "markers_found": [
+          "p. 47",
+          "p. 48"
+        ]
+      },
+      {
+        "page_index": 381,
+        "page_label": "381",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 369']"
+        ],
+        "markers_found": [
+          "p. 369"
+        ]
+      },
+      {
+        "page_index": 387,
+        "page_label": "387",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 376', 'p. 47', 'p. 48']"
+        ],
+        "markers_found": [
+          "p. 376",
+          "p. 47",
+          "p. 48"
+        ]
+      },
+      {
+        "page_index": 423,
+        "page_label": "423",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 4']"
+        ],
+        "markers_found": [
+          "p. 4"
+        ]
+      },
+      {
+        "page_index": 427,
+        "page_label": "427",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 41', 'p. 31']"
+        ],
+        "markers_found": [
+          "p. 41",
+          "p. 31"
+        ]
+      },
+      {
+        "page_index": 443,
+        "page_label": "443",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 475']"
+        ],
+        "markers_found": [
+          "p. 475"
+        ]
+      },
+      {
+        "page_index": 451,
+        "page_label": "451",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['pp. 179', 'p. 177', 'p. 192', 'p. 1']"
+        ],
+        "markers_found": [
+          "pp. 179",
+          "p. 177",
+          "p. 192",
+          "p. 1"
+        ]
+      },
+      {
+        "page_index": 452,
+        "page_label": "452",
+        "feature_type": "citation",
+        "confidence": 0.4,
+        "evidence": [
+          "author_year: ['(Heidelberg, 1839)']",
+          "page_reference: ['p. 6', 'p. 83', 'pp. 68', 'p. 39', 'p. 61']"
+        ],
+        "markers_found": [
+          "(Heidelberg, 1839)",
+          "p. 6",
+          "p. 83",
+          "pp. 68",
+          "p. 39",
+          "p. 61"
+        ]
+      },
+      {
+        "page_index": 453,
+        "page_label": "453",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 26', 'p. 6', 'p. 71', 'p. 133', 'p. 109']"
+        ],
+        "markers_found": [
+          "p. 26",
+          "p. 6",
+          "p. 71",
+          "p. 133",
+          "p. 109"
+        ]
+      },
+      {
+        "page_index": 454,
+        "page_label": "454",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['pp. 70', 'p. 251', 'p. 73', 'p. 250', 'pp. 42']"
+        ],
+        "markers_found": [
+          "pp. 70",
+          "p. 251",
+          "p. 73",
+          "p. 250",
+          "pp. 42"
+        ]
+      },
+      {
+        "page_index": 455,
+        "page_label": "455",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['pp. 249']"
+        ],
+        "markers_found": [
+          "pp. 249"
+        ]
+      },
+      {
+        "page_index": 467,
+        "page_label": "467",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 109']"
+        ],
+        "markers_found": [
+          "p. 109"
+        ]
+      },
+      {
+        "page_index": 486,
+        "page_label": "486",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 480']"
+        ],
+        "markers_found": [
+          "p. 480"
+        ]
+      },
+      {
+        "page_index": 489,
+        "page_label": "489",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 1', 'pp. 180', 'p. 3', 'p. 169']"
+        ],
+        "markers_found": [
+          "p. 1",
+          "pp. 180",
+          "p. 3",
+          "p. 169"
+        ]
+      },
+      {
+        "page_index": 490,
+        "page_label": "490",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 246', 'p. 25', 'pp. 242', 'pp. 16', 'p. 247']"
+        ],
+        "markers_found": [
+          "p. 246",
+          "p. 25",
+          "pp. 242",
+          "pp. 16",
+          "p. 247"
+        ]
+      },
+      {
+        "page_index": 491,
+        "page_label": "491",
+        "feature_type": "citation",
+        "confidence": 0.4,
+        "evidence": [
+          "page_reference: ['p. 25', 'p. 42', 'pp. 244', 'p. 24', 'p. 32']",
+          "cf_reference: ['Cf. 0']"
+        ],
+        "markers_found": [
+          "p. 25",
+          "p. 42",
+          "pp. 244",
+          "p. 24",
+          "p. 32",
+          "Cf. 0"
+        ]
+      },
+      {
+        "page_index": 492,
+        "page_label": "492",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['pp. 23', 'pp. 1', 'p. 185', 'p. 5', 'pp. 41']"
+        ],
+        "markers_found": [
+          "pp. 23",
+          "pp. 1",
+          "p. 185",
+          "p. 5",
+          "pp. 41"
+        ]
+      },
+      {
+        "page_index": 493,
+        "page_label": "493",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['pp. 233', 'p. 83', 'p. 82', 'p. 350', 'p. 455']"
+        ],
+        "markers_found": [
+          "pp. 233",
+          "p. 83",
+          "p. 82",
+          "p. 350",
+          "p. 455"
+        ]
+      },
+      {
+        "page_index": 494,
+        "page_label": "494",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['pp. 128', 'pp. 414', 'p. 230', 'p. 46']"
+        ],
+        "markers_found": [
+          "pp. 128",
+          "pp. 414",
+          "p. 230",
+          "p. 46"
+        ]
+      },
+      {
+        "page_index": 495,
+        "page_label": "495",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 3', 'pp. 17', 'pp. 99', 'pp. 229', 'pp. 177']"
+        ],
+        "markers_found": [
+          "p. 3",
+          "pp. 17",
+          "pp. 99",
+          "pp. 229",
+          "pp. 177"
+        ]
+      },
+      {
+        "page_index": 496,
+        "page_label": "496",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['pp. 348', 'p. 354', 'p. 1', 'p. 404', 'page 335']"
+        ],
+        "markers_found": [
+          "pp. 348",
+          "p. 354",
+          "p. 1",
+          "p. 404",
+          "page 335"
+        ]
+      },
+      {
+        "page_index": 497,
+        "page_label": "497",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['pp. 121', 'pp. 419-432', 'pp. 108', 'pp. 31', 'pp. 384']"
+        ],
+        "markers_found": [
+          "pp. 121",
+          "pp. 419-432",
+          "pp. 108",
+          "pp. 31",
+          "pp. 384"
+        ]
+      },
+      {
+        "page_index": 498,
+        "page_label": "498",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['pp. 167', 'pp. 588', 'pp. 357', 'p. 185', 'pp. 36-41']"
+        ],
+        "markers_found": [
+          "pp. 167",
+          "pp. 588",
+          "pp. 357",
+          "p. 185",
+          "pp. 36-41"
+        ]
+      },
+      {
+        "page_index": 499,
+        "page_label": "499",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['pp. 155-232', 'pp. 173']"
+        ],
+        "markers_found": [
+          "pp. 155-232",
+          "pp. 173"
+        ]
+      },
+      {
+        "page_index": 500,
+        "page_label": "500",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 195', 'pp. 202', 'p. 186', 'pp. 66']"
+        ],
+        "markers_found": [
+          "p. 195",
+          "pp. 202",
+          "p. 186",
+          "pp. 66"
+        ]
+      },
+      {
+        "page_index": 501,
+        "page_label": "501",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 69', 'p. 6', 'pp. 1-36', 'p. 134', 'p. 130']"
+        ],
+        "markers_found": [
+          "p. 69",
+          "p. 6",
+          "pp. 1-36",
+          "p. 134",
+          "p. 130"
+        ]
+      },
+      {
+        "page_index": 528,
+        "page_label": "528",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 126-130']"
+        ],
+        "markers_found": [
+          "p. 126-130"
+        ]
+      },
+      {
+        "page_index": 582,
+        "page_label": "582",
+        "feature_type": "citation",
+        "confidence": 0.2,
+        "evidence": [
+          "page_reference: ['p. 69']"
+        ],
+        "markers_found": [
+          "p. 69"
+        ]
+      }
+    ],
+    "table_candidates": [
+      {
+        "page_index": 112,
+        "page_label": "112",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 114,
+        "page_label": "114",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 167,
+        "page_label": "167",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 3 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 169,
+        "page_label": "169",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols",
+          "Table 2: 2 rows x 3 cols",
+          "Table 3: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 173,
+        "page_label": "173",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 174,
+        "page_label": "174",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 3 rows x 4 cols",
+          "Table 2: 2 rows x 3 cols",
+          "Table 3: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 186,
+        "page_label": "186",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 2 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 188,
+        "page_label": "188",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 190,
+        "page_label": "190",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 3 rows x 2 cols",
+          "Table 2: 4 rows x 2 cols",
+          "Table 3: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 191,
+        "page_label": "191",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 2 cols",
+          "Table 2: 2 rows x 3 cols",
+          "Table 3: 3 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 194,
+        "page_label": "194",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 225,
+        "page_label": "225",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 3 rows x 3 cols",
+          "Table 2: 5 rows x 4 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 226,
+        "page_label": "226",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 2 cols",
+          "Table 2: 2 rows x 3 cols",
+          "Table 3: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 227,
+        "page_label": "227",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 5 rows x 2 cols",
+          "Table 2: 2 rows x 3 cols",
+          "Table 3: 2 rows x 2 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 228,
+        "page_label": "228",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 4 rows x 6 cols",
+          "Table 2: 5 rows x 6 cols",
+          "Table 3: 3 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 229,
+        "page_label": "229",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 3 rows x 3 cols",
+          "Table 2: 3 rows x 3 cols",
+          "Table 3: 4 rows x 5 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 230,
+        "page_label": "230",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 231,
+        "page_label": "231",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 2 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 232,
+        "page_label": "232",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 2 cols",
+          "Table 2: 2 rows x 4 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 233,
+        "page_label": "233",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 5 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 234,
+        "page_label": "234",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 235,
+        "page_label": "235",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols",
+          "Table 2: 2 rows x 4 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 238,
+        "page_label": "238",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 241,
+        "page_label": "241",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 2 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 259,
+        "page_label": "259",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 5 cols",
+          "Table 2: 2 rows x 6 cols",
+          "Table 3: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 260,
+        "page_label": "260",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 2 cols",
+          "Table 2: 2 rows x 2 cols",
+          "Table 3: 1 rows x 2 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 261,
+        "page_label": "261",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols",
+          "Table 2: 2 rows x 3 cols",
+          "Table 3: 3 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 262,
+        "page_label": "262",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols",
+          "Table 2: 3 rows x 2 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 263,
+        "page_label": "263",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols",
+          "Table 2: 2 rows x 3 cols",
+          "Table 3: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 267,
+        "page_label": "267",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 3 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 275,
+        "page_label": "275",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols",
+          "Table 2: 2 rows x 2 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 276,
+        "page_label": "276",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols",
+          "Table 2: 1 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 277,
+        "page_label": "277",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 2 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 278,
+        "page_label": "278",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 279,
+        "page_label": "279",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 3 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 285,
+        "page_label": "285",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 345,
+        "page_label": "345",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 3 rows x 2 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 351,
+        "page_label": "351",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 3 rows x 2 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 356,
+        "page_label": "356",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 3 rows x 4 cols",
+          "Table 2: 3 rows x 5 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 365,
+        "page_label": "365",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 3 rows x 3 cols",
+          "Table 2: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 371,
+        "page_label": "371",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 3 rows x 4 cols",
+          "Table 2: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 376,
+        "page_label": "376",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 1 rows x 15 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 377,
+        "page_label": "377",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 4 rows x 6 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 378,
+        "page_label": "378",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 2 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 419,
+        "page_label": "419",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 434,
+        "page_label": "434",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 2 cols",
+          "Table 2: 2 rows x 2 cols"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 435,
+        "page_label": "435",
+        "feature_type": "table",
+        "confidence": 0.8,
+        "evidence": [
+          "Table 1: 2 rows x 3 cols"
+        ],
+        "markers_found": []
+      }
+    ],
+    "negative_candidates": [
+      {
+        "page_index": 3,
+        "page_label": "3",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 7,
+        "page_label": "7",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 8,
+        "page_label": "8",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 11,
+        "page_label": "11",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 12,
+        "page_label": "12",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 13,
+        "page_label": "13",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 14,
+        "page_label": "14",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 16,
+        "page_label": "16",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 27,
+        "page_label": "27",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 29,
+        "page_label": "29",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 35,
+        "page_label": "35",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 42,
+        "page_label": "42",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 45,
+        "page_label": "45",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 49,
+        "page_label": "49",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 61,
+        "page_label": "61",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 63,
+        "page_label": "63",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 65,
+        "page_label": "65",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 77,
+        "page_label": "77",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 78,
+        "page_label": "78",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 90,
+        "page_label": "90",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 91,
+        "page_label": "91",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 92,
+        "page_label": "92",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 96,
+        "page_label": "96",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 97,
+        "page_label": "97",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 100,
+        "page_label": "100",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 102,
+        "page_label": "102",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 110,
+        "page_label": "110",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 112,
+        "page_label": "112",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 122,
+        "page_label": "122",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 125,
+        "page_label": "125",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 128,
+        "page_label": "128",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 132,
+        "page_label": "132",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 135,
+        "page_label": "135",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 138,
+        "page_label": "138",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 140,
+        "page_label": "140",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 148,
+        "page_label": "148",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 150,
+        "page_label": "150",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 151,
+        "page_label": "151",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 153,
+        "page_label": "153",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 154,
+        "page_label": "154",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 156,
+        "page_label": "156",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 159,
+        "page_label": "159",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 168,
+        "page_label": "168",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 169,
+        "page_label": "169",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 170,
+        "page_label": "170",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 178,
+        "page_label": "178",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 185,
+        "page_label": "185",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 186,
+        "page_label": "186",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 191,
+        "page_label": "191",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 198,
+        "page_label": "198",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 201,
+        "page_label": "201",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 207,
+        "page_label": "207",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 208,
+        "page_label": "208",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 209,
+        "page_label": "209",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 216,
+        "page_label": "216",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 221,
+        "page_label": "221",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 224,
+        "page_label": "224",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 228,
+        "page_label": "228",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 230,
+        "page_label": "230",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 236,
+        "page_label": "236",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 254,
+        "page_label": "254",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 259,
+        "page_label": "259",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 265,
+        "page_label": "265",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 267,
+        "page_label": "267",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 269,
+        "page_label": "269",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 270,
+        "page_label": "270",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 272,
+        "page_label": "272",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 273,
+        "page_label": "273",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 274,
+        "page_label": "274",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 276,
+        "page_label": "276",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 281,
+        "page_label": "281",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 285,
+        "page_label": "285",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 304,
+        "page_label": "304",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 311,
+        "page_label": "311",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 319,
+        "page_label": "319",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 324,
+        "page_label": "324",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 326,
+        "page_label": "326",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 336,
+        "page_label": "336",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 337,
+        "page_label": "337",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 341,
+        "page_label": "341",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 342,
+        "page_label": "342",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 343,
+        "page_label": "343",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 353,
+        "page_label": "353",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 356,
+        "page_label": "356",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 376,
+        "page_label": "376",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 382,
+        "page_label": "382",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 383,
+        "page_label": "383",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 384,
+        "page_label": "384",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 389,
+        "page_label": "389",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 394,
+        "page_label": "394",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 400,
+        "page_label": "400",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 402,
+        "page_label": "402",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 425,
+        "page_label": "425",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 428,
+        "page_label": "428",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 438,
+        "page_label": "438",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 446,
+        "page_label": "446",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 449,
+        "page_label": "449",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 456,
+        "page_label": "456",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 469,
+        "page_label": "469",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 488,
+        "page_label": "488",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 504,
+        "page_label": "504",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 505,
+        "page_label": "505",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 506,
+        "page_label": "506",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 510,
+        "page_label": "510",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 511,
+        "page_label": "511",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 512,
+        "page_label": "512",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 513,
+        "page_label": "513",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 514,
+        "page_label": "514",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 516,
+        "page_label": "516",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 518,
+        "page_label": "518",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 522,
+        "page_label": "522",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 538,
+        "page_label": "538",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 546,
+        "page_label": "546",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 553,
+        "page_label": "553",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 559,
+        "page_label": "559",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 563,
+        "page_label": "563",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 564,
+        "page_label": "564",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 565,
+        "page_label": "565",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 566,
+        "page_label": "566",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 577,
+        "page_label": "577",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 579,
+        "page_label": "579",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      },
+      {
+        "page_index": 581,
+        "page_label": "581",
+        "feature_type": "negative",
+        "confidence": 0.7,
+        "evidence": [
+          "Body text present",
+          "No footnote region",
+          "No superscripts",
+          "No citation patterns"
+        ],
+        "markers_found": []
+      }
+    ]
+  }
+]

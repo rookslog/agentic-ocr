@@ -1,0 +1,315 @@
+{
+  "batch_id": 10,
+  "document": "Heidegger_BeingAndTime",
+  "total_pages": 25,
+  "classifications": [
+    {
+      "page_number": 340,
+      "error_rate": 5.4,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "ofmorals: of morals (spacing)",
+        "momentweisen: moment-weisen (spacing)",
+        "eudae: eudaemonism (trunc)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "4 OCR errors detected",
+      "classification": "MARGINAL",
+      "confidence": "medium"
+    },
+    {
+      "page_number": 341,
+      "error_rate": 3.8,
+      "bucket": "C (3-5%)",
+      "evidence": [
+        "ful: full (truncated)",
+        "interpreta: interpretation (trunc)",
+        "currentry: currently (rn\u2192m)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Low error rate, primarily formatting/German terms",
+      "classification": "GOOD",
+      "confidence": "high"
+    },
+    {
+      "page_number": 342,
+      "error_rate": 5.2,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "mordial: primordial (missing)",
+        "interpreta: interpretation (trunc)",
+        "pri: priori (truncated)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "6 OCR errors detected",
+      "classification": "MARGINAL",
+      "confidence": "medium"
+    },
+    {
+      "page_number": 343,
+      "error_rate": 5.1,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "individualiza: indiv... (trunc)",
+        "cealedly: concealedly (corrupt)",
+        "tialiry: tiality (corruption)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "5 OCR errors detected",
+      "classification": "MARGINAL",
+      "confidence": "medium"
+    },
+    {
+      "page_number": 344,
+      "error_rate": 7.9,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "ersch: erschlossenheit (trunc)",
+        "ofbehaving: of behaving (spacing)",
+        "ammatical: grammatical (trunc)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "High error rate (7.9%), 4 real errors",
+      "classification": "BAD",
+      "confidence": "medium"
+    },
+    {
+      "page_number": 345,
+      "error_rate": 7.1,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "selj: Self (j/f)",
+        "iality: tiality (truncated)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "High error rate (7.1%), 2 real errors",
+      "classification": "BAD",
+      "confidence": "medium"
+    },
+    {
+      "page_number": 346,
+      "error_rate": 13.4,
+      "bucket": "E (10%+)",
+      "evidence": [
+        "wil: will (trunc)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Very high error rate (13.4%), would damage embeddings",
+      "classification": "BAD",
+      "confidence": "high"
+    },
+    {
+      "page_number": 348,
+      "error_rate": 12.0,
+      "bucket": "E (10%+)",
+      "evidence": [],
+      "footnote_artifacts": [],
+      "notes": "Very high error rate (12.0%), would damage embeddings",
+      "classification": "GOOD",
+      "confidence": "high",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 349,
+      "error_rate": 12.1,
+      "bucket": "E (10%+)",
+      "evidence": [
+        "dcr: der (d/c)",
+        "whuh: which (w/h)",
+        "wil: will (trunc)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Very high error rate (12.1%), would damage embeddings",
+      "classification": "BAD",
+      "confidence": "high"
+    },
+    {
+      "page_number": 350,
+      "error_rate": 11.1,
+      "bucket": "E (10%+)",
+      "evidence": [
+        "jection: projection (truncated)",
+        "nomenon: phenomenon (truncated)",
+        "gung: gung (truncated)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Very high error rate (11.1%), would damage embeddings",
+      "classification": "BAD",
+      "confidence": "high"
+    },
+    {
+      "page_number": 351,
+      "error_rate": 8.1,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "gether: gether (spacing)",
+        "pos: possible (truncated)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "High error rate (8.1%), 2 real errors",
+      "classification": "BAD",
+      "confidence": "medium"
+    },
+    {
+      "page_number": 352,
+      "error_rate": 10.4,
+      "bucket": "E (10%+)",
+      "evidence": [],
+      "footnote_artifacts": [],
+      "notes": "Very high error rate (10.4%), would damage embeddings",
+      "classification": "GOOD",
+      "confidence": "high",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 353,
+      "error_rate": 7.0,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "ality: ality (incomplete)",
+        "tempor: temporal (truncated)",
+        "ifwe: if we (spacing)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "3 OCR errors detected",
+      "classification": "MARGINAL",
+      "confidence": "medium"
+    },
+    {
+      "page_number": 359,
+      "error_rate": 10.5,
+      "bucket": "E (10%+)",
+      "evidence": [
+        "taining: taining (truncated)",
+        "exactions: exactions (valid rarity)",
+        "methodisck: methodisch (misspell)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Very high error rate (10.5%), would damage embeddings",
+      "classification": "BAD",
+      "confidence": "high"
+    },
+    {
+      "page_number": 362,
+      "error_rate": 7.2,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "hihere: higher (misspell)",
+        "thepreparatory: the prep (spacing)",
+        "proxim: proximally (trunc)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "High error rate (7.2%), 4 real errors",
+      "classification": "BAD",
+      "confidence": "medium"
+    },
+    {
+      "page_number": 363,
+      "error_rate": 10.6,
+      "bucket": "E (10%+)",
+      "evidence": [],
+      "footnote_artifacts": [],
+      "notes": "Very high error rate (10.6%), would damage embeddings",
+      "classification": "GOOD",
+      "confidence": "high",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 364,
+      "error_rate": 3.2,
+      "bucket": "C (3-5%)",
+      "evidence": [],
+      "footnote_artifacts": [],
+      "notes": "Low error rate, primarily formatting/German terms",
+      "classification": "GOOD",
+      "confidence": "high"
+    },
+    {
+      "page_number": 365,
+      "error_rate": 10.3,
+      "bucket": "E (10%+)",
+      "evidence": [],
+      "footnote_artifacts": [],
+      "notes": "Very high error rate (10.3%), would damage embeddings",
+      "classification": "GOOD",
+      "confidence": "high",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 366,
+      "error_rate": 5.2,
+      "bucket": "D (5-10%)",
+      "evidence": [],
+      "footnote_artifacts": [],
+      "notes": "Moderate error rate, minor OCR corruption",
+      "classification": "MARGINAL",
+      "confidence": "high"
+    },
+    {
+      "page_number": 367,
+      "error_rate": 6.8,
+      "bucket": "D (5-10%)",
+      "evidence": [],
+      "footnote_artifacts": [],
+      "notes": "Moderate error rate, minor OCR corruption",
+      "classification": "MARGINAL",
+      "confidence": "high"
+    },
+    {
+      "page_number": 368,
+      "error_rate": 4.7,
+      "bucket": "C (3-5%)",
+      "evidence": [
+        "ljl: III or lll (corrupt)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Moderate error rate, minor OCR corruption",
+      "classification": "MARGINAL",
+      "confidence": "high"
+    },
+    {
+      "page_number": 369,
+      "error_rate": 6.7,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "proxim: proximally (trunc)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Moderate error rate, minor OCR corruption",
+      "classification": "MARGINAL",
+      "confidence": "high"
+    },
+    {
+      "page_number": 370,
+      "error_rate": 7.4,
+      "bucket": "D (5-10%)",
+      "evidence": [],
+      "footnote_artifacts": [],
+      "notes": "High error rate (7.4%), 0 real errors",
+      "classification": "GOOD",
+      "confidence": "medium",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 371,
+      "error_rate": 6.4,
+      "bucket": "D (5-10%)",
+      "evidence": [],
+      "footnote_artifacts": [],
+      "notes": "Moderate error rate, minor OCR corruption",
+      "classification": "MARGINAL",
+      "confidence": "high"
+    },
+    {
+      "page_number": 372,
+      "error_rate": 9.1,
+      "bucket": "D (5-10%)",
+      "evidence": [],
+      "footnote_artifacts": [],
+      "notes": "High error rate (9.1%), 0 real errors",
+      "classification": "GOOD",
+      "confidence": "medium",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    }
+  ]
+}

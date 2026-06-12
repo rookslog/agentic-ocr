@@ -1,0 +1,322 @@
+{
+  "batch_id": 5,
+  "document": "Heidegger_BeingAndTime",
+  "classification_date": "2025-12-21",
+  "classifications": [
+    {
+      "page_number": 150,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "accordmgly: 'accordingly' with 'mg' substitution",
+        "expres: likely 'expres[sion]' with truncation",
+        "ofdasein: compound of 'of' + 'dasein' without proper spacing"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Multiple minor OCR errors but text remains understandable and semantically usable for RAG"
+    },
+    {
+      "page_number": 151,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "stmctwn: likely 'structure' with severe character substitution (m\u2192m, c\u2192c, t\u2192t, u\u2192u, r\u2192r, e\u2192e, s\u2192st, s\u2192w, n\u2192n) - pattern suggests font rendering issue",
+        "withofothers: 'with' + 'of' + 'Others' without spaces - word boundary issue",
+        "thinghood: valid word but appears in unknown list (actually correct)",
+        "intensivt: 'intensiv[e]' with 't' substitution for 'e'"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Mostly spacing and minor substitution errors; content remains intelligible"
+    },
+    {
+      "page_number": 152,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "TiTTI4: should be 'and Time 152' - corrupted page heading",
+        "arnvmg: 'arriving' with multiple character substitutions (rr\u2192rn, v\u2192v, m\u2192m, ng\u2192ng)",
+        "priori: correct Latin term but flagged as unknown (not an error)",
+        "gebung: valid German loanword 'giving' - not an error"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Primary issue is corrupted page header. Other errors are minor substitutions"
+    },
+    {
+      "page_number": 153,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "usc: likely 'use' with missing 'e'",
+        "menally: 'mentally' with 'en' for 'ent' substitution",
+        "ifthis: 'if' + 'this' without space",
+        "ence: truncation, likely '[ence]' from word ending"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Spacing and minor truncation issues; semantic meaning preserved"
+    },
+    {
+      "page_number": 155,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "concernf[^11]: 'concernful' with superscript '11' merged (footnote artifact)",
+        "bende: likely 'being' with character substitution",
+        "mithqften: 'mith-[with]' - partial OCR of compound term"
+      ],
+      "footnote_artifacts": [
+        "concernf[^11]: appears to be 'concernful' merged with superscript footnote marker - GOOD artifact, not error"
+      ],
+      "notes": "Contains valid footnote artifact. Error rate 10.2% is elevated but mostly due to German terms and compound word handling"
+    },
+    {
+      "page_number": 156,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "mithqften: compound word parsing error",
+        "dcr: 'der' with 'c' substitution",
+        "sions: truncation of word ending (likely '[dis]sions')",
+        "menal: truncation (likely '[m]enal' or '[mo]m[e]nal')"
+      ],
+      "footnote_artifacts": [],
+      "notes": "10.2% error rate but primarily spacing and truncation issues; text remains semantically coherent"
+    },
+    {
+      "page_number": 158,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "encounterable: valid English word, not an error",
+        "circumspective: valid English word, not an error",
+        "sorge: valid German loanword 'care', not an error"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Unknown words list contains many valid terms. Actual OCR quality appears better than error_rate suggests"
+    },
+    {
+      "page_number": 159,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "contr: truncation, likely 'contrast' or 'contrasted'",
+        "followm[^u]: word boundary issue with potential footnote marker",
+        "entia: truncation from 'existentia[l]'"
+      ],
+      "footnote_artifacts": [
+        "followm[^u]: 'following' appears partially with merged mark"
+      ],
+      "notes": "Primarily truncation and spacing issues; content remains understandable"
+    },
+    {
+      "page_number": 160,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "zeitigen: valid word but context suggests translational issue",
+        "nachsicht: complex German compound causing encoding issues",
+        "entdeckens: German genitive form with encoding corruption",
+        "ergriffenen: German past participle with encoding issues",
+        "Multiple encoding artifacts throughout suggesting font rendering failure"
+      ],
+      "footnote_artifacts": [],
+      "notes": "10.9% error rate with systematic encoding problems (German diacritics and special characters). Would impact embedding quality due to semantic corruption in compound words and verb forms",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 161,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "weltlichkeit: 'worldhood' with encoding corruption",
+        "indasein: 'in-Dasein' spacing/compound error",
+        "nachsicht: encoding problem with German umlaut",
+        "significant character corruption throughout affecting German philosophical terminology"
+      ],
+      "footnote_artifacts": [],
+      "notes": "11.1% error rate is highest in batch. German terminology systematically corrupted by character encoding failures. Would significantly damage RAG embeddings for this philosophical text",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 162,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "abo[^12]: word boundary issue, likely 'about' with superscript merged",
+        "sichkennen: valid German compound, not an error",
+        "kenntnis: valid German word, not an error"
+      ],
+      "footnote_artifacts": [
+        "abo[^12]: 'about' appears with superscript marker merged - potential footnote artifact"
+      ],
+      "notes": "9.1% error rate but contains false positives in unknown_words. Actual OCR issues are minor spacing problems"
+    },
+    {
+      "page_number": 163,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "verhalt: encoding corruption of German 'Verh\u00e4ltnis' (relationship)",
+        "defizienten: 'defizient[en]' with systematic character encoding issues",
+        "entwurf: valid German word but context corruption suggests font issues",
+        "seinsverhaltnis: 'Seinsverh\u00e4ltnis' with encoding corruption - critical philosophical term damaged",
+        "13.1% error rate with heavy German character corruption"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Highest error rate (13.1%) in batch. German terminology systematically corrupted. Core philosophical concepts would be misrepresented in embeddings",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 164,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "rence: truncation (likely '[diffe]rence')",
+        "rechtes: valid German word 'right', not an error",
+        "zahlt: valid German word 'counts', not an error",
+        "numer: truncation of 'numerals'"
+      ],
+      "footnote_artifacts": [],
+      "notes": "6.6% error rate with mostly minor truncations. Unknown words list contains false positives"
+    },
+    {
+      "page_number": 165,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "abstandigkeit: valid German philosophical term 'distantiality', not an error",
+        "unascertainability: valid English word, not an error",
+        "botmdssigkeit: valid term 'Boundedness' with minor encoding, intelligible",
+        "3.6% error rate is lowest in batch"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Minimal errors. Unknown words list contains legitimate philosophical terminology. Text is clean and semantically intact"
+    },
+    {
+      "page_number": 166,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "sachen: valid German word 'things/matters', not an error",
+        "stiindig: valid German word 'constant', not an error",
+        "distinct: valid word but appears in error list (false positive)",
+        "tive: truncation (likely '[posi]tive' or '[nega]tive')"
+      ],
+      "footnote_artifacts": [],
+      "notes": "7.5% error rate with false positives. Primary issue is truncation of adjective endings"
+    },
+    {
+      "page_number": 168,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "artikuliert: valid German word 'articulates', not an error",
+        "bedeutsamkeit: valid German word 'significance', not an error",
+        "ergriffenen: valid German past participle, not an error",
+        "massigen: valid German word 'kind of', not an error"
+      ],
+      "footnote_artifacts": [],
+      "notes": "9.0% error rate but most 'unknown words' are valid German philosophical terms. Actual OCR errors are minimal"
+    },
+    {
+      "page_number": 169,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "seinsverfassung: valid German term 'Being-constitution', not an error",
+        "selfsameness: valid English word, not an error",
+        "seienden: valid German word (plural nominalized adjective), not an error",
+        "4.8% error rate with false positives in error list"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Clean page with minimal actual errors. Unknown words are legitimate philosophical terminology"
+    },
+    {
+      "page_number": 172,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "gelichtet: valid German word 'cleared', not an error",
+        "lichtung: valid German word 'clearing', not an error",
+        "lichten: valid German word 'to clear', not an error",
+        "4.2% error rate with technical philosophical terms correctly OCR'd"
+      ],
+      "footnote_artifacts": [],
+      "notes": "High quality OCR. German philosophical terminology preserved correctly. Minimal actual errors"
+    },
+    {
+      "page_number": 175,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "faktizitiit: valid German word 'facticity', not an error",
+        "sichbefinden: valid German word 'finding itself', not an error",
+        "vorfinden: valid German word 'coming across', not an error",
+        "categorially: valid English word, not an error"
+      ],
+      "footnote_artifacts": [],
+      "notes": "7.2% error rate but most unknown words are valid. Unknown words list contains many false positives"
+    },
+    {
+      "page_number": 176,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "stimmung: valid German word 'mood/state-of-mind', not an error",
+        "unerbittlicher: valid German word 'inexorable', not an error",
+        "verschliigt: valid German word 'strikes/hits', not an error",
+        "riitselhaftigkeit: valid German word 'enigmaticness', not an error"
+      ],
+      "footnote_artifacts": [],
+      "notes": "7.4% error rate with false positives. Core philosophical content is accurate"
+    },
+    {
+      "page_number": 179,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "vorstellen: valid German word 'representation', not an error",
+        "founda[tion]: standard English word truncation at page break",
+        "3.7% error rate with mostly edge cases and valid terminology"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Clean page. Unknown words are valid technical terms"
+    },
+    {
+      "page_number": 180,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "geheuer: valid German word 'familiar/comfortable', not an error",
+        "detrimentality: valid English word, not an error",
+        "furchtbare: valid German word 'fearsome', not an error",
+        "whatso[ever]: standard abbreviation at line break"
+      ],
+      "footnote_artifacts": [],
+      "notes": "5.6% error rate with legitimate philosophical terminology. Text is semantically sound"
+    },
+    {
+      "page_number": 183,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "grauen: valid German word 'shudder/dread', not an error",
+        "entsetzen: valid German word 'terror/shock', not an error",
+        "veranlagung: valid German word 'disposition', not an error",
+        "vereinzelten: valid German word 'isolated', not an error",
+        "6.4% error rate with minimal actual errors - false positives in unknown list"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Clean philosophical text. German terminology correctly preserved"
+    }
+  ],
+  "summary": {
+    "total_pages": 22,
+    "good_count": 5,
+    "marginal_count": 14,
+    "bad_count": 2,
+    "good_percentage": 22.7,
+    "marginal_percentage": 63.6,
+    "bad_percentage": 9.1,
+    "notes": "Batch shows systematic issue with German philosophical terminology being flagged as errors when they are actually valid. Pages 160, 161, and 163 have encoding issues with German characters. Pages 165, 169, 172, 179, 183 are actually clean with minimal errors. Most 'unknown words' are legitimate German/English philosophical terms, not OCR errors."
+  }
+}

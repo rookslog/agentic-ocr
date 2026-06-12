@@ -1,0 +1,317 @@
+{
+  "batch_id": 17,
+  "document": "Heidegger_BeingAndTime",
+  "classification_date": "2025-12-21",
+  "total_pages": 25,
+  "methodology": "Classification based on error_rate from OCR analysis, combined with manual inspection for semantic corruption vs. formatting artifacts. Note: This is an index section with many page references (H. XXf format) which are not OCR errors.",
+  "classification_thresholds": {
+    "GOOD": "error_rate < 8% with no semantic corruption",
+    "MARGINAL": "error_rate 8-30% or minor semantic issues present",
+    "BAD": "error_rate > 30% with semantic corruption, or > 40% overall"
+  },
+  "classifications": [
+    {
+      "page_number": 561,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 15.5,
+      "evidence": [
+        "Formatting corruption: 1 words with 't' prefix artifact",
+        "Unknown words not accounted for: ['psychologismus', 'beweisen', 'zunachst']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 562,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 24.8,
+      "evidence": [
+        "Formatting corruption: 5 words with 't' prefix artifact",
+        "Unknown words not accounted for: ['frage', 'zuhanden', 'qualitat']"
+      ],
+      "footnote_artifacts": [
+        "gs9",
+        "gr8",
+        "gg8",
+        "rg6",
+        "go7"
+      ]
+    },
+    {
+      "page_number": 563,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 26.0,
+      "evidence": [
+        "Formatting corruption: 1 words with 't' prefix artifact",
+        "Unknown words not accounted for: ['bezug', 'regeln', 'jtn']"
+      ],
+      "footnote_artifacts": [
+        "gg9",
+        "lg6",
+        "go7",
+        "gs6",
+        "gg7"
+      ]
+    },
+    {
+      "page_number": 564,
+      "classification": "BAD",
+      "confidence": "high",
+      "error_rate": 39.3,
+      "evidence": [
+        "Unknown words not accounted for: ['widerstand', 'erhalten', 'reue']"
+      ],
+      "footnote_artifacts": [
+        "gg6",
+        "go8"
+      ]
+    },
+    {
+      "page_number": 565,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 22.5,
+      "evidence": [
+        "Unknown words not accounted for: ['geredete', 'zimmer', 'entlaufen']"
+      ],
+      "footnote_artifacts": [
+        "IS2"
+      ]
+    },
+    {
+      "page_number": 566,
+      "classification": "GOOD",
+      "confidence": "medium",
+      "error_rate": 10.3,
+      "evidence": [
+        "Unknown words not accounted for: ['befremden', 'jtn', 'sehen']"
+      ],
+      "footnote_artifacts": [
+        "Se1"
+      ]
+    },
+    {
+      "page_number": 567,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 17.7,
+      "evidence": [
+        "Unknown words not accounted for: ['ence', 'selbstvergesen', 'erstlindig']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 568,
+      "classification": "BAD",
+      "confidence": "high",
+      "error_rate": 34.2,
+      "evidence": [
+        "Unknown words not accounted for: ['bedeutung', 'bedeutsamkeit', 'einfachheit']"
+      ],
+      "footnote_artifacts": [
+        "Io8"
+      ]
+    },
+    {
+      "page_number": 569,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 24.4,
+      "evidence": [
+        "Unknown words not accounted for: ['xiv', 'jtn', 'iii']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 570,
+      "classification": "BAD",
+      "confidence": "high",
+      "error_rate": 34.3,
+      "evidence": [
+        "Unknown words not accounted for: ['statigkeit', 'strukturganz', 'heit']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 571,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 23.2,
+      "evidence": [
+        "Unknown words not accounted for: ['ence', 'nacheinander', 'sonne']"
+      ],
+      "footnote_artifacts": [
+        "gg2",
+        "gg8",
+        "Ig7",
+        "gi8",
+        "gi4"
+      ]
+    },
+    {
+      "page_number": 572,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 27.3,
+      "evidence": [
+        "Unknown words not accounted for: ['zuriick', 'obermacht', 'awijeo']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 573,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 19.4,
+      "evidence": [
+        "Unknown words not accounted for: ['gespannt', 'zeitigen', 'maturiry']"
+      ],
+      "footnote_artifacts": [
+        "go6",
+        "Ig8",
+        "TiTTI4"
+      ]
+    },
+    {
+      "page_number": 574,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 16.9,
+      "evidence": [
+        "Unknown words not accounted for: ['werfen', 'sache', 'etc']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 575,
+      "classification": "GOOD",
+      "confidence": "medium",
+      "error_rate": 11.8,
+      "evidence": [
+        "Unknown words not accounted for: ['expresing', 'angabe', 'iii']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 576,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 20.1,
+      "evidence": [
+        "Formatting corruption: 1 words with 't' prefix artifact",
+        "Semantic errors (character confusion): 2 distinct errors",
+        "Unknown words not accounted for: ['xiv', 'werkzeug', 'jeweilig']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 577,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 27.7,
+      "evidence": [
+        "Unknown words not accounted for: ['xiv', 'obergang', 'wozu']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 578,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 17.5,
+      "evidence": [
+        "Unknown words not accounted for: ['ankehren', 'ujotds', 'jtn']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 579,
+      "classification": "GOOD",
+      "confidence": "medium",
+      "error_rate": 10.9,
+      "evidence": [
+        "Semantic errors (character confusion): 1 distinct errors",
+        "Unknown words not accounted for: ['ent', 'discovtr', 'verdeckt']"
+      ],
+      "footnote_artifacts": [
+        "Io8",
+        "Io6",
+        "Io4"
+      ]
+    },
+    {
+      "page_number": 580,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 23.2,
+      "evidence": [
+        "Unknown words not accounted for: ['rauchen', 'eindrangen', 'gebrauchen']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 581,
+      "classification": "BAD",
+      "confidence": "high",
+      "error_rate": 38.8,
+      "evidence": [
+        "Formatting corruption: 1 words with 't' prefix artifact",
+        "Semantic errors (character confusion): 1 distinct errors",
+        "Unknown words not accounted for: ['bergriffiichkeit', 'whi', 'geltung']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 582,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 19.7,
+      "evidence": [
+        "Semantic errors (character confusion): 2 distinct errors",
+        "Unknown words not accounted for: ['werk', 'jtn', 'miteinander']"
+      ],
+      "footnote_artifacts": [
+        "IS2"
+      ]
+    },
+    {
+      "page_number": 583,
+      "classification": "GOOD",
+      "confidence": "high",
+      "error_rate": 7.6,
+      "evidence": [
+        "Semantic errors (character confusion): 1 distinct errors",
+        "Unknown words not accounted for: ['fres', 'iii', 'resolutenes']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 584,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "error_rate": 14.3,
+      "evidence": [
+        "Unknown words not accounted for: ['weltmisigkeit', 'iii', 'weltlichkeit']"
+      ],
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 585,
+      "classification": "BAD",
+      "confidence": "high",
+      "error_rate": 65.7,
+      "evidence": [
+        "Unknown words not accounted for: ['circulus', 'brutum', 'cogito']"
+      ],
+      "footnote_artifacts": []
+    }
+  ],
+  "summary": {
+    "GOOD": 4,
+    "MARGINAL": 16,
+    "BAD": 5,
+    "total": 25
+  }
+}

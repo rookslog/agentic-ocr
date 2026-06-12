@@ -1,0 +1,177 @@
+[
+  {
+    "page_number": 323,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Page is highly readable. Text flows coherently with proper sentence structure. Contains expected foreign language passages (German: 'einf', 'nur', 'hrung', 'tive') and scholarly apparatus. Occasional truncations like 'diately' for 'immediately' and 'excit' for 'exciting' are minor OCR artifacts that don't impede comprehension. Page structure preserved with footnote markers intact.",
+    "footnote_artifacts": ["1", "2", "3"]
+  },
+  {
+    "page_number": 324,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Generally readable with clear philosophical discussion. Contains expected German terms and ancient languages. Two notable issues: (1) 'Eigen sinn' appears as two words when it should likely be 'Eigensinn' (single word), though context clarifies meaning; (2) Fragment 'ject', 'pos', 'eigen' are minor artifacts within recognizable words. The error rate of 14.5% is higher but mostly consists of partial word recognition that doesn't block understanding. Footnote references function correctly.",
+    "footnote_artifacts": ["4"]
+  },
+  {
+    "page_number": 328,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Text is well-structured and readable despite 6.1% error rate. German passages and scholarly citations are preserved. Minor artifacts like 'fty' (fifty), 'certi' (certify), 'erybody' (everybody) are clearly contextual OCR glitches. The overall discourse on asylum psychology and animal behavior is fully comprehensible. Footnote apparatus complete. Foreign language fragments ('gefangenhaltung', 'zuhause') indicate Derrida's use of source material without indicating OCR failure.",
+    "footnote_artifacts": ["7"]
+  },
+  {
+    "page_number": 329,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Highly readable philosophical text. 7.3% error rate includes predictable artifacts ('hygi' for hygiene context, 'ris' for rising context). Contains extensive Greek and French scholarly terminology properly rendered. Complex philosophical discussion about thresholds, sovereignty, and the arkhe is clear and coherent. Text structure with parenthetical asides is well-preserved. Ligatures (fi, fl) handled correctly.",
+    "footnote_artifacts": ["8"]
+  },
+  {
+    "page_number": 330,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Clean, readable text with 5.4% error rate. Contains Biblical references (Bereshit, Elohim) and Greek terminology (logos, arkhe, physis) properly transcribed. Minor artifacts like 'pho' (light), 'erat' (was), 'pre' are clearly OCR noise in otherwise comprehensible context. Extensive citations and transliterations are accurate. Footnote numbering precise.",
+    "footnote_artifacts": ["9"]
+  },
+  {
+    "page_number": 331,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Well-preserved philosophical discourse on zoology and logos, 3.8% error rate. Minor truncations like 'nally' (finally), 'liv' (living), 'guration' (figuration) are easily resolved from context. Greek technical terms and philosophical vocabulary properly rendered. Complex discussion of Aristotelian philosophy and John's Gospel remains comprehensible. Scholarly apparatus intact.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 333,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "Text is mostly readable but 7.5% error rate includes some disruptive artifacts. Notable issues: (1) 'periodiza' should be 'periodization' - clear from context but somewhat jarring; (2) 'lations' appears instead of complete word. However, the discussion of Agamben, bare life, and political philosophy remains coherent. German philosophical terms and Greek taxonomy (zo-e, bios) properly distinguished. Argument structure is followable despite minor impediments.",
+    "footnote_artifacts": ["12", "13", "14"]
+  },
+  {
+    "page_number": 334,
+    "classification": "MARGINAL",
+    "confidence": 0.80,
+    "evidence": "Higher error rate (12.5%) creates more reading friction than GOOD pages. Issues include: (1) 'Hei degger' spaced incorrectly (should be 'Heidegger'); (2) fragmented words like 'nition', 'wissende', 'hei', 'origi'; (3) 'vor' appears where context suggests fuller word. Despite these, philosophical argument about Heidegger's critique of zoological man definition and biopolitics is substantially clear. Dense scholarly apparatus partially preserved.",
+    "footnote_artifacts": ["15"]
+  },
+  {
+    "page_number": 335,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "13.1% error rate produces noticeable reading difficulty. Problems: (1) 'degger' for 'Heidegger' (spacing issue); (2) 'lovgo' rendering of Greek logos; (3) 'zum' appears fragmented. Despite these obstacles, Heidegger's five foundational questions about Being, physis, and logos are extractable. Greek philosophical terminology sometimes corrupted ('lovgo' for 'logos'). Technical content is complex but not incomprehensible. This approaches the boundary of MARGINAL but remains within interpretable range.",
+    "footnote_artifacts": ["16"]
+  },
+  {
+    "page_number": 336,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "11.5% error rate with scattered artifacts: 'machstellung', 'souverainet', 'sammlung', 'tion', 'nds', 'chsten', 'machtspruch', 'signi'. Despite fragmentary OCR rendering, the philosophical argument about logos, sovereignty (Herrschaft), and the deployment of force remains followable. German philosophical terminology is partially corrupted but context preserves meaning. Discussion of Heidegger's interpretation of logos as gathering force is substantially clear.",
+    "footnote_artifacts": ["17", "18"]
+  },
+  {
+    "page_number": 337,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "10.7% error rate is offset by overall coherence. Contains necessary technical vocabulary: 'seiendes', 'logoi', 'originarity'. Foreign language passages (German: 'dischen', 'Gesammeltheit') properly preserved. Discussion of Heidegger's interpretation of Christian logos and Johannine theology is clear despite minor fragmentations. Text structure and scholarly apparatus well-maintained. Error rate appears higher due to legitimate foreign word complexity.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 338,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "8.6% error rate with clear, readable argument about Christian appropriation of logos and mediating function. German philosophical terms preserved ('Erlösung', 'Erl', 'nition'). Greek terminology clear ('staurou', 'ekhon'). Discussion of Christ as logos and zoological Jew is coherent. Footnotes properly indexed. Minor artifacts like 'nier', 'nally', 'humanisme' don't impede understanding. Text preserves its theological-philosophical content.",
+    "footnote_artifacts": ["19"]
+  },
+  {
+    "page_number": 339,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "9.9% error rate in philosophical exegesis of Heidegger's Letter on Humanism. Contains dense German philosophical terminology: 'wesen', 'nition', 'prinzipien', 'als', 'metaphys'. Minor OCR artifacts ('tion', 'biologistic', 'mens', 'ics') don't disrupt argument flow. Two-stage critique of rational animal definition and biologism is clearly presented. Extensive quotation preserved with adequate accuracy for scholarly purposes.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 340,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "9.3% error rate with clear discussion of Heidegger's anti-biologism and critique of treating humans as organisms. German terms properly rendered ('hei', 'leib' for Leib/body). Discussion of ek-sistence versus animal organism is comprehensible. Quotations from Letter on Humanism are substantially accurate. Minor fragments ('degger', 'scienti', 'als', 'ein') are expected OCR noise. Philosophical argument preserved.",
+    "footnote_artifacts": ["20", "21"]
+  },
+  {
+    "page_number": 341,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "8.5% error rate in comparative analysis of Heidegger, Agamben, and Foucault on biopolitics. Text structure clear with numbered points. German and Greek terminology properly distinguished ('ekhon', 'sacer'). Discussion of Homo Sacer, political ontology, and historicity is followable. Minor artifacts ('signi', 'guration', 'determi') don't impede scholarly argumentation. Footnotes accurately referenced.",
+    "footnote_artifacts": ["22", "23"]
+  },
+  {
+    "page_number": 342,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "6.1% error rate - among lowest in batch. Text discusses bare life, political qualification, and Aristotle with clarity. Quoting Agamben on politicity and indistinction. Minor OCR artifacts ('pos', 'liticization', 'catego') are minimal noise in otherwise clean text. Scholarly apparatus intact. Argument about the fragility of bios/zoé distinction is clearly articulated. Well-preserved page.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 343,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "4.3% error rate - cleanest philosophical exposition of batch. Derrida's critique of Agamben's modernism thesis is clearly presented. Contains expected foreign terminology ('qual', 'politikon', 'leben', 'aren'). Discussion of bare life introduction into political sphere and foundational events is fully comprehensible. Excellent preservation of argument structure and scholarly tone. Minor artifacts ('est', 'nur', 'suf') pose no obstacles.",
+    "footnote_artifacts": ["26"]
+  },
+  {
+    "page_number": 344,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "5.6% error rate. Discusses critical distinction between 'attribute' and 'specific difference' in Aristotle's zoological definition of man. Greek terminology clear ('ariste', 'mals'). Derrida's logical critique of Agamben's framework is followable. Minor fragmentations ('speci', 'lations', 'tribution') are minimal. Text preserves nuanced philosophical argumentation about the fragility of bio/zoé opposition.",
+    "footnote_artifacts": ["27"]
+  },
+  {
+    "page_number": 346,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "5.9% error rate discussing biopolitics, sovereignty, and modern state power. References to Heidegger, Hannah Arendt, and totalitarianism are clear. German philosophical vocabulary preserved ('degger', 'moder', 'hei'). Discussion of concentration camps and biopolitical exception is appropriately serious and comprehensible. Minor artifacts don't disrupt historical-philosophical argument. Scholarly critical apparatus intact.",
+    "footnote_artifacts": ["30", "31"]
+  },
+  {
+    "page_number": 348,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "10.3% error rate somewhat elevated but text remains coherent. Discusses hidden intersection of juridical-institutional and biopolitical power models. Contains scholarly apparatus ('juridico', 'imperii', 'kamuf') properly preserved. French terms appear alongside English. Discussion of sovereign exception and production of biopolitical body is clear. Error distribution includes expected Latin/French fragments and citation apparatus.",
+    "footnote_artifacts": ["33", "34", "35", "36", "37"]
+  },
+  {
+    "page_number": 350,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "5.5% error rate - very clean. Derrida's critique of periodization and linear history in Foucault/Agamben is clearly argued. Discussion of synchronic/diachronic distinction and founding events is comprehensible. Philosophical vocabulary properly rendered. Minor OCR noise ('tive', 'lete', 'alterna', 'dif') minimal. Text preserves sophisticated temporal and historiographical critique.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 351,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "5.6% error rate with philosophical conclusion about thresholds and grounds. German metaphysical terms well-preserved ('Urgrund', 'Ungrund', 'seul'). Derrida's conclusion about 'more than one ground' and 'more than one single threshold' is lucidly stated. French wordplay ('Plus d\\'un seul seul' / 'no more a single single') clearly rendered. Minimal OCR impediments. Strong conclusion to twelfth session.",
+    "footnote_artifacts": ["39"]
+  },
+  {
+    "page_number": 353,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "4.0% error rate - excellent. Derrida's thirteenth session opens with meta-reflection on translation as unifying theme. Discussion of animal vs. human response, responsibility, and the untranslatability of French 'bêtise' is clear and nuanced. Footnote artifacts properly marked. Text structure with parenthetical asides well-preserved. Philosophical argument about idiom and context-dependent meaning is coherent.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 354,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "5.3% error rate discussing untranslatability of 'bêtise' and 'bête' from French to French and across languages. Derrida's sophisticated analysis of idiom, context, and reactive animality is followable. Greek and French terminology properly distinguished. Discussion of poetry and linguistic privilege is coherent. Minor OCR fragments ('dif', 'signi', 'ekhon', 'xed', 'overdeter') don't disrupt argument.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 355,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "6.3% error rate in dense Heidegger exegesis on logos, physis, and translation. Traces Heidegger's interpretation of how logos was diverted from Greek legein (gathering, assembling) to theological mediation in John's Gospel and later rationalism. German and Greek terminology well-rendered ('machstellung', 'phyein', 'historial'). Minor artifacts ('vites', 'cided', 'legere', 'uenced') minimal. Complex argument preserved.",
+    "footnote_artifacts": []
+  }
+]

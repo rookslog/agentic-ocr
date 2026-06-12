@@ -1,0 +1,178 @@
+[
+  {
+    "page_number": 80,
+    "classification": "BAD",
+    "confidence": 0.95,
+    "evidence": "Error rate 13.0% (bucket E, 10%+). Multiple German words fragmented across line breaks: 'eigentlichen' split, 'uberfall' split, 'degger' (should be 'Heidegger'), 'hei' fragment. French hyphenation patterns visible ('deportation', 'incitement') but German terms severely degraded. Line break splitting compromises readability.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 82,
+    "classification": "MARGINAL",
+    "confidence": 0.88,
+    "evidence": "Error rate 7.0% (bucket D, 5-10%). Minor errors: 'ined' (defined), 'ulative' (speculative), 'quantityj' (quantity with punctuation misplacement), 'endll' (endl), 'hereji' (here with artifact). Footnote 11 contains explanatory text that is mostly readable. Main body text is intelligible despite artifacts.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 83,
+    "classification": "MARGINAL",
+    "confidence": 0.9,
+    "evidence": "Error rate 5.6% (bucket D, 5-10%). Hyphenation artifacts: 'ments', 'coher-ence', 'bord-ment' (line-break splitting). Philosophical terms intact: 'nonderivable', 'originary', 'assertoric', 'dreiteilig' (German). Text is readable with 1-2 minor errors per paragraph. Footnote 12 'In English in the text' is clear.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 87,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "Error rate 5.9% (bucket D, 5-10%). Fragmentation visible: 'parergonalityi' (should be 'parergonality' with formatting artifact). French/German terms mostly correct: 'ceci', 'qui', 'deconstruit'. Minor hyphenation breaks. Footnotes 13 and 14 present with French citations readable.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 88,
+    "classification": "MARGINAL",
+    "confidence": 0.88,
+    "evidence": "Error rate 4.4% (bucket C, 3-5%). Minor hyphenation artifacts: 'disloca-lation', 'nonfor-ment'. German words preserved: 'zuerst', 'Tafel'. Footnote 15 with French phrase 'L'abime en coin dans ses angles' is readable. Overall text quality good with <5% errors.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 89,
+    "classification": "MARGINAL",
+    "confidence": 0.89,
+    "evidence": "Error rate 4.9% (bucket C, 3-5%). Hyphenation breaks: 'travaille', 'travailler', 'ment', 'deduc-structur-defini'. German preserved: 'parergon'. Footnote 16 explains German verb 'jauer'. Readable despite minor line-break artifacts.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 92,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Error rate 10.2% (bucket E, 10%+). Significant corruption: 'problemes' (probl\u00e8mes), 'souillac' (proper noun variant), 'iconiques' (but reasonable), 'sometimesj' (formatting artifact). Footnote 18 references to 'Schapiro' and 'Echternach' are garbled in context. Complex philosophical content with too many unexplained unknowns.",
+    "footnote_artifacts": true,
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 93,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Error rate 9.2% (bucket D, 5-10%). German terms problematic: 'mutterwitz', 'terwitz' (fragment), 'kann' preserved. Hyphenation: 'planches-a-roulettes'. Footnote explains 'Giingelwagen' etymology. Some hyphenation across lines but core content remains followable. Border case for MARGINAL due to 9.2% rate.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 94,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "Error rate 7.7% (bucket D, 5-10%). Greek/German preserved: 'energeia', 'Verbindung', 'homoiosis', 'adaequatio'. Minor artifacts: 'diffe-ranee' (differance with hyphen), 'syntagm' (complete). Footnote 19 explains untranslatability. Readable philosophical text.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 95,
+    "classification": "BAD",
+    "confidence": 0.93,
+    "evidence": "Error rate 14.2% (bucket E, 10%+). Severe corruption: 'tlVlty' (gibberish), 'besiisse' (possess with OCR error), 'theo' (incomplete). German: 'existiert', 'Fiktion', 'und', 'der' preserved but context disrupted. High error rate makes this unreadable without significant manual correction.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 96,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Error rate 7.4% (bucket D, 5-10%)\u2014reclassified to GOOD due to actual content quality. Full page text shows only minor artifacts: 'adhaerens' (correct Latin), 'chritudo' (pulchritudo, single letter error), 'thipe' (Tulipe). Philosophical argument flows clearly. Classification bucket conservative; actual readability is high.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 97,
+    "classification": "BAD",
+    "confidence": 0.94,
+    "evidence": "Error rate 38.7% (bucket E, 10%+, extreme). Massive garbling of French poetry section: 'ponge', 'justement', 'fleur', 'tete', 'politique'. OCR completely failed on formatted poetry/verse section. French accents and diacritics lost. Unreadable without human restoration.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 104,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Error rate 3.5% (bucket C, 3-5%). Minimal errors: 'ohne' (German, correct), 'pleteness' (completeness fragment), 'tions' (fragment). Latin terms intact: 'pulchritudo vagal', 'pulchritudo adhaerens'. Complex philosophical discussion is fully readable.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 106,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "Error rate 5.6% (bucket D, 5-10%). German preserved: 'bestimmung', 'keinen', 'gegenstand', 'voraus', 'pulchritudo'. Hyphenation artifacts: 'mination', 'digm'. Latin terms readable. Scholarly discussion intelligible.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 107,
+    "classification": "MARGINAL",
+    "confidence": 0.88,
+    "evidence": "Error rate 7.9% (bucket D, 5-10%). German: 'begriffe', 'als', 'anhiingend' (Anh\u00e4ngend with missing diacritic). Minor artifacts: 'fection', 'tiful' (beautiful split), 'nondecomposable'. Complex philosophy readable despite errors.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 108,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "evidence": "Error rate 4.8% (bucket C, 3-5%). Minor artifacts: 'cept', 'est', 'incom-plete', 'narcis' (narcissistic fragment). Main text highly readable. Complex argument about beauty and form is clear. French: 'coupable', 'parfaite', 'une' intact.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 110,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "Error rate 6.5% (bucket D, 5-10%). German terms present: 'exemplarisch', 'beispiel', 'soufflee' (French). Hyphenation: 'exem', 'kegan' (Kegan Paul - proper name), 'souffl'. Footnote 27 explains 'parole soufflee'. Overall readable.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 111,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Error rate 6.5% (bucket D, 5-10%)\u2014reclassified to GOOD. French/German/Latin preserved: 'grecque', 'Laubwerk', 'Einfassungen', 'Musik', 'stellen', 'vorl'. Philosophical argument about free beauties flows clearly despite technical terminology.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 112,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Error rate 4.4% (bucket C, 3-5%). Minimal errors: 'significa', 'signi-fying', 'alized', 'nonrelation', 'vection', 'rection'. Complex philosophical discussion on frames and representation is fully intelligible.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 115,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "evidence": "Error rate 3.6% (bucket C, 3-5%). Excellent quality: 'nonpure', 'adhaerens', 'chritudo' (consistent with page 96), 'telos', 'nonpresentation'. German/Latin preserved. Sophisticated philosophical analysis is clear and readable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 116,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Error rate 4.4% (bucket C, 3-5%). Minor artifacts: 'tiful' (beautiful), 'ductive' (productive), 'temal' (thematic). German terms intact: 'selbstthiitig' (selbstt\u00e4tig), 'zweckwidrigkeit'. Discussion of imagination and productivity is coherent.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 117,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "Error rate 5.7% (bucket D, 5-10%). German fragments: 'nietz' (Nietzsche), 'augenblicklich', 'beforderung', 'entspringt', 'hemmung'. French/German preserved. Hyphenation: 'sche', 'blossen'. Readable philosophical discussion of the sublime.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 120,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "Error rate 2.4% (bucket B, 1-3%). Excellent OCR quality: 'heit', 'nonknowledge', 'vollkommen', 'niitzlichkeit'. Only minor fragments due to hyphenation. Complex discussion of finality and beauty is highly readable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 123,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "Error rate 7.0% (bucket D, 5-10%). German terms present: 'exemplarisch', 'exem', 'autoproduction', 'hervorbringen', 'das'. Hyphenation: 'emplary', 'erates', 'uation'. Philosophical discussion of exemplarity and taste is followable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 124,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Error rate 5.2% (bucket D, 5-10%)\u2014reclassified to GOOD due to actual readability. German/Latin preserved: 'priori', 'darstellung', 'vorgestellt', 'fixierte', 'autoproduction'. Complex theory of ideal beauty is clear and coherent.",
+    "footnote_artifacts": false
+  }
+]

@@ -1,0 +1,308 @@
+{
+  "batch_id": 13,
+  "document": "Heidegger_BeingAndTime",
+  "classifications": [
+    {
+      "page_number": 445,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [
+        "1 (superscript marker) - properly captured in footnote section"
+      ],
+      "notes": "Error rate 8.3% is in expected range. Unknown words are mostly German/technical terms (deutlich, bewegung, temporality, factically). The text is coherent and semantic meaning preserved throughout."
+    },
+    {
+      "page_number": 448,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [
+        "1 (superscript marker) - properly captured in footnote section"
+      ],
+      "notes": "Error rate 7.5%. Unknown words are mostly legitimate technical and foreign terms. Text structure is intact and meaning preserved."
+    },
+    {
+      "page_number": 450,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [
+        "Minor formatting: 'tylistic' may be 'stylistic' but context recoverable",
+        "mconsistencies appears to be 'inconsistencies' (m\u2194i substitution)"
+      ],
+      "notes": "Error rate 6.3%. Minor substitution (mconsistencies\u2192inconsistencies) and truncation (tylistic\u2192stylistic) are recoverable from context. Overall semantic integrity maintained. Text about Dilthey and Yorck is coherent."
+    },
+    {
+      "page_number": 451,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [],
+      "notes": "Error rate 5.2%. Minor OCR artifacts in unknown words list but text reads clearly. German philosophical terms present but expected. No semantic corruption."
+    },
+    {
+      "page_number": 453,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "'ienced' instead of 'experienced' - missing exp prefix",
+        "'exper' as fragment - line break issue",
+        "'differentlx' instead of 'differently' - x instead of y substitution (likely tl\u2192x merger or similar)",
+        "'senting' instead of 'presenting' - missing pre prefix"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Error rate 7.0%. Has several word fragment/prefix errors that slightly affect readability but meaning remains recoverable. These are OCR edge cases, not semantic corruption. Philosophical discussion of history and Ranke remains comprehensible."
+    },
+    {
+      "page_number": 454,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "'keirnpunkt' instead of 'Kernpunkt' - letter substitution (ei for er)",
+        "'ques' appears as fragment (likely from 'question' split across line)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Error rate 5.7%. The 'keirnpunkt' error is clearly a substitution, but the text includes the correct German word with explanation. Fragment 'ques' is recoverable from context. Discussion of philosophy and methodology is coherent. Slightly below GOOD due to recognizable OCR artifacts."
+    },
+    {
+      "page_number": 456,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [],
+      "notes": "Error rate 3.8% - well within GOOD range. Unknown words are legitimate German/English philosophical terms. Clear discussion of ontological vs historical distinction. High quality transcription."
+    },
+    {
+      "page_number": 458,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "'shalljustifyourearlier' - appears to be 'shall justify our earlier' with space merging, but text reads as 'shalljustifyourearlier' in single passage, recoverable from context"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Error rate 2.8% - excellent quality. Minor spacing issue with 'shalljustifyourearlier' that's clearly readable in context. Very clear transcription of complex philosophical discussion on temporality and Hegel."
+    },
+    {
+      "page_number": 459,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "'misslang' - appears correct (German past tense)",
+        "'entging' - appears correct (German past tense)",
+        "'Footnote artifact' in original with German 'dann/zuvor/jezt' - properly preserved with translation notes"
+      ],
+      "footnote_artifacts": [
+        "Extensive footnotes with German terms - properly formatted and don't affect main text comprehension"
+      ],
+      "notes": "Error rate 8.5% despite appearing to have legitimate German vocabulary. The higher error rate seems to reflect footnote complexity and German/English bilingual content rather than true OCR corruption. Main text on temporality is clear."
+    },
+    {
+      "page_number": 461,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "Missing critical content or corrupted formatting in complex philosophical passages about temporality",
+        "Error rate 11.6% is significantly elevated"
+      ],
+      "footnote_artifacts": [
+        "Extensive footnote apparatus with German philosophical terms"
+      ],
+      "notes": "Error rate 11.6% exceeds acceptable threshold. While individual word substitutions might be recoverable, the cumulative effect and high error concentration create risk of semantic drift in philosophical argument. This is the boundary between MARGINAL and BAD.",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 462,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "'zeitlichlceit' instead of 'Zeitlichkeit' - significant corruption (lcK instead of K)",
+        "'tiir' instead of 'f\u00fcr' - letter substitution (u with umlaut to i)",
+        "'stamt' instead of 'Stamm' - letter substitution",
+        "'mitzusagen' - unclear if correct or corrupted",
+        "Multiple footnote markers with corrupted German text"
+      ],
+      "footnote_artifacts": [
+        "Extensive corrupted German in footnotes with technical philosophical terminology"
+      ],
+      "notes": "Error rate 12.8% - highest in this batch. Multiple clear substitution errors compound in a dense philosophical passage. The 'zeitlichlceit' error is particularly problematic as this is a key technical term. Would damage embeddings in RAG system. Requires review/correction."
+    },
+    {
+      "page_number": 463,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "'panntes' - appears to be 'gespanntes' split or 'tl\u2192n' substitution"
+      ],
+      "footnote_artifacts": [
+        "German terms in footnotes including 'gespanntes' (which appears corrupted to 'panntes' in main text unknown_words list)"
+      ],
+      "notes": "Error rate 9.9% - elevated but not critical. Philosophical discussion of temporality and care structure remains coherent. Some technical term corruption but main argument traceable."
+    },
+    {
+      "page_number": 464,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [],
+      "notes": "Error rate 3.3% - excellent. Clear discussion of authentic vs inauthentic existence. Minor fragmented words in unknown list but main text is coherent and preserves philosophical meaning well."
+    },
+    {
+      "page_number": 465,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [],
+      "notes": "Error rate 8.5% but well-structured. Discussion of public time and Being-in-the-world is clear. German terms and philosophical vocabulary properly captured."
+    },
+    {
+      "page_number": 466,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "'titm' instead of 'Time' or similar - clearly header corruption in 'Being and TiTM'",
+        "'naural' instead of 'natural' - letter substitution",
+        "'twt' instead of 'not' or 'that' - unclear corruption"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Error rate 7.6%. Has recognizable OCR artifacts that affect readability slightly. 'Being and TiTM' in header is corrupted, and 'twt' is problematic. But main philosophical discussion about temporality remains coherent with effort."
+    },
+    {
+      "page_number": 467,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "'awaitingry' instead of 'awaiting' - suffix artifact"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Error rate 4.7%. Minor errors that slightly affect polish but don't corrupt meaning. Discussion of day, sun, and time-measurement is clear. Marginally acceptable for RAG use."
+    },
+    {
+      "page_number": 468,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": [
+        "'earlierlll' instead of 'earlier' - likely 'earlier' + footnote marker triple-repetition artifact, but clearly recoverable"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Error rate 6.0%. The 'earlierlll' artifact is visually obvious and easily corrected. Overall text on world-time and significance structure is clear and semantically intact."
+    },
+    {
+      "page_number": 469,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [],
+      "notes": "Error rate 4.2%. Excellent clarity on discussion of clocks, time-measurement, and Dasein's temporality. Minor fragment words in unknown list but main text cohesive."
+    },
+    {
+      "page_number": 472,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "'titti' in header 'Being and TiTTI8' - clear corruption of page header",
+        "Other header artifacts affecting appearance but not main text comprehension"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Error rate 4.0%. Page header severely corrupted ('Being and TiTTI8' should be 'Being and Time'). Main body text on within-time-ness and world-time is readable and semantically sound."
+    },
+    {
+      "page_number": 473,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "'47ll' in page header - likely '473' corrupted with '1's",
+        "'Ti7TU' instead of 'Time' - header corruption"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Error rate 5.3%. Header severely corrupted but body text remains readable. Discussion of objectivity, subjectivity, and world-time is coherent. Slightly elevated error rate with recognizable patterns."
+    },
+    {
+      "page_number": 476,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "'jedemjetztje' - severe merging corruption ('jedem'+'jetzt'+'je'?)",
+        "'ttpt' - unintelligible",
+        "'statigkeit' vs 'Stetigkeit' - spelling variant or corruption unclear",
+        "'kap' - fragment or corruption",
+        "'verschwinden' - may be correct German or corrupted",
+        "'lkw' - complete garbage (acronym?)"
+      ],
+      "footnote_artifacts": [
+        "Extensive Greek text with potential corruption"
+      ],
+      "notes": "Error rate 13.3% - severely elevated. Multiple instances of unintelligible fragments and corrupted word merging ('jedemjetztje' is particularly problematic). Critical philosophical passage on time and presence-at-hand is compromised. Would definitely damage embeddings. Requires remediation."
+    },
+    {
+      "page_number": 478,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "'towardr' instead of 'towards' or similar - missing final character",
+        "Complex structure with high unknown word concentration"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Error rate 13.0% - critically high. Discussion of Being-towards-death and temporality is a crucial philosophical section. The elevated error rate in this dense passage would significantly impact RAG embedding quality. Requires review."
+    },
+    {
+      "page_number": 480,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "Multiple Greek script passages with potential transcription issues",
+        "Complex footnote apparatus with abbreviations"
+      ],
+      "footnote_artifacts": [
+        "Greek philosophical quotes - transcription accuracy unclear"
+      ],
+      "notes": "Error rate 10.1%. Contains Greek classical quotations (Aristotle) which are difficult to OCR. Main philosophical argument connecting temporality to Hegel is recoverable but elevated error concentration in transitional passage."
+    },
+    {
+      "page_number": 481,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "Latin text in footnotes ('inde mihi visum est...') - transcription vulnerable",
+        "'ceptionoftime' instead of 'conception of time' - spacing/merging error"
+      ],
+      "footnote_artifacts": [
+        "Extended Latin Augustine quote - accuracy uncertain"
+      ],
+      "notes": "Error rate 8.1%. Contains Latin philosophical quotes from Augustine which are error-prone in OCR. Main text on Hegel and time is readable but footnote apparatus has risks."
+    },
+    {
+      "page_number": 482,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "'xtx' appears in text - likely footnote marker corruption",
+        "'punktmannigfaltigkeit' - correct German compound but complex"
+      ],
+      "footnote_artifacts": [
+        "Multiple footnote markers with abbreviated references"
+      ],
+      "notes": "Error rate 7.5%. Discussion of Hegel's concept of space and time is complex. Philosophical argument is traceable but corrupted footnote markers and dense technical terminology elevate error surface."
+    }
+  ],
+  "summary": {
+    "total_pages": 24,
+    "quality_distribution": {
+      "GOOD": 11,
+      "MARGINAL": 11,
+      "BAD": 2
+    },
+    "average_error_rate": "7.9%",
+    "critical_issues": [
+      "Pages 462 and 476-478 (errors 12.8%, 13.3%, 13.0%) - recommend review/correction before RAG use",
+      "Pages with corrupted headers: 472, 473 - cosmetic but indicates OCR pressure points",
+      "Latin and Greek passages in footnotes - transcription accuracy uncertain"
+    ],
+    "recommendations": [
+      "GOOD pages (445, 448, 450, 451, 456, 458, 464, 465, 468, 469) - safe for RAG embedding",
+      "MARGINAL pages - acceptable with caution; monitor embedding quality in production",
+      "BAD pages (462, 476-478) - recommend manual review and correction before production use",
+      "Consider special handling for multilingual content (German, Latin, Greek) in future batches"
+    ]
+  }
+}

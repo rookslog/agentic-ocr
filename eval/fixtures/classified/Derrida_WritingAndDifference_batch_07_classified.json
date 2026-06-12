@@ -1,0 +1,177 @@
+[
+  {
+    "page_number": 290,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Text is highly readable. Complex philosophical terminology and foreign words (presupposes, Traumdeutung, Anschauungen, Umschrift) are correctly rendered. Technical terms properly formatted (ufb01ed, ufb00erent as ligature characters). Footnote markers (word23) present as expected. Sentence structure flows naturally with accurate Freudian vocabulary.",
+    "footnote_artifacts": "Footnote marker '13' correctly placed at end of quotation. Page footer properly formatted (freud and the scene of writing 265)."
+  },
+  {
+    "page_number": 292,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Text is readable with accurate philosophical and German terminology (nontranscriptive, Anordnung, Energiebesetzung, das Bewegliche). Complex Heideggerian and Husserlian concepts correctly preserved. Ligatures and special characters properly encoded (ufb01cation, ufb00erentiated). Quotations are accurately transcribed with proper punctuation.",
+    "footnote_artifacts": "No visible footnote artifacts. Page footer correct: 'freud and the scene of writing 267'. Citation format [V, 610–611] accurate."
+  },
+  {
+    "page_number": 293,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "evidence": "Generally readable but contains 2-3 minor OCR errors recoverable from context. Most philosophical terms correct (pregiven, phoronomic, ufb00erentiated as ligatures). One questionable rendering: 'becom-' appears hyphenated where 'becoming' was likely intended (line fragmentation issue, not true garbling). German terms (Hyle) and French phrases mostly correct. Meaning remains recoverable.",
+    "footnote_artifacts": "Footnote marker references appear intact. 'archi-trace' concept preserved. Ligature rendering mostly correct except for potential hyphenation artifact."
+  },
+  {
+    "page_number": 294,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "High quality text with accurate historical and technical references (Erinnerungsspur, memory-trace, Wolf-Man case study). German technical terminology properly rendered (Verspätung, Versp-). Complex philosophical discussion of temporalization and unconscious clearly articulated. Footnote reference [14] correctly placed. Quote structure and attribution (SE XIV) accurate.",
+    "footnote_artifacts": "Footnote numbers properly formatted. Page footer 'freud and the scene of writing 269' correct. Hyphenation of long words (satis-ufb01ed) handled properly."
+  },
+  {
+    "page_number": 295,
+    "classification": "MARGINAL",
+    "confidence": 0.76,
+    "evidence": "Readable but with 2-3 recoverable errors. Key concepts intact (cogito, Traumdeutung, facilitations - though 'facilitations' is specialized term that may be correct). Most OCR acceptable: German terms (Gegenstand, anschauliche) and optical metaphors preserved. One potential error: 'homogeneous' rendering quality, but meaning clear. Overall philosophical argument flows coherently.",
+    "footnote_artifacts": "Footnote markers present. Complex quotation attributions (V, 61l) - note lowercase 'l' instead of '1' in page reference, likely OCR artifact but reference is clear from context."
+  },
+  {
+    "page_number": 297,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Well-rendered philosophical text with accurate technical vocabulary (nonpsychical, modi\ufb01cations, diastem). Complex concepts clearly articulated (writing as spacing, phonetic writing). German and French philosophical terms correctly preserved. Ligatures properly encoded (ufb01cations, ufb00erent). Sentence structure maintains argumentative flow through dense theoretical material.",
+    "footnote_artifacts": "No significant artifacts. Page footer 'writing and difference 272' correct. Citation format [V, 538] properly rendered."
+  },
+  {
+    "page_number": 301,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Clear philosophical discourse with accurate technical and foreign language terms (mise en scène rendered correctly, hieroglyphic, psychographic). Complex discussions of dream-work and symbol systems well-preserved. Ligatured characters properly handled (ufb00erent, ufb01gurations). Quotations are accurate and properly attributed [IV, 314] and [V, 341].",
+    "footnote_artifacts": "Proper footnote reference handling. Page footer 'writing and difference 276' accurate. No disruption to philosophical argument."
+  },
+  {
+    "page_number": 302,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "Mostly readable with 2-3 minor issues. German philosophical terms generally correct (phonologism, Niedersch-). French philosophical vocabulary (mise en scène) preserved. Main weakness: acronyms/abbreviations occasionally unclear (UCS, PCS - though these are standard psychoanalytic notation). Quotations attributable and meaning recoverable despite minor OCR artifacts. Overall thesis about psychoanalysis and linguistics intact.",
+    "footnote_artifacts": "Footnote marker 23 present. Page reference [XIII, 176] and [XIII, 177] correct. Minor artifact: 'Dar-stellungsweise' (representation method) split across lines but reconstructible."
+  },
+  {
+    "page_number": 304,
+    "classification": "MARGINAL",
+    "confidence": 0.74,
+    "evidence": "Readable but with 3-4 recoverable OCR errors. Key concepts present (Erinnerungsapparates, hypomnemic, Anzeichnung) but some technical terms show wear (temporalization rendering acceptable despite apparent errors in sample list). Complex German terminology (Ergänzung) well-preserved. Meaning of Mystic Writing-Pad analogy remains clear despite minor character substitutions. Philosophical argument coherent.",
+    "footnote_artifacts": "Footnote references [XIX, 227] properly placed. Complex quotations with German words (schriftliche, materialisiertesück) preserved with minor encoding issues but comprehensible."
+  },
+  {
+    "page_number": 305,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Strong OCR quality with accurate technical vocabulary (Hilfsapparate, mnemic, pellicular). Complex apparatus description clearly articulated. German philosophical terms correctly rendered. The extended technical discussion of the Mystic Pad device is well-preserved with proper punctuation and quotation marks. Citation format [XIX, 228] accurate.",
+    "footnote_artifacts": "Footnote 27 reference correctly placed. Page footer 'writing and difference 280' accurate. No significant artifacts disrupting readability."
+  },
+  {
+    "page_number": 306,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "Clear rendering of technical description with accurate philosophical terminology (celluloid, stilus, pellicular). Complex apparatus mechanism well-described with proper technical language. Quotations are accurate and attributions clear [XIX, 228-29]. Foreign terms (mise en scène) correctly preserved. Philosophical implications of Mystic Pad analogy well-articulated.",
+    "footnote_artifacts": "Footnote marker 28 present. Page reference [XIX, 228–29] properly formatted. Description device flows coherently despite technical complexity."
+  },
+  {
+    "page_number": 307,
+    "classification": "GOOD",
+    "confidence": 0.84,
+    "evidence": "Well-preserved philosophical text with accurate technical terms (stigme, extensia, Pcpt.-Cs.). Complex discussion of perception, memory, and writing clearly articulated. German and Latin philosophical vocabulary correct (percep-, mnemic, extensia). Quotation attributions [XIX, 230-31] properly formatted. Argument about Mystic Pad as psychical apparatus model clearly presented.",
+    "footnote_artifacts": "Footnote markers 29 and 30 correctly placed. Page footer 'writing and difference 282' accurate. Complex psychological concepts well-rendered."
+  },
+  {
+    "page_number": 311,
+    "classification": "MARGINAL",
+    "confidence": 0.77,
+    "evidence": "Readable with 2-3 minor recoverable errors. Philosophical content intact despite some technical term rendering issues. Key Freudian concepts (hypomnemic, psychei-, psychical) present though some words show OCR wear. The theoretical argument about representation and death remains coherent. Platonic references and psychoanalytic theory correctly attributed.",
+    "footnote_artifacts": "Page reference [XIX, 230] correct. Platonic philosophical references preserved. Arguments about Phaedrus and psychical memory intact, though some character encoding shows minor artifacts."
+  },
+  {
+    "page_number": 312,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Strong philosophical and technical vocabulary preservation (historico-technical, metapsychological, supplementarity, techne). Complex theoretical argument about technology, writing, and psyche well-articulated. German philosophical terms correct (Heidegger reference preserved). Citation and attribution structure accurate. Psychoanalytic theory clearly presented despite conceptual density.",
+    "footnote_artifacts": "Page footer 'writing and difference 287' correct. Theoretical apparatus references properly maintained. No disruptive artifacts in philosophical argument."
+  },
+  {
+    "page_number": 313,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "evidence": "Generally readable with 2-3 minor OCR issues recoverable from context. Most philosophical terms correct (historico-transcendental, neurone, bahnung). German technical vocabulary preserved (Witzarbeit, worin, besteht). Quotation structure maintained though some character encoding artifacts present. Complex Freudian theoretical apparatus described coherently despite minor garbling in specialized terms.",
+    "footnote_artifacts": "Page footer 'writing and difference 288' correct. Literary/theoretical references to Traumdeutung and dream-work intact. Quotation attribution and structure preserved."
+  },
+  {
+    "page_number": 314,
+    "classification": "MARGINAL",
+    "confidence": 0.76,
+    "evidence": "Mostly readable with 2-3 recoverable errors in philosophical terminology. Core concepts present (archi-trace, parousia, psychoanalysis). Some specialized terms show OCR artifact signs (uncorruptible, ticularly). French and philosophical vocabulary largely preserved. The theoretical discussion of trace, erasure, and temporalization remains coherent. Quotations attributable despite minor rendering issues.",
+    "footnote_artifacts": "Page footer 'writing and difference 289' accurate. Quotations from Freud properly attributed. Philosophical argument about repression and trace structure intact."
+  },
+  {
+    "page_number": 316,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "evidence": "Readable but with 2-3 notable OCR issues affecting some terms. Key concepts present (archi-trace, Artaud reference, hieroglyph). Some specialized vocabulary shows rendering problems (esh→flesh, lls→fills, etc.). Biblical/theological references (Numbers, Exekiel/Ezekiel) preserved but with potential spelling artifact in 'Exekiel'. Overall meaning recoverable regarding Artaud's theory of excrement and sacred writing.",
+    "footnote_artifacts": "Page footer 'freud and the scene of writing 291' correct. Limited text provides fewer opportunities for artifact detection."
+  },
+  {
+    "page_number": 317,
+    "classification": "BAD",
+    "confidence": 0.45,
+    "evidence": "Significant OCR quality issues with multiple garbled words affecting readability. Error rate of 17.3% is highest in batch. French philosophical text severely compromised: 'toujours' → 'toujours' (okay), but 'cruauté' → 'cruaut', 'Paule' → 'paule', 'acutal' (should be 'actual'). Artaud quotation partially garbled. Opening epigraph from Mallarmé nearly incomprehensible due to OCR errors. Philosophical meaning partially obscured.",
+    "footnote_artifacts": "Page footer attribution 'for Paule Thévenin' shows spelling artifact (paule). Mallarmé epigraph corrupted. Multiple character encoding issues throughout French text."
+  },
+  {
+    "page_number": 318,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Well-preserved philosophical discourse on Artaud with accurate French vocabulary (implac-able rendered as implac-, Lichtenberger correctly). Existential concepts clearly articulated. Complex argument about theatrical essence, dispossession, and rebirth well-developed. Quotations properly attributed. Only minor ligature/encoding artifacts that don't impede comprehension. Philosophical argument flows logically.",
+    "footnote_artifacts": "Footnote reference properly placed. Page footer 'the theater of cruelty 293' correct. French philosophical and theatrical terminology well-preserved."
+  },
+  {
+    "page_number": 319,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "evidence": "Readable with 3-4 recoverable OCR issues. French text partially compromised (corsetait, degingande show encoding problems, gingand appears in samples). Artaud's complex theatrical theory remains coherent despite minor garbling. Quotations about theater and man's essence preserved though some character substitutions present (flashing, etc.). Meaning remains recoverable through context.",
+    "footnote_artifacts": "Footnote references intact. Page footer 'the theater of cruelty 293' correct. Artaud quotations attributable despite minor rendering artifacts."
+  },
+  {
+    "page_number": 320,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Clear philosophical exposition with accurate theatrical and philosophical terminology (nonrepresentable, Aristotelean, theatrological). Nietzsche reference preserved. Complex argument about imitation, life, and representation well-articulated. French terminology correct (mimesis). Quotations [TD, p. 116] properly attributed. Philosophical distinctions between mimesis and transcendental principle clearly maintained.",
+    "footnote_artifacts": "Footnote references intact. Page footer 'the theater of cruelty 295' correct. Artaud's theoretical framework well-preserved despite complexity."
+  },
+  {
+    "page_number": 324,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Well-preserved discussion of theatrical representation with accurate German terminology (Vorstellung, mise en scène). Complex argument about stage freedom, representation, and spacing clearly articulated. Quotations properly attributed [TD, p. 124]. Technical theater vocabulary (spectacle, mise en scène) correctly rendered. Philosophical distinctions about time and space well-maintained.",
+    "footnote_artifacts": "Page footer 'the theater of cruelty 299' correct. Artaud quotation references [TD] properly formatted. No disruptive artifacts in philosophical argument."
+  },
+  {
+    "page_number": 325,
+    "classification": "MARGINAL",
+    "confidence": 0.74,
+    "evidence": "Readable with 2-3 recoverable OCR issues. Key theatrical concepts present (illocality, autopresentation, theaomai). French text mostly preserved (dessous, dans). Some encoding artifacts visible (reconstitu- appears hyphenated). Complex argument about original representation and closure preserved. Quotations attributable despite minor character issues. Overall philosophical meaning recoverable.",
+    "footnote_artifacts": "Page footer 'writing and difference 300' correct. Artaud citation references [TD, p. 105-6] and [OC 4:297] properly formatted despite minor rendering."
+  },
+  {
+    "page_number": 327,
+    "classification": "MARGINAL",
+    "confidence": 0.73,
+    "evidence": "Mostly readable with 2-3 recoverable OCR errors affecting specialized terms. Complex discussion of Freudian dream-work and hieroglyphic writing preserved. French terminology (cita-, sopoeia rendered as sopoeia, glossopoeia concepts) shows minor encoding artifacts. Key theoretical points about speech, gesture, and gesture-body relationship intact. Quotations [OC 4:313, TD, SE] attributed correctly.",
+    "footnote_artifacts": "Footnote references intact. Page footer 'writing and difference 302' correct. Psychoanalytic technical language mostly preserved despite minor artifacts."
+  },
+  {
+    "page_number": 329,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "Clear exposition bridging Freud and Artaud with accurate technical terminology (representability/Darstellbarkeit, thing-presentations, visual/plastic). Complex Freudian dream analysis concepts well-articulated. Quotations [SE 14:228, SE 4:312, SE 4:227, SE 13:176-77] properly attributed. Comparison of dreams to hieroglyphic writing accurately developed. Philosophical argument coherent.",
+    "footnote_artifacts": "Footnote reference 7 correctly placed. Page footer 'writing and difference 304' accurate. Psychoanalytic citations precisely formatted."
+  }
+]

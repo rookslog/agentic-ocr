@@ -1,0 +1,168 @@
+{
+  "batch_id": 2,
+  "document": "Lenin_StateAndRevolution",
+  "classifications": [
+    {
+      "page_number": 58,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Soft hyphenation artifact: 'excep-tion' split across lines is standard formatting, not OCR error. Text is clean and readable."
+    },
+    {
+      "page_number": 61,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Unknown words are proper nouns and transliterated terms (mensheviks, srs, kautskyite, philis) that OCR cannot verify as correct/incorrect but are semantically meaningful. No apparent OCR corruption of actual text."
+    },
+    {
+      "page_number": 66,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Fragments from hyphenated words: 'descrip-tions', 'palchinskis', 'annum', 'roubles' - these are formatting artifacts and proper nouns, not semantic errors. Text remains usable for embeddings despite fragmentation."
+    },
+    {
+      "page_number": 71,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Hyphenation artifacts ('consid-ered', 'remem-bered', 'misunder-standing', 'tibly') and abbreviation fragments ('ters', 'tion', 'ered') split across lines. Semantic meaning preserved. One potential issue: '/ion-popular' appears malformed (should likely be 'non-popular' but OCR shows 'ion-popular')."
+    },
+    {
+      "page_number": 73,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Hyphenation artifacts: 'decla-ration', 'demarche', 'letarian', 'gramme' fragments. These are line-break artifacts. Semantic content remains intact."
+    },
+    {
+      "page_number": 79,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Hyphenation artifacts and unknown word fragments (convinc-ing, experi-ence) are standard formatting. Unknown words (kautskyite, dictions) are proper nouns/terms. No semantic corruption."
+    },
+    {
+      "page_number": 83,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "German transliteration terms (historiche, Entwicklungsphasen, Produktion) and word fragments (sition for 'transition') are present. These are difficult for OCR but meaning is recoverable from context. No severe semantic corruption."
+    },
+    {
+      "page_number": 84,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Hyphenation and fragmentation of longer words ('edentedly' as two fragments, 'phlet' for pamphlet, 'opportun-ism'). Word boundaries mostly clear. Semantic meaning largely preserved despite OCR struggles."
+    },
+    {
+      "page_number": 87,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Proper nouns and transliterated terms (plekhanovites, kautskyite) present but text overall clean. Hyphenation artifacts ('imper-ialist') are standard. No significant semantic corruption."
+    },
+    {
+      "page_number": 91,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Fragments and unknown words (niques for 'techniques', ery, ances) are minor hyphenation artifacts. Main text is readable and semantically sound. No critical OCR errors."
+    },
+    {
+      "page_number": 92,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Word fragmentation from hyphenation: 'democratism' split, 'ernment', 'vate' (private), 'electivity'. These affect readability but meaning is recoverable. Soft hyphens were not properly handled."
+    },
+    {
+      "page_number": 93,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Multiple corrupted proper names: 'zertreten', 'sembats', 'staunings', 'ings', 'hendersons', 'bissolatis', 'renaudels'. These German/European names are severely mangled, impacting semantic understanding of who is being referenced. Critical name corruption affects meaning.",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 94,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Hyphenation artifacts and fragments: 'elimina-tion', 'parliamen-tary', 'viz' (abbreviation), proper name fragments. Main text is readable but some technical terms are split. Semantic meaning largely preserved."
+    },
+    {
+      "page_number": 95,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Multiple proper name corruptions: 'naroda', 'del Naroda', 'messrs' (formatting), 'cisms', 'candour', 'vanderveldes', 'delo', 'rusanov'. German/Russian names severely corrupted. Additionally: 'labour' vs 'labor' (British spelling, but not OCR error). Proper noun corruption damages semantic accuracy.",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 96,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Minor fragments and hyphenation: 'anar-chist', 'ordi-nary', 'practi-cal'. Proper nouns present (plekhanov, tsereteli) but text overall clean and readable. No severe semantic corruption."
+    },
+    {
+      "page_number": 105,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Hyphenation and word fragmentation: 'occupations', 'associations', 'billetings', 'proudhonist'. Proper compound terms split across lines. Semantic meaning recoverable but fragmentation affects clarity."
+    },
+    {
+      "page_number": 106,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Term fragments and hyphenation: 'anarchists', 'nationalists', 'blanquists', 'interna-tional'. These are properly-formed terms but split. No severe semantic corruption, meaning is clear from context."
+    },
+    {
+      "page_number": 108,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Hyphenation artifacts: 'authoritari-anists', 'pudiated' (repudiated), 'machin-ery', 'tion' fragments. Word boundaries mostly intact. Semantic meaning preserved despite formatting issues."
+    },
+    {
+      "page_number": 110,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Minor fragments: 'tion', 'etarian', 'bracke' (likely 'Bracke'), 'prol-etarian'. Text is generally clean with only hyphenation artifacts. No significant semantic corruption."
+    },
+    {
+      "page_number": 113,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Word fragments: 'valu-able', 'tively' (relative), 'atten-tively', 'tions'. Hyphenation artifacts and German compound terms. Meaning is recoverable. Proper nouns (Kautsky, Neue Zeit) handled reasonably well."
+    },
+    {
+      "page_number": 116,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Minor fragments and abbreviations: 'eradicat-ing', 'switzerlandization', 'pletely'. Text is clean overall. Hyphenation artifacts do not significantly impair semantic understanding."
+    },
+    {
+      "page_number": 118,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "German terms and proper names with artifacts: 'bezirksstatthalter', 'gemeinde', 'regierungsrate', 'kerenski'. Fragment handling of complex administrative terms. Meaning recoverable but technical accuracy affected."
+    },
+    {
+      "page_number": 131,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Minor abbreviations and fragments: 'niques' (techniques), 'tech', 'cracy', 'etc'. Text flows well and semantic meaning is clear. No critical OCR errors affecting embeddings."
+    },
+    {
+      "page_number": 135,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Minimal errors. Only minor fragments: 'labour' (British spelling), 'mis-taken'. Text is very clean. Error rate of 0.6% is excellent. No semantic corruption."
+    },
+    {
+      "page_number": 141,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Minor hyphenation artifacts: 'ity', 'concep-tion', 'nism' (communism). Text is clean and readable. Semantic meaning well-preserved. Error rate of 2.0% is acceptable."
+    }
+  ],
+  "summary": {
+    "total_pages": 25,
+    "good_count": 11,
+    "marginal_count": 12,
+    "bad_count": 2,
+    "good_percentage": 44.0,
+    "marginal_percentage": 48.0,
+    "bad_percentage": 8.0,
+    "notes": "Batch 02 shows typical OCR challenges with hyphenation artifacts and proper noun corruption. Pages 93 and 95 have critical proper name corruptions (German/European surnames severely mangled) that would damage embeddings. Most other pages have recoverable errors from line-break handling. The batch is generally usable for RAG but pages 93-95 warrant review."
+  }
+}

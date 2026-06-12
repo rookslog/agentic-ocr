@@ -1,0 +1,30 @@
+# Execution targets (PLAN.md §7.1: local-first, three targets).
+#
+# One execution abstraction from day 0 — a job declares a target; the runner is
+# plain SSH-over-Tailscale + rsync'd artifacts. No queue, no orchestrator until
+# batch-experiment scale demonstrates the need.
+#
+# A job is run with:  python -m runner.run --job <dir> --target <name>
+
+[targets.local-mac]
+kind = "local"               # runs in-process on this Mac; no SSH
+description = "Apple silicon daily driver — fm tasks, MLX experiments, dev loop, interactive eval"
+# Batch jobs must be niced/capped and never saturate the daily-driver machine.
+nice = 10
+
+[targets.dionysus]
+kind = "ssh"                 # SSH over Tailscale
+host = "dionysus"            # Tailscale MagicDNS name
+user = "logansrooks"
+description = "Standing remote batch workhorse — GTX 1080 Ti 11GB, 32GB RAM, Intel Xeon"
+# Pascal (SM 6.1): no vLLM, no tensor cores/FP8. Batch rendering/degradation (CPU),
+# classical layout models, quantized GGUF VLM via llama.cpp. 11GB fits a 7B VLM @ 4-bit.
+remote_root = "~/agentic-ocr-jobs"   # rsync destination for job dirs + artifacts
+
+[targets.rental]
+kind = "ssh"                 # placeholder — UNUSED until needed (PLAN §7.1)
+host = ""                    # filled in per-session when a GPU is rented
+user = ""
+description = "Rented GPU (later) — full-speed engine benchmarking (e.g. olmOCR-2 FP8 on vLLM), Phase 4 scale-up"
+enabled = false              # the config exists from Phase 0; the spend does not
+remote_root = "~/agentic-ocr-jobs"

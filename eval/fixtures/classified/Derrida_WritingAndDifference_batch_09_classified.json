@@ -1,0 +1,177 @@
+[
+  {
+    "page_number": 371,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Text is generally readable with correct philosophical terminology (Aufhebung, Bataille, Blanchot, phenomenology). Foreign words properly rendered. Minor OCR artifacts: 'superfluous' rendered as 'superﬂuous' (fi ligature - not an error), 'method' rendered as 'Méthode' (correct French). The 'unknown_words_sample' appears to be fragment artifacts from hyphenation rather than OCR errors (aufhebung, blanchot are legitimate terms).",
+    "footnote_artifacts": "footnote markers properly preserved (23, 43)"
+  },
+  {
+    "page_number": 374,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "evidence": "Technical philosophical language properly rendered: 'Aufhebung', 'philosopheme', 'intraphilosophical' all correct. Discussion of Hegel's Phenomenology with accurate terminology. Minor hyphenation fragments in sample (stitutes=constitutes, gener=generally) are expected OCR artifacts, not errors. Text flows coherently.",
+    "footnote_artifacts": "footnote markers preserved (43)"
+  },
+  {
+    "page_number": 376,
+    "classification": "GOOD",
+    "confidence": 0.95,
+    "evidence": "High-quality OCR of essay title 'STRUCTURE, SIGN AND PLAY IN THE DISCOURSE OF THE HUMAN SCIENCES'. Philosophical vocabulary accurate: 'episteme' (with proper diacritics), structural concepts clear. Minor artifacts in sample (struc/ture=structure split) are hyphenation fragments.",
+    "footnote_artifacts": "none visible"
+  },
+  {
+    "page_number": 378,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "evidence": "Generally readable despite 5% error rate. Technical terms mostly correct: 'ousia', 'telos', 'energeia', 'aletheia', 'transcendentality', 'structurality' all present and correct. Some fragment artifacts in sample (xed=fixed, ning=meaning) from hyphenation. Meaning is fully recoverable.",
+    "footnote_artifacts": "none visible"
+  },
+  {
+    "page_number": 380,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Sophisticated Derridean text on signification properly rendered: 'signifier', 'signified', Lévi-Strauss citation intact. Fragment artifacts in sample (oppos=opposition, erent=different) are hyphenation splits. The discussion of semiotics and philosophy is coherent and accurate.",
+    "footnote_artifacts": "none visible"
+  },
+  {
+    "page_number": 386,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "evidence": "5.7% error rate but text remains meaningful. Technical terms correctly rendered: 'bricolage', 'bricoleurs', 'mythologicals', 'Lévi-Strauss'. Fragment artifacts (logicals, referen, mytho) are incomplete words from hyphenation. The critical analysis of myth and bricolage is readable.",
+    "footnote_artifacts": "none visible"
+  },
+  {
+    "page_number": 387,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "evidence": "7% error rate is highest in batch but remains readable. Complex philosophical content about myth and structure present and coherent. Technical terms intact: 'anaclastic', 'mythomorphic', 'epistemology' (as 'episteme'). Fragment artifacts (nding=ending, guration=figuration) from hyphenation.",
+    "footnote_artifacts": "none visible"
+  },
+  {
+    "page_number": 389,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Dense philosophical text on transphilosophical concepts properly rendered. Technical terminology accurate: 'empiricism', 'structural ethnology', 'justifiably'. Fragment artifacts in sample (scienti=scientific, informa/tion=information) are hyphenation splits. Discussion of Lévi-Strauss coherent.",
+    "footnote_artifacts": "none visible"
+  },
+  {
+    "page_number": 390,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Complex text on totalization and play properly rendered. Key concepts intact: 'nontotalization', 'supplementarity', 'finitude'. Fragment artifacts (ization=totalization, oating=floating) are hyphenation splits. The philosophical argument about language and structure is clear.",
+    "footnote_artifacts": "none visible"
+  },
+  {
+    "page_number": 391,
+    "classification": "GOOD",
+    "confidence": 0.84,
+    "evidence": "Text on mana and symbolic thought properly rendered. Foreign words correct: 'Wakau', 'oranda', 'Mauss'. Technical terms intact: 'supplementary', 'signification', 'zero symbolic value'. Fragment artifacts (intro=introduction, eds=understood) are hyphenation. The ethnological discussion is coherent.",
+    "footnote_artifacts": "none visible"
+  },
+  {
+    "page_number": 392,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "Discussion of signifiers and phonological theory properly rendered. Linguistic concepts intact: 'phoneme', 'zero phoneme', 'differential characters'. Citations of Jakobson correctly preserved. Fragment artifacts (nitude=finitude, episte=episteme) are hyphenation. Historical reference to play and epistemology coherent.",
+    "footnote_artifacts": "footnote markers preserved (14, 15, 16)"
+  },
+  {
+    "page_number": 398,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "evidence": "High-quality OCR of poetic/philosophical text. Complex vocabulary rendered correctly: 'elliptical', 'identification', 'genetive' (linguistic term), 'reappropriate'. The passage on closure and repetition is semantically coherent and philosophically sound.",
+    "footnote_artifacts": "footnote markers preserved (2, 3)"
+  },
+  {
+    "page_number": 402,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Philosophical text with nested quotations properly rendered. Author names and concepts intact: 'Yukel', triplicity imagery. Fragment artifacts (gure=figure, nally=finally) are hyphenation. The meditation on books and questions maintains philosophical coherence.",
+    "footnote_artifacts": "none visible"
+  },
+  {
+    "page_number": 403,
+    "classification": "MARGINAL",
+    "confidence": 0.76,
+    "evidence": "6% error rate. French phrases partially garbled: 'avec ton ombre' might have subtle issues, 'dans le nombre' present. However, philosophical argument about repetition and ternary essence is recoverable. Fragment artifacts (sacri=sacrificed, nombre=number) from hyphenation. Meaning is clear despite errors.",
+    "footnote_artifacts": "none visible"
+  },
+  {
+    "page_number": 404,
+    "classification": "BAD",
+    "confidence": 0.82,
+    "evidence": "11.4% error rate with multiple word distortions. Examples: 'monglond' (likely Monglond), 'pleasur' (pleasure), 'univers' (univers/universe), 'preromanticism' correct but 'harcourt' questionable. Notes section shows degradation. While some content recoverable, scholarly accuracy severely compromised.",
+    "footnote_artifacts": "footnote section shows OCR strain with partial author names"
+  },
+  {
+    "page_number": 405,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "5.3% error rate. Complex philosophical notes mostly readable. Some distortions: 'mallarm' (Mallarmé), proper names partially affected. However, core concepts intact: structural analysis, philosophical references. Fragment artifacts (dif=different, pre=previous) from hyphenation. Scholarly utility maintained.",
+    "footnote_artifacts": "footnote section with author citations present"
+  },
+  {
+    "page_number": 406,
+    "classification": "BAD",
+    "confidence": 0.8,
+    "evidence": "10.7% error rate with significant degradation. Examples: 'univers' (universe), 'tique' (incomplete), 'essais' present but context uncertain. Notes section compromised with partial words and unclear citations. While some passages recovered, reliable scholarly reading difficult.",
+    "footnote_artifacts": "footnote section significantly degraded"
+  },
+  {
+    "page_number": 407,
+    "classification": "MARGINAL",
+    "confidence": 0.77,
+    "evidence": "8.5% error rate in dense philosophical notes. Some proper names affected: 'nonmetaphorical' correct but minor surrounding errors. Kant citations present. Fragment artifacts (util=utilize, ect=subject) from hyphenation. With careful reading, scholarly meaning is recoverable.",
+    "footnote_artifacts": "footnote citations partially compromised"
+  },
+  {
+    "page_number": 409,
+    "classification": "BAD",
+    "confidence": 0.78,
+    "evidence": "14.9% error rate - highest in batch. Multiple significant distortions: 'civilis' (civilisés), 'contiennent' garbled, 'phane' (epiphany?), 'artistique' unclear context. Footnote section degraded. While some recovery possible, accuracy unreliable for scholarly purposes.",
+    "footnote_artifacts": "footnote citations heavily affected"
+  },
+  {
+    "page_number": 410,
+    "classification": "BAD",
+    "confidence": 0.76,
+    "evidence": "11% error rate with scholarly impact. Distortions: 'eerdman' (Eerdman), 'empiricity' correct but 'unreproducibly' questionable rendering. Technical terms partially affected: 'guistic' (linguistic), 'schaff' (Schaff). While partially recoverable, reliability compromised.",
+    "footnote_artifacts": "footnote citations show author name degradation"
+  },
+  {
+    "page_number": 411,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "evidence": "8.8% error rate in notes. Names affected: 'eucte' (Polyeucte), 'guez' (Guez?), 'lasalle' (LaSalle). However, Heidegger references intact, philosophical citations preserved. Fragment artifacts (nal=final, nity=infinity) from hyphenation. Core scholarly content recoverable with effort.",
+    "footnote_artifacts": "author citations partially degraded"
+  },
+  {
+    "page_number": 412,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "5.4% error rate. Technical references mostly intact: 'metaphysics', 'Leibniz' citations. Some distortions: 'nitive' (definitive), 'kamo' (unclear origin). Fragment artifacts (ment=moment, signi=signification) from hyphenation. Scholarly argument traceable.",
+    "footnote_artifacts": "none visible"
+  },
+  {
+    "page_number": 413,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "8.2% error rate. Some name distortions: 'rodrigue' (Rodrigue), 'prouh' likely 'Prouhèze'. Philosophical concepts intact: 'turalist' (structuralist), 'paci' (pacification). Fragment artifacts (ated=isolated, nity=infinity) from hyphenation. Meaning is recoverable.",
+    "footnote_artifacts": "none visible"
+  },
+  {
+    "page_number": 414,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Dense notes with complex references properly rendered. Philosophical terminology intact: 'cogito', 'metaphysics', 'Zarathrustra'. Nietzsche citations preserved. Fragment artifacts (ner=tuner?, ance=instance) minor. Historical and philosophical references coherent.",
+    "footnote_artifacts": "none visible"
+  },
+  {
+    "page_number": 416,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "5.2% error rate in notes. Greek philosophical works referenced: Timaeus, Theatetus preserved. Some minor distortions: 'theatetus' correct, 'reappropriates' intact, 'ahistorical' correct. Fragment artifacts (rms=forms, timeus=Timaeus) from hyphenation. Philosophical argument traceable.",
+    "footnote_artifacts": "none visible"
+  }
+]

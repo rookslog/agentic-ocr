@@ -1,0 +1,267 @@
+{
+  "batch_id": 9,
+  "document": "Heidegger_BeingAndTime",
+  "classified_pages": [
+    {
+      "page_number": 306,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Text is clean with proper formatting. Unknown words in sample are mostly legitimate German terms (dasein, concernfully are translation artifacts) or formatting issues.",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 307,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Error rate 10.7% with several true OCR errors: 'oglichkeit' (should be 'M\u00f6glichkeit' or 'Moglichkeit'), 'wirk' (likely 'wirklich' truncated). German fragments in sample are actual text artifacts from original footnotes.",
+      "footnote_artifacts": [
+        "hereingezogen - German word from original text",
+        "wird - German word from original text",
+        "greifen - German word from original text"
+      ]
+    },
+    {
+      "page_number": 308,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Error rate 5.1%. Text flows naturally. 'somethi' appears to be truncation artifact of 'something', 'sel' is partial 'self', 'poten' is 'potentiality' truncation. These are formatting artifacts not semantic errors.",
+      "footnote_artifacts": [
+        "vorlaufen - legitimate German term from text"
+      ]
+    },
+    {
+      "page_number": 309,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Error rate 4.1%. Contains real OCR errors: 'xnanifest' should be 'manifest' (x\u2192m substitution), 'tena' appears corrupted (should be something like 'tenacity' or similar). 'ofthe' is space-deletion error (of the \u2192 ofthe). 'theonselves' is similar spacing error (the onselves).",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 311,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": "Error rate 13.3%. Contains significant OCR corruption: 'panied' (should be 'accompanied'), 'ality' (truncated word fragment), 'pos' (truncated 'possibility'). The text has multiple partial words and fragmentation that would damage semantic embeddings.",
+      "footnote_artifacts": [
+        "aufsteigende - legitimate German term",
+        "eigensten - legitimate German term",
+        "bedrohung - legitimate German term"
+      ]
+    },
+    {
+      "page_number": 312,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Error rate 3.5%. Minor issues: 'concemful' (r\u2192m substitution - should be 'concernful'), 'existen' (truncation), 'mostbeing' should be 'ownmost being' (word boundary issue). Low error rate but errors present.",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 313,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Clean text with proper formatting. Unknown words are mostly German terms legitimately present in the original text (attestation, existentiell, inauthenticity).",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 314,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Error rate 4.7%. Contains: 'stricted' (should be 'restricted' - letter substitution), 'mannner' (extra 'n', should be 'manner'), 'nachholen' and 'stimme' are legitimate German terms. Some genuine typos mixed with translation artifacts.",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 315,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": "Error rate 13.8%. Multiple serious errors: 'counterproofs' appears contextually wrong, 'bstseins' is severely corrupted (should be 'selbstseins'), 'anrufs' appears truncated. Footnote references embedded incorrectly in text. Semantic corruption evident.",
+      "footnote_artifacts": [
+        "eigensten - legitimate German",
+        "weise - legitimate German",
+        "heissen - legitimate German"
+      ]
+    },
+    {
+      "page_number": 316,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Error rate 5.9%. Contains legitimate German words (existiert, iiberlassen). Unknown words are translation artifacts or properly OCR'd German. Text maintains semantic integrity.",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 317,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Error rate 6.8%. Issues include: 'cally' (should be 'ically' - missing i), 'hinhiiren' and 'hinhoren' are variant spellings of legitimate German words. 'verlorenen' is correct German. Mixed real and artifact errors.",
+      "footnote_artifacts": [
+        "heisst - legitimate German word"
+      ]
+    },
+    {
+      "page_number": 318,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Error rate 3.3%. Clean text. 'ontologico' is legitimate philosophical terminology. German words present are actual content (angerufen, disclosedness). No significant OCR corruption.",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 319,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": "Error rate 9.9%. Multiple corruption patterns: 'aufdas' (space deletion: auf das \u2192 aufdas), 'sichver' (word fragment/corruption), 'selbstseinkonnen' appears as merged words without proper spacing. Semantic corruption from word boundary errors.",
+      "footnote_artifacts": [
+        "entsprechend - legitimate German",
+        "eigensten - legitimate German"
+      ]
+    },
+    {
+      "page_number": 320,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Error rate 5.4%. Contains: 'lasen' (should likely be 'lassen'), 'onry' (should be 'only'), 'acter' (should be 'character' - letter loss). Scattered OCR errors but 3-5% range suggests mostly usable text.",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 322,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Error rate 8.1%. Despite slightly elevated rate, text is largely semantic sound. German words legitimately present (faktisch, hinsichtlich, bringt). No major corruption patterns detected.",
+      "footnote_artifacts": [
+        "warum - legitimate German",
+        "mehr - legitimate German"
+      ]
+    },
+    {
+      "page_number": 326,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": "Error rate 12.7%. Severe errors include: 'caling' should be 'calling' (l\u2192ll), 'mitgerufen' and 'miterschlossen' appear as merged compound words, 'oglichkeit' (M\u00f6glich- corruption), 'lichkeit' (truncated). Footnote embedding issues compound the corruption.",
+      "footnote_artifacts": [
+        "schuld - legitimate German",
+        "zur - legitimate German",
+        "caling - OCR error for 'calling'"
+      ]
+    },
+    {
+      "page_number": 328,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": "Error rate 12.4%. Multiple serious OCR artifacts: 'verletzen' appears contextually odd, 'schuldigwerdens' is merged word form, 'alltagliche' (umlaut corruption: \u00e4\u2192a), 'lrn' is severely garbled (should be 'Im' or 'Im' for German 'Im'). Semantic damage evident.",
+      "footnote_artifacts": [
+        "schuld - legitimate German",
+        "werden - legitimate German",
+        "lrn - OCR corruption"
+      ]
+    },
+    {
+      "page_number": 329,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": "Error rate 10.5%. Issues: 'acterization' should be 'characterization' (ch\u2192ect corruption), 'prin' is truncated fragment, 'grundsein' and 'mangelhaft' appear as merged/corrupted compound forms. Word boundary and character-level errors damage semantic meaning.",
+      "footnote_artifacts": [
+        "schuld - legitimate German"
+      ]
+    },
+    {
+      "page_number": 330,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Error rate 6.4%. Contains: 'nif' (corrupted fragment), 'nichtigkeit' is legitimate German philosophical term, 'privativum' is correct Latin term. Mix of legitimate terms and real OCR errors ('nif' severely corrupted).",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 331,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Error rate 15.6% - highest in batch. Severe corruption: 'bestirnmt' (r\u2192m corruption: 'bestimmt'), 'gramar' should be 'grammar', 'ihrn' should be 'ihm', 'favoured' contextually incorrect spelling (British variant in German text context), 'geschah' appears misspelled. Significant semantic corruption.",
+      "footnote_artifacts": [
+        "ent - truncated fragment",
+        "eigensten - legitimate German",
+        "geworfene - legitimate German term"
+      ],
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 334,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": "Error rate 8.8%. Issues: 'func' is truncated ('function'), 'caling' should be 'calling', 'eigentluh' (umlaut/letter corruption: should be 'eigentlich'), 'pos' truncation. Text is usable but has scattered real errors.",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 335,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Error rate 4.6%. Minor issues: 'caled' should be 'called' (l duplication lost), 'consciencelessness' is awkward phrasing but correctly OCR'd. Text maintains semantic integrity. Low error rate with mostly formatting artifacts.",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 336,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Error rate 7.9%. Contains: 'vulgare' (should be 'Vulgar' or 'vulg\u00e4r' with umlaut), 'cealment' should be 'concealment' (con\u2192 missing), 'jerstanding' should be 'understanding', 'besorgnisse' is legitimate German plural. Several real OCR errors present.",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 338,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Error rate 2.7% - second lowest in batch. Text is clean with proper formatting. 'indebteqness' has minor typo (q\u2192d substitution) but overall semantic integrity maintained. Mostly accurate OCR.",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 339,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Error rate 4.2%. Clean text with minor artifacts. 'ience' is truncation of 'conscience', 'clusion' is 'conclusion' truncation. 'vlll' appears to be Roman numeral corruption but doesn't affect meaning. Overall semantic integrity good.",
+      "footnote_artifacts": []
+    }
+  ],
+  "summary": {
+    "total_pages": 24,
+    "good_count": 9,
+    "marginal_count": 9,
+    "bad_count": 6,
+    "average_error_rate": 7.7,
+    "pages_by_quality": {
+      "GOOD": [
+        306,
+        308,
+        313,
+        316,
+        318,
+        322,
+        335,
+        338,
+        339
+      ],
+      "MARGINAL": [
+        307,
+        309,
+        312,
+        314,
+        317,
+        320,
+        330,
+        334,
+        336
+      ],
+      "BAD": [
+        311,
+        315,
+        319,
+        326,
+        328,
+        329,
+        331
+      ]
+    },
+    "common_error_patterns": [
+      "Word boundary issues (spaces deleted between words)",
+      "Character substitutions (rn\u2192m, ch\u2192ect, r\u2192m)",
+      "Truncations and word fragments (pos, ality, func, caling)",
+      "Umlaut corruption (\u00e4\u2192a)",
+      "Merged compound words without proper spacing",
+      "Legitimate German and philosophical terms present in text not counted as errors"
+    ],
+    "notes": "Pages with high error rates (>10%) show semantic damage through word-boundary corruption and merged words. The 6 BAD pages would likely damage RAG embeddings due to semantic confusion from word merging and severe truncations. MARGINAL pages have recoverable errors (1-2 wrong words per page). GOOD pages have only formatting artifacts or legitimate text terms."
+  }
+}

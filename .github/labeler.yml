@@ -1,0 +1,15 @@
+# actions/labeler config (v5 schema).
+# Marks PRs that touch load-bearing paths with the `load-bearing` label, so they
+# get T3 review: deep review + reviewer ≠ author + Logan approves (PLAN §11.3).
+#
+# Load-bearing = anything that can SILENTLY INVALIDATE experiments: the eval
+# checkers/scoring core, the experiment preregs/results, the execution targets,
+# and the CI/governance machinery itself.
+
+load-bearing:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'eval/**'
+          - 'experiments/**'
+          - 'runner/targets*'
+          - '.github/**'

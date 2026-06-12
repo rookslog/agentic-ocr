@@ -1,0 +1,177 @@
+[
+  {
+    "page_number": 205,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Text is highly readable with clear word boundaries and proper punctuation. French phrases (pour vous y mettre, cette derivation en derive, d'en user avec l'alterite) are correct. Hyphenation and em-dashes properly preserved. Structure and formatting intact.",
+    "footnote_artifacts": "None significant - numbers like '23' appearing in 'alteritej' seem to be transcription artifacts from original but don't impede reading."
+  },
+  {
+    "page_number": 207,
+    "classification": "MARGINAL",
+    "confidence": 0.88,
+    "evidence": "Generally readable but contains one clear OCR error: 'gibt esn' should be 'gibt es' - the 'n' is erroneous. German words (Aujriss, Umriss, Grundriss, Geflecht, Entziehen, Heidegger) are correct. French passages readable. Overall comprehension not significantly impaired.",
+    "footnote_artifacts": "Footnote marker 'I27' appears correctly without garbling. Some compound German terms broken across lines but reconstructable."
+  },
+  {
+    "page_number": 209,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Highly readable text with proper punctuation and word clarity. French technical terms (fac-simile, ductus, seduction, reduction) correct. Greek derivations intact. The fragmentary compound words (fac-simile, 'uct') are part of original text structure. Parenthetical translations present and clear.",
+    "footnote_artifacts": "None - text properly formatted with both English and French maintained correctly."
+  },
+  {
+    "page_number": 210,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Mostly readable but contains OCR errors: 'adeiknymi' appears correct but context suggests ancient Greek terminology. 'saus scelles' should likely be 'saus scelles' (correct). 'ttfermez le ban' has doubled 't' which is erroneous - should be 'Fermez le ban'. French phrases mostly correct. Greek word integration maintained.",
+    "footnote_artifacts": "Footnote marker '23' embedded in text flow naturally. Double character errors ('tt') appear OCR-related."
+  },
+  {
+    "page_number": 211,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Clear and readable with proper philosophical terminology. Greek derivation explained clearly (dia, tache, macchietta). Complex French phrases properly rendered. German borrowing 'altuglass' preserved. The fragmented compound words are structural (architectural/sculptural terminology). Formatting and punctuation consistent.",
+    "footnote_artifacts": "Footnote marker 'a' used appropriately. No significant artifacts impeding comprehension."
+  },
+  {
+    "page_number": 212,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "Mostly readable but OCR errors present: 'than a tograph er' should be 'than a tographer' (spacing error). 'coups d'etat' properly preserved. German 'Demontages' correct. French terminology accurate. The primary error is word spacing/division rather than character substitution, which reduces clarity slightly but preserves meaning.",
+    "footnote_artifacts": "Footnote marker '1977' in date format correct. References to 'Swiss watch' and 'zoo­grapher' properly hyphenated."
+  },
+  {
+    "page_number": 214,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Highly readable and coherent. French phrases (comme on pen;oit, manigance(r) le faux-contact, rendre raison de, ductus) are correct with proper accent marks. Complex philosophical discussion flows clearly. Parenthetical etymologies and translations integrated smoothly.",
+    "footnote_artifacts": "Semicolon in 'pen;oit' appears intentional or stylistic. No garbling of technical terms. Footnote references properly formatted."
+  },
+  {
+    "page_number": 217,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Excellent readability despite complex Sadian references and explicit content. French quotations intact (s'approprier, deborder, the entire Duclos passage). British spelling conventions preserved ('labour'). No significant OCR errors affecting comprehension. Layout and formatting maintained.",
+    "footnote_artifacts": "None - explicit content preserved faithfully from source. Quotation marks and ellipses properly formatted."
+  },
+  {
+    "page_number": 218,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Clear and coherent despite dense philosophical content. French terminology precise (mise au secret, en coupe, l'arret de mort, economimesis). Numerical references (12, 7, 25, 18, 20, 17, 6, 15) clear and correct. Complex nested references properly punctuated.",
+    "footnote_artifacts": "Numerical footnote markers integrated correctly. 'chiffre' properly distinguished from text."
+  },
+  {
+    "page_number": 225,
+    "classification": "MARGINAL",
+    "confidence": 0.84,
+    "evidence": "Mostly readable but contains OCR errors: 'hasn't' appears incomplete/malformed, 'exclu.ded' has extraneous period, 'M'hors-serie' formatting unclear. The phrase about 'necessaire' (necessary) is readable but surrounding text has formatting issues. French passages generally correct (garrots, rejointings, etc.).",
+    "footnote_artifacts": "Multiple spacing/punctuation artifacts: 'exclu.ded' should be 'excluded', various hyphenation issues. Footnote marker '/' present but context clear."
+  },
+  {
+    "page_number": 228,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Readable academic text with proper technical terminology. French passages intact (cartellino, cartel, hors-d'oeuvre, chef-d'oeuvre). German reference names correct (Lebensztejn, cartuccio). Quotation marks and embedded citations properly formatted. Structural complexity maintained.",
+    "footnote_artifacts": "None - author names and technical terms preserved accurately."
+  },
+  {
+    "page_number": 229,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Clear and well-structured despite philosophical density. French terms correct (recit/seriel, revenant, Finnegans Wake reference). Literary and mythological allusions preserved (Jamblicus, Pythagoras, Mount Carmel). Complex wordplay on 'or' (death/corps/hors/fors/mars/corpse/sort/bord/retors) evident and readable.",
+    "footnote_artifacts": "None - linguistic wordplay intentionally preserved. Formatting supports comprehension of parallel structure."
+  },
+  {
+    "page_number": 230,
+    "classification": "MARGINAL",
+    "confidence": 0.83,
+    "evidence": "Generally readable but contains OCR errors: 'iiproducing' should be 'producing' (double-i error), 'iiproduced' similar error. 'unproduced' and 'abcd' appear garbled. French terminology mostly correct (elle se le voit prescrire, paradigme, usure) but surrounding text has character duplication errors affecting clarity.",
+    "footnote_artifacts": "Double-character OCR errors ('ii' prefix), single letter oddities ('abcd'). These reduce but don't eliminate comprehension."
+  },
+  {
+    "page_number": 231,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "Readable overall but contains OCR errors: 'ffaux' has doubled 'f', 'defunctus' correct, 'daugh' incomplete (should be 'daughter'). German text has errors: 'aufhebt' and 'zerrissene' preserved correctly, 'Das Unheimliche' correct. 'coprophagist' and 'faux-freres' correct despite explicit nature.",
+    "footnote_artifacts": "Double-character error 'ffaux' for 'faux'. 'daugh' appears truncated. These are clear OCR artifacts but context aids reconstruction."
+  },
+  {
+    "page_number": 232,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Clear philosophical exposition with proper technical language. Greek derivation 'phantasmata' correct, 'ductus' properly used. French passages intact (debandade, dans tous les sens, enchainement, seira). Complex nested discussion of paradigm and decomposition flows logically.",
+    "footnote_artifacts": "None - advanced vocabulary and multilingual content properly preserved."
+  },
+  {
+    "page_number": 239,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "Readable but contains errors: 'ularly' appears incomplete (should be 'regularly'), 'proces' should be 'procès' or 'process', 'crea' truncated (should be 'creature'). French passages mostly correct (mise en boite, emboitement, oeil). The narrative about matchbox/coffin relationship clear despite errors.",
+    "footnote_artifacts": "Multiple truncation errors suggesting page boundary issues. 'proces du modele' reconstructible from context."
+  },
+  {
+    "page_number": 240,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Clear narrative flow with proper French terminology (ticulation should be 'articulation' - minor error, neces­sary correct with hyphenation, emboite, parergon). The matchbox/coffin analogy clearly explained. Literary quotation from Funeral Rites properly formatted. Architecture and structure terminology intact.",
+    "footnote_artifacts": "Minor hyphenation artifact in 'neces­sary' but preserves reading. 'parellelepiped' has doubled 'l' - minor spelling error but clear meaning."
+  },
+  {
+    "page_number": 246,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Readable discussion of the Tlingit Coffin title. German words correct (chenwahl, kast-, emboites). French properly rendered (motiv, emboitement). The analysis of the proper name 'Tlingit Coffin' and its linguistic embedding clearly presented. Typography and spacing maintained.",
+    "footnote_artifacts": "'iead' appears to be OCR error for 'lead' but context (about lead-sealed) clarifies meaning. 'kast' is German for 'casket' - correct."
+  },
+  {
+    "page_number": 248,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Readable overall but some OCR artifacts: 'lables' should be 'labels', 'syl' truncated (should be 'syllables'), 'nomi' incomplete (should be 'nominal' or similar). French 'cheville' (ankle/pivot) correct, 'demontages' correct, 'reste' correct. The core analysis of T-C's name construction understandable despite truncations.",
+    "footnote_artifacts": "Visible truncation errors suggesting word wrapping/hyphenation issues. 'syl' and 'nomi' clearly incomplete."
+  },
+  {
+    "page_number": 249,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Clear and well-structured analysis of the author's name and its significance. French terms correct (petit calepin noir, reappropriate, Recomposition, Phoenician reference). Complex wordplay (anagrams, palindromes) clearly explained. Grunewald and theological references accurate.",
+    "footnote_artifacts": "None - proper names and literary references preserved accurately throughout."
+  },
+  {
+    "page_number": 251,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Readable philosophical conclusion. French terminology correct (deboitement, hapax, emboitement, affaire, dont il se tire, paralellepiped). The discussion of cartouche as scrolling/stacking metaphor clearly presented. Structural concepts well-explained despite abstract nature.",
+    "footnote_artifacts": "'paralellepiped' has doubled 'l' (minor spelling variant). Geometric and metaphorical language properly maintained."
+  },
+  {
+    "page_number": 256,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Clear exposition of coffin's material construction and symbolic references. French correct (scelje, liefs, resis­tance, laisser). Hotel reference (Hammamet) intact. Discussion of fragmentary references and wicker oval coherent. Complex discussion of seduction and the dead well-articulated.",
+    "footnote_artifacts": "Minor hyphenation artifact in 'resis­tance' but maintains meaning. 'scelje' appears to be archaic or stylistic variant - context clear."
+  },
+  {
+    "page_number": 257,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Excellent readability with clear tripartite discourse structure (α, β, γ). French terminology precise (stricture, lacs, seriature, faire, serrer, terlace). Classical reference (Van Gogh's shoes) properly integrated. Complex discussion of binding, lacing, and serial structure maintains clarity.",
+    "footnote_artifacts": "None - Greek letter markers and nested discourse structure properly preserved."
+  },
+  {
+    "page_number": 259,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Clear and well-organized despite abstract content. French and German terminology correct (cadran, Geviert, quadriparti, Spiegelspiel, faire-part, envoie). Numerical symbolism (3x4=12, 3+4=7) clearly presented. References to Kant and earlier work properly formatted.",
+    "footnote_artifacts": "None - mathematical notation and symbolic references properly maintained."
+  },
+  {
+    "page_number": 261,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "Mostly readable but contains OCR errors: 'thp' should be 'The', 'suf­ficient' is hyphenated awkwardly (should be 'sufficient' or 'suffi­cient'). The philosophical conclusion about 'that's sufficient' is recoverable from context. French elements absent on this page.",
+    "footnote_artifacts": "Clear OCR error 'thp' for 'The'. Hyphenation of 'suf­ficient' creates visual oddity but meaning clear from context."
+  }
+]

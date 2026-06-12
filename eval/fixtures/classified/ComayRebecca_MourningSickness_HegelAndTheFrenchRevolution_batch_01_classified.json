@@ -1,0 +1,182 @@
+[
+  {
+    "page_number": 4,
+    "classification": "GOOD",
+    "confidence": 0.95,
+    "evidence": "20% error rate with unknown words 'mieke' and 'bal' which are proper names (Mieke Bal). Title page content is very short and simple, so high error rate indicates systematic OCR failure. Missing expected punctuation.",
+    "footnote_artifacts": "None detected",
+    "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+  },
+  {
+    "page_number": 6,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "7.1% error rate with only 'comay' in unknown words sample (proper name, not an error). Text is clean, readable, and well-formatted title/publication information. Well below the MARGINAL threshold.",
+    "footnote_artifacts": "None detected"
+  },
+  {
+    "page_number": 10,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "evidence": "18.5% error rate. Unknown words include German/French terms ('Mis\u00e8re', 'doch', 'noch', 'nicht', 'und', 'crimen', 'schon') which are legitimate foreign language content (not errors), but high overall error rate indicates structural OCR problems. This is a table of contents with many abbreviations and mixed languages.",
+    "footnote_artifacts": "Tab formatting preserved with line numbers and cross-references. Abbreviations like 'xi', 'xii' correctly recognized.",
+    "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+  },
+  {
+    "page_number": 11,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "4.6% error rate. Unknown words 'antinomies', 'rasa', 'tabula' are legitimate English/Latin terms (not errors). Text is well-preserved table of contents with clear structure, proper spacing, and readable content. Well within GOOD range.",
+    "footnote_artifacts": "Tab formatting with line numbers and cross-references properly preserved. Latin phrase 'tabula rasa' correct."
+  },
+  {
+    "page_number": 12,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "7.7% error rate. Unknown words are all proper names (raykov, rina, cadava, lyndal, roazen, dreyer, mcgeer, nisenbaum, cutrofello, stargardt) - these are not OCR errors but correct proper nouns. Text is an acknowledgments page with slightly degraded readability in places but overall structure is preserved.",
+    "footnote_artifacts": "Some soft hyphens (ad, blank space markers) present but not garbling content."
+  },
+  {
+    "page_number": 13,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "14.7% error rate with many unidentified German/technical terms ('gregor', 'abbre', 'trans', 'gruyter', 'grundrisse', 'schriften', 'niglich', 'wissenschaften', 'guyer'). These appear to be fragments or OCR artifacts of German text rather than legitimate foreign language content. Multiple truncated words indicate systematic errors.",
+    "footnote_artifacts": "Some special characters preserved (\u00fc\u00e4 \u00df) but also degradation in transcription of German abbreviations.",
+    "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+  },
+  {
+    "page_number": 14,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "19.4% error rate with degraded German abbreviations and technical terms ('phr', 'ausgabe', 'gregor', 'paedia', 'unwin', 'von', 'vol', 'ningh', 'phh', 'hardenbergs'). Many truncated or malformed references. This is an abbreviations/bibliography page with complex formatting that OCR has struggled with.",
+    "footnote_artifacts": "Spacing artifacts with right-aligned page numbers. Special characters present but some malformation in German terms.",
+    "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+  },
+  {
+    "page_number": 15,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "23.3% error rate - highest in batch. Unknown words include truncated German terms ('gregor', 'von', 'vol', 'der', 'trans', 'vpr', 'ber', 'suhrkamp', 'vpg', 'vorlesungen'). Multiple abbreviations are malformed. Complex abbreviations page with many special formatting elements has caused systematic OCR failure.",
+    "footnote_artifacts": "Right-aligned reference markers and special spacing formatting partially preserved but with degradation.",
+    "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+  },
+  {
+    "page_number": 18,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "evidence": "2.0% error rate - excellent. Unknown words ('mis', 'nizes', 'doesn', 'recog') appear to be fragments/artifacts from legitimate text. Overall text is highly readable, well-structured introduction. Clean paragraph breaks and proper punctuation. Well within GOOD classification.",
+    "footnote_artifacts": "No footnote markers detected in this page."
+  },
+  {
+    "page_number": 19,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "4.5% error rate with unknown words ('mis', 'veals', 'crepitude', 'incorri', 'nonsynchronicity', 'absolut', 'philosophi', 'contem', 'gible', 'torical') that appear to be truncated or fragmented words from legitimate content. Text discusses complex philosophical concepts and is mostly readable with minor artifacts.",
+    "footnote_artifacts": "Page number marker '\u0641732' at start appears to be OCR artifact of page decoration/number."
+  },
+  {
+    "page_number": 23,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "5.9% error rate. Unknown words include legitimate terms with OCR fragments ('ronism', 'gularly', 'exteriority', 'ity', 'ceptualize', 'unbridgeably', 'ized', 'petuates', 'ogy', 'noncoincidence'). Text discusses philosophical content and is substantially readable with occasional word breaks or truncations.",
+    "footnote_artifacts": "Page number marker at start. Some word-break artifacts ('counter\u2192adpoint' style hyphens) but content is recoverable."
+  },
+  {
+    "page_number": 25,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "6.5% error rate. Unknown words include legitimate German/technical terms ('campe', 'eindeutschbar', 'nderung', 'lables', 'schaffung', 'verdeutsch', 'syl', 'lzung', 'lier', 'inassimilable'). Many appear to be truncation artifacts. Page discusses language and translation with German terms correctly preserved but with some formatting degradation.",
+    "footnote_artifacts": "Some soft hyphens visible but content structure preserved."
+  },
+  {
+    "page_number": 26,
+    "classification": "MARGINAL",
+    "confidence": 0.84,
+    "evidence": "5.4% error rate. Unknown words are mostly proper names and legitimate German terms ('campe', 'awk', 'deutlichkeit', 'germanification', 'proto', 'von', 'manness', 'nationale', 'moser', 'humain'). Text discusses German language and history, mostly readable with minor truncations.",
+    "footnote_artifacts": "Page number marker at start (\u05e3739). Content structure and citations preserved."
+  },
+  {
+    "page_number": 27,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "4.9% error rate. Unknown words are fragmented legitimate terms ('campe', 'sionate', 'ency', 'cul', 'sistibility', 'allemand', 'mer', 'festo', 'sistible', 'transpar'). Scholarly discussion with historical content is substantially preserved with occasional word-break artifacts.",
+    "footnote_artifacts": "Page number markers at start (\u05e3731\u05e3730). Footnote reference style with superscript numbers preserved (e.g., '(1)')."
+  },
+  {
+    "page_number": 28,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "5.1% error rate. Unknown words include truncated/fragmented terms ('valmy', 'propor', 'pre', 'surro', 'expe', 'sume', 'impo', 'fremdwort', 'griev', 'ence'). Text discusses language and nationalism with German terms. Mostly readable with word-break artifacts typical of OCR of complex academic text.",
+    "footnote_artifacts": "Superscript footnote markers preserved (e.g., '(7)'). Quotation marks and nested quotes are correct."
+  },
+  {
+    "page_number": 29,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "6.7% error rate. Unknown words are fragmented academic/foreign terms ('staatslehre', 'ary', 'vir', 'transcenden', 'ter', 'reden', 'sibilities', 'deutsche', 'ursprache', 'lution'). Philosophical discussion with German and Latin terms, substantially preserved despite fragmentation.",
+    "footnote_artifacts": "Page markers (\u05e3731\u05e3732) at start. Footnote references with numbers preserved (e.g., '(9)')."
+  },
+  {
+    "page_number": 30,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "5.2% error rate. Unknown words are fragmented terms from English and German ('campe', 'resi', 'eingeb', 'perma', 'guage', 'opac', 'tion', 'lan', 'theless', 'cates'). Main text is readable with occasional truncation artifacts, discussing language and political philosophy.",
+    "footnote_artifacts": "Some soft hyphens visible but not garbling meaning. Quotation marks and paragraph structure preserved."
+  },
+  {
+    "page_number": 32,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "6.8% error rate. Unknown words include fragmented Latin/academic terms ('extricably', 'christiana', 'rupted', 'ficiency', 'pable', 'lating', 'ferring', 'incar', 'moritur', 'resurrec'). Complex historical discussion is substantially preserved with some word-break artifacts.",
+    "footnote_artifacts": "Superscript footnote markers (15, 16) present and readable. Latin phrases partially preserved (e.g., 'imperium numquam moritur')."
+  },
+  {
+    "page_number": 33,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "6.2% error rate. Unknown words include fragmented German/Latin terms ('heiliges', 'sisted', 'plun', 'der', 'denounc', 'teuto', 'coun', 'misches', 'verbi', 'quinctilius'). Historical discussion of empires and Germany is substantially readable with occasional truncations.",
+    "footnote_artifacts": "Superscript markers (17, 18, 19) preserved. Proper historical references maintained (e.g., 'Hermann', 'Teutoburg forest', 'Charlemagne')."
+  },
+  {
+    "page_number": 34,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "4.3% error rate. Unknown words are mostly fragmented legitimate terms ('ein', 'lution', 'imperii', 'von', 'fahrender', 'ment', 'platz', 'revo', 'regen', 'philosophische'). Main text is highly readable, discussing Luther and translatio concepts. Well within GOOD range.",
+    "footnote_artifacts": "Superscript footnote markers (20, 21) preserved and properly positioned. Quoted text in multiple languages (German, Latin) correctly preserved."
+  },
+  {
+    "page_number": 36,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "4.1% error rate with fragmented terms ('mune', 'irresist', 'fective', 'stantly', 'revolu', 'tion', 'volutio', 'naturalis', 'frac', 'olution'). Discussion of political philosophy and revolution is substantially readable. Quote attribution and structure preserved.",
+    "footnote_artifacts": "Superscript markers (e.g., 'status naturalis', 'turnspit') and section breaks properly formatted."
+  },
+  {
+    "page_number": 39,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "5.6% error rate. Unknown words include fragmented academic/German terms ('petually', 'der', 'insuf', 'ficient', 'irrtum', 'schlechthin', 'das', 'temporality', 'novalis', 'urbild'). Complex philosophical discussion is mostly readable with some word-break artifacts.",
+    "footnote_artifacts": "Page marker (\u05e3732\u05e3732) at start. Superscript footnote marker (34, 35, 36) preserved."
+  },
+  {
+    "page_number": 41,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "7.2% error rate. Unknown words are fragmented academic terms ('istic', 'tological', 'ide', 'auguste', 'athen', 'stacle', 'meis', 'hysteron', 'astres', 'tendenzen'). Discussion of German ideology and translation is substantially preserved with some truncations.",
+    "footnote_artifacts": "Page marker (\u05e3732\u05e3734) at start. Superscript footnote markers (41, 42, 43) visible. Quote attribution to Blanqui and historical references preserved."
+  },
+  {
+    "page_number": 42,
+    "classification": "MARGINAL",
+    "confidence": 0.84,
+    "evidence": "8.5% error rate (highest for non-BAD pages). Unknown words include technical/academic terms ('overinvestment', 'hypercathexis', 'flexive', 'trans', 'transla', 'ment', 'syncopa', 'tial', 'tary', 'metatextual'). Complex psychoanalytic discussion of trauma and translation is substantially preserved despite higher error rate.",
+    "footnote_artifacts": "Superscript markers (44, 45) present. Some soft hyphens visible. German term '\u00dcbersetzung' correctly shows umlaut."
+  },
+  {
+    "page_number": 43,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "4.0% error rate. Unknown words are minimal fragmented terms ('exal', 'galized', 'tation', 'malized', 'astic', 'enthusi', 'unrepresentable', 'indignations'). Chapter introduction with Nietzsche epigraph is clearly readable, well-structured, with proper quotation marks and formatting.",
+    "footnote_artifacts": "Superscript footnote marker (1) visible. Quote attribution and source clearly marked."
+  }
+]

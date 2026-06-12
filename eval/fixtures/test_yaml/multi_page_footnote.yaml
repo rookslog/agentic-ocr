@@ -1,0 +1,129 @@
+schema_version: "1.1.0"
+
+source:
+  pdf: "test_multipage.pdf"
+  page_range: [0, 2]
+  document_type: translation
+  title: "Multi-Page Footnote Test"
+
+annotation_status:
+  footnotes:
+    state: verified
+    count: 1
+    annotator: human
+    verified_by: human
+  citations:
+    state: verified
+    count: 0
+    annotator: human
+    verified_by: human
+  marginal_refs:
+    state: verified
+    count: 0
+    annotator: human
+    verified_by: human
+  sous_rature:
+    state: pending
+    count: null
+    annotator: null
+
+pages:
+  - index: 0
+    label: "127"
+    dimensions:
+      width: 612
+      height: 792
+    tags: [multi_page_footnote]
+    quality:
+      scan_quality: high
+      difficulty: medium
+    regions:
+      - id: body_1
+        type: body
+        bbox: [0.10, 0.08, 0.90, 0.70]
+        text: |
+          The essence of Dasein lies in its existence.¹ Accordingly those
+          characteristics which can be exhibited in this entity are not
+          properties present-at-hand.
+      - id: fn_region_1
+        type: footnote_region
+        bbox: [0.10, 0.80, 0.90, 0.95]
+        text: |
+          1. The German 'Geworfenheit' is difficult to translate and has been
+          variously rendered as 'thrownness' or 'facticity'. The term suggests
+
+  - index: 1
+    label: "128"
+    dimensions:
+      width: 612
+      height: 792
+    tags: [footnote_continuation]
+    quality:
+      scan_quality: high
+      difficulty: medium
+    regions:
+      - id: fn_cont_1
+        type: footnote_continuation
+        bbox: [0.10, 0.05, 0.90, 0.15]
+        text: |
+          a fundamental aspect of human existence that cannot be escaped or
+          transcended through rational deliberation alone.
+      - id: body_2
+        type: body
+        bbox: [0.10, 0.18, 0.90, 0.90]
+        text: |
+          The continuation of the main text after the footnote continuation.
+          This paragraph discusses other aspects of the philosophy.
+
+elements:
+  footnotes:
+    - id: fn_1
+      marker:
+        text: "1"
+        page: 0
+        region_id: body_1
+        char_offset: 44
+      content:
+        - page: 0
+          region_id: fn_region_1
+          text: "The German 'Geworfenheit' is difficult to translate and has been variously rendered as 'thrownness' or 'facticity'. The term suggests"
+          char_range: [3, 137]
+          is_continuation: false
+        - page: 1
+          region_id: fn_cont_1
+          text: "a fundamental aspect of human existence that cannot be escaped or transcended through rational deliberation alone."
+          char_range: [0, 113]
+          is_continuation: true
+      pages: [0, 1]
+      note_type: translator
+      tags: [multi_page, de]
+
+  citations: []
+  marginal_refs: []
+  page_numbers: []
+  sous_rature: []
+  bib_entries: []
+  sections: []
+  endnotes: []
+
+relationships:
+  footnote_links:
+    - marker_id: fn_1.marker
+      content_ids: [fn_1.content.0, fn_1.content.1]
+  citation_bib_links: []
+  cross_refs: []
+
+structure:
+  toc: []
+  front_matter:
+    pages: []
+    elements: []
+  back_matter:
+    pages: []
+    elements: []
+
+metadata:
+  tags: [test, multi_page_footnote, translator_note]
+  created: "2026-01-08"
+  last_modified: "2026-01-08"
+  notes: "Test fixture for multi-page footnote spanning pages 0-1"

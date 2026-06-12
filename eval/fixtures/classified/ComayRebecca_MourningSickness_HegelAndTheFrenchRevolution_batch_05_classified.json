@@ -1,0 +1,259 @@
+{
+  "document": "ComayRebecca_MourningSickness_HegelAndTheFrenchRevolution",
+  "batch_number": 5,
+  "total_batches": 6,
+  "classification_summary": {
+    "GOOD": 1,
+    "MARGINAL": 2,
+    "BAD": 22
+  },
+  "pages": [
+    {
+      "page_number": 170,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": "Error rate: 5.0%. Sample unknown: ['disjecta', 'membra', 'politi']",
+      "footnote_artifacts": 1,
+      "error_rate_percent": 5.0,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 174,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 23.9%. Many unknown words are German/foreign language (not errors). Sample unknown: ['von', 'ibid', 'dlung']",
+      "footnote_artifacts": 13,
+      "error_rate_percent": 23.9,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 175,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 23.8%. Sample unknown: ['seeba', 'unserer', 'von']",
+      "footnote_artifacts": 28,
+      "error_rate_percent": 23.8,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 176,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 14.1%. Sample unknown: ['zeitschrift', 'kunstgeschichte', 'emony']",
+      "footnote_artifacts": 25,
+      "error_rate_percent": 14.1,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 177,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 27.2%. Sample unknown: ['schriften', 'meisters', 'plexities']",
+      "footnote_artifacts": 32,
+      "error_rate_percent": 27.2,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 178,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 22.2%. Sample unknown: ['canni', 'mtliche', 'von']",
+      "footnote_artifacts": 27,
+      "error_rate_percent": 22.2,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 179,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 26.0%. Sample unknown: ['vortreffliche', 'edu', 'ibid']",
+      "footnote_artifacts": 70,
+      "error_rate_percent": 26.0,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 180,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 12.2%. Sample unknown: ['vertilgt', 'vertilgen', 'unvertilgbar']",
+      "footnote_artifacts": 69,
+      "error_rate_percent": 12.2,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 181,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 16.5%. Sample unknown: ['beantwortung', 'cul', 'einen']",
+      "footnote_artifacts": 26,
+      "error_rate_percent": 16.5,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 183,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 12.4%. Sample unknown: ['regiminis', 'reinhard', 'sch']",
+      "footnote_artifacts": 14,
+      "error_rate_percent": 12.4,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 184,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "evidence": "Error rate: 8.5%. Sample unknown: ['lican', 'mus', 'tifies']",
+      "footnote_artifacts": 32,
+      "error_rate_percent": 8.5,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 185,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 16.4%. Sample unknown: ['flammarion', 'vol', 'libert']",
+      "footnote_artifacts": 32,
+      "error_rate_percent": 16.4,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 186,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 15.3%. Sample unknown: ['restif', 'schechter', 'iel']",
+      "footnote_artifacts": 46,
+      "error_rate_percent": 15.3,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 187,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 18.2%. Sample unknown: ['laf', 'ibid', 'von']",
+      "footnote_artifacts": 19,
+      "error_rate_percent": 18.2,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 188,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 18.0%. Sample unknown: ['andreas', 'olic', 'ibid']",
+      "footnote_artifacts": 20,
+      "error_rate_percent": 18.0,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 189,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 18.5%. Sample unknown: ['itin', 'droz', 'terminer']",
+      "footnote_artifacts": 13,
+      "error_rate_percent": 18.5,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 190,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 15.7%. Sample unknown: ['holbach', 'laffont', 'gouv']",
+      "footnote_artifacts": 42,
+      "error_rate_percent": 15.7,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 191,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 17.9%. Sample unknown: ['cours', 'histoire', 'vol']",
+      "footnote_artifacts": 39,
+      "error_rate_percent": 17.9,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 192,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 21.9%. Sample unknown: ['brandstetter', 'phr', 'gabriele']",
+      "footnote_artifacts": 29,
+      "error_rate_percent": 21.9,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 193,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 20.1%. Sample unknown: ['plete', 'von', 'flammarion']",
+      "footnote_artifacts": 30,
+      "error_rate_percent": 20.1,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 194,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 15.1%. Sample unknown: ['appropria', 'stoichita', 'tique']",
+      "footnote_artifacts": 20,
+      "error_rate_percent": 15.1,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 195,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 16.1%. Sample unknown: ['andreas', 'flammarion', 'vol']",
+      "footnote_artifacts": 33,
+      "error_rate_percent": 16.1,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 196,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 14.2%. Sample unknown: ['ersetzung', 'theodor', 'adorno']",
+      "footnote_artifacts": 56,
+      "error_rate_percent": 14.2,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 197,
+      "classification": "GOOD",
+      "confidence": 0.7,
+      "evidence": "Error rate: 12.1%. Sample unknown: ['mediauras', 'cholodenko', 'prinzipien']",
+      "footnote_artifacts": 23,
+      "error_rate_percent": 12.1,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 198,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "evidence": "Error rate: 11.3%. Sample unknown: ['ausgabe', 'ern', 'vol']",
+      "footnote_artifacts": 20,
+      "error_rate_percent": 11.3,
+      "bucket": "E (10%+)"
+    }
+  ]
+}

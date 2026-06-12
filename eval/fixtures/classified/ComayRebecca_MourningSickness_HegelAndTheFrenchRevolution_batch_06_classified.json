@@ -1,0 +1,324 @@
+{
+  "document": "ComayRebecca_MourningSickness_HegelAndTheFrenchRevolution",
+  "batch_number": 6,
+  "total_batches": 6,
+  "classified_pages": [
+    {
+      "page_number": 199,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 7.1% indicates multiple errors"
+      ],
+      "error_rate": 7.1,
+      "footnote_artifacts": [],
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 201,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 9.0% indicates multiple errors"
+      ],
+      "error_rate": 9.0,
+      "footnote_artifacts": [],
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 202,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 7.7% indicates multiple errors"
+      ],
+      "error_rate": 7.7,
+      "footnote_artifacts": [],
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 203,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 10.8% indicates multiple errors"
+      ],
+      "error_rate": 10.8,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 206,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 15.1% indicates multiple errors"
+      ],
+      "error_rate": 15.1,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 207,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 8.8% indicates multiple errors"
+      ],
+      "error_rate": 8.8,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 208,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 18.2% indicates multiple errors"
+      ],
+      "error_rate": 18.2,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 209,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 17.6% indicates multiple errors"
+      ],
+      "error_rate": 17.6,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 210,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 15.0% indicates multiple errors"
+      ],
+      "error_rate": 15.0,
+      "footnote_artifacts": [
+        "n58",
+        "n33",
+        "n48",
+        "n20",
+        "n15",
+        "n62",
+        "n2",
+        "n3",
+        "n22",
+        "n38"
+      ]
+    },
+    {
+      "page_number": 211,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 9.3% indicates multiple errors"
+      ],
+      "error_rate": 9.3,
+      "footnote_artifacts": [
+        "n11",
+        "n4",
+        "n55",
+        "n3",
+        "n22",
+        "n16",
+        "n8",
+        "n22",
+        "n64",
+        "n65"
+      ]
+    },
+    {
+      "page_number": 212,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 9.0% indicates multiple errors"
+      ],
+      "error_rate": 9.0,
+      "footnote_artifacts": [
+        "n24",
+        "n18",
+        "n8",
+        "n14",
+        "n63",
+        "n46",
+        "n8",
+        "n21",
+        "n45",
+        "n52"
+      ]
+    },
+    {
+      "page_number": 213,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 10.5% indicates multiple errors"
+      ],
+      "error_rate": 10.5,
+      "footnote_artifacts": [
+        "n38",
+        "n26",
+        "n4",
+        "n10",
+        "n16",
+        "n22",
+        "n62",
+        "n62",
+        "n12",
+        "n39"
+      ]
+    },
+    {
+      "page_number": 215,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 17.5% indicates multiple errors"
+      ],
+      "error_rate": 17.5,
+      "footnote_artifacts": [
+        "n37",
+        "n46",
+        "n57",
+        "n36",
+        "n11",
+        "n12",
+        "n13",
+        "n14",
+        "n15",
+        "n36"
+      ]
+    },
+    {
+      "page_number": 216,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 8.8% indicates multiple errors"
+      ],
+      "error_rate": 8.8,
+      "footnote_artifacts": [
+        "n28",
+        "n30",
+        "n13",
+        "n2",
+        "n37",
+        "n39",
+        "n61",
+        "n64",
+        "n61",
+        "n14"
+      ]
+    },
+    {
+      "page_number": 218,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 12.3% indicates multiple errors"
+      ],
+      "error_rate": 12.3,
+      "footnote_artifacts": [
+        "n3",
+        "n24",
+        "n20",
+        "n40",
+        "n37",
+        "n49",
+        "n63",
+        "n68",
+        "n62",
+        "n68"
+      ]
+    },
+    {
+      "page_number": 219,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 13.8% indicates multiple errors"
+      ],
+      "error_rate": 13.8,
+      "footnote_artifacts": [
+        "n65",
+        "n11",
+        "n67",
+        "n58",
+        "n18",
+        "n19",
+        "n67",
+        "n36",
+        "n40",
+        "n31"
+      ]
+    },
+    {
+      "page_number": 220,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 18.9% indicates multiple errors"
+      ],
+      "error_rate": 18.9,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 221,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 15.9% indicates multiple errors"
+      ],
+      "error_rate": 15.9,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 222,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 12.3% indicates multiple errors"
+      ],
+      "error_rate": 12.3,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 223,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 15.2% indicates multiple errors"
+      ],
+      "error_rate": 15.2,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 224,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 15.9% indicates multiple errors"
+      ],
+      "error_rate": 15.9,
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 225,
+      "classification": "BAD",
+      "confidence": 0.85,
+      "evidence": [
+        "Error rate 17.1% indicates multiple errors"
+      ],
+      "error_rate": 17.1,
+      "footnote_artifacts": []
+    }
+  ],
+  "summary": {
+    "total_pages": 22,
+    "good_count": 0,
+    "marginal_count": 0,
+    "bad_count": 22
+  }
+}

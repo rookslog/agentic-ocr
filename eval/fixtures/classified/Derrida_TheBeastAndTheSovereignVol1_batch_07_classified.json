@@ -1,0 +1,177 @@
+[
+  {
+    "page_number": 247,
+    "classification": "MARGINAL",
+    "confidence": 0.88,
+    "evidence": "Error rate 9.0%. Text is mostly readable with scattered OCR issues: 'esty' (majesty), 'gime' (régime), some German/Latin terms marked as unknown but are legitimate. Core academic text flows clearly. Minor character substitutions in foreign language passages.",
+    "footnote_artifacts": "Superscript footnote marker '42' present; correctly preserved as footnote reference"
+  },
+  {
+    "page_number": 248,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Error rate 11.1%. Generally readable despite higher error count. Issues include: 'rmed' (formed), 'calion' (Decalion), 'nar' (seminar). German passages mostly intact. Main body text accessible; footnote section clean.",
+    "footnote_artifacts": "Superscript marker '43' with handwritten addition note; preserved correctly"
+  },
+  {
+    "page_number": 249,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "Error rate 12.1%. Readable with moderate OCR errors: 'equivocity' preserved correctly, some German text challenges ('wesen', 'erscheinende') but not actual errors—legitimate German. English translation maintains coherence. Philosophical terminology mostly accurate.",
+    "footnote_artifacts": "Markers '44' and '45' present with citation format [p. XX] intact"
+  },
+  {
+    "page_number": 250,
+    "classification": "MARGINAL",
+    "confidence": 0.84,
+    "evidence": "Error rate 13.7%. Text remains comprehensible despite higher error count. Some issues: 'pos' (perhaps), 'anderssein' is legitimate German. Long philosophical passage on dialogue/temporality is readable. Complex grammar preserved despite OCR challenges.",
+    "footnote_artifacts": "Marker '46' present; citation structure [p. XX] preserved"
+  },
+  {
+    "page_number": 251,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Error rate 8.2%. High readability. Clear philosophical argument on temporality and 'letting happen'. Minor issues: 'merid' (meridian), 'unmittelbarkeit' is correct German. Overall clean OCR with strong preservation of complex theoretical discourse.",
+    "footnote_artifacts": "Marker '47' present; footnote reference clean"
+  },
+  {
+    "page_number": 252,
+    "classification": "BAD",
+    "confidence": 0.91,
+    "evidence": "Error rate 23.2% (highest in batch). Significant OCR corruption: 'consola' (consolation), 'tion' fragments appear multiple times, 'gegangen' split incorrectly. German passages heavily garbled. While some sections recoverable, the text is substantially degraded. Philosophical meaning partially obscured.",
+    "footnote_artifacts": "Markers '48' and '49' present but with degraded surrounding text"
+  },
+  {
+    "page_number": 263,
+    "classification": "GOOD",
+    "confidence": 0.94,
+    "evidence": "Error rate 2.4% (excellent). Clean OCR of complex poetic and philosophical text. German words ('unheimlich', 'unheimlichkeit', 'deinon') preserved correctly. Literary quotation on albatross/snake highly readable. Minor artifact: 'gether' (together) and 'ity' but overall exceptional quality.",
+    "footnote_artifacts": "Section ends with '[Questions.]' marker, properly formatted"
+  },
+  {
+    "page_number": 266,
+    "classification": "GOOD",
+    "confidence": 0.95,
+    "evidence": "Error rate 5.9% (very clean). Excellent OCR of poetic epigraph. Single unknown term 'taormina' is correct (D.H. Lawrence poem location). Perfect preservation of poem attribution and location marker.",
+    "footnote_artifacts": "None—simple epigraph page"
+  },
+  {
+    "page_number": 269,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "Error rate 9.2%. Mostly readable discussion of marionettes and decapitation. Issues: 'didn' (not), 'tation' fragments, 'nig' (könig/king). German passages recoverable. Philosophical argument on puppetry accessible despite errors.",
+    "footnote_artifacts": "Markers '2' and '3' present; footnote citations preserved"
+  },
+  {
+    "page_number": 270,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "Error rate 2.9% (excellent). Long, complex discussion of heraldic dolphins and La Fontaine's Dauphin highly readable. Minor issues: 'rea' (area), some OCR frag splits. Preservation of French proper names (Fontaine, delphis, Dauphin) excellent. Historical narrative clear.",
+    "footnote_artifacts": "Extended bracketed section with proper formatting; no artifacts"
+  },
+  {
+    "page_number": 272,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Error rate 5.7%. Very readable. Fable of monkey and dolphin text preserved well. Minor issues: 'estion' (question), 'harbour' (port), 'estion' fragments. Long quotation from La Fontaine mostly intact with good readability.",
+    "footnote_artifacts": "Footnote '4' with full citation preserved; bracketed editorial note intact"
+  },
+  {
+    "page_number": 273,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "Error rate 8.2%. Readable discussion of majesty, eroticism, and sovereignty. Issues: 'ration' (generation), 'erec tion' split across line, 'cadaverized' corrupted but recognizable. German theoretical vocabulary ('Unheimlichkeit') preserved. Philosophical argument flows despite OCR challenges.",
+    "footnote_artifacts": "Marker '5' with citation; no significant artifacts"
+  },
+  {
+    "page_number": 274,
+    "classification": "MARGINAL",
+    "confidence": 0.89,
+    "evidence": "Error rate 6.6%. Very readable. Minor OCR issues: 'grandizement' (grandeur), 'gured' (figured), 'diminu' (diminution). Complex discourse on sovereignty, scale, and potency remains coherent. French and German terminology mostly preserved.",
+    "footnote_artifacts": "Footnote '5' with full citation and author reference clean"
+  },
+  {
+    "page_number": 277,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Error rate 12.3%. Readable but with moderate OCR errors: 'sence' (absence), 'tation' fragments, German terms intact. Long quotation from Celan on poem as encounter/dialogue accessible. Theoretical structure preserved despite character-level errors.",
+    "footnote_artifacts": "Markers '6' and '7' present; footnote references preserved"
+  },
+  {
+    "page_number": 278,
+    "classification": "MARGINAL",
+    "confidence": 0.84,
+    "evidence": "Error rate 10.2%. Readable discussion of Büchner's Lenz and the 'unhomely' (unheimlich). Issues: 'chte' (nächte/nights), 'affengestalt' preserved correctly (German monkey-form). Complex narrative about art and human nature accessible despite OCR struggles.",
+    "footnote_artifacts": "Markers '8' and '9' present; bracketed textual notes intact"
+  },
+  {
+    "page_number": 279,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Error rate 13.8%. Readable examination of Unheimlichkeit and poetry. Issues: 'mitgegeben' preserved correctly (German), some Latin fragments. Long Celan quotations mostly intact. Philosophical argument on poem/encounter/otherness accessible.",
+    "footnote_artifacts": "Footnote '10' present; translator's note in brackets preserved"
+  },
+  {
+    "page_number": 280,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "Error rate 11.5%. Readable but with OCR artifacts: 'einf hrung' (Einführung), 'ticed' (practiced), 'nition' fragments. Discussion of Heidegger's Introduction to Metaphysics accessible. Philosophical terminology and proper names mostly intact.",
+    "footnote_artifacts": "Markers '8', '13', '14' present; academic citations preserved"
+  },
+  {
+    "page_number": 281,
+    "classification": "MARGINAL",
+    "confidence": 0.88,
+    "evidence": "Error rate 8.6%. Very readable exposition of Heidegger and Fragen (questioning). Minor issues: 'dividual' (individual), 'fortiori' preserved correctly. Complex philosophical genealogy traced clearly. German terminology ('geschichtlicher') intact.",
+    "footnote_artifacts": "Markers '15' and '16' with footnotes; citation structure clean"
+  },
+  {
+    "page_number": 282,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "Error rate 12.1%. Readable analysis of Heidegger/Sophocles on deinon and Unheimlichkeit. Issues: 'nition' (definition), 'heimliche' (heimisch), 'jus' (jus). Extended quotation and translation discussion preserved despite errors.",
+    "footnote_artifacts": "Markers '17', '18', '19' present; textual brackets/quotations intact"
+  },
+  {
+    "page_number": 283,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "Error rate 11.6%. Readable examination of human essence and Unheimlichkeit. Issues: 'ereignly' (ereignis), 'nitions' fragments. Discussion of propriety, foreignness, and sovereignty remains coherent. German philosophical vocabulary preserved.",
+    "footnote_artifacts": "Marker '20' and '21' present; scholarly annotations intact"
+  },
+  {
+    "page_number": 284,
+    "classification": "MARGINAL",
+    "confidence": 0.89,
+    "evidence": "Error rate 7.6%. Very readable. Well-preserved discussion of Celan's stepping-outside-the-human. Minor issues: 'dif' (difficulty), 'ungrund' preserved correctly (German philosophical term). Long footnote note 22 with brackets maintains clarity.",
+    "footnote_artifacts": "Extensive footnote '22' with editorial note in brackets; properly preserved"
+  },
+  {
+    "page_number": 285,
+    "classification": "BAD",
+    "confidence": 0.90,
+    "evidence": "Error rate 16.8% (second highest). Significant OCR degradation affecting readability: 'rection' (direction), 'ndung' (wendung), 'wohin' (where) split/corrupted, 'jakob' (Jakob). German philosophical passages struggle. Extended Celan quotation partially obscured. Academic meaning partially compromised.",
+    "footnote_artifacts": "Marker '23' present but surrounded by corrupted text"
+  },
+  {
+    "page_number": 286,
+    "classification": "MARGINAL",
+    "confidence": 0.84,
+    "evidence": "Error rate 10.3%. Readable narrative of Lenz walking and consciousness. Issues: 'connoiter' (reconnoiter), 'gegenwort' split, 'tion' fragments. Philosophical narrative on the head/ground relationship accessible despite errors.",
+    "footnote_artifacts": "None—narrative section"
+  },
+  {
+    "page_number": 287,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Error rate 13.8%. Readable but with moderate corruption: 'furchtbares' preserved correctly (German terrible), 'wende' intact (Atemwende—breath turning), 'nig' fragments. Celan's definition of poetry and breath-turning accessible despite errors.",
+    "footnote_artifacts": "Marker '24' present; editorial commentary in quotes intact"
+  },
+  {
+    "page_number": 288,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "Error rate 10.6%. Readable final philosophical passage on poem identity and encounter with Other. Issues: 'eeting' (fleeting), some German splits. Concept of poem's 'own identity' and path of art remains accessible. Multiple 'Vielleicht' (perhaps) iterations preserved.",
+    "footnote_artifacts": "Marker '25' present; no significant artifacts"
+  }
+]

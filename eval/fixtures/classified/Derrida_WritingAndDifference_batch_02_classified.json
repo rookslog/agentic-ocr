@@ -1,0 +1,202 @@
+[
+  {
+    "page_number": 50,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Text is semantically coherent and readable. Philosophical terminology correctly preserved (Marivauldian, preformationism, geometrism). French terms properly handled. Page discusses Rousset's structural analysis with proper academic arguments.",
+    "footnote_artifacts": 1,
+    "notes": "Minor unknown_words are legitimate rare terms or name variants (Rousset, Corneille, Claudel are author names, not OCR errors)"
+  },
+  {
+    "page_number": 52,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Text is readable and semantically meaningful. Discusses Proust's narrative structure with clear logical flow. Key philosophical concepts intact: implication, encasement, simultaneity. French title properly rendered (Un amour de Swann, Recherche).",
+    "footnote_artifacts": 1,
+    "notes": "Unknown_words sample contains legitimate terms (preestablished, organicist) - no garbled OCR corruption evident"
+  },
+  {
+    "page_number": 53,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Complex philosophical discourse preserved with clarity. Key concepts intact: metaphysical intention, simultaneity, theological structure, Phenomenology of the Mind. French terms correct (différance in context, Mallarmé). Logical arguments follow coherently.",
+    "footnote_artifacts": 0,
+    "notes": "Partial words in unknown_words list (tique, taneity) appear to be truncated legitimate terms - no systematic OCR failure"
+  },
+  {
+    "page_number": 54,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Dense theoretical text on Mallarmé and structuralism is readable and coherent. Key philosophical arguments preserved: meaning and signification, the Book unrealized, double interpretation. French philosophical terminology correct (Livre irréalisé).",
+    "footnote_artifacts": 0,
+    "notes": "Unknown_words are legitimate rare terms; complex sentences remain semantically sound despite philosophical density"
+  },
+  {
+    "page_number": 56,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Philosophical argument about force, meaning, and Western metaphysics is comprehensible. Key terms preserved: telos, phenomenon, photological (metaphor of light). Complex sentences well-formed. Hegel reference intact.",
+    "footnote_artifacts": 0,
+    "notes": "Unknown_words are legitimate philosophical/Greek terms (photological, telos, progres)"
+  },
+  {
+    "page_number": 58,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Sophisticated discussion of force, language, and philosophy maintains clarity despite complexity. Key concepts: phenomenology, force as non-concealment, Apollonian ecstasy. Philosophical terminology properly rendered.",
+    "footnote_artifacts": 0,
+    "notes": "Unknown_words are partial legitimate terms (phe, attened); no systematic OCR degradation"
+  },
+  {
+    "page_number": 60,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "evidence": "Text is mostly readable with philosophical meaning recoverable. Contains German quotations (Nietzsche/Zarathustra) that are properly formatted. Main narrative about writing and descent is clear. However, error_rate of 5.2% and presence of corrupted words (unterganges, untergang variants) indicates OCR quality issues.",
+    "footnote_artifacts": 2,
+    "notes": "Unknown_words include legitimate German (meines, Untergang) and philosophical terms, but 'unterganges' appears to be OCR artifact of 'Untergang'. Quotation marks and special formatting mostly preserved. Meaning remains recoverable despite errors."
+  },
+  {
+    "page_number": 61,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Opening of new section 'Cogito and the History of Madness' is clearly formatted with proper title. Epigraphs and introduction are readable. Derrida's dense philosophical language is preserved with proper terminology (Kierkegaard, Michel Foucault, Folie et déraison).",
+    "footnote_artifacts": 0,
+    "notes": "References to Foucault's work and philosophical concepts are intact. French titles and proper names correctly rendered."
+  },
+  {
+    "page_number": 62,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "evidence": "Text discusses disciple-master dialogue and Descartes' Meditations. Meaning is recoverable but multiple OCR errors noted: error_rate 5.4%. Key argument about philosophical dialogue preserved. However, 'arti' appears as 'arti' (should be 'artificial'), and other fragmentations indicate moderate OCR degradation.",
+    "footnote_artifacts": 1,
+    "notes": "Text remains semantically coherent despite errors. Philosophical concepts (Cogito, Cartesian meditation) remain recognizable. Some words broken mid-sentence but context allows recovery (e.g., 'arti' → artificial, 'ections' → reflections)."
+  },
+  {
+    "page_number": 66,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Philosophical analysis of Foucault's History of Madness remains clear and argumentative. Key concepts preserved: archaeology of silence, language, reason, madness. Complex sentence structures intact. Discussion of epistemological issues maintains coherence.",
+    "footnote_artifacts": 0,
+    "notes": "Unknown_words contain legitimate philosophical/Greek terms (archae, cacious); no systematic corruption evident despite philosophical density"
+  },
+  {
+    "page_number": 69,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Derrida's argument about language, madness, and silence is comprehensible and philosophically coherent. Key positions articulated clearly: impossibility of language without support, pathos of silence, objectification of madness. French terminology (éloge) correctly rendered.",
+    "footnote_artifacts": 0,
+    "notes": "Unknown_words are legitimate philosophical terms; complex arguments about logos and reason remain clear"
+  },
+  {
+    "page_number": 71,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Discussion of Decision, reason-madness distinction, and Hegelian philosophy is readable and coherent. Key concepts: dissension, Entzweiung, logos, common root. German philosophical terminology (Entzweiung) properly handled. Complex theoretical argument preserved.",
+    "footnote_artifacts": 0,
+    "notes": "German terms correctly rendered; philosophical argument structure intact despite theoretical density"
+  },
+  {
+    "page_number": 72,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Analysis of Greek logos, Socratic dialectic, and philosophical history is coherent and meaningful. Key references preserved: Thrasymacus, Calicles, Socrates. Philosophical argument about Greek reason vs classical reason is clear and argumentative.",
+    "footnote_artifacts": 0,
+    "notes": "Greek philosophical references intact; rare terms (socratics, expulsed, reassur) are legitimate despite appearing in unknown_words list"
+  },
+  {
+    "page_number": 73,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Derrida's extended argument about philosophical tradition, Socratic dialectic, and exclusion of madness remains coherent and readable. Key philosophical positions clearly articulated. References to Stultifera navis and medieval thought properly handled.",
+    "footnote_artifacts": 0,
+    "notes": "Sophisticated philosophical terminology maintained; complex multi-part argument preserved despite theoretical density"
+  },
+  {
+    "page_number": 74,
+    "classification": "MARGINAL",
+    "confidence": 0.73,
+    "evidence": "Text discusses Foucault's concept of madness and its philosophical problems. Meaning is recoverable but error_rate 4.1% with OCR artifacts noted: 'emprisoned' (imprisoned), 'psy' (psychology), 'posteriori' (a posteriori). Key argument about concept of madness remains intelligible.",
+    "footnote_artifacts": 1,
+    "notes": "Moderate OCR degradation with word fragments and corruptions ('unveri' → unverified, 'chiatric' → psychiatric, 'ous' → various suffixes), but philosophical argument structure preserved enough for understanding"
+  },
+  {
+    "page_number": 80,
+    "classification": "MARGINAL",
+    "confidence": 0.74,
+    "evidence": "Extended Cartesian quotation on madness and dreams is mostly readable despite error_rate 5.3%. Key philosophical text (Descartes' Meditations First) preserved with meaning recoverable. Some OCR corruption noted but Latin phrases and philosophical argument remain identifiable.",
+    "footnote_artifacts": 1,
+    "notes": "Unknown_words include Latin (sunt, praeclare) which are legitimate; some fragments ('rst' → first, 'tion' → various suffixes) indicate OCR issues but don't prevent understanding of Descartes' argument"
+  },
+  {
+    "page_number": 83,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Derrida's analysis of Descartes' argument about dreams and certainty is coherent and philosophically sound. Key concepts preserved: hyperbolical doubt, sensory error, simple intelligible things, color analogy. Complex epistemological argument clearly articulated.",
+    "footnote_artifacts": 0,
+    "notes": "Technical philosophical terms properly maintained; no systematic OCR corruption despite theoretical density"
+  },
+  {
+    "page_number": 84,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Extended quotation from Descartes on painters and sensory foundations of knowledge is well-preserved. Philosophical argument about color and intelligible things is clear. Latin references (est) intact. Complex Cartesian reasoning preserved.",
+    "footnote_artifacts": 0,
+    "notes": "Excellent preservation of technical philosophical text; minimal OCR artifacts evident"
+  },
+  {
+    "page_number": 86,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Derrida's explanation of Descartes' rhetorical move from madness to dreams is clear and argumentative. Key philosophical distinction preserved: madness vs. dreams, natural vs. hyperbolical doubt. Complex epistemological position well-articulated.",
+    "footnote_artifacts": 0,
+    "notes": "Sophisticated philosophical reasoning remains intact; key distinctions clearly drawn"
+  },
+  {
+    "page_number": 88,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Derrida's analysis of Cogito and madness in metaphysical doubt is coherent and philosophically sound. Key positions: Cogito valid even if mad, madness as menace to knowledge, metaphysical phase vs. natural phase of doubt. Argument structure clear.",
+    "footnote_artifacts": 0,
+    "notes": "Complex philosophical distinctions preserved; theoretical reasoning maintained despite text density"
+  },
+  {
+    "page_number": 92,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Derrida's argument about Cogito, madness, and scepticism is readable and philosophically coherent. Key points preserved: Cogito escapes madness by being valid within madness, connection to Discourse on Method. Complex epistemological argument clearly articulated.",
+    "footnote_artifacts": 0,
+    "notes": "Philosophical terminology and reasoning structure intact; no systematic OCR corruption"
+  },
+  {
+    "page_number": 97,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Derrida's discussion of natural light, axioms, and the relationship between Cogito and philosophy is readable and coherent. Key concepts preserved: verification of God, axioms of causality, determined structures, hyperbolical moment. Complex reasoning maintained.",
+    "footnote_artifacts": 0,
+    "notes": "Sophisticated philosophical argument preserved; terminology intact despite theoretical density"
+  },
+  {
+    "page_number": 98,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Analysis of hyperbole, Husserl, and transcendental phenomenology is coherent and philosophically sound. Key concepts preserved: Husserlian reduction, deductivism, metaphysics of presence, transcendental phenomenology. Complex philosophical comparison clear.",
+    "footnote_artifacts": 0,
+    "notes": "German philosophical terms properly rendered (Weltanschauungen); complex theoretical argument structure maintained"
+  },
+  {
+    "page_number": 99,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Derrida's conclusion on historicity, crisis, and the Cogito is readable and philosophically coherent. Key arguments preserved: rhythm of crisis and reawakening, emprisoning of madness, finitude of thought. Complex temporal and historical argument clearly articulated.",
+    "footnote_artifacts": 0,
+    "notes": "Sophisticated philosophical reasoning maintained; key distinctions between history and historicity preserved"
+  },
+  {
+    "page_number": 101,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Final section on crisis, meaning, and madness concludes argument coherently. Philosophical position clearly stated: crisis as both danger and decision, connection between madness and reason. Greek philosophical references (Parmenides, krinein) properly handled. Concluding philosophical synthesis clear.",
+    "footnote_artifacts": 0,
+    "notes": "Greek terminology and philosophical referencing intact; complex final argument well-preserved"
+  }
+]

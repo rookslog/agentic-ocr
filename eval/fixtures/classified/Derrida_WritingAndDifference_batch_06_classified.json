@@ -1,0 +1,427 @@
+[
+  {
+    "page_number": 233,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "error_rate": 5.6,
+    "evidence": [
+      "Text readable with minor issues (e.g., 'nitude' should be 'finitude', 'guage' should be 'language')",
+      "Philosophical terminology preserved correctly (dynamis, entelechia, phenomenology)",
+      "Ligature artifacts present (U+FB01, U+FB02) but expected in OCR",
+      "1-2 errors per section but meaning recoverable: 'consti-' incomplete word fragment",
+      "French references and foreign terminology intact"
+    ],
+    "footnote_artifacts": [
+      "Marker '25' correctly appended (footnote reference)",
+      "No extraneous footnote markers embedded"
+    ]
+  },
+  {
+    "page_number": 234,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "error_rate": 7.4,
+    "evidence": [
+      "Readable with ~3-4 errors: 'nomenology' (phenomenology), 'clari' incomplete",
+      "Core philosophical concepts intact: transcendental, reduction, eidos",
+      "Text structure preserved, arguments traceable",
+      "Ligatures and special unicode present (U+FB01, U+FB02, U+00EF for ï)",
+      "German philosophical term 'Vorhaben' correctly captured"
+    ],
+    "footnote_artifacts": [
+      "Footnotes 26, 27, 28, 29 correctly referenced",
+      "No embedded footnote text corruption"
+    ]
+  },
+  {
+    "page_number": 235,
+    "classification": "MARGINAL",
+    "confidence": 0.80,
+    "error_rate": 4.4,
+    "evidence": [
+      "Generally readable with <5 errors detected",
+      "Key philosophical distinctions preserved: 'transcendental genesis' vs 'empirical structure'",
+      "Technical terminology correct: historico-semantic, eidetic, reduction",
+      "Minor fragment: 'scendental' should be 'transcendental' but context clear",
+      "French accent marks preserved (naïveté, été)"
+    ],
+    "footnote_artifacts": [
+      "Footnote markers present but clean",
+      "No intrusive footnote content"
+    ]
+  },
+  {
+    "page_number": 236,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "error_rate": 8.5,
+    "evidence": [
+      "Short passage (final section), text highly readable",
+      "Philosophical vocabulary correct: 'eternal', 'ahistorical', 'nonmeaning'",
+      "Despite higher reported error rate, actual visible errors minimal",
+      "Paragraph breaks and structure intact",
+      "No gibberish or severely corrupted words"
+    ],
+    "footnote_artifacts": [
+      "Section header 'genesis and structure 211' correctly positioned"
+    ]
+  },
+  {
+    "page_number": 238,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "error_rate": 6.9,
+    "evidence": [
+      "Text readable but 4-5 errors present: 'impos' incomplete, 'erence' (difference)",
+      "Complex names preserved: 'Laplanche', 'Hölderlin', 'Foucault' correct",
+      "French terms intact: 'poetic forms', 'impossible de jure'",
+      "Dense philosophical discourse recoverable despite minor OCR artifacts",
+      "Ligatures present (U+FB01, U+FB02, U+FB04)"
+    ],
+    "footnote_artifacts": [
+      "Footnote marker '1' present, '2' marker at section end",
+      "Clean reference structure"
+    ]
+  },
+  {
+    "page_number": 239,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "error_rate": 4.7,
+    "evidence": [
+      "Readable with 1-2 significant gaps: 'acknow-ledged' hyphenation but clear",
+      "Proper names correct: 'Blanchot', 'Artaud', 'Paulhan'",
+      "Philosophical concepts intact: 'psychomedical reductions', 'eidetic reduction'",
+      "French: 'Le livre à venir' correctly formatted",
+      "Minor fragments recoverable from context"
+    ],
+    "footnote_artifacts": [
+      "Footnote marker '3' correctly positioned",
+      "No embedded footnote corruption"
+    ]
+  },
+  {
+    "page_number": 240,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "error_rate": 3.9,
+    "evidence": [
+      "High quality text, <4 errors total",
+      "Authors and names correct: 'Artaud', 'Hölderlin', 'Mallarmé', 'Blanchot'",
+      "Philosophical vocabulary perfect: 'transcendental', 'essence', 'affirmation'",
+      "Ligatures and diacritics preserved (U+FB01, U+FB03, accents)",
+      "Complex sentence structures fully legible"
+    ],
+    "footnote_artifacts": [
+      "Footnotes 4, 5, 6, 7 referenced cleanly",
+      "No corruption of cited works"
+    ]
+  },
+  {
+    "page_number": 241,
+    "classification": "MARGINAL",
+    "confidence": 0.84,
+    "error_rate": 3.2,
+    "evidence": [
+      "Excellent quality, very few errors (<3 visible)",
+      "Complex terms intact: 'Hölderlin', 'H., 'Hellingrath', 'idiosyncratic'",
+      "Philosophical discourse clear: 'unicity', 'essence of poetry', 'truth'",
+      "German and French references correct",
+      "Subtle analysis fully recoverable"
+    ],
+    "footnote_artifacts": [
+      "Footnote marker '9' and '10' referenced correctly",
+      "No intrusive markers"
+    ]
+  },
+  {
+    "page_number": 242,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "error_rate": 5.9,
+    "evidence": [
+      "Readable with 3-4 errors: 'oscilla-' (oscillations), 'ges' incomplete",
+      "Complex proper names preserved: 'Laplanche', 'Hellingrath', 'Hölderlin'",
+      "Technical philosophy terminology intact: 'unitarism', 'structuralist'",
+      "Ligatures present (U+FB01, U+FB00, U+FB04)",
+      "Meaning recoverable despite minor OCR artifacts"
+    ],
+    "footnote_artifacts": [
+      "Footnotes 11, 12 referenced",
+      "Section marker 'la parole soufflée 217' correct"
+    ]
+  },
+  {
+    "page_number": 245,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "error_rate": 3.4,
+    "evidence": [
+      "Very readable, ~2 errors: 'commen-' (commentaries) hyphenated properly",
+      "Complex philosophical argument fully intact",
+      "Proper names correct: 'Artaud'",
+      "French terms intact: 'théâtre de la cruauté', 'soufflé'",
+      "Specialized vocabulary perfect: 'signification', 'discourse', 'theft'"
+    ],
+    "footnote_artifacts": [
+      "Footnote marker '13' and '14' present",
+      "Clean reference structure"
+    ]
+  },
+  {
+    "page_number": 249,
+    "classification": "MARGINAL",
+    "confidence": 0.77,
+    "error_rate": 5.2,
+    "evidence": [
+      "Readable with 3-4 errors: 'scatotheological' correct, 'guistic' (linguistic) clear",
+      "Complex philosophical terms intact: 'potentialization', 'signi-' (signifier)",
+      "Artaud analysis fully recoverable",
+      "French accent marks preserved (naïveté in other sections)",
+      "Meaning consistently clear despite minor OCR artifacts"
+    ],
+    "footnote_artifacts": [
+      "Footnote marker '17' and '18' referenced",
+      "Ligatures present (U+FB01, U+FB00, U+FB02, U+FB04)"
+    ]
+  },
+  {
+    "page_number": 255,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "error_rate": 1.8,
+    "evidence": [
+      "Excellent OCR quality, minimal errors (<2 visible)",
+      "Complex philosophical vocabulary perfect: 'nonpollution', 'alienation', 'soteriology'",
+      "Proper names correct: 'Artaud'",
+      "References intact: Latin 'proprius', theatrical concepts",
+      "Metaphorical argument structure completely clear"
+    ],
+    "footnote_artifacts": [
+      "Footnote marker '22' present",
+      "Section header 'writing and difference 230' correct"
+    ]
+  },
+  {
+    "page_number": 257,
+    "classification": "MARGINAL",
+    "confidence": 0.80,
+    "error_rate": 4.0,
+    "evidence": [
+      "Readable with 2-3 errors: 'unbeliev-' (unbelievably) hyphenated, 'grammata' correct",
+      "Plato reference preserved: 'Phaedrus', 'metaphor', '276a'",
+      "Philosophical concepts intact: 'scato-theological', 'superstition', 'divine'",
+      "French: 'Comédie-Française' correctly formatted",
+      "Complex argument on writing and theology fully legible"
+    ],
+    "footnote_artifacts": [
+      "Footnote markers '27', '28', '29' referenced cleanly",
+      "No corruption in cited texts"
+    ]
+  },
+  {
+    "page_number": 261,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "error_rate": 4.2,
+    "evidence": [
+      "Readable with 2-3 errors: 'tatoo' (tattoo), 'disap-' (disappearing) hyphenated",
+      "French and philosophical terminology perfect: 'incarnation', 'théâtre de la cruauté'",
+      "Text references correct: 'Jean Paulhan' (1923), 'CW 1:18'",
+      "Complex imagery about writing and flesh fully recoverable",
+      "Ligatures and special characters preserved (U+FB01, U+FB00, U+FB02)"
+    ],
+    "footnote_artifacts": [
+      "Footnote marker '34' present",
+      "Textual citations intact with page references"
+    ]
+  },
+  {
+    "page_number": 262,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "error_rate": 4.4,
+    "evidence": [
+      "Readable with 2-3 errors: 'tatoo' (tattoo) consistent, 'illiter-' (illiteracy) hyphenated",
+      "Proper names correct: 'Artaud', 'Theatre', 'Conquest of Mexico'",
+      "French references: 'Comédie-Française' correct, résumé accent present",
+      "Philosophical vocabulary intact: 'soteriology', 'metaphysics', 'civilization'",
+      "Argument structure fully legible"
+    ],
+    "footnote_artifacts": [
+      "Footnote markers '36', '37' present",
+      "Section 'la parole soufflée 237' correct"
+    ]
+  },
+  {
+    "page_number": 265,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "error_rate": 3.4,
+    "evidence": [
+      "Very readable, <3 errors detected",
+      "Complex discourse on theater and writing intact",
+      "French terms perfect: 'dans ses dessous', 'hieroglyphes'",
+      "Philosophical concepts clear: 'representation', 'voice', 'writing'",
+      "Balinese, Mexican, Hindu, Iranian, Egyptian references all correct",
+      "Ligatures properly rendered (U+FB00, U+FB01, U+FB04)"
+    ],
+    "footnote_artifacts": [
+      "No intrusive footnote content",
+      "Clean section breaks"
+    ]
+  },
+  {
+    "page_number": 273,
+    "classification": "MARGINAL",
+    "confidence": 0.76,
+    "error_rate": 6.5,
+    "evidence": [
+      "Readable with 3-4 errors: 'logocen-' (logocentrism), 'tric' fragment",
+      "Complex philosophical vocabulary mostly intact: 'logocentric', 'metaphysics', 'archi-trace'",
+      "German/French concepts: 'Grammatologie', 'Heideggerian', 'phonologism'",
+      "References to major thinkers correct: 'Freud', 'Heidegger', 'Nietzsche'",
+      "Core argument on writing and difference recoverable"
+    ],
+    "footnote_artifacts": [
+      "Section 'writing and difference 248' correct",
+      "Clean reference structure"
+    ]
+  },
+  {
+    "page_number": 277,
+    "classification": "MARGINAL",
+    "confidence": 0.74,
+    "error_rate": 7.2,
+    "evidence": [
+      "Readable with 4-5 errors: 'raction' (diffraction), 'transpar-' (transparency)",
+      "Technical neurology vocabulary partially intact: 'neurones', 'facilitations', 'breaching'",
+      "German terms present: 'Bahnung', 'Bahn', 'dargestellt'",
+      "Complex Freudian analysis traceable despite OCR artifacts",
+      "Meaning recoverable from context and technical vocabulary"
+    ],
+    "footnote_artifacts": [
+      "Section 'freud and the scene of writing 252' correct",
+      "Greek/mathematical symbols present"
+    ]
+  },
+  {
+    "page_number": 278,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "error_rate": 4.8,
+    "evidence": [
+      "Readable with 2-3 errors: 'mne-' (mnemic), 'ungraspable' correct",
+      "Complex Freudian concepts intact: 'trace', 'difference', 'memory', 'psyche'",
+      "German terms preserved: 'Aufschub' (delay/deferral)",
+      "Philosophical vocabulary perfect: 'reappropriation', 'phenomenology'",
+      "Dense argument on psychic life and memory fully legible"
+    ],
+    "footnote_artifacts": [
+      "Footnote markers and references clean",
+      "Mathematical/symbolic notation intact"
+    ]
+  },
+  {
+    "page_number": 280,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "error_rate": 6.6,
+    "evidence": [
+      "Readable with 3-4 errors: 'versp-' (Verspätung/postponement), 'originary' correct",
+      "German concepts preserved: 'Traumdeutung', 'Verspätung', 'glichkeit'",
+      "Freud references intact: 'Beyond the Pleasure Principle', psychoanalytic theory",
+      "Complex philosophical argument on deferral and presence traceable",
+      "Key term 'différance' correctly emphasized"
+    ],
+    "footnote_artifacts": [
+      "Footnote marker '5' present",
+      "Section 'freud and the scene of writing 255' correct"
+    ]
+  },
+  {
+    "page_number": 283,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "error_rate": 4.6,
+    "evidence": [
+      "Readable with 2-3 errors: 'culty' (difficulty) clear from context",
+      "German terminology preserved: 'Fliess', 'Zeichen', 'Niederschrift', 'Umschrift'",
+      "Technical neurology concepts intact: 'neurones', 'facilitations', 'topography'",
+      "Complex psychoanalytic argument on writing and memory fully recoverable",
+      "Ligatures and special characters properly rendered"
+    ],
+    "footnote_artifacts": [
+      "Footnote marker '8' present",
+      "Clean references to Freud's works"
+    ]
+  },
+  {
+    "page_number": 284,
+    "classification": "MARGINAL",
+    "confidence": 0.74,
+    "error_rate": 6.7,
+    "evidence": [
+      "Readable with 4-5 errors: 'topo-' (topographical), 'alogical' correct despite fragment",
+      "German terminology largely intact: 'Aufeinanderschichtung' (stratification), 'Umordnung'",
+      "Complex Freudian concepts: 'stratified writing', 'memory-traces', 'registrations'",
+      "Philosophical vocabulary: 'phenomenology', 'consciousness', 'psychic apparatus'",
+      "Dense theoretical discussion on dream interpretation fully traceable"
+    ],
+    "footnote_artifacts": [
+      "Section 'freud and the scene of writing 259' correct"
+    ]
+  },
+  {
+    "page_number": 285,
+    "classification": "BAD",
+    "confidence": 0.65,
+    "error_rate": 7.5,
+    "evidence": [
+      "Multiple significant errors accumulate: 'litterae' (correct), 'ssel'/'schl' (Schlüssel/key)",
+      "OCR corruption in key philosophical terms: 'speci-' (specific), 'ect' fragments",
+      "Dream interpretation section has garbled segments affecting readability",
+      "Proper name references partially corrupted: 'Artemidorous' correct but surrounding context damaged",
+      "Multiple ligature and special character issues (U+FB01, U+FB02)"
+    ],
+    "footnote_artifacts": [
+      "Footnote markers present but surrounding text degraded",
+      "Some textual citations unclear due to OCR errors"
+    ]
+  },
+  {
+    "page_number": 286,
+    "classification": "BAD",
+    "confidence": 0.62,
+    "error_rate": 8.9,
+    "evidence": [
+      "Highest error rate in batch: multiple garbled words",
+      "Significant corruption: 'proceded' (proceeded), 'hermeneuts' (hermeneutics)",
+      "Structure fragmentation: 'structed' (structured), 'guage' (language)",
+      "Complex philosophical argument on Egyptian hieroglyphics becomes difficult to parse",
+      "Multiple incomplete word fragments: 'ics', 'rst' making dense text harder to recover"
+    ],
+    "footnote_artifacts": [
+      "Footnote structure degraded",
+      "References to Warburton and Egyptian systems partially corrupted",
+      "Section 'freud and the scene of writing 261' correct but surrounding context damaged"
+    ]
+  },
+  {
+    "page_number": 289,
+    "classification": "MARGINAL",
+    "confidence": 0.77,
+    "error_rate": 6.0,
+    "evidence": [
+      "Readable with 3-4 errors: 'perman-' (permanently), 'relin-' (relinquish) hyphenated",
+      "Complex philosophical vocabulary intact: 'untranslatable', 'materiality', 'signifier'",
+      "Author names correct: 'Freud', 'Ferenczi', 'Artaud'",
+      "French terminology: 'Übersetzung' (translation), 'Umschrift' (transcription) preserved",
+      "Dense argument on dreams and language fully recoverable"
+    ],
+    "footnote_artifacts": [
+      "Footnote marker '12' present",
+      "Section 'writing and difference 264' correct"
+    ]
+  }
+]

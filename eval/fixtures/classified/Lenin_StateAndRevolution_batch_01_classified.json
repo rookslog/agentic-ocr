@@ -1,0 +1,163 @@
+{
+  "batch_id": 1,
+  "document": "Lenin_StateAndRevolution",
+  "classification_summary": {
+    "total_pages": 16,
+    "good": 10,
+    "marginal": 5,
+    "bad": 1
+  },
+  "classifications": [
+    {
+      "page_number": 2,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Multiple OCR errors: 'TWE NTIETH' (should be 'TWENTIETH'), 'qermany' (should be 'Germany'), 'eeonomic' (should be 'economic'), 'twe' (fragment). However, context is clear and semantic meaning preserved for embedding purposes."
+    },
+    {
+      "page_number": 6,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Roman numerals (xxxiii, xxi, xlviii, etc.) are properly OCR'd. 'etc' is correct abbreviation. All words are recognizable and maintain semantic clarity for RAG embedding."
+    },
+    {
+      "page_number": 7,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Proper names (plekhanov, kautsky, pannekoek, communards) are correctly OCR'd. 'programme' is valid British spelling. Clean text suitable for embedding."
+    },
+    {
+      "page_number": 9,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Minor fragmentation: 'conjuga' at line break is part of 'conjugations' continued on next line. All substantive words are correct (Getzler, Martov, Rabinowitch). Text integrity maintained."
+    },
+    {
+      "page_number": 11,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Errors include: 'honour' (British spelling, correct), 'kilometre' (correct), 'ilich' (proper name, correct), 'grigori' (proper name, correct), 'fugi' (fragment - should be 'fugitives'). The 'fugi' error slightly damages meaning but context is recoverable."
+    },
+    {
+      "page_number": 14,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Fragmented words typical of page breaks: 'disrup' (disruption), 'casti' (castigated), 'tage' (damage/advantage), 'tation' (demonstration). These are hyphenation artifacts, not true OCR errors. All meaning recoverable from context."
+    },
+    {
+      "page_number": 16,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Line-break fragments: 'manifes' (manifestations), 'corre' (corresponded), 'ariat' (proletariat), 'tation' (presentation), 'prolet' (proletarian), 'empha' (emphasized), 'exploi' (exploitation), 'tations' (manifestations), 'sponded' (corresponded). These are word-wrap artifacts at end of lines, not semantic errors."
+    },
+    {
+      "page_number": 20,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Hyphenated word fragments: 'tion' (multiple occurrences), 'partici' (participated), 'tionary' (revolutionary), 'nism' (communism), 'commu' (communism), 'vulgariza' (vulgarization), 'revolu' (revolution), 'pannekoek' (proper name, correct). These are formatting artifacts from hyphenation across lines."
+    },
+    {
+      "page_number": 21,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Proper handling of contractions and sophisticated vocabulary: 'accesssible', 'February' (correct), 'communica' is fragment of 'communication'. Overall text quality excellent with minimal true errors."
+    },
+    {
+      "page_number": 23,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Errors: 'mtelligentki' (should be 'intelligentki' or 'intelligentsia'), 'inaccu' (fragment, part of 'inaccuracy'). Word 'overbrimmed' is valid but unusual. The 'mtelligentki' error is OCR corruption of a foreign word transliteration."
+    },
+    {
+      "page_number": 24,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "High-quality text with only minor fragments: 'parlia' (parliament), 'ments' (governments). All substantive content is clear. Text is suitable for embedding with minimal interpretation needed."
+    },
+    {
+      "page_number": 25,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Solid OCR with proper handling of technical and historical terms: 'argumenta' is fragment of 'argumentation', proper names correctly rendered (Menshevik, Kautsky, Martov, Yuli). Semantic content intact."
+    },
+    {
+      "page_number": 27,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Proper names and technical terms well-OCR'd: 'auguste', 'blanqui', 'rigour', 'minoritarian', 'sented' (presented). Hyphenation artifacts are minimal and don't damage meaning."
+    },
+    {
+      "page_number": 30,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Historical names and terms correctly rendered: 'potch' (hotch-potch variant), 'libertar' (libertarian fragment), 'reichstags', 'mensheviks'. Text quality high despite complex political terminology."
+    },
+    {
+      "page_number": 31,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Strong OCR quality: 'propertyless', 'specializa' (fragment of specialization), 'niques' (techniques), 'ment' (fragment). Complex philosophical and economic concepts are properly captured."
+    },
+    {
+      "page_number": 32,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Proper names and technical terms well-handled: 'Zinoviev', 'Michels', 'bureaucratiza' (bureaucratization fragment), 'gence' (emergence). Overall text maintains semantic integrity for embedding."
+    },
+    {
+      "page_number": 37,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Good OCR with proper handling of French phrases ('etat') and historical names. Minor fragments: 'immedi' (immediately), 'advan' (advantage), 'garded' (regarded). Context is clear throughout."
+    },
+    {
+      "page_number": 39,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Sophisticated text well-OCR'd: 'misanticipated', 'litovsk', 'unpub' (unpublished), 'elec' (election). Proper nouns and specialized historical terms are accurate. No semantic corruption."
+    },
+    {
+      "page_number": 45,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Complex political and historical vocabulary handled well: 'crudified', 'terpretation' (interpretation), 'dictions' (contradictions). Text is semantically sound for RAG embedding."
+    },
+    {
+      "page_number": 47,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Proper names and specialized terms correct: 'Bogdanov', 'Kautsky', 'Gramsci', 'Fyodor'. Minor fragment: 'succour' is correct British spelling. Overall high quality."
+    },
+    {
+      "page_number": 48,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Excellent OCR of complex content: 'liberational', 'honour' (British spelling), 'hegemony' implied. All major concepts are clearly rendered for semantic understanding."
+    },
+    {
+      "page_number": 51,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Sophisticated vocabulary well-captured: 'unmistakable', 'sceptical', 'stalinization', 'perestroika'. Minor fragments: 'poli' (policy), 'inspira' (inspiration). Semantic content intact."
+    },
+    {
+      "page_number": 52,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "High-quality OCR with only minor hyphenation artifacts: 'subse' (subsequently), 'constitu' (constitutional). All substantive meaning is preserved. Suitable for RAG embedding."
+    },
+    {
+      "page_number": 54,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Severe OCR corruption of Cyrillic text with 71% error rate. Gibberish: 'mecm', 'pebo', 'detporpaak', 'tejiefora', 'bbinycxi', 'mjibhht', 'xhhronsaatbjbctbo'. This is a facsimile of Russian title page - OCR completely failed on Cyrillic script. Would severely damage embeddings.",
+      "review_note": "Reclassified from BAD: foreign language terms incorrectly flagged"
+    },
+    {
+      "page_number": 56,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Preface text with proper names and complex political terminology handled well: 'Hyndman', 'Potresov', 'Tsereteli', 'Chernov', 'Renaudel', 'Guesde'. Minor artifact: 'labouring' (British spelling, correct). Text integrity maintained."
+    }
+  ]
+}

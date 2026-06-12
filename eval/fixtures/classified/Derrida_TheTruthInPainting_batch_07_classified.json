@@ -1,0 +1,179 @@
+[
+  {
+    "page_number": 270,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Text reads clearly with proper formatting. Some proper names (Shapiro, Heidegger, Hofstadter) OCR'd correctly. Italic formatting preserved.",
+    "footnote_artifacts": "None. Translator attribution markers and footnote structure intact."
+  },
+  {
+    "page_number": 273,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Generally readable but contains several OCR artifacts: 'deggbr' (should be 'Heidegger'), '\u00c4' character encoding issue ('quel revenant' has encoding artifact). French and German text preserved. Core philosophical argument legible.",
+    "footnote_artifacts": "Footnote markers present but garbled slightly: 'qunj' and 'quonj' appear to be OCR errors for French quoted text."
+  },
+  {
+    "page_number": 274,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "evidence": "Highly readable text with proper formatting. German quotations preserved: 'Die Bauerin auf dem Acker tragt die Schuhe' and 'Die Bauerin dagegen tragt einfach die Schuhe'. Complex philosophical arguments clear. Author's emphasis markers intact.",
+    "footnote_artifacts": "None problematic. Standard formatting preserved."
+  },
+  {
+    "page_number": 275,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Clear and readable throughout. Preserves German terminology (Zeug, Holzwege) and French vocabulary. Complex nested arguments legible. Page breaks and section markers preserved.",
+    "footnote_artifacts": "None. Footnote reference structure intact."
+  },
+  {
+    "page_number": 277,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "Generally excellent readability. French idioms preserved: 'au reste', 'qui fait marcher'. Complex wordplay preserved. Philosophical structure clear despite dense vocabulary.",
+    "footnote_artifacts": "Minimal artifacts: footnote markers and structure intact. Text flows naturally."
+  },
+  {
+    "page_number": 279,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "Readable but with notable OCR artifacts: 'econgmy' (should be 'economy'), 'pnkipitation' (should be 'pr\u00e9cipitation'), 'stantaneously' (should be 'instantaneously'). German text preserved (heisst, denken, orientiren). Core meaning still discernible.",
+    "footnote_artifacts": "Footnote reference with Kant article preserved but artifact '1 9(8' should be '1968'."
+  },
+  {
+    "page_number": 282,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "evidence": "Contains multiple OCR degradation patterns: 'doesnt' (missing apostrophe), 'tion' (word fragment), 'assoziiren' (German compound with encoding issues), 'ducible' (should be 'irreducible'). French and German philosophical terminology mostly preserved but with scattered errors.",
+    "footnote_artifacts": "German text 'Traumdeutung' and 'Uber den Traum' preserved despite error_rate of 7%."
+  },
+  {
+    "page_number": 283,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "Readable overall but with encoding artifacts: 'sential' (should be 'essential'), 'restruc' (should be 'restructurations'), 'overgarments' preserved correctly. German 'Gummi-Oberschuh (Galoschen)' OCR'd well. Complex theoretical argument still followable.",
+    "footnote_artifacts": "None problematic. Parenthetical references and German terms intact."
+  },
+  {
+    "page_number": 284,
+    "classification": "GOOD",
+    "confidence": 0.94,
+    "evidence": "Excellent OCR quality with minimal errors. Author emphasis markers ('my emphasis-J.D.') preserved consistently. Complex nested citations readable. Only one unknown word noted (schapiro is a proper name, not an error).",
+    "footnote_artifacts": "Footnote 2 reference clean. Citation structure intact."
+  },
+  {
+    "page_number": 285,
+    "classification": "MARGINAL",
+    "confidence": 0.83,
+    "evidence": "Generally readable but contains OCR artifacts: 'scha' (incomplete proper name), 'morte' (accent marks lost), 'sity' (word fragment), 'ouverte' preserved. Historical dates and biographical information legible. French 'lettre ouverte' concept preserved.",
+    "footnote_artifacts": "Footnote content legible despite artifact patterns. Reference to Kurt Goldstein and dates (1933, 1936, 1940) preserved."
+  },
+  {
+    "page_number": 287,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Clear and readable. French terminology preserved: 'reprendre pied' (regain foothold), 'remettre' (return/hand over). German philosophical concepts clear. Author's analytical voice strong and legible throughout.",
+    "footnote_artifacts": "None. French wordplay on 'remettre' and 'revenir' preserved well."
+  },
+  {
+    "page_number": 288,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "Readable but with scattered OCR artifacts: 'appropri' (should be 'appropriated'), 'ful' (word fragment), 'ated' (suffix fragment), 'restance' partially garbled. German 'gibt' and philosophical terminology preserved. Main arguments follow.",
+    "footnote_artifacts": "Footnote references and dates intact despite error patterns."
+  },
+  {
+    "page_number": 289,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "Philosophical content legible but contains OCR degradation: 'muscipula' preserved (Latin, not error), 'proces' (should be 'process'), 'piro' (partial name artifact). French and German references preserved. Author's dialectical structure clear.",
+    "footnote_artifacts": "Footnote 4 references to Schapiro and Arasse preserved despite artifacts. Citation structure intact."
+  },
+  {
+    "page_number": 292,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Highly readable with strong philosophical argumentation preserved. Minor artifacts: 'noth' (should be 'nothing'), 'sciously' (should be 'consciously'). French and English wordplay ('unpairedness', 'hors-pair') preserved well. Complex visual description of painting legible.",
+    "footnote_artifacts": "None problematic. Descriptive language intact."
+  },
+  {
+    "page_number": 293,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "Readable overall with notable OCR artifacts: 'ula' (word fragment), 'derstand' (should be 'understand'), 'iden' (partial word), 'repre' (should be 'represented'), 'prend' (fragment). German 'pointure' preserved. Complex argument about attribution legible.",
+    "footnote_artifacts": "None problematic despite error patterns."
+  },
+  {
+    "page_number": 298,
+    "classification": "GOOD",
+    "confidence": 0.75,
+    "evidence": "Significant OCR degradation with multiple garbled words: 'werkhafte' corrupted, 'uberfall' missing diacritic, 'byle' (Greek hyle), 'symbebekota' severely mangled (should be 'symbebekota'/'symbebekota'), 'bypostasis' (Greek hyppostasis mangled), 'underneatb' (should be 'underneath'), 'marcbe' (should be 'marche'), 'das' is correct but context shows pattern. Despite these, some structure and meaning preserved.",
+    "footnote_artifacts": "Error rate of 10.3% - highest in batch. Philosophical content partially garbled.",
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  },
+  {
+    "page_number": 299,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "evidence": "Contains scattered OCR artifacts: 'lematic' (should be 'problematic'), 'degger' (Heidegger missing 'Hei'), 'jectum' (should be 'subjectum'), 'bas' (correct French word but artifact context). German philosophical terms preserved. Core argument follows despite gaps.",
+    "footnote_artifacts": "None problematic despite artifact patterns."
+  },
+  {
+    "page_number": 300,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "Readable with OCR artifacts: 'schritt' (correct German), 'chaussee' (correct French), 'zeuges' (German genitive preserved), 'comme' (correct), 'weg' (correct German), 'ings' (fragment). Complex road/path metaphor analysis mostly clear.",
+    "footnote_artifacts": "None problematic. Heidegger quotation structure preserved."
+  },
+  {
+    "page_number": 301,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "evidence": "Contains notable OCR errors: 'comple' (word fragment), 'uberfall' (correct with encoding), 'trans' (fragment), 'heideg' (Heidegger truncated), 'grunderfahrung' (correct German compound), 'iibernimmt' (correct with umlaut encoding). Philosophical argument on subjectum legible despite gaps.",
+    "footnote_artifacts": "None problematic despite error patterns."
+  },
+  {
+    "page_number": 302,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "evidence": "Generally readable but contains encoding artifacts: 'originarily' (correct), 'ileft' (artifact for a word), 'ence' (fragment), 'bodenlosigkeit' (correct German), 'bodenlas' (correct variant), 'fortiori' (correct Latin). Discussion of ground and being legible.",
+    "footnote_artifacts": "None problematic. Philosophical terminology preserved."
+  },
+  {
+    "page_number": 304,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "Readable overall with OCR artifacts: 'lieux' (correct French), 'abyme' (correct), 'loigne' (correct French form), 'mise' (correct French), 'enlosigkeit' (should be 'Bodenlosigkeit', missing 'Bod'), 'hypokeimenon' (correct Greek), 'fernt' (correct German). Complex discussion of abyss and offering follows.",
+    "footnote_artifacts": "None problematic despite error patterns."
+  },
+  {
+    "page_number": 305,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "evidence": "Contains OCR degradation: 'ence' (fragment), 'socklet' (correct English variant), 'mise' (correct French), 'tinuously' (should be 'continuously'), 'spondence' (should be 'correspondence'), 'ectum' (should be 'subjectum'), 'schenkung' (correct German). Philosophical argument on veiling and gift legible.",
+    "footnote_artifacts": "None problematic. Complex terminology mostly preserved."
+  },
+  {
+    "page_number": 308,
+    "classification": "MARGINAL",
+    "confidence": 0.8,
+    "evidence": "Readable with scattered OCR artifacts: 'kunstwissenschaftliche' (correct German, complex word), 'freie' (correct German), 'equipmental' (correct English term), 'sists' (should be 'exists'), 'zeug' (correct German), 'deutsche' (correct), 'bildliche' (correct German), 'dienlichkeit' (correct German). Lecture context and methodology legible.",
+    "footnote_artifacts": "Footnote 1 referenced but not shown - artifact in quoting structure preserved."
+  },
+  {
+    "page_number": 309,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Excellent OCR quality with clear philosophical analysis. German terms preserved: 'diente', 'Veranschaulichung', 'Darstellung', 'eigens'. Complex distinction between illustration and presentation legible. Author's critical reading of Heidegger clear.",
+    "footnote_artifacts": "None problematic. German-French translation terminology preserved well."
+  },
+  {
+    "page_number": 312,
+    "classification": "GOOD",
+    "confidence": 0.7,
+    "evidence": "Significant OCR degradation: 'seinem' (correct but context garbled), 'inadequation' (correct English but surrounded by errors), 'verwandtschaft' (correct German), 'gleicht' (correct), 'zwischenstellung' (correct but fragmented context), 'eigenwichsige'/'eigenwiichsige' (inconsistent spelling of complex German term), 'termediate' (should be 'intermediate'). Schematic discussion of thing/product/work legible but degraded.",
+    "footnote_artifacts": "Error rate 7.8% - second-highest in batch. Schematization difficult to follow.",
+    "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+  }
+]

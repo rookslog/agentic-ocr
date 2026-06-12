@@ -1,0 +1,429 @@
+{
+  "document": "Heidegger_Pathmarks",
+  "batch_number": 6,
+  "total_batches": 9,
+  "classifications": [
+    {
+      "page_number": 230,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate": 5.5,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 5.5% (lower-middle D bucket)",
+        "Scattered OCR artifacts but fully readable",
+        "Contains expected philosophical terms: movedness"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 1,
+        "footnote_merged_count": 3
+      }
+    },
+    {
+      "page_number": 231,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 8.5,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 8.5% (mid-D bucket)",
+        "1-2 OCR errors per page; meaning recoverable",
+        "Contains expected philosophical terms: movedness, beingness"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 3
+      }
+    },
+    {
+      "page_number": 233,
+      "classification": "BAD",
+      "confidence": 0.8,
+      "error_rate": 11.9,
+      "bucket": "E (10%+)",
+      "evidence": [
+        "Error rate 11.9% (upper-E bucket)",
+        "Significant garbling across sections",
+        "Multiple misspelled philosophical terms",
+        "Footnote markers merged with words (5 instances)"
+      ],
+      "footnote_artifacts": true,
+      "artifact_summary": {
+        "unicode_corruption_count": 3,
+        "footnote_merged_count": 5
+      }
+    },
+    {
+      "page_number": 234,
+      "classification": "MARGINAL",
+      "confidence": 0.7,
+      "error_rate": 10.1,
+      "bucket": "E (10%+)",
+      "evidence": [
+        "Error rate 10.1% (lower-E bucket)",
+        "Multiple OCR errors but key terms identifiable"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 3
+      }
+    },
+    {
+      "page_number": 235,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "error_rate": 8.8,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 8.8% (upper-D bucket)",
+        "Multiple minor errors but text is understandable",
+        "Contains expected philosophical terms: movedness"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 2,
+        "footnote_merged_count": 2
+      }
+    },
+    {
+      "page_number": 236,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate": 5.5,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 5.5% (lower-middle D bucket)",
+        "Scattered OCR artifacts but fully readable"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 2,
+        "footnote_merged_count": 2
+      }
+    },
+    {
+      "page_number": 237,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 6.9,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 6.9% (mid-D bucket)",
+        "1-2 OCR errors per page; meaning recoverable",
+        "Footnote markers merged with words (4 instances)",
+        "Contains expected philosophical terms: movedness"
+      ],
+      "footnote_artifacts": true,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 4
+      }
+    },
+    {
+      "page_number": 238,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 7.0,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 7.0% (mid-D bucket)",
+        "1-2 OCR errors per page; meaning recoverable"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 3
+      }
+    },
+    {
+      "page_number": 239,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 8.5,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 8.5% (mid-D bucket)",
+        "1-2 OCR errors per page; meaning recoverable",
+        "Footnote markers merged with words (5 instances)",
+        "Contains expected philosophical terms: movedness"
+      ],
+      "footnote_artifacts": true,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 5
+      }
+    },
+    {
+      "page_number": 240,
+      "classification": "BAD",
+      "confidence": 0.8,
+      "error_rate": 11.1,
+      "bucket": "E (10%+)",
+      "evidence": [
+        "Error rate 11.1% (upper-E bucket)",
+        "Significant garbling across sections",
+        "Multiple misspelled philosophical terms",
+        "Footnote markers merged with words (5 instances)"
+      ],
+      "footnote_artifacts": true,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 5
+      }
+    },
+    {
+      "page_number": 241,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "error_rate": 8.7,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 8.7% (upper-D bucket)",
+        "Multiple minor errors but text is understandable",
+        "Footnote markers merged with words (6 instances)"
+      ],
+      "footnote_artifacts": true,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 6
+      }
+    },
+    {
+      "page_number": 242,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 7.9,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 7.9% (mid-D bucket)",
+        "1-2 OCR errors per page; meaning recoverable"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 3
+      }
+    },
+    {
+      "page_number": 243,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "error_rate": 9.0,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 9.0% (upper-D bucket)",
+        "Multiple minor errors but text is understandable"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 2
+      }
+    },
+    {
+      "page_number": 245,
+      "classification": "BAD",
+      "confidence": 0.8,
+      "error_rate": 11.5,
+      "bucket": "E (10%+)",
+      "evidence": [
+        "Error rate 11.5% (upper-E bucket)",
+        "Significant garbling across sections",
+        "Multiple misspelled philosophical terms"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 3,
+        "footnote_merged_count": 1
+      }
+    },
+    {
+      "page_number": 248,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 7.0,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 7.0% (mid-D bucket)",
+        "1-2 OCR errors per page; meaning recoverable",
+        "Contains 14 corrupted Unicode sequences",
+        "Footnote markers merged with words (7 instances)"
+      ],
+      "footnote_artifacts": true,
+      "artifact_summary": {
+        "unicode_corruption_count": 14,
+        "footnote_merged_count": 7
+      }
+    },
+    {
+      "page_number": 249,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "error_rate": 4.5,
+      "bucket": "C (3-5%)",
+      "evidence": [
+        "Very low error rate (4.5%)"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 4,
+        "footnote_merged_count": 1
+      }
+    },
+    {
+      "page_number": 250,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "error_rate": 3.5,
+      "bucket": "C (3-5%)",
+      "evidence": [
+        "Low error rate (3.5%)",
+        "Text is readable and semantically coherent"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 2
+      }
+    },
+    {
+      "page_number": 251,
+      "classification": "BAD",
+      "confidence": 0.8,
+      "error_rate": 12.7,
+      "bucket": "E (10%+)",
+      "evidence": [
+        "Error rate 12.7% (upper-E bucket)",
+        "Significant garbling across sections",
+        "Multiple misspelled philosophical terms",
+        "Contains 19 corrupted Unicode sequences"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 19,
+        "footnote_merged_count": 3
+      }
+    },
+    {
+      "page_number": 253,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "error_rate": 9.8,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 9.8% (upper-D bucket)",
+        "Multiple minor errors but text is understandable"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 1
+      }
+    },
+    {
+      "page_number": 254,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate": 5.1,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 5.1% (lower-middle D bucket)",
+        "Scattered OCR artifacts but fully readable"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 2,
+        "footnote_merged_count": 3
+      }
+    },
+    {
+      "page_number": 255,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate": 5.7,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 5.7% (lower-middle D bucket)",
+        "Scattered OCR artifacts but fully readable"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 2
+      }
+    },
+    {
+      "page_number": 257,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 8.2,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 8.2% (mid-D bucket)",
+        "1-2 OCR errors per page; meaning recoverable"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 2
+      }
+    },
+    {
+      "page_number": 258,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "error_rate": 3.0,
+      "bucket": "C (3-5%)",
+      "evidence": [
+        "Low error rate (3.0%)",
+        "Text is readable and semantically coherent"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 3
+      }
+    },
+    {
+      "page_number": 259,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "error_rate": 7.3,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 7.3% (mid-D bucket)",
+        "1-2 OCR errors per page; meaning recoverable"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 0
+      }
+    },
+    {
+      "page_number": 263,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "error_rate": 5.5,
+      "bucket": "D (5-10%)",
+      "evidence": [
+        "Error rate 5.5% (lower-middle D bucket)",
+        "Scattered OCR artifacts but fully readable"
+      ],
+      "footnote_artifacts": false,
+      "artifact_summary": {
+        "unicode_corruption_count": 0,
+        "footnote_merged_count": 2
+      }
+    }
+  ],
+  "summary": {
+    "total_pages": 25,
+    "good_count": 8,
+    "marginal_count": 13,
+    "bad_count": 4
+  }
+}

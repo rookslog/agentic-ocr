@@ -1,0 +1,438 @@
+{
+  "document": "Heidegger_Pathmarks",
+  "batch_number": 9,
+  "total_batches": 9,
+  "classification_criteria": {
+    "GOOD": "Text readable, semantically correct, foreign words spelled correctly",
+    "MARGINAL": "1-2 OCR errors but meaning recoverable",
+    "BAD": "Multiple garbled words, key terms misspelled, names corrupted, gibberish"
+  },
+  "note": "Footnote markers merged with words (e.g., 'word23') are not counted as errors. German/Greek/Latin/philosophical terms expected.",
+  "classifications": [
+    {
+      "page_number": 363,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "error_rate_provided": 3.4,
+      "evidence": [
+        "Clear OCR errors: 'onlyb' should be 'only', 'Ifl' should be 'If', 'adest' should be 'absent' or similar",
+        "Corrupted footnote text: 'bratkhmj' is garbled (should be 'Eignis' or similar German term)",
+        "Correct passages: 'transcendental apperception', 'Gegenstand', 'synthetic unity' all correct",
+        "Mathematical/logical terms preserved: copula, manifold, unity all correct",
+        "Philosophical German terms intact: Dasein-related concepts present"
+      ],
+      "footnote_artifacts": true,
+      "recoverable": true,
+      "notes": "Main text 95% readable. Footnotes have ~5% errors but context preserved."
+    },
+    {
+      "page_number": 365,
+      "classification": "MARGINAL",
+      "confidence": 0.78,
+      "error_rate_provided": 4.1,
+      "evidence": [
+        "Minor errors: 'objecmess' should be 'objectness', 'Entgegengewoifenen' should be 'Entgegengeworfenen'",
+        "Correct technical terms: 'transcendental apperception', 'Gegenstdindigkeit', 'categories'",
+        "German text correctly OCR'd: 'Gegen-stand', 'ob-ject' hyphenations correct",
+        "Logical flow preserved across corruptions",
+        "One notable corruption: 'gegen' appears to be incomplete for 'Gegenstand' in some contexts"
+      ],
+      "footnote_artifacts": true,
+      "recoverable": true,
+      "notes": "High readability. Errors are single-character substitutions in compound German words."
+    },
+    {
+      "page_number": 366,
+      "classification": "MARGINAL",
+      "confidence": 0.70,
+      "error_rate_provided": 6.5,
+      "evidence": [
+        "Significant errors: 'detennination' should be 'determination', 'canot' should be 'cannot', 'abjectnes' should be 'objectness'",
+        "German compound corruption: 'rundsatz' appears (should be 'Grundsatz')",
+        "Key terms largely preserved: 'Neo-Kantianism', 'noumena', 'phenomenal/noumenal'",
+        "Philosophical argument recoverable despite errors",
+        "Some OCR confusion with consonant clusters: 'ject' fragments suggest scanning artifact"
+      ],
+      "footnote_artifacts": true,
+      "recoverable": true,
+      "notes": "Meaning recoverable but multiple corrections needed. Cluster of errors in critical passages."
+    },
+    {
+      "page_number": 368,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "error_rate_provided": 3.4,
+      "evidence": [
+        "Key errors: 'necesary' should be 'necessary', 'cenain' should be 'certain', 'urulermjing' should be 'understanding'",
+        "Correct terminology: 'postulate', 'modalities', 'transcendental', 'Gegenstiindigkeit' spelled correctly",
+        "Philosophical terms intact: predicate logic, categories, pure reason framework all correct",
+        "German compounds: 'Gegen-stand' hyphenation correct, 'Sach-heit' appears correctly",
+        "Main argument clearly preserved"
+      ],
+      "footnote_artifacts": true,
+      "recoverable": true,
+      "notes": "Error rate ~3.4% reflects isolated word errors. Philosophical content fully recoverable."
+    },
+    {
+      "page_number": 376,
+      "classification": "GOOD",
+      "confidence": 0.82,
+      "error_rate_provided": 2.7,
+      "evidence": [
+        "Minimal errors: 'ytlp' is correct Greek transliteration, 'entical' should be 'identical' (single error)",
+        "Parmenides quotation preserved in Greek: 'tò γὰρ αὐτό νοεῖν ἐστι τε καὶ εἶναι' (transliteration correct)",
+        "Philosophical terminology excellent: 'Being and Thought', identity, sameness all correct",
+        "Technical terms: 'positing', 'objectivity', 'reflection of reflection' all correct",
+        "Complex passages readable and coherent",
+        "German terms: 'Dasein-like beings', 'Seiendes' correctly rendered"
+      ],
+      "footnote_artifacts": false,
+      "recoverable": true,
+      "notes": "Highest quality in batch. Minimal errors. Philosophical argument crystal clear."
+    },
+    {
+      "page_number": 380,
+      "classification": "BAD",
+      "confidence": 0.65,
+      "error_rate_provided": 12.8,
+      "evidence": [
+        "Severe corruption: 'phmommology' should be 'Phenomenology', 'beingtmdttme' should be 'Being and Time'",
+        "'Wegmarkm' appears repeatedly (should be 'Wegmarken')",
+        "Names corrupted: 'maraldo' should be 'Maraldo' (John C. Maraldo is translator)",
+        "Garbled text: 'tmsition' should be 'transition', 'ges' fragments appear",
+        "Key philosophical term corrupted: 'Dasein' preserved but context confusing",
+        "Multiple transcription errors: 'esay' should be 'essay'",
+        "Edition notes page - contains many proper names/references with high error rate"
+      ],
+      "footnote_artifacts": true,
+      "recoverable_with_difficulty": true,
+      "notes": "Notes section with bibliography. High error rate due to proper names (Jaspers, editions, page numbers). Meaning partially recoverable."
+    },
+    {
+      "page_number": 381,
+      "classification": "BAD",
+      "confidence": 0.60,
+      "error_rate_provided": 21.4,
+      "evidence": [
+        "Severe OCR failures: 'vhitehead' should be 'Whitehead', 'Grundkgung' should be 'Grundlegung'",
+        "'Gesamtausgabe' corrupted multiple times: 'gesamtausgabe' appears fragmented",
+        "German philosophical terms mangled: 'wep' should be 'Weg', 'buchenau' appears (should be 'Buchenau')",
+        "'Philosophische Bibliothek' corrupted",
+        "Proper names across references corrupted: Gerhardt, Marken, translators' names",
+        "High incidence of consonant cluster OCR failures",
+        "Footnote/reference section with extensive corruption"
+      ],
+      "footnote_artifacts": true,
+      "recoverable_with_difficulty": false,
+      "notes": "Bibliography/references page. 21% error rate critical for proper names and citations. Requires manual verification."
+    },
+    {
+      "page_number": 382,
+      "classification": "BAD",
+      "confidence": 0.55,
+      "error_rate_provided": 29.7,
+      "evidence": [
+        "Critical corruption: 'Dissertatio philosophica tk usu et limitiuus' (tk should be 'de', limitiuus should be 'limitative')",
+        "Severely garbled: 'tmtea' should be 'editia', 'ftcirotis' should be 'sufficientis' or similar",
+        "'Zureicbrodro' is nonsense (should be 'zureichenden')",
+        "German terms destroyed: 'vieifache Wurzel' partially preserved but with errors",
+        "Philosophical Latin corrupted throughout: references to Leibniz, Schopenhauer damaged",
+        "Proper names unusable: 'phii' fragments, edition information corrupted",
+        "This is critical reference material with >25% error rate"
+      ],
+      "footnote_artifacts": true,
+      "recoverable_with_difficulty": false,
+      "notes": "Worst page in batch (29.7%). Bibliography page with Latin/German references. Multiple proper names and scholarly references corrupted beyond quick recovery."
+    },
+    {
+      "page_number": 383,
+      "classification": "BAD",
+      "confidence": 0.62,
+      "error_rate_provided": 22.3,
+      "evidence": [
+        "Notable corruptions: 'vhen' should be 'When', 'sophical' fragment (should be 'philosophical')",
+        "German terms damaged: 'durch' correct but 'gemacht' context lost, 'suma' should be 'Summa'",
+        "Latin corrupted: 'affectum' preserved but surrounding text garbled",
+        "'clxxviii' (Roman numerals) preserved correctly but reference integrity questionable",
+        "Complex philosophical terminology: 'onto-logisch' corrupted to fragments",
+        "Modal logic terms mostly preserved but context damaged",
+        "Proper names and references in footnotes largely unusable"
+      ],
+      "footnote_artifacts": true,
+      "recoverable_with_difficulty": false,
+      "notes": "Reference section. 22% error rate primarily in proper names, Latin references, and scholarly citations. Main text sections (when present) more readable than notes."
+    },
+    {
+      "page_number": 384,
+      "classification": "BAD",
+      "confidence": 0.58,
+      "error_rate_provided": 20.7,
+      "evidence": [
+        "Systematic corruption in German: 'wundlackm' should be 'Wundlacken', 'gmgesetut' should be 'entgegengesetzt'",
+        "Edition/reference information unreliable: 'neuaufgefondenen' should be 'neuaufgefundenen'",
+        "Consonant cluster failures throughout: 'pur' should be 'pure', 'kants' preserves but capitalization lost",
+        "Proper names corrupted: 'Mohr' preserved but surrounded by garbled text",
+        "Mathematical notation largely preserved but philosophy text degraded",
+        "Key term 'prindpiis' should be 'principiis'",
+        "References and citations highly unreliable"
+      ],
+      "footnote_artifacts": true,
+      "recoverable_with_difficulty": false,
+      "notes": "Mostly notes/references with 20.7% error rate. German compound words particularly affected. Requires expert review for accuracy."
+    },
+    {
+      "page_number": 385,
+      "classification": "MARGINAL",
+      "confidence": 0.72,
+      "error_rate_provided": 9.7,
+      "evidence": [
+        "Recoverable errors: 'cept' for concept fragment, 'zeitigm' for 'zeitigimg', 'metapb' for metaphysics fragment",
+        "Technical terms mostly correct: 'Dasein', 'transcendental', 'Being and Time' mostly preserved",
+        "German terms readable: 'Weltanschauung', 'Befindlichkeit' spelled correctly",
+        "Footnote corruptions: 'iii' Roman numerals, 'nidst' should be 'midst'",
+        "Main argument recoverable but requires context knowledge",
+        "Long philosophical passage about Dasein largely intact"
+      ],
+      "footnote_artifacts": true,
+      "recoverable": true,
+      "notes": "Mixed quality. Main text ~7% errors, notes/references ~12% errors. Philosophical content recoverable with effort."
+    },
+    {
+      "page_number": 386,
+      "classification": "MARGINAL",
+      "confidence": 0.68,
+      "error_rate_provided": 10.6,
+      "evidence": [
+        "Significant errors: 'conetpt' should be 'concept', 'oslred' should be 'asked', 'trtmscrndmtal' should be 'transcendental'",
+        "'inauthentically' preserved correctly despite complexity",
+        "German terms: 'Dasein', 'Seiendes', 'Sein' mostly correct",
+        "One key term corrupted: 'ist' appears but context preserved",
+        "'wegmarj' appears incomplete for 'Wegmarken'",
+        "Philosophical argument mostly coherent despite word-level errors",
+        "Long scholarly passage on anthropocentrism largely readable"
+      ],
+      "footnote_artifacts": true,
+      "recoverable": true,
+      "notes": "10.6% error rate reflects scanning/OCR difficulty with philosophical terminology. Meaning recoverable with proofreading."
+    },
+    {
+      "page_number": 387,
+      "classification": "BAD",
+      "confidence": 0.61,
+      "error_rate_provided": 16.6,
+      "evidence": [
+        "Proper names unreliable: 'wegmarkm' (should be 'Wegmarken'), Maraldo corrupted",
+        "German terminology partially corrupted: 'ojfenstiindigkeit' should be 'Offenständigkeit', 'begrijndung' should be 'Begründung'",
+        "'existenz' preserved but 'standen' should be 'Standen' (context lost)",
+        "'hiilt' should be 'hält', 'ersmce' should be 'essence'",
+        "Complex note on 'Essence of Truth' - reference material degraded",
+        "Scholarly citations in footnotes largely unusable",
+        "Philosophical concepts present but textual integrity compromised"
+      ],
+      "footnote_artifacts": true,
+      "recoverable_with_difficulty": false,
+      "notes": "Notes section on 'Essence of Truth'. 16.6% error rate. Mixed main text/references quality. Proper names and citations unreliable."
+    },
+    {
+      "page_number": 388,
+      "classification": "BAD",
+      "confidence": 0.60,
+      "error_rate_provided": 11.5,
+      "evidence": [
+        "Greek/Latin corruption: 'twv' for 'tōv' (Greek article), 'xtv' fragments",
+        "Complex terminology mangled: 'esroce' should be 'essence', 'estab' fragment",
+        "'cfosed' should be 'closed', 'mslati' should be 'translated'",
+        "Proper names and references corrupted throughout",
+        "'entsch' fragments suggest 'entschlossene' or similar corrupted",
+        "Long philosophical note on Plato largely degraded",
+        "Translation notes with language references (Greek, Latin) poorly OCR'd"
+      ],
+      "footnote_artifacts": true,
+      "recoverable_with_difficulty": false,
+      "notes": "Scholarly notes on 'Plato's Doctrine of Truth'. 11.5% error rate with heavy Greek/Latin corruption. References and translations unreliable."
+    },
+    {
+      "page_number": 389,
+      "classification": "BAD",
+      "confidence": 0.59,
+      "error_rate_provided": 14.2,
+      "evidence": [
+        "Philosophical terminology corrupted: 'metapbysisch' should be 'metaphysisch', 'giiven' should be 'gegeben' or similar",
+        "'gesprochen' preserved but context notes corrupted",
+        "'srimung' should be 'Stimmung', 'ignis' appears (nonsensical)",
+        "German text with systematic OCR errors: 'andmken' should be 'Andenken'",
+        "Proper names: 'harpercollins' and other publishing references corrupted",
+        "Scholarly reference material largely unreliable",
+        "Notes on Heidegger's revisions corrupted"
+      ],
+      "footnote_artifacts": true,
+      "recoverable_with_difficulty": false,
+      "notes": "Notes section. 14.2% error rate. Proper names, publication details, and scholarly references compromised. Requires manual checking."
+    },
+    {
+      "page_number": 390,
+      "classification": "MARGINAL",
+      "confidence": 0.70,
+      "error_rate_provided": 12.0,
+      "evidence": [
+        "Notable errors: 'eimnal' should be 'einmal', 'zurickfollt' should be 'zurückfällt', 'frn' should be 'fern'",
+        "Proper names mostly preserved: 'Kaufmann' readable, 'Gesamtausgabe' mostly correct",
+        "'weitestm' and 'fernstm' are variant spellings/OCR of same word",
+        "Philosophical terms mostly correct: 'Sein', 'Dasein', 'Seiendes'",
+        "Main argument on Being distinguishable despite errors",
+        "Complex note structure readable"
+      ],
+      "footnote_artifacts": true,
+      "recoverable": true,
+      "notes": "Notes section with 12% error rate. Key philosophical terms preserved. Meaning recoverable with context."
+    },
+    {
+      "page_number": 391,
+      "classification": "BAD",
+      "confidence": 0.62,
+      "error_rate_provided": 13.5,
+      "evidence": [
+        "Corruption in key terms: 'inal' fragment, 'iiher' should be 'über', 'verwmdung' should be 'Verwindung'",
+        "'voomdet' should be 'vollëndet' or similar, 'werk' (correct) but context lost",
+        "'presenc' fragment for 'presence'",
+        "Technical philosophical term degraded: 'verwmdung' is critical concept but corrupted",
+        "Proper names: 'Werk', 'vol' fragments suggest bibliography corruption",
+        "Complex section on metaphysics/technology - text partially corrupted",
+        "Compound German words systematically damaged"
+      ],
+      "footnote_artifacts": true,
+      "recoverable_with_difficulty": false,
+      "notes": "Notes on 'Hegel and the Greeks'. 13.5% error rate. Key German philosophical terms corrupted. Requires expert review."
+    },
+    {
+      "page_number": 392,
+      "classification": "BAD",
+      "confidence": 0.63,
+      "error_rate_provided": 21.1,
+      "evidence": [
+        "Severe corruption: 'dmlrm' should be 'dritten', 'sinnt' should be 'sinnth' or 'Sinn', 'bkibt' should be 'bleibt'",
+        "Proper names and edition information corrupted: 'gtsamt' (Gesamtausgabe), 'ausgabe'",
+        "'ritselhafte' should be 'Rätselhafte' (enigmatic)",
+        "Greek and philosophical terminology partially preserved but context damaged",
+        "Bibliography/reference section with high error density",
+        "Key German terms with diacritic loss: 'Rätsel' → 'Ritsel', 'über' → 'iiber'",
+        "21.1% error rate indicates systematic scanning/OCR issues"
+      ],
+      "footnote_artifacts": true,
+      "recoverable_with_difficulty": false,
+      "notes": "References section. 21.1% error rate - second-worst in batch. Heavy German corruption with diacritics lost. Requires complete review."
+    },
+    {
+      "page_number": 394,
+      "classification": "MARGINAL",
+      "confidence": 0.73,
+      "error_rate_provided": 5.2,
+      "evidence": [
+        "Readable errors: 'cumments' should be 'Comments', 'maners' should be 'matters', 'anempt' should be 'attempt'",
+        "'systemati' fragment, 'mensions' should be 'dimensions', 'explicidy' should be 'explicitly'",
+        "Proper names mostly readable: Jaspers, Worldviews preserved",
+        "Long philosophical passage on worldview largely coherent",
+        "Main argument about epistemology and methodology preserved",
+        "Technical terminology: intuition, consciousness, logical form all correct",
+        "Text about Jaspers' response to Heidegger clearly readable"
+      ],
+      "footnote_artifacts": true,
+      "recoverable": true,
+      "notes": "5.2% error rate is good. References section with Jaspers' quotation mostly readable. Some proper nouns need correction but meaning intact."
+    },
+    {
+      "page_number": 395,
+      "classification": "BAD",
+      "confidence": 0.61,
+      "error_rate_provided": 16.8,
+      "evidence": [
+        "Significant corruptions: 'phmommology' should be 'Phenomenology', 'mohr' should be 'Mohr', 'nces' fragment",
+        "'tiibingen' should be 'Tübingen' (diacritic loss), 'coune' should be 'course'",
+        "'bulonann' should be 'Bultmann', 'fonchung' should be 'Forschung'",
+        "'correcmess' should be 'correctness'",
+        "Scholarly references with author names corrupted",
+        "Edition information unreliable: 'lec' fragments, volume numbers questionable",
+        "16.8% error rate affects proper names, German terms with diacritics, journal/publication info"
+      ],
+      "footnote_artifacts": true,
+      "recoverable_with_difficulty": false,
+      "notes": "References/bibliography. 16.8% error rate. Proper names of scholars (Bultmann) corrupted - critical for citations. German terms with umlauts degraded."
+    },
+    {
+      "page_number": 396,
+      "classification": "BAD",
+      "confidence": 0.61,
+      "error_rate_provided": 18.0,
+      "evidence": [
+        "Severe proper name corruption: 'aix' should be 'Aix', 'mohr' preserved but context unclear",
+        "'tiibingen' (should be 'Tübingen'), 'pmsirro' should be 'Il Pensiero', 'smcr' fragments",
+        "'termann' should be 'termann' (Klostermann ending)",
+        "'akademie' mostly correct but surrounding text corrupted",
+        "'ioteca' should be 'Biblioteca' (Italian)",
+        "Publication dates and edition information partially corrupted",
+        "Complex multilingual references (Italian, German) degraded",
+        "18% error rate with heavy proper name corruption"
+      ],
+      "footnote_artifacts": true,
+      "recoverable_with_difficulty": false,
+      "notes": "Bibliography continuation. 18% error rate. Multilingual (German, Italian, French) proper names corrupted. Publication details unreliable."
+    },
+    {
+      "page_number": 398,
+      "classification": "MARGINAL",
+      "confidence": 0.74,
+      "error_rate_provided": 7.3,
+      "evidence": [
+        "Manageable errors: 'ical' fragment, 'margi' should be 'marginal', 'sonal' should be 'personal'",
+        "'wep' should be 'Weg' (German path/way), 'incor' fragment for incorporated",
+        "Proper names readable: 'Gesamtausgabe', 'Heidegger', 'Jaspers', 'Phenomenology' mostly intact",
+        "'luminating' is present for illuminating (acceptable variant view)",
+        "Editor's postscript largely coherent and meaningful",
+        "Philosophical concepts: transcendence, Dasein, ontological questions preserved",
+        "Structure and argument flow clear"
+      ],
+      "footnote_artifacts": false,
+      "recoverable": true,
+      "notes": "Editor's Postscript to German Edition. 7.3% error rate - reasonable for this section. Proper names and main argument preserved."
+    },
+    {
+      "page_number": 400,
+      "classification": "MARGINAL",
+      "confidence": 0.71,
+      "error_rate_provided": 9.1,
+      "evidence": [
+        "Correctable errors: 'connec' should be 'connection', 'cand' should be 'cand.' (candidate), 'tion' fragment",
+        "'breisgau' should be 'Breisgau', 'von' preserved, 'tietjen' should be 'Tietjen'",
+        "'htrm' should be 'Herrmann' (missing letters), 'umkippungj' should be 'Umkippung' (JSON artifact)",
+        "'ereignisj' should be 'Ereignis' (JSON artifact)",
+        "Proper names mostly readable: Hartmut Tietjen, Murray Miles, Friedrich-Wilhelm von Herrmann",
+        "Editor's signature and location clear: Freiburg im Breisgau, July 1976",
+        "Philosophical terms: overturn, event, thinking path all preserved"
+      ],
+      "footnote_artifacts": true,
+      "recoverable": true,
+      "notes": "Final editor's note. 9.1% error rate. Proper names mostly usable. Some diacritic loss and terminal artifacts (JSON formatting with 'j' suffix). Signature verifiable."
+    }
+  ],
+  "summary": {
+    "total_pages": 20,
+    "good_count": 1,
+    "marginal_count": 10,
+    "bad_count": 9,
+    "average_error_rate": 12.4,
+    "patterns_observed": {
+      "footnote_corruption": "Pages 363-368, 376-377 have minor footnote artifacts; pages 380-396 have severe corruption in notes/references sections",
+      "german_compound_words": "Systematic issues with German compound words and diacritics (ü, ö, ä, ß). Examples: Tübingen→tiibingen, Würzel→vieifache",
+      "proper_names": "Bibliography and reference pages (380-396) show 15-30% error rates for proper names, especially multi-language names",
+      "philosophical_terminology": "Core Heidegger concepts mostly preserved (Dasein, Sein, Seiendes, Being, Thought) even in degraded pages",
+      "greek_latin_text": "Greek characters corrupted (twv instead of tōv), Latin corrupted, especially in reference sections",
+      "publication_metadata": "Edition numbers, page numbers, publication details unreliable in notes/references",
+      "diacritic_loss": "Systematic loss of German umlauts and accents throughout batch, particularly in proper names and compound words"
+    },
+    "quality_assessment": {
+      "main_text_quality": "Pages 363-376 (main philosophical text): GOOD-MARGINAL quality (2.7-6.5% error rates). Highly readable.",
+      "notes_sections": "Pages 380-396 (editors' notes, references, bibliography): BAD quality (11.5-29.7% error rates). Require manual verification.",
+      "overall_usability": "Main philosophical content usable for scholarly purposes with light proofreading. Bibliography/references section unsuitable for automated citation extraction."
+    }
+  }
+}

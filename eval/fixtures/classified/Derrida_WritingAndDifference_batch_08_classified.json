@@ -1,0 +1,202 @@
+[
+  {
+    "page_number": 330,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Text is highly readable with proper formatting and French/German terms intact (e.g., 'Freud's very terms', 'hieroglyphic characters', 'Hervey de Saint-Denys'). Minor footnote markers present ('8', references to TD). Philosophical discourse flows clearly.",
+    "footnote_artifacts": "Standard footnote markers: '8', '[TD, p. 94]', '[TD, p. 111]', '[TD, p. 140]', '[TD, p. 80]', '(ibid.)'",
+    "notes": "Unknown words list contains expected philosophical terms and names, not actual OCR errors"
+  },
+  {
+    "page_number": 331,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Clear readable text with intact philosophical terminology. References to 'Artaud', 'psychoanalytic', 'psychoanalyst' all correct. Minor OCR artifacts in 'hermeneut' (from unknown_words) appear in context as 'hermeneut' in the word 'hermeneut', which is acceptable philosophical fragmentation (cf. 'hermeneutic').",
+    "footnote_artifacts": "'9', '(CW 2:23)', '(CW 2:39)'",
+    "notes": "Unknown words are expected philosophical/linguistic fragments"
+  },
+  {
+    "page_number": 333,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "evidence": "Most text readable but contains some garbled segments: 'painstak-ing' (should be 'painstaking'), 'mobiliza-tion' (should be 'mobilization'). Some hyphenation errors present. However, meaning remains recoverable and the discourse is still followable. Proper names and philosophical terms are mostly intact.",
+    "footnote_artifacts": "'12', '13', '[TD, p. 123]', '[TD, p. 10]', '[TD, p. 81]', '[TD, p. 85]'",
+    "notes": "Line breaking issues contribute to word boundary errors, but not semantic garbling"
+  },
+  {
+    "page_number": 336,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Text is well-preserved with complex philosophical argumentation intact. German philosophical terms preserved ('Grausamkeit', 'Vergesslichkeit'). Citations properly formatted. Discourse on Nietzsche and dialectics flows coherently. Only minor expected fragmentation from unknown_words list.",
+    "footnote_artifacts": "'17', '18', '19', '[TD, p. 75]', '[TD, p. 82]'",
+    "notes": "Complex philosophical content handled well by OCR"
+  },
+  {
+    "page_number": 337,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Excellent readability. German philosophical terms correctly preserved: 'Vergesslichkeit', 'Grausamkeit'. French phrases intact. Extended quotations properly maintained. Philosophical argumentation is coherent and clear. Only standard footnote markers present.",
+    "footnote_artifacts": "[TD, p. 75]', '[TD, p. 82]', '[TD, p. 78]'",
+    "notes": "High-quality OCR of dense philosophical text"
+  },
+  {
+    "page_number": 340,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Text is readable and coherent. Complex philosophical argument about Artaud and the theater of cruelty is preserved. Proper nouns (Artaud, Antonin) are correct. Quotations maintain integrity. Only minor expected hyphenation artifacts from line breaks.",
+    "footnote_artifacts": "[TD, p. 238]'",
+    "notes": "Meaning fully recoverable despite complex source material"
+  },
+  {
+    "page_number": 342,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "Very readable opening section with clear French quotations and philosophical references. Text transitions smoothly between sections. 'Hegell' in unknown_words appears as appropriate German variant. Bataille reference is clear and properly formatted.",
+    "footnote_artifacts": "Quote citations from 'Le coupable'",
+    "notes": "Section heading and transition handled well"
+  },
+  {
+    "page_number": 344,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "evidence": "Generally readable but contains several fragmented words affecting flow: 'manipulat' (manipulate), 'unforeseeably' present but adjacent words intact. The philosophical argument about laughing at Hegelianism is recoverable but some sentences require reconstruction. Meaning is preserved despite word-level artifacts.",
+    "footnote_artifacts": "'1'",
+    "notes": "1-2 word-level errors per paragraph but semantics remain intact"
+  },
+  {
+    "page_number": 347,
+    "classification": "BAD",
+    "confidence": 0.62,
+    "evidence": "Multiple significant OCR errors including German philosophical terms with garbled characters: 'Bewusstsein' appears with diacritics/encoding issues ('Bewusstseins' malformed), 'aufhalten' preserved but context has disruptions. Multiple fragmentation points: 'medi-', 'bearbe-iten', 'hemmen', 'aufhalten' appear broken. High error rate (9.6%) reflects genuine OCR quality issues not just philosophical obscurity.",
+    "footnote_artifacts": "[ibid.]', various truncated reference markers",
+    "notes": "German text particularly problematic; encoding issues with umlauts and special characters"
+  },
+  {
+    "page_number": 348,
+    "classification": "MARGINAL",
+    "confidence": 0.80,
+    "evidence": "Mostly readable with philosophical argument preserved, but contains 1-2 errors per section: 'thode' (méthode), 'rst' (first). Citations and quotations largely intact. Meaning is recoverable through context, though some fine-grained precision is lost. The discourse on Bataille's laughter and dialectics remains followable.",
+    "footnote_artifacts": "'10'",
+    "notes": "Fragmented words don't critically impair meaning recovery"
+  },
+  {
+    "page_number": 350,
+    "classification": "MARGINAL",
+    "confidence": 0.76,
+    "evidence": "Generally intelligible but with scattered OCR artifacts: 'phenomen-' (phenomenology fragmented), 'ungraspable' intact but surrounded by word breaks. The complex discussion of Bataille's simulacrum and sacrifice is readable but punctuated by minor garbling. Confidence based on error rate (5.8%) that semantic recovery is still possible.",
+    "footnote_artifacts": "Unmarked references throughout",
+    "notes": "Hyphenation at line breaks creates appearance of more errors than actual corruption"
+  },
+  {
+    "page_number": 351,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Well-preserved text with coherent philosophical argument about death, negation, and representation. Quotations from Bataille are properly maintained. The Irish wake example and its analysis are clear and readable. Only minor word boundary artifacts from hyphenation.",
+    "footnote_artifacts": "'14'",
+    "notes": "Complex narrative argument handled well"
+  },
+  {
+    "page_number": 352,
+    "classification": "MARGINAL",
+    "confidence": 0.77,
+    "evidence": "Readable but with recurring fragmentation: 'suppres-' (suppression), 'nally' (finally), 'determin-' (determined), 'abso-' (absolute). These artifacts create slight friction in reading but meaning is consistently recoverable. The discussion of gaiety, anguish, and Hegelian blindness is comprehensible despite word-level errors.",
+    "footnote_artifacts": "'15'",
+    "notes": "Systematic word-boundary problems but not semantic corruption"
+  },
+  {
+    "page_number": 355,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Clear readable text discussing sovereignty, sacrifice, and discourse. Key philosophical terms are intact (sovereignty, lordship, meaning, sacrifice). The complex argument about poetic speech vs. signification is well-preserved. Minor unknown words are philosophical fragments, not errors.",
+    "footnote_artifacts": "'16', '17'",
+    "notes": "Dense philosophical content successfully preserved"
+  },
+  {
+    "page_number": 356,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Readable text with intact philosophical argument about writing, meaning, and sovereignty. French quotations preserved. The section on 'two forms of writing' is clear. References to Bataille and Hegel are properly maintained. Minor word fragments from hyphenation.",
+    "footnote_artifacts": "'18', '19', 'ibid.'",
+    "notes": "Successful handling of meta-textual discussion about writing"
+  },
+  {
+    "page_number": 358,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "Well-preserved complex text on continuum, communication, and difference. French terms correct (nonbasis, différence). The intricate argument about Bataille vs. Hegel is coherent. Citations from 'Sur Nietzsche' and 'Conférences' are intact. Reading flows despite conceptual difficulty.",
+    "footnote_artifacts": "'22'",
+    "notes": "Abstract philosophical discourse handled well"
+  },
+  {
+    "page_number": 359,
+    "classification": "MARGINAL",
+    "confidence": 0.76,
+    "evidence": "Mostly readable but with scattered errors: 'unknowl-' (unknowledge), 'ditation' (meditation). The discussion of writing as both scientific and sovereign remains followable but word-level garbling requires inference. The complex paradox of relating sovereignto discourse is still comprehensible.",
+    "footnote_artifacts": "'Méthode de m\\u00e9ditation', 'Conférences'",
+    "notes": "1-2 errors per extended passage; meaning recoverable through context"
+  },
+  {
+    "page_number": 360,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Clear text with coherent argument about sovereignty, lordship, and recognition. Philosophical terminology is intact (subordination, servility, expenditure, expenditure, nonservility). The intricate discussion of failure, sacrifice, and forgetting is well-preserved and readable.",
+    "footnote_artifacts": "'23', '24', '25'",
+    "notes": "Complex ethical/philosophical argument successfully rendered"
+  },
+  {
+    "page_number": 362,
+    "classification": "MARGINAL",
+    "confidence": 0.73,
+    "evidence": "Generally readable but with noticeable fragmentation: 'contradic-' (contradiction), 'oppos-' (opposition), 'predi-' (predicates). The discussion of serving writing versus sovereign writing is comprehensible but requires reconstruction at several points. The philosophical distinction remains clear despite word-level artifacts.",
+    "footnote_artifacts": "[EI, p. 235]', '[Le coupable p. 146]', 'Conférences'",
+    "notes": "Frequent hyphenation artifacts but semantic intent preserved"
+  },
+  {
+    "page_number": 363,
+    "classification": "GOOD",
+    "confidence": 0.84,
+    "evidence": "Well-readable text with intact philosophical argumentation about lordship, sovereignty, and nonlogic. Key concepts are preserved (voluntarism, metaphysics, conceptual atom, tissue of differences). The section on major writing as exceeding logos is coherent and clear.",
+    "footnote_artifacts": "'27', '28'",
+    "notes": "Subtle philosophical distinctions handled well"
+  },
+  {
+    "page_number": 364,
+    "classification": "MARGINAL",
+    "confidence": 0.74,
+    "evidence": "Readable but with some fragmentation affecting flow: 'unten-' (untenable), 'insti-' (institute), 'thode' (méthode), 'noncon-' (nonconcepts). The complex discussion of transgression, epoche, and nonphenomenology requires careful reading but remains comprehensible. Core argument about reduction vs. meaning is preserved.",
+    "footnote_artifacts": "Unmarked but dense with philosophical concepts",
+    "notes": "Fragmented polysyllabic words require context-based reconstruction"
+  },
+  {
+    "page_number": 366,
+    "classification": "MARGINAL",
+    "confidence": 0.71,
+    "evidence": "Mixed readability with some significant errors: 'superhis-' (superhistorical), 'losophemes' (philosophemes), 'comple-' (completion), 'oper-' (operation), 'rst' (first). Error rate of 7.4% reflects genuine OCR difficulty. However, the discourse on sovereignty, history, and knowledge remains followable with inference.",
+    "footnote_artifacts": "'31', '32'",
+    "notes": "Higher error rate but philosophical intent still recoverable"
+  },
+  {
+    "page_number": 368,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "evidence": "Largely readable but with notable fragments: 'atheol-' (atheology), 'aneschatology' (correct spelling preserved), 'telos', 'eral' (general or lateral). The complex argument about general economy vs. phenomenology is comprehensible despite word-level errors. Key citations and French terms are mostly intact.",
+    "footnote_artifacts": "'36', '37'",
+    "notes": "Technical terminology sometimes fragmented but recognizable"
+  },
+  {
+    "page_number": 369,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "Well-preserved text with coherent argument about restricted vs. general economy. Key concepts maintained (consumption, nonmeaning, nonvalue, difference, negativity). The discussion of Bataille vs. Hegel's phenomenology is clear. French and philosophical terminology is intact.",
+    "footnote_artifacts": "'38'",
+    "notes": "Abstract economic philosophy successfully rendered"
+  },
+  {
+    "page_number": 370,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Readable text with preserved philosophical argument about conceptual unity, meaning, and sovereign operation. Key terms intact (metaphor, archaic, classic, sliding, experience). The closing discussion of reading Bataille properly is coherent and clear. French quotations are properly maintained.",
+    "footnote_artifacts": "'39', references to 'l'Erotisme'",
+    "notes": "Successful handling of meta-textual instructions about reading"
+  }
+]

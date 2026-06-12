@@ -1,0 +1,189 @@
+{
+  "batch_id": 4,
+  "document": "Derrida_MarginsOfPhilosophy",
+  "classification_date": "2025-12-21",
+  "summary": {
+    "total_pages": 25,
+    "good": 12,
+    "marginal": 3,
+    "bad": 10,
+    "pages_with_footnote_artifacts": 25
+  },
+  "classifications": [
+    {
+      "page_number": 1,
+      "classification": "BAD",
+      "confidence": 0.95,
+      "evidence": "Corrupted critical terms detected ([('long_garbled', 'programmatically')])",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 2,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "evidence": "Text readable, semantically correct",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 3,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "1 OCR error: durcheinarz4erschlingt",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 4,
+      "classification": "BAD",
+      "confidence": 0.95,
+      "evidence": "Corrupted critical terms detected ([])",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 5,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "evidence": "Text readable, semantically correct",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 6,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "evidence": "Text readable, semantically correct",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 7,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "1 OCR error: reappropriatinig",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 8,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "evidence": "Text readable, semantically correct",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 9,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "evidence": "Text readable, semantically correct",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 10,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "evidence": "Text readable, semantically correct",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 11,
+      "classification": "BAD",
+      "confidence": 0.95,
+      "evidence": "Corrupted critical terms detected ([])",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 12,
+      "classification": "BAD",
+      "confidence": 0.95,
+      "evidence": "Corrupted critical terms detected ([('long_garbled', 'anthropologistic'), ('long_garbled', 'antianthropologist')])",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 13,
+      "classification": "BAD",
+      "confidence": 0.95,
+      "evidence": "Corrupted critical terms detected ([])",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 14,
+      "classification": "BAD",
+      "confidence": 0.95,
+      "evidence": "Corrupted critical terms detected ([])",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 15,
+      "classification": "BAD",
+      "confidence": 0.95,
+      "evidence": "Corrupted critical terms detected ([])",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 16,
+      "classification": "BAD",
+      "confidence": 0.95,
+      "evidence": "Corrupted critical terms detected ([('long_garbled', 'Geschichtlichkeif'), ('long_garbled', 'Geschichtlichkeit')])",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 17,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "evidence": "Text readable, semantically correct",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 18,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "evidence": "Text readable, semantically correct; foreign terms present and correct",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 19,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "1 OCR error: anthropologistic",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 20,
+      "classification": "BAD",
+      "confidence": 0.95,
+      "evidence": "Corrupted critical terms detected ([])",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 21,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "evidence": "Text readable, semantically correct",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 22,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "evidence": "Text readable, semantically correct; foreign terms present and correct",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 23,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "evidence": "Text readable, semantically correct; foreign terms present and correct",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 24,
+      "classification": "BAD",
+      "confidence": 0.95,
+      "evidence": "Corrupted critical terms detected ([('long_garbled', 'phenoinenological')])",
+      "footnote_artifacts": true
+    },
+    {
+      "page_number": 25,
+      "classification": "GOOD",
+      "confidence": 0.9,
+      "evidence": "Text readable, semantically correct",
+      "footnote_artifacts": true
+    }
+  ]
+}

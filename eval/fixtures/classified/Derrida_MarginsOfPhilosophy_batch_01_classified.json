@@ -1,0 +1,180 @@
+[
+  {
+    "page_number": 2,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "One clear error: 'lianslated' should be 'translated'. Title page with basic publication info. Error is isolated and easily recoverable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 3,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Clean copyright and catalog page. 'Marges de in philosophic' appears to be OCR of 'Marges de la philosophie' with minor character substitution (i→a in 'la'). ISBN and publication details intact. Text is readable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 4,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": "Contents page with multiple OCR errors: 'Métaphcir' should be 'Métaphore' (typo in English translation as 'Metaphor'), 'Qual Queue' should be 'Qual Queue' or related term, 'Sourcep' should be 'Sources'. However, structure and meaning are mostly recoverable despite errors.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 6,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Translator's Note with several OCR errors: ''lianslator' should be 'Translator', 'Différance' misspelled as 'Differance' in places (though this is actually a note about Derrida's own neologism). 'Gramm\u00e9' is correct French spelling. Author names and publication details mostly intact. Text is readable despite errors.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 8,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Tympan epigraphs from Hegel and other sources. German terms are correctly preserved: 'Grenze' (limit), 'aufgehobene' (sublated), 'Beziehung' (relation), 'bodenlos' (groundless). Greek and specialized philosophical vocabulary intact. Text is semantically sound.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 9,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Text with significant philosophical content but contains errors: 'phiosophy' should be 'philosophy', 'cho' appears fragmented from footnote (likely 'cho-sen'), 'rek' should be 'relever'/'raising' (aufheben). Footnote markers merged with words. Main text is readable but requires interpretation around corruptions.",
+    "footnote_artifacts": [
+      "cho (likely footnote artifact or 'chosen' split)",
+      "rek (likely 'relever' or related term)"
+    ]
+  },
+  {
+    "page_number": 12,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Technical footnote and main text on tympanum anatomy. Medical/anatomical terminology preserved correctly: 'tympanic membrane', 'labyrinth', 'cochlea', 'vestibule'. French terms: 'perce-oreille' (earwig/ear-piercer). Text is semantically coherent and medically/anatomically accurate.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 14,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Text on philosophical method with technical terminology. German: 'loxos' (oblique), philosophical terms intact. Author attribution to Artaud at bottom is present. French terms preserved. Text is semantically sound despite complexity.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 15,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Dense philosophical text on Being and representation. German: 'der das dritte Ohr hat' (who has the third ear). Complex philosophical vocabulary maintained. Text is challenging but semantically coherent and philosophical terms correct.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 18,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Tympan section with moderate OCR errors: 'reappropriation' appears correct, 'resentation' should be 'representation', 'ereignis' is correct German (event/happening), 'gerian' should likely be part of 'Heideggerian', 'agamst' should be 'against'. Meaning is recoverable but multiple errors present.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 19,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Text on philosophical and aesthetic concepts. Errors: 'fermentations' seems correct but context unclear, 'chanfante' should be 'chantante' (singing/singer), historical references to Vitruvius and hydraulic mechanisms. Multiple character substitutions but philosophical argument is followable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 20,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Footnote section with OCR errors: 'thedretical' should be 'theoretical', 'phaflocentrism' should be 'phallogocentrism', 'lafaye' should be 'Lafaye' (proper noun). Complex citations to Vitruvius and machinery descriptions. Text is challenging but meaning is recoverable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 21,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Tympan section with philosophical analysis. German: 'a tergo' (from behind). French terms: 'perce-oreille' correctly preserved. Philosophy terms intact. Some footnote formatting issues but text is semantically coherent and readable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 22,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Text on philosophical margins and method. Italian/French vocal terminology: 'cantatrice', 'chanteuse', 'cantatrices'. Philosophical argument is clear and terms are correctly preserved. Text is semantically sound.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 23,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Dense Tympan text with OCR errors: 'losophy' (fragmented 'philosophy'), 'philosopheme' appears correct, 'phik,sophy' has character substitution. Technical philosophical vocabulary mixed with errors. Text is challenging but meaning can be recovered.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 24,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Text on printing press terminology and philosophical method. Printing terms: 'tympan', 'frisket', 'platen' are correctly preserved. French terms intact. Technical and philosophical vocabulary sound. Semantically coherent.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 25,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Text on printing machinery and typography. Specialized terminology preserved: 'frisket', 'tympan', 'platen', 'hinge'. French terms correct: 'basse-taille', 'basse chantante'. Medical/musical terminology intact. Text is semantically sound.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 27,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Complex text with OCR errors: 'tvmpan' (lowercase v for u), 'Tvmpan' header, 'mea' fragmented. However, philosophical content is preservable. References to Tarahumaras preserved. Text is challenging but recoverable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 28,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "End of Tympan section with date and attribution. Proper nouns preserved: 'Michel Leiris', 'Gallimard', 'Prinsengracht'. French terms intact. Text is clean and readable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 30,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Title page for 'Différance' essay with publication information. French terms correct: 'Société française de philosophie', 'Théorie d'ensemble', 'Tel Quel'. All proper nouns and publication details intact. Clean and readable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 32,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Différance essay beginning with OCR errors: 'Iwill' should be 'I will' (space missing), 'lettera' appears to be correct French/Italian, 'permutation' is correct. Text on Derrida's neologism 'différance'. Philosophical argument is clear despite minor spacing errors.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 36,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Différance text with moderate errors: 'lbgical' should be 'logical', 'iithe' should be 'if the', 'sym' appears fragmented. However, philosophical argument on strategy and différance is followable. Key concepts are readable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 37,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Text on différance with errors: 'teniporizafi' should be 'temporization', 'taneously' fragmented from 'simultaneously'. Greek terms present. Philosophical analysis is recoverable despite OCR corruption.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 38,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": "Différance section with OCR errors: 'certainj' should be 'certain', 'towardj' should be 'toward', 'somethin' should be 'something', 'ductive' fragmented, 'eslclia' should be 'eschata', 'orlinal' should be 'original', 'exi' fragmented. Multiple errors but philosophical content is recoverable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 39,
+    "classification": "GOOD",
+    "confidence": "high",
+    "evidence": "Différance text with minor OCR issues: 'questibns' should be 'questions', but errors are minimal. Philosophical vocabulary intact: 'ousia' (being/presence), 'ontico-ontological difference'. Saussure reference and semiological analysis are clear. Semantically sound overall.",
+    "footnote_artifacts": []
+  }
+]

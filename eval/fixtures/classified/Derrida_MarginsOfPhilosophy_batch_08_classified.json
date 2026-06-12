@@ -1,0 +1,398 @@
+[
+  {
+    "page_number": 324,
+    "classification": "GOOD",
+    "confidence": 0.95,
+    "evidence": "Text is highly readable and semantically correct. Philosophical terms preserved accurately (différance, Aufhebung, Descartes, Valery, etc.). French and Latin terminology intact. Proper names spelled correctly (René Descartes, Valéry).",
+    "footnote_artifacts": [
+      "word23 - marker at end of footnote section",
+      "No significant merged markers detected"
+    ],
+    "error_count": 2,
+    "errors": [
+      "Minor: 'Ren' appears isolated but belongs to 'René' (acceptable in context)",
+      "No other errors detected in main text"
+    ]
+  },
+  {
+    "page_number": 326,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "evidence": "Multiple OCR errors present but meaning recoverable. Key terms damaged: 'zrrelevable' (should be irrelevable/irretevable), 'cnny,-p' (garbled), 'raThof' (should be 'rather'), 'iepetitionlalterity' (should be 'iteration/alterity'), 'Zecks' (should be 'Zecks' - actually correct but flagged as unknown). German term 'zugegrabenen' preserved correctly. French phrase 'heimlichlunheimlich' readable despite corruption.",
+    "footnote_artifacts": [
+      "Multiple footnote markers embedded in text creating some corruption"
+    ],
+    "error_count": 7,
+    "errors": [
+      "zrrelevable → irrelevable (major semantic term)",
+      "cnny,-p → unclear corruption",
+      "raThof → rather",
+      "fself → self",
+      "iepetitionlalterity → iteration/alterity (philosophy term)",
+      "mits → limits",
+      "dcrire → décrire"
+    ]
+  },
+  {
+    "page_number": 329,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "evidence": "Text mostly readable with 3-4 OCR errors but semantic meaning preserved. Key philosophical vocabulary intact. French and philosophical terms correct (narcissism, unconscious, semanticism). A few garbled words: 'ilantly' (vigilantly), 'phen' (phenomenon), 'qual' (quale), 'significa' (significant/significative).",
+    "footnote_artifacts": [
+      "Footnote marker artifacts minimal",
+      "Text flows reasonably despite errors"
+    ],
+    "error_count": 4,
+    "errors": [
+      "ilantly → vigilantly",
+      "phen → phenomenon (incomplete)",
+      "qual → quale/quality",
+      "significa → significative/significant"
+    ]
+  },
+  {
+    "page_number": 333,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "evidence": "Readable with moderate errors. Key philosophical concepts mostly intact (psychoanalysis, formalism, semanticism). Garbled words: 'thelmplex' (the Implex), 'fjxe' (fixe/Idée Fixe), 'erating' (generating), 'narcis' (narcissism - incomplete). French terms and proper names (Valéry, Freud, Crusoes) generally preserved.",
+    "footnote_artifacts": [
+      "Footnote integration creates some disruption"
+    ],
+    "error_count": 5,
+    "errors": [
+      "thelmplex → the Implex",
+      "fjxe → fixe (French)",
+      "erating → generating",
+      "hermeneutism → correct spelling preserved",
+      "narcis → narcissism"
+    ]
+  },
+  {
+    "page_number": 335,
+    "classification": "BAD",
+    "confidence": 0.35,
+    "evidence": "High error rate with significant corruption. Major issue: text contains substantial German block quote with severe OCR damage. Key errors: 'Nietzsche' correctly spelled but surrounded by corrupted German text. German philosophical terms heavily garbled: 'Selbstdarstellung' unclear, German quote severely corrupted with 'priorit', 'weniger', 'meiner', 'habe', 'einsichten', 'ahnungen' all mangled. This page appears to cross-reference German source material that was poorly OCR'd.",
+    "footnote_artifacts": [
+      "Extensive footnote with German text that is severely damaged"
+    ],
+    "error_count": 15,
+    "errors": [
+      "priorit → Priorität (German)",
+      "weniger → correct but questionable context",
+      "habe → correct German but in corrupted passage",
+      "einsichten → Einsichten (German - corrupted)",
+      "ahnungen → Ahnungen (German - corrupted)",
+      "Selbstdarstellung corruption",
+      "meiner → mine (German - corrupted context)",
+      "der → the (German - incomplete)",
+      "als → as (German - corrupted)",
+      "mise → correct French but context unclear"
+    ]
+  },
+  {
+    "page_number": 336,
+    "classification": "BAD",
+    "confidence": 0.25,
+    "evidence": "Very high error rate with critical corruptions. Header text severely damaged: 'Socl' (Sociétés), 'communica' (Communication), 'francaise' (française), 'congres' (Congrès). Multiple critical French terms destroyed, making the page largely unintelligible for the critical conference header information. This is a critical information page that is substantially damaged.",
+    "footnote_artifacts": [
+      "Header/title severely corrupted"
+    ],
+    "error_count": 6,
+    "errors": [
+      "Socl → Sociétés",
+      "communica → Communication",
+      "francaise → française",
+      "congres → Congrès",
+      "philosophie → intact",
+      "des → correct"
+    ]
+  },
+  {
+    "page_number": 338,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "evidence": "Substantial text with 8-10 OCR errors scattered throughout but meaning generally recoverable. Key philosophical vocabulary present. Error examples: 'sqmething' (something), 'semiolinguistic' spelled correctly, 'itbut' (it but - spacing error), 'metaphorico' (metaphoric), 'nonsemantic' correct. Technical terms mostly preserved despite errors.",
+    "footnote_artifacts": [
+      "Some merged footnote markers with words"
+    ],
+    "error_count": 9,
+    "errors": [
+      "sim-plicity → simplicity (hyphenation artifact, not real error)",
+      "sqmething → something",
+      "itbut → it but (spacing error)",
+      "munication → communication (incomplete)",
+      "nonsemantic → correct spelling",
+      "mitted → submitted/transmitted",
+      "plicity → plicity (incomplete)",
+      "metaphorico → metaphoric",
+      "equivocalities → correct"
+    ]
+  },
+  {
+    "page_number": 339,
+    "classification": "MARGINAL",
+    "confidence": 0.70,
+    "evidence": "Moderate errors (7-8) scattered through text but semantic meaning preserved. Key philosophical terms intact. Problems: 'communicatiyn' (communication - typo), 'semiolm' (semiolinguistic - truncated), 'nonsemiolm' (garbled), 'ikand' (and - spacing/merger error), 'discouise' (discourse), 'nonsemiolm' appears multiple times.",
+    "footnote_artifacts": [
+      "Spacing and merger artifacts with footnote markers"
+    ],
+    "error_count": 8,
+    "errors": [
+      "communicatiyn → communication",
+      "nonsemiolm → nonsemiological/semiolinguistic",
+      "ikand → and",
+      "discouise → discourse",
+      "guistic → linguistic",
+      "structute → structure",
+      "semiolinguistic → correct",
+      "funda → fundamentally"
+    ]
+  },
+  {
+    "page_number": 340,
+    "classification": "MARGINAL",
+    "confidence": 0.71,
+    "evidence": "Readable with 7-9 errors. Key terms mostly intact. Problems: 'commumcation' (communication - typo), 'cornmunication' (communication - typo), 'connaissances' correct but appears in potentially corrupted context. French title 'Essai sur l'origine des connaissances humaines' reasonably preserved in footnote.",
+    "footnote_artifacts": [
+      "Footnote reference text present"
+    ],
+    "error_count": 8,
+    "errors": [
+      "commumcation → communication",
+      "cornmunication → communication",
+      "uone → one",
+      "naissances → naissances (part of connaissances, incomplete)",
+      "essai → essai (correct but suspicious),",
+      "ganized → organized",
+      "duction → production/reduction",
+      "funda → fundamentally"
+    ]
+  },
+  {
+    "page_number": 341,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "evidence": "Moderate errors (6-7) but text semantic meaning preserved. Key philosophical vocabulary intact. Error examples: 'categorl' (category), 'resentation' (representation), 'metapboric' (metaphoric), 'coitv' (convenit - convenience), 'bysounds' (by sounds - spacing error), 'nec' (necessary - truncated).",
+    "footnote_artifacts": [
+      "Spacing errors with 'bysounds'"
+    ],
+    "error_count": 7,
+    "errors": [
+      "categorl → category",
+      "cept → concept",
+      "metapboric → metaphoric",
+      "enient → convenient",
+      "nec → necessary",
+      "coitv → convient (French)",
+      "bysounds → by sounds"
+    ]
+  },
+  {
+    "page_number": 342,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Generally readable with only 3-4 minor errors that don't impede comprehension. French philosophical terminology intact (connaissances, philosophie, warburton). Proper names correct (Condillac, Warburton). Technical terms preserved. Minor errors: 'passintinCondillac' (spacing artifact), 'haviflg' (having), 'itsell' (itself), 'eral' (general - partial), 'chanical' (mechanical - partial).",
+    "footnote_artifacts": [
+      "Minimal footnote corruption"
+    ],
+    "error_count": 4,
+    "errors": [
+      "passintinCondillac → passage in Condillac",
+      "haviflg → having",
+      "itsell → itself",
+      "chanical → mechanical"
+    ]
+  },
+  {
+    "page_number": 343,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "Highly readable. Philosophical and linguistic terminology accurately preserved. French and philosophical terms correct (condilac, vehiculates, philosophique). Only 2-3 minor errors that don't affect comprehension. Text flows well. Scholar names and concepts intact.",
+    "footnote_artifacts": [
+      "Minimal footnote markers merged"
+    ],
+    "error_count": 3,
+    "errors": [
+      "guage → guage (part of language)",
+      "cramer → Cramer (proper name, correct)",
+      "atic → atic (part of thematic)"
+    ]
+  },
+  {
+    "page_number": 344,
+    "classification": "MARGINAL",
+    "confidence": 0.73,
+    "evidence": "Multiple errors (8-10) but meaning recoverable. Key philosophical terms mostly intact. Problems: 'ordinated' (subordinated), 'iterability' correct, 'imkplies' (implies), 'empir' (empirical - partial), 'pirically' (empirically), 'jrhe' (the), 'diff' (differance - partial). Sanskrit term referenced correctly.",
+    "footnote_artifacts": [
+      "Some merged markers"
+    ],
+    "error_count": 9,
+    "errors": [
+      "ordinated → subordinated",
+      "imkplies → implies",
+      "empir → empirical",
+      "pirically → empirically",
+      "jrhe → the",
+      "diff → différance",
+      "nonlinguistic → correct",
+      "ically → ically (partial)",
+      "itara → itara (Sanskrit - correct)"
+    ]
+  },
+  {
+    "page_number": 346,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "evidence": "Moderate errors (9-11) but text navigable. Philosophical vocabulary mostly preserved. Key errors: 'rekver' (relever/Aufhebung - technical translation), 'iepetitionlalterity' (iteration/alterity - corrupted compound), 'hich' (which), 'sibilitiesin' (possibilities in - spacing), 'essentiafiterabilitf' (essential iterability - corrupted), 'jrhe' (the).",
+    "footnote_artifacts": [
+      "Footnote terminology for Aufhebung present but corrupted"
+    ],
+    "error_count": 10,
+    "errors": [
+      "rekver → relever",
+      "tion → tion (part of words)",
+      "iepetitionlalterity → iteration/alterity",
+      "hich → which",
+      "pos → position/possible",
+      "relevable → correct spelling",
+      "sibilitiesin → possibilities in",
+      "scription → description",
+      "essentiafiterabilitf → essential iterability",
+      "jrhe → the"
+    ]
+  },
+  {
+    "page_number": 348,
+    "classification": "MARGINAL",
+    "confidence": 0.70,
+    "evidence": "Readable with 7-8 errors. Technical and philosophical terms mostly intact (Husserl, phenomenology, sinnlos, sinnlosigkeit). German terms present: 'sinnig', 'sinnlos', 'sinnlosigkeit', 'ausdruck', 'bedeutsanze'. Errors: 'wrifing' (writing), 'telecommuflicalion' (telecommunication), 'erent' (referent), 'ments' (moments/elements - partial).",
+    "footnote_artifacts": [
+      "German philosophical terminology preserved despite some errors"
+    ],
+    "error_count": 7,
+    "errors": [
+      "sinnig → sinnig (correct)",
+      "wrifing → writing",
+      "husserlian → Husserlian",
+      "sinnlos → correct",
+      "erent → referent",
+      "sinnlosigkeit → correct",
+      "telecommuflicalion → telecommunication"
+    ]
+  },
+  {
+    "page_number": 351,
+    "classification": "MARGINAL",
+    "confidence": 0.69,
+    "evidence": "Moderate errors (8-10) scattered through text but semantic meaning preserved. Key terms mostly intact (performative, Austin, illocutionary). Errors: 'ognized' (recognized), 'illocutory' (illocutionary), 'uconcept' (concept - spacing), 'munication' (communication - incomplete), 'scription' (inscription), 'graphematic' correct, 'determin' (determine/determinable - partial).",
+    "footnote_artifacts": [
+      "Some marker-related spacing errors"
+    ],
+    "error_count": 9,
+    "errors": [
+      "guistic → guistic (part of linguistic)",
+      "ognized → recognized",
+      "illocutory → illocutionary",
+      "uconcept → concept",
+      "munication → communication",
+      "scription → inscription",
+      "determin → determinable",
+      "tionary → tionary (partial)",
+      "polysemia → correct"
+    ]
+  },
+  {
+    "page_number": 353,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "Generally readable with only 4-5 minor errors. Philosophical terminology intact (iterability, performative, Austin). Most errors are partial truncations: 'iterabiity' (iterability - minor typo), 'derivativelllt' (derivatively - garbled), 'markll' (mark - spacing artifact). Text flows and meaning is clear.",
+    "footnote_artifacts": [
+      "Minimal footnote corruption"
+    ],
+    "error_count": 5,
+    "errors": [
+      "secondlyxas → Secondly, as",
+      "tuality → tuality (partial)",
+      "iterabiity → iterability",
+      "sibility → sibility (partial)",
+      "markll → mark"
+    ]
+  },
+  {
+    "page_number": 355,
+    "classification": "MARGINAL",
+    "confidence": 0.71,
+    "evidence": "Multiple errors (8-10) but text semantically navigable. Key philosophical terms mostly intact (citationality, iterability, performative, Ricoeur). Errors: 'cerned' (concerned), 'iterabiity' (iterability - typo), 'ciehiscence' (césure/gap - corrupted), 'intr' (intro - partial), 'apriori' (a priori - spacing), 'citationality' correctly spelled.",
+    "footnote_artifacts": [
+      "Some marker-related corruptions"
+    ],
+    "error_count": 8,
+    "errors": [
+      "iterability → iterability (multiple variants, generally preserved)",
+      "citational → correct",
+      "cerned → concerned",
+      "iterabiity → iterability",
+      "ciehiscence → césure/gap",
+      "graphematic → correct",
+      "intr → intro",
+      "apriori → a priori"
+    ]
+  },
+  {
+    "page_number": 356,
+    "classification": "MARGINAL",
+    "confidence": 0.70,
+    "evidence": "Moderate errors (8-10) but text navigable. Key philosophical concepts present (iterability, performative, graphematic). Errors: 'exclde' (exclude), 'lyzed' (analyzed - partial), 'linguisticism' partially garbled, 'manded' (demanded), 'donot' (do not - spacing), 'tele' (telecommunications - partial), 'guage' (language - partial).",
+    "footnote_artifacts": [
+      "Some spacing and merger artifacts"
+    ],
+    "error_count": 10,
+    "errors": [
+      "exclde → exclude",
+      "lyzed → analyzed",
+      "linguisticism → correct spelling",
+      "citationality → correct",
+      "manded → demanded",
+      "donot → do not",
+      "guage → guage (partial of language)",
+      "tele → tele (partial)",
+      "iterability → correct"
+    ]
+  },
+  {
+    "page_number": 358,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "evidence": "Moderate errors (8-10) but semantic meaning recoverable. Key philosophical vocabulary mostly intact (logocentrism, deconstruction, dissemination). Errors: 'cepts' (concepts - partial), 'ldeconstruction' (deconstruction - marker artifact), 'jwriting' (writing - marker artifact), 'whith' (with), 'irre' (irreducible - partial), 'nondiscursive' mostly correct.",
+    "footnote_artifacts": [
+      "Marker artifacts create merged words"
+    ],
+    "error_count": 9,
+    "errors": [
+      "cepts → concepts",
+      "nonconceptual → correct",
+      "ldeconstruction → deconstruction",
+      "generativity → correct",
+      "jwriting → writing",
+      "whith → with",
+      "irre → irre (partial of irreducible)",
+      "nondiscursive → correct",
+      "logocentrism → correct"
+    ]
+  },
+  {
+    "page_number": 359,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Highly readable with only 2-3 minor errors that don't impede comprehension. Philosophical vocabulary intact (logocentrism, Derrida). Key concepts clearly expressed. Proper name (Derrida/J.D.) preserved correctly. Text flows naturally despite minor errors.",
+    "footnote_artifacts": [
+      "Minimal footnote corruption"
+    ],
+    "error_count": 3,
+    "errors": [
+      "ducible → ducible (partial of irreducible)",
+      "logocen → logocen (partial of logocentrism)",
+      "tric → tric (partial of tric)"
+    ]
+  }
+]

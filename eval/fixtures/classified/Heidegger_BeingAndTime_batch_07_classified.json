@@ -1,0 +1,207 @@
+{
+  "batch_id": 7,
+  "document": "Heidegger_BeingAndTime",
+  "classifications": [
+    {
+      "page_number": 231,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean - text is well-formed with proper formatting and no semantic corruption",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 232,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean - semantic integrity maintained despite 3.0% error rate, which includes formatting artifacts",
+      "footnote_artifacts": [
+        "tujwhere - likely 'tu/where' formatting artifact or OCR merge issue"
+      ]
+    },
+    {
+      "page_number": 233,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": "Multiple errors that affect meaning: 'abangstet' (should be individual word), footnote marker issues, some word breaks disrupted",
+      "footnote_artifacts": [
+        "abangstet - compound of 'angst' with corrupted ending, likely footnote reference merged"
+      ]
+    },
+    {
+      "page_number": 235,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean - minor OCR variations but semantic meaning preserved, formatting issues resolvable",
+      "footnote_artifacts": [
+        "therel - likely 'there[^1]' (footnote reference merged), context supports philosophical term",
+        "obtrusive!JI - '!' followed by footnote reference"
+      ]
+    },
+    {
+      "page_number": 236,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": "Partial words disrupting reading flow: 'parti' (part of 'particularly'), 'distinctiye' (distinctive), 'funda' (fundamental), 'sibility' (possibility), word fragments throughout",
+      "footnote_artifacts": [
+        "stitutive - 'stitutive' likely end of hyphenated 'constitutive' or 'tive' fragment"
+      ]
+    },
+    {
+      "page_number": 237,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Minor OCR variations but semantic content intact: 'poten#ality' is clearly 'potentiality' with character corruption",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 238,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": "Multiple word fragments: 'iorge' (corruption), 'rmally' (formally), 'eing' (being), 'ecause' (because), semantic meaning compromised in several places",
+      "footnote_artifacts": [
+        "onesel\u00a3 - 'oneself' with superscript corruption (likely footnote reference)",
+        "rmally - 'formally' with leading character corruption"
+      ]
+    },
+    {
+      "page_number": 240,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean - text is coherent and readable, minor variations are non-critical",
+      "footnote_artifacts": [
+        "itselfinertly - likely 'itself[in/inertly]' with footnote marker or spacing artifact"
+      ]
+    },
+    {
+      "page_number": 241,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": "Multiple errors: 'ust' (lust/just), word fragments and corrupted morphology affect reading; German text portions show errors like 'Drang' vs 'Rang'",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 242,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": "Significant corruptions: 'existmzialen' (existentialen), 'ltseljl' (itself), 'lbstauskgung' (Selbstauslegung), Latin text with errors",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 243,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": "18.8% error rate with extensive Latin text corruption that damages semantic meaning: 'atque', 'coepit', 'vocetur', 'dum', 'surrexit' all appear to be OCR errors in the Latin fable passage, making the quoted text unreliable for citation",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 244,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean - philosophical text is coherent and readable despite 6.6% error rate",
+      "footnote_artifacts": [
+        "Das9in - 'Dasein' with digit '9' substitution (b/9 confusion)"
+      ]
+    },
+    {
+      "page_number": 246,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean - text is semantically sound, 5.5% errors are minor and non-critical",
+      "footnote_artifacts": [
+        "stantiality - beginning of 'substantiality' fragment",
+        "realiry - 'reality' with 'y' corruption"
+      ]
+    },
+    {
+      "page_number": 251,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": "6.1% error but distributed problematically: German terms have corruptions that affect precision of philosophical argument",
+      "footnote_artifacts": [
+        "inextric - truncated 'inextricable', likely line-break or footnote artifact"
+      ]
+    },
+    {
+      "page_number": 256,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean - philosophical argument is clear and readable despite 4.7% error rate",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 257,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": "12.7% error rate with extensive Greek text corruption: 'uvv', 'vos', 'wpt', 'ykau', 'tva', 'vtt', 'mcr', 'crlv' - these are complete gibberish in the Greek philosophical passages, making citations and arguments incoherent",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 258,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": "8.3% error rate with notable corruptions in Latin and German: 'ubereinstimmung' (Übereinstimmung), 'gebracht' context issues, 'qur' (our), affects clarity of technical philosophical discussion",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 259,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": "6.6% error rate with notable issues: 'ofknowledge' (of knowledge - spacing), Latin text 'ojlolwcns' (Greek), 'convenientia' and 'rei' formatting issues",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 260,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean - 3.7% error rate is minimal, text is semantically coherent and readable",
+      "footnote_artifacts": [
+        "wayit - 'way it' spacing artifact"
+      ]
+    },
+    {
+      "page_number": 261,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": "9.1% error with notable issues: 'sents' (represents?), 'menal' (phenomenal fragment), 'aufvorstellungen' (auf Vorstellungen - spacing), 'ake' (take fragment)",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 262,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean - 4.9% error rate is manageable, philosophical argument is clear",
+      "footnote_artifacts": [
+        "foavcns - Greek text artifact (likely ἀποφαίνεσθαι corrupted)"
+      ]
+    },
+    {
+      "page_number": 263,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": "5.7% error with Greek text issues: 'rocpalvea' (Greek), 'tpiiyjla' (Greek corruption), 'rws' (Greek fragment), 'avovta' (Greek fragment), affects clarity of ancient philosophy citations",
+      "footnote_artifacts": []
+    },
+    {
+      "page_number": 264,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean - 5.9% error rate with minor issues that don't compromise semantic meaning",
+      "footnote_artifacts": [
+        "tomed - 'accustomed' fragment",
+        "grounrled - 'grounded' with character corruption",
+        "coveredness - compound word may be split or merged artifact"
+      ]
+    }
+  ],
+  "summary": {
+    "total_pages": 24,
+    "good_count": 11,
+    "marginal_count": 11,
+    "bad_count": 2,
+    "critical_issues": [
+      "Page 243: Latin fable text heavily corrupted - impacts authenticity of quoted historical source",
+      "Page 257: Greek philosophical citations extensively corrupted - affects credibility of primary source references"
+    ],
+    "notes": "This batch shows particular vulnerability to non-Latin scripts (Greek, Latin in English translation). Pages with classical language quotations (243, 257) are especially problematic for RAG pipelines as they contain canonical philosophical text. English prose sections perform adequately (GOOD/MARGINAL), but specialized content with footnotes and script mixing causes degradation."
+  }
+}

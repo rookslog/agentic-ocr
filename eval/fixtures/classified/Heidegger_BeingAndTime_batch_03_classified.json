@@ -1,0 +1,171 @@
+{
+  "batch_id": 3,
+  "document": "Heidegger_BeingAndTime",
+  "classifications": [
+    {
+      "page_number": 81,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Minor errors including 'gonnen' (valid German word), 'innan' (archaic/transliteration), 'expressionfor' (space missing), 'halte' (incomplete word). Most text is readable despite ~10% error rate.",
+      "footnote_artifacts": [
+        "No clear footnote artifacts detected"
+      ],
+      "notes": "Heavy use of German terms and etymological discussion makes some unknown_words valid. Errors are primarily spacing and incomplete words rather than semantic corruption."
+    },
+    {
+      "page_number": 82,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Contains 'beisammen' (valid German), 'konnte' (valid German), 'stuhl' (valid German). Error 'linguis' appears to be 'linguistic' cut off. 'nomenal' likely 'phenomenal'. Overall readability maintained despite 6.5% error rate.",
+      "footnote_artifacts": [],
+      "notes": "Mix of German compound words and English text translation. Technical philosophical terminology intact."
+    },
+    {
+      "page_number": 83,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Unknown words include valid German terms: 'faktisch', 'jeweilig', 'tatsachlichkeit', 'stimmtheit', 'faktums'. Errors like 'dvance' (advance) and 'insideness' are isolated. Text flow preserved.",
+      "footnote_artifacts": [],
+      "notes": "Primarily German philosophical terminology. The 'dvance' appears to be a spacing/OCR artifact rather than semantic corruption. Facticity discussion remains comprehensible."
+    },
+    {
+      "page_number": 84,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": "Significant OCR corruption: 'expresing' (expressing), 'desig' (designate), 'diffic' (difficult), 'llow' (follow). Mixed garbage text and incomplete words scattered throughout. Error rate of 10.2% with semantic impact. Example: 'diffc' in context of philosophical argument breaks readability.",
+      "footnote_artifacts": [],
+      "notes": "This page has multiple issues beyond simple OCR substitutions. The corruption extends to core vocabulary and affects semantic understanding. Would damage embeddings due to fragmented words and missing context."
+    },
+    {
+      "page_number": 85,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Mostly clean text with valid German terms: 'gelegentlich', 'zur', 'sorge', 'nicht', 'seinsverhaltnis'. Only 'ceived' appears to be OCR error for 'ceived' (part of 'perceived'). Overall comprehensible despite ~7% error rate.",
+      "footnote_artifacts": [],
+      "notes": "Philosophical argument about Being-in-the-world remains clear. Single character substitution errors don't disrupt meaning."
+    },
+    {
+      "page_number": 87,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Contains valid German: 'gekannt', 'husser' (Husserl), 'erfahren', 'halle'. Error 'esential' (essential) is single letter substitution. 'pletion' may be 'completion' with prefix cut off. Core concepts readable.",
+      "footnote_artifacts": [],
+      "notes": "7.5% error rate with mostly minor issues. The discussion of phenomenology and Husserl remains intact despite errors."
+    },
+    {
+      "page_number": 88,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Clean with minor issues: 'innenseins' is valid (Being-inside), 'eigenschaften' (properties in German) is valid, 'preted' likely 'preted' (interpreted). Only 5% error rate. Text flows smoothly.",
+      "footnote_artifacts": [],
+      "notes": "This page has very clean OCR. The philosophical argument about knowledge and consciousness is preserved with high fidelity."
+    },
+    {
+      "page_number": 89,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": "High error rate (13%) with severe corruption: 'concernfully' appears correct but surrounded by issues, 'betrachtendes' is valid German but context has 'miiglich' (likely möglich with diacritic OCR error), 'seinsart' valid but 'ausdruckliches' valid. Mixed: 'innerweltlich' is valid German for 'within-the-world'. However, the accumulation of errors (13% is highest so far) includes formatting breaks and incomplete concepts.",
+      "footnote_artifacts": [
+        "Possible 'miiglich' may be OCR of 'möglich' (with umlaut rendering issue)"
+      ],
+      "notes": "Despite having valid German philosophical terms, the 13% error rate combined with formatting issues and missing diacritics significantly impacts readability. Would create embedding noise."
+    },
+    {
+      "page_number": 90,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Contains 'vemehmen' (valid, perception), 'sichaufhaltens' (valid compound for being-alongside), 'aufenthalt' (valid, sojourn), 'aufhalten' (valid, to hold). Error 'ent' appears isolated. Overall 11.7% error rate but many 'errors' are actually valid German compounds.",
+      "footnote_artifacts": [],
+      "notes": "The unknown_words list includes many valid German philosophical terms. Actual OCR errors are fewer than reported. Meaning is largely preserved."
+    },
+    {
+      "page_number": 91,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Minimal errors: 'originiiren' valid (originate), 'erfasen' valid (grasp), 'hiforehand' is 'beforehand' with spacing. 5.6% error rate with mostly clean text. Philosophical argument intact.",
+      "footnote_artifacts": [],
+      "notes": "Very clean page despite reported error rate. Errors are primarily spacing issues and valid German terms."
+    },
+    {
+      "page_number": 92,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": "Contains 'weltmisigkeit' and 'weltmiisigkeit' (variants of worldly-character, valid but with umlaut rendering issues), 'worldlwod' is likely OCR of 'worldhood', 'asigns' is 'assigns' with single letter substitution. Overall 4.5% error rate, mostly diacritic and compound word issues.",
+      "footnote_artifacts": [
+        "worldlwod is likely OCR artifact of worldhood (compound word boundary issue)"
+      ],
+      "notes": "The 'umlaut rendering' issues (ü→ii, ö→o) suggest source PDF had encoding or font issues, not just OCR failures. Semantic meaning preserved."
+    },
+    {
+      "page_number": 93,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Only 2.4% error rate. Minor issues: 'teristic' (characteristic, hyphen/boundary issue), 'investi' (invested, boundary), 'ofdasein' (of-Dasein spacing). 'worldhood' correct. Philosophical exposition is clear and intact.",
+      "footnote_artifacts": [],
+      "notes": "Excellent OCR quality. The ontological discussion of worldhood and Being-in-the-world is preserved with high fidelity."
+    },
+    {
+      "page_number": 94,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Valid German terms: 'horig', 'nachste', 'innerweltlich', 'umsicht', 'existentiell', 'eigene', 'ontologico'. Error 'priori' is 'a priori' with spacing. 5.6% error rate with mostly valid philosophical/German terminology.",
+      "footnote_artifacts": [],
+      "notes": "Many unknown_words are valid German philosophical terms. Actual OCR errors are spacing-related and isolated. Argument about worldhood remains coherent."
+    },
+    {
+      "page_number": 97,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Errors include 'concernful' (valid), 'extendedness' (valid), 'desig' (designate), 'entang' (entangling), 'seiender' (valid German). 5.3% error rate. Core argument about equipment and pragmatic things is readable.",
+      "footnote_artifacts": [],
+      "notes": "Many unknown_words are valid English/German philosophical terms. The discussion of equipment (Zeug) and thinghood is clear."
+    },
+    {
+      "page_number": 98,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Very clean with only 4.5% error rate. Valid German: 'verweisen' (refer), 'zeug' (equipment), 'zuweisen' (assign), 'struktur', 'auf'. Minor: 'asigns' (assigns). Text is fluent and philosophical concept intact.",
+      "footnote_artifacts": [],
+      "notes": "Excellent OCR quality. The discussion of equipment structure and references is preserved completely."
+    },
+    {
+      "page_number": 99,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "Minor errors: 'hamer' (hammer), 'awarenes' (awareness), 'hamering' (hammering), 'sometqing' (something). Valid German: 'sicht' (sight), 'noch' (still). 4.6% error rate. Philosophical argument about ready-to-hand (Zuhandenheit) is preserved.",
+      "footnote_artifacts": [],
+      "notes": "Mostly single-letter substitutions and typos rather than semantic corruption. The hammer example and readiness-to-hand concept remain clear."
+    },
+    {
+      "page_number": 100,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": "7.8% error rate with errors like 'schuhzeug' (valid compound: shoe-equipment), 'werk' (valid: work), 'derer' (valid: deren variant), 'ganzheit' (valid: totality). 'circumspective' is valid. Core argument about practical behavior intact.",
+      "footnote_artifacts": [],
+      "notes": "Many unknown_words are valid German philosophical compounds. Errors are primarily spacing and compound word boundary issues."
+    },
+    {
+      "page_number": 102,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "Only 4% error rate. Valid German: 'ontologico', 'categorially', 'weltstoff', 'beigebrachte', 'stellation' (constellation), 'circumspective'. Minor: 'zinachst' (zunächst with diacritic issue). Text is coherent and argument clear.",
+      "footnote_artifacts": [],
+      "notes": "Excellent quality page. Discussion of equipment, nature, and worldhood is preserved with high semantic fidelity."
+    }
+  ],
+  "summary": {
+    "total_pages": 17,
+    "good_count": 4,
+    "marginal_count": 12,
+    "bad_count": 2,
+    "confidence_analysis": "HIGH confidence on all classifications. Most 'unknown_words' are actually valid German philosophical terminology or single-letter OCR substitutions. The two BAD pages (84, 89) have clearly degraded OCR with 10%+ error rates and semantic impact.",
+    "key_findings": [
+      "Pages 92, 93, 102, 98 are excellent quality (GOOD) - suitable for RAG embedding",
+      "Pages 81-91, 94, 97, 99-100 are acceptable (MARGINAL) - usable with minor artifacts",
+      "Pages 84, 89 are problematic (BAD) - would introduce noise into embeddings",
+      "Many 'errors' are actually German philosophical terms (faktisch, ontologico, etc.) or diacritic encoding issues (ü→ii, ö→o)",
+      "Spacing and compound-word-boundary issues are common but don't break semantic meaning",
+      "No clear footnote marker artifacts detected in expected form (e.g., 'lawll' for 'law[^11]')"
+    ]
+  }
+}

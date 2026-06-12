@@ -1,0 +1,353 @@
+{
+  "batch_id": 7,
+  "document": "Derrida_MarginsOfPhilosophy",
+  "total_pages": 25,
+  "classifications": [
+    {
+      "page_number": 1,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Greek philosophical terms (Ta de onornata s\u00ebmai) handled correctly despite diacritics.",
+      "footnote_artifacts": [
+        "0",
+        "37",
+        "7",
+        "11"
+      ],
+      "ocr_errors_detected": [
+        "Greek transliteration preserved"
+      ]
+    },
+    {
+      "page_number": 2,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Minor OCR substitution: 'rnimisis' (should be 'mimesis'), but meaning recoverable.",
+      "footnote_artifacts": [
+        "9",
+        "21",
+        "5",
+        "2",
+        "481"
+      ],
+      "ocr_errors_detected": [
+        "'rnimisis' - possible rn/m substitution"
+      ]
+    },
+    {
+      "page_number": 3,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 3: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "38",
+        "4",
+        "10",
+        "1"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 4,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 4: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "30",
+        "7",
+        "43",
+        "26",
+        "3"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 5,
+      "classification": "BAD",
+      "confidence": 0.5,
+      "evidence": "Multiple serious OCR errors: 'Qf' (Q/O substitution) and 'gexihis' (complete gibberish). Term 'genius' completely corrupted, impacting meaning.",
+      "footnote_artifacts": [
+        "47",
+        "87",
+        "7",
+        "8",
+        "49"
+      ],
+      "ocr_errors_detected": [
+        "'Qf gexihis' - major gibberish (should be 'Of genius')"
+      ]
+    },
+    {
+      "page_number": 6,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 6: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "1",
+        "6",
+        "31",
+        "2",
+        "3"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 7,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Single OCR error: ampersand replaces 's' in Greek term 'eidos'. Meaning recoverable from context.",
+      "footnote_artifacts": [
+        "53"
+      ],
+      "ocr_errors_detected": [
+        "'eido&' - ampersand substitution (should be 'eidos')"
+      ]
+    },
+    {
+      "page_number": 8,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Single OCR error in word 'setting'. Context makes meaning clear. Text on catachresis remains understandable.",
+      "footnote_artifacts": [
+        "19",
+        "7",
+        "8",
+        "15",
+        "13"
+      ],
+      "ocr_errors_detected": [
+        "'settiijg' - double j corruption (should be 'setting')"
+      ]
+    },
+    {
+      "page_number": 9,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 9: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "1",
+        "978",
+        "72",
+        "2",
+        "3"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 10,
+      "classification": "BAD",
+      "confidence": 0.55,
+      "evidence": "Multiple systematic corruptions: French key terms 'm\u00e9taphysique' and 'm\u00e9taphore' severely garbled to 'uzeta...' forms. Structural header text corrupted, impacting readability.",
+      "footnote_artifacts": [
+        "7",
+        "4",
+        "939",
+        "5"
+      ],
+      "ocr_errors_detected": [
+        "'uzetapinisique' corrupted (should be 'm\u00e9taphysique')",
+        "'uz\u00e9taphore' corrupted (should be 'm\u00e9taphore')"
+      ]
+    },
+    {
+      "page_number": 11,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 11: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "0",
+        "9",
+        "8",
+        "940"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 12,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 12: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "9",
+        "11",
+        "1",
+        "968",
+        "969"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 13,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Diacritic handling issues and minor character corruptions (v instead of \u00ef, E instead of \u00e8, L instead of p). Meaning remains recoverable. French terms intelligible.",
+      "footnote_artifacts": [
+        "800",
+        "4",
+        "69",
+        "5",
+        "86"
+      ],
+      "ocr_errors_detected": [
+        "Diacritic/accent stripping: 'metaphvsique' (missing accents), 'relEve', 'concepLt'"
+      ]
+    },
+    {
+      "page_number": 14,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 14: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "9",
+        "64",
+        "4",
+        "5"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 15,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 15: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "387",
+        "4",
+        "8",
+        "967",
+        "3"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 16,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 16: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "07",
+        "70",
+        "6"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 17,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 17: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "3",
+        "7",
+        "8",
+        "970"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 18,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 18: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "73",
+        "971"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 19,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 19: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "0",
+        "130",
+        "957",
+        "935"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 20,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 20: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "81",
+        "3",
+        "02"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 21,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 21: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "85",
+        "32",
+        "7",
+        "3"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 22,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 22: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "972",
+        "87",
+        "4"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 23,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 23: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "9",
+        "83",
+        "4",
+        "940",
+        "905"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 24,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 24: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "0",
+        "91",
+        "7",
+        "72"
+      ],
+      "ocr_errors_detected": []
+    },
+    {
+      "page_number": 25,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Page 25: No OCR errors detected. Text is readable and coherent.",
+      "footnote_artifacts": [
+        "92",
+        "50",
+        "1"
+      ],
+      "ocr_errors_detected": []
+    }
+  ],
+  "summary": {
+    "GOOD": 19,
+    "MARGINAL": 4,
+    "BAD": 2
+  }
+}

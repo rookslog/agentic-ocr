@@ -1,0 +1,177 @@
+[
+  {
+    "page_number": 190,
+    "classification": "GOOD",
+    "confidence": 0.95,
+    "evidence": "Text is highly readable with proper philosophical terminology. Foreign words (Levinas, French phrases) are correctly preserved. Footnote markers (51) present. No meaningful garbling detected despite error_rate of 3.6%.",
+    "footnote_artifacts": ["51"]
+  },
+  {
+    "page_number": 191,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "Readable philosophical discourse with correct German terminology (finitum, eidetical). Levinas and philosophical concepts are properly formatted. Ligatures (ﬁ, ﬀ) are correctly rendered. Error rate 3.5% is minimal.",
+    "footnote_artifacts": ["52"]
+  },
+  {
+    "page_number": 193,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "evidence": "Contains embedded German quotation which is properly extracted. However, error_rate of 13.1% is high. Text is still semantically recoverable - German words are correct, philosophical sense preserved. The high error rate reflects German character handling rather than actual garbling.",
+    "footnote_artifacts": ["53", "54"]
+  },
+  {
+    "page_number": 198,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Generally readable despite error_rate of 6.8%. German phrases (lichtend-verbergende Ankunft des seins selbst) are correctly preserved. Philosophical terminology intact. Minor OCR issues don't impede comprehension.",
+    "footnote_artifacts": ["64"]
+  },
+  {
+    "page_number": 199,
+    "classification": "GOOD",
+    "confidence": 0.94,
+    "evidence": "Highly readable text with proper philosophical discourse. French phrases and Cartesian references intact. Descartes quotation preserved accurately. Ligatures rendered correctly. Error rate 3.0% is minimal.",
+    "footnote_artifacts": ["65"]
+  },
+  {
+    "page_number": 200,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "evidence": "Error rate 6.0% is moderate. Text remains semantically coherent - the discussion of Being and concepts is recoverable. Some word fragments visible but context is clear. The philosophical argument flows despite OCR imperfections.",
+    "footnote_artifacts": ["66", "67", "68"]
+  },
+  {
+    "page_number": 208,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Despite error_rate of 6.7%, text is readable. Medieval philosophy (Meister Eckhart) and theological terminology correctly preserved. German phrases intact. Quotation from Nicholas of Cusa readable.",
+    "footnote_artifacts": ["85"]
+  },
+  {
+    "page_number": 209,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Readable philosophical discourse on language and violence. French phrases (viser qu'un visage) correctly rendered. Classical references (Cratylus, Plato) intact. Error rate 3.7% is low. Argument is clear and recoverable.",
+    "footnote_artifacts": ["86"]
+  },
+  {
+    "page_number": 210,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "evidence": "Well-preserved philosophical text on nonviolence and language. Proper German terminology and philosophical concepts. Error rate 4.6% is low. Some minor word fragmentation but context makes meaning clear. Levinas discussion remains coherent.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 211,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Readable despite error_rate of 6.0%. Complex philosophical argumentation on Being and difference is preserved. French and German terms intact. Quotations properly extracted. Text remains semantically recoverable.",
+    "footnote_artifacts": ["87"]
+  },
+  {
+    "page_number": 212,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Well-preserved philosophical text with Latin terminology (primum cognitum) correctly rendered. Complex argument about Being and infinity is coherent. Error rate 3.9% is low. Philosophical discourse flows clearly.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 213,
+    "classification": "MARGINAL",
+    "confidence": 0.74,
+    "evidence": "Error rate 7.1% is elevated. Contains lengthy English quotation from Nicholas of Cusa that is mostly preserved but shows signs of OCR struggle with archaic English. Some word fragments present but quotation remains largely recoverable. Philosophical intent is clear.",
+    "footnote_artifacts": ["88"]
+  },
+  {
+    "page_number": 214,
+    "classification": "MARGINAL",
+    "confidence": 0.7,
+    "evidence": "Highest error rate in batch at 8.2%. Contains archaic English quotation and Cusa's Idiot which shows OCR strain. Multiple word fragments visible (ques, oratour, presupposeth, entitie). However, philosophical argument on empiricism and heterology remains semantically recoverable.",
+    "footnote_artifacts": ["88"]
+  },
+  {
+    "page_number": 215,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Readable philosophical text on empiricism and Levinas despite error_rate of 5.1%. Complex terminology (exteriority, heterological) correctly preserved. French quotations intact. Argument on empiricism remains clear.",
+    "footnote_artifacts": ["89"]
+  },
+  {
+    "page_number": 218,
+    "classification": "MARGINAL",
+    "confidence": 0.73,
+    "evidence": "Error rate 6.9% with some OCR fragmentation (tion, gure, ition, delity, cacious). The opening of Derrida's essay on phenomenology shows readable philosophical concepts but some word fragments impede smooth reading. Meaning is recoverable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 220,
+    "classification": "MARGINAL",
+    "confidence": 0.71,
+    "evidence": "Error rate 7.7% is elevated. Contains German text (Philosophie der Arithmetik, Logische Untersuchungen) which is preserved. Multiple word fragments present (phe, xing, rst, nomenology). However, philosophical discourse on Husserl and genesis remains semantically coherent.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 221,
+    "classification": "MARGINAL",
+    "confidence": 0.69,
+    "evidence": "Error rate 8.9% is notable. Contains word fragments (ict, rmed, pre, prin, comple) and some OCR struggles. Despite errors, the philosophical analysis of structure and genesis in Husserl remains broadly recoverable. Key concepts are intact.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 222,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Error rate 7.0% but text is well-preserved. German philosophical terminology (ouranios, colligation, constructum) intact. Husserl's Arithmetik philosophy clearly readable. Argument on structure and genesis flows coherently.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 224,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Readable despite error_rate of 6.5%. Philosophical discourse on phenomenology, psychologism, and historicism is coherent. German terms and complex terminology preserved. Some minor fragments but overall semantically sound.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 225,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Error rate 7.0% with readable philosophical text on Husserl's critique of historicism and Diltheyism. German philosophical terminology correctly preserved. Argument about structure and genesis remains clear and coherent.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 226,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "Error rate 6.5% but text is comprehensible. Discussion of Dilthey, understanding (Verstehen), and phenomenological psychology is preserved. German concepts and French terminology intact. Philosophical argument flows clearly.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 229,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Well-preserved philosophical text despite error_rate of 6.6%. Complex phenomenological terminology (noema, hyle, noetic-noematic) correctly rendered. Husserl's intentional structure discussion is clear and recoverable.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 230,
+    "classification": "GOOD",
+    "confidence": 0.9,
+    "evidence": "Error rate 5.4% with highly readable philosophical text. Discusses hyle, transcendentality, and temporality with proper terminology. Complex phenomenological concepts are clearly expressed. Text is well-preserved.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 231,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Readable philosophical text on phenomenological psychology and Gestalt psychology despite error_rate of 4.5%. Complex philosophical concepts and German terminology (Gestaltpsychologie) correctly preserved. Argument is coherent.",
+    "footnote_artifacts": []
+  },
+  {
+    "page_number": 232,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "evidence": "Error rate 9.3% is the highest in batch. Contains German philosophical terminology (Erfahrung und Urteil, Formaler und Transzendentaler Logik) which is preserved. However, multiple word fragments present (gous, phe, nomenology). Despite errors, discussion of genetic phenomenology and eidos remains recoverable.",
+    "footnote_artifacts": []
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "page_number": 289,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "Error rate 11.8% (bucket E). Foreign language words (vielleicht, doch, nur, unheimlichkeit, deine, celan, als, ein) correctly identified as non-errors. Minor OCR artifacts: 'nal' instead of 'final' (but appears in 'nal passage' where likely 'final' intended), 'occu' appears in unknown_words but not visible in actual text (likely 'occupiable'). Text is readable despite high error rate; philosophical content preserved.",
+    "footnote_artifacts": true,
+    "notes": "High unknown_words count inflated by multilingual content. Contains legitimate German and French vocabulary that shouldn't count as errors."
+  },
+  {
+    "page_number": 290,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Error rate 6.7% (bucket D). Text is clearly readable with intact philosophical discourse. Foreign words marked as unknown (des, histoire, essais, revo, wer, postrevolutionary) are legitimate terms, not OCR errors. Some partial words in unknown_words list ('scienti', 'risons', 'objecti') suggest OCR confidence issues but actual text reads well. Standard academic formatting preserved.",
+    "footnote_artifacts": false,
+    "notes": "Occasional hyphenation artifacts but structure and meaning intact."
+  },
+  {
+    "page_number": 291,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Error rate 6.7% (bucket D). Text highly readable. Unknown words are legitimate foreign terms and proper nouns (Loisel, nageries as part of menageries, antiquit for antiquité). Key philosophical passages clearly legible. The text maintains complex multi-clause sentences without corruption.",
+    "footnote_artifacts": false,
+    "notes": "Unknown_words list includes word fragments but actual OCR output is solid."
+  },
+  {
+    "page_number": 295,
+    "classification": "MARGINAL",
+    "confidence": 0.80,
+    "evidence": "Error rate 6.9% (bucket D). Contains some garbling: 'genwort' (likely Gegenwort), 'disquali' (disqualification partial), 'gured' (figured partial). However, main text remains readable. Multilingual content (Unheimlichkeit, veilleicht, wer, Atemwende, Abgrund) correctly rendered despite being flagged as unknown. Philosophical meaning preserved despite artifacts.",
+    "footnote_artifacts": true,
+    "notes": "Some word boundary issues but recoverable. German philosophical terminology well-preserved."
+  },
+  {
+    "page_number": 298,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Error rate 5.5% (bucket D). Text is clear and readable. Unknown words are legitimate terms (phenomeno-, scienti-, pouvoir, vouloir, captation, avoir). Complex philosophical discourse about dissection and power structures is intelligible. Correct handling of French terms and scholarly vocabulary.",
+    "footnote_artifacts": false,
+    "notes": "Well-preserved text with good structural integrity."
+  },
+  {
+    "page_number": 299,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Error rate 5.4% (bucket D). Very readable despite technical terminology. Unknown words (ibid, revolu, estab, sov, ereigns) are fragments or abbreviations in scholarly apparatus, not corruption. Main text and footnotes are clear. Proper nouns (Pinel, Ellenberger) correctly rendered.",
+    "footnote_artifacts": true,
+    "notes": "Footnote markers and citations preserved correctly."
+  },
+  {
+    "page_number": 300,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "Error rate 6.3% (bucket D). Contains some minor corruption: 'aters' instead of 'theaters', 'dif' (word fragment), 'unting' likely from 'hunting', 'mus' (museum fragment), 'nomia' (economy fragment), 'cipline' (discipline). Despite these, philosophical content remains largely accessible. Complex discussion of ecology and power structure is intelligible.",
+    "footnote_artifacts": false,
+    "notes": "Multiple word boundary issues but meaning recoverable from context."
+  },
+  {
+    "page_number": 301,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Error rate 3.8% (bucket C). Clean, readable text with minimal errors. Unknown words are mostly proper nouns (Rossellini, sailles) and legitimate French vocabulary. The lengthy descriptive passage about the elephant dissection ceremony is well-preserved and intelligible. Good structural integrity.",
+    "footnote_artifacts": false,
+    "notes": "Lowest error rate in batch. Excellent OCR quality."
+  },
+  {
+    "page_number": 302,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "evidence": "Error rate 5.5% (bucket D). Multiple artifacts: 'thaumaturges' partially captured, 'personalis' (personalis as partial), 'gras' (gras as complete word in 'foie gras'), 'kantoro' truncated. Contains some French/German terms correctly (p\u00e2t\u00e9 de campagne, Kantorowicz). Long page with dense footnotes shows some wear. Readable but with noticeable OCR degradation in places.",
+    "footnote_artifacts": true,
+    "notes": "Footnote apparatus shows more corruption than main text. Some truncated scholarly references."
+  },
+  {
+    "page_number": 305,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "Error rate 5.3% (bucket D). Contains word fragment issues: 'cit', 'ies', 'pleteness' (incompleteness), 'incom' (incomplete), 'lisson' (Pélisson), 'chner', 'pre'. However, philosophical argument about representation and sovereignty is recoverable. Key concepts clearly preserved.",
+    "footnote_artifacts": true,
+    "notes": "Word boundary problems visible but overall structure intact. Citation apparatus partially corrupted."
+  },
+  {
+    "page_number": 306,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Error rate 4.6% (bucket C). Well-preserved text with minimal artifacts. Unknown words are legitimate academic vocabulary (ibid, originary, dynamis, performatively). Complex discussion of narrative and sovereignty is clearly readable. Properly handles multilingual quotations and technical terms.",
+    "footnote_artifacts": true,
+    "notes": "Good OCR quality with proper footnote handling."
+  },
+  {
+    "page_number": 308,
+    "classification": "MARGINAL",
+    "confidence": 0.76,
+    "evidence": "Error rate 8.2% (bucket D). Highest error rate in batch. Contains corrupted scholarly terms: 'eignty' (sovereignty), 'criture' (écriture), 'scopic', 'antisovereignism', 'fth' (fifth), 'autoptic', 'pellisson'. German philosophical terminology largely preserved (Unheimlichkeit). Text remains interpretable despite corruption level.",
+    "footnote_artifacts": true,
+    "notes": "Multiple instances of word truncation and hyphenation errors. Requires careful reading to parse correctly."
+  },
+  {
+    "page_number": 309,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "Error rate 6.5% (bucket D). Contains artifacts: 'por' (portrait), 'ame' (âme), 'clat' (éclat), 'velopments' (developments), 'nicho' (Nicholas). Complex multi-lingual content with French, German, and references to art history (Leonardo, Rembrandt) is mostly preserved. Dense footnoting shows some corruption.",
+    "footnote_artifacts": true,
+    "notes": "Art historical references (Rembrandt, Tumlp) handled correctly. Accent marks preserved on French words."
+  },
+  {
+    "page_number": 310,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Error rate 6.5% (bucket D). Despite listed error rate, text is highly readable. Unknown words are legitimate (ections, kamuf, bruy, panoptical, nonpersonal). Complex philosophical discussion of sovereign gaze and optics is clear. Proper handling of French technical vocabulary (éclat, luminère).",
+    "footnote_artifacts": true,
+    "notes": "Footnotes well-preserved. Philosophical terminology correctly rendered."
+  },
+  {
+    "page_number": 311,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Error rate 6.5% (bucket D). Readable philosophical text. Unknown words are legitimate scholarly terms (ibid, ctional, autopsia, littr, chaire). The discussion of witnessing, autopsy, and royal power is intelligible. Proper handling of Greek terms (autopsia meanings). German words well-rendered.",
+    "footnote_artifacts": true,
+    "notes": "Maintains scholarly apparatus integrity. Allows reader to follow philosophical argument."
+  },
+  {
+    "page_number": 312,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Error rate 3.2% (bucket C). Very clean OCR. Unknown words are legitimate (ibid, politi, kantorowicz, ereignty variants). Text clearly presents Bossuet and Pascal quotations on royal authority. Philosophical content is fully accessible. Proper handling of both English and French terminology.",
+    "footnote_artifacts": true,
+    "notes": "Excellent clarity for a dense, theoretical page. One of better-scanned pages."
+  },
+  {
+    "page_number": 313,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "evidence": "Error rate 8.1% (bucket D). Contains notable corruption: 'jecti' (objectify), 'autopsic', 'curiosus', 'spect', 'neugier' (German for curiosity - legitimate), 'cers', 'inspectacular' (neologism in text, preserved). Discussion of curiosity, spectacle, and objectification is generally readable but corrupted more than most pages.",
+    "footnote_artifacts": true,
+    "notes": "Word fragments and truncations more pronounced here. Still recoverable with effort."
+  },
+  {
+    "page_number": 315,
+    "classification": "MARGINAL",
+    "confidence": 0.80,
+    "evidence": "Error rate 5.1% (bucket D). Contains word boundary issues: 'lim' (limit), 'tieren' (part of Tieren in German title), 'autoptically', 'creux' (hollow in French), 'tekhne' correctly preserved. Discussion of Hagenbeck, zoo design, and limits is readable but shows some corruption in specialized terminology.",
+    "footnote_artifacts": false,
+    "notes": "Handles multilingual terms reasonably well. Philosophical argument about care and enclosure remains clear."
+  },
+  {
+    "page_number": 316,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Error rate 4.1% (bucket C). Clean, readable text discussing animal psychology and zoo history. Unknown words are legitimate (propriate, ticular, tekhne, tractation, oikos, ellenberger, novations). Proper nouns (Hagenbeck, Ellenberger) correctly rendered. Philosophical terminology well-preserved.",
+    "footnote_artifacts": false,
+    "notes": "Good overall quality. Handles technical discussion of animal treatment clearly."
+  },
+  {
+    "page_number": 317,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Error rate 4.7% (bucket C). Readable philosophical discussion of freedom, enclosure, and double bind. Unknown words are legitimate (bene, sential, pou, clared, voir, sover, savoir, unclassi). Well-preserved long passages about well-being shops and freedom/sovereignty paradoxes. Handles multilingual French terminology correctly.",
+    "footnote_artifacts": false,
+    "notes": "Dense conceptual content is accessible. Good structural preservation."
+  },
+  {
+    "page_number": 318,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Error rate 3.7% (bucket C). Excellent clarity for philosophical content. Unknown words are legitimate (ontotheology, heteronomically, glas, indissociable, trans, leavey, ciable). Discussion of double bind, liberty, and sovereignty is fully accessible. Proper handling of all languages and technical terms.",
+    "footnote_artifacts": false,
+    "notes": "One of the cleaner pages. Philosophy is clearly legible."
+  },
+  {
+    "page_number": 319,
+    "classification": "MARGINAL",
+    "confidence": 0.77,
+    "evidence": "Error rate 6.3% (bucket D). Contains word fragmentations: 'dif' (difficult), 'nition', 'aporetic', 'dise' (paradeisos), 'nemein', 'galil'. Paradise discussion and etymology sections show some corruption but remain interpretable. Philosophical argument about paradise and paradeisos is recoverable.",
+    "footnote_artifacts": false,
+    "notes": "Multiple hyphenation/word boundary issues. Definition of terms partially corrupted."
+  },
+  {
+    "page_number": 320,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "Error rate 3.8% (bucket C). Clean text discussing Persian paradeisos and biblical paradise. Unknown words are legitimate (rangement, cludes, paradeisos, lacan, cabulary, cretinizing, ellenberger, tise). Properly handles complex mythology and philosophy of garden/paradise concepts.",
+    "footnote_artifacts": false,
+    "notes": "Well-preserved scholarly discussion. Maintains argument coherence."
+  },
+  {
+    "page_number": 321,
+    "classification": "MARGINAL",
+    "confidence": 0.74,
+    "evidence": "Error rate 8.8% (bucket E). Highest error rate in batch. Contains corruption: 'tisisant' (tissant?), 'ence', 'sci' (science), 'crits' (Écrits). Discussion of castration complex and Lacanian theory shows some garbling. Quotations and technical philosophical terminology partially compromised. Still interpretable but requires re-reading.",
+    "footnote_artifacts": false,
+    "notes": "Most corrupted page in batch. French philosophical terminology (Lacan) partially garbled."
+  },
+  {
+    "page_number": 322,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "Error rate 5.6% (bucket D). Minor corruption: 'xing' (fixing), 'tus' (stubborn), 'Leben' correctly rendered (German), 'eigensinnigen' preserved, 'scension' (ascension?). Opening of twelfth session discusses zoology/biology distinction in multiple languages. Text is readable despite minor artifacts. Philosophical meditation on life and language is interpretable.",
+    "footnote_artifacts": false,
+    "notes": "Multilingual content (German philosophical terms) well-handled. Discussion of Heidegger largely clear."
+  }
+]

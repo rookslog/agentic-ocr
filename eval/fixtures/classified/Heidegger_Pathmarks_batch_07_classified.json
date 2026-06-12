@@ -1,0 +1,464 @@
+[
+  {
+    "page_number": 265,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "error_rate": 6.3,
+    "evidence": [
+      "Multiple OCR errors: 'sayingh' → 'saying', 'detennine' → 'determine', 'standpoinf' → 'standpoint'",
+      "Footnote markers merged with words: 'Kehre]' properly handled as philosophical term",
+      "German terms intact: 'Kehre', 'Seiende' preserved correctly",
+      "Key philosophical concepts readable: Existentialism, Being and Time, essence vs existence intact",
+      "Main argument flow preserved despite errors"
+    ],
+    "footnote_artifacts": [
+      "Page break markers handled: '[16o]', 'd', 'c' properly positioned"
+    ],
+    "readability": "Meaning recoverable with minimal effort; 1-2 character errors in common words"
+  },
+  {
+    "page_number": 268,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "error_rate": 7.4,
+    "evidence": [
+      "OCR errors in technical terms: 'perspect' (perspective), 'perceptio' (perceptio - actually Latin, acceptable), 'cdnion' (unrecognizable)",
+      "Greek terms handled: 'voEiv' (noein), 'Aristode' (Aristotle - minor name error)",
+      "Latin philosophical term: 'subiectum' correctly preserved",
+      "Main philosophical argument on Being, ek-sistence, and human essence readable",
+      "Footnote references maintain structure"
+    ],
+    "footnote_artifacts": [
+      "Superscript markers: '[164]', 'b', 'c' properly positioned",
+      "Footnote text preservation: 'Plato's Doctrine' readable"
+    ],
+    "readability": "Occasional technical term errors but semantic meaning of main text preserved"
+  },
+  {
+    "page_number": 270,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "error_rate": 4.1,
+    "evidence": [
+      "Greek terms well preserved: 'yap dvcu' (gar epeí), 'yap dvcXL'",
+      "Key philosophical concepts intact: Parmenides, Being, Ontology, History of Being",
+      "German terms preserved: 'Dasein', 'Sein', 'Seiende'",
+      "Complex sentence structure readable: discussions of metaphysics and destiny coherent",
+      "Proper names: Parmenides, Hegel, Holderlin spelled correctly",
+      "Minimal character-level errors; meaning fully recoverable"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[166]' properly positioned",
+      "Footnote references intact"
+    ],
+    "readability": "Excellent - very few OCR artifacts; professional translation quality maintained"
+  },
+  {
+    "page_number": 271,
+    "classification": "GOOD",
+    "confidence": 0.82,
+    "error_rate": 3.6,
+    "evidence": [
+      "Complex philosophical terminology preserved: Dasein, Sein, essentia, existentia, transcendens",
+      "German philosophical terms: 'Gegenwurf', 'Geworfenheit' readable",
+      "Main argument on Being and existence clear and coherent",
+      "Page number marker '[167]' correctly positioned",
+      "Proper nouns maintained: Sartre, Plato, Hegel"
+    ],
+    "footnote_artifacts": [
+      "Footnote markers properly integrated"
+    ],
+    "readability": "Very good - minimal errors, sophisticated philosophical argument fully accessible"
+  },
+  {
+    "page_number": 272,
+    "classification": "MARGINAL",
+    "confidence": 0.73,
+    "error_rate": 6.0,
+    "evidence": [
+      "Word errors: 'transcerulens' should be 'transcendens' (semantic error - fundamental concept corrupted)",
+      "Name error: 'Holderlin' spelled correctly but OCR quality indicates scanning artifacts",
+      "Greek text errors: 'Sinn' (Sinn/sense) preserved correctly",
+      "Main argument recoverable: discussion of Being, projection, destiny, and Holderlin's poetry accessible",
+      "Technical terms: 'Entwurf' (projection) readable"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[169]' positioned correctly",
+      "Footnote reference structure maintained"
+    ],
+    "readability": "Recoverable but one significant philosophical term corrupted; requires careful reading to catch 'transcerulens' error"
+  },
+  {
+    "page_number": 273,
+    "classification": "MARGINAL",
+    "confidence": 0.76,
+    "error_rate": 3.6,
+    "evidence": [
+      "Complex German text with proper nouns: 'Andenken', 'Tiibinger Gedenkschrift' (Tübinger expected but minor OCR variation)",
+      "Key philosophical arguments: Being, divinity, homelessness, history preserved clearly",
+      "Foreign language terms intact: Greek, German philosophical terminology",
+      "Proper names: Holderlin, Goethe, Marx well preserved",
+      "Main narrative coherence: argument about homelessness and world-historical destiny clear"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[170]' correctly positioned",
+      "Footnote structure maintained"
+    ],
+    "readability": "Good despite reported 3.6% error rate - high confidence in philosophical content"
+  },
+  {
+    "page_number": 274,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "error_rate": 5.8,
+    "evidence": [
+      "Greek character corruption: 'a/.r,fJ\\u00a3uELV' (aletheuein) - character encoding issue, not pure OCR",
+      "Technical errors: 'texvr' (techne), 'dange\\u0679' (danger with special char) - format issues",
+      "Name error: 'Husser)' should be 'Husserl' (minor)",
+      "Historical/philosophical argument preserved: discussion of Marxism, phenomenology, technology coherent",
+      "Key terms readable: materialism, subjectivity, technology, metaphysics",
+      "Main debate between Marxism and phenomenology accessible"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[171]' positioned correctly",
+      "Extensive footnotes with encoding challenges"
+    ],
+    "readability": "Arguments recoverable but character encoding issues create visual noise"
+  },
+  {
+    "page_number": 275,
+    "classification": "MARGINAL",
+    "confidence": 0.74,
+    "error_rate": 6.0,
+    "evidence": [
+      "Philosophical terminology intact: thrownness, subjectivity, anthropologism, shepherd of being",
+      "German terms: 'Gegenwurf' (counterthrow), 'Dasein' preserved",
+      "Minor errors: 'subjectivitf' → 'subjectivity', 'vhat' → 'what' (common OCR confusions)",
+      "Main humanist critique coherent: argument against nationalism, individualism, collectivism readable",
+      "Proper nouns: not present but philosophical concepts central and recoverable"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[172]' correctly positioned",
+      "Footnote references maintained"
+    ],
+    "readability": "Philosophy argument fully accessible despite character-level errors"
+  },
+  {
+    "page_number": 278,
+    "classification": "GOOD",
+    "confidence": 0.84,
+    "error_rate": 3.7,
+    "evidence": [
+      "Complex Latin phrase: 'lucus a non lucendo' correctly preserved (difficult philosophical reference)",
+      "Philosophical terminology: humanism, Being, truth, essence, ek-sistence intact",
+      "German terms: multiple philosophical terms preserved with accuracy",
+      "Argument structure: sustained critique of traditional humanism coherent and compelling",
+      "No significant semantic errors; technical vocabulary maintained",
+      "Names: Greek, German philosophers clearly readable"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[176]' positioned correctly",
+      "Footnote text structure maintained"
+    ],
+    "readability": "Excellent - sophisticated philosophical argument presented with high fidelity"
+  },
+  {
+    "page_number": 281,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "error_rate": 3.9,
+    "evidence": [
+      "Character errors: 'hwnan' → 'human' (repeated OCR confusion), 'vith' → 'with'",
+      "Technical philosophy preserved: transcendence, being-in-the-world, ek-sistence, care",
+      "German terminology: 'Sein', 'Dasein', 'Sorge' readable",
+      "Complex theological-philosophical argument: discussion of Christian theology and transcendence coherent",
+      "Proper nouns: God, Christian, Paul - correctly spelled",
+      "Main thesis (Being-in-world as humanitas) fully understandable"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[181]' correctly positioned"
+    ],
+    "readability": "Minor v/w confusions don't impede meaning; sophisticated theology-philosophy discussion accessible"
+  },
+  {
+    "page_number": 283,
+    "classification": "MARGINAL",
+    "confidence": 0.70,
+    "error_rate": 5.6,
+    "evidence": [
+      "Character errors: 'subjectivicy' → 'subjectivity', 'tthe' → 'the', 'vho' → 'who'",
+      "French text embedded: 'Ce que je cherche a faire, depuis longtemps deja, c'est peciser le rapport de }'ontologie avec une ethique possible' - mostly readable despite OCR",
+      "Philosophical argument: tension between ontology and ethics clearly articulated",
+      "Key terms: ek-sistence, homo humanus, biologism, pragmatism - accessible",
+      "Theological/philosophical discussion of divine existence recoverable"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[183]' correctly positioned",
+      "French quotation partially corrupted but meaning discernible"
+    ],
+    "readability": "Core philosophical question (ontology vs ethics) recoverable; French quote problematic but context helps"
+  },
+  {
+    "page_number": 284,
+    "classification": "BAD",
+    "confidence": 0.42,
+    "error_rate": 9.1,
+    "evidence": [
+      "Extensive Greek text corruption: 'aoc', 'xeae', 'vov', 'jxe', 'appogvtllc', 'xlll' - multiple Greek words unrecognizable",
+      "Technical damage: '[ 1 85]' page marker corrupted with spacing",
+      "Key term 'Heraclitus' readable but context text severely corrupted",
+      "Philosophical argument on ethos, god, and character unrecoverable from corrupted Greek",
+      "Fragment 119 quoted but OCR quality prevents proper text reconstruction",
+      "Main content: extended Greek quotation and translation attempt fails due to severe OCR errors"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[185]' partially readable despite corruption"
+    ],
+    "readability": "Poor - Heraclitus Greek passages are key to understanding but rendered unusable; English portions partially recoverable"
+  },
+  {
+    "page_number": 286,
+    "classification": "GOOD",
+    "confidence": 0.81,
+    "error_rate": 4.1,
+    "evidence": [
+      "Greek text recovered: 'YjOoc; avfJpw;:' (ethos anthropoi) - readable",
+      "Key philosophical concept: 'originary ethics' properly maintained",
+      "German terminology: transcendental, fundamental ontology - intact",
+      "Heidegger's complex argument on ethics, ontology, Being clearly articulated",
+      "Names: Plato, Hegel, Kant readable",
+      "Main thesis on why Being precedes ethics coherent and well-preserved"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[188]' correctly positioned",
+      "Footnote structure maintained with proper references"
+    ],
+    "readability": "Very good - complex philosophical argumentation fully accessible despite minor OCR artifacts"
+  },
+  {
+    "page_number": 288,
+    "classification": "MARGINAL",
+    "confidence": 0.71,
+    "error_rate": 6.1,
+    "evidence": [
+      "Greek characters handled variably: 'a/.r,fJ' with encoding issues",
+      "Character errors: 'asc\\u00c3rtained' (ascertained with special char), 'bemgs' → 'beings', 'ifll' unrecognizable",
+      "Philosophical concepts preserved: nihilation, Being, subjectivity, nothing - argument follows coherently",
+      "German terms: 'Dasein', 'Sorge' (care) readable",
+      "Technical discussion: Hegel, Schelling, absolute idealism - contexts maintained",
+      "Character encoding issues create visual artifacts but semantic meaning recoverable"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[190]', '[191]' positioned correctly",
+      "Complex footnote structure with German terms maintained"
+    ],
+    "readability": "Philosophical argument on nothing and nihilation recoverable; encoding issues create distractions"
+  },
+  {
+    "page_number": 290,
+    "classification": "MARGINAL",
+    "confidence": 0.73,
+    "error_rate": 4.2,
+    "evidence": [
+      "French embedded text: 'Comment sauver l' element d'aventure que comporte toute recherche' - mostly readable",
+      "Character errors: 'unrecog' (unrecognizable - word truncation)",
+      "Philosophical argument: poetry, thinking, Being as destiny - coherent and accessible",
+      "German terms: 'Ereignis' (event of appropriation) conceptually clear",
+      "Main three-part question structure preserved",
+      "Key claim: 'essential thinkers always say the Same' clearly stated"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[193]' correctly positioned",
+      "French quotation and its context readable"
+    ],
+    "readability": "Philosophical content accessible; French passages mostly recoverable with context"
+  },
+  {
+    "page_number": 292,
+    "classification": "BAD",
+    "confidence": 0.38,
+    "error_rate": 11.5,
+    "evidence": [
+      "French text heavily corrupted: 'Ainsi toute Ia Philosophie' readable but context fragmented",
+      "Technical term damage: 'essencej' (essence with corruption), 'Principia' unclear",
+      "Key philosophical introduction compromised: Descartes' tree metaphor partially lost",
+      "Main argument: metaphysics as root of philosophy mostly recoverable but presentation corrupted",
+      "Proper nouns: 'Kaufmann' (translator), 'Descartes' readable but surrounding context poor",
+      "High error rate (11.5%) indicates severe OCR quality issues on this page"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[195]' correctly positioned"
+    ],
+    "readability": "Poor - Introduction to 'What Is Metaphysics?' opening passage corrupted; central metaphor partially lost"
+  },
+  {
+    "page_number": 294,
+    "classification": "GOOD",
+    "confidence": 0.82,
+    "error_rate": 4.4,
+    "evidence": [
+      "Complex philosophical argument on Being, metaphysics, and overcoming well-preserved",
+      "German terms: 'Sein', 'Dasein', 'Seiende', 'Ereignis' clearly readable",
+      "Key technical terms: 'transcendence', 'clearing', 'truth of Being' maintained",
+      "Character errors minimal: 'grounda' (ground with artifact), 'uuth' → 'truth'",
+      "Main thesis: metaphysics cannot think Being itself coherently presented",
+      "Names: Hegel, Nietzsche, Anaximander - readable"
+    ],
+    "footnote_artifacts": [
+      "Page markers '[196]', '[197]' correctly positioned",
+      "Extensive footnotes with philosophical technical terms maintained"
+    ],
+    "readability": "Very good - sophisticated argument on Being and metaphysics fully accessible"
+  },
+  {
+    "page_number": 295,
+    "classification": "GOOD",
+    "confidence": 0.80,
+    "error_rate": 4.6,
+    "evidence": [
+      "Complex argument on Being, truth, and metaphysics clearly articulated",
+      "Greek terms: 'aletheia' concept maintained, 'veritas' preserved",
+      "Philosophical terminology: 'unconcealedness', 'essence of truth' - central concepts intact",
+      "German references: clear",
+      "Character errors minor: 'inullutu' (isolated artifact), 'rruth' → 'truth'",
+      "Extended footnotes with multiple language references mostly readable",
+      "Main philosophical development: pre-Socratic to modern philosophy traceable"
+    ],
+    "footnote_artifacts": [
+      "Page markers '[199]' correctly positioned",
+      "Multilingual footnotes with Greek, Latin, German - mostly preserved"
+    ],
+    "readability": "Excellent - challenging philosophical content well-preserved despite minor OCR noise"
+  },
+  {
+    "page_number": 298,
+    "classification": "GOOD",
+    "confidence": 0.81,
+    "error_rate": 3.9,
+    "evidence": [
+      "Complex analysis of Dasein concept clearly readable",
+      "German philosophical terminology: 'Dasein', 'existentia', 'consciousness' distinction well-maintained",
+      "Key philosophical argument: why 'Dasein' cannot replace 'consciousness' articulated coherently",
+      "Latin terms: 'existentia', 'objectivity', 'subjectivity' preserved",
+      "Character errors minimal: no semantic corruption",
+      "Proper nouns: Hegel, Kant - readable",
+      "Extended discussion of Being and essence maintains philosophical rigor"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[203]' correctly positioned",
+      "Footnotes with technical terminology preserved"
+    ],
+    "readability": "Excellent - sophisticated Heideggerian conceptual analysis fully accessible"
+  },
+  {
+    "page_number": 299,
+    "classification": "GOOD",
+    "confidence": 0.83,
+    "error_rate": 3.9,
+    "evidence": [
+      "Complex philosophical argument on existence, ecstasis, and care well-preserved",
+      "German terms: 'Instindigkeit', 'Sorge' (care), 'Geworfenheit' - technical terms maintained",
+      "Key philosophical claims: 'human being alone exists' - fully articulated",
+      "Latin philosophical terminology: 'essentia', 'existentia', 'subjectivity' - preserved",
+      "Argument structure clear: humans vs rocks, trees, angels comparison intelligible",
+      "No semantic corruption despite technical difficulty"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[204]' correctly positioned",
+      "Complex footnotes with German philosophical terms maintained"
+    ],
+    "readability": "Excellent - dense phenomenological analysis presented with high fidelity"
+  },
+  {
+    "page_number": 301,
+    "classification": "MARGINAL",
+    "confidence": 0.74,
+    "error_rate": 5.4,
+    "evidence": [
+      "Greek text with encoding issues: 'e:lvaL' (einai), 'o,)ata' (ousia) - technically readable",
+      "Character errors: 'tation' (truncation), 'lval' (corruption), 'ntanuss' (unrecognizable)",
+      "Main argument on Being and time preserved: understanding as ecstatic projection coherent",
+      "German terms: 'Entwurf', 'Ertipnis' (Ereignis - event) readable despite OCR variation",
+      "Complex philosophical structure: time and Being's essence - argument follows",
+      "Technical passage on presencing and duration accessible"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[206]' correctly positioned",
+      "Extensive multilingual footnotes - Greek, German, English mixed"
+    ],
+    "readability": "Philosophical argument recoverable; encoding issues create visual friction but not semantic blockage"
+  },
+  {
+    "page_number": 303,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "error_rate": 6.1,
+    "evidence": [
+      "Extended Greek quotations with severe OCR corruption: 'o'ixt', 'tijv', 'xog', 'laoootp' - major problems",
+      "Character encoding: Greek text rendering creates unrecognizable strings",
+      "Philosophical argument: Christianity, metaphysics, wisdom (sophia) - context survives corruption",
+      "Key passage: 1 Corinthians reference identifiable but Greek text fails",
+      "Main concept of 'twofold character' of metaphysics stated but supporting Greek evidence corrupted",
+      "Technical discussion recovers: metaphysics as representation of beings - preserved"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[209]' positioned correctly"
+    ],
+    "readability": "Arguments about Christian theology and metaphysics recoverable; Greek quotations unusable"
+  },
+  {
+    "page_number": 306,
+    "classification": "MARGINAL",
+    "confidence": 0.75,
+    "error_rate": 5.7,
+    "evidence": [
+      "German titles with encoding: 'Ober 'Die Linie' (Über expected), 'Erorternng' (Erörterung expected)",
+      "Character errors: 'merid' (meridian fragment), 'eklg' (unrecognizable corruption)",
+      "Proper nouns mostly readable: Ernst Jünger, William McNeill (translator)",
+      "Main philosophical content: discussion of nihilism, 'zero meridian', Being - coherent",
+      "Technical argument on nihilism and the movement of Being recoverable",
+      "Jünger's 'The Worker' referenced and contextual meaning preserved"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[213]' correctly positioned"
+    ],
+    "readability": "Philosophical discussion of nihilism and Being accessible; German title encoding problematic"
+  },
+  {
+    "page_number": 307,
+    "classification": "GOOD",
+    "confidence": 0.81,
+    "error_rate": 4.8,
+    "evidence": [
+      "Complex philosophical meditation on nihilism, Being, and world-historical destiny well-preserved",
+      "German terminology: 'Linie' (line), 'Heimatlosigkeit' (homelessness), 'Ereignis' - readable",
+      "Key philosophical distinctions: 'iiber' (across) vs 'de/peri' (with/concerning) clearly stated",
+      "Proper nouns: Ernst Jünger, Nietzsche, dialectical nihilism - well-maintained",
+      "Main argument: locale of nihilism as threshold between world eras - coherent",
+      "Character errors minimal: no semantic damage"
+    ],
+    "footnote_artifacts": [
+      "Page marker '[214]', '[215]' correctly positioned",
+      "German philosophical terminology in notes preserved"
+    ],
+    "readability": "Excellent - sophisticated analysis of nihilism and Being's history presented coherently"
+  },
+  {
+    "page_number": 310,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "error_rate": 1.9,
+    "evidence": [
+      "Minimal OCR errors: high quality scan of this page",
+      "Character errors very rare: 'rnatter' (matter), 'rnuch' (much), 'cli' (unclear brief error)",
+      "Complex historical-philosophical analysis of Jünger's 'The Worker' and will to power well-preserved",
+      "Names: Ernst Jünger, Spengler, Nietzsche, Aristotle - clearly readable",
+      "Proper nouns: 'The Marble Cliffs' (Die Marmorklippen) maintained",
+      "Philosophical argument: Nietzsche's metaphysics, will to power, beings - coherent and sophisticated"
+    ],
+    "footnote_artifacts": [
+      "Page markers absent but text flows clearly"
+    ],
+    "readability": "Excellent - professional translation quality with minimal OCR interference; sophisticated philosophical content fully accessible"
+  }
+]

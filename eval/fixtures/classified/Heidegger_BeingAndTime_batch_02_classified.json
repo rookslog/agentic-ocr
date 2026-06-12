@@ -1,0 +1,330 @@
+{
+  "batch_id": 2,
+  "document": "Heidegger_BeingAndTime",
+  "classifications": [
+    {
+      "page_number": 47,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [
+        "seinssinn (likely merged footnote reference, consistent with pattern)"
+      ],
+      "notes": "Minor unknown words like 'seinssinn' and 'ownmost' are legitimate German terms and English neologisms, not OCR errors. Text is semantically coherent."
+    },
+    {
+      "page_number": 49,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "mynv→νοΕιν (Greek character OCR error, but recoverable from context)",
+        "aufhob is correct",
+        "voEiv should be νόησις (Greek transliteration issue)"
+      ],
+      "footnote_artifacts": [
+        "MyE'v might be μνῆ (memory) - appears to be Greek OCR artifact"
+      ],
+      "notes": "Greek character recognition issues but context makes meaning recoverable. Text discusses Aristotle's temporal structure - semantic content preserved despite formatting."
+    },
+    {
+      "page_number": 51,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [],
+      "notes": "Excellent OCR quality. Minor unknown words (husser→Husserl, sache→Sache) are proper nouns/German terms. No semantic corruption."
+    },
+    {
+      "page_number": 53,
+      "classification": "GOOD",
+      "confidence": "medium",
+      "evidence": [
+        "whi→which (word fragment, but correctable)",
+        "Krankheitserscheinungen correctly captured"
+      ],
+      "footnote_artifacts": [
+        "meldende (properly OCR'd German term for 'announcing')"
+      ],
+      "notes": "Mostly clean text with one minor word fragment. Extensive translator notes preserve semantic precision. Good for RAG embedding."
+    },
+    {
+      "page_number": 55,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [
+        "Begegnis (properly OCR'd philosophical term)"
+      ],
+      "notes": "High quality. Unknown words are legitimate German philosophical terminology. Extensive footnote discussion aids semantic clarity."
+    },
+    {
+      "page_number": 56,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "cqr→covered (clear typo: 'constantly cqr.stantly')",
+        "Int fragment at line ending"
+      ],
+      "footnote_artifacts": [],
+      "notes": "One clear OCR substitution (cqr→covered) that affects readability but semantic meaning is recoverable from context. Otherwise solid."
+    },
+    {
+      "page_number": 57,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "talwng→talking (rn→m substitution pattern)",
+        "alv likely correct Greek transcription"
+      ],
+      "footnote_artifacts": [
+        "wovon (correctly OCR'd German term)"
+      ],
+      "notes": "One minor OCR error (talwng→talking) but context and surrounding Greek/German preserve meaning. Syntax remains intact for embeddings."
+    },
+    {
+      "page_number": 58,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "phiinomen→phänomenon (systematic umlaut failure: ä→uu)",
+        "ayvo→ayνοία (Greek character corruption)",
+        "iflw→ἀληθεία (Greek corruption - 'truth' unreadable)",
+        "oftovering→of covering (character swallowing)",
+        "Multiple Greek passages corrupted beyond easy recovery"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Systematic umlaut failures (ä→uu) appear throughout. Greek philosophical terminology severely corrupted. While some recovery is possible from footnotes, the core text would confuse embeddings with multiple wrong character sequences. The phrase 'oftovering' suggests character processing errors."
+    },
+    {
+      "page_number": 59,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "iloyos→λόγος (Greek translit failure, repeated pattern)",
+        "uym→αἰών or similar (Greek unreadable)",
+        "ileyoll→λεγόμενον (Greek corruption)",
+        "Multiple lines of untranslatable Greek-mixed text",
+        "zurn→zum (rare: z vs z confusion)"
+      ],
+      "footnote_artifacts": [
+        "mynv, vov (Greek character sequence errors suggesting systematic parser failure)"
+      ],
+      "notes": "Heavy Greek technical terminology corrupted. The expression \"λόγος qua λεγόμενον\" becomes 'iloyos qua ileyoll' - semantically destructive. This would severely damage RAG embeddings of philosophical argumentation."
+    },
+    {
+      "page_number": 60,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "nomenology (should be 'phenomenology' - initial 'phe' cut off)",
+        "phe fragment suggests line breaking error",
+        "aoyos→λόγος (but single instance, context available)"
+      ],
+      "footnote_artifacts": [
+        "aufweisung (correct German term)"
+      ],
+      "notes": "Mostly recoverable. Fragment 'nomenology' suggests PDF extraction boundary issue rather than pure OCR. Surrounding context sufficient for meaning."
+    },
+    {
+      "page_number": 61,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "phiinomen→phänomenon (systematic umlaut failure ä→uu again)",
+        "unkenntnis (correct German term)",
+        "se spelled 'se' should verify context"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Pattern of umlaut failures continues but text remains mostly comprehensible. Core philosophical argument about 'covered-up-ness' and phenomena is clear despite character substitutions."
+    },
+    {
+      "page_number": 62,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [],
+      "notes": "Excellent quality. Unknown words are legitimate German compound terms (Ausgang, Durchgang). Text flows naturally for RAG embeddings."
+    },
+    {
+      "page_number": 63,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "di᠎᠋stinct→distinct (whitespace/joining error)",
+        "seiende is correct German (entities)",
+        "jveoew→εἰρημένευ (Greek corruption but recoverable)"
+      ],
+      "footnote_artifacts": [
+        "jveoew clearly Greek artifact"
+      ],
+      "notes": "Greek philosophical term corrupted but surrounded by English translation in text. Semantic loss minimal - 'hermeneutic' meaning is stated explicitly in English text."
+    },
+    {
+      "page_number": 64,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [],
+      "notes": "High quality OCR. Bucket B (1-3% error) is accurate. Well-structured philosophical text on Being and temporality. Suitable for RAG."
+    },
+    {
+      "page_number": 66,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "ime→time (single character loss)",
+        "charac fragment (line break artifact)",
+        "inte fragment (line break artifact)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Mostly line-breaking and fragment issues rather than core OCR failures. Context clearly indicates 'time' and 'character'. Meaning recoverable."
+    },
+    {
+      "page_number": 68,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "ithavelostitselfand (space removal error: 'it have lost itself and' merged)",
+        "habenkann should be 'haben kann' (space removal)",
+        "gieichgiiltigkeit→Gleichgültigkeit (umlaut ü→ie)",
+        "Multiple spacing/word boundary errors",
+        "essentia is correct but context shows systematic issues"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Space removal errors create false words that would confuse embeddings. 'ithavelostitselfand' is unrecoverable without segmentation knowledge. These aren't character substitutions but word-merging errors that destroy semantic units."
+    },
+    {
+      "page_number": 69,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "ithavelostitselfand (repeated severe space merge from prev page)",
+        "habenkann (space merge 'haben kann')",
+        "gieichgiiltigkeit (umlaut failure ü→ie, repeated)",
+        "verlieren fragments",
+        "Multiple false compounds created by space removal"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Severe space/word boundary errors. Even with context, 'ithavelostitselfand' fundamentally breaks tokenization for embeddings. This would cause significant semantic loss in RAG pipelines."
+    },
+    {
+      "page_number": 70,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "verhalt should be 'verhält' (umlaut ä→a)",
+        "constitu fragments (breaking 'constitutive')",
+        "senting fragments (breaking 'presenting')",
+        "aufgedcckt→aufgedeckt (character doubling error: cck)",
+        "Space merging continues with 'aufgedcckt' showing double-c corruption",
+        "cating fragments throughout"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Combination of space removal and character corruption. 'aufgedcckt' shows OCR confidence failure in double-consonant recognition. These errors would cascade through tokenization."
+    },
+    {
+      "page_number": 71,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "ofexistentiality (space removal: 'of existentiality' merged)",
+        "seinsbestimmungen (correct German but preceded by space errors)",
+        "daseinsmiisigen (umlaut ü→ii, 'Dasein's' becomes 'daseins')",
+        "Multiple false compounds from space removal"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Consistent space removal errors create false word compounds ('ofexistentiality'). These would fundamentally corrupt semantic chunking for RAG systems."
+    },
+    {
+      "page_number": 72,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "bifore→before (rare rn→m pattern, but context clear)",
+        "tinguish→distinguish (t→d substitution at fragment)",
+        "undis fragment (line break)",
+        "anarytic→analytic (an→an but should verify: likely 'analytic' with minor corruption)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Minor character substitutions with clear contextual recovery. Bucket C (3-5%) error rating is reasonable. Text remains semantically coherent despite fragments."
+    },
+    {
+      "page_number": 75,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "imaginem (correct Latin term)",
+        "prima (correct Latin term)",
+        "aeternamftlicitatem (should be 'aeternam felicitatem' - space merge in Latin phrase)",
+        "usque (correct Latin)",
+        "Latin terms mostly preserved despite spacing issues"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Contains extended Latin quotations (theological). One space-merge error in 'ftlicitatem' but surrounded by correct Latin. Core meaning of Christian theology reference preserved."
+    },
+    {
+      "page_number": 76,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "anerbom should be 'an erborn' (space removal or variant spelling)",
+        "siner should be 'seiner' (umlaut e→i, German)",
+        "¾ symbol corruptions in German quote (Early Modern German typeface issues)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "German Early Modern text with special character issues (¾ characters). The semantic argument about man's nature is recoverable. Space issues are minor."
+    },
+    {
+      "page_number": 77,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [
+        "malcing should be 'making' but clearly understood"
+      ],
+      "notes": "Bucket D (5-10%) rating accurate. Minor unknown words like 'dificulties' (should be 'difficulties') are single-character errors. Text on ethnology and existential analysis is clear."
+    },
+    {
+      "page_number": 78,
+      "classification": "GOOD",
+      "confidence": "high",
+      "evidence": "clean",
+      "footnote_artifacts": [],
+      "notes": "Bucket B (1-3%) rating accurate. High-quality OCR. Discussion of 'sachgehalt' (content/subject-matter) is philosophically clear and precise for embeddings."
+    },
+    {
+      "page_number": 79,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "bedingung correct but 'contentswhichmaybe' is severe space-merge error",
+        "doesnotprevent (space removal: 'does not prevent' merged)",
+        "keepthewholephenomenon (space removal: 'keep the whole phenomenon' merged)",
+        "lndifferenz (l→I: 'Indifferenz' with wrong letter case/rendering)",
+        "Multiple word-boundary destruction errors"
+      ],
+      "footnote_artifacts": [
+        "rld likely fragment of 'world' or OCR artifact"
+      ],
+      "notes": "Severe space removal errors ('contentswhichmaybe', 'doesnotprevent', 'keepthewholephenomenon') would cascade through RAG tokenization. These create false semantic units that would confuse embeddings. Critical discussion of Being-in-the-world becomes semantically corrupted."
+    }
+  ],
+  "summary": {
+    "total_pages": 24,
+    "good_count": 6,
+    "marginal_count": 11,
+    "bad_count": 7,
+    "critical_issues": [
+      "Systematic space removal errors creating false word compounds (pages 68, 69, 70, 71, 79)",
+      "Umlaut character failures: ä→uu pattern (pages 58, 61, and others)",
+      "Greek character corruption throughout (pages 49, 58, 59, 63)",
+      "Word-boundary destruction in technical philosophical text (pages 68-71, 79)"
+    ],
+    "patterns": {
+      "footnote_artifacts": "Minimal - mostly correct German/Latin/Greek terms",
+      "space_removal_errors": "Major issue affecting pages 68-71, 79",
+      "character_substitution": "rn→m, umlaut failures, Greek handling",
+      "line_break_artifacts": "Minor - fragments recoverable from context"
+    }
+  }
+}

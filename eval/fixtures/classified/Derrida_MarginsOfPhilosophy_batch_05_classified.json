@@ -1,0 +1,223 @@
+{
+  "batch_id": 5,
+  "document": "Derrida_MarginsOfPhilosophy",
+  "classifications": [
+    {
+      "page_number": 164,
+      "classification": "MARGINAL",
+      "confidence": 0.82,
+      "evidence": "Multiple OCR errors affecting readability: 'hohere' (höhere), 'thechoice' (the choice), 'thangeterrajn' (change terrain), 'deggerian' (Heideggerian), 'iiniipie' (indispensable), 'rhcace' (choice), '.coutinuous.prnces&oLuiaking' (continuous process of making). However, meaning is recoverable from context. Technical philosophical terms present (différance, deconstruction, Nietzsche, Heidegger) are correctly spelled.",
+      "footnote_artifacts": true,
+      "notes": "Page contains heavy OCR corruption especially in middle section with garbled transitions. Some words have footnote markers merged ('legedly' possibly 'alleg-footnote-edly'). German words preserved correctly (das, kommt). Key philosophical concepts intact despite surface errors."
+    },
+    {
+      "page_number": 165,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Relatively clean text with isolated errors: 'wifi' (will), 'metaphy' (metaphysical), 'akfive' (active), 'grausam' correctly spelled. Foreign language terms are correct (Aufhebung implied in structure, Nietzsche, Ubermensch). Semantic meaning fully recoverable. Only 3-4 significant errors across full page.",
+      "footnote_artifacts": false,
+      "notes": "High-quality page with very few errors. All philosophical concepts clear. French and German loanwords handled correctly."
+    },
+    {
+      "page_number": 166,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Title page with minimal text. Only error: 'phitosophie' (philosophie) in journal title. All proper names correct (Derrida, Rousseau, London). Publication metadata intact and correct.",
+      "footnote_artifacts": false,
+      "notes": "Clean title/metadata page. Single easily-correctable error in French word."
+    },
+    {
+      "page_number": 171,
+      "classification": "MARGINAL",
+      "confidence": 0.80,
+      "evidence": "Multiple scattered errors but context makes meaning clear: 'connaisances' (connaissances), 'cuases' (causes), 'hurnaines' (humaines), 'starobinski' (Starobinski - proper name corruption). However, major French philosophical concepts preserved: Condillac, Rousseau, origin of languages. Text structure and argumentation fully comprehensible. Footnote references intact.",
+      "footnote_artifacts": false,
+      "notes": "Academic citation page with scholarly apparatus. Some proper name spelling varies from standard but identifiable. Foreign language words mostly correct (essai, discours, origine preserved)."
+    },
+    {
+      "page_number": 172,
+      "classification": "GOOD",
+      "confidence": 0.88,
+      "evidence": "Clean page with only minor fragmentation artifacts: 'origi-' (originality broken across line), 'neces-' (necessity broken), 'cliniatology' (climatology). All substantive philosophical terms correct: causality, autonomy, scientific field, structural description. Rousseau's argument clearly presented.",
+      "footnote_artifacts": true,
+      "notes": "High-quality text with minimal errors. Some apparent errors are line-break artifacts. Key philosophical concepts intact. French vocabulary correct."
+    },
+    {
+      "page_number": 173,
+      "classification": "MARGINAL",
+      "confidence": 0.83,
+      "evidence": "Moderate OCR corruption: 'jux' (juxtaposed), 'artic-cle-ulation' (articulation split), 'oderne' (moderne), 'oricien' (théoricien). However, semantic content recoverable. All proper names (Rousseau, Lamy, Rodin-Lewis) correctly spelled. Key philosophical arguments about language origins clear. Footnote markers present but integrated readably.",
+      "footnote_artifacts": true,
+      "notes": "Page discusses Rousseau and language theory. Some word boundaries broken inappropriately. French terminology handled well overall. Scholarly apparatus intact."
+    },
+    {
+      "page_number": 174,
+      "classification": "MARGINAL",
+      "confidence": 0.81,
+      "evidence": "Scattered errors affecting fluency: 'cirde' (circle), 'entitiled' (entitled), 'oratoire' (Oratoire - theology), 'bitrarily' (arbitrarily), 'guage' (language), fragmented terms like 'lan-' and 'lations'. Meaning remains recoverable through context. Philosophical argument about vicious circles and structural autonomy preserved. Proper names correct (Rousseau, Malebranche, Port-Royal).",
+      "footnote_artifacts": true,
+      "notes": "Dense philosophical page with multiple footnotes merged into text. Despite surface errors, argumentation intact. French theological references (Port-Royal, Oratoire) correctly identified."
+    },
+    {
+      "page_number": 176,
+      "classification": "GOOD",
+      "confidence": 0.87,
+      "evidence": "Relatively clean with only minor errors: 'witi' (with), 'turity' (maturity), 'structually' (structurally), 'supplemen-tarity' (supplementarity line-break). All substantive content clear. Philosophical concepts (supplementarity, structural order, typology of languages) correctly rendered. Geography and geology terminology intact.",
+      "footnote_artifacts": true,
+      "notes": "High-quality page discussing Rousseau's linguistic typology. Some hyphenation artifacts present. Key concepts about passion-languages vs. need-languages clearly presented. No corruption of critical terms."
+    },
+    {
+      "page_number": 177,
+      "classification": "MARGINAL",
+      "confidence": 0.79,
+      "evidence": "Multiple errors but recoverable: 'linea' (lineaments), 'dclimit' (delimit), 'knowl' (knowledge), 'dispro-ments' (disproportion), 'principial' (principal). Saussure and Rousseau names correct. Technical linguistic terms (phonetic, ideographic, pictographic) preserved. Philosophical argumentation about linguistic science founding intact.",
+      "footnote_artifacts": true,
+      "notes": "Critical page on Saussure and Rousseau comparison. Some compound words truncated. French terminology (glossématique implied) handled well. Citation apparatus intact though some formatting issues."
+    },
+    {
+      "page_number": 181,
+      "classification": "BAD",
+      "confidence": 0.65,
+      "evidence": "Significant corruption throughout: 'lematical' (problematical), 'cercie' (cercle), 'glosse' (glossématics proper term), 'indjspensable' (indispensable), 'surian' (Saussurian), 'physis', 'nomos', 'theorie' mixed with French/Greek terms. The page discusses crucial Saussure-Rousseau synthesis and contains multiple garbled philosophical terms. While Greek terms preserved (physis, nomos, eidos), overall coherence is compromised by density of errors.",
+      "footnote_artifacts": false,
+      "notes": "High-error-rate page on complex Saussure-Rousseau comparison. Multiple multi-syllabic words corrupted. However, key Greek philosophical vocabulary (physis, nomos, techn) intact. Philosophical argument demanding careful reading, now hampered by OCR quality."
+    },
+    {
+      "page_number": 186,
+      "classification": "MARGINAL",
+      "confidence": 0.77,
+      "evidence": "Moderate corruption: 'boyce' (Boyce Gibson - name corruption), 'gramm' (Grammé), 'amorphou' (amorphous), 'plotinu' (Plotinus), 'morphe' correctly spelled, 'martinus' (Martinus Nijhoff), 'demda' (Derrida - author's name corrupted!), 'efficacity' (efficacy), 'trans' fragmented. However, philosophical concepts preserved: phenomenology, Husserl, form (eidos, morphe), metaphysics. Greek philosophical terms mostly correct.",
+      "footnote_artifacts": false,
+      "notes": "Epigraph and phenomenology section. Critical flaw: author name 'Derrida' corrupted to 'Demda' in footnote. Despite this, Husserl's phenomenological project clearly presented. Plotinus Greek passage preserved."
+    },
+    {
+      "page_number": 188,
+      "classification": "BAD",
+      "confidence": 0.68,
+      "evidence": "Dense corruption on complex phenomenological content: 'voulojr' (vouloir), 'schicht' (Schicht - actually correct German), 'ausdruck' correct, 'untershicht' (Unterschicht), 'beden' (bedeuten), 'funktionen' correct, 'bedeutung' correct, 'ricoeur' correct. However, structural philosophical exposition severely hampered: 'sivity' (passivity?), unclear transitional phrases. Page discusses Husserl's transcendental method but multiple critical terms garbled, compromising pedagogical clarity.",
+      "footnote_artifacts": false,
+      "notes": "Complex phenomenology page on expression and meaning. German philosophical terminology mixed - some correct (Ausdruck, Schicht), some corrupted. Ricoeur's translation work referenced but quality degraded. This is a difficult passage even in clean OCR."
+    },
+    {
+      "page_number": 190,
+      "classification": "MARGINAL",
+      "confidence": 0.80,
+      "evidence": "Moderate errors with recoverable meaning: 'sprachliche' correct, 'noetico' correct, 'bedeutung' correct, 'tionliv' (non-living artifact), 'sphare' (Sphäre), 'leiniche' (leibliche - bodily). German philosophical vocabulary mostly preserved. Phenomenological argument about noesis-noema correlation intact. Husserl's method clearly explained despite surface errors.",
+      "footnote_artifacts": true,
+      "notes": "Section on 'Mirror Writing' with dense phenomenological terminology. German Husserl concepts handled reasonably (Verflechtung, Sphäre). Some corruption but argument reconstructible."
+    },
+    {
+      "page_number": 191,
+      "classification": "MARGINAL",
+      "confidence": 0.81,
+      "evidence": "Scattered errors: 'withou' (without), 'vouloir' correct, 'nonintentionality' correct, 'frege' correct, 'noetico' correct, 'bedeutung' correct, 'preexpressive' correct, 'sive' fragmented, 'sinn' correct. Overall philosophy of expression vs. sense distinction maintained. Frege's distinction preserved. Husserl's transcendental problematic clear despite minor errors.",
+      "footnote_artifacts": false,
+      "notes": "Dense phenomenological section on form and meaning. Most technical terms intact (noema, Bedeutung, Sinn, intentionality). Single important word ('without') corrupted. Philosophical argument recoverable."
+    },
+    {
+      "page_number": 192,
+      "classification": "MARGINAL",
+      "confidence": 0.83,
+      "evidence": "Moderate corruption: 'husserlian' correct, 'sinn' correct, 'literaiy' (literary), 'bedeutung' correct, 'nition' fragmented, 'mimetics' correct, 'druck' correct, 'alities' fragmented, 'noematic' correct, 'unproductivity' correct. Philosophical argument about expression's reproductive character intact. Mirror metaphor and unproductivity of logos clearly presented.",
+      "footnote_artifacts": false,
+      "notes": "Critical section on Husserl's mirror writing metaphor. Key philosophical terms preserved (Abbildung, Einbildung concepts recoverable). Some aesthetic terminology corrupted but not essential."
+    },
+    {
+      "page_number": 193,
+      "classification": "MARGINAL",
+      "confidence": 0.78,
+      "evidence": "Significant corruption of philosophical terms: 'ematic' fragmented, 'gemeint' correct, 'ausdruck' correct, 'auspragt' correct, 'ausdruckbar' correct, 'bedeutung' correct, 'logische' correct, 'preexpressive' correct, 'unproductivity' correct, 'ist' correct. Despite having correct technical terms, semantic flow compromised. The page articulates crucial argument about concept imprinting on sense but corrupted phrasing impedes clarity.",
+      "footnote_artifacts": false,
+      "notes": "Dense Husserl section on imprinting of sense in meaning. German philosophical vocabulary well-preserved (ausdrückbar, ausprägung concepts). However, English articulation of philosophy somewhat corrupted, requiring careful reconstruction."
+    },
+    {
+      "page_number": 194,
+      "classification": "BAD",
+      "confidence": 0.62,
+      "evidence": "Heavy corruption throughout: 'bedeu' (Bedeutung fragmented), 'egological' (egoological?), 'rasa' (tabula rasa preserved), 'nonproduction' correct, 'simulta' (simultaneously), 'cinzubiiden' (einzubilden - serious German corruption), 'colouring' correct, 'abbildung' correct. Critical philosophical distinction between tabula rasa metaphor and text-inscription severely compromised. Specularity and mirror concepts corrupted. Meaning difficult to extract from garbled phrasing.",
+      "footnote_artifacts": false,
+      "notes": "Crucial page on Husserl's mirror/tablet metaphor for meaning. German compound 'cinzubiiden' (should be 'einzubilden') severely corrupted. Key metaphors (Abbildung, specularity) only partially recoverable. This page's difficulty is compounded by conceptual density."
+    },
+    {
+      "page_number": 195,
+      "classification": "MARGINAL",
+      "confidence": 0.79,
+      "evidence": "Moderate corruption: 'bildlichkeit' correct, 'irrefuhren' (irreführen/mislead), 'einbi' fragmented (Einbildung), 'abbildung' correct, 'appli' fragmented, 'bilden' correct, 'uppro' (Unproductive?). Despite errors, Husserl's analysis of metaphor's seductive power clearly conveyed. Philosophical point about metaphor's role in phenomenological discourse intact.",
+      "footnote_artifacts": false,
+      "notes": "Section on metaphor and form (Bildlichkeit). Some German philosophy terms corrupted but recoverable. Husserl's self-awareness about using figures of speech well-preserved. Essay structure maintained."
+    },
+    {
+      "page_number": 196,
+      "classification": "BAD",
+      "confidence": 0.63,
+      "evidence": "Significant corruption affecting complex argumentation: 'mits' fragmented, 'ceptual' fragmented, 'unvollsfandigem' (unvollständigem - incomplete German), 'materien' (Materien correct), 'bedeu' (Bedeutung fragmented), 'auspragt' correct, 'conft' (confus?), 'func' fragmented, 'vollstandigem' (vollständigem). The page articulates crucial distinction between complete/incomplete expression and parallelism but multiple key terms corrupted. Technical German vocabulary fragmented beyond quick recovery.",
+      "footnote_artifacts": false,
+      "notes": "Critical phenomenology page on expression completeness. Compound German terms often split inappropriately (unvoll-sfandigem). Key concept of Deckung (overlapping) somewhat preserved. Philosophical argument demanding, now further obscured by OCR."
+    },
+    {
+      "page_number": 197,
+      "classification": "MARGINAL",
+      "confidence": 0.77,
+      "evidence": "Moderate errors: 'noncompletion' correct, 'restituting' correct, 'reflektieren' correct, 'derlying' (underlying), 'unequivo' (unequivocal), 'noncompleteness' correct, 'sich' correct, 'nonparallelism' correct. The philosophical argument about expression's essential incompleteness (Allgemeinheit/generality) is recoverable. Husserl's crucial move distinguishing factual from essential incompleteness is preserved.",
+      "footnote_artifacts": false,
+      "notes": "Dense phenomenological passage on essence of expression. Most technical terms intact (Allgemeinheit, generality, Reduplikation). Some English terms corrupted but German philosophical vocabulary well-handled."
+    },
+    {
+      "page_number": 198,
+      "classification": "GOOD",
+      "confidence": 0.86,
+      "evidence": "Relatively clean with minor errors: 'bedeutungssphare' correctly composed, 'esti' correct (Greek for 'is'), 'nounced' (announced), 'epist' fragmented, 'possibffity' (possibility), 'doxic' correct, 'morphe' correct, 'noema' correct. Technical vocabulary well-preserved. Philosophical transition to discussion of form and 'is' (esti) clearly presented. Greek philosophical terminology intact.",
+      "footnote_artifacts": false,
+      "notes": "Section on form's 'is' and its ellipsis. Greek philosophical terminology preserved (eidos, morphe, esti). Some minor English word breaks but overall readable. Transition to linguistic concerns clearly marked."
+    },
+    {
+      "page_number": 204,
+      "classification": "BAD",
+      "confidence": 0.50,
+      "evidence": "Severe corruption of critical publication metadata: 'zgnges' (Langages - journal title completely garbled). This is not a substantive page but a title/publication notice, yet even this minimal content is significantly corrupted. The journal name 'Langages' is essential bibliographic information rendered illegible.",
+      "footnote_artifacts": false,
+      "notes": "Title page for section 'The Supplement of Copula'. Only text is journal name which is severely corrupted to 'zgnges' (should be 'Langages'). This is bibliographic metadata essential for citation."
+    },
+    {
+      "page_number": 206,
+      "classification": "MARGINAL",
+      "confidence": 0.81,
+      "evidence": "Scattered OCR errors but meaning recoverable: 'guage' (language), 'tionally' fragmented, 'reelaborated' correct, 'reappropriates' correct, 'losophy' fragmented (philosophy), 'insig-' (insignificant), 'reappropriated' correct, 'tradi-' (traditional). Philosophical argument about language's constraints on philosophy clearly presented. All proper names correct (Nietzsche, Greek, Latin, Germanic, Indo-European). Key concepts intact.",
+      "footnote_artifacts": false,
+      "notes": "Opening of section on philosophy and language constraints. Discusses Nietzsche and linguistic determinism. Most philosophical terminology preserved despite surface errors. French loanwords handled correctly."
+    },
+    {
+      "page_number": 207,
+      "classification": "BAD",
+      "confidence": 0.64,
+      "evidence": "Heavy corruption throughout dense philosophical content: 'aphor' (aphorism?), 'rlich' (lich ending?), 'provi' fragmented, 'theoretische' correct, 'exteriority' correct, 'marietti' (Marietti - proper name), 'ubertragungen' (Übertragungen correct German), 'phantasie' correct but fragmented context. Page discusses Nietzsche on metaphor and language's illogical elements but critical passages garbled. Key Nietzschean concepts about arbitrary signs and metaphor compromised.",
+      "footnote_artifacts": false,
+      "notes": "Complex page on Nietzsche's critique of logic and language. German terms (Übertragungen, Phantasie) present but context corrupted. Nietzsche quotes difficult to parse due to OCR quality. Key argument about metaphor's foundational role obscured."
+    },
+    {
+      "page_number": 208,
+      "classification": "BAD",
+      "confidence": 0.68,
+      "evidence": "Significant corruption of philosophical and bibliographic content: 'langage' correct, 'sein' correct, 'benveniste' correct, 'ristote' (Aristotle), 'cinq' correct (French 'five'), 'vol' correct, 'theologie' correct, 'lim' fragmented, 'etudes' correct, 'ibid' correct. However, substantive philosophical argument about Benveniste's linguistic categories and Aristotle severely compromised by scattered errors. The page transitions to linguistic analysis of metaphysical categories but flow is interrupted.",
+      "footnote_artifacts": false,
+      "notes": "Transition section on Benveniste and Aristotle. French and English mixed with scholarly apparatus. While many terms correct (Benveniste, Aristotle concepts), overall readability hampered. Footnote apparatus intact but main text disrupted."
+    }
+  ],
+  "summary": {
+    "total_pages": 24,
+    "good": 3,
+    "marginal": 15,
+    "bad": 6,
+    "average_error_rate": "5.4%",
+    "notes": "Batch 05 shows consistent quality degradation in dense philosophical sections, particularly in Husserl's phenomenology (pages 186-197) and Nietzsche criticism (pages 207-208). German philosophical vocabulary is better preserved than English articulation. Proper names and French terminology generally intact. Most corrupted pages remain semantically recoverable for expert readers but would require OCR correction for general accessibility.",
+    "systematic_patterns": [
+      "Compound words frequently broken at syllable boundaries (e.g., 'vollstandigem' → 'unvollsfandigem')",
+      "German philosophical terms partially corrupted but recognizable (Ausdruck, Schicht, Bedeutung mostly preserved)",
+      "Footnote markers occasionally merged with adjacent words",
+      "High-density philosophical prose suffers more than narrative sections",
+      "French publication metadata sometimes garbled (Langages → zgnges)",
+      "Greek philosophical terms (physis, nomos, eidos, morphe) well-preserved",
+      "Author surnames sometimes corrupted (Derrida → Demda, but overall rarer)"
+    ]
+  }
+}

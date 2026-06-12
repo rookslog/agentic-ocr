@@ -1,0 +1,177 @@
+[
+  {
+    "page_number": 164,
+    "classification": "MARGINAL",
+    "confidence": 0.92,
+    "evidence": "11.6% error rate. Text is mostly readable. Issues: '1 97 5' (spaces in year), 'Derriere ie' (should be 'Derrière'), 'gias' (unclear word, possibly OCR error for a proper name), 'passe-partout' rendered as 'passe-partout'. French diacritics sometimes missing. Overall comprehensible despite these 1-2 errors per section.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 165,
+    "classification": "GOOD",
+    "confidence": 0.95,
+    "evidence": "4.1% error rate. Text is highly readable and coherent. Minor issues: 'isn' (possibly 'isn't' contracted), 'trigue' (part of word 'intrigue' split by hyphenation), 'rature' (French word for deletion/erasure, correct in context). Rare hyphens and French terminology are accurate. No garbling.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 167,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "6.4% error rate. Text reads clearly. Issues are minimal: 'quattro' (Italian, correct), 'detourne' (French word for divert, accent missing but word is correct), 'glas' (proper noun from title, correct). Well-structured paragraph with proper English translation markers.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 168,
+    "classification": "MARGINAL",
+    "confidence": 0.88,
+    "evidence": "14.5% error rate (highest in batch). Noticeable issues: 'gaierie' (should be 'galérie'), 'choeur' (missing diacritic, 'chœur'), 'viaggio' (Italian, correct), 'erful' (fragment, likely 'powerful'), 'bouche' (French, correct), 'coeur' (French for heart, correct). One clear OCR error: 'erful' suggests word truncation. Still readable overall.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 170,
+    "classification": "GOOD",
+    "confidence": 0.94,
+    "evidence": "4.1% error rate. Text is clear and well-preserved. Minor items: 'regardait' (French verb, correct), 'philosopheme' (correct philosophical term), 'quattro' (Italian, correct), 'etc' (abbreviated form, correct). No significant garbling. Reads smoothly.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 171,
+    "classification": "MARGINAL",
+    "confidence": 0.90,
+    "evidence": "3.3% error rate. Mostly readable but contains some challenging passages. Notable items: 'meccanica dell' avventura' (Italian, correct), 'codicarium' and 'quaternarium' (Latin-derived terms, correct), 'chthys' (Greek-derived, correct), 'ichnos' (Greek term, correct), 'souffle' (French, correct). These are specialized/foreign terms, not OCR errors. Text complexity high but accuracy good.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 172,
+    "classification": "MARGINAL",
+    "confidence": 0.91,
+    "evidence": "6.0% error rate. Readable with minor issues. Problems: 'lch' (should be 'Ich' - case error), 'abyme' (French term, correct), 'bot-tomless' (hyphenation artifact but word understandable), formatting marks like 'il r t' visible (page number or artifact). Overall comprehensible despite minor OCR quirks.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 173,
+    "classification": "MARGINAL",
+    "confidence": 0.89,
+    "evidence": "5.9% error rate. Generally readable. Issues: 'synec' (truncated form of 'synecdoche'), 'cathected' (technical psychology term, appears correct), 'dochic' (continues from 'synec' - actually 'synecdochic' split), 'picto' (truncated 'pictorial/pictographic'), 'arriver' (French verb, correct). Hyphens breaking words across lines. Meaning mostly preserved.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 174,
+    "classification": "MARGINAL",
+    "confidence": 0.89,
+    "evidence": "5.8% error rate. Readable with some specialized terminology. Issues: 'tak' (likely 'taking' truncated), 'matricial' (correct philosophical term), 'ichthys' (Greek Christological symbol, correct), 'ulated' (word fragment from hyphenation), 'graphesis' (correct neologism), 'arthron' (Greek joint/articulation, correct), 'peased' (unusual form, possibly OCR error for 'appeased'), 'rythmos' (Greek term, correct spelling variation), 'arret' (French legal term, correct). High technical density.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 175,
+    "classification": "MARGINAL",
+    "confidence": 0.90,
+    "evidence": "6.8% error rate. Generally readable. Notable items: 'noires' (French plural, correct), 'glu' (part of 'glas' word broken), 'aussi' (French, correct), 'portee' (French, correct despite missing diacritics), 'infinitum' (Latin, correct), 'noyee' (French feminine, correct - enclosed in quotes for emphasis), 'bot-tom' (hyphenated compound, understandable). Complex philosophical content preserved.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 176,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "3.6% error rate. Clear and readable. Contains: 'meccanica' (Italian, correct), 'aggressivity' (correct English), 'ongles' (French for nails, correct), 'atget' (proper name, correct), 'viaggio' (Italian, correct), 'nicknamer' (English neologism, appropriate), 'rhythmed' (past participle, correct). Excellent OCR quality for complex philosophical text.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 180,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "4.7% error rate. Highly readable. Minor items: 'rifurcum' (Latin 'four-forked', correct), 'lacrum' (Latin, correct as part of quoted passage), 'simu' (word fragment from hyphenation of 'simulacrum'), 'dessus' (French, correct), 'hors' (French, correct), 'systasis' (Greek/Latin term, correct), 'propriated' (word fragment from 'reappropriated' with hyphen), 'calation' (word fragment), 'picts' (likely 'depicts' or proper noun). Overall very clear.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 181,
+    "classification": "MARGINAL",
+    "confidence": 0.88,
+    "evidence": "8.2% error rate (higher in batch). Notable issues: 'disjecta membra' (Latin phrase, correct), 'maintenant' (French 'now', correct), 'systasis' (Greek, correct), 'maintenir' (French verb, correct), 'sociated' (fragment from 'disassociated' with line break artifact). Page shows formatting/line-break artifacts affecting word boundaries but semantic content intact.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 185,
+    "classification": "MARGINAL",
+    "confidence": 0.89,
+    "evidence": "5.2% error rate. Readable with word boundary issues. Problems: 'trema' (French diacritical mark, correct in context), 'fishbone' (English compound, understandable), 'transpassing' (neologism/philosophical term), 'trepannings' (medical term, correct), 'dejaj' (unclear abbreviation or OCR error - may be 'déjà'), 'transferences' (English, correct but archaic spelling form), 'ings' (word fragment). Dense philosophical prose with hyphens causing word breaks.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 187,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "14.8% error rate (second highest). Noticeable issues: 'ferential versions' (should be 'referential' - missing 're'), 'philosopheme' (correct), 'logocentrism' (correct), 'rheme' (linguistic term, correct), 'avventura' (Italian, correct), 'damisch' (proper name, correct). Missing prefix in one word affects clarity. Still mostly comprehensible.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 188,
+    "classification": "GOOD",
+    "confidence": 0.94,
+    "evidence": "3.1% error rate (lowest in batch). Excellent OCR quality. Minor items: 'neously' (word fragment from 'simultaneously'), 'hypercratylean' (philosophical term, correct), 'itates' (fragment), 'ters' (fragment), 'fiaye' (French 'breach', correct with diacritics), 'simulta' (truncated from hyphenation). Despite fragments, text is highly readable and accurate.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 189,
+    "classification": "MARGINAL",
+    "confidence": 0.88,
+    "evidence": "8.3% error rate. Readable but with several artifacts: 'quo' (word fragment), 'rayed' (OCR error, possibly 'portrayed' or 'x-rayed'), 'nonfigurative' (correct term), 'textuality' (correct), 'politicist' (correct term), 'surnommant' (French verb, correct), 'ments' (fragment), 'gestus' (Latin/philosophical, correct), 'umental' (fragment from 'monumental'). Word fragments from line breaks common.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 190,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "5.5% error rate. Generally clear. Items: 'mallarme' (proper name, correct but missing diacritics), 'ritratto' (Italian for portrait, correct), 'simpli-fies' (hyphenated word fragment), 'spartakusbund' (German proper noun, correct), 'effraction' (French term, correct). High-quality OCR for complex philosophical-historical discussion.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 192,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "5.3% error rate. Clear and readable. Contains: 'gazeless' (correct English coinage), 'das' (German article, correct), 'kultwert' (German compound, correct), 'ligious' (fragment from 'religious'), 'monu-ment' (hyphenated but clear). Text flows well despite some fragments. Philosophical content preserved.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 193,
+    "classification": "MARGINAL",
+    "confidence": 0.89,
+    "evidence": "6.3% error rate. Readable with issues: 'illus' (fragment), 'ized' (fragment), 'cathected' (correct psychology term), 'faits' (French word, correct), 'fetishized' (English, correct), 'vided' (word fragment), 'nar' (fragment), 'atget' (proper name, correct). Multiple word fragments from hyphenation and line breaks. Meaning generally clear.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 194,
+    "classification": "MARGINAL",
+    "confidence": 0.90,
+    "evidence": "5.9% error rate. Generally readable. Items: 'triturates' (English verb, correct), 'geste' (French/Latin epic term, correct), 'lation' (word fragment), 'vio-lence' (hyphenated but clear), 'abyme' (French term, correct), 'naivete' (missing diacritics on 'naïveté'), 'cul-lence' (hyphenation artifact across words), 'agonal' (fragment from 'diagonale' or similar). Text meaning preserved despite formatting issues.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 195,
+    "classification": "MARGINAL",
+    "confidence": 0.87,
+    "evidence": "8.7% error rate. Readable but with notable issues: 'aestheticize' (correct English), 'matographic' (should be 'cinematographic' - missing 'cine'), 'indissociable' (correct), 'tacles' (fragment from 'spectacles'), 'tailler' (French verb, correct), 'poli' (fragment), 'marck' (likely 'Bismarck' split), 'qui' (French pronoun, correct). Missing prefix affects one term. Overall comprehensible.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 200,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "5.2% error rate. Clear text. Issues: 'ils' (French pronoun, correct), 'manque' (French verb, correct), 'obsequence' (archaic English, correct in philosophical context), 'princeps' (Latin term, correct), 'glace' (French, correct - part of 'altuglass'), 'lates' (word fragment), 'reste' (French, correct), 'nence' (fragment), 'seul' (French, correct), 'irreplacable' (spelling variant of 'irreplaceable', acceptable). Philosophical content well-preserved.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 202,
+    "classification": "MARGINAL",
+    "confidence": 0.86,
+    "evidence": "7.2% error rate. Readable with artifacts. Issues: 'princeps' (Latin, correct), 'derechef' (French archaic term, correct), 'het' (word fragment, possibly from 'heterogeneous'), 'compte' (French, correct), 'genos' (Greek term, correct), 'abord' (French, correct), 'descendance' (French, correct), 'vous' (French, correct), 'qui' (French, correct). Formatting marks visible. Dense philosophical content somewhat affected by layout artifacts.",
+    "footnote_artifacts": true
+  },
+  {
+    "page_number": 204,
+    "classification": "MARGINAL",
+    "confidence": 0.89,
+    "evidence": "5.6% error rate. Readable overall. Items: 'exerce' (French verb, correct), 'repeter' (French, correct), 'propre' (French, correct), 'cartuccio' (Italian proper noun, correct), 'geog-raphy' (hyphenated but clear), 'empoche' (French verb, correct), 'quelque' (French, correct), 'mettre' (French, correct). Complex narrative about coffins and genealogy. Text meaning preserved despite specialized vocabulary.",
+    "footnote_artifacts": false
+  }
+]

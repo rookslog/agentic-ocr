@@ -1,0 +1,96 @@
+{
+  "batch_id": 18,
+  "document": "Heidegger_BeingAndTime",
+  "classification_date": "2025-12-21",
+  "classifications": [
+    {
+      "page_number": 586,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "corruptwnis should be 'corruptionis' (w→ti substitution)",
+        "IXtensa should be 'extensa' (IX→ex substitution)",
+        "sensatw should be 'sensatus' (w→us substitution)",
+        "sollicitudo misspelled - appears as shown",
+        "status intergritatis should be 'integritatis' (rg→gr transposition/missing i)",
+        "tatum should be 'tutum' (a→u substitution)",
+        "transcmdens should be 'transcendens' (m→en substitution)"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Latin index page with multiple OCR errors affecting word recognition. Despite errors, context and semantic meaning remain largely recoverable since this is a reference index with known Latin terms. Errors are mostly character substitutions/transpositions that don't completely obscure meaning."
+    },
+    {
+      "page_number": 587,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "Greek text is heavily corrupted with character encoding issues",
+        "yavtof, xxix, avbavw, aews, epl, atlv, lpea, mynv, vbos are all gibberish results of failed Unicode decoding",
+        "Special Greek characters not properly rendered (appearing as Unicode escapes)",
+        "Pattern shows systematic UTF-8/encoding failure affecting entire page",
+        "Would severely damage embeddings due to unrecognizable character sequences"
+      ],
+      "footnote_artifacts": [],
+      "notes": "This page contains a Greek expressions index with catastrophic OCR/encoding failure. The Greek Unicode characters have been corrupted during OCR, resulting in nonsensical character sequences. This is not OCR error in the traditional sense but rather encoding/character recognition failure that makes the text unusable for RAG."
+    },
+    {
+      "page_number": 588,
+      "classification": "BAD",
+      "confidence": "high",
+      "evidence": [
+        "Greek text similarly corrupted with encoding issues: patwv, lvw, oov, rfsvx, tfj, xpovos, ixn, vop, lveuba, ula",
+        "Unicode character rendering failures throughout",
+        "Mix of corrupted Greek letters and Latin characters creating gibberish",
+        "Sentences are fragmentary and mostly unrecognizable",
+        "Complete loss of semantic meaning"
+      ],
+      "footnote_artifacts": [],
+      "notes": "Continuation of Greek expressions index (588) with same systematic encoding failures as page 587. The OCR engine failed to properly recognize and encode Greek characters, producing nonsensical output that cannot be semantically parsed."
+    },
+    {
+      "page_number": 589,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "rlutorica should be 'Rhetorica' (l→h substitution, rlu→rhe)",
+        "baer appears correct (K. von Baer)",
+        "Most proper names are correctly recognized",
+        "Wikipedia-style index entries are legible despite some errors",
+        "Footnote references (n. vi, n. xiv, etc.) are mostly correct",
+        "errors='octoginta' (octoginta→octogintatribus compound), 'Acktrm1211' is unclear",
+        "confessiones and physica appear correct"
+      ],
+      "footnote_artifacts": [
+        "Entries like 'H. 245 n. iv', 'H. 139 n. v' are properly formatted footnote references",
+        "No evidence of merged footnote markers"
+      ],
+      "notes": "Index of proper names with reasonable quality. Most entries are readable. The 'Rhetorica' error and a few character substitutions are present but don't severely damage semantic meaning since proper names are supported by context (author attributions). Good for RAG since names and references are mostly correct."
+    },
+    {
+      "page_number": 590,
+      "classification": "MARGINAL",
+      "confidence": "high",
+      "evidence": [
+        "sag at top of page appears to be fragment/header artifact",
+        "Most proper names and references correctly recognized",
+        "Footnote references properly formatted (n. vi, n. xiv, n. xxiv, etc.)",
+        "Some minor errors: 'sophistes' should be 'Sophistes' (capitalization)",
+        "blaise appears correct (Pascal, Blaise)",
+        "misch, lask, rickert, jakob all correct",
+        "Some abbreviation variations but no semantic corruption"
+      ],
+      "footnote_artifacts": [
+        "Entries like 'H. 249 n. vi', 'H. 375' are clean footnote references",
+        "No merged marker artifacts detected"
+      ],
+      "notes": "Continuation of proper names index. Clean structure with proper formatting. Errors are minimal and mostly affect capitalization/variant spellings rather than meaning. Suitable for RAG embedding with high confidence in retrieval quality."
+    }
+  ],
+  "summary": {
+    "total_pages": 5,
+    "good_count": 0,
+    "marginal_count": 3,
+    "bad_count": 2,
+    "overall_assessment": "Pages 587-588 (Greek index) have catastrophic encoding failures making them unsuitable for RAG. Pages 586, 589-590 (Latin/proper names indexes) have minor character-level errors but remain semantically recoverable. The batch is primarily index pages with specialized formatting that constrains semantic variation - most errors don't significantly damage meaning in context."
+  }
+}

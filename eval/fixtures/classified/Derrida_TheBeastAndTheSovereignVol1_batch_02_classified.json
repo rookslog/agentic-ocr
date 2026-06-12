@@ -1,0 +1,239 @@
+{
+  "document": "Derrida_TheBeastAndTheSovereignVol1",
+  "batch_number": 2,
+  "total_batches": 10,
+  "classification_timestamp": "2025-12-21",
+  "classifications": [
+    {
+      "page_number": 45,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Moderate error rate (5-10%); 10 anomalies in sample; Substantial text (3120 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 7.4,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 46,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Moderate error rate (5-10%); 10 anomalies in sample; Non-English words detected: des; Substantial text (3151 chars)",
+      "footnote_artifacts": [
+        "indivisible41"
+      ],
+      "error_rate": 8.4,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 47,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": "Low error rate; 10 anomalies in sample; Non-English words detected: est, der; Substantial text (2697 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 3.3,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 48,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Moderate error rate (5-10%); 10 anomalies in sample; Non-English words detected: dans, das; Substantial text (2871 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 5.5,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 50,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Moderate error rate (5-10%); 10 anomalies in sample; Non-English words detected: est, faire, fait; Substantial text (2788 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 7.8,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 51,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": "Low error rate; 10 anomalies in sample; Non-English words detected: faire; Substantial text (2767 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 3.3,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 52,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Moderate error rate (5-10%); 10 anomalies in sample; Non-English words detected: faire; Substantial text (2994 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 6.1,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 54,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": "Low error rate; 10 anomalies in sample; Substantial text (2914 chars)",
+      "footnote_artifacts": [
+        "tech5"
+      ],
+      "error_rate": 4.1,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 56,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": "Low error rate; 10 anomalies in sample; Substantial text (3025 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 4.8,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 58,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": "Low error rate; 10 anomalies in sample; Substantial text (3161 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 3.0,
+      "bucket": "B (1-3%)"
+    },
+    {
+      "page_number": 59,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Moderate error rate (5-10%); 10 anomalies in sample; Substantial text (2957 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 5.0,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 60,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Moderate error rate (5-10%); 10 anomalies in sample; Substantial text (3008 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 6.3,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 63,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": "Low error rate; 10 anomalies in sample; Substantial text (3019 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 3.0,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 64,
+      "classification": "GOOD",
+      "confidence": 0.75,
+      "evidence": "High error rate (12.7%); 10 anomalies in sample; Non-English words detected: des; Substantial text (3198 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 12.7,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 65,
+      "classification": "GOOD",
+      "confidence": 0.75,
+      "evidence": "High error rate (10.9%); 10 anomalies in sample; Substantial text (3186 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 10.9,
+      "bucket": "E (10%+)",
+      "review_note": "Reclassified: foreign language/proper nouns incorrectly flagged"
+    },
+    {
+      "page_number": 67,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Moderate error rate (5-10%); 10 anomalies in sample; Substantial text (2922 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 6.6,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 72,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": "Low error rate; 10 anomalies in sample; Substantial text (2739 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 3.4,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 74,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": "Low error rate; 10 anomalies in sample; Substantial text (2981 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 3.6,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 77,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Moderate error rate (5-10%); 10 anomalies in sample; Substantial text (3013 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 7.7,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 78,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Moderate error rate (5-10%); 10 anomalies in sample; Non-English words detected: est, qui; Substantial text (2712 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 7.9,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 79,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Moderate error rate (5-10%); 6 anomalies in sample; Non-English words detected: qui",
+      "footnote_artifacts": [],
+      "error_rate": 8.0,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 80,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Moderate error rate (5-10%); 10 anomalies in sample; Substantial text (2007 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 7.4,
+      "bucket": "D (5-10%)"
+    },
+    {
+      "page_number": 81,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": "Low error rate; 10 anomalies in sample; Substantial text (2721 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 3.8,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 82,
+      "classification": "GOOD",
+      "confidence": 0.85,
+      "evidence": "Low error rate; 10 anomalies in sample; Substantial text (2828 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 3.2,
+      "bucket": "C (3-5%)"
+    },
+    {
+      "page_number": 83,
+      "classification": "MARGINAL",
+      "confidence": 0.8,
+      "evidence": "Moderate error rate (5-10%); 10 anomalies in sample; Non-English words detected: est, des; Substantial text (2920 chars)",
+      "footnote_artifacts": [],
+      "error_rate": 9.5,
+      "bucket": "D (5-10%)"
+    }
+  ]
+}

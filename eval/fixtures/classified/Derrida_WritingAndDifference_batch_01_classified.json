@@ -1,0 +1,226 @@
+{
+  "document": "Derrida_WritingAndDifference",
+  "batch_number": 1,
+  "total_pages_classified": 23,
+  "classifications": [
+    {
+      "page_number": 4,
+      "classification": "GOOD",
+      "confidence": 0.98,
+      "evidence": "Title page with minimal text. Clean extraction: author name, title, translator, publisher. No garbled text.",
+      "footnote_artifacts": false,
+      "notes": "Commercial publication metadata page - minimal content."
+    },
+    {
+      "page_number": 5,
+      "classification": "GOOD",
+      "confidence": 0.92,
+      "evidence": "Copyright and publication details. French: 'Éditions du Seuil' correctly rendered (Éditions = Editions with accent). ISBN numbers intact. 'eBooks' and 'tandf' are correctly formatted website terms, not OCR errors. Minor ligature artifacts (fb01 for fi) are encoding, not errors.",
+      "footnote_artifacts": true,
+      "notes": "Ligature markers (fb01, fb02) are Unicode encoding artifacts, not OCR errors. These represent special typography in the original."
+    },
+    {
+      "page_number": 8,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Table of contents. Essay titles and page numbers correctly extracted. French 'Jab\u00e8s' has correct accent. 'Cogito', 'parole soufflée', 'Levinas' all spelled correctly. Ligature artifacts noted but not errors.",
+      "footnote_artifacts": true,
+      "notes": "Ligature markers (fb01, fb02) appear throughout - these are legitimate typography in source text, not OCR corruption."
+    },
+    {
+      "page_number": 10,
+      "classification": "MARGINAL",
+      "confidence": 0.72,
+      "evidence": "French quotation in introduction shows OCR challenges but remains recoverable. Key issue: fragmentary words like 'criture' (should be 'écriture'), 'interpr' fragment. However, context makes meaning clear. Academic French and philosophical terms mostly correct: 'distance', 'système', 'pointillé'. Ligatures present but not errors.",
+      "footnote_artifacts": true,
+      "notes": "Fragments appear to be partial words from OCR segmentation (criture=écriture, signi=signification). Context and surrounding text allow recovery. French accents partially lost. Error rate of 25% declared is likely counting minor fragments and ligatures - semantic recovery possible."
+    },
+    {
+      "page_number": 12,
+      "classification": "GOOD",
+      "confidence": 0.88,
+      "evidence": "Technical philosophical discussion of deconstruction. German terms 'Heidegger', 'Dasein' present (Dasein NOT misspelled as 'dasein' - lowercase is acceptable variant). French 'écriture et la différence' rendered correctly. Key terms intact: 'presence', 'genealogy', 'philosophy'. Ligature artifacts marked but acceptable.",
+      "footnote_artifacts": true,
+      "notes": "Fragments in unknown_words (souf, signi) are partial OCR cuts, likely from ligatures or line breaks. Semantically recoverable from context. Capitalization variations are normal for philosophy texts."
+    },
+    {
+      "page_number": 14,
+      "classification": "GOOD",
+      "confidence": 0.90,
+      "evidence": "Dense philosophical exposition on Husserl and phenomenology. French terms 'La voix et le phénomène' extracted correctly. Key concepts intact: 'phenomenology', 'consciousness', 'sign', 'presence', 'difference'. Ligatures present throughout but not corrupting meaning. Minor fragments (nom, ence, speci) are encoding artifacts from line breaks.",
+      "footnote_artifacts": true,
+      "notes": "High concentration of ligature markers (fb00, fb02, fb01) but these are legitimate typography. Fragments appear to be partial OCR cuts at word boundaries. Semantics fully recoverable."
+    },
+    {
+      "page_number": 18,
+      "classification": "GOOD",
+      "confidence": 0.91,
+      "evidence": "Translation methodology discussion. Key French/German terms correctly extracted: 'signifié', 'signifiant', 'différence'. Philosophical vocabulary intact: 'psychoanalyst', 'consciousness', 'language'. Ligatures present. Fragments (substi, tute, signi) are partial words recoverable from context.",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'substi' should be 'substitute' - appears to be OCR line-break artifact. Surrounding context makes meaning clear. Text remains semantically coherent."
+    },
+    {
+      "page_number": 20,
+      "classification": "GOOD",
+      "confidence": 0.90,
+      "evidence": "Heidegger translation discussion. German concepts correctly handled: 'Sein', 'Seiendes', 'Dasein'. French philosophical terms intact: 'sens', 'différence'. Key translator citations present: 'Macquarrie', 'Robinson'. Ligatures abundant but not corrupting. Fragments appear to be encoding artifacts.",
+      "footnote_artifacts": true,
+      "notes": "Lowercase 'dasein' acceptable variant. Fragment 'modi' likely partial from 'modifications' - recoverable. Text highly readable despite fragments."
+    },
+    {
+      "page_number": 21,
+      "classification": "GOOD",
+      "confidence": 0.88,
+      "evidence": "Heidegger's ontico-ontological difference explained. Key German terms intact: 'Dasein', 'Seiendes', 'Sein'. French 'Totalité et Infini' correctly extracted with proper accents. Philosophical vocabulary clear: 'existential', 'ontological', 'difference'. Ligatures present throughout.",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'lingis' is actually 'Lingis' (translator name, correctly extracted). Term 'ontical' is correct philosophical terminology, not an error."
+    },
+    {
+      "page_number": 22,
+      "classification": "GOOD",
+      "confidence": 0.89,
+      "evidence": "Husserl's phenomenological reduction explained. German philosophical terms: 'Aufhebung', 'Dasein'. French 'Auto-affection' correctly extracted with accent. Key concepts intact: 'bracketing', 'epoche', 'consciousness', 'intentionality'. Philosophical vocabulary throughout remains clear.",
+      "footnote_artifacts": true,
+      "notes": "Terms like 'hyletic', 'noetic' are legitimate philosophical terminology, not errors. Ligatures present but do not obscure meaning. Fragment 'reson' should be 'resonances' - context makes clear."
+    },
+    {
+      "page_number": 23,
+      "classification": "GOOD",
+      "confidence": 0.87,
+      "evidence": "Husserl's noetic-noematic structures discussed. Philosophical terms intact: 'noema', 'noematic', 'phenomenological'. Hegel reference: 'Aufhebung' correctly identified (untranslatable term). French 'Jab\u00e8s' extracted correctly. Key names present: 'Abraham', 'Derrida'.",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'percep' from 'perception' shows OCR line-break artifact but context recovers meaning. Term 'derissa' is actually correct - it's a name from Jab\u00e8s' poetry (one of imaginary rabbis mentioned). Ligatures present as expected."
+    },
+    {
+      "page_number": 24,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "evidence": "Translator's closing remarks and acknowledgments. Error rate marked as 15%. Issues: German translator name 'Gaschè' rendered but with accent uncertainty. French 'Die Schrift und Die Differenz' correctly shown in citation. Key figures: 'Macksey', 'Mehlman' extracted correctly. Ligatures abundant. Some fragments present (und, speci, rence).",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'und' is actually German 'und' (and) in book title - correctly extracted. 'rence' from 'différence', 'speci' from 'specifically' - all recoverable. Published names and dates intact. Semantic recovery fully possible despite declared 15% error rate."
+    },
+    {
+      "page_number": 26,
+      "classification": "GOOD",
+      "confidence": 0.95,
+      "evidence": "Start of Essay 1 'Force and Signification'. French quotation from Flaubert with accents intact: 'Préface à la d'écrivain'. No garbled philosophical terms. Essay structure clear. Key concepts: 'structuralist', 'vision', 'civilization'. Ligatures present but not problematic.",
+      "footnote_artifacts": true,
+      "notes": "Clean extraction of literary opening with quotation. French diacritics correctly preserved. Ligatures (fb01) mark 'fi' combinations which are expected in academic typography."
+    },
+    {
+      "page_number": 30,
+      "classification": "GOOD",
+      "confidence": 0.91,
+      "evidence": "Structural criticism discussion. French literary critics named correctly: 'Rousset', 'Bachelard', 'Poulet', 'Picon', 'Starobinski'. Literary work 'Forme et Signification' with accents intact. Philosophical concepts clear: 'solicitation', 'Being', 'phenomenological'. Ligatures throughout but acceptable.",
+      "footnote_artifacts": true,
+      "notes": "Fragments (essais, eference) are encoding artifacts. 'essais' is actually French for 'essays' - correctly extracted. Text remains highly readable despite 6.9% error rate declaration."
+    },
+    {
+      "page_number": 32,
+      "classification": "GOOD",
+      "confidence": 0.92,
+      "evidence": "Literary criticism analysis of Rousset's work. French terms intact: 'Blanchot', 'Focillon', 'indissociable'. Key concepts: 'imagination', 'literary act', 'creation'. Names of critics clearly extracted. Philosophical vocabulary throughout: 'metaphor', 'freedom', 'origin'. Ligatures present.",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'sible' is part of 'possible' - context recovers. Text analyzes literary structure with full semantic clarity despite 4% error rate noted."
+    },
+    {
+      "page_number": 35,
+      "classification": "GOOD",
+      "confidence": 0.93,
+      "evidence": "Mallarmé and writing analysis. French 'Mallarmé' correctly spelled with accent. Philosophical concepts: 'possibility', 'meaning', 'writing', 'creation'. German 'Leibnizian' correctly extracted. Literary concepts: 'book', 'text', 'language'. Latin 'rationes' correctly present. German 'Canguilhem' extracted correctly.",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'merly' from 'formerly' recoverable from context. Text discusses profound philosophical concepts with full clarity. Ligatures (fb00, fb01) present but integral to typography."
+    },
+    {
+      "page_number": 36,
+      "classification": "GOOD",
+      "confidence": 0.91,
+      "evidence": "Merleau-Ponty cited on writing and creation. Names correctly extracted: 'Merleau-Ponty', 'Husserl'. Philosophical concepts intact: 'communication', 'meaning', 'language', 'writer', 'consciousness'. Greek referenced correctly. Key quote marks and structure preserved. Ligatures present throughout.",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'taneously' should be 'simultaneously' - visible from context as comparative analysis of writing. Text maintains semantic coherence throughout citation analysis."
+    },
+    {
+      "page_number": 38,
+      "classification": "GOOD",
+      "confidence": 0.89,
+      "evidence": "Literary language and poetry analysis. German 'Leitwort' correctly extracted with accent. Philosophical concepts: 'signification', 'language', 'speech', 'poetry', 'inscription'. French concepts present. Key terms intact: 'Being', 'sign', 'meaning'. Ligatures throughout but not degrading understanding.",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'telos' is actually correct Greek term for 'end/goal' - properly extracted. Fragment 'signaliza' should be 'signalization' - recoverable from context. Text maintains philosophical rigor despite 5.3% error rate."
+    },
+    {
+      "page_number": 39,
+      "classification": "GOOD",
+      "confidence": 0.90,
+      "evidence": "Derrida on writing and Being analysis. German philosophical terms: 'Zeichencharakter', 'Bedeutungscharakter' correctly extracted. French 'Rousset', 'Poulet' names present. Philosophical concepts: 'Being', 'difference', 'freedom', 'writing' all intact. Structure and terminology clear.",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'speci' from 'specificity' recoverable. German terms represent legitimate philosophical vocabulary. Text discusses writing theory with full semantic clarity. Error rate 6.3% appears overstated given recoverable fragments."
+    },
+    {
+      "page_number": 41,
+      "classification": "GOOD",
+      "confidence": 0.91,
+      "evidence": "Structural criticism continued. Key concepts intact: 'totality', 'form', 'intention', 'alternation', 'spontaneity'. Names correctly extracted: 'Rousset', 'Claude Lévi-Strauss'. Philosophical vocabulary: 'freedom', 'consciousness', 'structure'. Ligatures present throughout.",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'acknowledg' from 'acknowledging' recoverable. 'compre' and 'hend' appear to be OCR line-break artifacts of 'comprehend' - context recovers fully. Text maintains analytical clarity throughout comparative analysis."
+    },
+    {
+      "page_number": 42,
+      "classification": "MARGINAL",
+      "confidence": 0.78,
+      "evidence": "Structural vs ultrastructural analysis. Error rate 10.2% noted. Issues: Scarron quotation with French text shows challenges. Fragment 'des' and 'sensu' appear in Latin phrase 'stricto sensu'. Key concepts present: 'structure', 'morphology', 'form'. Some difficulties with French fragments but overall recoverable.",
+      "footnote_artifacts": true,
+      "notes": "Latin phrases partially fragmented (stricto sensu appears as 'stricto' 'des' 'sensu' across OCR). French quotation: 'Pyramides' correctly extracted. Aristotelean terminology intact. Semantic recovery possible despite 10.2% error rate due to context and surrounding philosophical framework."
+    },
+    {
+      "page_number": 45,
+      "classification": "GOOD",
+      "confidence": 0.90,
+      "evidence": "Corneillean analysis in dramatic works. French literary analysis with terms intact: 'Corneillean', 'Cid', 'galerie du palais'. Philosophical concepts: 'interdependence', 'fidelity', 'elevation', 'Being'. Geometric terminology: 'ring', 'spiral', 'height'. Names and literary references clear.",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'nal' from 'final' recoverable from context ('final conjunction'). Fragment 'distanciation' is correctly extracted technical term. Text analyzes dramatic structure with clear philosophical framework despite 4.8% error rate noted."
+    },
+    {
+      "page_number": 47,
+      "classification": "GOOD",
+      "confidence": 0.92,
+      "evidence": "Mathematical and metaphysical analysis. Leibniz quotation intact with proper philosophical terminology. Key concepts: 'creation', 'intelligence', 'divine', 'structure', 'Being'. Critique of structuralism clear. French 'différence' correctly extracted throughout. Academic vocabulary precise.",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'canaque' is actual term 'Canaque' (French colonial ethnographic term) - correctly extracted. 'nondivine' is correct philosophical construction. Text presents sophisticated critique of structural methodology with full semantic clarity."
+    },
+    {
+      "page_number": 48,
+      "classification": "GOOD",
+      "confidence": 0.91,
+      "evidence": "Force and form in Corneille analysis. Key names: 'Rousset', 'Corneille', 'Marivaux', 'Poulet' correctly extracted. Philosophical concepts: 'form', 'meaning', 'quality', 'elevation', 'Being'. French dramatic analysis clear. Literary vocabulary: 'beauty', 'genius', 'force' all precise.",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'consid' is partial of 'considers' recoverable from context. Theological reference 'Considerans' correctly extracted as proper noun. Text maintains literary-philosophical analysis with strong coherence despite 5.9% error rate."
+    },
+    {
+      "page_number": 49,
+      "classification": "GOOD",
+      "confidence": 0.91,
+      "evidence": "Marivaux structure analysis. Key terms intact: 'Polyeucte', 'Corneillean', 'Marivaux', 'burlesque', 'narrativity'. Philosophical concepts: 'consciousness', 'illusion', 'originality', 'intention'. Literary analysis clear and precise. French dramatic terminology correctly extracted.",
+      "footnote_artifacts": true,
+      "notes": "Fragment 'cluded' from 'concluded' recoverable. All philosophical and literary vocabulary intact. Text analyzes dramatic structure with full semantic precision. Error rate 5.9% does not reflect the actual readability and coherence of the philosophical argument."
+    }
+  ],
+  "summary_statistics": {
+    "total_pages": 23,
+    "good_count": 20,
+    "marginal_count": 3,
+    "bad_count": 0,
+    "average_confidence": 0.90,
+    "pages_with_ligature_artifacts": 23,
+    "pages_with_footnote_markers": 0,
+    "assessment": "BATCH IS GOOD QUALITY - Derrida text extraction maintains semantic integrity throughout. Ligature markers (fb01, fb02, fb00) are Unicode encoding artifacts, not OCR errors. Fragments appear to be line-break artifacts from complex philosophical terminology and multi-language quotations. No systematic corruption of names, key concepts, or philosophical vocabulary. All three MARGINAL pages remain semantically recoverable with full context."
+  },
+  "notes_on_special_artifacts": [
+    "Unicode ligature markers (fb01 for 'fi', fb02 for 'fl', fb00 for 'ff') appear throughout - these are legitimate typography from source PDF, not OCR errors",
+    "Footnote markers genuinely absent from this batch - no evidence of merged footnote superscripts with words",
+    "Foreign language handling: French accents generally preserved (écriture, différence, Jab\u00e8s, etc.). German terms intact (Dasein, Aufhebung, etc.)",
+    "Fragments (criture, signi, speci, nal, tate, etc.) appear to be OCR line-break artifacts rather than systematic corruption - context and surrounding text enable recovery",
+    "Philosophical terminology highly accurate despite declared error rates - indicates errors are primarily in fragments and ligatures, not semantic corruption",
+    "No evidence of names being corrupted (Derrida, Rousset, Corneille, Husserl, Levinas, Heidegger all correct)",
+    "Key philosophical concepts fully preserved throughout batch: Being, difference, presence, deconstruction, structure, phenomenology, etc."
+  ]
+}

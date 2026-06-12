@@ -1,0 +1,252 @@
+[
+  {
+    "page_number": 511,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": [
+      "Medium-high error rate: 25.3%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 25.3
+  },
+  {
+    "page_number": 512,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": [
+      "Medium-high error rate: 25.2%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 25.2
+  },
+  {
+    "page_number": 513,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "High error rate: 30.3%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 30.3
+  },
+  {
+    "page_number": 514,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": [
+      "Medium-high error rate: 29.8%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 29.8
+  },
+  {
+    "page_number": 515,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Moderate error rate: 24.4%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 24.4
+  },
+  {
+    "page_number": 516,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "High error rate: 34.1%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 34.1
+  },
+  {
+    "page_number": 517,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Moderate error rate: 21.4%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 21.4
+  },
+  {
+    "page_number": 518,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": [
+      "Medium-high error rate: 28.3%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 28.3
+  },
+  {
+    "page_number": 519,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": [
+      "Medium-high error rate: 26.7%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 26.7
+  },
+  {
+    "page_number": 520,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "High error rate: 32.1%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 32.1
+  },
+  {
+    "page_number": 521,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": [
+      "Medium-high error rate: 29.7%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 29.7
+  },
+  {
+    "page_number": 522,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "High error rate: 30.4%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 30.4
+  },
+  {
+    "page_number": 523,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Moderate error rate: 24.7%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 24.7
+  },
+  {
+    "page_number": 524,
+    "classification": "MARGINAL",
+    "confidence": "high",
+    "evidence": [
+      "Medium-high error rate: 26.7%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 26.7
+  },
+  {
+    "page_number": 525,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "High error rate: 35.6%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 35.6
+  },
+  {
+    "page_number": 526,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "High error rate: 35.6%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 35.6
+  },
+  {
+    "page_number": 527,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "High error rate: 35.8%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 35.8
+  },
+  {
+    "page_number": 528,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Moderate error rate: 19.7%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 19.7
+  },
+  {
+    "page_number": 529,
+    "classification": "MARGINAL",
+    "confidence": "medium",
+    "evidence": [
+      "Moderate error rate: 16.5%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 16.5
+  },
+  {
+    "page_number": 530,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "High error rate: 38.1%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 38.1
+  },
+  {
+    "page_number": 531,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "High error rate: 40.1%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 40.1
+  },
+  {
+    "page_number": 532,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "High error rate: 39.4%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 39.4
+  },
+  {
+    "page_number": 533,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "High error rate: 35.5%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 35.5
+  },
+  {
+    "page_number": 534,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "High error rate: 41.4%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 41.4
+  },
+  {
+    "page_number": 535,
+    "classification": "BAD",
+    "confidence": "high",
+    "evidence": [
+      "High error rate: 37.2%"
+    ],
+    "footnote_artifacts": [],
+    "error_rate": 37.2
+  }
+]

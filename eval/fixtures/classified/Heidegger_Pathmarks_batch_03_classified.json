@@ -1,0 +1,351 @@
+{
+  "document": "Heidegger_Pathmarks",
+  "batch_number": 3,
+  "total_batches": 9,
+  "pages": [
+    {
+      "page_number": 101,
+      "classification": "MARGINAL",
+      "confidence": 0.85,
+      "evidence": "Multiple OCR errors: 'conceitb' (conceit), 'originart' (original), 'ctrtitruio' (criterium?), 'cogiro' (cogito). However, text is generally readable and meaning is recoverable. Footnote markers merged (e.g., '[6]' mid-sentence) are expected formatting artifacts, not errors.",
+      "footnote_artifacts": true,
+      "error_count": 4,
+      "key_issues": [
+        "conceitb → conceit",
+        "originart → original",
+        "ctrtitruio → (likely corrupted term, context suggests philosophical reference)",
+        "cogiro → cogito"
+      ]
+    },
+    {
+      "page_number": 102,
+      "classification": "GOOD",
+      "confidence": 0.92,
+      "evidence": "Text is highly readable with only minor scanning artifacts. Foreign terms correctly rendered (Dasein, Sichbefinden, Sein). The error rate of 1.7% is minimal. Sentence structure preserved. Meaning fully recoverable throughout.",
+      "footnote_artifacts": true,
+      "error_count": 1,
+      "key_issues": [
+        "vhat → what (likely spacing issue, not semantic corruption)"
+      ]
+    },
+    {
+      "page_number": 104,
+      "classification": "MARGINAL",
+      "confidence": 0.80,
+      "evidence": "Multiple OCR errors present but text remains semantically recoverable: 'vith' (with), 'uncanninesse' (uncanniness), 'announcedd' (announced), 'hich' (which), 'iat' (that?), 'anunement' (attunement). Philosophical content and argument flow preserved despite 3.5% error rate.",
+      "footnote_artifacts": true,
+      "error_count": 6,
+      "key_issues": [
+        "vith → with",
+        "uncanninesse → uncanniness",
+        "announcedd → announced",
+        "hich → which",
+        "anunement → attunement"
+      ]
+    },
+    {
+      "page_number": 106,
+      "classification": "MARGINAL",
+      "confidence": 0.78,
+      "evidence": "Error rate 5.8%. Errors include: 'transcendmce' (transcendence), 'selthood' (selfhood), 'withiwt' (without), 'originary' (correct), 'eid' (unclear). Despite these, meaning is recoverable. Key philosophical terms mostly intact (Dasein, nihilation). German philosophical vocabulary preserved.",
+      "footnote_artifacts": true,
+      "error_count": 6,
+      "key_issues": [
+        "transcendmce → transcendence",
+        "selthood → selfhood",
+        "withiwt → without",
+        "eid → (unclear corruption)"
+      ]
+    },
+    {
+      "page_number": 107,
+      "classification": "MARGINAL",
+      "confidence": 0.82,
+      "evidence": "Error rate 4.1%. Errors scattered but not clustering: 'incessandy' (incessantly), 'fesmess' (restlessness?), 'nihilating' (correct). Meaning remains accessible. Philosophical argumentation about negation and nihilation follows coherently despite OCR noise.",
+      "footnote_artifacts": true,
+      "error_count": 3,
+      "key_issues": [
+        "incessandy → incessantly",
+        "fesmess → (unclear - possibly 'restlessness' or similar)"
+      ]
+    },
+    {
+      "page_number": 108,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "evidence": "Error rate 5.0%. Notable errors: 'busde' (business), 'slighdy' (slightly), 'gende' (gentleness), 'abyssally' (correct). Text discusses anxiety and Dasein with mostly recoverable meaning, though some passages require careful reading to reconstruct intended sense.",
+      "footnote_artifacts": true,
+      "error_count": 5,
+      "key_issues": [
+        "busde → business",
+        "slighdy → slightly",
+        "gende → gentleness"
+      ]
+    },
+    {
+      "page_number": 109,
+      "classification": "MARGINAL",
+      "confidence": 0.80,
+      "evidence": "Error rate 3.8%. Errors include: 'nihilo' (nihil), 'stmmtum' (summ? - Latin), 'werke' (Werke - German for works), 'increatum' (correct Latin). Some Latin and German terms show OCR confusion, but philosophical content about being and metaphysics remains intelligible.",
+      "footnote_artifacts": true,
+      "error_count": 4,
+      "key_issues": [
+        "stmmtum → (Latin corruption - likely 'summum')",
+        "werke → Werke (correct German, OCR capitalization issue)"
+      ]
+    },
+    {
+      "page_number": 111,
+      "classification": "MARGINAL",
+      "confidence": 0.77,
+      "evidence": "Error rate 4.0%. Errors: 'cfl' (unclear artifact), 'injrmg' (intrinsic?), 'rgwurrlrrn' (textual corruption), 'lavol' (unclear). Critical section contains Greek text (Plato citation) which is reasonably preserved. Despite OCR noise, the main philosophical argument about metaphysics as inquiry is followable.",
+      "footnote_artifacts": true,
+      "error_count": 5,
+      "key_issues": [
+        "cfl → (unclear notation artifact)",
+        "injrmg → (likely 'intrinsic')",
+        "rgwurrlrrn → (editorial footnote corruption)"
+      ]
+    },
+    {
+      "page_number": 112,
+      "classification": "BAD",
+      "confidence": 0.70,
+      "evidence": "Error rate 8.3%. Multiple substantial corruptions: 'bzff' (pp. presumably), 'wonhy' (worthy), 'principk' (principle), 'wil' (will), 'mcneill' (McNeill), 'rrason' (reason). Translator attribution and critical editorial notes are corrupted. While the preface body is partially readable, authorial attributions and citations are compromised.",
+      "footnote_artifacts": true,
+      "error_count": 6,
+      "key_issues": [
+        "bzff → pp. (page numbers)",
+        "wonhy → worthy",
+        "principk → principle",
+        "wil → will",
+        "rrason → reason"
+      ]
+    },
+    {
+      "page_number": 113,
+      "classification": "BAD",
+      "confidence": 0.55,
+      "evidence": "Error rate 19.1% - SEVERE. Greek text heavily corrupted: 'ltp', 'altatjal', 'xolvov', 'opflw', 'twv', 'vov', 'xmv'. Latin/Greek philosophical citations are largely garbled. While English translation portions maintain some coherence, the extensive Aristotle quotation is rendered nearly unintelligible. Key philosophical content (Greek source material) is compromised.",
+      "footnote_artifacts": false,
+      "error_count": 7,
+      "key_issues": [
+        "Greek text heavily garbled throughout",
+        "altatjal → (unclear)",
+        "xolvov → (Greek corruption)",
+        "Aristotle citation critically compromised"
+      ]
+    },
+    {
+      "page_number": 114,
+      "classification": "MARGINAL",
+      "confidence": 0.80,
+      "evidence": "Error rate 6.6%. Errors include: 'wtth' (with), 'nonessencr' (nonessence), 'fomfold' (fourfold), 'stipu' (stipulated), 'esence' (essence), 'vom' (unclear). Despite scattered errors, the discussion of ground, Leibniz, and metaphysical principles remains largely coherent and readable.",
+      "footnote_artifacts": true,
+      "error_count": 6,
+      "key_issues": [
+        "wtth → with",
+        "nonessencr → nonessence",
+        "fomfold → fourfold",
+        "esence → essence"
+      ]
+    },
+    {
+      "page_number": 116,
+      "classification": "BAD",
+      "confidence": 0.60,
+      "evidence": "Error rate 27.9% - CRITICAL. Extensive Latin philosophical quotations are severely corrupted: 'identicis', 'analysin', 'veritas', 'aristoteles', 'denominatione', 'ratione', 'suam', 'conringentium', 'multa', 'implicata'. These Latin passages contain key philosophical arguments from Leibniz but are largely garbled. English translation portions better preserved but source material (Leibniz quotations) compromised.",
+      "footnote_artifacts": false,
+      "error_count": 10,
+      "key_issues": [
+        "identicis → (Latin corruption)",
+        "analysin → (Latin corruption)",
+        "denominatione → (Latin corruption)",
+        "Leibniz Latin quotations heavily garbled",
+        "Loss of key philosophical source text"
+      ]
+    },
+    {
+      "page_number": 117,
+      "classification": "MARGINAL",
+      "confidence": 0.82,
+      "evidence": "Error rate 5.3%. Errors: 'vber' (über), 'inesse' (correct Latin), 'einstimmung' (Einstimmigkeit), 'vhat' (what), 'connexio' (correct Latin), 'acterization' (characterization), 'pri' (priori). The discussion of Leibniz's account of truth and identity is mostly readable despite scattered OCR noise.",
+      "footnote_artifacts": true,
+      "error_count": 4,
+      "key_issues": [
+        "vber → über",
+        "vhat → what",
+        "acterization → characterization"
+      ]
+    },
+    {
+      "page_number": 121,
+      "classification": "MARGINAL",
+      "confidence": 0.79,
+      "evidence": "Error rate 6.7%. Errors include: 'scmdmce' (accordance), 'jscendence' (transcendence), 'tro' (transcend?), 'subjectum' (correct Latin), 'cussion' (discussion). The ontological analysis of Dasein and transcendence is followable despite OCR issues. German philosophical terminology preserved.",
+      "footnote_artifacts": true,
+      "error_count": 5,
+      "key_issues": [
+        "scmdmce → accordance",
+        "jscendence → transcendence",
+        "cussion → (likely 'discussion')"
+      ]
+    },
+    {
+      "page_number": 123,
+      "classification": "MARGINAL",
+      "confidence": 0.81,
+      "evidence": "Error rate 5.8%. Errors: 'fimdamental' (fundamental), 'themselt' (themselves), 'comtituti' (constitution), 'selthood' (selfhood), 'pene' (penetrating), 'nence' (ence artifact), 'tjsl' (the?), 'ture' (nature?). Discussion of transcendence, subjectivity, and Dasein remains substantially readable.",
+      "footnote_artifacts": true,
+      "error_count": 8,
+      "key_issues": [
+        "fimdamental → fundamental",
+        "themselt → themselves",
+        "comtituti → constitution",
+        "selthood → selfhood"
+      ]
+    },
+    {
+      "page_number": 124,
+      "classification": "MARGINAL",
+      "confidence": 0.80,
+      "evidence": "Error rate 5.7%. Errors: 'cept' (concept), 'tation' (tation artifact), 'transcen' (transcend), 'ings' (beings?), 'wor' (world?), 'nontranscendent' (correct), 'experi' (experience), 'interpreta' (interpretation). The analysis of being-in-the-world and world-constitution is semantically recoverable despite OCR noise.",
+      "footnote_artifacts": true,
+      "error_count": 6,
+      "key_issues": [
+        "transcen → transcend",
+        "wor → world",
+        "experi → experience",
+        "interpreta → interpretation"
+      ]
+    },
+    {
+      "page_number": 125,
+      "classification": "GOOD",
+      "confidence": 0.88,
+      "evidence": "Error rate 3.2% - LOW. Text is highly readable. Foreign terms and philosophical vocabulary preserved (Dasein, factical, ownmost, factically). Scattered minor errors ('dasc' for 'das', 'signif' for 'signif-'), but meaning and structure fully recoverable. Discussion of being-in-the-world is coherent.",
+      "footnote_artifacts": true,
+      "error_count": 2,
+      "key_issues": [
+        "dasc → das (minor)",
+        "signif → (likely hyphenation artifact)"
+      ]
+    },
+    {
+      "page_number": 127,
+      "classification": "MARGINAL",
+      "confidence": 0.75,
+      "evidence": "Error rate 10.2%. Significant corruption of Greek text: 'trfjoc', 'xotrpoc', 'flolj', 'xatrwv', 'koofloc', 'xtwv'. Heraclitus and Platonic citations are garbled. However, the English discussion of world-concept and human Dasein is mostly intelligible. Key weakness is loss of Greek source material.",
+      "footnote_artifacts": false,
+      "error_count": 8,
+      "key_issues": [
+        "Greek text significantly corrupted",
+        "trfjoc → (kosmos corruption)",
+        "Heraclitus citation garbled",
+        "derstanding → understanding (minor)"
+      ]
+    },
+    {
+      "page_number": 128,
+      "classification": "BAD",
+      "confidence": 0.65,
+      "evidence": "Error rate 22.4% - HIGH. Extensive Latin quotations from Augustine are corrupted: 'lljtolj', 'carna', 'testimonium', 'habitent', 'foaus', 'confitentur', 'mund', 'lterum'. Critical theological-philosophical passages are severely garbled. While framing English text is partially recoverable, the source material (Augustine's Latin) is largely compromised.",
+      "footnote_artifacts": false,
+      "error_count": 8,
+      "key_issues": [
+        "Latin quotations from Augustine heavily corrupted",
+        "carna → carnal",
+        "testimonium → testimony",
+        "foaus → (factus corruption)",
+        "Loss of key patristic source material"
+      ]
+    },
+    {
+      "page_number": 129,
+      "classification": "MARGINAL",
+      "confidence": 0.78,
+      "evidence": "Error rate 10.7%. Errors: 'coclum' (coelum), 'vithout' (without), 'qui' (correct Latin), 'nomine' (correct Latin), 'spiritualis' (correct), 'mundo' (correct). Augustine quotation continues with mixed OCR quality. English exegetical commentary is mostly readable despite scattered errors.",
+      "footnote_artifacts": true,
+      "error_count": 5,
+      "key_issues": [
+        "coclum → coelum",
+        "vithout → without",
+        "Continuation of Augustine text quality issues"
+      ]
+    },
+    {
+      "page_number": 130,
+      "classification": "MARGINAL",
+      "confidence": 0.77,
+      "evidence": "Error rate 12.3%. Errors: 'prehensive' (comprehensive), 'partes' (correct Latin), 'vithin' (within), 'fonna' (forma), 'charac' (character). Discussion of Scholastic metaphysics and Crusius/Baumgarten continues. Despite OCR noise, the philosophical exposition remains followable.",
+      "footnote_artifacts": true,
+      "error_count": 5,
+      "key_issues": [
+        "prehensive → comprehensive",
+        "vithin → within",
+        "fonna → forma"
+      ]
+    },
+    {
+      "page_number": 131,
+      "classification": "MARGINAL",
+      "confidence": 0.79,
+      "evidence": "Error rate 11.9%. Errors: 'conceptus' (correct Latin), 'chorocter' (character), 'enuntiatur' (correct Latin), 'sicuti' (correct Latin), 'definonie' (definitione), 'totolitils' (totalitas), 'prae' (correct Latin). Kant's analysis of world-concept is substantially preserved despite OCR corruption. Latin terminology remains partially recoverable.",
+      "footnote_artifacts": true,
+      "error_count": 4,
+      "key_issues": [
+        "chorocter → character",
+        "totolitils → totalitas"
+      ]
+    },
+    {
+      "page_number": 132,
+      "classification": "GOOD",
+      "confidence": 0.90,
+      "evidence": "Error rate 2.9% - LOW. Text is highly readable. Minor errors: 'essary' (necessary), 'specinlis' (specialis), 'contin' (contingent?), 'tmity' (unity). Discussion of Kant's synthetic principles and transcendental ideas is clearly intelligible. Philosophical content fully recoverable.",
+      "footnote_artifacts": true,
+      "error_count": 4,
+      "key_issues": [
+        "essary → necessary",
+        "specinlis → specialis",
+        "contin → (likely artifact)",
+        "tmity → unity"
+      ]
+    },
+    {
+      "page_number": 133,
+      "classification": "MARGINAL",
+      "confidence": 0.80,
+      "evidence": "Error rate 6.0%. Errors: 'weltbegri' (Weltbegriff), 'lfel' (unclear), 'matically' (mathematically), 'lfl' (artifact), 'mathe' (mathematics?), 'mundtis' (mundus). Kant's elaboration of world-concept and transcendental idealism is mostly readable despite scattered OCR noise.",
+      "footnote_artifacts": true,
+      "error_count": 5,
+      "key_issues": [
+        "weltbegri → Weltbegriff",
+        "matically → mathematically",
+        "mundtis → mundus"
+      ]
+    },
+    {
+      "page_number": 138,
+      "classification": "MARGINAL",
+      "confidence": 0.81,
+      "evidence": "Error rate 5.7%. Errors: 'wuifl' (Überwurf?), 'temporalized' (correct), 'ubn' (Über), 'bildend' (correct German), 'occasi' (occasion), 'mporalitiitl' (Temporalität), 'rragj' (artifact), 'beyng' (being/Seyn). Final page discusses transcendence, world-formation, and temporal structure. Content is substantially recoverable.",
+      "footnote_artifacts": true,
+      "error_count": 6,
+      "key_issues": [
+        "wuifl → (Überwurf corruption)",
+        "ubn → Über",
+        "mporalitiitl → Temporalität",
+        "beyng → Seyn/Being"
+      ]
+    }
+  ],
+  "summary": {
+    "total_pages": 24,
+    "good_count": 4,
+    "marginal_count": 18,
+    "bad_count": 2,
+    "average_error_rate": 7.8,
+    "notes": "This batch shows mixed OCR quality. Pages with primarily English philosophical exposition are generally readable (GOOD/MARGINAL). Pages with significant Greek and Latin quotations (pp. 113, 116, 128) show severe degradation in source language material (BAD classification), though English framing remains partially recoverable. Pages with German philosophical terminology maintain reasonable OCR fidelity. The 'unknown_words_sample' in source data were helpful but many are false positives—recognized philosophical/foreign terms marked as errors. Footnote markers merged with adjacent words (e.g., 'word23') are formatting artifacts, not errors per criteria."
+  }
+}

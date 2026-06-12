@@ -1,0 +1,433 @@
+{
+  "batch_id": 16,
+  "document": "Heidegger_BeingAndTime",
+  "classifications": [
+    {
+      "page_number": 536,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "distantiality",
+        "ekstase",
+        "etc",
+        "trennen",
+        "endasten",
+        "fdistance",
+        "fdue",
+        "besprechen"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 40.5
+    },
+    {
+      "page_number": 537,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "seiendes",
+        "esentiell",
+        "teudaemonism",
+        "jtn",
+        "tesence",
+        "tentangle",
+        "zeug",
+        "begegnen"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 45.5
+    },
+    {
+      "page_number": 538,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "reichweite",
+        "jtn",
+        "heraus",
+        "ausdenhnung",
+        "etc",
+        "tsich",
+        "erstrecken",
+        "sofern"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 41.0
+    },
+    {
+      "page_number": 539,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "schicksal",
+        "faktisch",
+        "verhalt",
+        "fiihlen",
+        "erfiillen",
+        "verfalschen",
+        "tatsachenwisenschaft",
+        "ziel"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 34.9
+    },
+    {
+      "page_number": 540,
+      "classification": "GOOD",
+      "confidence": "medium",
+      "evidence": [
+        "sofort",
+        "wozu",
+        "noll",
+        "deformali",
+        "nachsicht",
+        "freigeben",
+        "formalisieren",
+        "adj"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 22.3
+    },
+    {
+      "page_number": 541,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "erfiillen",
+        "dutzendware",
+        "tgenesis",
+        "viii",
+        "greifen",
+        "thanker",
+        "weren",
+        "schuld"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 38.1
+    },
+    {
+      "page_number": 542,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "tgeschichtlich",
+        "tbave",
+        "thaving",
+        "schuld",
+        "thave",
+        "anwesend",
+        "jtn",
+        "rif"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 34.5
+    },
+    {
+      "page_number": 543,
+      "classification": "GOOD",
+      "confidence": "medium",
+      "evidence": [
+        "weltgeschichte",
+        "halten",
+        "ofliterature",
+        "thistorize",
+        "menschending",
+        "ansichhalten",
+        "horizonal",
+        "festhalten"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 24.4
+    },
+    {
+      "page_number": 544,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "lchding",
+        "fidealism",
+        "identisch",
+        "humour",
+        "einleuchten",
+        "bevorstehen",
+        "zunachst",
+        "fidle"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 27.9
+    },
+    {
+      "page_number": 545,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "xiv",
+        "undiferentiated",
+        "concernful",
+        "entnehmen",
+        "unend",
+        "tindividualize",
+        "anzeigen",
+        "zeigen"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 29.3
+    },
+    {
+      "page_number": 546,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "schau",
+        "gespannt",
+        "nentschlossenheit",
+        "intendieren",
+        "firresoluteness",
+        "kunde",
+        "husser",
+        "innensphare"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 42.0
+    },
+    {
+      "page_number": 547,
+      "classification": "GOOD",
+      "confidence": "medium",
+      "evidence": [
+        "bei",
+        "bekunden",
+        "cogni",
+        "sichkennen",
+        "kundgabe",
+        "epistem",
+        "xxm",
+        "tkeep"
+      ],
+      "footnote_artifacts": [
+        "ongs1 (likely ongs[^1])"
+      ],
+      "error_rate": 22.3
+    },
+    {
+      "page_number": 548,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "unkenntnis",
+        "nivellieren",
+        "unverstandnis",
+        "flie",
+        "fortkommen",
+        "offreedom",
+        "sprach",
+        "mtire"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 37.8
+    },
+    {
+      "page_number": 549,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "logisch",
+        "nutvc",
+        "angleiclun",
+        "hinhoren",
+        "verkniipfen",
+        "verketten",
+        "oflocation",
+        "dilthey"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 26.2
+    },
+    {
+      "page_number": 550,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "erhalten",
+        "ausschau",
+        "verlieren",
+        "readines",
+        "halten",
+        "genuinenes",
+        "theinselves",
+        "bekunden"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 26.4
+    },
+    {
+      "page_number": 551,
+      "classification": "GOOD",
+      "confidence": "medium",
+      "evidence": [
+        "meaningles",
+        "vielfaltig",
+        "lebensmanifestation",
+        "tmake",
+        "nachholen",
+        "naturale",
+        "dilthey",
+        "einraumen"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 20.2
+    },
+    {
+      "page_number": 552,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "fmoral",
+        "meth",
+        "fmineness",
+        "verstimmung",
+        "denkmal",
+        "moralisch",
+        "fmechanics",
+        "stimmung"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 33.2
+    },
+    {
+      "page_number": 553,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "naturalistisch",
+        "tthing",
+        "niemand",
+        "thaltlosigkeit",
+        "vorlaufig",
+        "konnen",
+        "bewegung",
+        "tnever"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 28.2
+    },
+    {
+      "page_number": 554,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "nummer",
+        "objekt",
+        "nigfaltigkeit",
+        "objicieren",
+        "nows",
+        "jtn",
+        "fnumeral",
+        "objektivieren"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 28.4
+    },
+    {
+      "page_number": 555,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "ontologie",
+        "ontologisch",
+        "veranlassung",
+        "goi",
+        "stirbt",
+        "gelegentlich",
+        "andere",
+        "tocular"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 29.4
+    },
+    {
+      "page_number": 556,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "vemehmen",
+        "beharren",
+        "vergehen",
+        "andere",
+        "draussensein",
+        "stimmtheit",
+        "jtn",
+        "wahrnehmen"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 41.6
+    },
+    {
+      "page_number": 557,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "imludes",
+        "physikalisch",
+        "verhandeln",
+        "halten",
+        "aufzeigen",
+        "phanomenal",
+        "enologisch",
+        "phanom"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 27.8
+    },
+    {
+      "page_number": 558,
+      "classification": "GOOD",
+      "confidence": "medium",
+      "evidence": [
+        "stellung",
+        "tpolitical",
+        "irresolutenes",
+        "konnen",
+        "pos",
+        "posi",
+        "etc",
+        "dasein"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 18.8
+    },
+    {
+      "page_number": 559,
+      "classification": "MARGINAL",
+      "confidence": "medium",
+      "evidence": [
+        "ssa",
+        "vorbereiten",
+        "vorpradikativ",
+        "tpraxis",
+        "omenologisch",
+        "zube",
+        "iii",
+        "somewlwt"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 25.5
+    },
+    {
+      "page_number": 560,
+      "classification": "GOOD",
+      "confidence": "medium",
+      "evidence": [
+        "darstellen",
+        "urspriinglich",
+        "fprimitive",
+        "fortschritt",
+        "vorhanden",
+        "tprivation",
+        "uncoveredness",
+        "essentia"
+      ],
+      "footnote_artifacts": [],
+      "error_rate": 18.6
+    }
+  ]
+}

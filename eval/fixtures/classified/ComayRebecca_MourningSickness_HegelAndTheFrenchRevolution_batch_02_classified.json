@@ -1,0 +1,177 @@
+[
+  {
+    "page_number": 44,
+    "classification": "MARGINAL",
+    "confidence": 0.85,
+    "evidence": "5.4% error rate with scattered word fragments (losophy, biolog, ambiv, ical) but core text remains highly readable. Latin phrases (crimen immortale, inexpiabile) correctly preserved. No garbling of main content. Errors appear to be character-level OCR artifacts at word boundaries rather than semantic corruption.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 45,
+    "classification": "MARGINAL",
+    "confidence": 0.78,
+    "evidence": "10.7% error rate places this at upper boundary of MARGINAL. Key terms correctly OCR'd (crimen inexpiabile, signum rememorativum, demonstrativum, prognostikon). Garbled fragments (idential, trans, ber) are character-level errors. French/German scholarship terms preserved. Text is decipherable despite error density.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 46,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "3.6% error rate with clean rendering of complex philosophical content. Word fragments (cle, ated, tion, specta, sim) are minor artifacts at boundaries. Latin preserved (crimen inexpiabile). Main narrative coherent and readable. Scholarly apparatus intact.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 48,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "4.6% error rate. Complex German citations correctly preserved (Briefe, die Fortschritte der Humanität betreffend). Minor fragments (cosmo, fortschritte, affirma, possibil, perspec) do not impede comprehension. Main text fully readable with proper philosophical terminology intact.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 50,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "4.0% error rate with readable text throughout. Minor boundary artifacts (prolif, dium, lective, leserwelt, revolu) present but text flow uninterrupted. German term 'Leserwelt' and philosophical discourse fully preserved. Content coherent.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 51,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "6.9% error rate. German scholarship preserved (Teilnehmung, Nachteil, schlechtin). Character fragments (cisely, virtualization, limity, quishing, lyotard) scattered but text remains fundamentally readable. Philosophical argument traceable. Errors at word level rather than semantic.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 52,
+    "classification": "GOOD",
+    "confidence": 0.95,
+    "evidence": "2.2% error rate - excellent OCR quality. Minor artifacts (ter, nahe, ugnen, ereignis) are trivial boundary errors. German philosophical terms perfectly rendered (Ereignis, Eräugnen). Dense academic prose fully readable and coherent.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 54,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "3.7% error rate with clean rendering of complex legal/philosophical argumentation. Boundary artifacts (legisla, unbreachable, facto, actu, stitution, litical) are minor. German and Latin terminology intact. Main content fully comprehensible.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 60,
+    "classification": "MARGINAL",
+    "confidence": 0.80,
+    "evidence": "5.9% error rate. Latin concepts preserved (diabolical, Evil, Bosheit, Bösartigkeit). Character fragments (trans, blo, unthink, dia, diaboli, tion, unrealiz) scattered throughout. Text is readable but error density requires careful parsing. Philosophical content remains intact.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 61,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "5.9% error rate. Complex historical and philosophical terminology preserved (Fouquier-Tinville, Gesetzm, Convention, Gesetz). Character-level artifacts (tinville, gesetzm, gilles, rejustified, defence, transcen) present. Text fundamentally readable with philosophical argument traceable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 65,
+    "classification": "MARGINAL",
+    "confidence": 0.76,
+    "evidence": "9.7% error rate - high but still readable. German philosophical terminology preserved (Epoche, Umwandlung, neuen). Character fragments (perspectival, versa, enal, ihm, nomenon, inef, ment) scattered. Complex temporal/ontological discourse remains largely comprehensible despite error density.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 68,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "6.4% error rate. Complex historical and literary references preserved (Restif de la Bretonne, Desmoulins). Character fragments (restif, canni, repre, sentation, specta, bretonne, onlook, strument, gime) scattered. Dense prose about spectacle and revolution remains fundamentally readable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 69,
+    "classification": "MARGINAL",
+    "confidence": 0.80,
+    "evidence": "5.8% error rate. Complex literary and philosophical references intact (Michelet, Hugo, Arendt, Robespierre). Character fragments (guishable, ricorde, advanc, nonsynchronicity, inexorables, michelet, mis, arendt) distributed. Main narrative coherent about Terror, pity, and tragedy.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 70,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "6.9% error rate. German words correctly preserved (Zeitfeber, Zeitungsfeber, Lesewut, Lesesucht). Character fragments (von, zeitungsfeber, megaprazons, hne, schaft, contami, guity, ercise) present. Text about reading culture and Revolution comprehensible despite error spread.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 71,
+    "classification": "MARGINAL",
+    "confidence": 0.83,
+    "evidence": "8.3% error rate. German historical terminology preserved (Freiheitskriege, Befreiungskriege, dynasties). Character artifacts (counterterrorism, ambigu, kriege, befreiungs, dynas, ous) present. Text about post-Napoleonic Germany and nationalism remains readable despite higher error density.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 72,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "7.0% error rate. Historical narrative about Hegel's interpretation of Revolution intact. Character fragments (lution, mis, rien, dif, revo, peramental, ularization, xvi, solutist, fantile) scattered. Main argument about Reformation vs. Revolution coherent.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 75,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "3.4% error rate. Complex philosophical terminology preserved (Phenomenology, Sittlichkeit, hellenophilic, plenitude). Boundary artifacts (nomenology, finity, phen, reacti, grecque, ancien, phe, vating) are minimal. Dense analysis of Greek polis and modernity fully readable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 76,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "4.6% error rate with coherent philosophical analysis. German terms preserved (Bildung, Sittlichkeit, Verwüstung). Character fragments (bildung, phg, denat, ern, structed, verw, uralizing, ingly, pire) minor. Complex argument about modernity and ruin fully comprehensible.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 78,
+    "classification": "MARGINAL",
+    "confidence": 0.81,
+    "evidence": "6.2% error rate. Historical reference to Diderot's Nephew well-preserved. Character fragments (aggressivity, rea, ity, renam, phg, suc, facement, notre, ingless, preserva) scattered. Discussion of Enlightenment and Temple of Reason readable despite error density.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 80,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "4.7% error rate. Complex philosophical and historical content intact. Boundary artifacts (depos, phg, pos, aggres, pre, infec, ited, clared) minimal. Analysis of revolutionary archives and Enlightenment as melancholia fully readable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 84,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "3.7% error rate. Complex philosophical terminology preserved (religare, instrumentalization, nihilating). Character fragments (instrumentalization, anticipa, phg, trupp, tence, reduc) minimal. Dense analysis of utilitarianism and Terror fully comprehensible.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 89,
+    "classification": "MARGINAL",
+    "confidence": 0.79,
+    "evidence": "6.1% error rate. Complex literary and philosophical references preserved (Sainte-Guillotine, Foucault, carnivalesque). Character fragments (personi, fied, sainte, transi, cault, onstration, numericity, nating, ferentiated) scattered. Analysis of guillotine and Terror remains readable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 90,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "4.0% error rate. Complex philosophical content about death, identity, and Terror intact. Character artifacts (agribusi, phg, auschwitzean, transitionless, compari, alterity, simultane, transi) are minimal. Dense Hegelian analysis fully readable.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 92,
+    "classification": "MARGINAL",
+    "confidence": 0.80,
+    "evidence": "6.6% error rate. Complex historical references preserved (Thermidorian, Tennis Court Oath, Abbé Sieyès). Character fragments (hippolyte, turally, complished, olution, ror, struc, phg, nationale, siey) scattered. Historical narrative about Terror's origins remains comprehensible.",
+    "footnote_artifacts": false
+  },
+  {
+    "page_number": 93,
+    "classification": "MARGINAL",
+    "confidence": 0.82,
+    "evidence": "5.2% error rate. Complex philosophical and historical content preserved (Burke, Müntzer, Anabaptism). Character fragments (ferring, unequivo, mish, pudiation, unworked, lence, ceived) scattered. Dense argument about Terror and modernity readable with minor parsing challenges.",
+    "footnote_artifacts": false
+  }
+]

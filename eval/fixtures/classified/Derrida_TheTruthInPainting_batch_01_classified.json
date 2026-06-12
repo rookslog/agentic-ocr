@@ -1,0 +1,202 @@
+[
+  {
+    "page_number": 1,
+    "classification": "GOOD",
+    "confidence": 0.95,
+    "evidence": "Title page with clean, simple text. 'JACQUES', 'DERRIDA', 'PAINTING', 'Geoff Bennington', 'University of Chicago Press' all correctly OCR'd. Layout is clear.",
+    "footnote_artifacts": null,
+    "notes": "No foreign language text or complex terminology on this page. Minor flagged words 'thetruth' and 'geoff' are actually correct but split by formatting in OCR output."
+  },
+  {
+    "page_number": 2,
+    "classification": "GOOD",
+    "confidence": 0.92,
+    "evidence": "Copyright/publication page. All key information correctly captured: 'LA VERITE EN PEINTURE', 'Flammarion', 'ISBN', dates, publisher info. French title 'La verite en peinture' is correct.",
+    "footnote_artifacts": "Some abbreviations flagged (pbk = paperback, which is correct)",
+    "notes": "Flagged 'unknown words' are either valid abbreviations or correct French/English terms. No meaningful OCR errors detected."
+  },
+  {
+    "page_number": 3,
+    "classification": "MARGINAL",
+    "confidence": 0.70,
+    "evidence": "Table of contents with mostly correct entries. French philosophical terms properly captured: 'Passe-Partout', 'Parergon', 'Restitutions'. Roman numerals correct (vii, xiii, iii). Spacing suggests formatting errors but text is legible.",
+    "footnote_artifacts": null,
+    "notes": "Flagged words 'passe', 'parergon', 'restitutions' are all correct French philosophical terms (not errors). Layout formatting may have introduced minor spacing issues but meaning is entirely recoverable."
+  },
+  {
+    "page_number": 5,
+    "classification": "MARGINAL",
+    "confidence": 0.65,
+    "evidence": "Illustrations list with many proper names and foreign language citations. Most entries readable: 'Johannes Kepler', 'Lucas Cranach', 'Lucretia', 'Antonio Fantuzzi', 'Nicolas Robert'. Some names have minor artifacts (Girardon/Giraudon variants, Tulia's/Tulip's).",
+    "footnote_artifacts": "Hyphenation issues: 'Preus-sische Kulturbesitz' and 'Gemaldegalerie' are split correctly by hyphen",
+    "notes": "Many flagged words are correct: 'kulturbesitz' (German), 'gemaldegalerie' (German), 'sexangula' (Latin). German and French names present expected OCR challenges but remain identifiable. Minor variant spellings (Girardon vs Giraudon) don't impede comprehension."
+  },
+  {
+    "page_number": 6,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "evidence": "Illustrations list continues with artist names and artwork details. Key names captured: 'Antoine Caron', 'Francisco Goya', 'Valerio Adami', 'Benjamin'. Some hyphenation/spacing irregularities visible ('graphite pencil' correctly rendered multiple times).",
+    "footnote_artifacts": "Spacing artifact around line: '1 54' and '1 68' (page numbers with irregular spacing)",
+    "notes": "Flagged words are correct: 'meccanica', 'disegno', 'autobiografia', 'quattro' (all Italian/proper). 'Flamarion' is a minor variant of 'Flammarion' but recoverable. Overall text meaning preserved."
+  },
+  {
+    "page_number": 8,
+    "classification": "GOOD",
+    "confidence": 0.88,
+    "evidence": "Continuation of illustrations with museum attributions. Names and locations correctly identified: 'Van Gogh', 'Amsterdam', 'Baltimore Museum of Art', 'Wertheim Collection', 'Harvard University'. Collections and photographers properly recorded.",
+    "footnote_artifacts": "Minor spacing in dates: '188 5', '1 886 -8 7' (spaces around digits suggest formatting artifact, not content error)",
+    "notes": "Flagged 'unknown words' are legitimate: 'nuenen' (Dutch town), 'wertheim' (proper name), 'baaren' (Dutch), 'morain' (Morain photographer). Museum abbreviation 'MACULA' correct."
+  },
+  {
+    "page_number": 9,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Final illustration credits page. Artist names clear: 'Van Gogh', 'Magritte', 'Lindner', 'Van Eyck', 'Arnolfini Marriage'. Dates and museum locations correctly captured. Photo credit abbreviations proper.",
+    "footnote_artifacts": "Parenthetical photo source markers correctly preserved (e.g., '(museum photo)', '(photo, MACULA)')",
+    "notes": "Flagged words are all correct: 'maeght' (Maeght Gallery), 'kramarsky', 'lindner' (artist surname), 'arnolfini' (proper name from artwork title), 'etc' (standard abbreviation)."
+  },
+  {
+    "page_number": 11,
+    "classification": "GOOD",
+    "confidence": 0.93,
+    "evidence": "Translators' Preface opening. Long paragraph of philosophical text is cleanly rendered. Complex discussion of translation philosophy is entirely readable: 'absolute generosity', 'charitable translation', 'transformation'. Derrida's name and concepts properly handled.",
+    "footnote_artifacts": null,
+    "notes": "Flagged words 'jthough' is actual OCR error: should be 'though' (missing initial 't'). 'proj' is fragment of 'project' (hyphenation split). 'ect' and 'miseration' are not present as complete errors—'miseration' appears to be 'commiseration' correctly split by hyphen 'com- miseration'."
+  },
+  {
+    "page_number": 12,
+    "classification": "GOOD",
+    "confidence": 0.91,
+    "evidence": "Translators' Preface continued with dense philosophical commentary. French terms correctly rendered: 'mise en boite', 'revenir', 'rendre', 'La Verite en peinture', 'etymologization'. Derrida scholarship terminology preserved.",
+    "footnote_artifacts": "Translators' notes at bottom correctly attributed",
+    "notes": "Flagged words are legitimate French/academic terms: 'peinture', 'logocentrism', 'revenir', 'etymologization', 'destric-turation' (correctly hyphenated German-influenced philosophical term). No significant comprehension issues."
+  },
+  {
+    "page_number": 16,
+    "classification": "MARGINAL",
+    "confidence": 0.72,
+    "evidence": "Main text with philosophical discourse. Most content clear: 'specificity of pictorial art', 'hypotheses', 'idiomatic meaning', 'Cezanne'. Some words show minor breakdown: 'pictographed' (unclear intent), spacing irregularities in quoted passages.",
+    "footnote_artifacts": "Footnote marker '1.' correctly placed. Scholarly citation in French footnote: 'Huit theses pour (ou contre) une semiologie de la peinture' mostly correct.",
+    "notes": "Flagged 'pictographed' appears genuinely unclear. 'contreo' should be 'contre' (missing final 'e'). 'econ-omy' correctly split by hyphen. 'potheses' is 'hypotheses' split (correct). 'semiologie' is correct French spelling. Meaning largely recoverable despite artifacts."
+  },
+  {
+    "page_number": 20,
+    "classification": "MARGINAL",
+    "confidence": 0.68,
+    "evidence": "Dense philosophical text with complex argumentation. Core meaning preserved but some technical terms show strain: 'chiasmi' correctly rendered (philosophical concept), but spacing irregularities and hyphenation breaks suggest OCR stress on this page.",
+    "footnote_artifacts": "Hyphenation correctly marks line breaks: 'un-veiling', 'represen-tation', 'trop-ological'",
+    "notes": "Multiple flagged terms are correct: 'chiasmi' (plural of chiasmus), 'parasitizes', 'tropological', 'pictural'. Spacing issues ('fc'lI' appears corrupted—likely '4' or Roman numeral) represent ~1-2 errors per paragraph but do not prevent understanding of philosophical argument."
+  },
+  {
+    "page_number": 21,
+    "classification": "GOOD",
+    "confidence": 0.86,
+    "evidence": "Philosophical discourse continues with clear rendering of key concepts: 'parasitizing', 'idiom', 'passe-partout', 'exergues', 'parerga'. French terms and philosophical vocabulary well-preserved. Paragraph structure intact.",
+    "footnote_artifacts": "Parenthetical French phrase correctly embedded: '[se passe partout]'",
+    "notes": "Flagged 'unknown words' are correct: 'parasitized', 'potentializes', 'exergues' (architectural/editorial term), 'parerga' (plural of parergon). 'partout' is correct French. Text demonstrates that OCR has recovered from previous page stress."
+  },
+  {
+    "page_number": 23,
+    "classification": "MARGINAL",
+    "confidence": 0.66,
+    "evidence": "Complex philosophical argument with multiple technical terms. Overall structure clear but shows OCR strain: 'performative promising', 'parergon' (repeated key term), 'signatory' all correct. Some terminology flags appear as false positives (legitimate philosophical vocabulary).",
+    "footnote_artifacts": "Footnote marker placement correct",
+    "notes": "Flagged 'sophical' is 'philosophical' split (correct). 'atopics' is likely 'a-topos' (philosophical concept). 'ergon' and 'parergon' are correct Greek-derived terms central to Derrida. 'prob-lematic' correctly hyphenated. 'lematic' is artifact of 'lematic' in 'pro-blematic'. Philosophy text inherently uses dense terminology; most flagged items are legitimate."
+  },
+  {
+    "page_number": 24,
+    "classification": "GOOD",
+    "confidence": 0.84,
+    "evidence": "Text transitions to discussion of The Journey of the Drawing by Valerio Adami. Names, art references clearly identified: 'Valerio Adami', 'Gerard Titus-Carmel', 'Heidegger', 'Schapiro', 'Van Gogh shoes'. Philosophical discourse continues readably.",
+    "footnote_artifacts": "Footnote with French: 'Le cartouche means...la cartouche...' correctly rendered with grammatical markers",
+    "notes": "Flagged terms legitimate: 'polylogue', 'cerne' (French), 'revenir', 'valerio' (proper name), 'schapiro' (proper name), 'adami' (proper name). 'duc-tus' (Latin) correctly hyphenated. Text meaning entirely preserved."
+  },
+  {
+    "page_number": 26,
+    "classification": "GOOD",
+    "confidence": 0.87,
+    "evidence": "Discussion of passe-partout framing device. Derrida's explanation is clearly rendered: 'frame', 'internal edge', 'external edge', 'enclosure', 'strokes and colors'. French philosophical vocabulary consistent: 'mouille', 'fonds', etc.",
+    "footnote_artifacts": "Parenthetical French expressions correctly preserved with proper formatting",
+    "notes": "Flagged 'undiscoverable' is correct (though unusual diction). 'mouille' is correct French. 'foreward' should be 'foreword' (genuine typo, but appears in source). 'fait fonds' correctly rendered French phrase. Minor orthographic issues do not impede comprehension of framing device explanation."
+  },
+  {
+    "page_number": 27,
+    "classification": "MARGINAL",
+    "confidence": 0.70,
+    "evidence": "Discussion of passe-partout plural and grammatical properties. French citation clearly preserved: 'Curiosities of all sorts, plaster casts, molds, sketches, copies, passe-partout containing engravings (Theophile Gautier)'. Author names and quoted text readable.",
+    "footnote_artifacts": "Parenthetical French 'fils se trouvent tout seuls' correctly captured with '[tableau]' translation annotation",
+    "notes": "Flagged 'engrav-ings' correctly hyphenated. 'seuls' is correct French. 'trouvent' is correct French. Some spacing irregularities but all text elements identifiable. Gautier quote preserved with minor hyphenation artifacts."
+  },
+  {
+    "page_number": 31,
+    "classification": "MARGINAL",
+    "confidence": 0.65,
+    "evidence": "Lemmata section opening with philosophical aphorisms. French-language passages attempt clear but show strain: 'satire of the abyss', 'sufficiency' concepts discernible. Some hyphenation and spacing issues visible.",
+    "footnote_artifacts": "Bracketed translator note '[lien a VOil avec, lien a faile avec]' shows OCR degradation in French phrases",
+    "notes": "Flagged 'uniess' should be 'unless' (genuine OCR error—important word misread). 'satis' is correct (Latin). 'voil' appears corrupted—likely 'voir' (French). 'faile' should be 'faire' (French verb, OCR error). 'suffic-' correctly hyphenated 'sufficient'. Page shows 1-2 actual errors affecting comprehension slightly but overall meaning recoverable through context."
+  },
+  {
+    "page_number": 34,
+    "classification": "GOOD",
+    "confidence": 0.85,
+    "evidence": "Hegelian aesthetics discussion. Complex philosophical language rendered clearly: 'semantic analysis', 'legitimation', 'work of art', 'origin', 'ahistorical', 'syntagm'. Philosophical apparatus preserved. Hegel references intact.",
+    "footnote_artifacts": "French phrase 'une verite une et nue' correctly rendered with brackets indicating original language",
+    "notes": "Flagged terms legitimate: 'combinatory', 'ahistoricity', 'originary', 'syntagm'. 'depar-ture' correctly hyphenated 'departure'. 'ysis' is likely 'analysis' split. Dense philosophical text shows slight strain but major concepts fully intelligible."
+  },
+  {
+    "page_number": 35,
+    "classification": "GOOD",
+    "confidence": 0.90,
+    "evidence": "Continuation of Hegelian aesthetics with careful distinction between natural and artistic beauty. Philosophical terminology preserved: 'physis/tekhne opposition', 'etymon', 'history of art', 'presupposition'. Greek and German technical terms handled well.",
+    "footnote_artifacts": null,
+    "notes": "Flagged 'precomprehended', 'tekhne' are correct (latter Greek philosophical term). 'cept' and 'ceptual' are fragments from 'concept'/'conceptual' correctly hyphenated. Text demonstrates sophisticated philosophical vocabulary well-preserved. No significant errors detected."
+  },
+  {
+    "page_number": 37,
+    "classification": "MARGINAL",
+    "confidence": 0.62,
+    "evidence": "Comparison of Hegel and Heidegger on art. Core argument discernible but page shows moderate OCR stress. Key names present: 'Hegel', 'Heidegger', 'aesthetics'. German terms fragmented: 'Sprache' (German for language) shows as 'sprache'. Some technical discourse harder to follow.",
+    "footnote_artifacts": "Parenthetical German words partially compromised: '(Sage, Dichtung, Sprache, Nennen)'—readable but with potential OCR ambiguity",
+    "notes": "Flagged 'degger' should be 'Heidegger' (OCR split error). 'nennen', 'dichtung', 'sprache' are correct German terms but split across lines. 'nomi-nation' correctly split. 'nondecomposable' is correct philosophical term. Multiple fragmentation issues suggest this is a challenging page, but scholar familiar with Heideggerian philosophy can reconstruct meaning."
+  },
+  {
+    "page_number": 38,
+    "classification": "GOOD",
+    "confidence": 0.89,
+    "evidence": "Discussion of circle, abyss, and the 'passe-partout' concept. Philosophical terminology clear: 'en abyme', 'topos', 'hors-d'oeuvre', 'exergue'. Complex argument structure is preserved. Technical vocabulary appropriate.",
+    "footnote_artifacts": "French philosophical terminology: 'en abyme', 'hors-d'oeuvre' correctly marked with hyphens",
+    "notes": "Flagged 'mands' is fragment of 'demands' (hyphenated correctly). 'abyme' is correct French philosophical term. 'hors' and 'topos' are correct (French and Greek). Page shows strong recovery from previous strain. Meaning fully recoverable."
+  },
+  {
+    "page_number": 39,
+    "classification": "MARGINAL",
+    "confidence": 0.61,
+    "evidence": "Introduction to Hegel's Lectures on Aesthetics. Overall structure present but page shows significant OCR deterioration. Content elements identifiable: 'Lectures on Aesthetics', 'beautiful', 'art', 'nature', 'mind'. Philosophical argument remains roughly discernible.",
+    "footnote_artifacts": "Garbled text at bottom: 'ra }\\. P. C:A . \\u2022. 9 L< I M A L A P-tt a. t I I Belt' appears to be corrupted OCR of marginal notation or scanning artifact",
+    "notes": "Flagged 'soqieta' should be 'societe' (French—OCR degradation). 'perior' is 'superior' split. 'cenlis' is unexplained artifact—context suggests transcription error on source PDF possibly. Garbled text at end is significant quality issue but core philosophical discussion remains approximately 70-75% recoverable."
+  },
+  {
+    "page_number": 40,
+    "classification": "MARGINAL",
+    "confidence": 0.64,
+    "evidence": "Circular reasoning in philosophy discussion. Text mostly readable with strain: 'self-knowledge', 'auto-determination', 'presupposition', 'dialectic'. Hegelian concepts present. Some hyphenation artifacts but argument structure traceable.",
+    "footnote_artifacts": "Parenthetical German: '(VoraussetzungJ' and '(Begründung' show OCR character substitution (J for ))",
+    "notes": "Flagged 'gast' is correct German (means guest/ghost). 'cir-cular' correctly split. 'autodetermination' correct. 'cipitates' is 'precipitates' correctly OCR'd. 'philos' is 'philosophy' split. 'pastness' is legitimate English coinage in philosophical context. Page ~1-2 errors per 50 words—MARGINAL classification."
+  },
+  {
+    "page_number": 42,
+    "classification": "MARGINAL",
+    "confidence": 0.63,
+    "evidence": "Continuation of Hegelian circle metaphor. Text moderately degraded: 'organic whole', 'encyclopedia', 'solidarity', 'fecund'. German terms scattered: 'Riickwiirts' (backward), 'Vorwiirts' (forward) show OCR strain with character substitution.",
+    "footnote_artifacts": "German words with substituted characters: 'Riickwiirts' instead of 'Rückwärts', suggesting umlaut handling failure",
+    "notes": "Flagged 'sozusagen' is correct German (meaning 'so to speak'). 'lemmatisch' is correct German philosophical term. 'bewusstsein' is German for consciousness with umlaut issues (should be 'Bewußtsein'). 'clopedia' is 'Encyclopedia' split (correct). Multiple 1-2 character errors per line, manageable for specialist reader but MARGINAL for general audience."
+  },
+  {
+    "page_number": 43,
+    "classification": "MARGINAL",
+    "confidence": 0.64,
+    "evidence": "Hegelian vs. Heideggerian contrast with German phenomenological terminology. Text partially recovered: 'being-work', 'being-thing', 'metaphysics', 'ontology'. German terms severely compromised: 'hypokeimenon', 'aistheton', 'hyle' (Greek philosophical terms) and Heidegger German concepts show high corruption.",
+    "footnote_artifacts": "Parenthetical German words fragmented: 'weise', 'darstellung', 'hyle' show OCR character/spacing issues",
+    "notes": "Flagged words: 'hyle' (correct Greek), 'weise' (correct German—'manner/way'), 'darstellung' (correct German—'presentation'). 'insi-gnificant' correctly hyphenated. 'umfassendsten' correct German superlative. 'vergangenes' correct German (past). 'laisser', 'faire', 'voir' are correct French verbs/concepts. Despite corruption, this page's technical vocabulary is consistently preserved; readability MARGINAL due to spacing/hyphenation but content recoverable for specialist."
+  }
+]
