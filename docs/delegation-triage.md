@@ -18,18 +18,20 @@ traced, interventions chosen deliberately, and the interventions themselves audi
    (< ~10k and the answer is one or two reads), do it inline — delegation overhead isn't
    free either. Group related subtasks into one delegation while the total stays in the
    **100–140k** envelope.
-3. **Pick the cheapest sufficient tier, plus at most one step of overfit.** Tier ladder
-   (ascending cost; fable ≈ 2× opus per token, Logan's figure):
+3. **Pick the cheapest sufficient tier, plus at most one step of overfit.** Cost ladder:
+   model `haiku < sonnet < opus`, effort `low < medium < high < xhigh < max`.
+   **fable deprecated 2026-06-12** (it was the prior top tier at ~2× opus and shut down
+   that day; the main agent now runs on opus and every mapping below is opus-based):
 
    | task class | rubric default | notes |
    |---|---|---|
    | mechanical-search | sonnet | glob/grep/enumerate; no judgment |
-   | deep-exploration | opus high | local corpus, structured findings. **Never fable for research** (Logan's standing rule) |
+   | deep-exploration | opus high | local corpus, structured findings. Research never drops below opus (Logan's standing rule) |
    | web-research | opus high | crawling + claim-tagging contract |
-   | build-implement | sonnet → opus | sonnet when spec is complete; opus when integration judgment needed |
-   | synthesis-design | fable (main agent) or opus xhigh | designs, plans, schemas |
-   | adversarial-review | opus xhigh / fable high | reviewer ≠ producer (PLAN §11.3) |
-   | verdict-adjudication | fable high/xhigh | T3+ gates, experiment-adjacent calls |
+   | build-implement | sonnet (fully-spec mechanical) → opus xhigh (integration judgment) | Logan 2026-06-12: xhigh for implementation |
+   | synthesis-design | opus xhigh (or the main agent) | designs, plans, schemas |
+   | adversarial-review | opus xhigh; **max** for constitutional / synthesis-heavy artifacts | reviewer ≠ producer (PLAN §11.3); Logan 2026-06-12: opus for all reviews |
+   | verdict-adjudication | opus xhigh | T3+ gates, experiment-adjacent calls |
 
 4. **Overkill guardrail.** A choice ≥2 steps above the rubric default requires a written
    `justification` in the trace record. No justification ⇒ the record is written with
@@ -49,7 +51,7 @@ Five event types:
 **`delegation`** — written by the delegator, before launch.
 ```json
 {"event": "delegation", "id": "D-001", "ts": "...", "session": "...",
- "delegator": "fable@main", "task": "one line", "task_class": "deep-exploration",
+ "delegator": "opus@main", "task": "one line", "task_class": "deep-exploration",
  "inputs": ["paths/contracts handed over"],
  "tier_chosen": {"model": "opus", "effort": "high"},
  "tier_rubric_default": {"model": "opus", "effort": "high"},
@@ -63,10 +65,14 @@ Five event types:
 **`disposition`** — written by the delegator on receiving the output.
 ```json
 {"event": "disposition", "ref": "D-001", "ts": "...",
- "actual_tokens": 0, "disposition": "accepted|accepted-with-edits|rework|rejected",
+ "actual_tokens": 0, "disposition": "accepted|accepted-with-edits|rework|rejected|cancelled",
  "spot_check": "what was independently verified (Reported → Corroborated)",
  "immediate_defects": []}
 ```
+`cancelled` closes a delegation that was logged but never launched, or superseded before
+producing output — the record-before-launch rule makes this state reachable (e.g. the
+user redirects, or a model tier is withdrawn, between logging and launch). Name the
+reason and any superseding `D-NNN` in `spot_check`; `actual_tokens` may be omitted.
 
 **`review-verdict`** — written at any later review gate (T2–T5) whose subject includes a
 delegated artifact. This is the signal that closes the loop on triage quality.
@@ -82,7 +88,6 @@ axis — the lab's dual-axis coding (lanes/OBSERVABILITY.md §3). The
 `retrospectively_sufficient_tier` is the symmetric counterfactual: compared against
 `tier_chosen` it makes over-provisioning and under-provisioning the same first-class
 measurement (the prediction/verdict gap is the product, not an error).
-```
 
 **`intervention`** — written when a diagnosis leads to a process change.
 ```json
@@ -173,7 +178,31 @@ individually falsifiable; the meta-audit's `diagnosis_hit_rate` aggregates how o
 attributions survive later evidence — the triage layer is itself a diagnosis engine, and
 a layer that grades artifacts but never grades itself fails the meta-audit requirement.
 
-## 5. Bootstrap
+## 5. Enforcement (mechanism, not memo)
+
+A convention nobody enforces decays into ceremony — ledger row 2's disconfirmer names
+exactly that failure. Three mechanisms back this doc:
+
+1. **CI validator** — `.github/scripts/validate_delegation_log.py` runs on every
+   push/PR (the `delegation-log validator` job): JSONL schema per event type, closed
+   vocabularies, `D-`/`I-` id formats, referential integrity (a `ref` must point to an
+   *earlier* delegation — append-only ordering), duplicate-id rejection, and the overkill
+   guardrail (`overfit_steps ≥ 2` without a justification or `overkill_suspect: true`
+   fails the build). `--audit` computes the draft meta-audit stats from the log.
+2. **Project skill** — `.claude/skills/delegation-triage/SKILL.md` puts the checklist and
+   JSONL templates in-context for any session in this repo. Promote to `~/.claude/skills/`
+   once stable (tracked in `docs/process/upstream-feedback.md`).
+3. **Tests** — `tests/test_validate_delegation_log.py` pins the validator's behaviour,
+   including that the real repo log always validates.
+
+Not yet mechanized (recorded as future work): a PreToolUse hook that blocks an `Agent`
+call with no matching log row — the one delegation the skill can't catch is the one made
+by an agent that never loaded the skill. Also: the `Agent` tool exposes no
+reasoning-effort parameter, so the `effort` field (e.g. `max` vs `xhigh`) is recorded
+*intent*, not an enforced setting — `model` is enforceable, `effort` is currently
+advisory. The validator checks the value is well-formed, not that it was honoured.
+
+## 6. Bootstrap
 
 The log opens with the two delegations made while designing this layer (D-001 corpus
 inventory, D-002 prior-art mining) — the system records itself from the first decision.

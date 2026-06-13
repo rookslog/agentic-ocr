@@ -69,6 +69,16 @@ jobs:
           fi
           echo "guard: PASSED — no PDFs, no files over 1MB."
 
+  # ── Delegation-log guard (docs/delegation-triage.md): schema + guardrails ──
+  delegation-log:
+    name: delegation-log validator
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate delegation-log.jsonl
+        run: python3 .github/scripts/validate_delegation_log.py delegation-log.jsonl
+
   # ── Prereg-gate (PLAN §11.2): results cannot merge before their prereg ─────
   prereg-gate:
     name: prereg-gate (PRs only)
