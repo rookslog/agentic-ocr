@@ -19,7 +19,8 @@ traced, interventions chosen deliberately, and the interventions themselves audi
    free either. Group related subtasks into one delegation while the total stays in the
    **100–140k** envelope.
 3. **Pick the cheapest sufficient tier, plus at most one step of overfit.** Cost ladder:
-   model `haiku < sonnet < opus`, effort `low < medium < high < xhigh < max`.
+   model `haiku < sonnet < opus`, effort `low < medium < high < xhigh < max` (the
+   validator also accepts `default`, ranked with `medium`).
    **fable deprecated 2026-06-12** (it was the prior top tier at ~2× opus and shut down
    that day; the main agent now runs on opus and every mapping below is opus-based):
 
@@ -33,10 +34,16 @@ traced, interventions chosen deliberately, and the interventions themselves audi
    | adversarial-review | opus xhigh; **max** for constitutional / synthesis-heavy artifacts | reviewer ≠ producer (PLAN §11.3); Logan 2026-06-12: opus for all reviews |
    | verdict-adjudication | opus xhigh | T3+ gates, experiment-adjacent calls |
 
-4. **Overkill guardrail.** A choice ≥2 steps above the rubric default requires a written
-   `justification` in the trace record. No justification ⇒ the record is written with
-   `overkill_suspect: true`. (Self-enforced now; mechanically lintable once the log has
-   volume. Undershoot is caught the other way — by rework/review findings, §3.)
+4. **Overkill guardrail.** A choice whose *computed* tier gap (positive model + effort
+   rungs above `tier_rubric_default`) is ≥2 requires a written `justification`, else the
+   record must carry `overkill_suspect: true`. The CI validator computes that gap and
+   trips on it — so understating `overfit_steps` cannot dodge the guardrail (review
+   finding F4a). **Not yet enforced:** that `tier_rubric_default` actually matches the
+   rubric table for the declared `task_class` (F4b) — that needs the rubric encoded and
+   *versioned*, because an append-only log holds rows written under older rubrics, so
+   conformance must be checked against the rubric in effect at each row's `ts` (F6).
+   Undershoot is caught the other way — by review findings where
+   `retrospectively_sufficient_tier` exceeds `tier_chosen` (§3).
 5. **Record before launching.** Append the `delegation` event (§2) *before* the agent
    runs, including the prediction fields. A delegation with no prior trace row is itself
    a process defect.
@@ -102,13 +109,17 @@ measurement (the prediction/verdict gap is the product, not an error).
  "verdict": null}
 ```
 The `verdict` is appended later as a new `intervention` line (same `id`, back-reference),
-using the ledger vocabulary (`Corroborated` / `Underdetermined` / …). Interventions that
-change committed process docs also get a `ledger.md` row.
+using the ledger vocabulary (`Corroborated` / `Underdetermined` / …) **and** a
+`diagnosis_outcome` (`confirmed` | `refuted` | `underdetermined`) — whether the
+`distinguishing_observation` came out as the diagnosis predicted. That is distinct from
+the `verdict`, which says whether the *signal* moved: signal-moved ≠ diagnosis-correct
+(§4), and `diagnosis_hit_rate` scores only `diagnosis_outcome`. Interventions that change
+committed process docs also get a `ledger.md` row.
 
 **`meta-audit`** — written at each phase gate (T5), sweeping the whole log.
 ```json
 {"event": "meta-audit", "ts": "...", "window": "phase 0",
- "stats": {"delegations": 0, "overshoot_rate": 0, "undershoot_rework_rate": 0,
+ "stats": {"delegations": 0, "overshoot_rate": 0, "rework_rate": 0, "undershoot_rate": 0,
            "token_prediction_calibration": "...", "review_linkage_fraction": 0,
            "intervention_success_rate": 0, "diagnosis_hit_rate": 0},
  "failed_interventions": [{"id": "I-001", "why": "wrong-layer diagnosis | right layer, wrong action | insufficient dosage | signal too noisy to read | regressed elsewhere", "next": "new I-NNN or drop"}]}
@@ -155,6 +166,10 @@ by layer"). Mapping, recorded per finding in the `etclovg` field:
 | upstream | (chained) | re-assigned at the referenced D-NNN |
 | *the triage choice itself* | `L` | orchestration picked the tier |
 
+(`contract`→`C`, not `T`: a delegation prompt is natural-language task framing the
+delegate reads as *context*; **T** covers machine tool-call schemas and error feedback,
+not prose handoffs.)
+
 A triage miss thus *surfaces* at V (a gate caught it) but is *caused* at L — the
 symptom/cause split is what keeps "wrong tier" distinguishable from "right tier, weak
 gate". Full prior-art survey: `.local/research/observability-prior-art.md` (local-only).
@@ -177,6 +192,13 @@ process layer. The `rivals` / `distinguishing_observation` fields make each diag
 individually falsifiable; the meta-audit's `diagnosis_hit_rate` aggregates how often our
 attributions survive later evidence — the triage layer is itself a diagnosis engine, and
 a layer that grades artifacts but never grades itself fails the meta-audit requirement.
+
+Concretely, each closing `intervention` logs `diagnosis_outcome` by checking its
+`distinguishing_observation` against what actually happened, and `diagnosis_hit_rate =
+confirmed / (confirmed + refuted)`. Until a closing record carries `diagnosis_outcome`
+the validator warns and the rate stays `null` — the loop is only as closed as the
+outcomes logged. (This field was added in response to review finding F2, which caught
+`diagnosis_hit_rate` hard-coded to `null` with no field to populate it.)
 
 ## 5. Enforcement (mechanism, not memo)
 
@@ -201,6 +223,19 @@ by an agent that never loaded the skill. Also: the `Agent` tool exposes no
 reasoning-effort parameter, so the `effort` field (e.g. `max` vs `xhigh`) is recorded
 *intent*, not an enforced setting — `model` is enforceable, `effort` is currently
 advisory. The validator checks the value is well-formed, not that it was honoured.
+
+Deferred items surfaced by the PR-#2 adversarial review (D-005 / D-006), tracked as
+intervention **I-001** with pre-registered signals:
+- **Forcing `review-verdict` rows** (F3): nothing yet compels a gate that reviews a
+  delegated artifact to emit the row, so `review_linkage_fraction` measures logging
+  discipline, not review coverage. Target: review skills emit the row; CI asserts a PR
+  touching a delegated artifact carries one.
+- **`task_class` ↔ `tier_rubric_default` conformance** (F4b) plus rubric versioning (F6),
+  per §1.4.
+- **Untraced-delegation detection** (F1): the ledger row-2 disconfirmer ("rows missing
+  for delegations that happened") is not checkable from the log alone — it needs an
+  out-of-band transcript diff (logged `Agent`/`Task` calls vs `D-` ids). Until then the
+  disconfirmer covers *traced* delegations only.
 
 ## 6. Bootstrap
 

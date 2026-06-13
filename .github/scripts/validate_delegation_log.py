@@ -47,10 +47,11 @@ LEDGER_VERDICTS = {
     "Normative judgment",
 }
 META_AUDIT_STATS = {
-    "delegations", "overshoot_rate", "undershoot_rework_rate",
+    "delegations", "overshoot_rate", "rework_rate", "undershoot_rate",
     "token_prediction_calibration", "review_linkage_fraction",
     "intervention_success_rate", "diagnosis_hit_rate",
 }
+DIAGNOSIS_OUTCOMES = {"confirmed", "refuted", "underdetermined"}
 
 MODEL_RANK = {"haiku": 0, "sonnet": 1, "opus": 2, "fable": 3}
 EFFORT_RANK = {"low": 0, "default": 1, "medium": 1, "high": 2, "xhigh": 3, "max": 4}
@@ -104,16 +105,28 @@ def _check_delegation(ev: dict[str, Any], line_no: int, rep: Report) -> None:
     _check_tier(ev.get("tier_chosen"), "tier_chosen", line_no, rep)
     _check_tier(ev.get("tier_rubric_default"), "tier_rubric_default", line_no, rep)
     overfit = ev.get("overfit_steps")
+    # The guardrail keys on the COMPUTED tier gap, not the self-reported overfit_steps,
+    # so understating overfit_steps cannot dodge it (review D-005 finding F4a).
+    computed = _overfit_rungs(ev.get("tier_chosen"), ev.get("tier_rubric_default"))
     if not isinstance(overfit, int):
         rep.error(line_no, f"overfit_steps must be an integer, got {overfit!r}")
-    elif overfit >= 2:
-        justified = isinstance(ev.get("justification"), str) and ev["justification"].strip()
-        if not justified and ev.get("overkill_suspect") is not True:
+    else:
+        if computed is not None and overfit < computed:
             rep.error(
                 line_no,
-                f"{ev['id']}: overfit_steps={overfit} (>=2) requires a written justification "
-                "or overkill_suspect: true (docs/delegation-triage.md §1.4)",
+                f"{ev['id']}: overfit_steps={overfit} understates the tier gap — chosen is "
+                f"{computed} rung(s) above rubric_default. The guardrail keys on the computed "
+                "gap; declare it honestly (docs/delegation-triage.md §1.4).",
             )
+        effective = max(overfit, computed) if computed is not None else overfit
+        if effective >= 2:
+            justified = isinstance(ev.get("justification"), str) and ev["justification"].strip()
+            if not justified and ev.get("overkill_suspect") is not True:
+                rep.error(
+                    line_no,
+                    f"{ev['id']}: overfit of {effective} rung(s) (>=2) requires a written "
+                    "justification or overkill_suspect: true (docs/delegation-triage.md §1.4)",
+                )
     pred = ev.get("predicted")
     if not isinstance(pred, dict):
         rep.error(line_no, f"predicted must be an object, got {pred!r}")
@@ -207,6 +220,16 @@ def _check_intervention(
                                f"{sorted(LEDGER_VERDICTS)}")
         if str(ev.get("id")) not in open_interventions:
             rep.error(line_no, f"{ev.get('id')}: closing verdict with no earlier opening record")
+        # diagnosis_outcome scores whether the diagnosis was *correct* (did the
+        # distinguishing_observation come out as predicted) — distinct from whether the
+        # signal moved (the verdict). This is what diagnosis_hit_rate aggregates (F2).
+        outcome = ev.get("diagnosis_outcome")
+        if outcome is None:
+            rep.warn(line_no, f"{ev.get('id')}: closing intervention has no diagnosis_outcome "
+                              "(confirmed|refuted|underdetermined); diagnosis_hit_rate cannot "
+                              "score this diagnosis (docs/delegation-triage.md §4)")
+        elif outcome not in DIAGNOSIS_OUTCOMES:
+            rep.error(line_no, f"diagnosis_outcome {outcome!r} not in {sorted(DIAGNOSIS_OUTCOMES)}")
 
 
 def _check_meta_audit(ev: dict[str, Any], line_no: int, rep: Report) -> None:
@@ -295,10 +318,29 @@ def _tier_key(tier: Any) -> tuple[int, int] | None:
     return (m, e)
 
 
+def _overfit_rungs(chosen: Any, default: Any) -> int | None:
+    """Positive per-axis rung increases of `chosen` over `default`, summed (model and
+    effort weighted equally; only increases count). 0 = chosen at or below default on
+    both axes. None if either tier is unresolvable. This is the computed overfit the
+    guardrail keys on, so an understated self-reported `overfit_steps` cannot dodge it."""
+    c = _tier_key(chosen)
+    d = _tier_key(default)
+    if c is None or d is None:
+        return None
+    return max(0, c[0] - d[0]) + max(0, c[1] - d[1])
+
+
 def audit(events: list[dict[str, Any]]) -> dict[str, Any]:
-    """Compute draft meta-audit stats. Tier comparison orders by (model, effort)
-    lexicographically — a heuristic, since the cross-model/effort grid has no
-    total order; treat overshoot/undershoot rates as indicative, not exact."""
+    """Compute draft meta-audit stats.
+
+    Overshoot/undershoot are taken from *review evidence* (a review-verdict's
+    `retrospectively_sufficient_tier` vs the delegation's `tier_chosen`), not from the
+    self-reported `overfit_steps` — declared overfit is intent, not confirmed waste (F5).
+    Tier comparison orders by (model, effort) lexicographically; same-model comparisons
+    (the common case) are a genuine total order on the effort axis, but cross-model
+    comparisons are a cost-proxy, not a sufficiency proof — treat cross-model
+    overshoot/undershoot as indicative. A cost-table replacement is recorded as future
+    work in docs/delegation-triage.md §5."""
     delegations = {e["id"]: e for e in events
                    if e.get("event") == "delegation" and isinstance(e.get("id"), str)}
     dispositions = [e for e in events if e.get("event") == "disposition"]
@@ -306,14 +348,16 @@ def audit(events: list[dict[str, Any]]) -> dict[str, Any]:
     interventions = [e for e in events if e.get("event") == "intervention"]
 
     n = len(delegations)
-    overshoot = sum(1 for d in delegations.values()
-                    if isinstance(d.get("overfit_steps"), int) and d["overfit_steps"] > 0)
+    overshoot = undershoot = 0
     for v in verdicts:
         d = delegations.get(str(v.get("ref")))
         chosen = _tier_key(d.get("tier_chosen")) if d else None
         sufficient = _tier_key(v.get("retrospectively_sufficient_tier"))
-        if chosen and sufficient and sufficient < chosen:
-            overshoot += 1
+        if chosen and sufficient:
+            if sufficient < chosen:
+                overshoot += 1
+            elif sufficient > chosen:
+                undershoot += 1
 
     rework = sum(1 for d in dispositions if d.get("disposition") in ("rework", "rejected"))
 
@@ -334,6 +378,14 @@ def audit(events: list[dict[str, Any]]) -> dict[str, Any]:
     succeeded = sum(1 for i in closed if i.get("verdict") == "Corroborated")
     success_rate = succeeded / len(closed) if closed else None
 
+    # diagnosis_hit_rate scores whether diagnoses were *correct* (diagnosis_outcome),
+    # which is distinct from whether their signal moved (the verdict, above).
+    outcomes = [i.get("diagnosis_outcome") for i in closed]
+    dx_confirmed = sum(1 for o in outcomes if o == "confirmed")
+    dx_refuted = sum(1 for o in outcomes if o == "refuted")
+    diagnosis_hit_rate = (round(dx_confirmed / (dx_confirmed + dx_refuted), 3)
+                          if (dx_confirmed + dx_refuted) else None)
+
     return {
         "event": "meta-audit",
         "ts": "FILL-ME",
@@ -341,11 +393,12 @@ def audit(events: list[dict[str, Any]]) -> dict[str, Any]:
         "stats": {
             "delegations": n,
             "overshoot_rate": round(overshoot / n, 3) if n else 0.0,
-            "undershoot_rework_rate": round(rework / n, 3) if n else 0.0,
+            "rework_rate": round(rework / n, 3) if n else 0.0,
+            "undershoot_rate": round(undershoot / n, 3) if n else 0.0,
             "token_prediction_calibration": calibration,
             "review_linkage_fraction": round(linkage, 3),
             "intervention_success_rate": success_rate,
-            "diagnosis_hit_rate": None,
+            "diagnosis_hit_rate": diagnosis_hit_rate,
         },
         "failed_interventions": [
             {"id": i.get("id"), "why": "FILL-ME", "next": "FILL-ME"}

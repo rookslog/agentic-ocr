@@ -77,4 +77,5 @@ balance); any ambiguity about whether an item's provenance is safe to record.
 
 **Budget:** tokens: ≤120k per session, multi-day by design (zlibrary limit);
 wallclock: ≤30 min/day of acquisition work; escalate-at: any single milestone exceeding
-its second session.
+its second session — **except Milestone 3**, which spans up to 3 acquisition days by
+design (escalate only if it stalls with the queue neither advancing nor exhausted).

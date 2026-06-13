@@ -1,7 +1,7 @@
 # /goal packet — Deterministic checker suite (eval/checkers)
 
 **Objective:** A deterministic, unit-test-style checker suite (olmOCR-2
-unit-test-rewards pattern, PLAN §5.3) that scores any candidate pipeline output against
+unit-test-rewards pattern, PLAN §5) that scores any candidate pipeline output against
 a GT page, running end-to-end on the scriptorium fixture page — Phase-0 gate item 5.
 
 **Read first (in order):**

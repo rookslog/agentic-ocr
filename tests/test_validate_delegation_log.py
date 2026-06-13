@@ -48,6 +48,17 @@ def disposition(ref: str = "D-001", **overrides: object) -> dict[str, object]:
     return ev
 
 
+def intervention_open(id_: str = "I-001", ref: str = "D-001") -> dict[str, object]:
+    return {
+        "event": "intervention", "id": id_, "ts": "2026-06-12", "refs": [ref],
+        "verdict": None, "action": "fix template",
+        "diagnosis": {"fault_layer": "contract", "evidence": "e", "rivals": [],
+                      "distinguishing_observation": "o"},
+        "predicted_signal": {"metric": "m", "direction_and_margin": "d",
+                             "review_by": "2026-07-01"},
+    }
+
+
 def write_log(tmp_path: Path, *events: dict[str, object]) -> Path:
     log = tmp_path / "log.jsonl"
     log.write_text("".join(json.dumps(e) + "\n" for e in events))
@@ -129,7 +140,11 @@ def test_bad_model_fails(tmp_path: Path) -> None:
 
 
 def test_max_effort_is_accepted_without_warning(tmp_path: Path) -> None:
-    log = write_log(tmp_path, delegation(tier_chosen={"model": "opus", "effort": "max"}))
+    # `max` is a known effort value — no unknown-effort warning. Both tiers max so this
+    # isolates the vocabulary check from the overfit guardrail.
+    log = write_log(tmp_path, delegation(
+        tier_chosen={"model": "opus", "effort": "max"},
+        tier_rubric_default={"model": "opus", "effort": "max"}))
     result = run(log)
     assert result.returncode == 0
     assert "WARNING" not in result.stdout
@@ -199,6 +214,73 @@ def test_intervention_bad_verdict_vocabulary_fails(tmp_path: Path) -> None:
     result = run(log)
     assert result.returncode == 1
     assert "ledger vocabulary" in result.stdout
+
+
+def test_understated_overfit_steps_fails(tmp_path: Path) -> None:
+    # opus-max chosen against a sonnet-low default is 5 rungs; declaring 1 dodges the guard.
+    log = write_log(tmp_path, delegation(
+        tier_chosen={"model": "opus", "effort": "max"},
+        tier_rubric_default={"model": "sonnet", "effort": "low"},
+        overfit_steps=1, justification="x"))
+    result = run(log)
+    assert result.returncode == 1
+    assert "understates the tier gap" in result.stdout
+
+
+def test_computed_guardrail_trips_without_justification(tmp_path: Path) -> None:
+    # honestly declared big overfit, but no justification → guardrail error on computed gap.
+    log = write_log(tmp_path, delegation(
+        tier_chosen={"model": "opus", "effort": "max"},
+        tier_rubric_default={"model": "sonnet", "effort": "low"},
+        overfit_steps=5))
+    result = run(log)
+    assert result.returncode == 1
+    assert "requires a written justification" in result.stdout
+
+
+def test_computed_guardrail_passes_with_justification(tmp_path: Path) -> None:
+    log = write_log(tmp_path, delegation(
+        tier_chosen={"model": "opus", "effort": "max"},
+        tier_rubric_default={"model": "sonnet", "effort": "low"},
+        overfit_steps=5, justification="constitutional artifact"))
+    assert run(log).returncode == 0
+
+
+def test_closing_intervention_without_diagnosis_outcome_warns(tmp_path: Path) -> None:
+    log = write_log(
+        tmp_path, delegation(), intervention_open(),
+        {"event": "intervention", "id": "I-001", "ts": "2026-07-01", "refs": [],
+         "verdict": "Corroborated"},
+    )
+    result = run(log)
+    assert result.returncode == 0  # warning, not error
+    assert "no diagnosis_outcome" in result.stdout
+
+
+def test_bad_diagnosis_outcome_fails(tmp_path: Path) -> None:
+    log = write_log(
+        tmp_path, delegation(), intervention_open(),
+        {"event": "intervention", "id": "I-001", "ts": "2026-07-01", "refs": [],
+         "verdict": "Corroborated", "diagnosis_outcome": "maybe"},
+    )
+    result = run(log)
+    assert result.returncode == 1
+    assert "diagnosis_outcome" in result.stdout
+
+
+def test_diagnosis_hit_rate_and_renamed_stats(tmp_path: Path) -> None:
+    log = write_log(
+        tmp_path, delegation(), intervention_open(),
+        {"event": "intervention", "id": "I-001", "ts": "2026-07-01", "refs": [],
+         "verdict": "Corroborated", "diagnosis_outcome": "confirmed"},
+    )
+    result = run(log, "--audit")
+    assert result.returncode == 0
+    draft = json.loads(result.stdout[result.stdout.index("{"):])
+    assert draft["stats"]["diagnosis_hit_rate"] == 1.0
+    assert "rework_rate" in draft["stats"]
+    assert "undershoot_rate" in draft["stats"]
+    assert "undershoot_rework_rate" not in draft["stats"]
 
 
 def test_audit_mode_emits_draft_meta_audit(tmp_path: Path) -> None:
