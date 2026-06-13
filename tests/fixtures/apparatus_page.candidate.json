@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0.0",
+  "page_index": 0,
+  "page_label": "1",
+  "dimensions": { "width": 595.0, "height": 842.0 },
+  "source": {
+    "pdf": "synthetic/republic-i-apparatus.pdf",
+    "title": "The Republic, Book I",
+    "author": "Plato (tr. Jowett)"
+  },
+  "regions": [
+    {
+      "id": "head-1",
+      "label": "section_header",
+      "bbox": { "x0": 0.12, "y0": 0.08, "x1": 0.88, "y1": 0.13 },
+      "text": "Book I",
+      "reading_order_index": 0
+    },
+    {
+      "id": "body-1",
+      "label": "text_block",
+      "bbox": { "x0": 0.12, "y0": 0.15, "x1": 0.88, "y1": 0.45 },
+      "text": "I went down yesterday to the Piraeus with Glaucon the son of Ariston, that I might offer up my prayers to the goddess.¹",
+      "text_anchors": ["¹"],
+      "reading_order_index": 1
+    },
+    {
+      "id": "body-2",
+      "label": "text_block",
+      "bbox": { "x0": 0.12, "y0": 0.47, "x1": 0.88, "y1": 0.70 },
+      "text": "And also because I wanted to see in what manner they would celebrate the festival, which was now being held for the first time.",
+      "reading_order_index": 2
+    },
+    {
+      "id": "note-1",
+      "label": "note_area",
+      "bbox": { "x0": 0.12, "y0": 0.82, "x1": 0.88, "y1": 0.90 },
+      "text": "¹ The festival of Bendis, a Thracian goddess identified with Artemis.",
+      "semantic_labels": ["note"],
+      "reading_order_index": 3
+    }
+  ],
+  "reading_order": ["head-1", "body-1", "body-2", "note-1"],
+  "quality": {
+    "overall": "high",
+    "is_scan": false,
+    "difficulty_factors": ["dense_footnotes"]
+  }
+}

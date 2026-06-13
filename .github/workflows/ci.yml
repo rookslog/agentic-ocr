@@ -33,6 +33,19 @@ jobs:
       - name: Test (pytest)
         run: uv run pytest
 
+      # Checker suite end-to-end on the scriptorium GT-A fixtures (PLAN §5 /
+      # Phase-0 gate item 5). The CLI exits 0 only when every hard check passes;
+      # the printed scorecard makes the checker step visible in the CI log.
+      - name: Checker suite smoke (GT-A fixtures)
+        run: |
+          set -euo pipefail
+          uv run python -m eval.checkers \
+            --gt tests/fixtures/minimal_page.gt.json \
+            --candidate tests/fixtures/minimal_page.candidate.json
+          uv run python -m eval.checkers \
+            --gt tests/fixtures/apparatus_page.gt.json \
+            --candidate tests/fixtures/apparatus_page.candidate.json
+
   # ── No-corpus-blob guard (PLAN §11.5): never commit PDFs or >1MB files ─────
   guard:
     name: no-pdf / no-large-blob guard
