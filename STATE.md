@@ -4,8 +4,12 @@
 working session; the first thing a fresh agent session or /goal packet reads.
 For strategy read `PLAN.md`; for the predict→verdict history read `ledger.md`.
 
-**Last updated:** 2026-06-12 (second pass — sibling repos now exist; process layer added)
+**Last updated:** 2026-06-12 (third pass — triage layer mechanized + adversarially reviewed)
 **Phase:** 0 — Apparatus (no models yet). **In progress.**
+
+**Open PR:** #2 `process/delegation-triage` — the delegation-triage layer + validator +
+skill + two /goal packets. Adversarially reviewed (D-005/D-006, both APPROVE-WITH-CHANGES,
+fixes applied). Awaits Logan's merge (T3 load-bearing; branch protection requires it).
 
 ## What exists (this repo)
 
