@@ -30,10 +30,13 @@ fixes applied). Awaits Logan's merge (T3 load-bearing; branch protection require
   declares local-mac / dionysus / rental. No queue, no orchestrator (by design).
 - `ledger.md` — append-only predict→verdict log (seeded with the scaffolding entry).
 - CI (`.github/workflows/ci.yml`): ruff + mypy + pytest, no-PDF / no->1MB guard,
-  and the prereg-gate on PRs.
+  the prereg-gate on PRs, and the **delegation-log validator** (schema + overkill
+  guardrail on `delegation-log.jsonl`).
 - `docs/delegation-triage.md` + `delegation-log.jsonl` — delegation triage rubric and
   append-only trace log (tier choice → disposition → review-gate verdicts →
-  interventions → meta-audit). Every delegated subtask logs here.
+  interventions → meta-audit). Enforced by `.github/scripts/validate_delegation_log.py`
+  (+ `tests/test_validate_delegation_log.py`, 26 cases) and the in-repo skill
+  `.claude/skills/delegation-triage/`. Every delegated subtask logs here.
 - `docs/process/upstream-feedback.md` — append-only record of improvements to the
   /goal packet format and related skills, for later self-improvement workflows.
 - `goal/` — packets: `corpus-acquisition.goal.md` (HUMAN-GATE on selection; zlibrary
