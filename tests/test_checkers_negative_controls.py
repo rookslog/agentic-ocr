@@ -68,6 +68,18 @@ def test_minimal_negative_control_isolation(name, mutate, target, minimal_gt, mi
         assert verdicts[checker_id] is True, f"{name}: {checker_id} should be unaffected"
 
 
+def test_clean_fixtures_produce_zero_crashes(
+    apparatus_gt, apparatus_candidate, minimal_gt, minimal_candidate
+):
+    # Review finding D-008: a checker crash on a clean fixture must surface as a CI
+    # failure (a checker bug), not as ordinary reward. Assert the default suite runs
+    # crash-free on both faithful candidates.
+    for cand, gt in [(apparatus_candidate, apparatus_gt), (minimal_candidate, minimal_gt)]:
+        card = run_checkers(cand, gt, build_default_suite())
+        assert card.crashed == []
+        assert card.exit_code() == 0
+
+
 def test_mutators_are_deterministic(apparatus_candidate):
     # Same input → byte-identical mutated output (no RNG).
     import json

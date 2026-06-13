@@ -157,6 +157,16 @@ class Scorecard:
         return [r for r in self.results if r.severity == "soft" and not r.passed]
 
     @property
+    def crashed(self) -> list[CheckResult]:
+        """Results produced by a checker that raised (runner-captured crashes).
+
+        Distinct from a legitimate hard FAIL: a non-empty list means a checker is
+        *broken*, not that the candidate is bad. CI asserts this is empty on a
+        clean fixture run.
+        """
+        return [r for r in self.results if r.metrics.get("crashed") is True]
+
+    @property
     def passed(self) -> bool:
         """True iff there are no hard failures (the CI / reward gate)."""
         return not self.hard_failures
@@ -175,6 +185,7 @@ class Scorecard:
                 "passed": sum(1 for r in self.results if r.passed),
                 "hard_failures": len(self.hard_failures),
                 "soft_failures": len(self.soft_failures),
+                "crashed": len(self.crashed),
             },
             "results": [r.to_dict() for r in self.results],
         }
@@ -212,6 +223,13 @@ def run_checkers(
     failed assertion, never a green build). This keeps the runner robust to a
     malformed candidate that trips an individual checker. Checker order is
     preserved.
+
+    A captured crash is tagged ``metrics["crashed"] = True`` to keep it distinct
+    from a checker's *legitimate* hard FAIL (review finding D-008): when these exit
+    codes feed a reward signal, "the checker is broken" and "the candidate is bad"
+    must be distinguishable, so CI can assert that a clean fixture run produces zero
+    crashed results rather than letting a checker bug train the policy as ordinary
+    reward. Use :meth:`Scorecard.crashed` to detect them.
     """
     results: list[CheckResult] = []
     for checker in checkers:
@@ -224,7 +242,7 @@ def run_checkers(
                     passed=False,
                     severity="hard",
                     detail=f"checker raised {type(exc).__name__}: {exc}",
-                    metrics={"error": type(exc).__name__},
+                    metrics={"crashed": True, "error": type(exc).__name__},
                 )
             )
     return Scorecard(results=results)

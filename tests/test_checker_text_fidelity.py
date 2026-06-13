@@ -48,3 +48,30 @@ def test_vacuous_pass_when_gt_has_no_text():
     result = TextFidelityChecker().check({"regions": []}, {"regions": []})
     assert result.passed is True
     assert result.metrics["gt_ngrams"] == 0
+
+
+def test_recall_gate_is_blind_to_hallucination_but_precision_surfaces_it(
+    apparatus_gt, apparatus_candidate
+):
+    # Review finding D-008: the hard gate is recall-only, so appended fabricated
+    # text passes (recall 1.0). The precision metric must surface the excess so the
+    # hallucination is reported, not hidden.
+    import copy
+
+    mutated = copy.deepcopy(apparatus_candidate)
+    for region in mutated["regions"]:
+        if region["id"] == "body-2":
+            region["text"] += " Furthermore the philosopher then flew to the moon."
+    result = TextFidelityChecker().check(mutated, apparatus_gt)
+    assert result.passed is True  # recall gate is intentionally hallucination-blind
+    assert result.metrics["containment"] == 1.0
+    assert result.metrics["precision"] < 1.0  # excess surfaced
+    assert result.metrics["excess_ngrams"] > 0
+
+
+def test_metric_matches_verdict_at_boundary(apparatus_gt, apparatus_candidate):
+    # Review finding D-008: the stored containment must be the exact float the gate
+    # compares, never a rounded value that could contradict the verdict.
+    result = TextFidelityChecker().check(apparatus_candidate, apparatus_gt)
+    gated = result.metrics["containment"] >= result.metrics["min_containment"]
+    assert gated == result.passed

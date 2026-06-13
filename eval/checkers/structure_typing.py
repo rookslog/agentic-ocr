@@ -12,8 +12,16 @@ candidate regions to GT regions and scores, per canonical block type
 
 The per-type precision / recall / F1 and the micro/macro aggregates are computed
 by **reusing** :mod:`eval.lib.metrics` (``ElementMetrics`` / ``AggregateMetrics``)
-— the ported scoring core, not a reimplementation. The pass gate is micro-F1 over
-all types.
+— the ported scoring core, not a reimplementation.
+
+The pass gate is an **integer count of type-errors** (total FP + FN over all
+types) and passes iff that count is zero — i.e. exact type recovery. A float micro-F1
+floor was rejected (review finding D-008): micro-F1 = (N-1)/N for a single mistyped
+region, so a floor like 0.999 silently tolerates one error on a 1000-region page
+while demanding perfection on a small one — the gate's strictness would depend on
+page size, not candidate quality, which is a reward-hack as pages scale. micro/macro
+F1 are still reported (for later reward shaping), but the hard gate is page-size
+invariant.
 """
 
 from __future__ import annotations
@@ -26,19 +34,20 @@ from .pagegt import PageView
 
 
 class StructureTypingChecker(Checker):
-    """Region block types must be recovered; gate on micro-F1 across types.
+    """Region block types must be recovered exactly; gate on zero type-errors.
 
     Args:
-        min_micro_f1: micro-averaged F1 floor over all block types (default
-            0.999 ≈ exact recovery; integer-derived so 1.0 is reachable exactly).
+        max_type_errors: the largest tolerated count of (FP + FN) type-errors over
+            all block types (default 0 = exact recovery). Page-size invariant,
+            unlike a micro-F1 floor.
         severity: overrides default hard severity if given.
     """
 
     id = "structure-typing"
 
-    def __init__(self, *, min_micro_f1: float = 0.999, severity=None) -> None:
+    def __init__(self, *, max_type_errors: int = 0, severity=None) -> None:
         super().__init__(severity=severity)
-        self.min_micro_f1 = min_micro_f1
+        self.max_type_errors = max_type_errors
 
     def _score(self, gt: PageView, candidate: PageView) -> AggregateMetrics:
         mapping = align_regions(gt, candidate)
@@ -84,16 +93,19 @@ class StructureTypingChecker(Checker):
 
     def check(self, candidate: PageLike, gt: PageLike) -> CheckResult:
         metrics = self._score(PageView(gt), PageView(candidate))
-        micro_f1 = metrics.micro_f1
-        passed = micro_f1 >= self.min_micro_f1
+        fp = metrics.total_false_positives
+        fn = metrics.total_false_negatives
+        type_errors = fp + fn
+        passed = type_errors <= self.max_type_errors
 
         per_type = ", ".join(
             f"{t}: P{m.precision:.2f}/R{m.recall:.2f}/F{m.f1:.2f}"
             for t, m in sorted(metrics.by_type.items())
         )
         detail = (
-            f"micro-F1 {micro_f1:.3f} (floor {self.min_micro_f1:.3f}); "
-            f"macro-F1 {metrics.macro_f1:.3f}; [{per_type}]"
+            f"{type_errors} type-error(s) [FP {fp} + FN {fn}] "
+            f"(tolerated {self.max_type_errors}); "
+            f"micro-F1 {metrics.micro_f1:.3f}, macro-F1 {metrics.macro_f1:.3f}; [{per_type}]"
         )
 
         type_metrics: dict[str, float] = {}
@@ -103,9 +115,11 @@ class StructureTypingChecker(Checker):
             passed=passed,
             detail=detail,
             metrics={
-                "micro_f1": round(micro_f1, 4),
+                "type_errors": type_errors,
+                "false_positives": fp,
+                "false_negatives": fn,
+                "micro_f1": round(metrics.micro_f1, 4),
                 "macro_f1": round(metrics.macro_f1, 4),
-                "min_micro_f1": self.min_micro_f1,
                 **type_metrics,
             },
         )

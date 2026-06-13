@@ -12,15 +12,15 @@ def test_passes_on_apparatus_with_anchor(apparatus_gt, apparatus_candidate):
     result = FootnoteAnchorChecker().check(apparatus_candidate, apparatus_gt)
     assert result.passed is True
     assert result.metrics["notes_matched"] == 1
-    assert result.metrics["anchors_ok"] == 1
+    assert result.metrics["spans_preserved"] == 1
 
 
 def test_minimal_note_present_no_anchors_is_vacuous_pass(minimal_gt, minimal_candidate):
-    # The minimal fixture declares a note but no in-text marker: the checker
-    # verifies note presence and treats anchor integrity as vacuously satisfied.
+    # The minimal fixture declares a note but no notable span: the checker
+    # verifies note presence and treats span preservation as vacuously satisfied.
     result = FootnoteAnchorChecker().check(minimal_candidate, minimal_gt)
     assert result.passed is True
-    assert result.metrics["gt_anchors"] == 0
+    assert result.metrics["gt_spans"] == 0
     assert result.metrics["notes_matched"] == 1
 
 
@@ -28,7 +28,7 @@ def test_dropped_anchor_fails(apparatus_gt, apparatus_candidate):
     mutated = M.drop_anchor(apparatus_candidate)
     result = FootnoteAnchorChecker().check(mutated, apparatus_gt)
     assert result.passed is False
-    assert result.metrics["anchor_defects"] == 1
+    assert result.metrics["span_defects"] == 1
 
 
 def test_duplicated_anchor_fails(apparatus_gt, apparatus_candidate):
@@ -38,7 +38,22 @@ def test_duplicated_anchor_fails(apparatus_gt, apparatus_candidate):
             region["text"] = region["text"] + " stray duplicate marker ¹"
     result = FootnoteAnchorChecker().check(mutated, apparatus_gt)
     assert result.passed is False
-    assert result.metrics["anchor_defects"] == 1
+    assert result.metrics["span_defects"] == 1
+
+
+def test_span_declared_but_absent_from_gt_text_is_skipped_not_failed(apparatus_gt):
+    # Review finding D-008 Case A: GT declares text_anchors=["1"] but its own region
+    # text uses the superscript "¹". A faithful candidate that reproduces "¹" must
+    # NOT be failed by fabricating an expected count of 1 for the literal "1".
+    gt = copy.deepcopy(apparatus_gt)
+    for region in gt["regions"]:
+        if region["id"] == "body-1":
+            region["text_anchors"] = ["1"]  # declared marker, but text has "¹"
+    faithful = copy.deepcopy(gt)  # candidate reproduces GT exactly (incl. "¹")
+    result = FootnoteAnchorChecker().check(faithful, gt)
+    assert result.passed is True
+    assert result.metrics["spans_skipped"] == 1
+    assert result.metrics["span_defects"] == 0
 
 
 def test_missing_note_region_fails(apparatus_gt, apparatus_candidate):

@@ -8,8 +8,13 @@ region corresponds to a given GT region. Two regimes matter:
    path the goal packet's end-to-end fixture run takes.
 2. **Real pipeline output (later).** A pipeline invents its own ids, so we fall
    back to maximum bounding-box overlap (IoU). The fallback is greedy by
-   descending IoU with deterministic tie-breaks (GT order, then candidate order),
-   so the same inputs always produce the same alignment.
+   descending IoU, and IoU ties break on the *intrinsic* region ids
+   (gt id, then candidate id) — never on array position. That last point is
+   load-bearing for the reward-signal use: a candidate that merely lists the same
+   regions in a different order is semantically identical, so it must produce an
+   identical alignment (and identical verdicts). Keying tie-breaks on enumeration
+   order would let a reordering of ``regions`` flip a hard verdict — a review
+   finding (D-008) this design closes.
 
 The function returns a mapping ``gt_id -> candidate_id | None``. ``None`` means the
 GT region has no acceptable counterpart (a miss).
@@ -67,22 +72,25 @@ def align_regions(
     candidate_pool = [
         c for c in candidate.regions if c.id and c.id not in used_candidate_ids and c.bbox
     ]
-    # Build all viable (iou, gt_order, cand_order) candidate pairs, then assign
-    # greedily by descending IoU with stable tie-breaks.
-    scored: list[tuple[float, int, int, str, str]] = []
-    for gi, region in enumerate(unmatched_gt):
+    # Build all viable (iou, gt_id, cand_id) pairs, then assign greedily by
+    # descending IoU. Ties break on the intrinsic ids (gt id, then candidate id),
+    # NOT on enumeration/array order, so reordering the candidate's `regions` list
+    # cannot change the alignment (review finding D-008: array-order tie-breaks
+    # made a semantics-preserving permutation flip hard verdicts).
+    scored: list[tuple[float, str, str]] = []
+    for region in unmatched_gt:
         if region.bbox is None:
             continue
-        for ci, cand in enumerate(candidate_pool):
+        for cand in candidate_pool:
             assert cand.bbox is not None  # filtered above
             iou = _iou(region.bbox, cand.bbox)
             if iou >= min_iou:
                 # Negative iou as primary key so ascending sort == descending IoU.
-                scored.append((-iou, gi, ci, region.id, cand.id))
+                scored.append((-iou, region.id, cand.id))
     scored.sort()
 
     assigned_gt: set[str] = set()
-    for _neg_iou, _gi, _ci, gt_id, cand_id in scored:
+    for _neg_iou, gt_id, cand_id in scored:
         if gt_id in assigned_gt or cand_id in used_candidate_ids:
             continue
         mapping[gt_id] = cand_id

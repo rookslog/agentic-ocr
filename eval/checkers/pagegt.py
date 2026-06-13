@@ -39,14 +39,23 @@ from typing import Any
 # unrecognised label maps to "other" rather than raising, so a candidate emitting a
 # novel label degrades gracefully instead of crashing the run.
 
-# scholar-schema SpatialLabel values that mean "note" spatially.
+# Spatial labels that mean "note". The current v2.0.0 SpatialLabel members are
+# note_area / note_continuation / marginal_note; "footnote_area" / "endnote_area"
+# are RETIRED v1 values kept only for dict back-compat (they cannot appear in a
+# v2.0.0 PageGT) — not current SpatialLabel members.
 _NOTE_SPATIAL_LABELS = frozenset(
-    {"note_area", "note_continuation", "footnote_area", "endnote_area", "marginal_note"}
+    {"note_area", "note_continuation", "marginal_note", "footnote_area", "endnote_area"}
 )
-# scholar-schema SemanticType values that mean "note" semantically.
+# Semantic labels that mean "note". Current v2.0.0 SemanticType has only "note"
+# (footnote/endnote were unified into it); "footnote"/"endnote" are retired v1
+# values kept for back-compat, not current SemanticType members.
 _NOTE_SEMANTIC_LABELS = frozenset({"note", "footnote", "endnote"})
 
-_HEADING_LABELS = frozenset({"section_header", "title", "page_header"})
+# Section/document headings. page_header (a running header repeated atop every
+# page) is deliberately NOT here: folding it into "heading" would let a page_header
+# ↔ section_header swap score as a correct match and mask a real L2 typing error
+# (review finding D-008). page_header therefore falls through to "other".
+_HEADING_LABELS = frozenset({"section_header", "title"})
 _BODY_LABELS = frozenset({"text_block", "block_quote", "abstract", "list_item"})
 
 

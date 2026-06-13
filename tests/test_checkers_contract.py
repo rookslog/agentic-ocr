@@ -88,6 +88,15 @@ def test_runner_captures_exceptions_as_hard_failures():
     assert "boom" in card.results[0].detail
 
 
+def test_crash_is_tagged_distinctly_from_legitimate_hard_failure():
+    # Review finding D-008: a checker crash must be distinguishable from a candidate's
+    # legitimate hard FAIL, so a checker bug can't silently train a reward policy.
+    card = run_checkers({}, {}, [_AlwaysFailHard(), _Raises()])
+    assert card.crashed == [card.results[1]]  # only the raiser crashed
+    assert card.results[0] not in card.crashed  # a legitimate FAIL is not a crash
+    assert card.to_dict()["summary"]["crashed"] == 1
+
+
 def test_severity_override_per_instance():
     checker = _AlwaysFailHard(severity="soft")
     card = run_checkers({}, {}, [checker])

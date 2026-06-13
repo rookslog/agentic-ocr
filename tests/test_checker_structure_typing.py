@@ -47,6 +47,40 @@ def test_semantic_note_beats_spatial_label(apparatus_gt):
     assert result.passed is True  # still recovered as footnote
 
 
+def test_gate_is_page_size_invariant(apparatus_gt):
+    # Review finding D-008: a float micro-F1 floor (e.g. 0.999) would PASS a large
+    # page with one fully-mistyped region — micro-F1 = (N-1)/N → 0.999 at N=1000.
+    # The integer zero-error gate must FAIL it regardless of page size.
+    def page(n_regions: int, mistype_one: bool) -> dict:
+        regions = []
+        order = []
+        for i in range(n_regions):
+            label = "text_block"
+            if mistype_one and i == 0:
+                label = "section_header"  # one region typed wrong
+            regions.append(
+                {
+                    "id": f"r{i}",
+                    "label": label,
+                    "bbox": {"x0": 0.1, "y0": 0.0, "x1": 0.9, "y1": 0.001},
+                    "text": f"region {i} body text here",
+                    "reading_order_index": i,
+                }
+            )
+            order.append(f"r{i}")
+        return {"regions": regions, "reading_order": order}
+
+    gt = page(1000, mistype_one=False)
+    good = page(1000, mistype_one=False)
+    one_wrong = page(1000, mistype_one=True)
+
+    assert StructureTypingChecker().check(good, gt).passed is True
+    bad = StructureTypingChecker().check(one_wrong, gt)
+    assert bad.passed is False  # would have passed a 0.999 float floor
+    assert bad.metrics["type_errors"] >= 1
+    assert bad.metrics["micro_f1"] >= 0.998  # still ~0.999 — but the gate is integer
+
+
 def test_deterministic(apparatus_gt, apparatus_candidate):
     a = StructureTypingChecker().check(apparatus_candidate, apparatus_gt)
     b = StructureTypingChecker().check(apparatus_candidate, apparatus_gt)
