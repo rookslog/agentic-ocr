@@ -8,6 +8,12 @@ gt-b/
 *.pdf
 *.epub
 
+# ── Local-only working artifacts (inventories, research notes) — never pushed ──
+.local/
+
+# ── Tooling state ───────────────────────────────────────────────────────
+.serena/
+
 # ── Python ─────────────────────────────────────────────────────────────
 .venv/
 venv/
