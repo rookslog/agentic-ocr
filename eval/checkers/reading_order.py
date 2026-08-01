@@ -149,5 +149,14 @@ class ReadingOrderChecker(Checker):
                 "kendall_tau": tau,
                 "lis_ratio": lis_ratio,
                 "missing": len(missing),
+                # Which of the three signals actually ordered each page: "declared"
+                # (a canonical reading_order list), "indices", or "array" (nothing
+                # declared — file order, the last resort). Surfaced so a consumer can
+                # see the evidence a page was scored on rather than inferring it: on
+                # "array" the verdict is sensitive to the regions list's order, which
+                # is genuine order information only because nothing better exists
+                # (round-4 MAJOR-2).
+                "order_signal": cand_view.order_signal,
+                "gt_order_signal": gt_view.order_signal,
             },
         )

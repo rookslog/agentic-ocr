@@ -13,7 +13,7 @@ from __future__ import annotations
 import pytest
 
 from eval.checkers import build_default_suite, run_checkers
-from eval.checkers.text_fidelity import TextFidelityChecker
+from eval.checkers.text_fidelity import MIN_REGION_RETENTION, TextFidelityChecker
 from tests import _mutations as M
 from tests.conftest import FIXTURES_DIR
 
@@ -144,11 +144,15 @@ def test_drop_anchor_on_alphabetic_marker_leaves_the_non_text_checkers_alone():
     for checker_id in ALL_CHECKERS - {"footnote-anchor", "text-fidelity"}:
         assert verdicts[checker_id] is True, f"{checker_id} should be unaffected"
 
-    # The residual text cost is bounded by the single removed token: one of the
-    # region's trigrams. Under the old str.replace the region lost every "a" and
-    # retention collapsed far below this.
+    # The residual text cost is bounded by the single removed token. The bound
+    # asserted must be the one the gate actually ENFORCES: MIN_REGION_RETENTION is
+    # 0.95, so advertising ">0.9" claimed a looser bound than the code applies and
+    # would have passed a region the checker itself flags (round-4 MINOR-4). Under
+    # the old str.replace the region lost every "a" and retention collapsed far below
+    # either number.
     result = TextFidelityChecker().check(mutated, _ALPHA_MARKER_PAGE)
-    assert result.metrics["worst_region_retention"] > 0.9
+    worst = result.metrics["worst_region_retention"]
+    assert worst >= MIN_REGION_RETENTION, f"{worst} is a defect the gate would flag"
 
 
 def _declared_markers(page) -> list[str]:
@@ -178,9 +182,9 @@ def test_drop_anchor_text_fidelity_effect_matches_the_marker_kind(candidate_name
     The claim is conditional on the marker kind, and the condition is computed from
     the fixture rather than assumed: a marker normalization treats as markup (``¹``,
     ``*``, ``†``) leaves the token stream identical, so text-fidelity must be exactly
-    untouched; an alphanumeric marker is a content token, so the most that can be
-    claimed is a bounded residual. A future fixture with an alphabetic marker
-    therefore lands in the second branch instead of silently failing the first.
+    untouched; a marker made of content characters is a token, so the most that can
+    be claimed is a bounded residual. A future fixture with such a marker therefore
+    lands in the second branch instead of silently failing the first.
     """
     import json
 
@@ -193,8 +197,13 @@ def test_drop_anchor_text_fidelity_effect_matches_the_marker_kind(candidate_name
     markers = _declared_markers(gt)
     result = TextFidelityChecker().check(M.drop_anchor(candidate), gt)
 
-    if any(ch.isalnum() for marker in markers for ch in marker):
-        assert result.metrics["worst_region_retention"] > 0.9, result.detail
+    # The predicate must be the NORMALIZER's own: eval/checkers/_normalize.py keeps a
+    # character iff `ch.isalpha() or ch.isdecimal()`. `isalnum()` is NOT that test —
+    # '¹'.isalnum() is True (numeric, though not decimal), so the guard routed the
+    # apparatus fixture into the residual branch and its strict assertions never ran.
+    # An inoperative guard is worse than none: it reads as coverage (round-4 MAJOR-4).
+    if any(ch.isalpha() or ch.isdecimal() for marker in markers for ch in marker):
+        assert result.metrics["worst_region_retention"] >= MIN_REGION_RETENTION, result.detail
     else:
         assert result.passed is True, result.detail
         assert result.metrics["containment"] == 1.0

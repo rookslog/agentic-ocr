@@ -96,7 +96,9 @@ Verified on both fixtures (`tests/test_checkers_negative_controls.py`).
 
 **The isolation claim is conditional, and the condition is computed, not assumed.**
 `drop_anchor` is text-fidelity-neutral only for markers normalization treats as *markup*
-(`¹`, `*`, `†` — what both committed fixtures use). An **alphabetic** marker is an
+(`¹`, `*`, `†` — the kind `apparatus_page` declares; `minimal_page` declares no
+anchors at all, so the claim is vacuous there rather than exercised). A marker made of
+characters the normalizer treats as **content** (`isalpha()` or `isdecimal()`) is an
 ordinary content token after normalization, so removing it necessarily costs one token;
 for those the control asserts a bounded residual instead. The test discovers the fixture
 inventory from disk and branches on each fixture's declared markers, so a future fixture
@@ -106,8 +108,9 @@ cannot silently escape the claim.
 
 ## 4. Verification
 
-- `uv run pytest` (full suite) → **175 passed** (44 ported lib tests + 26 delegation-log
-  tests + 105 checker tests). `ruff check` clean; `mypy` clean (37 source files).
+- `uv run pytest` (full suite) → **204 passed, 1 xfailed** (44 ported lib tests + 26
+  delegation-log tests + 134 checker tests + 1 xfail pinning a frozen semantics question).
+  `ruff check` clean; `mypy` clean (38 source files).
 - CLI: faithful candidate → exit 0; mutated candidate → exit 1.
 - **CI green on the final commit** (`a0b203e`):
   [run 27455116310](https://github.com/loganrooks/agentic-ocr/actions/runs/27455116310),
@@ -216,12 +219,12 @@ H1a (honest model ids) exit 0, H2 / H3 / H4 / H1b all exit 1.
 |---|---|---|
 | `MIN_REGION_RETENTION` | 0.95 | the same bar as the page-level floor — the region gate is the existing standard applied where pooling cannot dilute it, not a new stricter one |
 | `GROSS_REGION_RETENTION` | 0.60 | separates *noise* from *gone*. Well above what deletion/swapping produce (~0.0–0.2) and well below any plausible OCR noise level. Zero tolerance, page-size invariant |
-| `MINOR_REGION_DEFECT_RATE` | 0.05, floor 1 | a stochastic pipeline produces some minor noise on any long page; zero tolerance here was the round-3 false-fail. Scales with the page so a 40-region page is not held to a stricter effective standard than a 4-region one. The page-level floor still bounds accumulation |
+| `MINOR_REGION_DEFECT_RATE` | 0.05, floor 1 | a stochastic pipeline produces some minor noise on any long page; zero tolerance here was the round-3 false-fail. Scales with the page so a 40-region page is not held to a stricter effective standard than a 4-region one. **This row previously ended "the page-level floor still bounds accumulation" — that claim is false and was falsified in round 4; see KNOWN-OPEN-1 below.** Frozen pending an operator decision |
 | `MAX_REGION_FOREIGN_RATIO` | 0.5 | generous — a region must import *most* of its content from elsewhere to trip. Novel text only lowers the ratio, keeping the hallucination question escalated |
 | `MAX_REGION_MISPLACEMENTS` | 0 | misplacement is categorical, not stochastic |
 | `MAX_REGION_DEPTH` | 32 | bounds pathological nesting; exceeding it is a reported violation, never a silent truncation |
 
-## 10. Open question for the E1 schema-revision inputs
+## 10. Open questions for the E1 schema-revision inputs
 
 **Does a parent `Region.text` include its children's text?** scholar-schema
 (`scholargt/schema/spatial.py`) documents `Region.text` as optional and specifies no
@@ -231,3 +234,67 @@ docstring: inclusive text would double-count every nested block in the page-leve
 multiset and would make a child's misplacement invisible to the per-region gate. No
 runtime detection is attempted. If the schema later specifies inclusive text, `_flatten`
 and `PageView.full_text` are the two places that change.
+
+2. **Does a declared `reading_order` name nested regions?** Since round 4 the
+   completeness rule is depth-uniform: a declared order that is honoured must name
+   every region at every depth exactly once, with each region's descendants
+   immediately following it. That rule is deliberately agnostic about which
+   convention the schema intends — it accepts a fully-enumerated order, and it
+   accepts declaring no order at all (the page then falls to `reading_order_index`)
+   — but it rejects the half-way case of naming only the top-level ids, because
+   accepting that is precisely what let a candidate hide a misnested child behind a
+   flattering order (round-4 BLOCKER-1, probe P3). scholar-schema does not say which
+   convention `reading_order` follows. **If E1 settles it, the rule can be narrowed;
+   until then a page must enumerate fully or not declare.**
+
+---
+
+## 11. Round 4 (both reviewers) — closure and what stayed open
+
+Round 5 was scoped by the delegator to **conformance, honesty and bugs**; the
+per-region tolerance/aggregate semantics were frozen pending an operator design
+decision. Closed in round 5:
+
+| id | sev | finding | resolution |
+|---|---|---|---|
+| BLOCKER-1 (P3) | blocker | top-level-only completeness let a flattering declared order hide a misnested child; emission did not honour the documented child-follows-parent invariant (P8c) | completeness is depth-uniform and the declared order must be a permutation of whole parent+descendant blocks, enforced identically in `PageView` and the contract checker |
+| codex HIGH | high | novel-text padding masked misplacement — novel n-grams sat in the ratio's denominator only, so enough padding hid a smear | novel n-grams excluded from numerator **and** denominator; neutral in both directions |
+| MAJOR-3 / codex MEDIUM (P6) | major | identity-keyed memo returned stale alignments after in-place mutation | memo keyed by **content** (ids + bboxes — exactly what the assignment reads); `reset_cache()` exported; precondition stated in the module comment and docstring |
+| MAJOR-2 (P2) | major | the "no declared reading_order" invariance test carried `reading_order_index` on every region, so it never exercised the array path — the claim was vacuous | test rewritten to omit all order signals and assert the **true** behaviour (array order is the last-resort signal and is load-bearing); documented in `pagegt.py`; new `order_signal` / `gt_order_signal` metrics expose which signal scored a page |
+| MAJOR-4 | major | the fixture guard used `isalnum()`, but `'¹'.isalnum()` is `True`, so `apparatus_page` was routed into the residual branch and its strict assertions never ran | predicate is now the normalizer's own (`isalpha() or isdecimal()`); apparatus takes the strict branch |
+| MINOR-1 (P8b) | minor | a float `reading_order_index` was silently ignored by both `PageView` and the contract checker | non-int index (float / str / bool / null) is a violation |
+| codex MEDIUM | medium | a JSON `null` `reading_order` slipped the `is not None` gate | membership test; absent and null are distinguished |
+| MINOR-3 | minor | `worst_region_retention` reported 1.0 when no region was scored — the flattering-default class, third instance | the key is **absent** when `regions_scored == 0` |
+| MINOR-4 | minor | the residual-bound assertion advertised `>0.9` while the gate enforces `≥0.95` | asserts `MIN_REGION_RETENTION`, imported rather than restated |
+
+### KNOWN-OPEN — frozen pending an operator semantics decision
+
+**KNOWN-OPEN-1 — the minor-defect aggregate is farmable, and the page-level floor is
+not a backstop.** An earlier version of this doc and of `text_fidelity.py` claimed
+"minor defects cannot accumulate into a materially degraded page". That claim is
+**false**. Relocating text preserves page-pooled containment exactly, so the
+page-level floor does not constrain it at all. Because the allowance counts regions
+rather than weighing their text, it admits roughly `0.39 x (text share of the
+ceil(0.05 x R) largest regions)` of a page sitting in the wrong block — **measured at
+20.6% of page trigrams on a skewed 100-region page, with all five checkers passing**
+(reviewer probe P5b). Codex reached the same conclusion independently ("farmable …
+needs a continuous penalty or a non-farmable aggregate before reward use"). The
+aggregate is **pre-registered for redesign — a magnitude-weighted budget rather than a
+count — before any reward use**, and the constants await calibration against real OCR
+error distributions (E2 / vision-pilot data). They are a workable CI false-fail
+accommodation today and nothing more.
+
+**KNOWN-OPEN-2 — short-region misplacement (probe P4).** One segmentation slip that
+moves a following sentence into a short caption trips the misplacement gate on a
+60-region page, because a short region's own n-gram mass is small enough that any
+imported sentence exceeds `MAX_REGION_FOREIGN_RATIO`. Whether that is a true positive
+(the caption really does hold another block's text) or a false fail (one boundary slip
+in 60 regions) is the same frozen question. Pinned as a strict `xfail` in
+`tests/test_checkers_round4_regressions.py::test_p4_short_region_boundary_slip` so the
+case cannot be lost and neither answer is enshrined.
+
+**KNOWN-OPEN-3 — unguarded O(n³) alignment.** Exact at every size and fine for the
+bounded CI fixtures (100 regions 0.044s, 200 0.28s, 400 2.2s, 600 7.4s, measured by
+codex), but there is no fail-closed resource bound for arbitrary untrusted candidate
+output. A bound or a sparsity exploit is needed before a reward service; a greedy
+fallback is not (that was round 3's finding M6).

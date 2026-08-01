@@ -327,9 +327,15 @@ def test_alignment_memo_does_not_confuse_distinct_pages(apparatus_gt, apparatus_
 # ── FIX-F: the coverage gap the reviewers named ───────────────────────────────
 
 
-def test_scorecard_is_invariant_to_region_order_with_no_declared_reading_order():
-    # The permutation-invariance property (D-008) asserted on a page that declares no
-    # reading_order at all, so array order is the only thing being permuted.
+def test_scorecard_is_invariant_to_region_order_under_the_index_signal():
+    # RENAMED (round-4 MAJOR-2). This was called "..._with_no_declared_reading_order"
+    # and its comment claimed array order was "the only thing being permuted" — but
+    # every region here carries reading_order_index, so the index signal is what
+    # orders the page and the array path was never exercised. The claim was vacuous.
+    # What it actually pins, correctly, is invariance under the INDEX signal; the true
+    # no-signal case lives in tests/test_checkers_round4_regressions.py
+    # (test_p2_array_order_is_the_last_resort_signal_and_is_load_bearing), where
+    # permuting the array legitimately DOES change the verdict.
     regions = [
         {
             "id": "body-1",
