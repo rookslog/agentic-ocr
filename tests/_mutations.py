@@ -7,7 +7,13 @@ worthless. Character corruption picks a fixed stride rather than random position
 
 The mutators are designed for *isolation*: each is meant to trip exactly one checker
 while leaving the others' verdicts unchanged. The negative-control tests assert both
-halves of that (target fails AND the rest still pass).
+halves of that (target fails AND the rest still pass). One documented limit:
+:func:`drop_anchor` is isolated for markers normalization treats as *markup*
+(``¹``, ``*``, ``†`` — every committed fixture); an *alphabetic* marker is a content
+token after normalization, so removing it necessarily costs text-fidelity one token.
+
+The ``D-237 reward-exploit mutators`` block at the bottom is a different kind: those
+reproduce cross-vendor review findings and are expected to fail the suite outright.
 """
 
 from __future__ import annotations
@@ -26,12 +32,40 @@ def _regions(page: PageDict) -> list[dict[str, Any]]:
     return regions if isinstance(regions, list) else []
 
 
+def strip_standalone(text: str, marker: str) -> str:
+    """Remove occurrences of ``marker`` that are not embedded inside a word.
+
+    An occurrence counts as a marker only when neither of its immediate neighbours
+    is alphanumeric — ``goddess.¹`` yes, the ``a`` in ``and`` no. Plain
+    ``str.replace`` was a review finding (M7 / D-237): for an allowed *alphabetic*
+    marker such as ``"a"`` it stripped every ``a`` from the region's prose, so the
+    mutation tripped text-fidelity as well as footnote-anchor and the control's
+    "exactly one checker" claim was false.
+    """
+    if not marker:
+        return text
+    out: list[str] = []
+    i = 0
+    while i < len(text):
+        if text.startswith(marker, i):
+            before = text[i - 1] if i else ""
+            after = text[i + len(marker)] if i + len(marker) < len(text) else ""
+            if not before.isalnum() and not after.isalnum():
+                i += len(marker)
+                continue
+        out.append(text[i])
+        i += 1
+    return "".join(out)
+
+
 def drop_anchor(page: PageDict) -> PageDict:
     """Remove every declared in-text anchor marker (text + ``text_anchors``).
 
     Targets footnote-anchor integrity: the note regions stay, the markers vanish.
-    Normalization strips markers, so text-fidelity is unaffected; labels and order
-    are untouched, so structure-typing and reading-order are unaffected.
+    Only *standalone* marker occurrences are removed (see :func:`strip_standalone`),
+    so prose survives even when the marker is an ordinary letter. Normalization
+    strips markers, so text-fidelity is unaffected; labels and order are untouched,
+    so structure-typing and reading-order are unaffected.
     """
     out = copy.deepcopy(page)
     for region in _regions(out):
@@ -40,7 +74,7 @@ def drop_anchor(page: PageDict) -> PageDict:
             continue
         text = region.get("text", "")
         for marker in markers:
-            text = text.replace(marker, "")
+            text = strip_standalone(text, marker)
         region["text"] = text
         region["text_anchors"] = []
     return out
@@ -96,6 +130,90 @@ def corrupt_chars(page: PageDict, rate: float = 0.05) -> PageDict:
                 if alpha_seen % stride == 0:
                     chars[i] = "x" if ch.casefold() != "x" else "q"
         region["text"] = "".join(chars)
+    return out
+
+
+# ── D-237 reward-exploit mutators ─────────────────────────────────────────────
+# These are not isolation controls: each reproduces one exploit from the
+# cross-vendor review of PR #3, where a mutation that a scoring gate *must* punish
+# was passing the whole suite (or, for `rename_region_ids`, an honest candidate was
+# being punished). They are ported from the delegator's reproduction harness so the
+# exploits stay closed under regression.
+
+
+def swap_region_texts(page: PageDict, id_a: str, id_b: str) -> PageDict:
+    """Swap two regions' complete ``text``, leaving ids/labels/bboxes/order intact.
+
+    Review finding H2: page-pooled n-grams are identical after the swap, so content
+    attached to the wrong ordered block scored a clean page-level containment of 1.0.
+    """
+    out = copy.deepcopy(page)
+    by_id = {r.get("id"): r for r in _regions(out)}
+    a, b = by_id.get(id_a), by_id.get(id_b)
+    if a is not None and b is not None:
+        a["text"], b["text"] = b.get("text", ""), a.get("text", "")
+    return out
+
+
+def blank_region_text(page: PageDict, region_id: str) -> PageDict:
+    """Delete one region's text entirely, keeping the region itself.
+
+    Review finding H3: with page-global n-gram backoff, a one- or two-token region
+    (a heading, label, caption, marker) contributed zero evidence, so blanking it
+    left containment at 1.0.
+    """
+    out = copy.deepcopy(page)
+    for region in _regions(out):
+        if region.get("id") == region_id:
+            region["text"] = ""
+    return out
+
+
+def duplicate_region(page: PageDict, region_id: str) -> PageDict:
+    """Append a second copy of a region, id included.
+
+    Review finding H4: duplicate ids collapsed through last-wins dictionaries, so
+    the extra region was invisible to every checker.
+    """
+    out = copy.deepcopy(page)
+    for region in list(_regions(out)):
+        if region.get("id") == region_id:
+            out["regions"].append(copy.deepcopy(region))
+            break
+    return out
+
+
+def rename_region_ids(page: PageDict, prefix: str = "m-") -> PageDict:
+    """Give every region a model-generated id, updating ``reading_order`` to match.
+
+    Not a defect: this is an **honest** candidate that simply did not guess the GT's
+    ids. Review finding H1 (first half) — it used to false-FAIL reading-order with
+    coverage 0, because order was compared over raw id strings.
+    """
+    out = copy.deepcopy(page)
+    renamed = {r.get("id"): f"{prefix}{i}" for i, r in enumerate(_regions(out))}
+    for region in _regions(out):
+        region["id"] = renamed[region["id"]]
+    order = out.get("reading_order")
+    if isinstance(order, list):
+        out["reading_order"] = [renamed.get(rid, rid) for rid in order]
+    return out
+
+
+def phantom_reading_order(page: PageDict, order: list[str]) -> PageDict:
+    """Declare ``order`` as ``reading_order`` and reverse the regions' real indices.
+
+    Review finding H1 (second half): supplying the GT's id list as a phantom reading
+    order made the checker score ids that referenced none of the candidate's own
+    regions, so a candidate whose actual ``reading_order_index`` values were reversed
+    passed. The declared entries are now a structural-contract violation, and order is
+    derived from the candidate's own regions.
+    """
+    out = copy.deepcopy(page)
+    out["reading_order"] = list(order)
+    regions = _regions(out)
+    for i, region in enumerate(regions):
+        region["reading_order_index"] = len(regions) - 1 - i
     return out
 
 
