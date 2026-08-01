@@ -63,7 +63,7 @@ _BODY_LABELS = frozenset({"text_block", "block_quote", "abstract", "list_item"})
 # cycle, so this only bounds pathological input (a hand-written page nested
 # thousands deep would otherwise blow the recursion limit inside a checker and be
 # captured as a *crash*, which the contract reserves for checker bugs).
-_MAX_REGION_DEPTH = 32
+MAX_REGION_DEPTH = 32
 
 
 @dataclass(frozen=True)
@@ -175,11 +175,32 @@ class RegionView:
 
 
 def _flatten(regions: Sequence[RegionView], depth: int = 0) -> list[RegionView]:
-    """Depth-first flattening of a region hierarchy: parent, then its descendants."""
+    """Depth-first flattening of a region hierarchy: parent, then its descendants.
+
+    WORKING CONVENTION — parent text is **exclusive** of its children's. A parent
+    region's ``text`` is taken to hold only what is not inside a child region, so
+    flattening concatenates without double-counting and per-region containment scores
+    each block against its own share of the page.
+
+    This is a *decision*, not a reading of the contract: scholar-schema's ``Region``
+    documents ``text`` as optional and specifies nothing about whether a parent's text
+    subsumes its children's (review finding L2-9, round 3). Inclusive text would
+    double-count every nested block in the page-level n-gram multiset and would make a
+    child's misplacement invisible to the per-region gate. No runtime detection is
+    attempted — semantics that are sometimes one and sometimes the other are not
+    semantics. The open question is recorded in the packet report as an E1
+    schema-revision input; if the schema later specifies inclusive text, this
+    docstring and :meth:`PageView.full_text` are the places that change.
+
+    Regions deeper than ``MAX_REGION_DEPTH`` are not flattened; that truncation is a
+    hard structural violation reported by
+    :class:`~eval.checkers.contract.StructuralContractChecker` (review finding L2-5),
+    never a silent loss of ground truth.
+    """
     out: list[RegionView] = []
     for region in regions:
         out.append(region)
-        if depth < _MAX_REGION_DEPTH:
+        if depth < MAX_REGION_DEPTH:
             out.extend(_flatten(region.children, depth + 1))
     return out
 
@@ -195,6 +216,7 @@ class PageView:
 
     def __init__(self, data: Mapping[str, Any]) -> None:
         self._data = data
+        self.raw: Mapping[str, Any] = data
         raw_regions = data.get("regions")
         top_level: list[RegionView] = []
         if isinstance(raw_regions, Sequence) and not isinstance(raw_regions, str):
@@ -243,18 +265,30 @@ class PageView:
     def reading_order(self) -> list[str]:
         """The reading-order sequence of region ids *that this page actually has*.
 
-        Primary source is the page's ``reading_order`` list, **restricted to ids
-        that resolve to one of this page's own regions** — an entry naming no
-        region is not order information, it is a contract violation (review finding
-        H1 / D-237: a candidate could otherwise copy the GT's id list as a phantom
-        reading order and be scored on it rather than on its own regions).
-        When no declared entry resolves, fall back to sorting the top-level regions
-        by ``reading_order_index`` (regions lacking an index sort last, stably by
-        file order), then to file order.
+        There is exactly **one** signal, chosen by a condition the candidate cannot
+        game (review finding L1-1, round 3 — the previous rule had two
+        "choose your flattering signal" switches):
+
+        - The declared ``reading_order`` list is honoured **only when it is complete**
+          — every top-level region named. A partial list is not a cheaper order, it is
+          a broken one: with the old "any entry that resolves wins" rule, a candidate
+          could reverse ``reading_order_index`` on every region, declare
+          ``"reading_order": ["head-1"]``, and have the index evidence suppressed
+          entirely — reproduced as exit 0 at tau 1.0.
+        - Otherwise the order comes from ``reading_order_index`` over the top-level
+          regions (regions lacking an index sort last, stably by file order), and
+          when no index is declared either, from file order.
+
+        There is no third, tail-filling pass: the old one appended whatever the two
+        signals missed in raw array order, which is a third signal and the other half
+        of the same exploit. Any page for which these two rules disagree, or for which
+        the declared list is incomplete, mistyped, duplicated, or contradicts the
+        declared indices, is a hard structural violation reported by
+        :class:`~eval.checkers.contract.StructuralContractChecker` — not silently
+        resolved here.
 
         Each emitted region is immediately followed by its descendants (depth-first),
-        and any region never reached is appended in flattened declared order, so the
-        result always covers every region exactly once.
+        so a nested child is ordered at its parent's position.
         """
         seq: list[str] = []
         seen: set[str] = set()
@@ -263,32 +297,29 @@ class PageView:
             if region.id and region.id not in seen:
                 seen.add(region.id)
                 seq.append(region.id)
-            if depth >= _MAX_REGION_DEPTH:
+            if depth >= MAX_REGION_DEPTH:
                 return
             for child in region.children:
                 emit(child, depth + 1)
 
-        resolved = [rid for rid in self.declared_reading_order() if rid in self._by_id]
-        if resolved:
-            for rid in resolved:
+        declared = [rid for rid in self.declared_reading_order() if rid in self._by_id]
+        top_ids = {r.id for r in self._top_level if r.id}
+        if declared and top_ids <= set(declared):
+            for rid in declared:
                 emit(self._by_id[rid])
-        else:
-            roots = self._top_level
-            if any(r.reading_order_index is not None for r in roots):
-                fallback = len(roots)  # regions without an index sort last
+            return seq
 
-                def _order_key(region: RegionView) -> int:
-                    idx = region.reading_order_index
-                    return idx if idx is not None else fallback
+        roots = self._top_level
+        if any(r.reading_order_index is not None for r in roots):
+            fallback = len(roots)  # regions without an index sort last
 
-                roots = sorted(roots, key=_order_key)
-            for region in roots:
-                emit(region)
+            def _order_key(region: RegionView) -> int:
+                idx = region.reading_order_index
+                return idx if idx is not None else fallback
 
-        for region in self._regions:
-            if region.id and region.id not in seen:
-                seen.add(region.id)
-                seq.append(region.id)
+            roots = sorted(roots, key=_order_key)
+        for region in roots:
+            emit(region)
         return seq
 
     def notes(self) -> list[RegionView]:
