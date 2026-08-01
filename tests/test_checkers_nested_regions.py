@@ -3,7 +3,7 @@
 ``Region.children`` is part of the PageGT contract (scholar-schema
 ``scholargt/schema/spatial.py``). Before the fix ``PageView`` walked only top-level
 regions, so a GT ``text_block`` containing a nested ``block_quote`` — with all its
-text — could be deleted by a candidate at zero cost: all four checkers passed.
+text — could be deleted by a candidate at zero cost: every checker passed.
 These tests pin that a deleted (or mistyped) child now costs score.
 """
 

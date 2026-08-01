@@ -28,8 +28,31 @@ _BODY_LABELS = {"text_block", "block_quote", "abstract", "list_item"}
 
 
 def _regions(page: PageDict) -> list[dict[str, Any]]:
+    """The page's top-level region dicts (mutable references into ``page``)."""
     regions = page.get("regions")
     return regions if isinstance(regions, list) else []
+
+
+def _all_regions(page: PageDict) -> list[dict[str, Any]]:
+    """Every region dict, flattened depth-first through ``children``.
+
+    A mutator that means "every region" must use this, not :func:`_regions`: once
+    ``PageView`` began flattening nested regions, a top-level-only mutator silently
+    stopped exercising the nested path (round-3 finding on :func:`drop_anchor`).
+    """
+    out: list[dict[str, Any]] = []
+
+    def walk(regions: list[Any]) -> None:
+        for region in regions:
+            if not isinstance(region, dict):
+                continue
+            out.append(region)
+            children = region.get("children")
+            if isinstance(children, list):
+                walk(children)
+
+    walk(_regions(page))
+    return out
 
 
 def strip_standalone(text: str, marker: str) -> str:
@@ -65,10 +88,14 @@ def drop_anchor(page: PageDict) -> PageDict:
     Only *standalone* marker occurrences are removed (see :func:`strip_standalone`),
     so prose survives even when the marker is an ordinary letter. Normalization
     strips markers, so text-fidelity is unaffected; labels and order are untouched,
-    so structure-typing and reading-order are unaffected.
+    so the structural checkers are unaffected.
+
+    Traverses nested children as well as top-level regions, so an anchor declared on
+    a nested block is mutated too (round-3 finding: this walked only the top level,
+    leaving the nested negative-control path ineffective).
     """
     out = copy.deepcopy(page)
-    for region in _regions(out):
+    for region in _all_regions(out):
         markers = region.get("text_anchors") or []
         if not markers:
             continue
@@ -84,7 +111,7 @@ def swap_blocks(page: PageDict, id_a: str, id_b: str) -> PageDict:
     """Swap two region ids in the reading order (and their reading_order_index).
 
     Targets reading-order: produces an inversion. Region texts, labels, and anchors
-    are untouched, so the other three checkers are unaffected.
+    are untouched, so the other checkers are unaffected.
     """
     out = copy.deepcopy(page)
     order = out.get("reading_order")
@@ -139,6 +166,103 @@ def corrupt_chars(page: PageDict, rate: float = 0.05) -> PageDict:
 # was passing the whole suite (or, for `rename_region_ids`, an honest candidate was
 # being punished). They are ported from the delegator's reproduction harness so the
 # exploits stay closed under regression.
+
+
+def smear_page_text(page: PageDict, source: PageDict | None = None) -> PageDict:
+    """Set every region's text to the whole page's text.
+
+    Round-3 finding: every GT region is then perfectly *contained* in its aligned
+    counterpart, so a containment-only per-region gate passed the lot. Caught by the
+    misplacement half of the gate, not the retention half.
+    """
+    out = copy.deepcopy(page)
+    whole = " ".join(r.get("text", "") for r in _all_regions(source or page))
+    for region in _all_regions(out):
+        region["text"] = whole
+    return out
+
+
+def truncate_reading_order(page: PageDict, keep: int = 1) -> PageDict:
+    """Keep only the first ``keep`` reading_order entries and reverse the real indices.
+
+    Round-3 finding L1-1: one resolving entry used to suppress the
+    ``reading_order_index`` signal entirely, so this reproduced exit 0 at tau 1.0.
+    """
+    out = copy.deepcopy(page)
+    order = out.get("reading_order")
+    if isinstance(order, list):
+        out["reading_order"] = order[:keep]
+    regions = _regions(out)
+    for position, region in enumerate(regions):
+        region["reading_order_index"] = len(regions) - 1 - position
+    return out
+
+
+def contradict_reading_order_indices(page: PageDict) -> PageDict:
+    """Keep the full reading_order but reverse every ``reading_order_index``."""
+    out = copy.deepcopy(page)
+    regions = _regions(out)
+    for position, region in enumerate(regions):
+        region["reading_order_index"] = len(regions) - 1 - position
+    return out
+
+
+def mistype_reading_order(page: PageDict, value: Any = "head-1") -> PageDict:
+    """Replace ``reading_order`` with a non-list value (or a list with non-strings).
+
+    Round-3 finding: ``PageView`` treated a mistyped order as absent, and the
+    contract checker validated that filtered view, so a string-valued
+    ``reading_order`` reproduced a clean exit 0.
+    """
+    out = copy.deepcopy(page)
+    out["reading_order"] = value
+    return out
+
+
+def append_non_object_region(page: PageDict, entry: Any = None) -> PageDict:
+    """Append a non-object entry (default ``null``) to ``regions``."""
+    out = copy.deepcopy(page)
+    _regions(out).append(entry)
+    return out
+
+
+def append_region_without_id(page: PageDict) -> PageDict:
+    """Append a region object carrying no usable ``id``."""
+    out = copy.deepcopy(page)
+    _regions(out).append({"label": "text_block", "text": "an unnamed block of prose"})
+    return out
+
+
+def nest_beyond_depth_cap(page: PageDict, depth: int) -> PageDict:
+    """Bury a text-bearing region ``depth`` levels of ``children`` deep.
+
+    Beyond the flattener's cap those regions are invisible to every checker; the
+    contract checker must report the truncation rather than let the GT shrink
+    silently (round-3 finding L2-5).
+    """
+    out = copy.deepcopy(page)
+    regions = _regions(out)
+    if not regions:
+        return out
+    node = regions[0]
+    for level in range(depth):
+        child = {
+            "id": f"nested-{level}",
+            "label": "block_quote",
+            "text": f"nested level {level} of the buried quotation",
+        }
+        node["children"] = [child]
+        node = child
+    return out
+
+
+def single_char_error(page: PageDict, region_id: str, old: str, new: str) -> PageDict:
+    """Replace the first ``old`` with ``new`` in one region — one OCR confusion."""
+    out = copy.deepcopy(page)
+    for region in _all_regions(out):
+        if region.get("id") == region_id:
+            region["text"] = region.get("text", "").replace(old, new, 1)
+    return out
 
 
 def swap_region_texts(page: PageDict, id_a: str, id_b: str) -> PageDict:

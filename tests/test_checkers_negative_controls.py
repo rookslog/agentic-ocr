@@ -1,10 +1,10 @@
 """Milestone 3: negative controls.
 
 Each mutation must trip *exactly one* checker — its target — and leave the other
-three passing. This is the discriminating property the goal packet requires: "each
+passing. This is the discriminating property the goal packet requires: "each
 checker demonstrably catches its target mutation and ignores the others." The test
 runs the full default suite and asserts both halves (target fails AND the rest
-pass) on the apparatus fixture (all four checkers exercised) and the minimal
+pass) on the apparatus fixture (every checker exercised) and the minimal
 scriptorium fixture (where applicable).
 """
 
@@ -15,6 +15,7 @@ import pytest
 from eval.checkers import build_default_suite, run_checkers
 from eval.checkers.text_fidelity import TextFidelityChecker
 from tests import _mutations as M
+from tests.conftest import FIXTURES_DIR
 
 ALL_CHECKERS = {
     "structural-contract",
@@ -143,28 +144,61 @@ def test_drop_anchor_on_alphabetic_marker_leaves_the_non_text_checkers_alone():
     for checker_id in ALL_CHECKERS - {"footnote-anchor", "text-fidelity"}:
         assert verdicts[checker_id] is True, f"{checker_id} should be unaffected"
 
-    # The residual text cost is bounded by the single removed token: 3 of the
-    # region's 18 trigrams. Under the old str.replace the region lost every "a"
-    # and containment collapsed far below this.
+    # The residual text cost is bounded by the single removed token: one of the
+    # region's trigrams. Under the old str.replace the region lost every "a" and
+    # retention collapsed far below this.
     result = TextFidelityChecker().check(mutated, _ALPHA_MARKER_PAGE)
-    assert result.metrics["worst_region_containment"] > 0.9
+    assert result.metrics["worst_region_retention"] > 0.9
 
 
-@pytest.mark.parametrize("fixture", ["apparatus", "minimal"])
-def test_drop_anchor_never_affects_text_fidelity(
-    fixture, apparatus_gt, apparatus_candidate, minimal_gt, minimal_candidate
-):
-    # The control's isolation claim, asserted on every fixture the control actually
-    # runs on: dropping a (non-alphanumeric) marker changes no *normalized token*,
-    # so text-fidelity — page-level and per-region alike — must be untouched.
-    pages = {
-        "apparatus": (apparatus_gt, apparatus_candidate),
-        "minimal": (minimal_gt, minimal_candidate),
-    }
-    gt, candidate = pages[fixture]
+def _declared_markers(page) -> list[str]:
+    """Every marker declared in ``text_anchors`` anywhere on the page."""
+    return [m for region in M._all_regions(page) for m in (region.get("text_anchors") or [])]
+
+
+def _all_committed_fixtures() -> list[str]:
+    """Every committed candidate fixture — discovered, not hand-listed."""
+    return sorted(p.name for p in FIXTURES_DIR.glob("*.candidate.json"))
+
+
+def test_the_fixture_guard_sees_every_committed_fixture():
+    # The guard below is only as good as its inventory. If a fixture pair is added
+    # and this list is not what the parametrize walks, a new fixture could escape the
+    # isolation claim silently — which is how the alphabetic-marker case was missed.
+    assert _all_committed_fixtures() == [
+        "apparatus_page.candidate.json",
+        "minimal_page.candidate.json",
+    ]
+
+
+@pytest.mark.parametrize("candidate_name", _all_committed_fixtures())
+def test_drop_anchor_text_fidelity_effect_matches_the_marker_kind(candidate_name):
+    """The control's isolation claim, asserted over *discovered* fixtures.
+
+    The claim is conditional on the marker kind, and the condition is computed from
+    the fixture rather than assumed: a marker normalization treats as markup (``¹``,
+    ``*``, ``†``) leaves the token stream identical, so text-fidelity must be exactly
+    untouched; an alphanumeric marker is a content token, so the most that can be
+    claimed is a bounded residual. A future fixture with an alphabetic marker
+    therefore lands in the second branch instead of silently failing the first.
+    """
+    import json
+
+    candidate = json.loads((FIXTURES_DIR / candidate_name).read_text(encoding="utf-8"))
+    gt = json.loads(
+        (FIXTURES_DIR / candidate_name.replace(".candidate.", ".gt.")).read_text(
+            encoding="utf-8"
+        )
+    )
+    markers = _declared_markers(gt)
     result = TextFidelityChecker().check(M.drop_anchor(candidate), gt)
-    assert result.passed is True, result.detail
-    assert result.metrics["containment"] == 1.0
+
+    if any(ch.isalnum() for marker in markers for ch in marker):
+        assert result.metrics["worst_region_retention"] > 0.9, result.detail
+    else:
+        assert result.passed is True, result.detail
+        assert result.metrics["containment"] == 1.0
+        assert result.metrics["region_defects"] == 0
     assert result.metrics["region_defects"] == 0
 
 
