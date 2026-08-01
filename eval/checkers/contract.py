@@ -8,18 +8,35 @@ region with an existing ``id`` collapsed through last-wins dictionaries and stil
 passed all four checkers, and a candidate could pad its ``reading_order`` with ids
 that referenced no region of its own. Both are direct reward exploits.
 
+Round 3 found the first version too narrow in two ways, both closed here.
+
+**It validated the filtered view, not the input.** ``PageView`` silently drops a
+non-object entry in ``regions`` and treats a mistyped ``reading_order`` (a string, a
+dict, an int) as absent, so the checker saw nothing wrong; a null region entry and a
+string-valued ``reading_order`` each reproduced a clean exit 0. This checker now walks
+the **raw** page dict.
+
+**A present order was not required to be a complete order.** Reversing
+``reading_order_index`` on every region and declaring ``"reading_order": ["head-1"]``
+reproduced exit 0 at tau 1.0, because one resolving entry suppressed the index signal
+(review finding L1-1). A declared ``reading_order`` must now be a list of strings
+naming every top-level region exactly once and agreeing with whatever
+``reading_order_index`` values the page declares. Truncated, mistyped,
+non-string-bearing, duplicated and index-contradicting orders are all hard violations.
+
 Design call (the RC-3 "your call" clause): this is a **dedicated checker in the
 default suite**, not per-checker guards feeding ``CheckResult.crashed``. Two reasons.
 (1) ``crashed`` is reserved, by an earlier review finding (D-008), for "the checker
 is broken" as opposed to "the candidate is bad" — a candidate with duplicate ids is
 squarely the latter, so routing it to ``crashed`` would destroy exactly the
 distinction that finding installed. (2) A single checker gives the violation one
-stable id, one detail string, and one place to extend, instead of four
-near-duplicate guards that could drift apart.
+stable id, one detail string, and one place to extend, instead of guards spread over
+five checkers that could drift apart.
 
 It runs **first** in the default suite so its verdict reads as the precondition for
-the others: when it fails, the remaining scores are computed over a page whose ids
-do not uniquely denote regions, and should be read accordingly.
+the others: when it fails, the remaining scores are computed over a page whose ids do
+not uniquely denote regions, or whose order signal is broken, and should be read
+accordingly.
 
 Both sides are validated. A malformed *candidate* is a reward exploit; a malformed
 *ground truth* is a corpus bug that would otherwise silently shrink what the other
@@ -29,43 +46,148 @@ checkers demand — neither should score clean.
 from __future__ import annotations
 
 from collections import Counter
+from collections.abc import Mapping, Sequence
+from typing import Any
 
 from .base import Checker, CheckResult, PageLike
-from .pagegt import PageView
+from .pagegt import MAX_REGION_DEPTH
+
+# Violation kinds, in report order, with the phrase used in the detail string.
+_KINDS: dict[str, str] = {
+    "non_object_regions": "non-object entr(ies) in regions",
+    "regions_without_id": "region(s) with no usable string id",
+    "duplicate_region_ids": "duplicate region id(s)",
+    "regions_below_depth_cap": (
+        f"region(s) nesting children deeper than the depth cap ({MAX_REGION_DEPTH})"
+    ),
+    "reading_order_not_a_list": "reading_order is present but is not a list",
+    "non_string_order_entries": "non-string reading_order entr(ies)",
+    "duplicate_order_entries": "repeated reading_order entr(ies)",
+    "order_refs_no_region": "reading_order entr(ies) referencing no region",
+    "order_omits_regions": "top-level region(s) absent from reading_order",
+    "order_contradicts_indices": "region(s) whose reading_order_index contradicts reading_order",
+}
+
+
+def _walk(raw_regions: Any, depth: int, acc: dict[str, list[str]], ids: list[str]) -> None:
+    """Recursively collect raw-region defects; append every usable id to ``ids``."""
+    if raw_regions is None:
+        return
+    if not isinstance(raw_regions, Sequence) or isinstance(raw_regions, str):
+        acc["non_object_regions"].append(f"depth {depth}: regions is {type(raw_regions).__name__}")
+        return
+    for position, entry in enumerate(raw_regions):
+        if not isinstance(entry, Mapping):
+            acc["non_object_regions"].append(
+                f"depth {depth} index {position}: {type(entry).__name__}"
+            )
+            continue
+        region_id = entry.get("id")
+        if isinstance(region_id, str) and region_id:
+            ids.append(region_id)
+        else:
+            acc["regions_without_id"].append(f"depth {depth} index {position}")
+        children = entry.get("children")
+        if children is None:
+            continue
+        if depth + 1 > MAX_REGION_DEPTH:
+            # The flattener stops here, so those regions are invisible to every
+            # checker. That must be a reported violation, never a silent truncation
+            # of ground truth (review finding L2-5).
+            acc["regions_below_depth_cap"].append(str(region_id))
+            continue
+        _walk(children, depth + 1, acc, ids)
+
+
+def _top_level_ids(raw_regions: Any) -> list[str]:
+    """Usable ids of the regions declared at the page's top level."""
+    if not isinstance(raw_regions, Sequence) or isinstance(raw_regions, str):
+        return []
+    out = []
+    for entry in raw_regions:
+        if isinstance(entry, Mapping):
+            region_id = entry.get("id")
+            if isinstance(region_id, str) and region_id:
+                out.append(region_id)
+    return out
+
+
+def _declared_indices(raw_regions: Any) -> dict[str, int]:
+    """``{region_id: reading_order_index}`` over top-level regions that declare one."""
+    out: dict[str, int] = {}
+    if not isinstance(raw_regions, Sequence) or isinstance(raw_regions, str):
+        return out
+    for entry in raw_regions:
+        if not isinstance(entry, Mapping):
+            continue
+        region_id, index = entry.get("id"), entry.get("reading_order_index")
+        # bool is an int subclass; a boolean is not a reading-order index.
+        if isinstance(region_id, str) and region_id and isinstance(index, int):
+            if not isinstance(index, bool):
+                out[region_id] = index
+    return out
+
+
+def _order_index_contradictions(named: list[str], raw_regions: Any) -> list[str]:
+    """Ids where the declared order and the declared indices disagree.
+
+    The two signals must induce the same sequence over the regions that carry both.
+    Anything else is two contradictory orders, and the suite must not get to pick the
+    flattering one (review finding L1-1).
+    """
+    indices = _declared_indices(raw_regions)
+    rank = {rid: position for position, rid in enumerate(named)}
+    both = [rid for rid in named if rid in indices]
+    by_index = sorted(both, key=lambda rid: (indices[rid], rid))
+    by_order = sorted(both, key=lambda rid: rank[rid])
+    return [a for a, b in zip(by_index, by_order, strict=True) if a != b]
 
 
 def _violations(page: PageLike) -> dict[str, list[str]]:
-    """Referential defects of one page, as ``{kind: [offending ids]}`` (sorted)."""
-    view = PageView(page)
-    # PageView.regions is the *flattened* region list, so a duplicate id introduced
-    # by a nested child counts too.
-    id_counts = Counter(r.id for r in view.regions if r.id)
-    declared = view.declared_reading_order()
-    order_counts = Counter(declared)
-    known = set(id_counts)
-    return {
-        "duplicate_region_ids": sorted(i for i, n in id_counts.items() if n > 1),
-        "order_refs_no_region": sorted({rid for rid in declared if rid not in known}),
-        "duplicate_order_entries": sorted(i for i, n in order_counts.items() if n > 1),
-    }
+    """Referential defects of one raw page dict, as ``{kind: [offenders]}`` (sorted)."""
+    acc: dict[str, list[str]] = {kind: [] for kind in _KINDS}
+    raw_regions = page.get("regions")
+    ids: list[str] = []
+    _walk(raw_regions, 0, acc, ids)
+
+    counts = Counter(ids)
+    acc["duplicate_region_ids"] = [i for i, n in counts.items() if n > 1]
+
+    order = page.get("reading_order")
+    if order is not None:
+        if not isinstance(order, Sequence) or isinstance(order, str):
+            acc["reading_order_not_a_list"].append(type(order).__name__)
+        else:
+            entries = list(order)
+            acc["non_string_order_entries"] = [
+                f"index {position}: {type(entry).__name__}"
+                for position, entry in enumerate(entries)
+                if not isinstance(entry, str)
+            ]
+            named = [entry for entry in entries if isinstance(entry, str)]
+            acc["duplicate_order_entries"] = [i for i, n in Counter(named).items() if n > 1]
+            acc["order_refs_no_region"] = [rid for rid in named if rid not in counts]
+            acc["order_omits_regions"] = [
+                rid for rid in _top_level_ids(raw_regions) if rid not in set(named)
+            ]
+            acc["order_contradicts_indices"] = _order_index_contradictions(named, raw_regions)
+
+    return {kind: sorted(set(offenders)) for kind, offenders in acc.items()}
 
 
 class StructuralContractChecker(Checker):
-    """Region ids are unique and every reading-order entry names one, exactly once.
+    """Ids are unique; a declared reading order is single, complete and consistent.
 
-    Fails hard on any of: a repeated region ``id``; a ``reading_order`` entry that
-    references no region of that same page; a ``reading_order`` entry that appears
-    more than once. Reported as a failing :class:`CheckResult`, never as a raised
-    exception — a malformed candidate is a bad candidate, not a broken checker.
+    Fails hard on any of: a non-object entry in ``regions``; a region with no usable
+    string ``id``; a repeated region id; children nested past the depth cap; a
+    ``reading_order`` that is not a list of strings; a ``reading_order`` entry that is
+    repeated, references no region, or omits a top-level region; and a
+    ``reading_order`` that contradicts the declared ``reading_order_index`` values.
+    Reported as a failing :class:`CheckResult`, never as a raised exception — a
+    malformed candidate is a bad candidate, not a broken checker.
     """
 
     id = "structural-contract"
-
-    _LABELS = {
-        "duplicate_region_ids": "duplicate region id(s)",
-        "order_refs_no_region": "reading_order entr(ies) referencing no region",
-        "duplicate_order_entries": "repeated reading_order entr(ies)",
-    }
 
     def check(self, candidate: PageLike, gt: PageLike) -> CheckResult:
         found = {"candidate": _violations(candidate), "gt": _violations(gt)}
@@ -76,12 +198,13 @@ class StructuralContractChecker(Checker):
             for kind, offenders in kinds.items():
                 metrics[f"{side}_{kind}"] = len(offenders)
                 if offenders:
-                    problems.append(f"{side}: {len(offenders)} {self._LABELS[kind]} {offenders}")
+                    problems.append(f"{side}: {len(offenders)} {_KINDS[kind]} {offenders}")
 
         passed = not problems
         detail = (
-            "candidate and GT are referentially well-formed "
-            "(unique region ids; every reading_order entry names one region, once)"
+            "candidate and GT are referentially well-formed (every region a unique-id "
+            "object within the depth cap; reading_order, where declared, names every "
+            "top-level region exactly once and agrees with reading_order_index)"
             if passed
             else "; ".join(problems)
         )
