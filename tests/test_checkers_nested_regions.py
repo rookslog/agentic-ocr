@@ -40,7 +40,12 @@ NESTED_GT = {
             "reading_order_index": 2,
         },
     ],
-    "reading_order": ["body-1", "body-2"],
+    # Depth-uniform since round 4: a declared reading_order must name every region at
+    # every depth, descendants immediately following their parent. Declaring only the
+    # top-level ids — which this fixture used to do — is now a contract violation; see
+    # test_top_level_only_declared_order_is_a_violation and the evidence doc's E1 note
+    # on the schema ambiguity this exposes.
+    "reading_order": ["body-1", "quote-1", "body-2"],
 }
 
 
@@ -53,9 +58,9 @@ def test_pageview_flattens_children_depth_first():
     assert [r.id for r in view.regions] == ["body-1", "quote-1", "body-2"]
     assert [r.id for r in view.top_level_regions] == ["body-1", "body-2"]
     assert view.region("quote-1") is not None
-    # A child follows its parent in reading order, even though the declared
-    # reading_order list names only the top-level regions.
+    # A child is ordered at its parent's position, on every signal path.
     assert view.reading_order == ["body-1", "quote-1", "body-2"]
+    assert view.order_signal == "declared"
 
 
 def test_child_region_text_is_scored():
@@ -87,3 +92,33 @@ def test_mistyping_a_child_region_costs_score():
     mistyped["regions"][0]["children"][0]["label"] = "note_area"
     mistyped["regions"][0]["children"][0]["semantic_labels"] = ["note"]
     assert _verdicts(mistyped, NESTED_GT)["structure-typing"] is False
+
+
+def test_top_level_only_declared_order_is_a_violation():
+    """A declared order that names only the top-level regions no longer counts.
+
+    Round-4 BLOCKER-1: the completeness rule was top-level-only, so a candidate could
+    nest a child under the wrong parent and hide it behind a flattering declared
+    order. Going depth-uniform closes that, and the cost is that the "declare only
+    top-level ids" convention is no longer a legal declared order — a page following it
+    must either name every region or declare no reading_order at all. Which convention
+    the schema intends is genuinely unspecified; the rule is deliberately agnostic
+    (it accepts neither silently) and the ambiguity is recorded for E1.
+    """
+    partial = copy.deepcopy(NESTED_GT)
+    partial["reading_order"] = ["body-1", "body-2"]
+    result = next(
+        r
+        for r in run_checkers(partial, partial, build_default_suite()).results
+        if r.id == "structural-contract"
+    )
+    assert result.passed is False
+    assert result.metrics["candidate_order_omits_regions"] == 1  # quote-1
+
+    # Falling back to the index signal is what the rule says happens, and it still
+    # puts the child at its parent's position.
+    no_order = copy.deepcopy(NESTED_GT)
+    no_order.pop("reading_order")
+    view = PageView(no_order)
+    assert view.order_signal == "indices"
+    assert view.reading_order == ["body-1", "quote-1", "body-2"]

@@ -205,6 +205,57 @@ def _flatten(regions: Sequence[RegionView], depth: int = 0) -> list[RegionView]:
     return out
 
 
+def block_ids(region: RegionView, depth: int = 0) -> list[str]:
+    """A region's id followed by its descendants' ids, depth-first.
+
+    This is the *block* a region occupies in reading order: the documented invariant
+    is that a region is immediately followed by its descendants, so a declared
+    reading order is well-formed only if it is a concatenation of whole blocks.
+    """
+    out = [region.id] if region.id else []
+    if depth < MAX_REGION_DEPTH:
+        for child in region.children:
+            out.extend(block_ids(child, depth + 1))
+    return out
+
+
+def declared_order_is_canonical(
+    top_level: Sequence[RegionView], declared: Sequence[str]
+) -> bool:
+    """True iff ``declared`` is a permutation of the top-level *blocks*, complete.
+
+    Complete (names every region at every depth exactly once) **and** block-structured
+    (each region immediately followed by its own descendants, in declared child
+    order). Round-4 findings, both reproduced:
+
+    - The completeness rule used to be top-level-only, so a candidate could nest a
+      child under the wrong parent — a real structural error its own index/array
+      signal exposed — and then declare a flattering order naming all three ids, and
+      pass every checker (probe P3).
+    - Emission did not actually honour the child-follows-parent invariant it
+      documented: a declared ``["K", "P", "Q"]`` with ``K`` nested under ``P``
+      produced exactly that order, child before parent (probe P8c).
+
+    Both close the same way: a declared order that is not a whole-blocks permutation
+    is not order information about *this* hierarchy. It is not honoured here, and it
+    is a hard violation in
+    :class:`~eval.checkers.contract.StructuralContractChecker`.
+    """
+    blocks = {region.id: block_ids(region) for region in top_level if region.id}
+    position = 0
+    seen: set[str] = set()
+    entries = list(declared)
+    while position < len(entries):
+        block = blocks.get(entries[position])
+        if block is None or entries[position] in seen:
+            return False  # not a top-level region, or a block starting twice
+        if entries[position : position + len(block)] != block:
+            return False  # descendants do not immediately follow their parent
+        seen.add(entries[position])
+        position += len(block)
+    return sum(len(b) for b in blocks.values()) == len(entries) and len(seen) == len(blocks)
+
+
 class PageView:
     """A read-only view over a PageGT-shaped mapping.
 
@@ -262,6 +313,23 @@ class PageView:
         return [rid for rid in ro if isinstance(rid, str)]
 
     @property
+    def order_signal(self) -> str:
+        """Which of the three signals actually orders this page.
+
+        ``"declared"`` (a canonical ``reading_order`` list), ``"indices"``
+        (``reading_order_index`` on at least one top-level region), or ``"array"``
+        (nothing declared — file order, the last resort). Surfaced as a metric so a
+        consumer of the scorecard can see which evidence a page was scored on rather
+        than having to infer it (round-4 finding MAJOR-2).
+        """
+        declared = self.declared_reading_order()
+        if declared and declared_order_is_canonical(self._top_level, declared):
+            return "declared"
+        if any(r.reading_order_index is not None for r in self._top_level):
+            return "indices"
+        return "array"
+
+    @property
     def reading_order(self) -> list[str]:
         """The reading-order sequence of region ids *that this page actually has*.
 
@@ -269,26 +337,40 @@ class PageView:
         game (review finding L1-1, round 3 — the previous rule had two
         "choose your flattering signal" switches):
 
-        - The declared ``reading_order`` list is honoured **only when it is complete**
-          — every top-level region named. A partial list is not a cheaper order, it is
-          a broken one: with the old "any entry that resolves wins" rule, a candidate
-          could reverse ``reading_order_index`` on every region, declare
+        - The declared ``reading_order`` list is honoured **only when it is canonical**
+          — see :func:`declared_order_is_canonical`: it must name every region at
+          every depth exactly once, with each region's descendants immediately
+          following it. A partial list is not a cheaper order, it is a broken one:
+          with the old "any entry that resolves wins" rule, a candidate could reverse
+          ``reading_order_index`` on every region, declare
           ``"reading_order": ["head-1"]``, and have the index evidence suppressed
-          entirely — reproduced as exit 0 at tau 1.0.
+          entirely — reproduced as exit 0 at tau 1.0. The completeness half was
+          top-level-only until round 4, which left the same exploit open one level
+          down (probe P3).
         - Otherwise the order comes from ``reading_order_index`` over the top-level
           regions (regions lacking an index sort last, stably by file order), and
-          when no index is declared either, from file order.
+          when no index is declared either, from **array order**.
 
-        There is no third, tail-filling pass: the old one appended whatever the two
-        signals missed in raw array order, which is a third signal and the other half
-        of the same exploit. Any page for which these two rules disagree, or for which
-        the declared list is incomplete, mistyped, duplicated, or contradicts the
-        declared indices, is a hard structural violation reported by
+        Array order is therefore the last-resort signal, and on a page that declares
+        neither a ``reading_order`` nor any ``reading_order_index`` it is
+        **load-bearing**: permuting such a page's ``regions`` list genuinely changes
+        its reading order, and the scorecard changes with it. That is not a violation
+        of the permutation-invariance property (D-008) — that property says a
+        *semantics-preserving* permutation must not flip a verdict, and when array
+        order is the only order signal a permutation is not semantics-preserving.
+        Consumers can see which signal scored a page: :attr:`order_signal`, surfaced
+        as a metric by the reading-order checker.
+
+        There is no fourth, tail-filling pass: the old one appended whatever the
+        earlier signals missed in raw array order *in addition to* them, which is what
+        let a page mix two signals. Any page for which the declared list is
+        non-canonical, mistyped, duplicated, or contradicts the declared indices is a
+        hard structural violation reported by
         :class:`~eval.checkers.contract.StructuralContractChecker` — not silently
         resolved here.
 
         Each emitted region is immediately followed by its descendants (depth-first),
-        so a nested child is ordered at its parent's position.
+        on every path, so a nested child is always ordered at its parent's position.
         """
         seq: list[str] = []
         seen: set[str] = set()
@@ -302,11 +384,11 @@ class PageView:
             for child in region.children:
                 emit(child, depth + 1)
 
-        declared = [rid for rid in self.declared_reading_order() if rid in self._by_id]
-        top_ids = {r.id for r in self._top_level if r.id}
-        if declared and top_ids <= set(declared):
+        declared = self.declared_reading_order()
+        if declared and declared_order_is_canonical(self._top_level, declared):
             for rid in declared:
-                emit(self._by_id[rid])
+                if rid in self._by_id:
+                    emit(self._by_id[rid])
             return seq
 
         roots = self._top_level

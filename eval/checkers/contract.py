@@ -50,7 +50,7 @@ from collections.abc import Mapping, Sequence
 from typing import Any
 
 from .base import Checker, CheckResult, PageLike
-from .pagegt import MAX_REGION_DEPTH
+from .pagegt import MAX_REGION_DEPTH, PageView, block_ids, declared_order_is_canonical
 
 # Violation kinds, in report order, with the phrase used in the detail string.
 _KINDS: dict[str, str] = {
@@ -60,11 +60,13 @@ _KINDS: dict[str, str] = {
     "regions_below_depth_cap": (
         f"region(s) nesting children deeper than the depth cap ({MAX_REGION_DEPTH})"
     ),
+    "non_integer_reading_order_index": "region(s) whose reading_order_index is not an int",
     "reading_order_not_a_list": "reading_order is present but is not a list",
     "non_string_order_entries": "non-string reading_order entr(ies)",
     "duplicate_order_entries": "repeated reading_order entr(ies)",
     "order_refs_no_region": "reading_order entr(ies) referencing no region",
-    "order_omits_regions": "top-level region(s) absent from reading_order",
+    "order_omits_regions": "region(s) absent from reading_order",
+    "order_breaks_block_structure": "reading_order does not order whole parent+descendant blocks",
     "order_contradicts_indices": "region(s) whose reading_order_index contradicts reading_order",
 }
 
@@ -99,43 +101,55 @@ def _walk(raw_regions: Any, depth: int, acc: dict[str, list[str]], ids: list[str
         _walk(children, depth + 1, acc, ids)
 
 
-def _top_level_ids(raw_regions: Any) -> list[str]:
-    """Usable ids of the regions declared at the page's top level."""
-    if not isinstance(raw_regions, Sequence) or isinstance(raw_regions, str):
-        return []
-    out = []
-    for entry in raw_regions:
-        if isinstance(entry, Mapping):
-            region_id = entry.get("id")
-            if isinstance(region_id, str) and region_id:
-                out.append(region_id)
-    return out
+def _all_region_ids(page: PageLike) -> list[str]:
+    """Every usable region id at every depth, in depth-first (block) order.
+
+    Depth-uniform since round 4 (probe P3): the completeness rule below used to look
+    only at the top level, which left the "flattering declared order" exploit open one
+    level down — a candidate could nest a child under the wrong parent and declare an
+    order naming all three ids to hide it.
+    """
+    return [rid for region in PageView(page).top_level_regions for rid in block_ids(region)]
 
 
-def _declared_indices(raw_regions: Any) -> dict[str, int]:
-    """``{region_id: reading_order_index}`` over top-level regions that declare one."""
+def _declared_indices(raw_regions: Any, defects: list[str]) -> dict[str, int]:
+    """``{region_id: reading_order_index}`` at every depth, appending type defects.
+
+    A ``reading_order_index`` that is not an ``int`` — a float, a string, a bool — is
+    a mistyped signal, not an absent one. It used to be silently ignored by both
+    ``PageView`` and this checker, so float indices contradicting the declared order
+    scored clean (round-4 MINOR-1, probe P8b).
+    """
     out: dict[str, int] = {}
-    if not isinstance(raw_regions, Sequence) or isinstance(raw_regions, str):
-        return out
-    for entry in raw_regions:
-        if not isinstance(entry, Mapping):
-            continue
-        region_id, index = entry.get("id"), entry.get("reading_order_index")
-        # bool is an int subclass; a boolean is not a reading-order index.
-        if isinstance(region_id, str) and region_id and isinstance(index, int):
-            if not isinstance(index, bool):
-                out[region_id] = index
+
+    def walk(entries: Any, depth: int) -> None:
+        if not isinstance(entries, Sequence) or isinstance(entries, str):
+            return
+        for entry in entries:
+            if not isinstance(entry, Mapping):
+                continue
+            region_id = entry.get("id")
+            if isinstance(region_id, str) and region_id and "reading_order_index" in entry:
+                index = entry["reading_order_index"]
+                # bool is an int subclass; a boolean is not a reading-order index.
+                if isinstance(index, int) and not isinstance(index, bool):
+                    out[region_id] = index
+                else:
+                    defects.append(f"{region_id}: {type(index).__name__}")
+            if depth + 1 <= MAX_REGION_DEPTH:
+                walk(entry.get("children"), depth + 1)
+
+    walk(raw_regions, 0)
     return out
 
 
-def _order_index_contradictions(named: list[str], raw_regions: Any) -> list[str]:
+def _order_index_contradictions(named: list[str], indices: dict[str, int]) -> list[str]:
     """Ids where the declared order and the declared indices disagree.
 
     The two signals must induce the same sequence over the regions that carry both.
     Anything else is two contradictory orders, and the suite must not get to pick the
     flattering one (review finding L1-1).
     """
-    indices = _declared_indices(raw_regions)
     rank = {rid: position for position, rid in enumerate(named)}
     both = [rid for rid in named if rid in indices]
     by_index = sorted(both, key=lambda rid: (indices[rid], rid))
@@ -153,8 +167,15 @@ def _violations(page: PageLike) -> dict[str, list[str]]:
     counts = Counter(ids)
     acc["duplicate_region_ids"] = [i for i, n in counts.items() if n > 1]
 
-    order = page.get("reading_order")
-    if order is not None:
+    index_defects: list[str] = []
+    indices = _declared_indices(raw_regions, index_defects)
+    acc["non_integer_reading_order_index"] = index_defects
+
+    # `in`, not `is not None`: a JSON null reading_order is a *present* order of the
+    # wrong type, and used to slip through the not-None gate and score clean
+    # (round-4 codex MEDIUM).
+    if "reading_order" in page:
+        order = page["reading_order"]
         if not isinstance(order, Sequence) or isinstance(order, str):
             acc["reading_order_not_a_list"].append(type(order).__name__)
         else:
@@ -168,9 +189,16 @@ def _violations(page: PageLike) -> dict[str, list[str]]:
             acc["duplicate_order_entries"] = [i for i, n in Counter(named).items() if n > 1]
             acc["order_refs_no_region"] = [rid for rid in named if rid not in counts]
             acc["order_omits_regions"] = [
-                rid for rid in _top_level_ids(raw_regions) if rid not in set(named)
+                rid for rid in _all_region_ids(page) if rid not in set(named)
             ]
-            acc["order_contradicts_indices"] = _order_index_contradictions(named, raw_regions)
+            if not declared_order_is_canonical(PageView(page).top_level_regions, named):
+                # Narrow the report to the entries that are not block starts, so the
+                # detail names the offender rather than the whole list.
+                starts = {region.id for region in PageView(page).top_level_regions if region.id}
+                acc["order_breaks_block_structure"] = [
+                    rid for rid in named if rid in counts and rid not in starts
+                ] or ["order is not a permutation of whole parent+descendant blocks"]
+            acc["order_contradicts_indices"] = _order_index_contradictions(named, indices)
 
     return {kind: sorted(set(offenders)) for kind, offenders in acc.items()}
 
