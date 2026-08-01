@@ -108,16 +108,30 @@ cannot silently escape the claim.
 
 ## 4. Verification
 
-- `uv run pytest` (full suite) → **204 passed, 1 xfailed** (44 ported lib tests + 26
-  delegation-log tests + 134 checker tests + 1 xfail pinning a frozen semantics question).
-  `ruff check` clean; `mypy` clean (38 source files).
+- `uv run pytest` (full suite) → **215 passed, 1 xfailed** (44 ported lib tests + 26
+  delegation-log tests + 145 checker tests + 1 xfail pinning a frozen semantics question).
+  `ruff check` clean; `mypy` clean (40 source files).
 - CLI: faithful candidate → exit 0; mutated candidate → exit 1.
-- **CI green on the final commit** (`a0b203e`):
-  [run 27455116310](https://github.com/loganrooks/agentic-ocr/actions/runs/27455116310),
-  all 5 checks success. The new step **"Checker suite smoke (GT-A fixtures)"** runs both
-  fixtures in the `lint · typecheck · test` job
-  ([job log](https://github.com/loganrooks/agentic-ocr/actions/runs/27455116310/job/81158097705))
-  and is visible + green.
+- **CI status — stated precisely, because the earlier wording overclaimed.** This doc
+  used to read "CI green on the final commit (`a0b203e`)". That run is real, but
+  `a0b203e` is now many commits behind: **CI has not run on any commit after it**,
+  because the review rounds since are unpushed. Do not read the run below as
+  attesting to the current tree.
+  - *Attested by CI:* commit `a0b203e` —
+    [run 27455116310](https://github.com/loganrooks/agentic-ocr/actions/runs/27455116310),
+    all 5 checks success, including the **"Checker suite smoke (GT-A fixtures)"** step in
+    the `lint · typecheck · test` job
+    ([job log](https://github.com/loganrooks/agentic-ocr/actions/runs/27455116310/job/81158097705)).
+  - *Attested by local runs only:* **the commit that last edited this line**, on branch
+    `feat/checker-suite` — deliberately self-referential rather than a hash, because a
+    hash written into a commit can never name that commit, which is exactly how the
+    stale `a0b203e` reference above arose. Warranted by `uv run pytest tests/`,
+    `uv run ruff check .`, `uv run mypy`, the D-237 reproduction harness and the
+    round-3/4/5 reviewer probes, all executed in the review worktree. **CI has not seen
+    this commit**: the branch is unpushed, so this is a local-run attestation and
+    nothing more. It becomes a CI attestation only once the branch is pushed and a run
+    completes — at which point this bullet should be replaced with the run link, not
+    supplemented.
 
 ---
 
@@ -220,7 +234,7 @@ H1a (honest model ids) exit 0, H2 / H3 / H4 / H1b all exit 1.
 | `MIN_REGION_RETENTION` | 0.95 | the same bar as the page-level floor — the region gate is the existing standard applied where pooling cannot dilute it, not a new stricter one |
 | `GROSS_REGION_RETENTION` | 0.60 | separates *noise* from *gone*. Well above what deletion/swapping produce (~0.0–0.2) and well below any plausible OCR noise level. Zero tolerance, page-size invariant |
 | `MINOR_REGION_DEFECT_RATE` | 0.05, floor 1 | a stochastic pipeline produces some minor noise on any long page; zero tolerance here was the round-3 false-fail. Scales with the page so a 40-region page is not held to a stricter effective standard than a 4-region one. **This row previously ended "the page-level floor still bounds accumulation" — that claim is false and was falsified in round 4; see KNOWN-OPEN-1 below.** Frozen pending an operator decision |
-| `MAX_REGION_FOREIGN_RATIO` | 0.5 | generous — a region must import *most* of its content from elsewhere to trip. Novel text only lowers the ratio, keeping the hallucination question escalated |
+| `MAX_REGION_FOREIGN_RATIO` | 0.5 | generous — of a region's n-grams that are attributable to the GT page at all, *most* must belong to a different block before it trips. Novel n-grams are **excluded from numerator and denominator alike** (commit `2e76d32`): neutral in both directions — unpunished, so the hallucination question stays escalated, and non-exculpatory, so padding cannot buy cover. The verdict is provably independent of how much novel text a region carries |
 | `MAX_REGION_MISPLACEMENTS` | 0 | misplacement is categorical, not stochastic |
 | `MAX_REGION_DEPTH` | 32 | bounds pathological nesting; exceeding it is a reported violation, never a silent truncation |
 
@@ -246,6 +260,17 @@ and `PageView.full_text` are the two places that change.
    flattering order (round-4 BLOCKER-1, probe P3). scholar-schema does not say which
    convention `reading_order` follows. **If E1 settles it, the rule can be narrowed;
    until then a page must enumerate fully or not declare.**
+
+3. **At what depth is `reading_order_index` numbered?** Sibling-scoped (a parent at
+   index 0 whose own child is also index 0) and page-global (parent 0, child 1, next
+   sibling 2) are both natural readings, and scholar-schema specifies neither. Round 5
+   briefly enforced page-global by comparing *nested* indices against the declared
+   order — a false-fail on the sibling-scoped convention, and on a field the suite does
+   not actually consume: a child's position comes from its parent's `children` array on
+   every signal path. The index-vs-declared comparison is therefore **scoped to
+   top-level regions**, which is convention-agnostic, while index *typing* stays
+   depth-uniform (a float or bool index anywhere is still a violation). **If E1 settles
+   the depth convention, the nested comparison can be reinstated for that convention.**
 
 ---
 
@@ -291,10 +316,32 @@ imported sentence exceeds `MAX_REGION_FOREIGN_RATIO`. Whether that is a true pos
 (the caption really does hold another block's text) or a false fail (one boundary slip
 in 60 regions) is the same frozen question. Pinned as a strict `xfail` in
 `tests/test_checkers_round4_regressions.py::test_p4_short_region_boundary_slip` so the
-case cannot be lost and neither answer is enshrined.
+case cannot be lost and neither answer is enshrined. Note that the round-5 denominator
+fix **tightened** this frozen case rather than leaving it untouched: excluding novel
+n-grams from the denominator moved the P4 construction's reported ratio from 0.5833 to
+**0.7000 foreign**, i.e. further above the 0.5 threshold. Whichever way the semantics
+decision goes, it is now being made against a sharper measurement.
 
 **KNOWN-OPEN-3 — unguarded O(n³) alignment.** Exact at every size and fine for the
-bounded CI fixtures (100 regions 0.044s, 200 0.28s, 400 2.2s, 600 7.4s, measured by
-codex), but there is no fail-closed resource bound for arbitrary untrusted candidate
-output. A bound or a sparsity exploit is needed before a reward service; a greedy
-fallback is not (that was round 3's finding M6).
+bounded CI fixtures, but there is no fail-closed resource bound for arbitrary
+untrusted candidate output. A bound or a sparsity exploit is needed before a reward
+service; a greedy fallback is not (that was round 3's finding M6).
+
+Timings **reproduced on this worktree**, `uv run python -m eval.checkers._bench_align`
+(committed recipe; Apple arm64, CPython 3.13). The shape matters more than the size,
+which is why the recipe measures both — quoting one number without naming the shape is
+how a timing claim misleads:
+
+| n | `chain` (sparse: neighbours only) | `dense` (complete pair graph) |
+|---|---|---|
+| 100 | 0.008s | 0.040s |
+| 200 | 0.031s | 0.249s |
+| 400 | 0.123s | 1.914s |
+| 600 | 0.301s | 6.672s |
+
+`chain` is the realistic page shape and what the regression tests use; `dense` is the
+worst case the missing guard is actually about. Prior measurements, retained as
+corroboration and now explained: codex reported 0.044 / 0.28 / 2.2 / 7.4s — which
+matches the **dense** column here — and the round-4 reviewer reported 0.009 / 0.040 /
+0.163 / 0.342s, which matches the **chain** column. The two were measuring different
+shapes, not disagreeing.

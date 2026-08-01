@@ -88,6 +88,10 @@ def _walk(raw_regions: Any, depth: int, acc: dict[str, list[str]], ids: list[str
         if isinstance(region_id, str) and region_id:
             ids.append(region_id)
         else:
+            # NOTE: an id-less region that has id-bearing descendants is reported
+            # twice — here, and again as order_breaks_block_structure, because its
+            # block cannot be named in a declared order. Redundant, not false: both
+            # statements are true of the page and both name the same root cause.
             acc["regions_without_id"].append(f"depth {depth} index {position}")
         children = entry.get("children")
         if children is None:
@@ -113,12 +117,24 @@ def _all_region_ids(page: PageLike) -> list[str]:
 
 
 def _declared_indices(raw_regions: Any, defects: list[str]) -> dict[str, int]:
-    """``{region_id: reading_order_index}`` at every depth, appending type defects.
+    """``{region_id: index}`` for TOP-LEVEL regions; type-checked at every depth.
 
-    A ``reading_order_index`` that is not an ``int`` — a float, a string, a bool — is
-    a mistyped signal, not an absent one. It used to be silently ignored by both
-    ``PageView`` and this checker, so float indices contradicting the declared order
-    scored clean (round-4 MINOR-1, probe P8b).
+    Two different scopes, deliberately.
+
+    **Typing is depth-uniform.** A ``reading_order_index`` that is not an ``int`` — a
+    float, a string, a bool — is a mistyped signal, not an absent one, wherever it
+    appears. It used to be silently ignored by both ``PageView`` and this checker, so
+    float indices contradicting the declared order scored clean (round-4 MINOR-1,
+    probe P8b).
+
+    **The index-vs-declared comparison is top-level only** (round-5 adjudication). A
+    nested region's index is never consumed: a child's position comes from its
+    parent's ``children`` array on every signal path, so comparing nested indices
+    against the declared order enforced a constraint on a field the suite does not
+    read — and it false-failed the natural sibling-scoped numbering convention (a
+    parent at index 0 whose own child is also at index 0) on the GT and candidate
+    sides alike. Which depth convention ``reading_order_index`` follows is unspecified
+    in the schema; recorded as E1 open question 3 rather than adjudicated here.
     """
     out: dict[str, int] = {}
 
@@ -133,7 +149,8 @@ def _declared_indices(raw_regions: Any, defects: list[str]) -> dict[str, int]:
                 index = entry["reading_order_index"]
                 # bool is an int subclass; a boolean is not a reading-order index.
                 if isinstance(index, int) and not isinstance(index, bool):
-                    out[region_id] = index
+                    if depth == 0:
+                        out[region_id] = index
                 else:
                     defects.append(f"{region_id}: {type(index).__name__}")
             if depth + 1 <= MAX_REGION_DEPTH:
@@ -144,11 +161,12 @@ def _declared_indices(raw_regions: Any, defects: list[str]) -> dict[str, int]:
 
 
 def _order_index_contradictions(named: list[str], indices: dict[str, int]) -> list[str]:
-    """Ids where the declared order and the declared indices disagree.
+    """Ids where the declared order and the declared TOP-LEVEL indices disagree.
 
-    The two signals must induce the same sequence over the regions that carry both.
-    Anything else is two contradictory orders, and the suite must not get to pick the
-    flattering one (review finding L1-1).
+    The two signals must induce the same sequence over the top-level regions that
+    carry both. Anything else is two contradictory orders, and the suite must not get
+    to pick the flattering one (review finding L1-1). ``indices`` is already scoped to
+    the top level by :func:`_declared_indices` — see its docstring for why.
     """
     rank = {rid: position for position, rid in enumerate(named)}
     both = [rid for rid in named if rid in indices]

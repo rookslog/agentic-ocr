@@ -113,9 +113,15 @@ class RegionView:
 
     @property
     def reading_order_index(self) -> int | None:
-        """Position in reading order, if declared on the region."""
+        """Position in reading order, if declared on the region.
+
+        ``bool`` is excluded even though it is an ``int`` subclass, so this consumer
+        and the contract checker's reporter agree on what counts as an index: the
+        checker calls ``True`` a mistyped index, and it would be incoherent for this
+        property to then consume it as position 1 (round-5 F6).
+        """
         idx = self.raw.get("reading_order_index")
-        return idx if isinstance(idx, int) else None
+        return idx if isinstance(idx, int) and not isinstance(idx, bool) else None
 
     @property
     def bbox(self) -> tuple[float, float, float, float] | None:

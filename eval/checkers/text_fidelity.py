@@ -341,6 +341,15 @@ class TextFidelityChecker(Checker):
                 "minor_region_defects": len(minor),
                 "minor_region_defects_allowed": minor_allowance,
                 "misplaced_regions": len(misplacements),
+                # The freeze, made machine-visible. KNOWN-OPEN-1 lives in a doc and a
+                # source comment, which a consumer wiring exit codes into a reward
+                # loop may never open — so the verdict carries its own caveat, the way
+                # order_signal, crashed and the raw gated floats already do.
+                "reward_ready": False,
+                "reward_block_reason": (
+                    "pre-registered magnitude-weighted redesign of the region-defect "
+                    "aggregate before any reward use (KNOWN-OPEN-1)"
+                ),
                 "min_region_retention": self.min_region_retention,
                 "gross_region_retention": self.gross_region_retention,
                 # The true minimum over every scored region, not merely the worst
