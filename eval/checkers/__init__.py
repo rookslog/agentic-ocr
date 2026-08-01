@@ -10,8 +10,9 @@ Public surface:
 
 - Contract: :class:`CheckResult`, :class:`Checker`, :class:`Scorecard`,
   :func:`run_checkers`, :class:`AlwaysPassChecker`.
-- Core checkers: :class:`TextFidelityChecker`, :class:`ReadingOrderChecker`,
-  :class:`FootnoteAnchorChecker`, :class:`StructureTypingChecker`.
+- Core checkers: :class:`StructuralContractChecker`, :class:`TextFidelityChecker`,
+  :class:`ReadingOrderChecker`, :class:`FootnoteAnchorChecker`,
+  :class:`StructureTypingChecker`.
 - :func:`build_default_suite` — the canonical hard-gating checker list used by the
   CLI and CI smoke run.
 
@@ -29,6 +30,7 @@ from .base import (
     Severity,
     run_checkers,
 )
+from .contract import StructuralContractChecker
 from .footnote_anchor import FootnoteAnchorChecker
 from .reading_order import ReadingOrderChecker
 from .structure_typing import StructureTypingChecker
@@ -36,13 +38,19 @@ from .text_fidelity import TextFidelityChecker
 
 
 def build_default_suite() -> list[Checker]:
-    """The canonical checker list: the four core checkers, all hard-gating.
+    """The canonical checker list: structural contract + the four core checkers.
+
+    All hard-gating. The structural-contract checker runs first: it is the
+    precondition the other four assume (unique region ids, reading-order entries
+    that name real regions — review finding H4 / D-237), so its verdict should be
+    read before theirs.
 
     Returned fresh each call (checkers are cheap, stateless instances) so callers
     can reconfigure without mutating shared state. Order is stable, so the
     scorecard it produces is byte-stable for fixed inputs.
     """
     return [
+        StructuralContractChecker(),
         TextFidelityChecker(),
         ReadingOrderChecker(),
         FootnoteAnchorChecker(),
@@ -60,6 +68,7 @@ __all__ = [
     "run_checkers",
     "AlwaysPassChecker",
     # core checkers
+    "StructuralContractChecker",
     "TextFidelityChecker",
     "ReadingOrderChecker",
     "FootnoteAnchorChecker",

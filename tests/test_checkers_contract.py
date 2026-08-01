@@ -125,9 +125,12 @@ def test_scorecard_render_and_to_dict():
     assert d["summary"]["hard_failures"] == 1
 
 
-def test_default_suite_is_the_four_core_checkers():
+def test_default_suite_is_the_core_checkers():
+    # Updated for review finding H4 / D-237: the structural-contract checker joined
+    # the default suite and runs first (it is the precondition the others assume).
     suite = build_default_suite()
     assert [c.id for c in suite] == [
+        "structural-contract",
         "text-fidelity",
         "reading-order",
         "footnote-anchor",

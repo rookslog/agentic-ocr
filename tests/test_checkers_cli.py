@@ -62,8 +62,10 @@ def test_cli_json_output(capsys):
     assert code == 0
     payload = json.loads(capsys.readouterr().out)
     assert payload["exit_code"] == 0
-    assert payload["summary"]["total"] == 4
+    # Five since review finding H4 / D-237 added the structural-contract checker.
+    assert payload["summary"]["total"] == 5
     assert {r["id"] for r in payload["results"]} == {
+        "structural-contract",
         "text-fidelity",
         "reading-order",
         "footnote-anchor",
