@@ -17,7 +17,8 @@ The shape mirrors ``scholar-schema``'s ``PageGT``/``Region`` contract
       "regions": [
         {"id": "body-1", "label": "text_block", "bbox": {...},
          "text": "...", "text_anchors": ["¹"], "semantic_labels": ["note"],
-         "reading_order_index": 0},
+         "reading_order_index": 0,
+         "children": [ ... nested Region dicts ... ]},
         ...
       ]
     }
@@ -57,6 +58,12 @@ _NOTE_SEMANTIC_LABELS = frozenset({"note", "footnote", "endnote"})
 # (review finding D-008). page_header therefore falls through to "other".
 _HEADING_LABELS = frozenset({"section_header", "title"})
 _BODY_LABELS = frozenset({"text_block", "block_quote", "abstract", "list_item"})
+
+# Guard on how deep ``Region.children`` nesting is walked. JSON cannot express a
+# cycle, so this only bounds pathological input (a hand-written page nested
+# thousands deep would otherwise blow the recursion limit inside a checker and be
+# captured as a *crash*, which the contract reserves for checker bugs).
+_MAX_REGION_DEPTH = 32
 
 
 @dataclass(frozen=True)
@@ -127,6 +134,20 @@ class RegionView:
             return None
 
     @property
+    def children(self) -> tuple[RegionView, ...]:
+        """Nested child regions (``Region.children`` in the PageGT contract).
+
+        scholar-schema's ``Region`` carries a ``children`` list (scholargt/schema/
+        spatial.py), so a ``text_block`` may contain a nested ``block_quote`` whose
+        text and type are part of the page's ground truth. Regions that declare no
+        children yield an empty tuple.
+        """
+        raw = self.raw.get("children")
+        if not isinstance(raw, Sequence) or isinstance(raw, str):
+            return ()
+        return tuple(RegionView(c) for c in raw if isinstance(c, Mapping))
+
+    @property
     def is_note(self) -> bool:
         """True if this region is a note either spatially or semantically.
 
@@ -153,6 +174,16 @@ class RegionView:
         return "other"
 
 
+def _flatten(regions: Sequence[RegionView], depth: int = 0) -> list[RegionView]:
+    """Depth-first flattening of a region hierarchy: parent, then its descendants."""
+    out: list[RegionView] = []
+    for region in regions:
+        out.append(region)
+        if depth < _MAX_REGION_DEPTH:
+            out.extend(_flatten(region.children, depth + 1))
+    return out
+
+
 class PageView:
     """A read-only view over a PageGT-shaped mapping.
 
@@ -165,47 +196,100 @@ class PageView:
     def __init__(self, data: Mapping[str, Any]) -> None:
         self._data = data
         raw_regions = data.get("regions")
-        regions: list[RegionView] = []
+        top_level: list[RegionView] = []
         if isinstance(raw_regions, Sequence) and not isinstance(raw_regions, str):
-            regions = [RegionView(r) for r in raw_regions if isinstance(r, Mapping)]
-        self._regions = regions
-        self._by_id = {r.id: r for r in regions if r.id}
+            top_level = [RegionView(r) for r in raw_regions if isinstance(r, Mapping)]
+        self._top_level = top_level
+        # Flattened, depth-first: a parent immediately followed by its descendants.
+        # Nested regions are part of the GT (review finding M5 / D-237): traversing
+        # only the top level made a deleted child region cost nothing.
+        self._regions = _flatten(top_level)
+        # NOTE: last-wins on duplicate ids. Duplicate ids are a *contract violation*
+        # surfaced by StructuralContractChecker (review finding H4 / D-237); this
+        # map deliberately stays total and non-raising so checkers never KeyError.
+        self._by_id = {r.id: r for r in self._regions if r.id}
 
     @property
     def regions(self) -> list[RegionView]:
-        """Regions in their declared (file) order."""
+        """All regions, flattened depth-first (parent, then its descendants).
+
+        Order is deterministic: declared order at each level, parents before their
+        children.
+        """
         return list(self._regions)
+
+    @property
+    def top_level_regions(self) -> list[RegionView]:
+        """Only the regions declared at the page's top level, in file order."""
+        return list(self._top_level)
 
     def region(self, region_id: str) -> RegionView | None:
         """Look up a region by id; None if absent."""
         return self._by_id.get(region_id)
 
-    @property
-    def reading_order(self) -> list[str]:
-        """The reading-order sequence of region ids.
+    def declared_reading_order(self) -> list[str]:
+        """The raw ``reading_order`` id list as declared, unresolved and un-deduped.
 
-        Primary source is the page's ``reading_order`` list. When absent, fall
-        back to sorting regions by ``reading_order_index`` (regions lacking an
-        index sort last, stably by file order); when neither exists, fall back to
-        file order. This makes the reading-order checker robust to candidates that
-        express order one way but not the other.
+        Kept separate from :attr:`reading_order` so the structural-contract checker
+        can see entries that reference no region, and repeated entries, instead of
+        having them silently resolved away.
         """
         ro = self._data.get("reading_order")
-        if isinstance(ro, Sequence) and not isinstance(ro, str):
-            ids = [rid for rid in ro if isinstance(rid, str)]
-            if ids:
-                return ids
-        indexed = [r for r in self._regions if r.reading_order_index is not None]
-        if indexed:
-            fallback = len(self._regions)  # regions without an index sort last
+        if not isinstance(ro, Sequence) or isinstance(ro, str):
+            return []
+        return [rid for rid in ro if isinstance(rid, str)]
 
-            def _order_key(region: RegionView) -> int:
-                idx = region.reading_order_index
-                return idx if idx is not None else fallback
+    @property
+    def reading_order(self) -> list[str]:
+        """The reading-order sequence of region ids *that this page actually has*.
 
-            ordered = sorted(self._regions, key=_order_key)
-            return [r.id for r in ordered if r.id]
-        return [r.id for r in self._regions if r.id]
+        Primary source is the page's ``reading_order`` list, **restricted to ids
+        that resolve to one of this page's own regions** — an entry naming no
+        region is not order information, it is a contract violation (review finding
+        H1 / D-237: a candidate could otherwise copy the GT's id list as a phantom
+        reading order and be scored on it rather than on its own regions).
+        When no declared entry resolves, fall back to sorting the top-level regions
+        by ``reading_order_index`` (regions lacking an index sort last, stably by
+        file order), then to file order.
+
+        Each emitted region is immediately followed by its descendants (depth-first),
+        and any region never reached is appended in flattened declared order, so the
+        result always covers every region exactly once.
+        """
+        seq: list[str] = []
+        seen: set[str] = set()
+
+        def emit(region: RegionView, depth: int = 0) -> None:
+            if region.id and region.id not in seen:
+                seen.add(region.id)
+                seq.append(region.id)
+            if depth >= _MAX_REGION_DEPTH:
+                return
+            for child in region.children:
+                emit(child, depth + 1)
+
+        resolved = [rid for rid in self.declared_reading_order() if rid in self._by_id]
+        if resolved:
+            for rid in resolved:
+                emit(self._by_id[rid])
+        else:
+            roots = self._top_level
+            if any(r.reading_order_index is not None for r in roots):
+                fallback = len(roots)  # regions without an index sort last
+
+                def _order_key(region: RegionView) -> int:
+                    idx = region.reading_order_index
+                    return idx if idx is not None else fallback
+
+                roots = sorted(roots, key=_order_key)
+            for region in roots:
+                emit(region)
+
+        for region in self._regions:
+            if region.id and region.id not in seen:
+                seen.add(region.id)
+                seq.append(region.id)
+        return seq
 
     def notes(self) -> list[RegionView]:
         """All regions classified as notes (spatial or semantic)."""
