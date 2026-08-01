@@ -35,8 +35,6 @@ GT region has no acceptable counterpart (a miss).
 from __future__ import annotations
 
 from collections import OrderedDict
-from collections.abc import Mapping
-from typing import Any
 
 from .pagegt import PageView, RegionView
 
@@ -46,16 +44,38 @@ _INF = float("inf")
 # for the default suite — on the same two dicts, and the assignment is a pure
 # function of them. This memo makes the repeat calls free.
 #
-# Keyed on object identity, which is sound *because* the cache holds a strong
-# reference to each keyed dict: a cached dict can never be collected, so its id can
-# never be recycled onto a different object while the entry lives. Hits additionally
-# re-check identity. Bounded (FIFO) so a long-running process cannot grow without
-# limit; 8 entries covers a page's four alignment consumers with room to spare.
+# Keyed by CONTENT, not object identity. The identity key it replaced was stale-prone:
+# mutating a page dict in place — swapping two bboxes, say — left its id unchanged, so
+# the cache returned the pre-mutation assignment and the result depended on evaluation
+# history (round-4 MAJOR-3 / codex MEDIUM, probe P6). That is intolerable in a reward
+# loop, where pages get built and edited in place.
+#
+# PRECONDITION, now enforced rather than assumed: the assignment is a function of
+# exactly the region ids and bboxes on both sides, and the key is exactly that. Any
+# in-place edit that could change the assignment necessarily changes the key, so a
+# stale hit is not reachable. Fields the assignment does not read (text, labels,
+# order) are deliberately outside the key — editing them must not cost a recompute.
+#
+# Bounded (FIFO); 8 entries covers a page's alignment consumers with room to spare.
+# :func:`reset_cache` is the supported way to clear it.
 _CACHE_MAXSIZE = 8
-_cache: OrderedDict[
-    tuple[int, int, float],
-    tuple[Mapping[str, Any], Mapping[str, Any], dict[str, str | None]],
-] = OrderedDict()
+_PageKey = tuple[tuple[str, tuple[float, float, float, float] | None], ...]
+_cache: OrderedDict[tuple[_PageKey, _PageKey, float], dict[str, str | None]] = OrderedDict()
+
+
+def _page_key(page: PageView) -> _PageKey:
+    """The only page content the assignment depends on: each region's id and bbox."""
+    return tuple((region.id, region.bbox) for region in page.regions)
+
+
+def reset_cache() -> None:
+    """Clear the alignment memo. Supported entry point; safe to call at any time.
+
+    Correctness never requires it — the cache is content-keyed — but a long-lived
+    process wanting the memory back, or a benchmark wanting cold timings, has a
+    sanctioned way to ask instead of reaching into ``_cache``.
+    """
+    _cache.clear()
 
 
 def _iou(a: tuple[float, float, float, float], b: tuple[float, float, float, float]) -> float:
@@ -183,17 +203,24 @@ def align_regions(
 
     Pass 1 matches by id-equality. Pass 2 matches the still-unmatched GT regions to
     still-unmatched candidate regions by an optimal assignment over the viable
-    (IoU >= ``min_iou``) pairs. Deterministic for fixed inputs; memoised per page
-    pair.
+    (IoU >= ``min_iou``) pairs. Deterministic for fixed inputs.
+
+    Memoised, keyed by content: the result depends on exactly the region ids and
+    bboxes of both pages, and those are what the key holds. Callers may therefore
+    mutate their page dicts in place between calls — including in a reward loop —
+    without risking a stale assignment; an edit that would change the alignment
+    changes the key. :func:`reset_cache` clears the memo if a caller wants the memory
+    back. Each call returns its own copy, so a caller mutating the returned mapping
+    cannot corrupt the cache.
     """
-    key = (id(gt.raw), id(candidate.raw), min_iou)
+    key = (_page_key(gt), _page_key(candidate), min_iou)
     cached = _cache.get(key)
-    if cached is not None and cached[0] is gt.raw and cached[1] is candidate.raw:
-        return dict(cached[2])
+    if cached is not None:
+        return dict(cached)
 
     mapping = _align_uncached(gt, candidate, min_iou=min_iou)
 
-    _cache[key] = (gt.raw, candidate.raw, dict(mapping))
+    _cache[key] = dict(mapping)
     while len(_cache) > _CACHE_MAXSIZE:
         _cache.popitem(last=False)
     return mapping
