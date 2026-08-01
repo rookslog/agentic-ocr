@@ -76,8 +76,26 @@ GROSS_REGION_RETENTION = 0.60
 # at some rate on any long page. Zero tolerance here was the round-3 false-fail
 # finding. The allowance scales with the page — one bad region in 40 is noise, one
 # bad region in 2 is not — with a floor of 1 so a short page is not held to a
-# stricter standard than a long one. The page-level containment floor still applies
-# on top, so minor defects cannot accumulate into a materially degraded page.
+# stricter standard than a long one.
+#
+# MEASURED LIMIT — this aggregate is NOT yet a defensible reward signal, and an
+# earlier version of this comment claimed the opposite ("the page-level containment
+# floor still applies on top, so minor defects cannot accumulate into a materially
+# degraded page"). That claim is false and was falsified by probe P5b: RELOCATING
+# text preserves page-pooled containment exactly, so the page-level floor is not a
+# backstop against it at all. Because the allowance counts regions rather than
+# weighing their text, it admits roughly 0.39 x (the text share of the
+# ceil(0.05 x R) largest regions) of a page sitting in the wrong block — measured at
+# 20.6% of page trigrams on a skewed 100-region page under the current constants,
+# with every checker passing. Both round-4 reviewers independently reached the same
+# conclusion (codex: "farmable ... needs a continuous penalty or a non-farmable
+# aggregate before reward use").
+#
+# The aggregate is therefore PRE-REGISTERED for redesign — a magnitude-weighted
+# budget rather than a count — BEFORE any reward use, and these constants await
+# calibration against real OCR error distributions (E2 / vision-pilot data). They are
+# frozen pending that operator decision; they are a workable CI false-fail
+# accommodation today and nothing more. See the evidence doc, "KNOWN-OPEN".
 MINOR_REGION_DEFECT_RATE = 0.05
 
 # ── Misplacement: is this block holding text that belongs to a different block? ──
@@ -90,10 +108,12 @@ MINOR_REGION_DEFECT_RATE = 0.05
 # SCOPE GUARD — this gates MISPLACEMENT ONLY. An n-gram absent from the whole GT
 # page is novel text, and novel text stays **ungated**: the acceptable-excess
 # threshold for hallucination is an escalated experiments-track decision (review
-# finding D-008) that this packet must not silently settle. Novel text therefore
-# only ever *lowers* this ratio (it enlarges the denominator), and is reported
-# through `precision` / `excess_ngrams` as before. Do not repurpose this constant
-# into a hallucination gate without that escalation being resolved first.
+# finding D-008) that this packet must not silently settle. Novel text is therefore
+# excluded from the ratio entirely — numerator *and* denominator — and reported
+# through `precision` / `excess_ngrams` instead. It was in the denominator only
+# until round 4, which meant enough padding could hide a smear (codex HIGH); neutral
+# has to mean neutral in both directions, unpunished and non-exculpatory. Do not
+# repurpose this constant into a hallucination gate without that escalation resolved.
 MAX_REGION_FOREIGN_RATIO = 0.5
 
 # Misplacement is categorical, not stochastic: a pipeline does not accidentally put
@@ -207,20 +227,28 @@ class TextFidelityChecker(Checker):
             cand_text = counterpart.text if counterpart is not None else ""
             retentions.append((region.id, self._retention(region.text, cand_text)))
 
-            # Misplacement: candidate n-grams that are not this GT region's, but are
-            # somewhere in the GT page. See MAX_REGION_FOREIGN_RATIO for the scope
-            # guard — novel text is deliberately NOT counted here.
+            # Misplacement: of the candidate n-grams attributable to the GT page at
+            # all, what fraction belongs to a *different* GT region?
+            #
+            # Novel n-grams — in neither this region's GT nor anywhere else on the
+            # page — are excluded from BOTH numerator and denominator. Neutral has to
+            # mean neutral in both directions: unpunished (the D-008 hallucination
+            # escalation stands) but also non-exculpatory. They used to sit in the
+            # denominator only, so padding a smeared region with enough novel tokens
+            # pushed the ratio under the threshold and hid the misplacement — a
+            # round-4 HIGH, where hallucination actively masked a gated failure.
             cand_grams = ngram_multiset(cand_text, used_n)
-            cand_total = sum(cand_grams.values())
-            if not cand_total:
-                continue
             own = ngram_multiset(region.text, used_n)
-            foreign = sum(
-                max(0, count - own.get(gram, 0))
-                for gram, count in cand_grams.items()
-                if gram in page_gt_grams
-            )
-            ratio = foreign / cand_total
+            own_matched = foreign = 0
+            for gram, count in cand_grams.items():
+                mine = min(count, own.get(gram, 0))
+                own_matched += mine
+                if gram in page_gt_grams:
+                    foreign += count - mine
+            attributable = own_matched + foreign
+            if not attributable:
+                continue
+            ratio = foreign / attributable
             if ratio > self.max_region_foreign_ratio:
                 misplacements.append((region.id, ratio))
         retentions.sort(key=lambda d: (d[1], d[0]))
@@ -263,7 +291,7 @@ class TextFidelityChecker(Checker):
             if regions_scored
             else 0
         )
-        worst_region = retentions[0][1] if retentions else 1.0
+        worst_region = retentions[0][1] if retentions else 1.0  # reported only when scored
 
         passed = (
             ratio >= self.min_containment
@@ -316,9 +344,13 @@ class TextFidelityChecker(Checker):
                 "min_region_retention": self.min_region_retention,
                 "gross_region_retention": self.gross_region_retention,
                 # The true minimum over every scored region, not merely the worst
-                # *defect* — that earlier version reported a flattering 1.0 whenever
-                # nothing crossed the floor (review finding L2-6).
-                "worst_region_retention": worst_region,
+                # *defect* — the first version reported a flattering 1.0 whenever
+                # nothing crossed the floor (review finding L2-6). Absent, rather than
+                # 1.0, when no region was scored: "nothing was measured" and "every
+                # region was perfect" are different facts, and reporting the second
+                # for the first is the same flattering-default mistake (round-4
+                # MINOR-3). Consumers must handle the key being missing.
+                **({"worst_region_retention": worst_region} if regions_scored else {}),
                 # Store the exact float the gate compares (not rounded), so the
                 # telemetry can never disagree with the verdict at the boundary
                 # (review finding D-008).
