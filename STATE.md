@@ -4,105 +4,121 @@
 working session; the first thing a fresh agent session or /goal packet reads.
 For strategy read `PLAN.md`; for the predict→verdict history read `ledger.md`.
 
-**Last updated:** 2026-06-12 (fourth pass — deterministic checker suite built + adversarially reviewed)
-**Phase:** 0 — Apparatus (no models yet). **In progress.**
+**Last updated:** 2026-08-07 (sixth pass — drive resumed after the 07-31/08-01 sessions;
+operator rulings on vision arm / ADR-0002 / dionysus SSH; PR #3 certification re-launched;
+aligner + ADRs finally committed)
+**Phase:** 0 — Apparatus (no models in the pipeline; model-touching *probes* are
+operator-sanctioned case-by-case — see "Vision-transcription pilot" below). **In progress.**
 
-**Open PRs:**
-- #3 `feat/checker-suite` — the deterministic checker suite (`eval/checkers/`): contract +
-  four core checkers (text-fidelity, reading-order, footnote-anchor, structure-typing) +
-  negative controls + CLI + CI smoke on the GT-A fixtures. CI green; adversarially reviewed
-  (D-008, reviewer ≠ author, all three lenses request-changes → fixes applied). Two design
-  questions escalated (DocumentGT marker-anchoring; the hallucination/precision gate). Awaits
-  Logan's merge (T3 load-bearing `eval/checkers/**`; branch protection requires it). Evidence:
-  `goal/evidence/checker-suite.md`.
-- #2 `process/delegation-triage` — the delegation-triage layer + validator + skill + two
-  /goal packets. Adversarially reviewed (D-005/D-006, both APPROVE-WITH-CHANGES, fixes
-  applied). Awaits Logan's merge (T3 load-bearing; branch protection requires it).
+## In flight RIGHT NOW (next-action owners — the D-247 stall fix)
+
+- **D-248** — PR #3 certification pass (re-launch of the cancelled D-247). Owner: reviewer
+  agent, running. On certified-clean → **AG-1 agential merge executes immediately** (merge
+  via `gh`, merge-commit, sanctioned 2026-08-01 and re-confirmed by the drive policy).
+- **D-249** — 3-lens adversarial review of `eval/gtb/` (first T3-style review of the
+  aligner). Owner: reviewer agent, running. On verdict → fixes → PR → agential merge (AG-6).
+- **ADR-0002 cascade, pre-G1 half** (AG-7): scholar-schema `v0.1.0` tag → pyproject pin +
+  scriptorium pin PR + legacy-fixture labels. Post-G1 half (CI mechanisms + enforcement
+  probes) unlocks when PR #3 merges.
+
+## Open PRs
+
+- #3 `feat/checker-suite` — deterministic checker suite (`eval/checkers/`), now hardened
+  through **seven adversarial rounds** (D-237 exploit harness; rounds 3–6 fix commits
+  0b466d3…4b9d7ea on 2026-07-31/08-01; two executed BLOCKER reproductions found and closed,
+  incl. a reward-farming construction). CI green, `MERGEABLE`; certification (D-248) is the
+  last gate before the AG-1 agential merge. Evidence: `goal/evidence/checker-suite.md`
+  (in-branch). D-247 (the 08-01 certification) was **cancelled** — session ended before any
+  result; that 6-day silent stall is logged as a repeat of the D-210 pattern.
+
+**Merged to main:** #2 `process/delegation-triage` (2026-06-13).
+
+## Operator rulings (2026-08-07, batched decision-presentation ask)
+
+1. **Vision arm / copyright fork → PD lane now + filter probe.** Public-domain pair
+   sourcing (archive.org scans + Gutenberg/Perseus texts) joins corpus expansion; first a
+   ~3-page probe (synthetic GT-A page + PD pages through the unchanged vision contract)
+   tests the load-bearing assumption that the output filter is copyright-specific. PD pairs
+   count toward gate clause 4 (reading of PLAN.md:248 — recorded, contestable at the gate).
+2. **ADR-0002 → Accepted, full cascade authorized** (one approval covers tag, pins,
+   labels, post-G1 CI mechanisms, both enforcement probes). Status flipped in the ADR.
+3. **H-1 dionysus SSH → granted**: scoped Bash allow-rule (ssh/rsync to dionysus)
+   authorized; installing via settings. Cross-target smoke runs once the rule is live.
+4. **Acquisition authority (delegate ruling, recorded not asked):** owned-library mining is
+   autonomous (copy-only staging + provenance, report-after — the already-approved pattern);
+   zlibrary (H-2) stays gated on Logan and opens only if owned + PD mining leaves clause 4
+   short of 5 pairs.
+
+## Vision-transcription pilot (2026-07-31) — the run and its finding
+
+Operator-sanctioned probe (NOT a prereg'd experiment; no verdict claimed into
+`experiments/`). 40 stratified page PNGs from the 3 accepted GT-B pairs; 4 model×effort
+cells; 36 workers launched. **RUN HALTED: 32/36 workers killed by platform output
+filtering on long verbatim reproduction of in-copyright text** — across both model
+families and all effort levels; only one short front-matter fragment survived (n=1 usable
+page per cell — insufficient for scoring). Full log: `.local/vision-pilot/RUNLOG.md`
+(local-only). Implication: the frontier-API transcription arm cannot run on in-copyright
+books via this provider path — hence ruling 1 above. Unaffected: everything in Phase 0
+(zero model calls needed), local-model E2 contenders, checker-based eval. The concat-limit
+probe (designed 07-31) never ran; its design + stitched images are retained for a
+permissible corpus.
 
 ## What exists (this repo)
 
-- `PLAN.md` — full strategy, committed as-is (do not edit outside phase gates).
-- `LICENSE` — Apache-2.0, © 2026 Logan Rooks.
-- `eval/lib/` — scoring core **ported** from scholardoc `ground_truth/lib`
-  (normalize / matching / metrics / reports), imports rebased to `eval.lib`.
-- `tests/` — 44 ported unit tests, **all passing** under `uv run pytest`.
-  ruff + mypy clean.
-- `eval/fixtures/` — JSON-only eval data: `validation_set.json` (130 error pairs
-  / 77 correct words), `classified/` (75 OCR-quality batch files), `candidates/`
-  (4 files, all <1MB), `test_yaml/` (2 unit-test fixtures).
-- `eval/checkers/` — the **deterministic checker suite** (PLAN §5; PR #3): contract
-  (`CheckResult`/`Checker`/`Scorecard`/`run_checkers`) + four core checkers
-  (text-fidelity, reading-order, footnote-anchor, structure-typing; structure-typing
-  reuses `eval.lib.metrics`) + CLI (`python -m eval.checkers --gt … --candidate …`).
-  Consumes PageGT-shaped dicts; pure/deterministic; exit code = CI assertion / future
-  reward signal. 57 checker tests; runs end-to-end on the scriptorium GT-A fixtures in CI.
-- `docs/prior-findings.md` — distilled scholardoc empirical record, with
-  provenance (file @ branch).
-- `experiments/E1…E7/` — one pre-registered hypothesis + disconfirmer each
-  (skeletons, not yet run). `experiments/_TEMPLATE.md` holds the §8 prereg fields.
-- `runner/` — SSH-over-Tailscale + rsync **walking-skeleton**; `targets.toml`
-  declares local-mac / dionysus / rental. No queue, no orchestrator (by design).
-- `ledger.md` — append-only predict→verdict log (seeded with the scaffolding entry).
-- CI (`.github/workflows/ci.yml`): ruff + mypy + pytest, no-PDF / no->1MB guard,
-  the prereg-gate on PRs, and the **delegation-log validator** (schema + overkill
-  guardrail on `delegation-log.jsonl`).
-- `docs/delegation-triage.md` + `delegation-log.jsonl` — delegation triage rubric and
-  append-only trace log (tier choice → disposition → review-gate verdicts →
-  interventions → meta-audit). Enforced by `.github/scripts/validate_delegation_log.py`
-  (+ `tests/test_validate_delegation_log.py`, 26 cases) and the in-repo skill
-  `.claude/skills/delegation-triage/`. Every delegated subtask logs here.
-- `docs/process/upstream-feedback.md` — append-only record of improvements to the
-  /goal packet format and related skills, for later self-improvement workflows.
-- `goal/` — packets: `corpus-acquisition.goal.md` (HUMAN-GATE on selection; zlibrary
-  ≤10/day) and `checker-suite.goal.md` (Phase-0 gate item 5). Evidence files land in
-  `goal/evidence/`.
-- `.local/` (gitignored) — corpus inventory manifest + research notes produced by
-  delegated exploration; never pushed.
+- `PLAN.md` — full strategy, committed as-is (edited only at phase gates).
+- `eval/lib/` — scoring core ported from scholardoc (normalize/matching/metrics/reports).
+- `eval/checkers/` — deterministic checker suite (PR #3; see Open PRs).
+- `eval/gtb/` — **GT-B aligner + page-key layer** (branch `feat/gtb-aligner`): anchor
+  extraction (unique 5-grams + LIS), DP gap fill, mechanical coverage statistic with
+  calibrated accept threshold 0.60; per-PDF-page answer-key slicing with reliability
+  floors. All 3 owned pairs ACCEPT (0.9575/0.9927/0.9777); both cross-book negative
+  controls REJECT (0.0054/0.0118); 34 co-located tests. Under first T3 review (D-249).
+  Evidence: `goal/evidence/gtb-aligner.md`.
+- `docs/adr/` — ADR-0001 (GT schema layering; Accepted) + ADR-0002 (schema-evolution
+  policy; **Accepted 2026-08-07**, cascade in flight).
+- `tests/` — 44 ported unit tests + validator tests; full suite green under `uv run pytest`.
+- `eval/fixtures/` — JSON-only eval data (legacy labeling lands with the AG-7 cascade).
+- `docs/prior-findings.md`, `experiments/E1…E7/` skeletons, `runner/` walking skeleton,
+  `docs/delegation-triage.md` + `delegation-log.jsonl` (59 delegations traced, validator
+  green), `docs/process/upstream-feedback.md` — as at the fifth pass.
+- `ledger.md` — rows 4–7 appended 2026-08-07 (corpus starter, aligner, vision pilot,
+  ADR-0002 — the first three retroactive, labeled as such).
+- `corpus/` (gitignored) — 12 books / 15 files staged with sha256 provenance; 3 GT-B pairs.
+- `.local/` (gitignored) — corpus manifest, smokes, vision-pilot, research notes.
 
-## Sibling repos (created 2026-06-12, both CI green)
+## Sibling repos (both CI green — verified via `gh run list` 2026-08-07)
 
-- `loganrooks/scholar-schema` — scholargt fork @ 6cdd98b, import name `scholargt`,
-  293/293 tests, schema-regen byte-identity check.
-- `loganrooks/scriptorium` — schema-first synthetic-corpus generator; tectonic render
-  verified on the Republic/Bendis fixture page. PyPI name taken; dist name TBD.
+- `loganrooks/scholar-schema` — scholargt fork, 293/293 tests. **No tags yet**; `v0.1.0`
+  tag is the first cascade action (AG-7).
+- `loganrooks/scriptorium` — synthetic-corpus generator; render verified on the
+  Republic/Bendis fixture page. scholar-schema dep commented out pending the pin.
 
 ## What does NOT exist yet
 
-- `pipeline/` — empty by design in Phase 0 (no models).
-- This repo does not yet **pin** scholar-schema/scriptorium versions (scriptorium's
-  scholar-schema git dep is commented out pending a resolvable pin).
-- The synthetic corpus (GT-A, beyond the 1 fixture page), GT-B aligner, acquired
-  corpus — not started; see `goal/corpus-acquisition.goal.md`.
-- A self-hosted dionysus CI runner — deferred (PLAN §14 item 6).
+- `pipeline/` — empty by design in Phase 0.
+- The ≥500-page synthetic corpus (GT-A) — the scriptorium engine build is the largest
+  remaining pure-build item (own packet, executed in the scriptorium repo).
+- GT-B pairs 4 & 5 — Otherwise Than Being flagged as pair 4 (owned scan on OneDrive +
+  staged EPUB); owned-library mining authorized (ruling 4).
+- The dionysus half of gate clause 2 — unblocked by ruling 3, smoke not yet run.
+- PD corpus lane — approved (ruling 1), not started.
 
 ## Carried but DEFERRED
 
-- `eval.lib.normalize.scholar_doc_to_elements()` / `_position_to_page()` — port the
-  adapter contract for the future pipeline; import target does not exist yet, so
-  these are `# pragma: no cover` and untested until `pipeline/` lands.
+- `eval.lib.normalize.scholar_doc_to_elements()` — untested until `pipeline/` lands.
+- scholardoc GT regression test — re-port when `pipeline/` + accepted GT documents exist.
 
-## Left behind from scholardoc `ground_truth/lib` (and why)
+## Phase-0 gate scoreboard (PLAN.md:248, audited 2026-08-07)
 
-- `tests/integration/test_ground_truth_regression.py` — exercises
-  `scholardoc.convert` + `scholar_doc_to_elements` over real PDFs and verified GT
-  documents. Both dependencies are the rotted pipeline we deliberately did **not**
-  port; the test self-skips when no verified GT exists. Re-port when `pipeline/`
-  and accepted GT documents exist.
+1. **CI green on all three repos — DONE** (all three verified green).
+2. Mac + dionysus through the abstraction — dionysus half unblocked (ruling 3), smoke owed.
+3. ≥500 synthetic GT pages — **not started**; scriptorium engine packet is next after the
+   in-flight gates.
+4. ≥5 accepted GT-B pairs — **3/5**; paths: OTB staging, owned mining, PD lane; zlibrary
+   only if still short.
+5. Checker suite e2e on GT-A — built; blocked only on the D-248→AG-1 merge; full-corpus
+   run waits on item 3.
 
-## Next gate items (PLAN §10 Phase 0 — what closes this phase)
-
-Phase 0 gate (all must be *shipped, runnable artifacts*, not "design complete"):
-
-1. CI green on all three repos (this repo: green ✅; schema + generator: not created).
-2. The same job runs on **Mac and dionysus** through the execution abstraction
-   (runner is a skeleton only — not yet demonstrated end-to-end on dionysus).
-3. ≥500 synthetic GT pages across strata, incl. ≥1 sous-rature and ≥1 multi-register
-   template (needs the generator repo — not started).
-4. ≥5 accepted GT-B pairs (needs the aligner + corpus acquisition — not started).
-5. Checker suite runs end-to-end on GT-A — **suite shipped** (PR #3, `eval/checkers/`):
-   runs end-to-end on the scriptorium GT-A fixture page in CI, with negative controls.
-   Remaining for the full gate: point it at the ≥500-page GT-A corpus once item 3 lands.
-
-**Immediate next step:** execute the two `goal/` packets (corpus acquisition awaits
-Logan's HUMAN-GATE on the selection; checker suite is unblocked), then make the runner
-skeleton actually execute a trivial job on dionysus.
+**Immediate next steps** (drive order): D-248 certification → AG-1 merge → post-G1 cascade
+half; D-249 verdict → gtb fixes/PR; scholar-schema v0.1.0 tag + pins; dionysus smoke;
+scriptorium engine packet; OTB staging + owned mining; PD lane + filter probe.
