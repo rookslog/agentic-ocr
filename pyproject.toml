@@ -11,6 +11,7 @@ dependencies = [
     "rapidfuzz>=3.0.0",
     "tabulate>=0.9.0",
     "pyyaml>=6.0.0",
+    "scholar-schema",
 ]
 
 [dependency-groups]
@@ -56,3 +57,6 @@ ignore_missing_imports = true
 # rapidfuzz/tabulate are 3rd-party; eval/lib is ported code typed loosely.
 disallow_untyped_defs = false
 warn_unused_ignores = false
+
+[tool.uv.sources]
+scholar-schema = { git = "https://github.com/rookslog/scholar-schema.git", rev = "v0.1.0" }
