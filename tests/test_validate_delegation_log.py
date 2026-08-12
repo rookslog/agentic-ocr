@@ -139,6 +139,16 @@ def test_bad_model_fails(tmp_path: Path) -> None:
     assert run(log).returncode == 1
 
 
+def test_cross_vendor_model_accepted(tmp_path: Path) -> None:
+    # gpt-5.6-sol joined MODELS 2026-08-12 (D-250 drive handoff); it is unranked, so
+    # the computed-overfit guard must fall back to self-reported steps, not crash.
+    log = write_log(tmp_path, delegation(
+        tier_chosen={"model": "gpt-5.6-sol", "effort": "ultra"}))
+    result = run(log)
+    assert result.returncode == 0
+    assert "WARNING" not in result.stdout
+
+
 def test_max_effort_is_accepted_without_warning(tmp_path: Path) -> None:
     # `max` is a known effort value — no unknown-effort warning. Both tiers max so this
     # isolates the vocabulary check from the overfit guardrail.

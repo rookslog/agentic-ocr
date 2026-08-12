@@ -4,32 +4,42 @@
 working session; the first thing a fresh agent session or /goal packet reads.
 For strategy read `PLAN.md`; for the predict→verdict history read `ledger.md`.
 
-**Last updated:** 2026-08-07 (sixth pass — drive resumed after the 07-31/08-01 sessions;
-operator rulings on vision arm / ADR-0002 / dionysus SSH; PR #3 certification re-launched;
-aligner + ADRs finally committed)
+**Last updated:** 2026-08-12 (seventh pass — codex drive handoff: D-248/D-249 both
+cancelled on a platform session limit 2026-08-07; the whole drive re-routed cross-vendor
+as D-250; pre-G1 cascade half executed 08-07 after the sixth pass was written)
 **Phase:** 0 — Apparatus (no models in the pipeline; model-touching *probes* are
 operator-sanctioned case-by-case — see "Vision-transcription pilot" below). **In progress.**
 
-## In flight RIGHT NOW (next-action owners — the D-247 stall fix)
+## In flight RIGHT NOW (next-action owner — the D-247 stall fix)
 
-- **D-248** — PR #3 certification pass (re-launch of the cancelled D-247). Owner: reviewer
-  agent, running. On certified-clean → **AG-1 agential merge executes immediately** (merge
-  via `gh`, merge-commit, sanctioned 2026-08-01 and re-confirmed by the drive policy).
-- **D-249** — 3-lens adversarial review of `eval/gtb/` (first T3-style review of the
-  aligner). Owner: reviewer agent, running. On verdict → fixes → PR → agential merge (AG-6).
-- **ADR-0002 cascade, pre-G1 half** (AG-7): scholar-schema `v0.1.0` tag → pyproject pin +
-  scriptorium pin PR + legacy-fixture labels. Post-G1 half (CI mechanisms + enforcement
-  probes) unlocks when PR #3 merges.
+- **D-250 — codex drive handoff** (operator-directed 2026-08-12): a codex session
+  (gpt-5.6-sol, ultra) owns the drive per `goal/codex-drive.goal.md` under the new
+  `AGENTS.md` contract. W1 = PR #3 certification+merge (AG-1), W2 = eval/gtb review+merge
+  (AG-6), W3 = satellite merges, W4 = post-G1 cascade (AG-7), W5 = dionysus smoke,
+  W6 = GT-B pairs 4–5. Evidence lands in `goal/evidence/codex-drive.md`.
+- **D-248 and D-249 were both CANCELLED** — the two reviewer agents died 2026-08-07 on a
+  platform session-limit API error (D-248 mid-review, D-249 before producing anything).
+  Their gates re-enter as W1/W2 above; log rows carry the details.
+- **AG-7 pre-G1 half: DONE 2026-08-07** — scholar-schema `v0.1.0` tag live @ `8610d5e`;
+  this repo pinned (PR #4); scriptorium pinned (its PR #2); legacy-fixture labels in
+  `eval/fixtures/README.md` (PR #4). Post-G1 half is W4.
 
 ## Open PRs
 
-- #3 `feat/checker-suite` — deterministic checker suite (`eval/checkers/`), now hardened
+All CI-green as of 2026-08-12 (`gh pr checks`, all five):
+
+- #3 `feat/checker-suite` — deterministic checker suite (`eval/checkers/`), hardened
   through **seven adversarial rounds** (D-237 exploit harness; rounds 3–6 fix commits
   0b466d3…4b9d7ea on 2026-07-31/08-01; two executed BLOCKER reproductions found and closed,
-  incl. a reward-farming construction). CI green, `MERGEABLE`; certification (D-248) is the
+  incl. a reward-farming construction). `MERGEABLE`; certification (now D-250 W1) is the
   last gate before the AG-1 agential merge. Evidence: `goal/evidence/checker-suite.md`
-  (in-branch). D-247 (the 08-01 certification) was **cancelled** — session ended before any
-  result; that 6-day silent stall is logged as a repeat of the D-210 pattern.
+  (in-branch). Certification launches D-247 and D-248 were both **cancelled** (session-end
+  stall, then platform session limit) — the D-210 stall pattern, twice.
+- #4 `chore/adr-cascade` — ADR-0001+0002 (Accepted) + pre-G1 cascade (schema pin v0.1.0,
+  legacy-fixture labels). Merge after #3 (D-250 W3).
+- #5 `feat/gtb-aligner` (draft) — `eval/gtb/` committed 721af22 to protect the work;
+  T3 review owed (D-250 W2).
+- scholar-schema #1 (docs) and scriptorium #2 (schema pin) — green, merge any time.
 
 **Merged to main:** #2 `process/delegation-triage` (2026-06-13).
 
@@ -86,12 +96,13 @@ permissible corpus.
 - `corpus/` (gitignored) — 12 books / 15 files staged with sha256 provenance; 3 GT-B pairs.
 - `.local/` (gitignored) — corpus manifest, smokes, vision-pilot, research notes.
 
-## Sibling repos (both CI green — verified via `gh run list` 2026-08-07)
+## Sibling repos (both CI green — org is `rookslog`; older docs said loganrooks, redirect works)
 
-- `loganrooks/scholar-schema` — scholargt fork, 293/293 tests. **No tags yet**; `v0.1.0`
-  tag is the first cascade action (AG-7).
-- `loganrooks/scriptorium` — synthetic-corpus generator; render verified on the
-  Republic/Bendis fixture page. scholar-schema dep commented out pending the pin.
+- `rookslog/scholar-schema` — scholargt fork, 293/293 tests. Tag `v0.1.0` @ `8610d5e`
+  (CI-green commit) pushed 2026-08-07; docs PR #1 open.
+- `rookslog/scriptorium` — synthetic-corpus generator; render verified on the
+  Republic/Bendis fixture page. scholar-schema pinned at v0.1.0 via `[tool.uv.sources]`
+  (its PR #2; 15 passed / 2 skipped, ruff+mypy clean).
 
 ## What does NOT exist yet
 
@@ -119,6 +130,6 @@ permissible corpus.
 5. Checker suite e2e on GT-A — built; blocked only on the D-248→AG-1 merge; full-corpus
    run waits on item 3.
 
-**Immediate next steps** (drive order): D-248 certification → AG-1 merge → post-G1 cascade
-half; D-249 verdict → gtb fixes/PR; scholar-schema v0.1.0 tag + pins; dionysus smoke;
-scriptorium engine packet; OTB staging + owned mining; PD lane + filter probe.
+**Immediate next steps:** the D-250 codex drive owns the worklist —
+`goal/codex-drive.goal.md` W1→W6 (+W7 stretch). Retained Claude-side: the PD-lane
+content-filter probe, anything zlibrary (H-2), and D-250 disposition on return.

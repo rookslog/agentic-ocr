@@ -34,8 +34,12 @@ TASK_CLASSES = {
 # written when the main agent ran on fable; it was deprecated 2026-06-12. New rows are
 # opus-based (docs/delegation-triage.md §1.3), but the log is append-only so the
 # vocabulary must keep accepting what was already written.
-MODELS = {"haiku", "sonnet", "opus", "fable"}
-KNOWN_EFFORTS = {"low", "medium", "default", "high", "xhigh", "max"}
+# `gpt-5.6-sol` (2026-08-12, D-250): cross-vendor drive handoffs, operator-directed.
+# Deliberately absent from MODEL_RANK — no cost order is defined across vendors, so
+# the computed-overfit guard falls back to the self-reported steps for these rows.
+MODELS = {"haiku", "sonnet", "opus", "fable", "gpt-5.6-sol"}
+# `ultra`: codex reasoning tier above xhigh; unranked like the cross-vendor models.
+KNOWN_EFFORTS = {"low", "medium", "default", "high", "xhigh", "max", "ultra"}
 DISPOSITIONS = {"accepted", "accepted-with-edits", "rework", "rejected", "cancelled"}
 SUFFICIENCY = {"yes", "no", "unsure"}
 SEVERITIES = {"major", "minor"}
