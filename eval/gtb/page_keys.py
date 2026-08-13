@@ -21,8 +21,9 @@ Method (pure logic; no I/O — extraction lives in :mod:`eval.gtb.extract`):
 
 2. **One whole-book alignment** — the anchor chain from
    :func:`eval.gtb.align.unique_shared_anchors` (unique-shared 5-grams filtered
-   to a strictly-monotone chain by LIS). This is *reused*, not reimplemented: the
-   anchor semantics, ``ANCHOR_N`` and the LIS filter are the aligner's.
+   to a strictly-monotone chain by LIS and made span-disjoint on both sides).
+   This is *reused*, not reimplemented: the anchor semantics and ``ANCHOR_N`` are
+   the aligner's.
 
 3. **Span slicing** (:func:`page_keys`). Each page's key is delimited by the
    anchors whose candidate span falls inside that page's candidate token range.
@@ -31,7 +32,8 @@ Method (pure logic; no I/O — extraction lives in :mod:`eval.gtb.extract`):
    offset at that anchor — without that, every key would be truncated by however
    much text precedes/follows the outermost anchor on the page. The extrapolated
    edges are then clamped so spans never leave the GT stream, never lose their
-   own anchors, and are monotone non-decreasing across consecutive pages.
+   own anchors. A previous page may constrain a later page's start, but never its
+   end: extrapolated trailing content must not be copied into the next answer key.
 
 4. **Per-page statistics** — ``page_coverage`` is computed by running the
    *existing* aligner (:func:`eval.gtb.align.align_tokens`) on the local
@@ -55,6 +57,7 @@ punctuation or casing claims it cannot support.
 from __future__ import annotations
 
 import bisect
+import math
 from dataclasses import dataclass
 
 from eval.checkers._normalize import tokens
@@ -173,11 +176,19 @@ def page_keys(
     """Derive one :class:`PageKey` per PDF page from a single whole-book alignment.
 
     ``anchors`` may be supplied to reuse a chain already computed for the same
-    pair (the whole-book alignment is the expensive step); when omitted it is
-    computed here with :func:`eval.gtb.align.unique_shared_anchors`.
+    pair. It must equal the canonical chain recomputed for these exact streams;
+    stale, fabricated, or differently-parameterized chains are rejected. When
+    omitted the canonical chain is used directly.
     """
+    if type(min_anchors) is not int or min_anchors < 1:
+        raise ValueError("min_anchors must be a positive integer")
+    if not math.isfinite(min_coverage) or not 0.0 <= min_coverage <= 1.0:
+        raise ValueError("min_coverage must be finite and in [0, 1]")
+    canonical_anchors = unique_shared_anchors(gt_tokens, cand_tokens, n)
     if anchors is None:
-        anchors = unique_shared_anchors(gt_tokens, cand_tokens, n)
+        anchors = canonical_anchors
+    elif anchors != canonical_anchors:
+        raise ValueError("supplied anchors are not the canonical anchor chain for this pair")
     cand_positions = [a.cand_pos for a in anchors]
     total_gt = len(gt_tokens)
 
@@ -198,10 +209,9 @@ def page_keys(
         end = min(total_gt, max(end, last.gt_pos + n))
         raw.append((span, in_page, (start, end)))
 
-    # ── Pass 2: enforce monotone non-decreasing spans across consecutive pages ─────────
+    # ── Pass 2: let only reliable starts constrain later page starts ───────────────────
     keys: list[PageKey] = []
-    prev_start = 0
-    prev_end = 0
+    prev_reliable_start = 0
     for span, in_page, gt_span in raw:
         if gt_span is None:
             reason = (
@@ -226,12 +236,11 @@ def page_keys(
             continue
 
         start, end = gt_span
-        # Monotone clamp: never start before the previous page started, but never
-        # past this page's own first anchor either (which would orphan it).
-        start = min(max(start, prev_start), in_page[0].gt_pos)
-        end = max(end, prev_end, start + 1)
+        # Never move behind the previous *reliable* page, but never clamp past this
+        # page's own first anchor either (which would orphan it).
+        start = min(max(start, prev_reliable_start), in_page[0].gt_pos)
+        end = max(end, start + 1)
         end = min(end, total_gt)
-        prev_start, prev_end = start, end
 
         local = align_tokens(
             gt_tokens[start:end],
@@ -248,6 +257,11 @@ def page_keys(
             reasons.append(
                 f"local coverage {local.coverage:.4f} below floor {min_coverage:.2f}"
             )
+        if not reasons:
+            # Only a supported start may constrain later pages. Ends are never
+            # propagated: even a page just above the reliability floor can carry
+            # an extrapolated trailing edge that the next page does not contain.
+            prev_reliable_start = start
         keys.append(
             PageKey(
                 page_number=span.page_number,

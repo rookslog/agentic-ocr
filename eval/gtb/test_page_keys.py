@@ -7,9 +7,12 @@ tests reason about expected spans exactly rather than statistically.
 
 from __future__ import annotations
 
+import math
+
 import pytest
 
 from eval.checkers._normalize import tokens
+from eval.gtb.align import Anchor, unique_shared_anchors
 from eval.gtb.page_keys import (
     MIN_PAGE_ANCHORS,
     PageSpan,
@@ -176,6 +179,76 @@ def test_low_local_coverage_page_is_unreliable() -> None:
     assert keys[1].page_coverage < 0.60
     assert keys[1].reliable is False
     assert "local coverage" in keys[1].reason
+
+
+def test_unreliable_page_does_not_contaminate_the_next_reliable_span() -> None:
+    gt = words(0, 200)
+    first = [*words(0, 60), *(f"noise{i}" for i in range(90))]
+    second = words(60, 120)
+    keys = page_keys(gt, [*first, *second], spans_of([150, 60]))
+
+    assert keys[0].gt_span == (0, 150)
+    assert keys[0].reliable is False
+    assert keys[1].gt_span == (60, 120)
+    assert keys[1].page_coverage == 1.0
+    assert keys[1].reliable is True
+
+
+def test_barely_reliable_page_does_not_expand_the_next_supported_end() -> None:
+    gt = words(0, 300)
+    first = [*words(0, 100), *(f"noise{i}" for i in range(66))]
+    second = words(100, 150)
+    keys = page_keys(gt, [*first, *second], spans_of([166, 50]))
+
+    assert keys[0].page_coverage == pytest.approx(100 / 166)
+    assert keys[0].reliable is True  # current 0.60 contract, not an edge-quality claim
+    assert keys[1].gt_span == (100, 150)
+    assert keys[1].page_coverage == 1.0
+    assert keys[1].reliable is True
+
+
+def test_overlapping_ngrams_are_one_independent_page_support() -> None:
+    gt = words(0, 100)
+    candidate = gt[50:57]
+    key = page_keys(gt, candidate, spans_of([7]))[0]
+    assert key.n_anchors == 1
+    assert key.reliable is False
+    assert "only 1 anchor" in key.reason
+
+
+def test_reused_anchor_chain_must_be_canonical_for_this_pair() -> None:
+    gt = words(0, 200)
+    candidate = gt[40:140]
+    fabricated = [
+        Anchor(gt_pos=i, cand_pos=i, ngram=tuple(gt[i : i + 5])) for i in range(3)
+    ]
+    with pytest.raises(ValueError, match="canonical anchor chain"):
+        page_keys(gt, candidate, spans_of([100]), anchors=fabricated)
+
+
+def test_valid_reused_anchor_chain_matches_internal_computation() -> None:
+    gt = words(0, 200)
+    candidate = gt[40:140]
+    spans = spans_of([40, 60])
+    cached = unique_shared_anchors(gt, candidate)
+    assert page_keys(gt, candidate, spans, anchors=cached) == page_keys(gt, candidate, spans)
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "match"),
+    [
+        ({"min_anchors": 0}, "min_anchors must be"),
+        ({"min_coverage": -0.01}, "min_coverage must be"),
+        ({"min_coverage": 1.01}, "min_coverage must be"),
+        ({"min_coverage": math.nan}, "min_coverage must be"),
+    ],
+)
+def test_invalid_page_reliability_parameters_are_rejected(
+    kwargs: dict[str, float], match: str
+) -> None:
+    gt = words(0, 20)
+    with pytest.raises(ValueError, match=match):
+        page_keys(gt, gt, spans_of([20]), **kwargs)  # type: ignore[arg-type]
 
 
 def test_empty_gt_yields_no_spans() -> None:

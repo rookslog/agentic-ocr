@@ -7,8 +7,15 @@ corpus/). Run:  uv run pytest eval/gtb/test_align.py
 
 from __future__ import annotations
 
+import math
+from itertools import product
+
+import pytest
+
 from eval.gtb.align import (
     ACCEPT_THRESHOLD,
+    ANCHOR_N,
+    MAX_GAP,
     _lcs_length,
     _lis_indices,
     _segment_lcs_match,
@@ -74,6 +81,20 @@ def test_no_anchors_when_disjoint() -> None:
     assert unique_shared_anchors(gt, cand, n=3) == []
 
 
+def test_crossed_unique_blocks_keep_only_a_monotone_anchor_chain() -> None:
+    first = _words("a0", "a1", "a2", "a3", "a4")
+    second = _words("b0", "b1", "b2", "b3", "b4")
+    anchors = unique_shared_anchors([*first, *second], [*second, *first], n=5)
+    assert len(anchors) == 1
+    assert anchors[0].ngram in {tuple(first), tuple(second)}
+
+
+def test_ngram_repeated_on_either_side_is_not_an_anchor() -> None:
+    shared = _words("a", "b", "c", "d", "e")
+    assert unique_shared_anchors(shared, [*shared, "x", *shared], n=5) == []
+    assert unique_shared_anchors([*shared, "x", *shared], shared, n=5) == []
+
+
 # ── coverage + verdict ────────────────────────────────────────────────────────────────────
 def test_identical_streams_full_coverage_accept() -> None:
     toks = _words(*[f"w{i}" for i in range(50)])
@@ -92,12 +113,47 @@ def test_disjoint_streams_zero_coverage_reject() -> None:
 
 
 def test_coverage_never_double_counts() -> None:
-    # Dense identical stream: anchors overlap heavily. Coverage must stay <= 1.0
-    # and matched must not exceed gt_tokens even though raw anchor spans overlap.
-    toks = _words(*(["x", "y", "z", "q", "r", "s", "t"] * 30))
+    # Dense DISTINCT stream: the raw 5-gram candidates overlap heavily. The
+    # canonical chain must retain only candidate-disjoint anchors, so coverage is
+    # an injective token match rather than a value clamped after over-crediting.
+    toks = _words(*[f"w{i}" for i in range(210)])
     r = align_tokens(toks, list(toks), n=5)
-    assert 0.0 <= r.coverage <= 1.0
-    assert r.matched_gt_tokens <= r.gt_tokens
+    assert r.n_anchors == 42
+    assert r.coverage == 1.0
+    assert r.matched_gt_tokens == r.gt_tokens
+    assert r.detail["anchor_token_fraction"] == 1.0
+    assert r.detail["gap_token_fraction"] == 0.0
+
+
+def test_overlapping_candidate_anchors_cannot_reuse_tokens() -> None:
+    """Eleven overlapping candidate windows cannot explain eleven disjoint GT runs."""
+    cand = _words(*[f"w{i}" for i in range(15)])
+    gt: list[str] = []
+    for start in range(11):
+        gt.extend(cand[start : start + 5])
+        if start < 10:
+            gt.append(f"gap{start}")
+
+    r = align_tokens(gt, cand)
+
+    assert r.matched_gt_tokens <= _lcs_length(gt, cand) == 15
+    assert r.accepted is False
+
+
+def test_small_alignments_never_exceed_global_lcs() -> None:
+    streams = [list(items) for size in range(5) for items in product(("a", "b"), repeat=size)]
+    for gt in streams:
+        for candidate in streams:
+            result = align_tokens(gt, candidate, n=2, max_gap=10)
+            assert result.matched_gt_tokens <= _lcs_length(gt, candidate)
+
+
+def test_anchorless_match_is_not_an_accepted_anchor_alignment() -> None:
+    r = align_tokens(["title"], ["title"])
+    assert r.coverage == 1.0
+    assert r.n_anchors == 0
+    assert r.accepted is False
+    assert r.detail["reason_no_anchors"] == 1.0
 
 
 def test_partial_match_intermediate_coverage() -> None:
@@ -142,6 +198,44 @@ def test_threshold_boundary_is_inclusive() -> None:
     r = align_tokens(toks, list(toks), n=5, threshold=1.0)
     assert r.coverage == 1.0
     assert r.accepted is True  # coverage == threshold -> accept (inclusive)
+
+
+def test_calibrated_defaults_and_default_threshold_boundary() -> None:
+    assert ANCHOR_N == 5
+    assert MAX_GAP == 4000
+    assert ACCEPT_THRESHOLD == 0.60
+
+    gt = _words(*[f"w{i}" for i in range(10)])
+    at_boundary = align_tokens(gt, gt[:6])
+    below_boundary = align_tokens(gt, gt[:5])
+    assert at_boundary.coverage == 0.60
+    assert at_boundary.accepted is True
+    assert below_boundary.coverage == 0.50
+    assert below_boundary.accepted is False
+
+
+@pytest.mark.parametrize(
+    ("kwargs", "match"),
+    [
+        ({"n": 0}, "n must be"),
+        ({"max_gap": -1}, "max_gap must be"),
+        ({"threshold": -0.01}, "threshold must be"),
+        ({"threshold": 1.01}, "threshold must be"),
+        ({"threshold": math.nan}, "threshold must be"),
+    ],
+)
+def test_invalid_alignment_parameters_are_rejected(kwargs: dict[str, float], match: str) -> None:
+    with pytest.raises(ValueError, match=match):
+        align_tokens(["a"], ["a"], **kwargs)  # type: ignore[arg-type]
+
+
+def test_candidate_side_diagnostics_expose_excess_material() -> None:
+    gt = _words(*[f"g{i}" for i in range(100)])
+    candidate = [*gt, *[f"junk{i}" for i in range(1000)]]
+    r = align_tokens(gt, candidate)
+    assert r.coverage == 1.0
+    assert r.detail["candidate_coverage"] == pytest.approx(100 / 1100)
+    assert r.detail["candidate_to_gt_length_ratio"] == 11.0
 
 
 def test_align_text_entrypoint_normalizes() -> None:

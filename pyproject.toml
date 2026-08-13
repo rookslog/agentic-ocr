@@ -35,7 +35,7 @@ packages = ["eval"]
 [tool.pytest.ini_options]
 # Run from the repo root so `import eval.lib...` resolves against ./eval.
 pythonpath = ["."]
-testpaths = ["tests"]
+testpaths = ["tests", "eval/gtb"]
 addopts = "-q"
 
 [tool.ruff]

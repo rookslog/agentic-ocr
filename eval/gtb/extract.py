@@ -14,10 +14,13 @@ is deterministic for a given binary + file. No randomness, no network.
 from __future__ import annotations
 
 import html
+import posixpath
 import re
 import subprocess
+import xml.etree.ElementTree as ET
 import zipfile
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 # ── XHTML -> plain text (verbatim policy from og_smoke.strip_xhtml) ───────────────────────
 _TAG_RE = re.compile(r"<[^>]+>")
@@ -56,33 +59,28 @@ def opf_spine_hrefs(zf: zipfile.ZipFile) -> tuple[str, list[str]]:
     walks the spine ``itemref`` ids in declared order, keeping only (x)html
     documents (the GT text spine, in reading order).
     """
-    container = zf.read("META-INF/container.xml").decode("utf-8", "replace")
-    m = re.search(r'full-path="([^"]+)"', container)
-    if not m:
+    container = ET.fromstring(zf.read("META-INF/container.xml"))
+    rootfile = container.find(".//{*}rootfile")
+    if rootfile is None or not rootfile.get("full-path"):
         raise RuntimeError("container.xml has no rootfile full-path")
-    opf_path = m.group(1)
-    opf_dir = opf_path.rsplit("/", 1)[0] if "/" in opf_path else ""
-    opf = zf.read(opf_path).decode("utf-8", "replace")
+    opf_path = unquote(rootfile.get("full-path", ""))
+    opf_dir = posixpath.dirname(opf_path)
+    opf = ET.fromstring(zf.read(opf_path))
 
     manifest: dict[str, tuple[str, str]] = {}  # id -> (href, media_type)
-    for item in re.findall(r"<item\b[^>]*/?>", opf):
-        m_id = re.search(r'\bid="([^"]+)"', item)
-        m_href = re.search(r'\bhref="([^"]+)"', item)
-        m_media = re.search(r'\bmedia-type="([^"]+)"', item)
-        if m_id and m_href:
-            manifest[m_id.group(1)] = (
-                m_href.group(1),
-                m_media.group(1) if m_media else "",
-            )
+    for item in opf.findall(".//{*}manifest/{*}item"):
+        item_id = item.get("id")
+        href = item.get("href")
+        if item_id and href:
+            manifest[item_id] = (href, item.get("media-type", ""))
 
     hrefs: list[str] = []
-    spine_block = re.search(r"<spine\b.*?</spine>", opf, re.DOTALL)
-    spine_src = spine_block.group(0) if spine_block else opf
-    for ref in re.findall(r'<itemref\b[^>]*\bidref="([^"]+)"', spine_src):
-        entry = manifest.get(ref)
+    for itemref in opf.findall(".//{*}spine/{*}itemref"):
+        entry = manifest.get(itemref.get("idref", ""))
         if not entry:
             continue
         href, media = entry
+        href = unquote(urlsplit(href).path)
         if media and "html" not in media.lower():
             continue
         if href.lower().endswith((".html", ".xhtml", ".htm")):
@@ -98,7 +96,7 @@ def extract_epub_text(path: Path) -> str:
         parts: list[str] = []
         for href in hrefs:
             href = href.split("#", 1)[0]
-            full = f"{opf_dir}/{href}" if opf_dir else href
+            full = posixpath.normpath(posixpath.join(opf_dir, href))
             if full not in names:
                 continue
             markup = zf.read(full).decode("utf-8", "replace")
