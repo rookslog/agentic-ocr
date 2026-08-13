@@ -1,0 +1,349 @@
+# Evidence — Deterministic checker suite (`eval/checkers`)
+
+**Goal:** A deterministic, unit-test-style checker suite (olmOCR-2 unit-test-rewards
+pattern, PLAN §5) that scores any candidate pipeline output against a GT page, running
+end-to-end on the scriptorium fixture page — **Phase-0 gate item 5**.
+
+**Status:** Implemented on PR [#3](https://github.com/rookslog/agentic-ocr/pull/3),
+branch `feat/checker-suite`. Built this session (`e9ecce02`), adversarially reviewed
+(D-008, reviewer ≠ author), review findings applied. Two further cross-vendor review
+rounds followed — **D-237** (round 2, 8 findings) and **round 3** (both reviewers,
+12 findings) — all applied; see §9.
+
+---
+
+## 1. What was built
+
+| Component | File | Notes |
+|---|---|---|
+| Contract | `eval/checkers/base.py` | `CheckResult{id,passed,severity,detail,metrics}`, `Checker` ABC, `Scorecard` (exit code), `run_checkers()`, `AlwaysPassChecker` |
+| PageGT accessors | `eval/checkers/pagegt.py` | read-only dict view; block-type classification (body/footnote/heading/other) |
+| Normalizer | `eval/checkers/_normalize.py` | checker-local (eval/lib/normalize is element-, not string-oriented); n-gram helpers |
+| Structural contract | `eval/checkers/contract.py` | validates the **raw** page dicts: unique region ids, depth cap, and a `reading_order` that is a complete, non-repeating, index-consistent list of strings |
+| Region alignment | `eval/checkers/align.py` | id-exact, then **exact optimal bbox-IoU assignment** (Hungarian / Jonker-Volgenant, iterative O(n²m), no size cap, no degraded path); **intrinsic-id tie-breaks** (permutation-invariant); memoised per page pair |
+| text-fidelity | `eval/checkers/text_fidelity.py` | three-part hard gate: page-level recall containment · per-region **retention** (graded gross/minor; n-gram ∨ character similarity) · per-region **misplacement**. Precision reported, not gated |
+| reading-order | `eval/checkers/reading_order.py` | Kendall-tau + LIS + coverage |
+| footnote-anchor | `eval/checkers/footnote_anchor.py` | note presence + notable-span preservation |
+| structure-typing | `eval/checkers/structure_typing.py` | per-type P/R/F1 **reusing `eval.lib.metrics`**; zero-type-error gate |
+| CLI | `eval/checkers/__main__.py` | `python -m eval.checkers --gt … --candidate … [--json]` |
+
+The default suite is **five** checkers, structural-contract first: it is the
+precondition the other four assume, so its verdict is read before theirs.
+
+**Determinism (the load-bearing property):** every checker is a pure function of
+`(candidate, gt)` — no clock, randomness, model, or I/O. Scoring is `+ - * /` over
+integer ratios (IEEE-754-reproducible). The candidate consumes PageGT-shaped **dicts**
+(no `scholar-schema` pin in Phase 0).
+
+**Fixtures** (synthetic / public-domain — data-hygiene compliant, `tests/fixtures/`):
+`minimal_page` (the scriptorium fixture, canonical end-to-end smoke) and a richer
+`apparatus_page` (heading + two body blocks + an anchored note with a real `¹` marker),
+added because the minimal fixture declares a note but **no in-text anchor marker**, so it
+cannot meaningfully exercise footnote-anchor or its negative control.
+
+---
+
+## 2. Scorecard — end-to-end on the GT-A fixtures (CLI)
+
+`uv run python -m eval.checkers --gt tests/fixtures/minimal_page.gt.json --candidate tests/fixtures/minimal_page.candidate.json` → **exit 0**
+
+```
+checker              severity  verdict
+structural-contract  hard      PASS
+text-fidelity        hard      PASS
+reading-order        hard      PASS
+footnote-anchor      hard      PASS
+structure-typing     hard      PASS
+5/5 passed · 0 hard failure(s) · 0 soft failure(s) · exit 0
+```
+
+`--gt apparatus_page.gt.json --candidate apparatus_page.candidate.json` → **exit 0**
+
+```
+structural-contract  hard  PASS
+text-fidelity        hard  PASS  recall 51/51; 0 region defects; 0 misplaced; precision 1.0000; reward_ready=false
+reading-order        hard  PASS  coverage 1.000, Kendall tau 1.000, LIS 4/4 in order
+footnote-anchor      hard  PASS  notes 1/1 recovered; spans 1/1 preserved
+structure-typing     hard  PASS  0 type-error(s); micro-F1 1.000, macro-F1 1.000
+5/5 passed · exit 0
+```
+
+Mutated candidate (corrupt-5% on `apparatus_page`) → **exit 1**:
+
+```
+structural-contract  hard  PASS  ...
+text-fidelity        hard  FAIL  recall 25/51 GT 3-grams contained (containment 0.4902, floor 0.95); precision 0.4902, 26 candidate 3-gram(s) not in GT
+reading-order        hard  PASS  ...
+footnote-anchor      hard  PASS  ...
+structure-typing     hard  PASS  ...
+4/5 passed · 1 hard failure(s) · exit 1
+```
+
+---
+
+## 3. Negative controls — each mutation trips exactly its target
+
+Deterministic mutators in `tests/_mutations.py` (no RNG — fixed stride for corruption).
+Each mutation fails **only** its target checker; the suite exits non-zero in every case.
+
+| mutation | text-fidelity | reading-order | footnote-anchor | structure-typing | exit |
+|---|:---:|:---:|:---:|:---:|:---:|
+| _(clean candidate)_ | PASS | PASS | PASS | PASS | **0** |
+| drop-anchor | PASS | PASS | **FAIL** | PASS | **1** |
+| swap-blocks | PASS | **FAIL** | PASS | PASS | **1** |
+| corrupt-5%-chars | **FAIL** | PASS | PASS | PASS | **1** |
+| mislabel | PASS | PASS | PASS | **FAIL** | **1** |
+
+structural-contract passes on all five rows (none of these mutations is malformed).
+Verified on both fixtures (`tests/test_checkers_negative_controls.py`).
+
+**The isolation claim is conditional, and the condition is computed, not assumed.**
+`drop_anchor` is text-fidelity-neutral only for markers normalization treats as *markup*
+(`¹`, `*`, `†` — the kind `apparatus_page` declares; `minimal_page` declares no
+anchors at all, so the claim is vacuous there rather than exercised). A marker made of
+characters the normalizer treats as **content** (`isalpha()` or `isdecimal()`) is an
+ordinary content token after normalization, so removing it necessarily costs one token;
+for those the control asserts a bounded residual instead. The test discovers the fixture
+inventory from disk and branches on each fixture's declared markers, so a future fixture
+cannot silently escape the claim.
+
+---
+
+## 4. Verification
+
+- `uv run pytest` (full suite) → **215 passed, 1 xfailed** (44 ported lib tests + 26
+  delegation-log tests + 145 checker tests; the additional strict xfail pins a frozen
+  semantics question).
+  `ruff check` clean; `mypy` clean (40 source files).
+- CLI: faithful candidate → exit 0; mutated candidate → exit 1.
+- **CI status — stated precisely, because two earlier wordings overclaimed.**
+  - *Latest CI-attested pushed commit at certification preflight:* `8b2721d` —
+    [run 27455169735](https://github.com/rookslog/agentic-ocr/actions/runs/27455169735),
+    all four CI jobs succeeded, including the **"Checker suite smoke (GT-A fixtures)"**
+    step in `lint · typecheck · test`
+    ([job 81158254899](https://github.com/rookslog/agentic-ocr/actions/runs/27455169735/job/81158254899)).
+    The earlier `a0b203e` run 27455116310 is real but is not the latest pushed receipt.
+  - *Locally attested review commits:* the 14 commits from `0b466d3` through
+    `4b9d7ea` were still ahead of `origin/feat/checker-suite` when this correction was
+    written. Fresh local receipts on `4b9d7ea`: `uv run pytest` (215 passed,
+    1 strict xfail), `uv run ruff check .`, `uv run mypy .`, and the focused
+    round-4/5/nested/reward-exploit regression set. This is local evidence, not CI
+    evidence; earlier D-237 and round-3/4/5 probe receipts remain in their cited
+    delegation records.
+  - *Merge gate:* W1 requires the corrected tip to be pushed and all required checks
+    to succeed on that exact PR head before merge. The exact-head run and merge SHA are
+    recorded in `goal/evidence/codex-drive.md`; this historical review record is not
+    rewritten after every Actions run.
+
+---
+
+## 5. Adversarial review (D-008, reviewer ≠ author — T3 path `eval/checkers/**`)
+
+A 3-lens panel (determinism · negative-control · schema-faithfulness; `reviewer` roster,
+opus xhigh) ran in a workflow. **All three returned `request-changes`**; every finding was
+corroborated against the code/schema and addressed (delegation-log: D-008 delegation +
+accepted disposition).
+
+| # | sev | lens | finding | resolution |
+|---|---|---|---|---|
+| 1 | major | determ. | `align.py` tie-break keyed on array order → a semantics-preserving permutation of `regions` flipped hard verdicts | tie-break on intrinsic ids; `test_checkers_alignment.py` asserts permutation invariance |
+| 2 | major | determ. | structure-typing 0.999 float floor is page-size-dependent (1 mistype in 1000 → 0.999 → PASS) | gate on integer zero-type-errors (FP+FN==0); large-N regression test |
+| 3 | major | neg-ctrl | text-fidelity "anti-hallucination tripwire" is recall-only / precision-blind | de-branded; `precision`+`excess_ngrams` now reported; **precision gate ESCALATED** (see §6) |
+| 4 | major | schema | footnote-anchor misread `Region.text_anchors` (schema: "notable spans"; canonical marker channel is DocumentGT `Note.body_marker`) + `expected=1` forcing failed faithful candidates | reframed to notable-span preservation; Case-A bug fixed; **true marker-anchoring ESCALATED** (see §6) |
+| 5 | minor | determ. | runner collapsed all crashes to indistinguishable hard FAIL | `metrics{crashed:True}` + `Scorecard.crashed` + clean-fixture zero-crash test |
+| 6 | minor | determ. | stored `round(...,4)` metric could contradict the raw-float gate at the boundary | store the exact gated float; `test_metric_matches_verdict_at_boundary` |
+| 7 | minor | schema | retired-enum comments wrong; `page_header` folded into "heading" | comments corrected (v1 back-compat); `page_header` routed to "other" |
+| 8 | minor | neg-ctrl | isolation only tested against GT-identical candidates | added a hallucination-bearing divergent-candidate test |
+
+---
+
+## 6. Escalations (per the packet's pause/escalate clause)
+
+Two items are genuine **design decisions for the schema / experiments track**, not packet
+decisions, and are surfaced rather than forked locally:
+
+1. **True footnote marker↔note anchoring.** The canonical binding is `DocumentGT.Note.body_marker`
+   / `Note.marker_text`, which a *page*-level checker does not consume; `Region.text_anchors`
+   is "notable text spans", not a marker channel. The page-level checker enforces note
+   presence + notable-span preservation; full marker↔note integrity needs DocumentGT (or a
+   schema addition) — **escalated to scholar-schema, not forked.**
+2. **Hallucination (precision) gate.** text-fidelity's hard gate is recall (catches omission
+   + corruption); the precision direction (hallucination) is computed and reported but the
+   acceptable-excess **threshold is an experiments-track decision** — surfaced, not silently
+   turned into a reward.
+
+## 7. Known limitations (for the later reward-signal use)
+
+- The text-fidelity hard gate is **recall-only**: a candidate that reproduces all GT text
+  *and* fabricates extra text passes the hard gate (precision is reported, not gated). Any
+  later "faithful / non-hallucinated" claim must read the precision metric, not just exit 0.
+- A single dropped region intentionally fails multiple checkers (it is a multi-property
+  gate). When the scorecard is mapped to a *scalar* reward, region-presence failures should
+  be de-duplicated to one canonical checker to avoid stacked credit-assignment penalties.
+
+## 8. Cross-session note
+
+The shared `delegation-log.jsonl` was concurrently appended by session `eaa44f15`
+(corpus-acquisition: D-101/D-102) using a separate id block. D-102 runs a real-corpus
+text-fidelity smoke against the checker code; the review changes kept `TextFidelityChecker`'s
+constructor and `containment` metric intact, so that usage is unaffected. (Multi-session
+id-coordination on the shared log is already flagged for upstream-feedback by D-101.)
+
+---
+
+## 9. Cross-vendor review rounds D-237 (round 2) and round 3
+
+Two further adversarial rounds ran after §5, both cross-vendor and both with executed
+reproductions rather than code-reading alone. Every finding is closed; every reproduction
+is now a regression test.
+
+### Round 2 — D-237 (8 findings)
+
+| # | sev | finding | resolution |
+|---|---|---|---|
+| H1 | high | reading order compared raw id sequences: honest model-generated ids false-FAILED (coverage 0); a phantom GT-id `reading_order` over reversed real indices PASSED | order evaluated over the `align_regions` mapping; candidate order derived from its own regions |
+| H2 | high | page-pooled n-grams: swapping two regions' complete texts PASSED | per-region retention over aligned pairs |
+| H3 | high | page-global n-gram backoff: blanking a 2-token heading PASSED | per-region backoff, plus character-similarity scoring (round 3) |
+| H4 | high | duplicate region ids collapsed through last-wins dicts and PASSED | `StructuralContractChecker` |
+| M5 | med | `PageView` traversed only top-level regions; `Region.children` unscored | depth-first flattening |
+| M6 | med | greedy IoU assignment stranded matchable regions | exact assignment (finished in round 3) |
+| M7 | med | `drop_anchor` used `str.replace`, destroying prose for an alphabetic marker | standalone-occurrence removal |
+| L8 | low | `round(tau, 4)` reported 1.0 for a failing page | raw gated floats in telemetry |
+
+### Round 3 (12 findings, both reviewers)
+
+| id | sev | finding | resolution |
+|---|---|---|---|
+| L1-1 | major | reversed `reading_order_index` on every region + `"reading_order": ["head-1"]` → exit 0 at tau 1.0: one resolving entry suppressed the index signal, and a tail loop filled the rest from array order | both switches removed. A declared order is honoured only when complete; a present `reading_order` must be a list of strings naming every top-level region once and agreeing with the declared indices, else hard violation |
+| L1-2 / L2-1 / L2-2 | major | the "smear" — every region's text set to the whole page — passed all five, because every GT region was perfectly *contained* in its counterpart | per-region **misplacement** gate (candidate n-grams belonging to a *different* GT region), zero tolerance. Scoped to misplacement only: novel text stays ungated, per the D-008 escalation |
+| codex MEDIUM | medium | per-region zero-defect gate false-failed ordinary OCR noise (one changed character in a two-token heading → containment 0.0) | retention = max(n-gram containment, character similarity), graded gross/minor with a page-scaled minor allowance |
+| L2-6 | low | `worst_region_containment` reported a flattering 1.0 whenever nothing crossed the floor | true minimum over every scored region |
+| M6-NOT-CLOSED | medium | exactness above a 16-node cap only; a 17-node component matched 16 of 17 | Hungarian at every size; cap deleted |
+| L2-3 | medium | the greedy fallback was an invisible degraded path | no fallback exists; there is one path |
+| L2-4 | medium | recursion once per GT region while the cap counted only candidates: 200 GT took 55.7s, ~1000 GT raised `RecursionError` in all four consumers | iterative O(n²m) on the smaller side; both shapes are regression-tested with wall-time bounds |
+| codex filtered-view | medium | the contract checker validated the already-filtered `PageView`, so a null region entry and a string-valued `reading_order` each scored a clean exit 0 | validates the **raw** page dicts |
+| L2-7 / L2-5 | low | id-less regions uncounted (the "unique region ids" detail was not true); nesting past the depth cap silently truncated the GT | both are counted violations |
+| codex LOW | low | `drop_anchor` walked only top-level regions, so the nested path was never exercised | mutators flatten through `children` |
+| L2-9 | low | parent/child text convention unspecified | **exclusive** adopted as the documented working convention (§10) |
+
+Reproduction harness (`.local/eval/triage/repro.py`, round 2) post-fix: baseline exit 0,
+H1a (honest model ids) exit 0, H2 / H3 / H4 / H1b all exit 1.
+
+### Constants introduced, and why
+
+| constant | value | rationale |
+|---|---|---|
+| `MIN_REGION_RETENTION` | 0.95 | the same bar as the page-level floor — the region gate is the existing standard applied where pooling cannot dilute it, not a new stricter one |
+| `GROSS_REGION_RETENTION` | 0.60 | separates *noise* from *gone*. Well above what deletion/swapping produce (~0.0–0.2) and well below any plausible OCR noise level. Zero tolerance, page-size invariant |
+| `MINOR_REGION_DEFECT_RATE` | 0.05, floor 1 | a stochastic pipeline produces some minor noise on any long page; zero tolerance here was the round-3 false-fail. Scales with the page so a 40-region page is not held to a stricter effective standard than a 4-region one. **This row previously ended "the page-level floor still bounds accumulation" — that claim is false and was falsified in round 4; see KNOWN-OPEN-1 below.** Frozen pending an operator decision |
+| `MAX_REGION_FOREIGN_RATIO` | 0.5 | generous — of a region's n-grams that are attributable to the GT page at all, *most* must belong to a different block before it trips. Novel n-grams are **excluded from numerator and denominator alike** (commit `2e76d32`): neutral in both directions — unpunished, so the hallucination question stays escalated, and non-exculpatory, so padding cannot buy cover. The verdict is provably independent of how much novel text a region carries |
+| `MAX_REGION_MISPLACEMENTS` | 0 | misplacement is categorical, not stochastic |
+| `MAX_REGION_DEPTH` | 32 | bounds pathological nesting; exceeding it is a reported violation, never a silent truncation |
+
+## 10. Open questions for the E1 schema-revision inputs
+
+**Does a parent `Region.text` include its children's text?** scholar-schema
+(`scholargt/schema/spatial.py`) documents `Region.text` as optional and specifies no
+inclusion semantics. The suite adopts **exclusive** (a parent's text holds only what is
+not inside a child) as a documented working convention, recorded in `_flatten`'s
+docstring: inclusive text would double-count every nested block in the page-level n-gram
+multiset and would make a child's misplacement invisible to the per-region gate. No
+runtime detection is attempted. If the schema later specifies inclusive text, `_flatten`
+and `PageView.full_text` are the two places that change.
+
+2. **Does a declared `reading_order` name nested regions?** Since round 4 the
+   completeness rule is depth-uniform: a declared order that is honoured must name
+   every region at every depth exactly once, with each region's descendants
+   immediately following it. That rule is deliberately agnostic about which
+   convention the schema intends — it accepts a fully-enumerated order, and it
+   accepts declaring no order at all (the page then falls to `reading_order_index`)
+   — but it rejects the half-way case of naming only the top-level ids, because
+   accepting that is precisely what let a candidate hide a misnested child behind a
+   flattering order (round-4 BLOCKER-1, probe P3). scholar-schema does not say which
+   convention `reading_order` follows. **If E1 settles it, the rule can be narrowed;
+   until then a page must enumerate fully or not declare.**
+
+3. **At what depth is `reading_order_index` numbered?** Sibling-scoped (a parent at
+   index 0 whose own child is also index 0) and page-global (parent 0, child 1, next
+   sibling 2) are both natural readings, and scholar-schema specifies neither. Round 5
+   briefly enforced page-global by comparing *nested* indices against the declared
+   order — a false-fail on the sibling-scoped convention, and on a field the suite does
+   not actually consume: a child's position comes from its parent's `children` array on
+   every signal path. The index-vs-declared comparison is therefore **scoped to
+   top-level regions**, which is convention-agnostic, while index *typing* stays
+   depth-uniform (a float or bool index anywhere is still a violation). **If E1 settles
+   the depth convention, the nested comparison can be reinstated for that convention.**
+
+---
+
+## 11. Round 4 (both reviewers) — closure and what stayed open
+
+Round 5 was scoped by the delegator to **conformance, honesty and bugs**; the
+per-region tolerance/aggregate semantics were frozen pending an operator design
+decision. Closed in round 5:
+
+| id | sev | finding | resolution |
+|---|---|---|---|
+| BLOCKER-1 (P3) | blocker | top-level-only completeness let a flattering declared order hide a misnested child; emission did not honour the documented child-follows-parent invariant (P8c) | completeness is depth-uniform and the declared order must be a permutation of whole parent+descendant blocks, enforced identically in `PageView` and the contract checker |
+| codex HIGH | high | novel-text padding masked misplacement — novel n-grams sat in the ratio's denominator only, so enough padding hid a smear | novel n-grams excluded from numerator **and** denominator; neutral in both directions |
+| MAJOR-3 / codex MEDIUM (P6) | major | identity-keyed memo returned stale alignments after in-place mutation | memo keyed by **content** (ids + bboxes — exactly what the assignment reads); `reset_cache()` exported; precondition stated in the module comment and docstring |
+| MAJOR-2 (P2) | major | the "no declared reading_order" invariance test carried `reading_order_index` on every region, so it never exercised the array path — the claim was vacuous | test rewritten to omit all order signals and assert the **true** behaviour (array order is the last-resort signal and is load-bearing); documented in `pagegt.py`; new `order_signal` / `gt_order_signal` metrics expose which signal scored a page |
+| MAJOR-4 | major | the fixture guard used `isalnum()`, but `'¹'.isalnum()` is `True`, so `apparatus_page` was routed into the residual branch and its strict assertions never ran | predicate is now the normalizer's own (`isalpha() or isdecimal()`); apparatus takes the strict branch |
+| MINOR-1 (P8b) | minor | a float `reading_order_index` was silently ignored by both `PageView` and the contract checker | non-int index (float / str / bool / null) is a violation |
+| codex MEDIUM | medium | a JSON `null` `reading_order` slipped the `is not None` gate | membership test; absent and null are distinguished |
+| MINOR-3 | minor | `worst_region_retention` reported 1.0 when no region was scored — the flattering-default class, third instance | the key is **absent** when `regions_scored == 0` |
+| MINOR-4 | minor | the residual-bound assertion advertised `>0.9` while the gate enforces `≥0.95` | asserts `MIN_REGION_RETENTION`, imported rather than restated |
+
+### KNOWN-OPEN — frozen pending an operator semantics decision
+
+**KNOWN-OPEN-1 — the minor-defect aggregate is farmable, and the page-level floor is
+not a backstop.** An earlier version of this doc and of `text_fidelity.py` claimed
+"minor defects cannot accumulate into a materially degraded page". That claim is
+**false**. Relocating text preserves page-pooled containment exactly, so the
+page-level floor does not constrain it at all. Because the allowance counts regions
+rather than weighing their text, it admits roughly `0.39 x (text share of the
+ceil(0.05 x R) largest regions)` of a page sitting in the wrong block — **measured at
+20.6% of page trigrams on a skewed 100-region page, with all five checkers passing**
+(reviewer probe P5b). Codex reached the same conclusion independently ("farmable …
+needs a continuous penalty or a non-farmable aggregate before reward use"). The
+aggregate is **pre-registered for redesign — a magnitude-weighted budget rather than a
+count — before any reward use**, and the constants await calibration against real OCR
+error distributions (E2 / vision-pilot data). They are a workable CI false-fail
+accommodation today and nothing more.
+
+**KNOWN-OPEN-2 — short-region misplacement (probe P4).** One segmentation slip that
+moves a following sentence into a short caption trips the misplacement gate on a
+60-region page, because a short region's own n-gram mass is small enough that any
+imported sentence exceeds `MAX_REGION_FOREIGN_RATIO`. Whether that is a true positive
+(the caption really does hold another block's text) or a false fail (one boundary slip
+in 60 regions) is the same frozen question. Pinned as a strict `xfail` in
+`tests/test_checkers_round4_regressions.py::test_p4_short_region_boundary_slip` so the
+case cannot be lost and neither answer is enshrined. Note that the round-5 denominator
+fix **tightened** this frozen case rather than leaving it untouched: excluding novel
+n-grams from the denominator moved the P4 construction's reported ratio from 0.5833 to
+**0.7000 foreign**, i.e. further above the 0.5 threshold. Whichever way the semantics
+decision goes, it is now being made against a sharper measurement.
+
+**KNOWN-OPEN-3 — unguarded O(n³) alignment.** Exact at every size and fine for the
+bounded CI fixtures, but there is no fail-closed resource bound for arbitrary
+untrusted candidate output. A bound or a sparsity exploit is needed before a reward
+service; a greedy fallback is not (that was round 3's finding M6).
+
+Timings **reproduced on this worktree**, `uv run python -m eval.checkers._bench_align`
+(committed recipe; Apple arm64, CPython 3.13). The shape matters more than the size,
+which is why the recipe measures both — quoting one number without naming the shape is
+how a timing claim misleads:
+
+| n | `chain` (sparse: neighbours only) | `dense` (complete pair graph) |
+|---|---|---|
+| 100 | 0.008s | 0.040s |
+| 200 | 0.031s | 0.249s |
+| 400 | 0.123s | 1.914s |
+| 600 | 0.301s | 6.672s |
+
+`chain` is the realistic page shape and what the regression tests use; `dense` is the
+worst case the missing guard is actually about. Prior measurements, retained as
+corroboration and now explained: codex reported 0.044 / 0.28 / 2.2 / 7.4s — which
+matches the **dense** column here — and the round-4 reviewer reported 0.009 / 0.040 /
+0.163 / 0.342s, which matches the **chain** column. The two were measuring different
+shapes, not disagreeing.

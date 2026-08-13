@@ -4,12 +4,20 @@
 working session; the first thing a fresh agent session or /goal packet reads.
 For strategy read `PLAN.md`; for the predict→verdict history read `ledger.md`.
 
-**Last updated:** 2026-06-12 (third pass — triage layer mechanized + adversarially reviewed)
+**Last updated:** 2026-06-12 (fourth pass — deterministic checker suite built + adversarially reviewed)
 **Phase:** 0 — Apparatus (no models yet). **In progress.**
 
-**Open PR:** #2 `process/delegation-triage` — the delegation-triage layer + validator +
-skill + two /goal packets. Adversarially reviewed (D-005/D-006, both APPROVE-WITH-CHANGES,
-fixes applied). Awaits Logan's merge (T3 load-bearing; branch protection requires it).
+**Open PRs:**
+- #3 `feat/checker-suite` — the deterministic checker suite (`eval/checkers/`): contract +
+  four core checkers (text-fidelity, reading-order, footnote-anchor, structure-typing) +
+  negative controls + CLI + CI smoke on the GT-A fixtures. CI green; adversarially reviewed
+  (D-008, reviewer ≠ author, all three lenses request-changes → fixes applied). Two design
+  questions escalated (DocumentGT marker-anchoring; the hallucination/precision gate). Awaits
+  Logan's merge (T3 load-bearing `eval/checkers/**`; branch protection requires it). Evidence:
+  `goal/evidence/checker-suite.md`.
+- #2 `process/delegation-triage` — the delegation-triage layer + validator + skill + two
+  /goal packets. Adversarially reviewed (D-005/D-006, both APPROVE-WITH-CHANGES, fixes
+  applied). Awaits Logan's merge (T3 load-bearing; branch protection requires it).
 
 ## What exists (this repo)
 
@@ -22,6 +30,12 @@ fixes applied). Awaits Logan's merge (T3 load-bearing; branch protection require
 - `eval/fixtures/` — JSON-only eval data: `validation_set.json` (130 error pairs
   / 77 correct words), `classified/` (75 OCR-quality batch files), `candidates/`
   (4 files, all <1MB), `test_yaml/` (2 unit-test fixtures).
+- `eval/checkers/` — the **deterministic checker suite** (PLAN §5; PR #3): contract
+  (`CheckResult`/`Checker`/`Scorecard`/`run_checkers`) + four core checkers
+  (text-fidelity, reading-order, footnote-anchor, structure-typing; structure-typing
+  reuses `eval.lib.metrics`) + CLI (`python -m eval.checkers --gt … --candidate …`).
+  Consumes PageGT-shaped dicts; pure/deterministic; exit code = CI assertion / future
+  reward signal. 57 checker tests; runs end-to-end on the scriptorium GT-A fixtures in CI.
 - `docs/prior-findings.md` — distilled scholardoc empirical record, with
   provenance (file @ branch).
 - `experiments/E1…E7/` — one pre-registered hypothesis + disconfirmer each
@@ -85,7 +99,9 @@ Phase 0 gate (all must be *shipped, runnable artifacts*, not "design complete"):
 3. ≥500 synthetic GT pages across strata, incl. ≥1 sous-rature and ≥1 multi-register
    template (needs the generator repo — not started).
 4. ≥5 accepted GT-B pairs (needs the aligner + corpus acquisition — not started).
-5. Checker suite runs end-to-end on GT-A (needs GT-A — not started).
+5. Checker suite runs end-to-end on GT-A — **suite shipped** (PR #3, `eval/checkers/`):
+   runs end-to-end on the scriptorium GT-A fixture page in CI, with negative controls.
+   Remaining for the full gate: point it at the ≥500-page GT-A corpus once item 3 lands.
 
 **Immediate next step:** execute the two `goal/` packets (corpus acquisition awaits
 Logan's HUMAN-GATE on the selection; checker suite is unblocked), then make the runner
