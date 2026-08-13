@@ -4,7 +4,7 @@
 pattern, PLAN §5) that scores any candidate pipeline output against a GT page, running
 end-to-end on the scriptorium fixture page — **Phase-0 gate item 5**.
 
-**Status:** ✅ shipped. PR [#3](https://github.com/loganrooks/agentic-ocr/pull/3),
+**Status:** Implemented on PR [#3](https://github.com/rookslog/agentic-ocr/pull/3),
 branch `feat/checker-suite`. Built this session (`e9ecce02`), adversarially reviewed
 (D-008, reviewer ≠ author), review findings applied. Two further cross-vendor review
 rounds followed — **D-237** (round 2, 8 findings) and **round 3** (both reviewers,
@@ -48,32 +48,35 @@ cannot meaningfully exercise footnote-anchor or its negative control.
 `uv run python -m eval.checkers --gt tests/fixtures/minimal_page.gt.json --candidate tests/fixtures/minimal_page.candidate.json` → **exit 0**
 
 ```
-checker           severity  verdict  detail
-text-fidelity     hard      PASS     recall 58/58 GT 3-grams contained (containment 1.0000, floor 0.95); precision 1.0000, 0 candidate 3-gram(s) not in GT (reported, not gated)
-reading-order     hard      PASS     coverage 1.000 (floor 1.000), Kendall tau 1.000 (floor 1.000), LIS 2/2 in order
-footnote-anchor   hard      PASS     notes 1/1 recovered; spans 0/0 preserved
-structure-typing  hard      PASS     0 type-error(s) [FP 0 + FN 0] (tolerated 0); micro-F1 1.000, macro-F1 1.000; [body, footnote]
-4/4 passed · 0 hard failure(s) · exit 0
+checker              severity  verdict
+structural-contract  hard      PASS
+text-fidelity        hard      PASS
+reading-order        hard      PASS
+footnote-anchor      hard      PASS
+structure-typing     hard      PASS
+5/5 passed · 0 hard failure(s) · 0 soft failure(s) · exit 0
 ```
 
 `--gt apparatus_page.gt.json --candidate apparatus_page.candidate.json` → **exit 0**
 
 ```
-text-fidelity     hard  PASS  recall 51/51 GT 3-grams contained (containment 1.0000, floor 0.95); precision 1.0000, 0 candidate 3-gram(s) not in GT
-reading-order     hard  PASS  coverage 1.000, Kendall tau 1.000, LIS 4/4 in order
-footnote-anchor   hard  PASS  notes 1/1 recovered; spans 1/1 preserved
-structure-typing  hard  PASS  0 type-error(s) [FP 0 + FN 0]; micro-F1 1.000, macro-F1 1.000; [body, footnote, heading]
-4/4 passed · exit 0
+structural-contract  hard  PASS
+text-fidelity        hard  PASS  recall 51/51; 0 region defects; 0 misplaced; precision 1.0000; reward_ready=false
+reading-order        hard  PASS  coverage 1.000, Kendall tau 1.000, LIS 4/4 in order
+footnote-anchor      hard  PASS  notes 1/1 recovered; spans 1/1 preserved
+structure-typing     hard  PASS  0 type-error(s); micro-F1 1.000, macro-F1 1.000
+5/5 passed · exit 0
 ```
 
 Mutated candidate (corrupt-5% on `apparatus_page`) → **exit 1**:
 
 ```
-text-fidelity     hard  FAIL  recall 25/51 GT 3-grams contained (containment 0.4902, floor 0.95); precision 0.4902, 26 candidate 3-gram(s) not in GT
-reading-order     hard  PASS  ...
-footnote-anchor   hard  PASS  ...
-structure-typing  hard  PASS  ...
-3/4 passed · 1 hard failure(s) · exit 1
+structural-contract  hard  PASS  ...
+text-fidelity        hard  FAIL  recall 25/51 GT 3-grams contained (containment 0.4902, floor 0.95); precision 0.4902, 26 candidate 3-gram(s) not in GT
+reading-order        hard  PASS  ...
+footnote-anchor      hard  PASS  ...
+structure-typing     hard  PASS  ...
+4/5 passed · 1 hard failure(s) · exit 1
 ```
 
 ---
@@ -109,29 +112,28 @@ cannot silently escape the claim.
 ## 4. Verification
 
 - `uv run pytest` (full suite) → **215 passed, 1 xfailed** (44 ported lib tests + 26
-  delegation-log tests + 145 checker tests + 1 xfail pinning a frozen semantics question).
+  delegation-log tests + 145 checker tests; the additional strict xfail pins a frozen
+  semantics question).
   `ruff check` clean; `mypy` clean (40 source files).
 - CLI: faithful candidate → exit 0; mutated candidate → exit 1.
-- **CI status — stated precisely, because the earlier wording overclaimed.** This doc
-  used to read "CI green on the final commit (`a0b203e`)". That run is real, but
-  `a0b203e` is now many commits behind: **CI has not run on any commit after it**,
-  because the review rounds since are unpushed. Do not read the run below as
-  attesting to the current tree.
-  - *Attested by CI:* commit `a0b203e` —
-    [run 27455116310](https://github.com/loganrooks/agentic-ocr/actions/runs/27455116310),
-    all 5 checks success, including the **"Checker suite smoke (GT-A fixtures)"** step in
-    the `lint · typecheck · test` job
-    ([job log](https://github.com/loganrooks/agentic-ocr/actions/runs/27455116310/job/81158097705)).
-  - *Attested by local runs only:* **the commit that last edited this line**, on branch
-    `feat/checker-suite` — deliberately self-referential rather than a hash, because a
-    hash written into a commit can never name that commit, which is exactly how the
-    stale `a0b203e` reference above arose. Warranted by `uv run pytest tests/`,
-    `uv run ruff check .`, `uv run mypy`, the D-237 reproduction harness and the
-    round-3/4/5 reviewer probes, all executed in the review worktree. **CI has not seen
-    this commit**: the branch is unpushed, so this is a local-run attestation and
-    nothing more. It becomes a CI attestation only once the branch is pushed and a run
-    completes — at which point this bullet should be replaced with the run link, not
-    supplemented.
+- **CI status — stated precisely, because two earlier wordings overclaimed.**
+  - *Latest CI-attested pushed commit at certification preflight:* `8b2721d` —
+    [run 27455169735](https://github.com/rookslog/agentic-ocr/actions/runs/27455169735),
+    all four CI jobs succeeded, including the **"Checker suite smoke (GT-A fixtures)"**
+    step in `lint · typecheck · test`
+    ([job 81158254899](https://github.com/rookslog/agentic-ocr/actions/runs/27455169735/job/81158254899)).
+    The earlier `a0b203e` run 27455116310 is real but is not the latest pushed receipt.
+  - *Locally attested review commits:* the 14 commits from `0b466d3` through
+    `4b9d7ea` were still ahead of `origin/feat/checker-suite` when this correction was
+    written. Fresh local receipts on `4b9d7ea`: `uv run pytest` (215 passed,
+    1 strict xfail), `uv run ruff check .`, `uv run mypy .`, and the focused
+    round-4/5/nested/reward-exploit regression set. This is local evidence, not CI
+    evidence; earlier D-237 and round-3/4/5 probe receipts remain in their cited
+    delegation records.
+  - *Merge gate:* W1 requires the corrected tip to be pushed and all required checks
+    to succeed on that exact PR head before merge. The exact-head run and merge SHA are
+    recorded in `goal/evidence/codex-drive.md`; this historical review record is not
+    rewritten after every Actions run.
 
 ---
 

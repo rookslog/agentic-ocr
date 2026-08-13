@@ -20,8 +20,9 @@ the **raw** page dict.
 ``reading_order_index`` on every region and declaring ``"reading_order": ["head-1"]``
 reproduced exit 0 at tau 1.0, because one resolving entry suppressed the index signal
 (review finding L1-1). A declared ``reading_order`` must now be a list of strings
-naming every top-level region exactly once and agreeing with whatever
-``reading_order_index`` values the page declares. Truncated, mistyped,
+naming every region at every depth exactly once in whole parent/descendant blocks,
+and agreeing with whatever top-level ``reading_order_index`` values the page declares.
+Truncated, mistyped,
 non-string-bearing, duplicated and index-contradicting orders are all hard violations.
 
 Design call (the RC-3 "your call" clause): this is a **dedicated checker in the
@@ -227,8 +228,9 @@ class StructuralContractChecker(Checker):
     Fails hard on any of: a non-object entry in ``regions``; a region with no usable
     string ``id``; a repeated region id; children nested past the depth cap; a
     ``reading_order`` that is not a list of strings; a ``reading_order`` entry that is
-    repeated, references no region, or omits a top-level region; and a
-    ``reading_order`` that contradicts the declared ``reading_order_index`` values.
+    repeated, references no region, omits a region at any depth, or breaks a whole
+    parent/descendant block; and a ``reading_order`` that contradicts the declared
+    top-level ``reading_order_index`` values.
     Reported as a failing :class:`CheckResult`, never as a raised exception — a
     malformed candidate is a bad candidate, not a broken checker.
     """
@@ -250,7 +252,8 @@ class StructuralContractChecker(Checker):
         detail = (
             "candidate and GT are referentially well-formed (every region a unique-id "
             "object within the depth cap; reading_order, where declared, names every "
-            "top-level region exactly once and agrees with reading_order_index)"
+            "region at every depth exactly once in whole blocks and agrees with "
+            "top-level reading_order_index)"
             if passed
             else "; ".join(problems)
         )
