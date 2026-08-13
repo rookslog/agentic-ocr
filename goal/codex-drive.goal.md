@@ -77,8 +77,13 @@ Read `docs/adr/0002-schema-evolution-policy.md` first. Build, in this repo:
 - Run the aligner + **negative controls** on each candidate pair; ACCEPT needs
   coverage ≥ 0.60 and controls REJECTing. Mine the owned library for a 5th pair
   the same way. Report stats (numbers only — no corpus text) in the evidence doc.
-- Pairs still short of 5 after owned + PD mining → record the shortfall; the
-  zlibrary gate (H-2) is Logan's alone.
+- **Shadow-library fallback (H-2, opened to the drive 2026-08-12).** Only if owned +
+  PD mining leaves clause 4 short of 5 accepted pairs, acquire the shortfall via
+  zlibrary-mcp. The cap is **≤10 downloads total per calendar day**. This is not a
+  bulk-download lane: acquire only the text side needed to pair with an owned or PD scan.
+  Constraints unchanged: bytes stay out of git, and all acquisition provenance stays in
+  the gitignored `corpus/` manifest. Tracked evidence may record aggregate counts and
+  titles, but never passages, acquisition IDs, URLs, or source-site identifiers.
 
 ### W7 (stretch) — scriptorium engine packet, ≥500 GT pages (gate clause 3)
 Only if W1–W6 are dispositioned. Scope it first as a written plan in the
@@ -89,10 +94,11 @@ do not bulk-generate against an unreviewed plan.
 
 - The PD-lane **content-filter probe** (tests a Claude-platform behavior; runs
   in a Claude session).
-- Anything touching **zlibrary** (H-2 human gate).
 - Editing `PLAN.md`.
 - New standing config (CI required-check changes, branch-protection edits,
   account settings) — propose in the evidence doc instead.
+
+zlibrary IS yours now, but only as the W6 capped fallback — see W6 for the rules.
 
 ## Reporting
 

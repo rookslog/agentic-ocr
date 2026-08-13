@@ -73,7 +73,7 @@ only the short "genuine human residuals" list pulls Logan in.
 | id | gate | unblocks | status |
 |----|------|----------|--------|
 | H-1 | **Authorize SSH to dionysus** (add a Bash allow-rule, or run the cross-target smoke yourself via `! python -m runner.run …`) | gate clause 2, dionysus half only | **GRANTED 2026-08-07** (batched ask, option "scoped allow-rule") — installing the rule, then the smoke runs agentially |
-| H-2 | **zlibrary auth** (the MCP needs Logan's auth) — ONLY if owned + PD mining can't yield ≥5 GT-B pairs | gate clause 4 beyond the staged pairs | CONDITIONAL — unchanged 2026-08-07; owned-library mining ruled autonomous (delegate ruling, recorded in STATE.md); PD lane approved (vision-arm ruling) widens the pool |
+| H-2 | **zlibrary auth** (the MCP needs Logan's auth) — ONLY if owned + PD mining can't yield ≥5 GT-B pairs | gate clause 4 beyond the staged pairs | **OPENED to the drive 2026-08-12** (operator, direct): H-2 delegated to the D-250 codex drive as a capped fallback (≤10/day, owned+PD first, bytes/provenance constraints unchanged). zlibrary-mcp mirrored into `~/.codex/config.toml`. See codex-drive W6 |
 
 ~~G2 corpus selection~~ — **STRUCK 2026-06-19**: local selection approved this session; 3 GT-B pairs staged (`corpus/{of-grammatology,specters-of-marx,totality-and-infinity}`).
 

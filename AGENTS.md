@@ -22,8 +22,12 @@ packets; this file carries only the durable rules.
   `corpus/` manifests.
 - **Do not quote corpus text** into transcripts, reports, PR bodies, or evidence
   docs. Titles, counts, and metrics are fine; passages are not.
-- **zlibrary acquisition is HUMAN-GATED (H-2).** Never invoke it; only Logan opens
-  that gate, and only if owned + public-domain mining leaves gate clause 4 short.
+- **zlibrary acquisition — delegated to the drive as a CAPPED FALLBACK (H-2 opened
+  2026-08-12).** The active drive may invoke zlibrary-mcp, but only *after* owned +
+  public-domain mining is exhausted, at **≤10 downloads/day**, and only to close gate
+  clause 4 (≥5 GT-B pairs). It stays subordinate to the two rules above: the acquired
+  bytes never enter git, and no acquisition provenance (IDs, URLs, source site) appears
+  in any tracked file — provenance lives only in the gitignored `corpus/` manifest.
 - **No content-filter circumvention.** Chunked/obfuscated output schemes to defeat
   a provider's output filtering are out of policy, full stop.
 - **PR-only workflow.** `main` is protected on all three repos. Merges execute
